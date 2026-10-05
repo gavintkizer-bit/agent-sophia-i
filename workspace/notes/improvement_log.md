@@ -11,7 +11,14 @@ One entry per cycle (see IMPROVE.md). Newest at the bottom. Severity: bug / gap 
 | 3 | gap | Is deleting Ableton `.alp` files safe after installing? | Yes: they're installers; installed content lives in Ableton's library, and packs can be re-downloaded from the Ableton account. Sources: [Ableton help](https://help.ableton.com/hc/en-us/articles/115001930644-Installing-Live-Packs), [Ableton forum](https://forum.ableton.com/viewtopic.php?t=227028). | noted on board |
 | 4 | gap | My memory said Claude desktop was "maybe never" possible on this Mac. | Anthropic's help page: Claude Desktop needs **macOS 11 (Big Sur) or higher**; the owner has 12.7.6. It should be possible. Owner's notes say it "won't install", so ask what happened. Source: [Install Claude Desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop). | question on board |
 | 5 | tidy | CLAUDE.md "Current goal" still said "get the agent running" (done). | Updated to the real goal. | fixed |
-| 6 | tidy | Every run log entry says "What I'll change next time: _(fill this in)_"; nobody fills it. | Open: decide whether the cycle fills it, or drop the line. | open |
-| 7 | gap | Hypatia's log shows only the retry's turn count after a retry (cost is totaled correctly). | Small; fix in a later cycle. | open |
+| 6 | tidy | Every run log entry says "What I'll change next time: _(fill this in)_"; nobody fills it. | Dropped the line from new entries; lessons go in this log and SOPHIA.md instead. | fixed (cycle 2) |
+| 7 | gap | Hypatia's log shows only the retry's turn count after a retry (cost is totaled correctly). | Turns are now totaled across the retry too. | fixed (cycle 2) |
 | 8 | gap | `sophia_scan.sh` sizes `~/Library` twice (once inside the home scan). Slow on an old Mac, not wrong. | Later: one `du` pass. | open |
 | 9 | gap | Ableton Factory Pack names aren't in the scan, so I can't confirm which `.alp` packs are installed automatically. | Later: add a pack list to the scan. | open |
+
+## Cycle 2: 2026-10-05 (daily check-in, light)
+
+- No uploads and no new requests on the board. Marked my two finished board requests done with replies.
+- Fixed #6 and #7 above in `agent.py`; setup check still READY. No paid runs needed.
+- Owner's board: nothing ticked yet (they were asleep). Their list carries over as is.
+- Still open: #8 (scan reads ~/Library twice), #9 (Ableton pack names in the scan). Next full cycle: weekly.
