@@ -45,6 +45,7 @@ EXT_FOLDER = {
     "Documents": "pdf doc docx pages txt rtf md csv xls xlsx numbers key ppt pptx odt ods epub",
     "Images": "png jpg jpeg heic gif webp tif tiff bmp svg",
     "Video": "mov mp4 m4v mkv avi webm",
+    "Web Pages": "html htm webarchive",
 }
 EXT_FOLDER = {e: f for f, exts in EXT_FOLDER.items() for e in exts.split()}
 FINANCE = re.compile(r"invoice|receipt|statement|tax|w-?2\b|1099|bank|pay ?stub|paycheck", re.I)
@@ -191,8 +192,9 @@ def summarize_survey(path):
     md += ["## macOS", ""] + [f"- {l}" for l in sections.get("macos", [])] + [""]
     disk = [l.split() for l in sections.get("disk (1K blocks)", [])[1:]]
     if disk and len(disk[0]) >= 4:
-        total, used, free = (int(x) for x in disk[0][1:4])
-        md += ["## Disk", "", f"- Size {gb(total)} | Used {gb(used)} | **Free {gb(free)}**", ""]
+        # On APFS, df's "Used" for / is only the system volume, so derive used from free.
+        total, free = int(disk[0][1]), int(disk[0][3])
+        md += ["## Disk", "", f"- Size {gb(total)} | Used {gb(total - free)} | **Free {gb(free)}**", ""]
     md += ["## Biggest folders in your home folder", ""]
     md += [f"- {gb(kb)}  `{p.replace(home, '~')}`" for kb, p in sizes("home folders (KB, 2 levels deep)")[:30]]
     md += ["", "## Biggest folders inside ~/Library (app data, caches, backups)", ""]

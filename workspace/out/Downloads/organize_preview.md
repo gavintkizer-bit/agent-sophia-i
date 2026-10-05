@@ -1,30 +1,37 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 1219 | Will move: 547 | Left alone: 672
+Files in listing: 1221 | Will move: 555 | Left alone: 666
 
 ## Moves
 
-### Archives/ (17)
+### Archives/ (24)
 - `1.11-Dokucraft-TSC-High.zip`: Minecraft texture pack
 - `1.14-Dokucraft-TSC-Dark.zip`: Minecraft texture pack
-- `AlluringBliss 1.16 v1.2.0.00.zip`: Minecraft mod/texture
+- `3173-super-mario-bros-3.ggs`: Sega ROM backup
+- `AllGVSTMacUBeta.zip`: Audio plugin archive
+- `AlluringBliss 1.16 v1.2.0.00.zip`: Minecraft texture pack
 - `Andorhal HD.zip`: Minecraft texture pack
-- `Beyond+the+Lands.zip`: Minecraft mod
-- `JehkobasFantasy_5.zip`: Minecraft mod
-- `Kitchen Table - by Yami.zip`: Minecraft mod/texture
-- `ModernArch R50 [1.13 - 1.15] [256x].zip`: Minecraft texture
-- `Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip`: Minecraft mod
-- `PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip`: Minecraft texture
-- `Romecraft GERMANIA 16.zip`: Minecraft mod
-- `Round+Trees+V.2.1.0+-+1.13.zip`: Minecraft mod
-- `TextureCraft [1.14] 190826.zip`: Minecraft texture
-- `WA_IBG_Vocal_Chain.zip`: Audio archive file
-- `Winthor Medieval v2.6 WIP MC 1.14.zip`: Minecraft mod
-- `Winthor+Medieval+v4.3+MC+1.16.2.zip`: Minecraft mod
-- `🗓️ Course Schedule (SS2 8-Week).html.zip`: Course schedule archive
+- `Beyond+the+Lands.zip`: Minecraft mod archive
+- `BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar`: Minecraft mod
+- `JehkobasFantasy_5.zip`: Minecraft texture pack
+- `Kitchen Table - by Yami.zip`: Minecraft texture pack
+- `Melek_Endless_Turn.cod`: Game data file
+- `ModernArch R50 [1.13 - 1.15] [256x].zip`: Minecraft texture pack
+- `Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip`: Minecraft texture pack
+- `PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip`: Minecraft texture pack
+- `Romecraft GERMANIA 16.zip`: Minecraft texture pack
+- `Round+Trees+V.2.1.0+-+1.13.zip`: Minecraft texture pack
+- `SoundDevices_MixPre_2.9.87.5.exe`: Audio driver archive
+- `TextureCraft [1.14] 190826.zip`: Minecraft texture pack
+- `WA_IBG_Vocal_Chain.zip`: Audio archive (see rules)
+- `Winthor Medieval v2.6 WIP MC 1.14.zip`: Minecraft texture pack
+- `Winthor+Medieval+v4.3+MC+1.16.2.zip`: Minecraft texture pack
+- `gerudoku-1-16-x-v1-2.zip`: Minecraft mod archive
+- `mcedit2-macosx64-2.0.0-beta11.zip`: Minecraft tool archive
+- `server.jar`: Minecraft server
 
-### Documents/ (132)
+### Documents/ (149)
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).epub`: .epub file
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf`: .pdf file
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt`: .txt file
@@ -152,16 +159,33 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `gavin Kizer Excercise 6.pdf`: .pdf file
 - `soundcloud-backup-codes.txt`: .txt file
 - `the-great-goblin-20260814-213137.txt`: .txt file
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz`: OCR'd book archive
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz`: OCR'd book archive
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz`: Book metadata archive
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz`: Book text archive
 - `The_Science_of_Revenge.bibtex`: Bibliography file
 - `The_Science_of_Revenge.ris`: Bibliography file
-- `gtkizer97@gmail.com.ical.zip`: Calendar data archive
+- `Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx`: Map data file
+- `XFINITY.mobileconfig`: Configuration file
+- `gemini-code-1789185162035.css`: Code snippet
+- `gemini-code-1789185190245.css`: Code snippet
+- `gemini-code-1789190315390.ts`: Code snippet
+- `gemini-code-1789191176867.js`: Code snippet
+- `gemini-code-1789197186964.js`: Code snippet
+- `gemini-code-1789364535282.js`: Code snippet
+- `gtkizer97@gmail.com.ical.zip`: Calendar file
 - `query.py`: Python script
 - `rooster_ranges_player_scraper.py`: Python script
+- `rr_chronicle_2026-06-11.json`: Data file
+- `rr_chronicle_2026-07-27.json`: Data file
+- `state-park-research-prompts-and-responses.zip`: Research archive
+- `thirty_five_codec.py`: Python script
+- `🗓️ Course Schedule (SS2 8-Week).html.zip`: Calendar/schedule
 
 ### Documents/Finance/ (3)
 - `2022_TaxReturn.pdf`: .pdf file
-- `TurboTaxReturn.tax2022`: Tax return file
-- `U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement`: Bank statement/agreement
+- `TurboTaxReturn.tax2022`: Tax return document
+- `U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement`: Bank statement
 
 ### Images/ (110)
 - `1000005030.jpg`: .jpg file
@@ -275,35 +299,28 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `the dog.jpeg`: .jpeg file
 - `theeee dog.jpeg`: .jpeg file
 
-### Installers/ (26)
+### Installers/ (19)
 - `ASIO4ALL_2_13_English.exe`: Audio driver installer
 - `BEHRINGER_2902_WIN32_2.8.17.zip`: Audio device driver
 - `BEHRINGER_2902_X64_2.8.40.zip`: Audio device driver
-- `DC1A3-mac-installer.zip`: Mac app installer
-- `Google Chrome`: Browser installer
+- `Boogex_Mac.zip`: Audio plugin Mac installer
+- `DC1A3-mac-installer.zip`: Audio plugin installer
+- `DeltaModulatorOSX.zip`: Audio plugin Mac installer
 - `Hearthstone-Setup.zip`: Game installer
-- `InstallLDBPackage64c-2-1-5-01.zip`: App installer
-- `MixPres-asio-2.9.87.5.zip`: Audio driver
-- `Multiply_OSX_1_1_1.pkg.zip`: Mac app installer
+- `InstallLDBPackage64c-2-1-5-01.zip`: Audio software installer
 - `OperaSetup (1).zip`: Browser installer
 - `OperaSetup (2).zip`: Browser installer
 - `OperaSetup.zip`: Browser installer
 - `SpotifyInstaller (1).zip`: App installer
 - `SpotifyInstaller.zip`: App installer
-- `SoundDevices_MixPre_2.9.87.5.exe`: Audio device software
 - `camo-macos-latest (1).zip`: App installer
 - `camo-macos-latest (2).zip`: App installer
 - `camo-macos-latest.zip`: App installer
-- `gerudoku-1-16-x-v1-2.zip`: Game installer
-- `lo-fi drum kit.zip`: Sample pack installer
 - `maudioplugins_12_03_setupmac.zip`: Audio plugin installer
 - `maudioplugins_14_16_setupmac.zip`: Audio plugin installer
-- `mcedit2-macosx64-2.0.0-beta11.zip`: Game editor installer
-- `server.jar`: Java application
-- `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: App installer archive
-- `usb_asio.sit`: Legacy installer
+- `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: Music app installer
 
-### Video/ (65)
+### Video/ (66)
 - `1000005309.mp4`: .mp4 file
 - `1000005312.mp4`: .mp4 file
 - `Aki Takase - Minerva's Owl.mp4`: .mp4 file
@@ -367,123 +384,114 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4`: .mp4 file
 - `y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4`: .mp4 file
 - `y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4`: .mp4 file
+- `IMG_1049.3gp`: Video file
 - `videoplayback (1).3gp`: Video file
 - `videoplayback.3gp`: Video file
 
-### Web Pages/ (113)
-- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz`: Compressed HTML document
-- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html`: HTML document
-- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz`: Compressed HTML document
-- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz`: OCR/web data file
-- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz`: OCR/web text file
-- `Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm`: Saved webpage
-- `SailorsDelight (1).html`: Saved webpage
-- `SailorsDelight (2).html`: Saved webpage
-- `SailorsDelight (3).html`: Saved webpage
-- `SailorsDelight.html`: Saved webpage
-- `Stats.html.rtfd.zip`: Rich text web archive
-- `Untitled - Copy (2).html.zip`: Saved webpage archive
-- `alpine_hike_micro_brief_generator.html`: Saved webpage
-- `catalina27-sail-model (1).html`: Saved webpage
-- `catalina27-sail-model (2).html`: Saved webpage
-- `catalina27-sail-model.html`: Saved webpage
-- `diamondedge_baseball_trading_odds_intelligence_suite.html`: Saved webpage
-- `diamondstat_mlb_analytics_hub.html`: Saved webpage
-- `diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html`: Saved webpage
-- `diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html`: Saved webpage
-- `diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html`: Saved webpage
-- `diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html`: Saved webpage
-- `diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html`: Saved webpage
-- `diamondstat_pro_mlb_intelligence_precision_wager_engine.html`: Saved webpage
-- `eastern-seaboard-nav-companion (1).html`: Saved webpage
-- `eastern-seaboard-nav-companion (2).html`: Saved webpage
-- `eastern-seaboard-nav-companion (3).html`: Saved webpage
-- `eastern-seaboard-nav-companion (4).html`: Saved webpage
-- `eastern-seaboard-nav-companion (5).html`: Saved webpage
-- `eastern-seaboard-nav-companion (6).html`: Saved webpage
-- `eastern-seaboard-nav-companion (7).html`: Saved webpage
-- `eastern-seaboard-nav-companion (8).html`: Saved webpage
-- `eastern-seaboard-nav-companion (9).html`: Saved webpage
-- `eastern-seaboard-nav-companion (10).html`: Saved webpage
-- `eastern-seaboard-nav-companion (11).html`: Saved webpage
-- `eastern-seaboard-nav-companion (12).html`: Saved webpage
-- `eastern-seaboard-nav-companion (13).html`: Saved webpage
-- `eastern-seaboard-nav-companion (14).html`: Saved webpage
-- `eastern-seaboard-nav-companion (15).html`: Saved webpage
-- `eastern-seaboard-nav-companion.html`: Saved webpage
-- `free-outdoors (1).html`: Saved web page
-- `free-outdoors (2).html`: Saved web page
-- `free-outdoors (3).html`: Saved web page
-- `free-outdoors (4).html`: Saved web page
-- `free-outdoors.html`: Saved web page
-- `gemini-code-1789184866606.html`: Saved web page
-- `gemini-code-1789185162035.css`: Web page stylesheet
-- `gemini-code-1789185190245.css`: Web page stylesheet
-- `gemini-code-1789185214723.html`: Saved web page
-- `gemini-code-1789185320383.html`: Saved web page
-- `gemini-code-1789185664565.html`: Saved web page
-- `gemini-code-1789185920001.html`: Saved web page
-- `gemini-code-1789186033677.html`: Saved web page
-- `gemini-code-1789186402897.html`: Saved web page
-- `gemini-code-1789186950167.html`: Saved web page
-- `gemini-code-1789187206261.html`: Saved web page
-- `gemini-code-1789187836936.html`: Saved web page
-- `gemini-code-1789187948106.html`: Saved web page
-- `gemini-code-1789188314052.html`: Saved web page
-- `gemini-code-1789188727224.html`: Saved web page
-- `gemini-code-1789189244939.html`: Saved web page
-- `gemini-code-1789189459699.html`: Saved web page
-- `gemini-code-1789189815604.html`: Saved web page
-- `gemini-code-1789190315390.ts`: Web page code file
-- `gemini-code-1789190398574.html`: Saved web page
-- `gemini-code-1789190818961.html`: Saved web page
-- `gemini-code-1789190931126.html`: Saved web page
-- `gemini-code-1789191133333.html`: Saved web page
-- `gemini-code-1789191176867.js`: Web page code file
-- `gemini-code-1789191306238.html`: Saved web page
-- `gemini-code-1789191439723.html`: Saved web page
-- `gemini-code-1789191692266.html`: Saved web page
-- `gemini-code-1789191950517.html`: Saved web page
-- `gemini-code-1789192240856.html`: Saved web page
-- `gemini-code-1789192390444.html`: Saved web page
-- `gemini-code-1789192849570.html`: Saved web page
-- `gemini-code-1789193526377.html`: Saved web page
-- `gemini-code-1789193698019.html`: Saved web page
-- `gemini-code-1789195191227.html`: Saved web page
-- `gemini-code-1789197186964.js`: Web page code file
-- `gemini-code-1789197216676.html`: Saved web page
-- `gemini-code-1789197508013.html`: Saved web page
-- `gemini-code-1789360371402.html`: Saved web page
-- `gemini-code-1789360753807.html`: Saved web page
-- `gemini-code-1789360855075.html`: Saved web page
-- `gemini-code-1789361078323.html`: Saved web page
-- `gemini-code-1789361138778.html`: Saved web page
-- `gemini-code-1789361323644.html`: Saved web page
-- `gemini-code-1789361635886.html`: Saved web page
-- `gemini-code-1789362187633.html`: Saved web page
-- `gemini-code-1789362552500.html`: Saved web page
-- `gemini-code-1789362902100.html`: Saved web page
-- `gemini-code-1789363186777.html`: Saved web page
-- `gemini-code-1789363490007.html`: Saved web page
-- `gemini-code-1789363870692.html`: Saved web page
-- `gemini-code-1789364075727.html`: Saved web page
-- `gemini-code-1789364228303.html`: Saved web page
-- `gemini-code-1789364535282.js`: Web page code file
-- `gemini-code-1789364745572.html`: Saved web page
-- `hjk.htm`: Saved web page
-- `rooster_ranges_leaderboard.html`: Saved web page
-- `rooster_ranges_stats.html`: Saved web page
-- `rr_leaderboard (10).html`: Saved web page
-- `rr_leaderboard (2).html`: Saved web page
-- `rr_leaderboard (3).html`: Saved web page
-- `rr_leaderboard (4).html`: Saved web page
-- `rr_leaderboard (5).html`: Saved web page
-- `rr_leaderboard (6).html`: Saved web page
-- `rr_leaderboard (7).html`: Saved web page
-- `rr_leaderboard (8).html`: Saved web page
-- `rr_leaderboard (9).html`: Saved web page
-- `rr_leaderboard.html`: Saved web page
-- `tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html`: Saved web page
+### Web Pages/ (103)
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html`: .html file
+- `Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm`: .htm file
+- `SailorsDelight (1).html`: .html file
+- `SailorsDelight (2).html`: .html file
+- `SailorsDelight (3).html`: .html file
+- `SailorsDelight.html`: .html file
+- `alpine_hike_micro_brief_generator.html`: .html file
+- `catalina27-sail-model (1).html`: .html file
+- `catalina27-sail-model (2).html`: .html file
+- `catalina27-sail-model.html`: .html file
+- `diamondedge_baseball_trading_odds_intelligence_suite.html`: .html file
+- `diamondstat_mlb_analytics_hub.html`: .html file
+- `diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html`: .html file
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html`: .html file
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html`: .html file
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html`: .html file
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html`: .html file
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine.html`: .html file
+- `eastern-seaboard-nav-companion (1).html`: .html file
+- `eastern-seaboard-nav-companion (10).html`: .html file
+- `eastern-seaboard-nav-companion (11).html`: .html file
+- `eastern-seaboard-nav-companion (12).html`: .html file
+- `eastern-seaboard-nav-companion (13).html`: .html file
+- `eastern-seaboard-nav-companion (14).html`: .html file
+- `eastern-seaboard-nav-companion (15).html`: .html file
+- `eastern-seaboard-nav-companion (2).html`: .html file
+- `eastern-seaboard-nav-companion (3).html`: .html file
+- `eastern-seaboard-nav-companion (4).html`: .html file
+- `eastern-seaboard-nav-companion (5).html`: .html file
+- `eastern-seaboard-nav-companion (6).html`: .html file
+- `eastern-seaboard-nav-companion (7).html`: .html file
+- `eastern-seaboard-nav-companion (8).html`: .html file
+- `eastern-seaboard-nav-companion (9).html`: .html file
+- `eastern-seaboard-nav-companion.html`: .html file
+- `free-outdoors (1).html`: .html file
+- `free-outdoors (2).html`: .html file
+- `free-outdoors (3).html`: .html file
+- `free-outdoors (4).html`: .html file
+- `free-outdoors.html`: .html file
+- `gemini-code-1789184866606.html`: .html file
+- `gemini-code-1789185214723.html`: .html file
+- `gemini-code-1789185320383.html`: .html file
+- `gemini-code-1789185664565.html`: .html file
+- `gemini-code-1789185920001.html`: .html file
+- `gemini-code-1789186033677.html`: .html file
+- `gemini-code-1789186402897.html`: .html file
+- `gemini-code-1789186950167.html`: .html file
+- `gemini-code-1789187206261.html`: .html file
+- `gemini-code-1789187836936.html`: .html file
+- `gemini-code-1789187948106.html`: .html file
+- `gemini-code-1789188314052.html`: .html file
+- `gemini-code-1789188727224.html`: .html file
+- `gemini-code-1789189244939.html`: .html file
+- `gemini-code-1789189459699.html`: .html file
+- `gemini-code-1789189815604.html`: .html file
+- `gemini-code-1789190398574.html`: .html file
+- `gemini-code-1789190818961.html`: .html file
+- `gemini-code-1789190931126.html`: .html file
+- `gemini-code-1789191133333.html`: .html file
+- `gemini-code-1789191306238.html`: .html file
+- `gemini-code-1789191439723.html`: .html file
+- `gemini-code-1789191692266.html`: .html file
+- `gemini-code-1789191950517.html`: .html file
+- `gemini-code-1789192240856.html`: .html file
+- `gemini-code-1789192390444.html`: .html file
+- `gemini-code-1789192849570.html`: .html file
+- `gemini-code-1789193526377.html`: .html file
+- `gemini-code-1789193698019.html`: .html file
+- `gemini-code-1789195191227.html`: .html file
+- `gemini-code-1789197216676.html`: .html file
+- `gemini-code-1789197508013.html`: .html file
+- `gemini-code-1789360371402.html`: .html file
+- `gemini-code-1789360753807.html`: .html file
+- `gemini-code-1789360855075.html`: .html file
+- `gemini-code-1789361078323.html`: .html file
+- `gemini-code-1789361138778.html`: .html file
+- `gemini-code-1789361323644.html`: .html file
+- `gemini-code-1789361635886.html`: .html file
+- `gemini-code-1789362187633.html`: .html file
+- `gemini-code-1789362552500.html`: .html file
+- `gemini-code-1789362902100.html`: .html file
+- `gemini-code-1789363186777.html`: .html file
+- `gemini-code-1789363490007.html`: .html file
+- `gemini-code-1789363870692.html`: .html file
+- `gemini-code-1789364075727.html`: .html file
+- `gemini-code-1789364228303.html`: .html file
+- `gemini-code-1789364745572.html`: .html file
+- `hjk.htm`: .htm file
+- `rooster_ranges_leaderboard.html`: .html file
+- `rooster_ranges_stats.html`: .html file
+- `rr_leaderboard (10).html`: .html file
+- `rr_leaderboard (2).html`: .html file
+- `rr_leaderboard (3).html`: .html file
+- `rr_leaderboard (4).html`: .html file
+- `rr_leaderboard (5).html`: .html file
+- `rr_leaderboard (6).html`: .html file
+- `rr_leaderboard (7).html`: .html file
+- `rr_leaderboard (8).html`: .html file
+- `rr_leaderboard (9).html`: .html file
+- `rr_leaderboard.html`: .html file
+- `tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html`: .html file
+- `Stats.html.rtfd.zip`: HTML page archive
+- `Untitled - Copy (2).html.zip`: HTML page archive
 
 ### _Sophia To Delete/Ableton Packs - delete if installed/ (18)
 - `BreakSelectionbySampleMagic_r36457_v1.0.alp`: Live Pack installer; check Ableton first
@@ -617,6 +625,7 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `./Caprese.wav`: Audio/Ableton file: never moved
 - `./Circles_AV_mastered.wav`: Audio/Ableton file: never moved
 - `./Claude (1).dmg`: Changed in the last 7 days
+- `./Claude (2).dmg`: Changed in the last 7 days
 - `./Claude.dmg`: Changed in the last 7 days
 - `./Courage the Cowardly Dog but it s only Katz.mp3`: Audio/Ableton file: never moved
 - `./Courage the Cowardly Dog but it s only Katz.mp3.asd`: Audio/Ableton file: never moved
@@ -1162,6 +1171,7 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `./reply_to_before_the_word (1).mp3`: Audio/Ableton file: never moved
 - `./reply_to_before_the_word.mp3`: Audio/Ableton file: never moved
 - `./sett.als`: Audio/Ableton file: never moved
+- `./sophia_scan.sh`: Changed in the last 7 days
 - `./space [2018-12-30 115204].als`: Audio/Ableton file: never moved
 - `./src_free-outdoors (4).html`: Changed in the last 7 days
 - `./suave [2019-09-12 030926].als`: Audio/Ableton file: never moved
@@ -1215,34 +1225,26 @@ Files in listing: 1219 | Will move: 547 | Left alone: 672
 - `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Audio/Ableton file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio/Ableton file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Audio/Ableton file: never moved
-- `./boing.wav.3gp`: Audio file, per preferences
-- `./Sway.tg`: Telegram file, unclear
-- `./TriSamples_-_808_Trapstep_Pack_Vol_1.zip`: Audio samples, per preferences
-- `./Drum samples.zip`: Audio samples, per preferences
-- `./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx`: GPS/map file, unclear folder
-- `./ProducerSpot-808-Drums.zip`: Audio samples, per preferences
-- `./HYSTERESIS.zip`: Audio plugin, audio-related
-- `./673 Samples Drum Kit (Hipstrumentals.com).zip`: Audio samples, per preferences
-- `./XFINITY.mobileconfig`: System config file, unclear
-- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Torrent file, unclear purpose
-- `./3173-super-mario-bros-3.ggs`: Game ROM file, unclear folder
-- `./Melek_Endless_Turn.cod`: Code/game file, unclear
-- `./Dry.zip`: Likely audio plugin, audio-related
-- `./IMG_1049.3gp`: Video file, already handled
-- `./DeltaModulatorOSX.zip`: Audio plugin, audio-related
-- `./Conner and Zack.zip`: Unknown content, can't determine
-- `./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar`: Minecraft mod, unclear format
-- `./chronos.json`: Data file, unclear purpose
-- `./AllGVSTMacUBeta.zip`: VST/audio plugin, audio-related
-- `./TubeAmp_Mac.zip`: Audio plugin, audio-related
-- `./Boogex_Mac.zip`: Audio plugin, audio-related
-- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file, per preferences
-- `./files.zip`: Generic zip, purpose unclear
-- `./thirty_five_codec.py`: Recently modified, may be in use
-- `./level.dat_old`: Game data file, purpose unclear
-- `./rr_chronicle_2026-06-11.json`: Recently modified, may be in use
-- `./level.dat`: Game data file, purpose unclear
-- `./session.lock`: System file, leave as-is
-- `./rr_chronicle_2026-07-27.json`: Recently modified, may be in use
-- `./state-park-research-prompts-and-responses.zip`: Recently modified, may be in use
-- `./world.zip`: Game data, purpose unclear
+- `./Drum samples.zip`: Sophia wasn't sure, so left alone
+- `./chronos.json`: Unknown data structure
+- `./files.zip`: Generic zip; purpose unclear
+- `./boing.wav.3gp`: Audio file (protected)
+- `./Sway.tg`: Unknown file type
+- `./usb_asio.sit`: Audio driver archive (protected)
+- `./HYSTERESIS.zip`: Audio plugin (protected)
+- `./lo-fi drum kit.zip`: Audio samples (protected)
+- `./TriSamples_-_808_Trapstep_Pack_Vol_1.zip`: Audio samples (protected)
+- `./world.zip`: Game data; purpose unclear
+- `./Dry.zip`: Audio plugin (protected)
+- `./Conner and Zack.zip`: Unknown content
+- `./TubeAmp_Mac.zip`: Sophia wasn't sure, so left alone
+- `./Multiply_OSX_1_1_1.pkg.zip`: Audio plugin (protected)
+- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Torrent metadata; audio content
+- `./level.dat_old`: Game save data (leave alone)
+- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file (protected)
+- `./MixPres-asio-2.9.87.5.zip`: Audio driver (protected)
+- `./session.lock`: Lock file; in-use marker
+- `./level.dat`: Game save data (leave alone)
+- `./Google Chrome`: Unclear purpose; possibly config
+- `./ProducerSpot-808-Drums.zip`: Audio samples (protected)
+- `./673 Samples Drum Kit (Hipstrumentals.com).zip`: Audio samples (protected)

@@ -28,6 +28,7 @@ move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf' Documents
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html' '_Sophia To Delete/Duplicates'
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html' '_Sophia To Delete/Duplicates'
+move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html' 'Web Pages'
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt' Documents
 move_one ./1000005030.jpg Images
 move_one './1000005309 (1).mp4' '_Sophia To Delete/Duplicates'
@@ -217,6 +218,7 @@ move_one './Internet Assignment.pdf' Documents
 move_one './Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4' '_Sophia To Delete/Duplicates'
 move_one './Itsuroh Shimoda - Everybody Anyone (1974).mp4' Video
 move_one './J.O.B. Orchestra-Govinda.mp4' Video
+move_one './Jackdaw _ Assassin'"'"'s Creed Wiki _ FANDOM powered by Wikia.htm' 'Web Pages'
 move_one './Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4' Video
 move_one './JoJo out of context.mp4' Video
 move_one './KJSawkaMadBeatz_r32873_v9.0 (1).alp' '_Sophia To Delete/Duplicates'
@@ -258,6 +260,10 @@ move_one './Point by Point Outline (1).pdf' Documents
 move_one './Point by Point Outline.docx' Documents
 move_one ./Resume.pdf Documents
 move_one ./Sailing_Weekend_Packing_List.pdf Documents
+move_one './SailorsDelight (1).html' 'Web Pages'
+move_one './SailorsDelight (2).html' 'Web Pages'
+move_one './SailorsDelight (3).html' 'Web Pages'
+move_one ./SailorsDelight.html 'Web Pages'
 move_one './Scientific method.docx' Documents
 move_one ./Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg Images
 move_one './Secretos del saxofon. Técnica de saxofón.mp4' Video
@@ -303,6 +309,7 @@ move_one ./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg '_Sophia To Delete/Ins
 move_one './Wolfgang Lauth Quartett - Moonlight Fantasy.mp4' Video
 move_one './Writing assignment 1 - Gavin Kizer (1).pdf' Documents
 move_one './Writing assignment 1 - Gavin Kizer.pdf' Documents
+move_one ./alpine_hike_micro_brief_generator.html 'Web Pages'
 move_one ./bathroom-chilling.jpg Images
 move_one ./before_the_word_analysis.png Images
 move_one './bellalastr420 (1).csv' '_Sophia To Delete/Duplicates'
@@ -310,6 +317,9 @@ move_one ./bellalastr420.csv Documents
 move_one ./bic_application.pdf Documents
 move_one ./boing.wav.mp4 Video
 move_one ./bp-708.webp Images
+move_one './catalina27-sail-model (1).html' 'Web Pages'
+move_one './catalina27-sail-model (2).html' 'Web Pages'
+move_one ./catalina27-sail-model.html 'Web Pages'
 move_one ./chronos.csv Documents
 move_one ./data_1072164156.csv Documents
 move_one ./data_115293264.csv Documents
@@ -320,6 +330,14 @@ move_one ./data_377620463.csv Documents
 move_one ./deadly-nightshade-flower-hand-drawn-vector-illustration-also-known-as-belladonna-captures-haunting-beauty-339641910.webp Images
 move_one ./deck.pdf Documents
 move_one ./decklist.pdf Documents
+move_one ./diamondedge_baseball_trading_odds_intelligence_suite.html 'Web Pages'
+move_one ./diamondstat_mlb_analytics_hub.html 'Web Pages'
+move_one ./diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html 'Web Pages'
+move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html' 'Web Pages'
+move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html' 'Web Pages'
+move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html' 'Web Pages'
+move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html' 'Web Pages'
+move_one ./diamondstat_pro_mlb_intelligence_precision_wager_engine.html 'Web Pages'
 move_one ./dokumen.pub_a-short-stay-in-hell-9780983748434-9780983748441-9780983748427-2011941923.epub Documents
 move_one './download (1).jpeg' Images
 move_one './download (2).jpeg' Images
@@ -328,19 +346,89 @@ move_one './download (4).jpeg' Images
 move_one ./download.jpeg Images
 move_one ./drfone_full3361.dmg '_Sophia To Delete/Installers'
 move_one ./e-instrumentsStudioBass_r32591_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
+move_one './eastern-seaboard-nav-companion (1).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (10).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (11).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (12).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (13).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (14).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (15).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (2).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (3).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (4).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (5).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (6).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (7).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (8).html' 'Web Pages'
+move_one './eastern-seaboard-nav-companion (9).html' 'Web Pages'
+move_one ./eastern-seaboard-nav-companion.html 'Web Pages'
 move_one ./eastern_seaboard_logs_1789194243265.csv Documents
 move_one ./expressvpn_mac_11.2.0.67174_release.pkg '_Sophia To Delete/Installers'
 move_one ./expressvpn_mac_11.26.0.74548_release.pkg '_Sophia To Delete/Installers'
 move_one ./expressvpn_mac_11.9.0.70037_release.pkg '_Sophia To Delete/Installers'
 move_one ./fb5aeb0f80f593fc226cc6180982482f.png Images
 move_one ./feat_russia.jpeg Images
+move_one './free-outdoors (1).html' 'Web Pages'
+move_one './free-outdoors (2).html' 'Web Pages'
+move_one './free-outdoors (3).html' 'Web Pages'
+move_one './free-outdoors (4).html' 'Web Pages'
 move_one ./free-outdoors-logbook-2026-09-24.csv Documents
+move_one ./free-outdoors.html 'Web Pages'
 move_one './gavin Kizer Excercise 6.pdf' Documents
+move_one ./gemini-code-1789184866606.html 'Web Pages'
+move_one ./gemini-code-1789185214723.html 'Web Pages'
+move_one ./gemini-code-1789185320383.html 'Web Pages'
+move_one ./gemini-code-1789185664565.html 'Web Pages'
+move_one ./gemini-code-1789185920001.html 'Web Pages'
+move_one ./gemini-code-1789186033677.html 'Web Pages'
+move_one ./gemini-code-1789186402897.html 'Web Pages'
+move_one ./gemini-code-1789186950167.html 'Web Pages'
+move_one ./gemini-code-1789187206261.html 'Web Pages'
+move_one ./gemini-code-1789187836936.html 'Web Pages'
+move_one ./gemini-code-1789187948106.html 'Web Pages'
+move_one ./gemini-code-1789188314052.html 'Web Pages'
+move_one ./gemini-code-1789188727224.html 'Web Pages'
+move_one ./gemini-code-1789189244939.html 'Web Pages'
+move_one ./gemini-code-1789189459699.html 'Web Pages'
+move_one ./gemini-code-1789189815604.html 'Web Pages'
+move_one ./gemini-code-1789190398574.html 'Web Pages'
+move_one ./gemini-code-1789190818961.html 'Web Pages'
+move_one ./gemini-code-1789190931126.html 'Web Pages'
+move_one ./gemini-code-1789191133333.html 'Web Pages'
+move_one ./gemini-code-1789191306238.html 'Web Pages'
+move_one ./gemini-code-1789191439723.html 'Web Pages'
+move_one ./gemini-code-1789191692266.html 'Web Pages'
+move_one ./gemini-code-1789191950517.html 'Web Pages'
+move_one ./gemini-code-1789192240856.html 'Web Pages'
+move_one ./gemini-code-1789192390444.html 'Web Pages'
+move_one ./gemini-code-1789192849570.html 'Web Pages'
+move_one ./gemini-code-1789193526377.html 'Web Pages'
+move_one ./gemini-code-1789193698019.html 'Web Pages'
+move_one ./gemini-code-1789195191227.html 'Web Pages'
+move_one ./gemini-code-1789197216676.html 'Web Pages'
+move_one ./gemini-code-1789197508013.html 'Web Pages'
+move_one ./gemini-code-1789360371402.html 'Web Pages'
+move_one ./gemini-code-1789360753807.html 'Web Pages'
+move_one ./gemini-code-1789360855075.html 'Web Pages'
+move_one ./gemini-code-1789361078323.html 'Web Pages'
+move_one ./gemini-code-1789361138778.html 'Web Pages'
+move_one ./gemini-code-1789361323644.html 'Web Pages'
+move_one ./gemini-code-1789361635886.html 'Web Pages'
+move_one ./gemini-code-1789362187633.html 'Web Pages'
+move_one ./gemini-code-1789362552500.html 'Web Pages'
+move_one ./gemini-code-1789362902100.html 'Web Pages'
+move_one ./gemini-code-1789363186777.html 'Web Pages'
+move_one ./gemini-code-1789363490007.html 'Web Pages'
+move_one ./gemini-code-1789363870692.html 'Web Pages'
+move_one ./gemini-code-1789364075727.html 'Web Pages'
+move_one ./gemini-code-1789364228303.html 'Web Pages'
+move_one ./gemini-code-1789364745572.html 'Web Pages'
 move_one ./gettyimages-807070348.jpg Images
 move_one ./gmail_images20260415_023604.png Images
 move_one ./gmail_images20260415_023620.png Images
 move_one ./googlechrome-2.dmg '_Sophia To Delete/Installers'
 move_one ./grsa-SingingSand2017_480x270.mp4 Video
+move_one ./hjk.htm 'Web Pages'
 move_one ./hqdefault.jpg Images
 move_one ./image_1b1ad4eb.jpg Images
 move_one ./image_6546160.JPG Images
@@ -360,7 +448,19 @@ move_one ./received_3841306436151063.jpeg Images
 move_one ./reply_spectrogram.png Images
 move_one ./reply_structure.png Images
 move_one ./resort.jpg Images
+move_one ./rooster_ranges_leaderboard.html 'Web Pages'
+move_one ./rooster_ranges_stats.html 'Web Pages'
 move_one './rr_leaderboard (1).html' '_Sophia To Delete/Duplicates'
+move_one './rr_leaderboard (10).html' 'Web Pages'
+move_one './rr_leaderboard (2).html' 'Web Pages'
+move_one './rr_leaderboard (3).html' 'Web Pages'
+move_one './rr_leaderboard (4).html' 'Web Pages'
+move_one './rr_leaderboard (5).html' 'Web Pages'
+move_one './rr_leaderboard (6).html' 'Web Pages'
+move_one './rr_leaderboard (7).html' 'Web Pages'
+move_one './rr_leaderboard (8).html' 'Web Pages'
+move_one './rr_leaderboard (9).html' 'Web Pages'
+move_one ./rr_leaderboard.html 'Web Pages'
 move_one ./s-l300.jpg Images
 move_one ./soundcloud-backup-codes.txt Documents
 move_one ./steam.dmg '_Sophia To Delete/Installers'
@@ -369,6 +469,7 @@ move_one './swamp florida.webp' Images
 move_one './the dog.jpeg' Images
 move_one ./the-great-goblin-20260814-213137.txt Documents
 move_one './theeee dog.jpeg' Images
+move_one ./tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html 'Web Pages'
 move_one './videoplayback (1).mp4' Video
 move_one './videoplayback (10).mp4' Video
 move_one './videoplayback (11).mp4' Video
@@ -405,29 +506,31 @@ move_one './y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4' Video
 move_one './y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4' Video
 move_one './y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4' Video
 move_one './🗓️ Course Schedule (SS2 8-Week).html (1).zip' '_Sophia To Delete/Duplicates'
-move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz' 'Web Pages'
-move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html' 'Web Pages'
-move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz' 'Web Pages'
-move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz' 'Web Pages'
-move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz' 'Web Pages'
+move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz' Documents
+move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz' Documents
+move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz' Documents
+move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz' Documents
 move_one ./1.11-Dokucraft-TSC-High.zip Archives
 move_one ./1.14-Dokucraft-TSC-Dark.zip Archives
+move_one ./3173-super-mario-bros-3.ggs Archives
 move_one ./ASIO4ALL_2_13_English.exe Installers
+move_one ./AllGVSTMacUBeta.zip Archives
 move_one './AlluringBliss 1.16 v1.2.0.00.zip' Archives
 move_one './Andorhal HD.zip' Archives
 move_one ./BEHRINGER_2902_WIN32_2.8.17.zip Installers
 move_one ./BEHRINGER_2902_X64_2.8.40.zip Installers
 move_one ./Beyond+the+Lands.zip Archives
+move_one ./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar Archives
+move_one ./Boogex_Mac.zip Installers
 move_one ./DC1A3-mac-installer.zip Installers
-move_one './Google Chrome' Installers
+move_one ./DeltaModulatorOSX.zip Installers
 move_one ./Hearthstone-Setup.zip Installers
+move_one ./IMG_1049.3gp Video
 move_one ./InstallLDBPackage64c-2-1-5-01.zip Installers
-move_one './Jackdaw _ Assassin'"'"'s Creed Wiki _ FANDOM powered by Wikia.htm' 'Web Pages'
 move_one ./JehkobasFantasy_5.zip Archives
 move_one './Kitchen Table - by Yami.zip' Archives
-move_one ./MixPres-asio-2.9.87.5.zip Installers
+move_one ./Melek_Endless_Turn.cod Archives
 move_one './ModernArch R50 [1.13 - 1.15] [256x].zip' Archives
-move_one ./Multiply_OSX_1_1_1.pkg.zip Installers
 move_one './OperaSetup (1).zip' Installers
 move_one './OperaSetup (2).zip' Installers
 move_one ./OperaSetup.zip Installers
@@ -435,141 +538,46 @@ move_one './Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip' Archives
 move_one ./PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip Archives
 move_one './Romecraft GERMANIA 16.zip' Archives
 move_one ./Round+Trees+V.2.1.0+-+1.13.zip Archives
-move_one './SailorsDelight (1).html' 'Web Pages'
-move_one './SailorsDelight (2).html' 'Web Pages'
-move_one './SailorsDelight (3).html' 'Web Pages'
-move_one ./SailorsDelight.html 'Web Pages'
+move_one ./SoundDevices_MixPre_2.9.87.5.exe Archives
 move_one './SpotifyInstaller (1).zip' Installers
 move_one ./SpotifyInstaller.zip Installers
 move_one ./Stats.html.rtfd.zip 'Web Pages'
+move_one './TextureCraft [1.14] 190826.zip' Archives
 move_one ./The_Science_of_Revenge.bibtex Documents
 move_one ./The_Science_of_Revenge.ris Documents
-move_one './TextureCraft [1.14] 190826.zip' Archives
 move_one ./TurboTaxReturn.tax2022 Documents/Finance
+move_one ./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx Documents
 move_one './U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement' Documents/Finance
 move_one './Untitled - Copy (2).html.zip' 'Web Pages'
 move_one ./WA_IBG_Vocal_Chain.zip Archives
 move_one './Winthor Medieval v2.6 WIP MC 1.14.zip' Archives
 move_one ./Winthor+Medieval+v4.3+MC+1.16.2.zip Archives
-move_one ./SoundDevices_MixPre_2.9.87.5.exe Installers
-move_one ./alpine_hike_micro_brief_generator.html 'Web Pages'
+move_one ./XFINITY.mobileconfig Documents
 move_one './camo-macos-latest (1).zip' Installers
 move_one './camo-macos-latest (2).zip' Installers
 move_one ./camo-macos-latest.zip Installers
-move_one './catalina27-sail-model (1).html' 'Web Pages'
-move_one './catalina27-sail-model (2).html' 'Web Pages'
-move_one ./catalina27-sail-model.html 'Web Pages'
-move_one ./diamondedge_baseball_trading_odds_intelligence_suite.html 'Web Pages'
-move_one ./diamondstat_mlb_analytics_hub.html 'Web Pages'
-move_one ./diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html 'Web Pages'
-move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html' 'Web Pages'
-move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html' 'Web Pages'
-move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html' 'Web Pages'
-move_one './diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html' 'Web Pages'
-move_one ./diamondstat_pro_mlb_intelligence_precision_wager_engine.html 'Web Pages'
-move_one './eastern-seaboard-nav-companion (1).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (2).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (3).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (4).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (5).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (6).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (7).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (8).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (9).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (10).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (11).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (12).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (13).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (14).html' 'Web Pages'
-move_one './eastern-seaboard-nav-companion (15).html' 'Web Pages'
-move_one ./eastern-seaboard-nav-companion.html 'Web Pages'
-move_one './free-outdoors (1).html' 'Web Pages'
-move_one './free-outdoors (2).html' 'Web Pages'
-move_one './free-outdoors (3).html' 'Web Pages'
-move_one './free-outdoors (4).html' 'Web Pages'
-move_one ./free-outdoors.html 'Web Pages'
-move_one ./gemini-code-1789184866606.html 'Web Pages'
-move_one ./gemini-code-1789185162035.css 'Web Pages'
-move_one ./gemini-code-1789185190245.css 'Web Pages'
-move_one ./gemini-code-1789185214723.html 'Web Pages'
-move_one ./gemini-code-1789185320383.html 'Web Pages'
-move_one ./gemini-code-1789185664565.html 'Web Pages'
-move_one ./gemini-code-1789185920001.html 'Web Pages'
-move_one ./gemini-code-1789186033677.html 'Web Pages'
-move_one ./gemini-code-1789186402897.html 'Web Pages'
-move_one ./gemini-code-1789186950167.html 'Web Pages'
-move_one ./gemini-code-1789187206261.html 'Web Pages'
-move_one ./gemini-code-1789187836936.html 'Web Pages'
-move_one ./gemini-code-1789187948106.html 'Web Pages'
-move_one ./gemini-code-1789188314052.html 'Web Pages'
-move_one ./gemini-code-1789188727224.html 'Web Pages'
-move_one ./gemini-code-1789189244939.html 'Web Pages'
-move_one ./gemini-code-1789189459699.html 'Web Pages'
-move_one ./gemini-code-1789189815604.html 'Web Pages'
-move_one ./gemini-code-1789190315390.ts 'Web Pages'
-move_one ./gemini-code-1789190398574.html 'Web Pages'
-move_one ./gemini-code-1789190818961.html 'Web Pages'
-move_one ./gemini-code-1789190931126.html 'Web Pages'
-move_one ./gemini-code-1789191133333.html 'Web Pages'
-move_one ./gemini-code-1789191176867.js 'Web Pages'
-move_one ./gemini-code-1789191306238.html 'Web Pages'
-move_one ./gemini-code-1789191439723.html 'Web Pages'
-move_one ./gemini-code-1789191692266.html 'Web Pages'
-move_one ./gemini-code-1789191950517.html 'Web Pages'
-move_one ./gemini-code-1789192240856.html 'Web Pages'
-move_one ./gemini-code-1789192390444.html 'Web Pages'
-move_one ./gemini-code-1789192849570.html 'Web Pages'
-move_one ./gemini-code-1789193526377.html 'Web Pages'
-move_one ./gemini-code-1789193698019.html 'Web Pages'
-move_one ./gemini-code-1789195191227.html 'Web Pages'
-move_one ./gemini-code-1789197186964.js 'Web Pages'
-move_one ./gemini-code-1789197216676.html 'Web Pages'
-move_one ./gemini-code-1789197508013.html 'Web Pages'
-move_one ./gemini-code-1789360371402.html 'Web Pages'
-move_one ./gemini-code-1789360753807.html 'Web Pages'
-move_one ./gemini-code-1789360855075.html 'Web Pages'
-move_one ./gemini-code-1789361078323.html 'Web Pages'
-move_one ./gemini-code-1789361138778.html 'Web Pages'
-move_one ./gemini-code-1789361323644.html 'Web Pages'
-move_one ./gemini-code-1789361635886.html 'Web Pages'
-move_one ./gemini-code-1789362187633.html 'Web Pages'
-move_one ./gemini-code-1789362552500.html 'Web Pages'
-move_one ./gemini-code-1789362902100.html 'Web Pages'
-move_one ./gemini-code-1789363186777.html 'Web Pages'
-move_one ./gemini-code-1789363490007.html 'Web Pages'
-move_one ./gemini-code-1789363870692.html 'Web Pages'
-move_one ./gemini-code-1789364075727.html 'Web Pages'
-move_one ./gemini-code-1789364228303.html 'Web Pages'
-move_one ./gemini-code-1789364535282.js 'Web Pages'
-move_one ./gemini-code-1789364745572.html 'Web Pages'
-move_one ./gerudoku-1-16-x-v1-2.zip Installers
+move_one ./gemini-code-1789185162035.css Documents
+move_one ./gemini-code-1789185190245.css Documents
+move_one ./gemini-code-1789190315390.ts Documents
+move_one ./gemini-code-1789191176867.js Documents
+move_one ./gemini-code-1789197186964.js Documents
+move_one ./gemini-code-1789364535282.js Documents
+move_one ./gerudoku-1-16-x-v1-2.zip Archives
 move_one ./gtkizer97@gmail.com.ical.zip Documents
-move_one ./hjk.htm 'Web Pages'
-move_one './lo-fi drum kit.zip' Installers
 move_one ./maudioplugins_12_03_setupmac.zip Installers
 move_one ./maudioplugins_14_16_setupmac.zip Installers
-move_one ./mcedit2-macosx64-2.0.0-beta11.zip Installers
+move_one ./mcedit2-macosx64-2.0.0-beta11.zip Archives
 move_one ./query.py Documents
-move_one ./rooster_ranges_leaderboard.html 'Web Pages'
 move_one ./rooster_ranges_player_scraper.py Documents
-move_one ./rooster_ranges_stats.html 'Web Pages'
-move_one './rr_leaderboard (10).html' 'Web Pages'
-move_one './rr_leaderboard (2).html' 'Web Pages'
-move_one './rr_leaderboard (3).html' 'Web Pages'
-move_one './rr_leaderboard (4).html' 'Web Pages'
-move_one './rr_leaderboard (5).html' 'Web Pages'
-move_one './rr_leaderboard (6).html' 'Web Pages'
-move_one './rr_leaderboard (7).html' 'Web Pages'
-move_one './rr_leaderboard (8).html' 'Web Pages'
-move_one './rr_leaderboard (9).html' 'Web Pages'
-move_one ./rr_leaderboard.html 'Web Pages'
-move_one ./server.jar Installers
-move_one ./tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html 'Web Pages'
+move_one ./rr_chronicle_2026-06-11.json Documents
+move_one ./rr_chronicle_2026-07-27.json Documents
+move_one ./server.jar Archives
+move_one ./state-park-research-prompts-and-responses.zip Documents
+move_one ./thirty_five_codec.py Documents
 move_one ./tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz Installers
-move_one ./usb_asio.sit Installers
 move_one './videoplayback (1).3gp' Video
 move_one ./videoplayback.3gp Video
-move_one './🗓️ Course Schedule (SS2 8-Week).html.zip' Archives
+move_one './🗓️ Course Schedule (SS2 8-Week).html.zip' Documents
 
 echo ""
 if [ "$GO" -eq 1 ]; then

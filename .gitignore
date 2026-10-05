@@ -3,3 +3,6 @@ __pycache__/
 .env
 .venv/
 API_KEY
+_batch_plan.json
+workspace/_batch_plan.json
+workspace/inbox/_batch.txt

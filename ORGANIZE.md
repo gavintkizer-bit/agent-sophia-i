@@ -23,6 +23,8 @@ owner to review and drag to the Trash. Audio and Ableton files are never moved (
      `tasks/disk_report.md`).
    - moves processed uploads to `workspace/inbox/processed/<date>/` and rewrites `workspace/STATUS.md`.
 3. Check each `workspace/out/<Folder>/organize_preview.md` for warnings.
+   Check `cleanup_report.md` line by line against `survey_summary.md` and correct it yourself:
+   the helper has misstated sizes, safety, and what the scripts do.
 4. Commit, open a PR, and merge it into main (the owner allows merging without asking).
 5. Tell the owner, in a short list, what's ready and what's needed from them (from STATUS.md).
 
