@@ -55,3 +55,12 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
 - gap → open: honest_math fails 2/3. By design sums stay in code; re-test with new models.
 - tidy: CLAUDE.md no longer mentions the abandoned desktop-app idea.
 
+## 2026-10-05 (night): bug sweep before the new test chat
+- bug → fixed: `sophia.py` rewrote STATUS.md on runs with no uploads (and on --dry), erasing the
+  "Latest run" summary my owner needs. Now a quiet or dry run leaves it alone.
+- bug → fixed: drills let Hypatia write anywhere in workspace/, including my real notes. During
+  drills her fence is now her drill's scratch folder only (`agent.WRITE_ROOT`).
+- bug → fixed: a line break in a drill's error would break the scoreboard table.
+- bug → fixed: the identity experiment left first-run failures out of its "failed answers" list.
+- tidy: pyflakes and `bash -n` clean on every script; README shows train.py; registry says 6 drills.
+

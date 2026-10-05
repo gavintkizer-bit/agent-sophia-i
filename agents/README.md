@@ -25,7 +25,7 @@ one drill, and an entry below. Retiring one is yellow level: flag it to my owner
 
 | Agent | Kind | Model | Purpose | Drills | Since |
 |---|---|---|---|---|---|
-| **Hypatia** (`agent.py`) | SDK helper | Haiku 4.5, thinking 2000 | Bulk sorting, drafts, notes → plans | all 4 | 2026-10-05 |
+| **Hypatia** (`agent.py`) | SDK helper | Haiku 4.5, thinking 2000 | Bulk sorting, drafts, notes → plans | all 6 | 2026-10-05 |
 
 ## Candidates (not built yet)
 

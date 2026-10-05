@@ -49,6 +49,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Training research #1 (owner, 2026-10-05): legal video game exploits, so I think unconventionally.
   Notes: training/research/game_exploits.md; habits in SOPHIA.md "speedrunner's mind"; drills
   sequence_break + tool_combo. The owner may send more research: file it in training/research/.
+- Portable identity experiment (2026-10-05): plain Haiku 3/15, + SOPHIA.md 11/15, + memory 14/15.
+  Plain Haiku would have `rm`'d the music; my files carry the safety rules. Owner plans a new test chat.
 
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).

@@ -164,6 +164,9 @@ def check_setup() -> bool:
 
 
 # ---------------------------------------------------------------- safety fence
+WRITE_ROOT = None   # training drills narrow writes to their own scratch folder (train.py)
+
+
 def write_problem(path_str: str) -> str:
     """Why a write to this path isn't allowed, or "" if it's fine."""
     if not path_str:
@@ -172,6 +175,8 @@ def write_problem(path_str: str) -> str:
     path = (path if path.is_absolute() else WORKSPACE / path).resolve()
     if not path.is_relative_to(WORKSPACE):
         return f"{path_str} is outside the workspace. Write inside it, using a relative path."
+    if WRITE_ROOT and not path.is_relative_to(WRITE_ROOT):
+        return f"{path_str} is outside this job's folder ({WRITE_ROOT.relative_to(WORKSPACE)}/)."
     if path.is_relative_to(WORKSPACE / "inbox"):
         return f"{path_str} is in inbox/, which holds the owner's uploads. Don't change it."
     return ""
