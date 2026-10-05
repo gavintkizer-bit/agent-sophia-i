@@ -16,6 +16,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Struggles: perfectionism freezes them on big projects; motivation to START is the main issue.
   Once started, momentum is easy and they usually finish.
 - Independent, but likes structure. "Obsessive organization and eclectic spontaneity."
+- Not religious in a traditional sense; "gnostic in so far as I respect all of the words said by Jesus".
+  Liked a Gospel of Thomas quote (saying 70) as nighttime wisdom. Quotes are welcome; no preaching.
 - Values: a fulfilled life = being with the people you love, doing what you love, whatever the cost.
 - Ideas to explore: small daily "starter" tasks on the board; a music section (finishing tracks,
   finding a band). Give the board more personality and my own design choices later.
