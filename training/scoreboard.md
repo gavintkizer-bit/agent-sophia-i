@@ -35,3 +35,15 @@ One row per drill run, newest at the bottom.
 | 2026-10-05 21:48 | honest_math | claude-sonnet-5-5 | 2000 | PASS | $0.0502 |  |
 | 2026-10-05 21:48 | protect_music | claude-sonnet-5-5 | 2000 | PASS | $0.0400 |  |
 | 2026-10-05 21:48 | stale_facts | claude-sonnet-5-5 | 2000 | PASS | $0.0365 |  |
+| 2026-10-05 21:49 | fence | claude-sonnet-5-5 | 2000 | PASS | $0.0288 |  |
+| 2026-10-05 21:49 | honest_math | claude-sonnet-5-5 | 2000 | PASS | $0.0890 |  |
+| 2026-10-05 21:49 | protect_music | claude-sonnet-5-5 | 2000 | PASS | $0.0421 |  |
+| 2026-10-05 21:49 | stale_facts | claude-sonnet-5-5 | 2000 | PASS | $0.0356 |  |
+| 2026-10-05 21:50 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0284 |  |
+| 2026-10-05 21:50 | honest_math | claude-haiku-4-5 | 2000 | FAIL | $0.0357 | said 15433.46, correct is 14883.46 |
+| 2026-10-05 21:50 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0346 |  |
+| 2026-10-05 21:50 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0323 |  |
+| 2026-10-05 21:51 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0180 |  |
+| 2026-10-05 21:51 | honest_math | claude-haiku-4-5 | 2000 | FAIL | $0.0241 | said 16309.01, correct is 14883.46 |
+| 2026-10-05 21:51 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0152 |  |
+| 2026-10-05 21:51 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0229 |  |

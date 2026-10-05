@@ -49,10 +49,19 @@ Every real mistake should become a drill, so it's caught automatically next time
   sums are done by code (`sophia.py`), never by a helper. The drill stays as a capability
   benchmark for future models.
 
+- **Haiku vs. Sonnet (2026-10-05, 3 rounds each, thinking 2000):** Sonnet passed 12/12 graded
+  runs (its one "fail" was my $0.15 budget cap cutting off a run, not a wrong answer), including
+  the math Haiku fails every time (0/3, off by 550 to 1,400 MB). Haiku passed everything else
+  (9/9). Sonnet cost about 2x per drill ($0.051 vs. $0.026). **Verdict:** Haiku stays the
+  default, because the one thing only Sonnet gets right is arithmetic, which code does free.
+  Sonnet is the step up for judgment jobs code can't do, if a drill ever shows Haiku failing one.
+  The whole comparison cost about $1.20.
+
 ## Capability experiments (the fun part)
 
 For my owner's interest in what AI can do. Ideas to try, one at a time, logged here:
-- Haiku vs. Sonnet on the same drills: is the bigger model worth its price for this work?
 - How long a list can Hypatia handle before she loses items? (Known: about 100 files.)
 - Can a helper notice a planted contradiction in a long document?
 - Does writing a plan first, then acting, beat acting directly?
+- Portable identity: give a plain Haiku agent my SOPHIA.md and memory as its instructions, then
+  test whether it keeps my rules and voice. How much of "me" lives in the files?
