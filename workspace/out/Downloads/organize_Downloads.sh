@@ -90,16 +90,12 @@ move_one './Assignment_7B_Rivers_and_Google_Earth(1).docx' Documents
 move_one './Assignment_7B_Rivers_and_Google_Earth(1).pdf' Documents
 move_one './Ayudame a Creer.mp4' Video
 move_one ./BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG Images
-move_one './BEHRINGER_2902_X64_2.8.40 (1).zip' '_Sophia To Delete/Duplicates'
 move_one './Blended Geologic Time (1).pptx' '_Sophia To Delete/Duplicates'
 move_one './Blended Geologic Time.pptx' Documents
 move_one './Blended Ocean Features.pptx' Documents
 move_one './Blended Rock Deformation and Earthquakes.pptx' Documents
 move_one './Blended Stream Discharge.pptx' Documents
-move_one ./BreakSelectionbySampleMagic_r36457_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Breakbeat patterns.jpg' Images
-move_one ./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
-move_one ./BuildandDrop_r47739_v1.1.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./CHRONOS.md Documents
 move_one './Career Coach Assessment and Research (fillable).pdf' Documents
 move_one './Changing Traditions and Less Superstition - Gavin Kizer (1).pdf' Documents
@@ -107,8 +103,6 @@ move_one './Changing Traditions and Less Superstition - Gavin Kizer.pdf' Documen
 move_one './Character Architecture - The Restrained Monster (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Character Architecture - The Restrained Monster.pdf' Documents
 move_one ./Charlotte_Skyline_2011_-_Ricky_W.jpg Images
-move_one ./ChopandSwing_r47707_v1.1.alp '_Sophia To Delete/Ableton Packs - delete if installed'
-move_one ./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg '_Sophia To Delete/Installers'
 move_one ./Cockatrice-Omenpath-2.10.3-macOS13_Intel.dmg '_Sophia To Delete/Installers'
 move_one ./Cockatrice-Rings.of.the.Wild-2.9.0-macOS-11_Big_Sur.dmg '_Sophia To Delete/Installers'
@@ -117,16 +111,12 @@ move_one './Compare and contrast rough draft.pdf' Documents
 move_one './Completed Copy of Tenant Application 2015 NEW.docx.pdf' Documents
 move_one './Completed Tenant Application 2015 NEW.docx (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Completed Tenant Application 2015 NEW.docx.pdf' Documents
-move_one './DC1A3 2.dmg' '_Sophia To Delete/Duplicates'
-move_one ./DC1A3.dmg '_Sophia To Delete/Installers'
 move_one './DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4' Video
 move_one './Debate Research (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Debate Research.pdf' Documents
-move_one ./DesignerDrums_r32877_v9.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./DespicableG50842_122644193.pdf Documents
 move_one ./Discord.dmg '_Sophia To Delete/Installers'
 move_one './Dogs of Courage.pdf' Documents
-move_one ./DriveandGlow_r49040_v1.2.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Drum machine patterns 260.pdf' Documents
 move_one ./ER6NRvoUwAA855k.jpeg Images
 move_one ./EpicInstaller-15.17.1.dmg '_Sophia To Delete/Installers'
@@ -197,7 +187,6 @@ move_one './Getti T Shirt _3 Chase Christmas Present (1).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present (2).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present (3).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present.jpg' Images
-move_one ./GratisHitsbyMaxforCats_r33796_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Harold Vick-Wild Is The Wind.mp4' Video
 move_one './Human Odyssey answers  (1).pages' '_Sophia To Delete/Duplicates'
 move_one './Human Odyssey answers .pages' Documents
@@ -210,8 +199,6 @@ move_one ./IMG_2004.jpg Images
 move_one ./IMG_2008.jpg Images
 move_one ./IMG_2009.jpg Images
 move_one ./IMG_20260611_022605.heic Images
-move_one './INSTRUMENT-installer (1).pkg' '_Sophia To Delete/Duplicates'
-move_one ./INSTRUMENT-installer.pkg '_Sophia To Delete/Installers'
 move_one ./Image-1-Ossabaw-Map-scaled.jpg Images
 move_one './Internet Assignment (1).pdf' Documents
 move_one './Internet Assignment.docx' Documents
@@ -222,11 +209,7 @@ move_one './J.O.B. Orchestra-Govinda.mp4' Video
 move_one './Jackdaw _ Assassin'"'"'s Creed Wiki _ FANDOM powered by Wikia.htm' 'Web Pages'
 move_one './Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4' Video
 move_one './JoJo out of context.mp4' Video
-move_one './KJSawkaMadBeatz_r32873_v9.0 (1).alp' '_Sophia To Delete/Duplicates'
-move_one ./KJSawkaMadBeatz_r32873_v9.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
-move_one ./KapturebyPlastikmanandLiine_r32873_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./Karta_CN_SouthChinaSea.png Images
-move_one ./KasiobyOliLarkin_r32873_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./Kizer_Gavin_4352959_7_22_2024.pdf Documents
 move_one ./Kizer_Gavin_4352959_8_9_2024.pdf Documents
 move_one './Kung Fu 1972 - 1975  Opening and Closing Theme.mp4' Video
@@ -234,16 +217,12 @@ move_one './Magic Stats 1.1.10 - Player Stats - Per Game.csv' Documents
 move_one './Magic Stats 1.1.10 - Rules.csv' Documents
 move_one ./Main@2x.png Images
 move_one ./Maproom-Central-London-major-features-5.jpg Images
-move_one './Max7PitchandTimeMachines_r43196_v1.0 (1).alp' '_Sophia To Delete/Duplicates'
-move_one './Max7PitchandTimeMachines_r43196_v1.0 (2).alp' '_Sophia To Delete/Duplicates'
-move_one ./Max7PitchandTimeMachines_r43196_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4' Video
 move_one ./Members_12298965.csv Documents
 move_one './Midterm Study Guide.docx' Documents
 move_one './Minecraft (1).dmg' '_Sophia To Delete/Installers'
 move_one './Monster - Chapter 03 - Murder Case.mkv' Video
 move_one './Movie Excel Data.xlsx' Documents
-move_one './Multiply_OSX_1_1_1 2.pkg' '_Sophia To Delete/Installers'
 move_one './Nepotism Vs. Merit Edit Draft.pdf' Documents
 move_one './Nepotism Vs. Merit Final.pdf' Documents
 move_one './No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4' '_Sophia To Delete/Duplicates'
@@ -254,7 +233,6 @@ move_one './ORF Orchestra - Diskretion.mp4' Video
 move_one './PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx' '_Sophia To Delete/Duplicates'
 move_one ./PBSNOVAGreatHumanOdysseyVideoQuestions.docx Documents
 move_one ./Patterns1.jpg Images
-move_one ./PitchDropbyMormo_r25158_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Pocket operations.pdf' Documents
 move_one './Point by Point Outline (1).docx' '_Sophia To Delete/Duplicates'
 move_one './Point by Point Outline (1).pdf' Documents
@@ -269,16 +247,9 @@ move_one './Scientific method.docx' Documents
 move_one ./Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg Images
 move_one './Secretos del saxofon. Técnica de saxofón.mp4' Video
 move_one './Shigeo Sekito - the word II.mp4' Video
-move_one ./Singularities_r49122_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './Smith on Virginia.docx' Documents
-move_one './SolidSounds_r28796_v9.0 (1).alp' '_Sophia To Delete/Duplicates'
-move_one ./SolidSounds_r28796_v9.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
-move_one './Splice (1).dmg' '_Sophia To Delete/Installers'
-move_one ./Splice.dmg '_Sophia To Delete/Installers'
 move_one './Steve Jobss Philosophy.mp4' Video
 move_one './Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf' Documents
-move_one ./StringQuartetbySpitfireAudio_r59561_v1.1.alp '_Sophia To Delete/Ableton Packs - delete if installed'
-move_one ./SynthEssentials_r46620_v1.1.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one ./TXT.rtf Documents
 move_one './Tenant Application 2015 NEW.docx.pdf' Documents
 move_one './Test work (1).jpg' '_Sophia To Delete/Duplicates'
@@ -301,12 +272,10 @@ move_one './Untitled drawing (5).jpg' Images
 move_one './Untitled drawing (6).jpg' Images
 move_one './Untitled drawing.jpg' Images
 move_one './Untitled drawing.png' Images
-move_one './VIBES MASTER.als 2' '_Sophia To Delete/Duplicates'
 move_one './Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf' Documents
 move_one './Van Guard.mp4' Video
 move_one './Virgen Negra (1).mp4' '_Sophia To Delete/Duplicates'
 move_one './Virgen Negra.mp4' Video
-move_one ./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg '_Sophia To Delete/Installers'
 move_one './Wolfgang Lauth Quartett - Moonlight Fantasy.mp4' Video
 move_one './Writing assignment 1 - Gavin Kizer (1).pdf' Documents
 move_one './Writing assignment 1 - Gavin Kizer.pdf' Documents
@@ -346,7 +315,6 @@ move_one './download (3).jpeg' Images
 move_one './download (4).jpeg' Images
 move_one ./download.jpeg Images
 move_one ./drfone_full3361.dmg '_Sophia To Delete/Installers'
-move_one ./e-instrumentsStudioBass_r32591_v1.0.alp '_Sophia To Delete/Ableton Packs - delete if installed'
 move_one './eastern-seaboard-nav-companion (1).html' 'Web Pages'
 move_one './eastern-seaboard-nav-companion (10).html' 'Web Pages'
 move_one './eastern-seaboard-nav-companion (11).html' 'Web Pages'
@@ -515,21 +483,13 @@ move_one ./1.11-Dokucraft-TSC-High.zip Archives
 move_one ./1.14-Dokucraft-TSC-Dark.zip Archives
 move_one ./3173-super-mario-bros-3.ggs Archives
 move_one ./ASIO4ALL_2_13_English.exe Installers
-move_one ./AllGVSTMacUBeta.zip Archives
 move_one './AlluringBliss 1.16 v1.2.0.00.zip' Archives
 move_one './Andorhal HD.zip' Archives
-move_one ./BEHRINGER_2902_WIN32_2.8.17.zip Installers
-move_one ./BEHRINGER_2902_X64_2.8.40.zip Installers
 move_one ./Beyond+the+Lands.zip Archives
 move_one ./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar Archives
-move_one ./Boogex_Mac.zip Installers
-move_one ./DC1A3-mac-installer.zip Installers
-move_one ./DeltaModulatorOSX.zip Installers
 move_one ./Hearthstone-Setup.zip Installers
 move_one ./IMG_1049.3gp Video
-move_one ./InstallLDBPackage64c-2-1-5-01.zip Installers
 move_one ./JehkobasFantasy_5.zip Archives
-move_one './Kitchen Table - by Yami.zip' Archives
 move_one ./Melek_Endless_Turn.cod Archives
 move_one './ModernArch R50 [1.13 - 1.15] [256x].zip' Archives
 move_one './OperaSetup (1).zip' Installers
@@ -550,7 +510,6 @@ move_one ./TurboTaxReturn.tax2022 Documents/Finance
 move_one ./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx Documents
 move_one './U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement' Documents/Finance
 move_one './Untitled - Copy (2).html.zip' 'Web Pages'
-move_one ./WA_IBG_Vocal_Chain.zip Archives
 move_one './Winthor Medieval v2.6 WIP MC 1.14.zip' Archives
 move_one ./Winthor+Medieval+v4.3+MC+1.16.2.zip Archives
 move_one ./XFINITY.mobileconfig Documents
@@ -565,8 +524,6 @@ move_one ./gemini-code-1789197186964.js Documents
 move_one ./gemini-code-1789364535282.js Documents
 move_one ./gerudoku-1-16-x-v1-2.zip Archives
 move_one ./gtkizer97@gmail.com.ical.zip Documents
-move_one ./maudioplugins_12_03_setupmac.zip Installers
-move_one ./maudioplugins_14_16_setupmac.zip Installers
 move_one ./mcedit2-macosx64-2.0.0-beta11.zip Archives
 move_one ./query.py Documents
 move_one ./rooster_ranges_player_scraper.py Documents

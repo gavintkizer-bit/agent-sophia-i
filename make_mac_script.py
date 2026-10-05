@@ -20,6 +20,7 @@ Safety built into organize.sh:
 """
 import argparse
 import json
+import re
 import pathlib
 import shlex
 import sys
@@ -30,16 +31,38 @@ LISTING = ROOT / "workspace" / "inbox" / "file_listing.txt"
 PLAN = ROOT / "workspace" / "organize_plan.json"
 OUT = ROOT / "workspace" / "out"
 
-# Audio and Ableton files never move: Ableton projects find samples by their location.
-# (.alp Live Packs are installers, not samples, so they are not on this list.)
+# Audio, Ableton, and sample files never move: Ableton projects find samples by their location,
+# and the owner asked that nothing Ableton- or sample-related be moved (2026-10-05).
 PROTECTED = {
     ".wav", ".aif", ".aiff", ".mp3", ".m4a", ".flac", ".ogg", ".caf", ".mid", ".midi",
-    ".asd", ".als", ".adg", ".adv", ".agr", ".alc", ".ams", ".amxd", ".ask", ".rx2",
+    ".asd", ".als", ".adg", ".adv", ".agr", ".alc", ".ams", ".amxd", ".ask", ".rx2", ".alp",
 }
+# Archives whose names sound like music material (sample packs, kits, racks, chains) also stay put.
+ARCHIVES = (".zip", ".rar", ".7z", ".gz", ".tgz", ".tar")
+MUSIC_WORDS = re.compile(
+    r"sample|kit|drum|loop|808|acapella|vocal|stem|preset|ableton|beat|snare|kick|perc|"
+    r"one.?shot|sound|synth|bass|chord|melod|midi|serum|splice|rack|chain|fx|instrument|"
+    r"\blive\b|pack", re.I)
+
+
+# Installers for music gear (plugins, drivers, Splice): old free ones often can't be re-downloaded.
+INSTALLERS = (".dmg", ".pkg", ".mpkg", ".zip")
+MUSIC_GEAR = re.compile(
+    r"vst|plug.?in|splice|instrument|verb|voxengo|klanghelm|dc1a3|multiply|acon|behringer|"
+    r"m.?audio|focusrite|boogex|deltamodulator|izotope|xfer|arturia|native.?instruments|ableton", re.I)
+COPY_MARK = re.compile(r"(?: \d+| \(\d+\))+$")
 
 
 def is_protected(path):
-    return pathlib.PurePosixPath(path).suffix.lower() in PROTECTED
+    name = pathlib.PurePosixPath(path).name
+    # "VIBES MASTER.als 2" is still an Ableton project: ignore copy marks after the extension.
+    bare = COPY_MARK.sub("", name)
+    if pathlib.PurePosixPath(bare).suffix.lower() in PROTECTED:
+        return True
+    low = name.lower()
+    if low.endswith(ARCHIVES) and MUSIC_WORDS.search(name):
+        return True
+    return low.endswith(INSTALLERS) and bool(MUSIC_GEAR.search(name))
 
 
 def fail(msg):
@@ -128,7 +151,7 @@ def main():
     for f in listed:
         if f not in seen and is_protected(f):
             seen.add(f)
-            leave.append({"file": f, "reason": "Audio/Ableton file: never moved"})
+            leave.append({"file": f, "reason": "Audio, Ableton, or sample file: never moved"})
     for f in listed:
         if f not in seen:
             leave.append({"file": f, "reason": "Not mentioned in the plan, so left alone"})

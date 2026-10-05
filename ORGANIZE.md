@@ -3,8 +3,8 @@
 Sophia never touches the Mac. She only sees what the owner uploads (sizes and filenames),
 plans, and produces scripts the OWNER runs. Scripts only MOVE files (dry run by default,
 with an undo script). Anything that looks deletable is moved into `_Sophia To Delete/` for the
-owner to review and drag to the Trash. Audio and Ableton files are never moved (enforced in
-`make_mac_script.py`). The repo is private; filenames are visible only to the owner.
+owner to review and drag to the Trash. Audio, Ableton, sample, and music-gear files are never
+moved (enforced in `make_mac_script.py`, see PROTECTED). The repo is private; filenames are visible only to the owner.
 
 ## On the Mac (owner)
 1. Download `sophia_scan.sh` (lands in Downloads). Run: `bash ~/Downloads/sophia_scan.sh`
