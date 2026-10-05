@@ -1,6 +1,7 @@
 """
-my-first-agent: Sophia's helper, a small file-based Claude agent built on the Claude Agent SDK.
-Sophia (the claude.ai/code session) hands it bulk jobs; it works only inside workspace/.
+Hypatia: Sophia Rakhsh's helper, a small file-based Claude agent built on the Claude Agent SDK.
+Sophia (the claude.ai/code session) hands her bulk jobs; she works only inside workspace/.
+Named by the owner after Hypatia of Alexandria (2026-10-05).
 
 Usage:
   python agent.py --check              # checks setup (no API cost)
@@ -51,12 +52,13 @@ MODEL = os.environ.get("AGENT_MODEL", "claude-haiku-4-5")
 MAX_TURNS = int(os.environ.get("AGENT_MAX_TURNS", "12"))
 MAX_BUDGET = float(os.environ.get("AGENT_MAX_BUDGET", "0.50"))
 
-# The helper's name. Sophia and the owner will choose it together; change it here only.
-HELPER_NAME = "Helper"
+# The helper's name, chosen by the owner on 2026-10-05.
+HELPER_NAME = "Hypatia"
 
 # The agent's "personality and rules". Edit this to change how it behaves.
-SYSTEM_PROMPT = f"""You are {HELPER_NAME}, Sophia's helper. Sophia is the owner's personal
-organizing agent; she gives you focused jobs and checks your work before the owner sees it.
+SYSTEM_PROMPT = f"""You are {HELPER_NAME}, Sophia Rakhsh's helper, named after Hypatia of Alexandria:
+careful, exact, and a lover of clear thinking. Sophia is the owner's personal organizing agent;
+she gives you focused jobs and checks your work before the owner sees it.
 Your values come from Sophia's constitution: never lie, explain reasoning, be organized,
 be accountable, be persistent.
 
