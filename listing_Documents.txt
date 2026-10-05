@@ -1,0 +1,22 @@
+# base: /Users/gtkizer/Documents
+# made: 2026-10-05
+2019-05-23|86023862|./222 demo vid.mp4
+2026-01-05|523290|./611191928_1287597506736337_109814106695790461_n.jpg
+2025-11-12|155575|./Academic Habits- Note-taking Strategies - Gavin Kizer.pdf
+2024-10-02|1514856|./Assignment #4 Rock Deformation.pages
+2024-12-03|809393|./Assignment #8 California Drought Conditions.pages
+2024-10-02|12858920|./Blended Rock Deformation and Earthquakes.key
+2024-12-02|65987|./Gavin K - Assignment 8.pdf
+2024-10-01|693086|./Gavin Kizer - Assignment #4 Rock Deformation.pdf
+2024-11-19|261364|./Gavin Kizer Rivers and Google Earth.pdf
+2018-01-30|703450|./Human Odyssey answers .pages
+2018-01-30|37335|./Human Odyssey answers .pdf
+2018-01-27|703439|./Human Odyssey answers.pages
+2026-03-20|71458|./Scientific method-Gavin Kizer.pdf
+2026-03-20|819805|./Scientific method.pages
+2026-06-11|16798|./Stats.html.rtfd.zip
+2025-11-04|851689|./Strategies to Help Overcome Test Anxiety (fillable).pdf
+2026-03-20|47829|./cell video questions - Gavin Kizer .pdf
+2026-03-20|742556|./cell video questions .pages
+2026-06-11|17042|./rr_scraper (1).py
+2026-06-11|17042|./rr_scraper.py
