@@ -9,11 +9,11 @@
  "leave_alone": [
   {
    "file": "./Vanguard.mp3",
-   "reason": "Audio/Ableton file: never moved"
+   "reason": "Audio, video, Ableton, or sample file: never moved"
   },
   {
    "file": "./Void Speech.wav",
-   "reason": "Audio/Ableton file: never moved"
+   "reason": "Audio, video, Ableton, or sample file: never moved"
   },
   {
    "file": "./file_listing.txt",

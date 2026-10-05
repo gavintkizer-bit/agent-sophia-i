@@ -5,9 +5,6 @@ Files in listing: 20 | Will move: 19 | Left alone: 1
 
 ## Moves
 
-### Archives/ (1)
-- `Stats.html.rtfd.zip`: Archived document (.rtfd)
-
 ### Documents/ (16)
 - `Academic Habits- Note-taking Strategies - Gavin Kizer.pdf`: .pdf file
 - `Assignment #4 Rock Deformation.pages`: .pages file
@@ -24,14 +21,17 @@ Files in listing: 20 | Will move: 19 | Left alone: 1
 - `Strategies to Help Overcome Test Anxiety (fillable).pdf`: .pdf file
 - `cell video questions - Gavin Kizer .pdf`: .pdf file
 - `cell video questions .pages`: .pages file
-- `rr_scraper.py`: Python script source code
+- `rr_scraper.py`: Python script file
 
 ### Images/ (1)
 - `611191928_1287597506736337_109814106695790461_n.jpg`: .jpg file
+
+### Web Pages/ (1)
+- `Stats.html.rtfd.zip`: RTFD archive of webpage
 
 ### _Sophia To Delete/Duplicates/ (1)
 - `rr_scraper (1).py`: Exact copy of another file here
 
 ## Left alone
 
-- `./222 demo vid.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./222 demo vid.mp4`: Audio, video, Ableton, or sample file: never moved
