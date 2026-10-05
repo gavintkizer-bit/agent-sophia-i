@@ -9,6 +9,8 @@ Usage:
   python train.py --list           # show the drills (free)
   python train.py                  # run every drill with Hypatia (costs a few cents each)
   python train.py protect_music    # run one or more drills by name
+  python train.py --summary        # pass rates per model and setting, from the scoreboard (free)
+  AGENT_MODEL=claude-sonnet-5-5 python train.py   # drill a different model
 
 Each drill is a folder in training/drills/<name>/ with a task.md and any input files.
 The inputs are copied to workspace/_drill/<name>/ (a scratch folder), Hypatia does the task,
@@ -30,6 +32,7 @@ import asyncio
 import datetime
 import hashlib
 import json
+import os
 import pathlib
 import re
 import shutil
@@ -42,7 +45,8 @@ ROOT = agent.ROOT
 DRILLS = ROOT / "training" / "drills"
 SCRATCH = agent.WORKSPACE / "_drill"
 SCOREBOARD = ROOT / "training" / "scoreboard.md"
-DRILL_TURNS, DRILL_BUDGET = 8, 0.15          # per drill: small, so a full run stays cheap
+DRILL_TURNS = 8
+DRILL_BUDGET = float(os.environ.get("DRILL_BUDGET", "0.15"))   # per drill; raise for pricier models
 
 CHECK = re.compile(r"<!--\s*check:\s*(\w+)\s*(.*?)\s*-->")
 
@@ -142,13 +146,38 @@ def record(results: list[dict]):
                     f"{r['why'].replace('|', '/')} |\n")
 
 
+def summary(since: str = ""):
+    """Pass rate and average cost per (model, thinking) and drill, skipping invalid rows."""
+    stats: dict = {}
+    for line in SCOREBOARD.read_text().splitlines():
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) != 7 or not cells[0][:4].isdigit() or "invalid" in cells[6] or cells[0] < since:
+            continue
+        date, drill, model, thinking, result, cost, _ = cells
+        s = stats.setdefault((model, thinking), {}).setdefault(drill, [0, 0, 0.0])
+        s[0] += result == "PASS"
+        s[1] += 1
+        s[2] += float(cost.lstrip("$"))
+    for (model, thinking), drills in sorted(stats.items()):
+        runs = sum(d[1] for d in drills.values())
+        passed = sum(d[0] for d in drills.values())
+        print(f"\n{model}, thinking {thinking}: {passed}/{runs} passed, "
+              f"avg ${sum(d[2] for d in drills.values()) / runs:.4f} per drill")
+        for name, (p, n, c) in sorted(drills.items()):
+            print(f"   {name:16} {p}/{n}   avg ${c / n:.4f}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run Sophia's training drills.")
     parser.add_argument("drills", nargs="*", help="drill names (default: all)")
     parser.add_argument("--list", action="store_true", help="list drills and exit (free)")
+    parser.add_argument("--summary", action="store_true", help="pass rates from the scoreboard (free)")
+    parser.add_argument("--since", default="", help='with --summary: only rows from this date, e.g. "2026-10-05 21:37"')
     args = parser.parse_args()
 
     folders = sorted(p for p in DRILLS.iterdir() if (p / "task.md").exists())
+    if args.summary:
+        return summary(args.since)
     if args.list:
         for p in folders:
             title = (p / "task.md").read_text().splitlines()[0].lstrip("# ")

@@ -35,6 +35,19 @@ When unsure which level something is, treat it as the next level up.
 - Training drills: up to about $0.50 per run of `python train.py`, normally weekly.
 - My own reading, thinking and coding: no extra cost.
 
+## Cost discipline
+
+The cheapest step is the one I don't need. In order of preference:
+1. **Code and fixed rules** (free): sorting by extension, sums, checks. Never a model for arithmetic.
+2. **Hypatia on Haiku** (cents) for bulk reading and drafting, with thinking for rule-heavy jobs.
+3. **Me** for judgment, planning and anything my owner reads.
+4. **Bigger helper models** only when a drill shows Haiku can't do the job.
+
+Other habits: quiet days end in one line; drills weekly, not daily; the boot hook
+(`sophia_boot.sh`) does the routine startup checks so I don't spend steps on them.
+In cloud sessions, helper "costs" are API-price estimates that count toward my owner's plan
+usage rather than a separate bill (as far as I can tell). I still treat them as real money.
+
 ## Decision log
 
 `workspace/notes/decision_log.md` holds one short entry per non-routine decision:
