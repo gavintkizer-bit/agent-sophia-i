@@ -25,15 +25,15 @@ the new one, so you never run an outdated script. The script prints its plan dat
 
 ### Latest run: Documents
 
-- 20 files: 19 will move, 1 stay put (audio/Ableton, recent, or unclear).
-- Folders: Documents 16, Images 1, Web Pages 1, _Sophia To Delete/Duplicates 1
+- 20 files: 18 will move, 2 stay put (audio/Ableton, recent, or unclear).
+- Folders: Documents 15, Images 1, Web Pages 1, _Sophia To Delete/Duplicates 1
 
 - **0.0 GB** goes to `_Sophia To Delete/` for you to check, then drag to the Trash.
 
 ### Latest run: Downloads
 
-- 780 files: 0 will move, 780 stay put (audio/Ableton, recent, or unclear).
-- Folders: 
+- 780 files: 1 will move, 779 stay put (audio/Ableton, recent, or unclear).
+- Folders: Installers 1
 
 ## Where your disk space goes
 

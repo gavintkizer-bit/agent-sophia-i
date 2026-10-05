@@ -68,9 +68,11 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   sorted; the rescan shows nothing left there for a script (780 files, all music/video/recent).
 - Owner's answers: games (MTG Arena, Minecraft, Steam, Cockatrice, .cod decks, Battle.net, Paradox) can't run here anymore.
   untitled folder (12.4 GB) = old samples they're afraid to move (Ableton paths); no USB yet, can get one.
-- Board for 2026-10-06: game data + caches (~25 GB, Minecraft worlds kept in ~/Documents/Minecraft Worlds),
-  + Battle.net and Paradox (2 GB). Next: USB copy-and-verify plan; check which .alp packs are installed.
-- Documents (19 moves) and Desktop (1) scripts are ready but not run yet; low priority.
+- Round 2 done the same night (owner did "tomorrow's" board early): games + caches gone, worlds in
+  ~/Documents/Minecraft Worlds. Free space 53.6 GB (from 18.0). Safe non-music cleanup is basically done.
+- Next: owner gets a USB drive (64 GB+) -> copy, verify, then remove: finished Desktop projects, untitled
+  folder (2019 zips first). Open question on board: Civ VI / Cities Skylines / Rome II / DrFone (~1.5 GB).
+- Documents (18 moves) and Desktop (1) scripts are ready but not run yet; low priority.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.

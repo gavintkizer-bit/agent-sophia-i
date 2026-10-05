@@ -1,9 +1,12 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 780 | Will move: 0 | Left alone: 780
+Files in listing: 780 | Will move: 1 | Left alone: 779
 
 ## Moves
+
+### Installers/ (1)
+- `Google Chrome`: App installer folder
 
 ## Left alone
 
@@ -771,19 +774,18 @@ Files in listing: 780 | Will move: 0 | Left alone: 780
 - `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./level.dat`: Data file; purpose unclear
-- `./level.dat_old`: Backup file; purpose unclear
-- `./Sway.tg`: Unknown file extension; purpose unclear
-- `./chronos.json`: JSON config; purpose unclear
-- `./Google Chrome`: Purpose unclear; suspiciously small
-- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file; Ableton-related
-- `./world.zip`: Purpose unclear; likely game data
-- `./TubeAmp_Mac.zip`: Audio plugin; Ableton-related
-- `./session.lock`: Lock file; shouldn't be moved
-- `./MixPres-asio-2.9.87.5.zip`: Audio driver plugin; Ableton-related
-- `./HYSTERESIS.zip`: Purpose unclear from name
+- `./Sway.tg`: Unknown file format
+- `./MixPres-asio-2.9.87.5.zip`: Audio driver/plugin, protected
+- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Audio sample pack, protected
+- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file, unknown purpose
+- `./world.zip`: Possibly game data, uncertain
+- `./TubeAmp_Mac.zip`: Audio plugin, protected
 - `./Dry.zip`: Purpose unclear from name
-- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Audio acapella pack; Ableton-related
-- `./usb_asio.sit`: Audio driver; Ableton-related
-- `./files.zip`: Generic name; purpose unclear
+- `./session.lock`: System lock file, leave alone
+- `./level.dat_old`: Game data backup, unclear purpose
+- `./level.dat`: Game data file, unclear purpose
+- `./files.zip`: Generic name, purpose unclear
 - `./Conner and Zack.zip`: Purpose unclear from name
+- `./usb_asio.sit`: Audio driver, protected
+- `./HYSTERESIS.zip`: Possibly audio or plugin, uncertain
+- `./chronos.json`: Data file, purpose unclear

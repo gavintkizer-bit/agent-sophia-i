@@ -1,37 +1,31 @@
 # Disk cleanup report
-_Sophia, 2026-10-05 (second scan). Hypatia drafted it; I rewrote it because her draft called
-Ableton packs and music installers "safe to trash". Numbers: `survey_summary.md`._
+_Sophia, 2026-10-05 (third scan). Numbers: `survey_summary.md`. Hypatia's draft was set aside:
+it again listed Ableton packs, videos and plugin installers as wins._
 
 ## Free space now
-**26.5 GB free** of 244.8 GB (first scan: 18.0 GB). Tonight freed **8.5 GB**.
+**53.6 GB free** of 244.8 GB. First scan: 18.0 GB. Two rounds freed **35.6 GB**.
 
-## Downloads: done
-780 files left, and every one stays on purpose: audio, video, Ableton files, samples,
-sample-pack zips, music installers, or recent. Nothing more for a script to sort there.
+## Where things stand
+The safe, non-music cleanup is basically done. `~/Library` went from 40.2 GB to 11.2 GB, and
+Downloads has nothing left a script should move. What's left on the drive is mostly your music:
 
-## Next wins (you said the games can't run on this Mac anymore)
+| What | Size | Plan |
+|---|---|---|
+| `~/Music/Ableton` (library, packs) | 48.9 GB | Leave alone |
+| Desktop music projects | 47.2 GB | Finished ones could go to a USB drive (copy, check, then remove) |
+| `~/Downloads/untitled folder` | 12.4 GB | Same USB route, starting with the two 2019 zips (2.3 GB) |
+| Ableton packs in Downloads (22 `.alp`) | 5.7 GB | Only installed ones could go, with your yes |
 
-| What | Size | Safety | How |
-|---|---|---|---|
-| MTG Arena data | 10.3 GB | Safe (game gone) | Board command, to the Trash |
-| Minecraft (keep your worlds) | 6.4 GB | Safe | Worlds (2.0 GB) move to Documents first, then the rest to the Trash |
-| Steam + its games | 5.3 GB | Safe (game gone) | Board command |
-| Cockatrice | 1.1 GB | Safe (you said so) | Board command |
-| technic (Minecraft launcher) | 0.5 GB | Safe | Board command |
-| Google updater + Discord caches | 1.4 GB | Safe (rebuild themselves) | Board command |
-| Battle.net, Paradox games | 2.0 GB | Safe (you said so) | Board command |
-
-About **27 GB** in all: free space would go from 26.5 to about **53 GB**.
+## Small leftovers (about 1.5 GB, optional)
+- Other old games' data: Civilization VI 0.3 GB, Cities: Skylines 0.2 GB, Rome II 0.2 GB (saves).
+- DrFoneApps 0.4 GB (a phone tool).
+- `oracle.app` and `servatrice.app` (0.2 GB): Cockatrice helpers still in Applications.
+- Documents (18 files) and Desktop (1) sorting scripts are ready.
 
 ## Leave alone
-- `~/Music/Ableton` (48.9 GB), Desktop music projects (47.2 GB), Ableton app and settings.
-- Ableton packs in Downloads (`.alp`, ~5.7 GB incl. "(1)" copies) and M-Audio installers:
-  your music rule. Later, I can check which packs are already installed (Studio Bass is).
-- `~/Downloads/untitled folder` (12.4 GB): you're worried Ableton projects point at it, and
-  that's a real risk for unzipped samples. One detail: Ableton can't read inside a `.zip`, so
-  the two 2019 zips (AMMO 1.36 GB, KNIGHT OWLS 0.90 GB) can't be in any project. With a USB
-  drive, the safe route is **copy, check, and only then remove**, starting with those zips.
-- Videos (e.g. `Monster - Chapter 03.mkv`, 0.57 GB): they may be in sets.
+Ableton app, settings and Cycling '74 / MeldaProduction (music plugins), Chrome profile (3.8 GB:
+your bookmarks and logins), videos (they may be in sets), Minecraft Worlds in Documents.
 
 ## Questions
-1. USB drive: when you have one, I'll prepare a copy-and-verify plan for the untitled folder.
+1. Can Civ VI, Cities: Skylines, Rome II run here? And is DrFone still used?
+2. USB drive: when you have one, I'll plan the copy-and-verify round.

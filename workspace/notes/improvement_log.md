@@ -80,3 +80,7 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   points Hypatia at sophia_memory.md.
 - open item: turn the .alp mistake into a drill (report-writing, not file-moving).
 - usability → fixed: board download links say "Control-click > Save Link As…".
+- bug → fixed (same night, 3rd scan): the prompt rule did NOT stop Hypatia; her new report listed
+  .alp packs, videos and M-Audio installers again (5 rows, all caught by check_report). Now sophia.py
+  moves a flagged report to cleanup_report_draft.md and restores the previous one. Lesson confirmed:
+  rules that matter live in code. Open item stays: a report-writing drill.

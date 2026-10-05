@@ -88,18 +88,17 @@
   {
    "file": "./Stats.html.rtfd.zip",
    "to_folder": "Web Pages",
-   "reason": "RTFD archive of webpage"
-  },
-  {
-   "file": "./rr_scraper.py",
-   "to_folder": "Documents",
-   "reason": "Python script file"
+   "reason": "HTML Rich Text Format bundle zipped"
   }
  ],
  "leave_alone": [
   {
    "file": "./222 demo vid.mp4",
    "reason": "Audio, video, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./rr_scraper.py",
+   "reason": "Python script, unclear if project-specific"
   }
  ]
 }
