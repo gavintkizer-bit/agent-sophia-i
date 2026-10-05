@@ -4,6 +4,13 @@ The agent never touches your Mac. It only sees a LIST of filenames you upload,
 plans where each file should go, and produces a script that YOU run on your Mac.
 Your actual files never leave your computer.
 
+## Making the file listing (on the Mac)
+1. Download `make_listing.sh` from the repo (it lands in Downloads).
+2. Open Terminal and run, replacing the folder with the one to organize:
+   `bash ~/Downloads/make_listing.sh ~/Downloads`
+3. It saves `file_listing.txt` to the Desktop. Upload it to the repo as
+   `workspace/inbox/file_listing.txt`. Filenames become visible to anyone who can see the repo.
+
 ## Procedure for a cloud session
 1. Confirm `workspace/inbox/file_listing.txt` exists. If not, stop and tell the owner to upload it.
 2. `pip install -r requirements.txt` and `python agent.py --check`
