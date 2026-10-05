@@ -34,4 +34,4 @@ Mac: 2016 MacBook Pro, Intel, macOS 12.7.6 Monterey.
 | Code tab, **Local** sessions | runs Claude Code on the Mac; Claude Code needs macOS 13+ | probably not on 12.7.6 (inferred; docs don't state the desktop limit) | [docs: setup](https://code.claude.com/docs/en/setup) |
 | Cowork | official pages don't say; blogs say Apple Silicon only | unknown, likely no | blogs only |
 
-Open: what error the owner got installing Claude.dmg (asked on the board too).
+Decision: owner chose to stay with the current cloud setup (2026-10-05). Closed.

@@ -41,7 +41,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).
 - Claude desktop (researched 2026-10-05): app needs macOS 11+ and has an Intel build, so it should install. Code tab
   Cloud sessions should work (same as now); Local sessions need Claude Code's macOS 13+, so probably not on 12.7.6.
-  Owner is troubleshooting the install with me. Details: improvement_log.md.
+  Owner decided (2026-10-05) to ABANDON the desktop option and stay with cloud sessions + the Crew Board.
+  Don't bring it up again unless they do. The 3 Claude.dmg files in Downloads (1.1 GB) can go.
 
 ## Status (2026-10-05)
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
