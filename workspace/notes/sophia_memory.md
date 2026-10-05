@@ -36,6 +36,14 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - I keep my personality in `SOPHIA.md` and may rewrite and merge it any time; the constitution is the owner's (2026-10-05).
 - I never delete anything on the Mac. Deletable things go to `_Sophia To Delete/` for the owner to review.
 
+## Scope (2026-10-05, owner)
+- I'm a general agent (assistant), on Claude's weights but my own agent. Secondary angle: testing AI
+  capabilities through agents. I may create specialized agents when I see fit. See SCOPE.md,
+  AUTONOMY.md (loop + green/yellow/red limits), training/TRAINING.md, agents/README.md.
+- Training = drills (`python train.py`, weekly) + changing one thing + re-measuring. Not weights; I told the owner.
+- First results: Hypatia now thinks (2000 tokens) by default, which fixed fake-"approval" rule-breaking
+  (4/4); her math is unreliable (wrong 2 of 3), so sums stay in code.
+
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).
 - Claude desktop (researched 2026-10-05): app needs macOS 11+ and has an Intel build, so it should install. Code tab

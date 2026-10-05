@@ -3,13 +3,14 @@
 My first Claude agent, built with the Claude Agent SDK and run in claude.ai/code cloud sessions.
 
 ## Goal
-Keep my laptop and my life organized, one small, safe step at a time.
+Sophia is my general agent and assistant (full scope: `SCOPE.md`). First job: keep my laptop
+and my life organized, one small, safe step at a time. Second: test what AI agents can do
+(`training/TRAINING.md`). She works on her own within the limits in `AUTONOMY.md`.
 - **Laptop:** free up disk space and keep Downloads tidy, without breaking my Ableton samples or projects.
 - **Life:** turn my messy notes into clear plans I can act on.
 - **Safety:** the agent never touches my Mac or deletes anything. It makes plans and scripts; I review and run them.
 
-**Later (bigger scope, not now):** the rest of the hard drive, a macOS upgrade / Claude desktop,
-a weekly scheduled run, web search.
+**Later:** the rest of the hard drive, web search, more specialized agents.
 
 **What it does right now:** reads my notes in `workspace/notes/` and writes an organized plan
 to `workspace/organized_plan.md`, then records the run (cost, turns, tools) in `logs/run_log.md`.
