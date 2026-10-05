@@ -1,46 +1,44 @@
-# Organized Plan: Run Claude Agent on Limited Hardware
+# Organized Plan: Set Up Claude Agent on MacBook
 
 ## Goal
-Set up a working Claude agent workflow that runs on a 2016 MacBook Pro (2 cores, 8GB RAM, outdated macOS) so you can test, iterate, and improve it over time.
+Build and run a Claude agent on a 2016 MacBook Pro using cloud infrastructure to work around hardware and OS limitations.
 
 ## Constraints
-- MacBook Pro 2016 cannot install desktop apps or update macOS beyond current version
-- Claude Code locally requires macOS 13+; older Mac doesn't support upgrades
-- Browser will eventually stop updating (Chrome already has; can use Firefox or Edge)
-- Limited hardware and storage space
+- MacBook Pro 13" (2016): 2 cores, 8GB RAM, cannot run desktop apps or update to macOS 13+
+- Chrome stops updating on old macOS; must use Firefox or Edge
+- Local Claude Code setup requires macOS 13+ (not available on this machine)
 
 ## Plan
 
-### Path A: Browser-Only (No Code Locally)
-**What**: Use Claude.ai Projects + Cowork entirely in the browser; scheduled tasks run in Anthropic's cloud.
-- **Requires**: Claude.ai account + browser; no setup on Mac
-- **Cost**: Depends on Pro/Enterprise plan
-- **Next actions**:
-  1. Create a new project in Claude.ai
-  2. Set up scheduled tasks in Cowork
-  3. Test one simple automation to verify cloud execution
+### Path A: Browser-Only (No Code)
+Claude.ai projects + Cowork in the browser, with scheduled tasks running in the cloud.
+- **Cost/Requirements**: Free tier available; minimal setup
+- **Next steps**: 
+  1. Create a Claude.ai project in the browser
+  2. Enable Cowork for collaboration features
+  3. Test scheduling a simple task in the cloud
 
-### Path B: Cloud-Based Agent (RECOMMENDED)
-**What**: GitHub repo + Claude.ai/code cloud session + Claude Agent SDK agent in Python.
-- **Requires**: GitHub repo + API key (separate "pay as you go" billing) + network access to api.anthropic.com
-- **Cost**: Per-token pricing; Haiku is cheapest model for testing
-- **Next actions**:
-  1. Run `python agent.py --check` to verify API setup and network access
-  2. Confirm AGENT_API_KEY is set in cloud environment variables
-  3. Run first task and log results; plan one improvement for next run
+### Path B: Recommended — Cloud Agent (Selected)
+GitHub repo + Claude.ai/code cloud session + Claude Agent SDK. Agent runs in the cloud; you edit code locally.
+- **Cost/Requirements**: Pay-as-you-go API billing (separate from Claude subscription); requires ANTHROPIC_API_KEY
+- **Next steps**:
+  1. Run `pip install -r requirements.txt` and `python agent.py --check` to verify API access
+  2. Confirm cloud network allows `api.anthropic.com` (test via `--check` flag)
+  3. Choose Haiku model for cheapest testing; set up a run log to track costs and improvements
 
-### Path C: Fix the Mac (Long-term Option)
-**What**: Upgrade to macOS Monterey or use OpenCore Legacy Patcher for Ventura+ (unofficial workaround).
-- **Requires**: Check About This Mac; free up disk space; backup system first
-- **Cost**: Time + risk (unofficial patching isn't guaranteed)
-- **Next actions**:
-  1. Check current macOS version and available storage
-  2. Back up entire system
-  3. Attempt official Monterey upgrade; if blocked, research OpenCore Legacy Patcher
+### Path C: Fix the Mac
+Check disk space, upgrade to macOS Monterey, or use OpenCore Legacy Patcher for Ventura+ (unofficial; requires backup).
+- **Cost/Requirements**: Free, but time-intensive; Ventura+ method is experimental and unsupported
+- **Next steps**:
+  1. Check "About This Mac" to see current OS and storage
+  2. Free up disk space if needed
+  3. Attempt Monterey upgrade; if blocked, decide on OpenCore Legacy Patcher risk
 
 ## Open Questions
-- Does the cloud network allow api.anthropic.com by default? (Test with `agent.py --check`)
-- Billing model for separate API key—is it truly separate from Claude.ai subscription?
+- Does the cloud network allow `api.anthropic.com` by default? (Run `agent.py --check` to verify)
+- Which model is cheapest for testing — Haiku?
+- Should the agent have web search capability?
+- Is pay-as-you-go billing separate from Claude subscription?
 
 ## Recommended Next Step
-**Start with Path B**: Run `python agent.py --check` in your cloud session to verify API key and network access, then run your first task and keep a run log to track improvements.
+Proceed with Path B: run `python agent.py --check` in a cloud session to verify API connectivity and confirm API billing setup.
