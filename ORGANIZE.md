@@ -11,8 +11,8 @@ owner to review and drag to the Trash. Audio and Ableton files are never moved (
    It READS ONLY and creates `~/Desktop/sophia_upload/` with `disk_survey.txt` and
    `listing_Downloads.txt`, `listing_Desktop.txt`, `listing_Documents.txt`.
 2. Upload those files on GitHub into `workspace/inbox/` (Add file > Upload files, commit to main).
-3. Later: download a ready `workspace/out/<Folder>/organize.sh`, run `bash organize.sh` (preview),
-   then `bash organize.sh --go`. Check `_Sophia To Delete/` and drag what you agree with to the Trash.
+3. Later: download a ready `workspace/out/<Folder>/organize_<Folder>.sh`, run `bash organize_<Folder>.sh` (preview),
+   then `bash organize_<Folder>.sh --go`. Check `_Sophia To Delete/` and drag what you agree with to the Trash.
 
 ## In a cloud session (Sophia / Claude)
 1. `pip install -r requirements.txt` and `python agent.py --check`
@@ -29,7 +29,7 @@ owner to review and drag to the Trash. Audio and Ableton files are never moved (
 5. Tell the owner, in a short list, what's ready and what's needed from them (from STATUS.md).
 
 ## Rules
-- Never edit `organize.sh` by hand; regenerate it with `sophia.py` / `make_mac_script.py`.
+- Never edit `organize_<Folder>.sh` by hand; regenerate it with `sophia.py` / `make_mac_script.py`.
 - To change folders or rules, edit `workspace/inbox/preferences.md` and the rules in `sophia.py`.
 - Never organize inside ~/Library, ~/Music, Ableton folders, /Applications, or /System.
   Space there is reported in `cleanup_report.md` for the owner to handle by hand.

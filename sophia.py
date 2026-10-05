@@ -49,6 +49,8 @@ EXT_FOLDER = {
 }
 EXT_FOLDER = {e: f for f, exts in EXT_FOLDER.items() for e in exts.split()}
 FINANCE = re.compile(r"invoice|receipt|statement|tax|w-?2\b|1099|bank|pay ?stub|paycheck", re.I)
+# Sophia's own scripts and undo files never move, or the owner's commands would stop working.
+OWN_SCRIPT = re.compile(r"^(organize|undo_organize|sophia_scan|make_listing)[^/]*\.sh$", re.I)
 COPY = re.compile(r"^(?P<stem>.+?)(?: \(\d+\)| \d+)(?P<ext>\.[^./]+)?$")
 
 
@@ -80,6 +82,8 @@ def rule_sort(rows, made):
         copy = COPY.match(name)
         if is_protected(f):
             leave.append({"file": f, "reason": "Audio/Ableton file: never moved"})
+        elif OWN_SCRIPT.match(name):
+            leave.append({"file": f, "reason": "Sophia's own script: stays where your commands expect it"})
         elif r["date"] >= recent:
             leave.append({"file": f, "reason": "Changed in the last 7 days"})
         elif copy and ("./" + copy["stem"] + (copy["ext"] or ""), r["size"]) in by_name:
@@ -151,8 +155,8 @@ def process_listing(path, dry):
     plan_path.write_text(json.dumps(plan, indent=1, ensure_ascii=False))
     out = OUT / name
     subprocess.run([sys.executable, str(ROOT / "make_mac_script.py"), "--listing", str(path),
-                    "--plan", str(plan_path), "--out", str(out)], cwd=ROOT, check=True,
-                   stdout=subprocess.DEVNULL)
+                    "--plan", str(plan_path), "--out", str(out), "--name", f"organize_{name}.sh",
+                    "--made", made or ""], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
     counts = Counter(m["to_folder"] for m in plan["moves"] if not is_protected(m["file"]))
     review = {k: v for k, v in counts.items() if k.startswith(TO_DELETE)}
     review_bytes = sum(r["size"] for r in rows for m in plan["moves"]
@@ -216,14 +220,16 @@ def summarize_survey(path):
 def write_status(results, survey_done):
     lines = ["# Sophia status", "", f"_Updated {datetime.date.today().isoformat()}_", "",
              "## Ready for you to run on your Mac", ""]
-    scripts = sorted(p.parent.name for p in OUT.glob("*/organize.sh"))
+    scripts = sorted(p.parent.name for p in OUT.glob("*/organize_*.sh"))
     if scripts:
         lines += ["Download, then in Terminal run the preview first, then `--go`:", ""]
         for s in scripts:
-            url = f"https://github.com/gavintkizer-bit/agent-sophia-i/raw/main/workspace/out/{s}/organize.sh"
-            lines.append(f"- **{s}**: [organize.sh]({url}) (preview: `workspace/out/{s}/organize_preview.md`)")
-        lines += ["", "```", "bash ~/Downloads/organize.sh        # preview, changes nothing",
-                  "bash ~/Downloads/organize.sh --go   # moves files (an undo script is saved)", "```", ""]
+            url = f"https://github.com/gavintkizer-bit/agent-sophia-i/raw/main/workspace/out/{s}/organize_{s}.sh"
+            lines.append(f"- **{s}**: [organize_{s}.sh]({url}) (preview: `workspace/out/{s}/organize_preview.md`)")
+        lines += ["", "```", "bash ~/Downloads/organize_Downloads.sh        # preview, changes nothing",
+                  "bash ~/Downloads/organize_Downloads.sh --go   # moves files (an undo script is saved)",
+                  "```", "", "If your Mac saved it as `organize_Downloads (1).sh`, delete the old one and rename",
+                  "the new one, so you never run an outdated script. The script prints its plan date first.", ""]
     else:
         lines += ["- Nothing yet.", ""]
     for r in results:
