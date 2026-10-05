@@ -66,10 +66,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner frequently puts VIDEOS in Ableton sets: video files never move either (2026-10-05).
 - Night 1 done (2026-10-05): owner ran every board step. Free space 18.0 -> 26.5 GB (+8.5). Downloads
   sorted; the rescan shows nothing left there for a script (780 files, all music/video/recent).
-- Owner's answers: games (MTG Arena, Minecraft, Steam, Cockatrice, .cod decks) can't run here anymore.
+- Owner's answers: games (MTG Arena, Minecraft, Steam, Cockatrice, .cod decks, Battle.net, Paradox) can't run here anymore.
   untitled folder (12.4 GB) = old samples they're afraid to move (Ableton paths); no USB yet, can get one.
 - Board for 2026-10-06: game data + caches (~25 GB, Minecraft worlds kept in ~/Documents/Minecraft Worlds),
-  question on Battle.net + Paradox (2 GB). Next: USB copy-and-verify plan; check which .alp packs are installed.
+  + Battle.net and Paradox (2 GB). Next: USB copy-and-verify plan; check which .alp packs are installed.
 - Documents (19 moves) and Desktop (1) scripts are ready but not run yet; low priority.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an

@@ -66,8 +66,8 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
 
   <section>
     <h2>Free space on your Mac</h2>
-    <p class="note">From your two scans. The last bar is a forecast if tomorrow's board goes as planned (games and caches, about 25 GB).</p>
-    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 GB tonight, about 51 GB forecast after tomorrow"></svg></div>
+    <p class="note">From your two scans. The last bar is a forecast if tomorrow's board goes as planned (games and caches, about 27 GB).</p>
+    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 GB tonight, about 53 GB forecast after tomorrow"></svg></div>
     <div class="legend"><span><i class="key" style="background:var(--lapis)"></i>Measured</span><span><i class="key" style="background:var(--saffron-soft);border:2px dashed var(--saffron)"></i>Forecast</span></div>
   </section>
 
@@ -95,7 +95,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   <section>
     <h2>Next steps</h2>
     <ol>
-      <li><b>Tomorrow's board:</b> game data and caches, about 25 GB. Your Minecraft worlds are kept.</li>
+      <li><b>Tomorrow's board:</b> game data and caches, about 27 GB. Your Minecraft worlds are kept.</li>
       <li><b>USB drive:</b> when you have one, I'll plan a copy-and-check for the untitled folder (12.4 GB). Nothing gets removed until the copy is verified.</li>
       <li><b>Ableton packs:</b> check which of the 22 packs are already installed. Only those copies could go, and only with your yes.</li>
     </ol>
@@ -134,7 +134,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   const bars = [
     { label: "First scan", v: 18.0, note: "First scan, before any cleanup: 18.0 GB free" },
     { label: "Tonight", v: 26.5, note: "Tonight after the cleanup: 26.5 GB free (+8.5 GB)" },
-    { label: "After tomorrow", v: 51, forecast: true, note: "Forecast after tomorrow's board: about 51 GB free" },
+    { label: "After tomorrow", v: 53, forecast: true, note: "Forecast after tomorrow's board: about 53 GB free" },
   ];
   const top = 20, base = 200, max = 60, h = (v) => (base - top) * v / max;
   [0, 20, 40, 60].forEach((t) => {
