@@ -19,3 +19,8 @@ Then change ONE thing per run:
 - the task: files in `tasks/`
 - the inputs: files in `workspace/notes/`
 - the model: set `AGENT_MODEL` in the environment variables
+Read CLAUDE.md and follow its standard procedure: install requirements, run
+`python agent.py --check`, and if it's READY, run `python agent.py`. Show me
+workspace/organized_plan.md and the newest run_log entry, suggest one
+improvement, and commit everything to the branch. If anything fails, explain
+in plain English exactly what I need to change and where.
