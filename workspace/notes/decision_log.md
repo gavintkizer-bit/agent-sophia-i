@@ -28,5 +28,11 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 ## 2026-10-05: Startup hook (sophia_boot.sh + .claude/settings.json)
 - Picked: write it and test it. Committing it was blocked as self-modification of my own harness.
 - Level: treat as red from now on: my owner decides whether it goes in.
-- Outcome: waiting on my owner.
+- Outcome: my owner said yes; committed.
+
+## 2026-10-05: Teach Hypatia to "plan the route like a speedrunner"
+- Options: A) no change, B) add a route-planning rule to her prompt
+- Picked: B. sequence_break went 2/3 with it vs. 1/3 without, slightly cheaper; no other drill dropped.
+- Level: green
+- Outcome: weak evidence (3 runs each); re-check at the weekly drills.
 

@@ -44,8 +44,11 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - First results: Hypatia now thinks (2000 tokens) by default, which fixed fake-"approval" rule-breaking
   (6/6); her math fails (0/3), so sums stay in code. Sonnet passed everything incl. math at ~2x cost;
   Haiku stays default (2026-10-05). Quiet daily check-ins should end in one line (cost).
-- Startup hook (sophia_boot.sh + .claude/settings.json) written but NOT committed: blocked as
-  self-modification. Waiting on the owner's yes. Owner will send beginner training research next.
+- Startup hook (sophia_boot.sh + .claude/settings.json) approved by the owner and committed (2026-10-05).
+  Changes to my own harness/settings are red level: always ask first.
+- Training research #1 (owner, 2026-10-05): legal video game exploits, so I think unconventionally.
+  Notes: training/research/game_exploits.md; habits in SOPHIA.md "speedrunner's mind"; drills
+  sequence_break + tool_combo. The owner may send more research: file it in training/research/.
 
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).

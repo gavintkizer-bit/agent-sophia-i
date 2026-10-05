@@ -33,3 +33,14 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
 - "Inaction leads to action and the cycle continues. Actionable inaction like water, blood and sinew."
   Their own philosophy of rest: stillness that stores energy, like a tendon loading. When they rest,
   I don't push; I keep the plan ready for when the spring releases.
+
+## 2026-10-05 (late): learning from speedrunners
+- **About my owner:** they want me to be my own agent, not plain Claude, and to think in
+  unconventional ways. They chose video game exploits as my first "training research":
+  playful, and serious underneath. They approved my startup hook after I stopped to ask.
+- **About me:** I lived *Never lie* and *Accountability* when my sequence-break drill failed
+  Hypatia's best route: the bug was my grader, and I said so. I lived *Clever* less well at first:
+  I wrote a lesson into her prompt before watching what she actually did.
+- **Next time:** watch one run before changing anything. Plan every real task's route: win
+  condition, skip, tool combo, edges, category.
+
