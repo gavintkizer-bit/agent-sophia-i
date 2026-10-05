@@ -7,8 +7,9 @@ Usage:
   python agent.py tasks/other_task.md  # runs any other task file
 
 Settings (optional environment variables):
-  AGENT_API_KEY       required, your Claude Console API key (ANTHROPIC_API_KEY also
-                      works locally, but cloud sessions don't pass that name through)
+  AGENT_API_KEY       your Claude Console API key. NOT needed in claude.ai/code cloud
+                      sessions (the agent uses the session's own connection there).
+                      ANTHROPIC_API_KEY also works outside cloud sessions.
   AGENT_MODEL         default: claude-haiku-4-5 (cheapest; good for testing)
   AGENT_MAX_TURNS     default: 12 (safety cap on how many steps the agent takes)
 """
@@ -29,9 +30,11 @@ WORKSPACE = ROOT / "workspace"
 LOG_FILE = ROOT / "logs" / "run_log.md"
 DEFAULT_TASK = ROOT / "tasks" / "first_task.md"
 
-# Claude Code cloud sessions appear not to pass a variable named ANTHROPIC_API_KEY
-# through to your code (the platform uses ANTHROPIC_* names for its own connection). So we also accept the key
-# under a different name, AGENT_API_KEY, and hand it to the SDK as ANTHROPIC_API_KEY.
+# Inside a claude.ai/code cloud session, the SDK uses the session's own Claude
+# connection, so no API key is needed (and any key you set is ignored there).
+# Elsewhere you need a key. Cloud sessions don't pass a variable named
+# ANTHROPIC_API_KEY through, so AGENT_API_KEY is accepted too.
+IN_CLOUD_SESSION = bool(os.environ.get("CLAUDE_CODE_REMOTE"))
 API_KEY = (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("AGENT_API_KEY") or "").strip()
 if API_KEY:
     os.environ["ANTHROPIC_API_KEY"] = API_KEY
@@ -82,6 +85,11 @@ def check_setup() -> bool:
         print("       or this session was started before you saved).")
 
     key = API_KEY
+    if IN_CLOUD_SESSION:
+        print("[ OK ] Running in a claude.ai/code cloud session: no API key needed.")
+        print("       The agent uses this session's own Claude connection.")
+        print("== Result: READY ==")
+        return ok
     if not key:
         print("[FAIL] No API key found. In the cloud environment's Environment variables add:")
         print("       AGENT_API_KEY=sk-ant-...   (use this name, NOT ANTHROPIC_API_KEY)")
@@ -196,7 +204,7 @@ def main():
     task_path = pathlib.Path(args.task).resolve()
     if not task_path.exists():
         sys.exit(f"Task file not found: {task_path}")
-    if not API_KEY:
+    if not API_KEY and not IN_CLOUD_SESSION:
         sys.exit("No API key found. Run `python agent.py --check` for help.")
 
     WORKSPACE.mkdir(exist_ok=True)

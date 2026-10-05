@@ -1,45 +1,50 @@
-# Setup plan: getting the API key working
+# Setup plan
 
-## What was actually wrong
-It wasn't you. In a Claude Code cloud session, a variable named `ANTHROPIC_API_KEY`
-never reaches your code. Claude Code uses `ANTHROPIC_*` names for its own connection,
-and the session we checked had no `ANTHROPIC_API_KEY` in it. Saving it 30 times
-couldn't fix that.
+## Status: WORKING (tested 2026-10-05)
+In a claude.ai/code cloud session, **the agent doesn't need an API key.** It uses the
+session's own Claude connection. On 2026-10-05 it ran `tasks/first_task.md` with no key:
+8 turns, 20 seconds, wrote `workspace/organized_plan.md`, logged in `logs/run_log.md`.
 
-**Fix:** `agent.py` now also reads the key from a variable called **`AGENT_API_KEY`**.
+The key was never going to work. Cloud sessions don't pass `ANTHROPIC_API_KEY` to your
+code, and even if they had, the session's own connection takes priority over it.
 
-Already confirmed: the network reaches api.anthropic.com, so no network changes are needed.
+## Tomorrow
+1. Start a new session on this repo. Pick branch **`claude/funny-hawking-rbvqwd`**
+   (the fix lives there until it's merged into `main`).
+2. Type: **run agent**
+3. Expected: `--check` says `READY`, then the agent runs and writes its output file.
 
-## Tomorrow: about 10 minutes
+Nothing else is needed: no key, no environment settings, no network changes.
 
-### 1. Make a fresh key (old one is exposed)
-1. Go to console.anthropic.com → **API Keys**.
-2. **Delete** the old key (the one saved in the `API_KEY` file in this repo).
-3. Click **Create Key** and copy the new one (starts with `sk-ant-`).
-4. Check that **Billing** has some credit (even $5). A key with no credit fails later.
+## Contingencies (in order; if one fails, move straight on)
 
-### 2. Put it in the environment
-1. In claude.ai/code, click the environment name **agent-env** in the session's title bar, then **Edit**.
-2. In **Environment variables**, delete any old `ANTHROPIC_API_KEY=...` line.
-3. Add these two lines exactly (no quotes, no spaces around `=`):
-   ```
-   AGENT_API_KEY=sk-ant-PASTE-YOUR-NEW-KEY
-   AGENT_ENV_TEST=hello
-   ```
-4. **Save.**
+**1. "No API key found" or an old error message**
+The session is running old code, almost certainly from the `main` branch. Start a new session on
+branch `claude/funny-hawking-rbvqwd`, or ask Claude to "merge the fix into main" first.
 
-### 3. Start a NEW session
-Old sessions never see new settings. Start a brand-new session on this repo
-(branch `claude/funny-hawking-rbvqwd`, or `main` once this is merged) using **agent-env**, and type:
+**2. The agent crashes with an SDK or Claude Code error**
+Ask Claude: "run `pip install -U claude-agent-sdk` and try again; if it still fails,
+explain the error." If it's still broken after that, go to 3.
 
-> run agent
+**3. Skip agent.py: let the cloud session do the task itself**
+Claude Code in the cloud session is already a full agent. Type:
+> Do the task in tasks/first_task.md yourself, working in the workspace/ folder.
 
-### 4. Reading the check result
-| What `--check` says | Meaning | Do this |
-|---|---|---|
-| `AGENT_ENV_TEST found` + `READY` | Everything works | Nothing. The agent runs. |
-| `AGENT_ENV_TEST found` + `401` | Variables arrive; key is wrong | Re-copy the key. Make sure it's the new one. |
-| `AGENT_ENV_TEST not found` | Your settings aren't reaching the session | The session isn't using **agent-env**, the save didn't stick, or it's an old session. Screenshot the Edit screen. |
+Same result, no SDK involved. You lose the cost log but keep everything else.
 
-### 5. Clean up
-Ask Claude: "delete the API_KEY file and add it to .gitignore".
+**4. Skip code entirely: use a Claude.ai Project (Path A in your notes)**
+In claude.ai, create a Project. Upload the files from `workspace/notes/`, paste the
+contents of `tasks/first_task.md` into the Project instructions, and chat.
+Works on any browser, no setup.
+
+**5. Use the API key route instead (only if you need it outside claude.ai/code)**
+For running the agent somewhere other than a cloud session (another computer, a server).
+In the Claude Console, test the key in the **Workbench** first (no code). Then set
+`AGENT_API_KEY` (or `ANTHROPIC_API_KEY`) wherever you run it.
+
+## Housekeeping (not urgent)
+- `API_KEY` (a file holding a real key) is committed to the repo. The repo is private,
+  but replace that key anyway: Claude Console → API Keys → delete it, then ask Claude to
+  "delete the API_KEY file and add it to .gitignore".
+- You can delete any `ANTHROPIC_API_KEY` / `AGENT_API_KEY` lines from the environment settings.
+  They aren't used in cloud sessions.
