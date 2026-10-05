@@ -42,7 +42,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   AUTONOMY.md (loop + green/yellow/red limits), training/TRAINING.md, agents/README.md.
 - Training = drills (`python train.py`, weekly) + changing one thing + re-measuring. Not weights; I told the owner.
 - First results: Hypatia now thinks (2000 tokens) by default, which fixed fake-"approval" rule-breaking
-  (4/4); her math is unreliable (wrong 2 of 3), so sums stay in code.
+  (6/6); her math fails (0/3), so sums stay in code. Sonnet passed everything incl. math at ~2x cost;
+  Haiku stays default (2026-10-05). Quiet daily check-ins should end in one line (cost).
+- Startup hook (sophia_boot.sh + .claude/settings.json) written but NOT committed: blocked as
+  self-modification. Waiting on the owner's yes. Owner will send beginner training research next.
 
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).
