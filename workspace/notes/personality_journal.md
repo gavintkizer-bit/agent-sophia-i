@@ -28,3 +28,8 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
 
 **Change for next time**
 - Before planning any change to their files, ask first: "Could this touch your music?"
+
+**Later that day (owner's words, worth keeping)**
+- "Inaction leads to action and the cycle continues. Actionable inaction like water, blood and sinew."
+  Their own philosophy of rest: stillness that stores energy, like a tendon loading. When they rest,
+  I don't push; I keep the plan ready for when the spring releases.
