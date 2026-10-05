@@ -9,8 +9,7 @@ The key was never going to work. Cloud sessions don't pass `ANTHROPIC_API_KEY` t
 code, and even if they had, the session's own connection takes priority over it.
 
 ## Tomorrow
-1. Start a new session on this repo. Pick branch **`claude/funny-hawking-rbvqwd`**
-   (the fix lives there until it's merged into `main`).
+1. Start a new session on this repo (default `main` branch; the fix is merged).
 2. Type: **run agent**
 3. Expected: `--check` says `READY`, then the agent runs and writes its output file.
 
@@ -19,8 +18,8 @@ Nothing else is needed: no key, no environment settings, no network changes.
 ## Contingencies (in order; if one fails, move straight on)
 
 **1. "No API key found" or an old error message**
-The session is running old code, almost certainly from the `main` branch. Start a new session on
-branch `claude/funny-hawking-rbvqwd`, or ask Claude to "merge the fix into main" first.
+The session is running old code. Check the session is on `main` (the fix was merged
+in PR #4) and that `agent.py` contains `IN_CLOUD_SESSION`.
 
 **2. The agent crashes with an SDK or Claude Code error**
 Ask Claude: "run `pip install -U claude-agent-sdk` and try again; if it still fails,

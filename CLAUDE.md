@@ -14,6 +14,11 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
 - `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
+## Current goal
+Get the agent up and running reliably. It first ran successfully on 2026-10-05 with no API key
+(cloud sessions use their own connection). If anything fails, follow the contingencies in
+SETUP_PLAN.md in order and move on quickly; the owner doesn't want to troubleshoot in circles.
+
 ## Standard procedure for every session
 1. `pip install -r requirements.txt`
 2. `python agent.py --check`. If it reports NOT READY, stop and explain the exact fix (see Troubleshooting).
