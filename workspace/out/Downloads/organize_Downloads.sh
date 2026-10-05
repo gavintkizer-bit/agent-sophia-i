@@ -24,6 +24,7 @@ move_one() {
   fi
 }
 
+move_one './Google Chrome' Installers
 
 echo ""
 if [ "$GO" -eq 1 ]; then

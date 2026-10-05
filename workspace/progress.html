@@ -58,7 +58,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   </header>
 
   <div class="tiles">
-    <div class="tile"><b>+8.5 GB</b><span>freed tonight</span></div>
+    <div class="tile"><b>+35.6 GB</b><span>freed tonight</span></div>
     <div class="tile"><b>442</b><span>Downloads files sorted</span></div>
     <div class="tile"><b>7 of 7</b><span>Hypatia's drills passing</span></div>
     <div class="tile"><b>$4.43</b><span>Hypatia's reported cost today</span></div>
@@ -66,10 +66,9 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
 
   <section>
     <h2>Free space on your Mac</h2>
-    <p class="note">From your two scans. The last bar is a forecast if tomorrow's board goes as planned (games and caches, about 27 GB).</p>
-    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 GB tonight, about 53 GB forecast after tomorrow"></svg></div>
-    <div class="legend"><span><i class="key" style="background:var(--lapis)"></i>Measured</span><span><i class="key" style="background:var(--saffron-soft);border:2px dashed var(--saffron)"></i>Forecast</span></div>
-  </section>
+    <p class="note">From your three scans: before cleanup, after round 1 (Downloads, installers, caches), and after round 2 (old games).</p>
+    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 GB after round 1, 53.6 GB after round 2"></svg></div>
+      </section>
 
   <section>
     <h2>How training changed Hypatia</h2>
@@ -89,13 +88,13 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
 
   <section>
     <h2>Caught tonight</h2>
-    <p>Hypatia's new disk report called your Ableton packs (5.7 GB of <code>.alp</code> files) "safe to trash". I rewrote the report, added the rule to her instructions, and added a code check that flags any music item in her suggestions from now on.</p>
+    <p>Hypatia's disk report twice called your Ableton packs (5.7 GB of <code>.alp</code> files) "safe to trash". The rule in her instructions didn't stop her the second time; the code check did. Now any flagged draft is set aside automatically, and you only see a report I've checked.</p>
   </section>
 
   <section>
     <h2>Next steps</h2>
     <ol>
-      <li><b>Tomorrow's board:</b> game data and caches, about 27 GB. Your Minecraft worlds are kept.</li>
+      <li><b>Done tonight:</b> old games and caches cleared; your Minecraft worlds are safe in Documents. The safe, non-music cleanup is basically finished.</li>
       <li><b>USB drive:</b> when you have one, I'll plan a copy-and-check for the untitled folder (12.4 GB). Nothing gets removed until the copy is verified.</li>
       <li><b>Ableton packs:</b> check which of the 22 packs are already installed. Only those copies could go, and only with your yes.</li>
     </ol>
@@ -104,7 +103,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   <section>
     <h2>Goals</h2>
     <ul>
-      <li>Free space: from 18 GB to 50 GB or more, without touching your music.</li>
+      <li>Free space: from 18 GB to 50 GB or more, without touching your music. <b>Reached: 53.6 GB.</b></li>
       <li>Keep Hypatia's drills at 7 of 7, and turn each new mistake into a drill.</li>
       <li>Then the music section on the board: finishing tracks, finding a band.</li>
     </ul>
@@ -133,8 +132,8 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   const space = document.getElementById("space");
   const bars = [
     { label: "First scan", v: 18.0, note: "First scan, before any cleanup: 18.0 GB free" },
-    { label: "Tonight", v: 26.5, note: "Tonight after the cleanup: 26.5 GB free (+8.5 GB)" },
-    { label: "After tomorrow", v: 53, forecast: true, note: "Forecast after tomorrow's board: about 53 GB free" },
+    { label: "Round 1", v: 26.5, note: "After round 1: 26.5 GB free (+8.5 GB)" },
+    { label: "Round 2", v: 53.6, note: "After round 2 (games and caches): 53.6 GB free (+27.1 GB)" },
   ];
   const top = 20, base = 200, max = 60, h = (v) => (base - top) * v / max;
   [0, 20, 40, 60].forEach((t) => {

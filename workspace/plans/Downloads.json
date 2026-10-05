@@ -1,5 +1,11 @@
 {
- "moves": [],
+ "moves": [
+  {
+   "file": "./Google Chrome",
+   "to_folder": "Installers",
+   "reason": "App installer folder"
+  }
+ ],
  "leave_alone": [
   {
    "file": "./1000005309 (1).mp4",
@@ -3058,68 +3064,64 @@
    "reason": "Audio, video, Ableton, or sample file: never moved"
   },
   {
-   "file": "./level.dat",
-   "reason": "Data file; purpose unclear"
-  },
-  {
-   "file": "./level.dat_old",
-   "reason": "Backup file; purpose unclear"
-  },
-  {
    "file": "./Sway.tg",
-   "reason": "Unknown file extension; purpose unclear"
-  },
-  {
-   "file": "./chronos.json",
-   "reason": "JSON config; purpose unclear"
-  },
-  {
-   "file": "./Google Chrome",
-   "reason": "Purpose unclear; suspiciously small"
-  },
-  {
-   "file": "./VoiceMail_2024-10-02_21-13-59.amr",
-   "reason": "Audio file; Ableton-related"
-  },
-  {
-   "file": "./world.zip",
-   "reason": "Purpose unclear; likely game data"
-  },
-  {
-   "file": "./TubeAmp_Mac.zip",
-   "reason": "Audio plugin; Ableton-related"
-  },
-  {
-   "file": "./session.lock",
-   "reason": "Lock file; shouldn't be moved"
+   "reason": "Unknown file format"
   },
   {
    "file": "./MixPres-asio-2.9.87.5.zip",
-   "reason": "Audio driver plugin; Ableton-related"
+   "reason": "Audio driver/plugin, protected"
   },
   {
-   "file": "./HYSTERESIS.zip",
-   "reason": "Purpose unclear from name"
+   "file": "./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent",
+   "reason": "Audio sample pack, protected"
+  },
+  {
+   "file": "./VoiceMail_2024-10-02_21-13-59.amr",
+   "reason": "Audio file, unknown purpose"
+  },
+  {
+   "file": "./world.zip",
+   "reason": "Possibly game data, uncertain"
+  },
+  {
+   "file": "./TubeAmp_Mac.zip",
+   "reason": "Audio plugin, protected"
   },
   {
    "file": "./Dry.zip",
    "reason": "Purpose unclear from name"
   },
   {
-   "file": "./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent",
-   "reason": "Audio acapella pack; Ableton-related"
+   "file": "./session.lock",
+   "reason": "System lock file, leave alone"
   },
   {
-   "file": "./usb_asio.sit",
-   "reason": "Audio driver; Ableton-related"
+   "file": "./level.dat_old",
+   "reason": "Game data backup, unclear purpose"
+  },
+  {
+   "file": "./level.dat",
+   "reason": "Game data file, unclear purpose"
   },
   {
    "file": "./files.zip",
-   "reason": "Generic name; purpose unclear"
+   "reason": "Generic name, purpose unclear"
   },
   {
    "file": "./Conner and Zack.zip",
    "reason": "Purpose unclear from name"
+  },
+  {
+   "file": "./usb_asio.sit",
+   "reason": "Audio driver, protected"
+  },
+  {
+   "file": "./HYSTERESIS.zip",
+   "reason": "Possibly audio or plugin, uncertain"
+  },
+  {
+   "file": "./chronos.json",
+   "reason": "Data file, purpose unclear"
   }
  ]
 }

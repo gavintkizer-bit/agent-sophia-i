@@ -282,9 +282,16 @@ def main():
     if survey.exists():
         summarize_survey(survey)
         if not args.dry:
+            report = WS / "cleanup_report.md"
+            previous = report.read_text(encoding="utf-8") if report.exists() else None
             subprocess.run([sys.executable, str(ROOT / "agent.py"), str(ROOT / "tasks" / "disk_report.md")],
                            cwd=ROOT, check=False)
-            check_report(WS / "cleanup_report.md")
+            if check_report(report):
+                # A prompt rule didn't stop her twice (2026-10-05); the owner must never see a flagged draft.
+                shutil.move(str(report), WS / "cleanup_report_draft.md")
+                if previous is not None:
+                    report.write_text(previous, encoding="utf-8")
+                print("== flagged draft kept as workspace/cleanup_report_draft.md; previous report restored")
     if args.dry:
         print("== dry run: workspace/STATUS.md not changed")
         return

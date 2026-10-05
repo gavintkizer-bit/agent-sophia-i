@@ -42,7 +42,6 @@ move_one './cell video questions - Gavin Kizer .pdf' Documents
 move_one './cell video questions .pages' Documents
 move_one './rr_scraper (1).py' '_Sophia To Delete/Duplicates'
 move_one ./Stats.html.rtfd.zip 'Web Pages'
-move_one ./rr_scraper.py Documents
 
 echo ""
 if [ "$GO" -eq 1 ]; then
