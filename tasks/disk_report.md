@@ -25,4 +25,9 @@ I make music in Ableton: my samples, projects, and Ableton's library are importa
 - Never suggest deleting anything inside ~/Library/ except Caches, iOS backups the owner
   confirms are old, or app data for apps already removed. Mark those "Check first".
 - Never suggest touching Ableton files, ~/Music, or anything under /System.
+- Music material is never a "win", wherever it is: Ableton packs (`.alp`, including "(1)" copies),
+  sample folders and sample-pack zips, audio, VIDEO files (the owner puts videos in Ableton sets),
+  and music plugin/driver installers (e.g. maudioplugins). List them under "Leave alone".
+- Read `notes/sophia_memory.md` for decisions already made and questions already answered; don't
+  ask them again.
 - Plain English; I'm new to this.

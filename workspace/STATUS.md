@@ -15,12 +15,25 @@ bash ~/Downloads/organize_Downloads.sh        # preview, changes nothing
 bash ~/Downloads/organize_Downloads.sh --go   # moves files (an undo script is saved)
 ```
 
+If your Mac saved it as `organize_Downloads (1).sh`, delete the old one and rename
+the new one, so you never run an outdated script. The script prints its plan date first.
+
+### Latest run: Desktop
+
+- 4 files: 1 will move, 3 stay put (audio/Ableton, recent, or unclear).
+- Folders: Images 1
+
+### Latest run: Documents
+
+- 20 files: 19 will move, 1 stay put (audio/Ableton, recent, or unclear).
+- Folders: Documents 16, Images 1, Web Pages 1, _Sophia To Delete/Duplicates 1
+
+- **0.0 GB** goes to `_Sophia To Delete/` for you to check, then drag to the Trash.
+
 ### Latest run: Downloads
 
-- 1221 files: 442 will move, 779 stay put (audio, video, Ableton, samples, recent, or unclear).
-- Folders: Archives 21, Documents 149, Documents/Finance 3, Images 110, Installers 11, Web Pages 103, _Sophia To Delete/Duplicates 28, _Sophia To Delete/Installers 17
-
-- **1.4 GB** goes to `_Sophia To Delete/` for you to check, then drag to the Trash.
+- 780 files: 0 will move, 780 stay put (audio/Ableton, recent, or unclear).
+- Folders: 
 
 ## Where your disk space goes
 

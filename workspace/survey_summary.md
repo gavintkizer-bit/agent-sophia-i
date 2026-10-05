@@ -8,15 +8,15 @@
 
 ## Disk
 
-- Size 244.8 GB | Used 226.9 GB | **Free 18.0 GB**
+- Size 244.8 GB | Used 218.4 GB | **Free 26.5 GB**
 
 ## Biggest folders in your home folder
 
-- 180.3 GB  `~`
+- 172.5 GB  `~`
 - 49.5 GB  `~/Music`
 - 48.9 GB  `~/Music/Ableton`
 - 47.2 GB  `~/Desktop`
-- 34.8 GB  `~/Downloads`
+- 32.3 GB  `~/Downloads`
 - 28.0 GB  `~/Desktop/Demos: Beats`
 - 14.2 GB  `~/Desktop/Sand Machine Mix`
 - 12.4 GB  `~/Downloads/untitled folder`
@@ -31,50 +31,50 @@
 - 0.7 GB  `~/Splice`
 - 0.6 GB  `~/Splice/sounds`
 - 0.6 GB  `~/Music/Music`
+- 0.5 GB  `~/Downloads/Archives`
 - 0.4 GB  `~/Downloads/Dry`
 - 0.4 GB  `~/Downloads/Dry 2`
 - 0.4 GB  `~/Downloads/maudioplugins_14_16_setupmac 2`
 - 0.4 GB  `~/Downloads/maudioplugins_14_16_setupmac`
+- 0.4 GB  `~/Downloads/Installers`
 - 0.3 GB  `~/Downloads/lo-fi drum kit`
 - 0.2 GB  `~/Desktop/Codename - Grandpa's Familiar`
 - 0.2 GB  `~/Downloads/maudioplugins_12_03_setupmac`
 - 0.2 GB  `~/Desktop/Astrology Project`
 - 0.1 GB  `~/Documents`
-- 0.1 GB  `~/Desktop/florf Project`
-- 0.1 GB  `~/Desktop/Misc Photos`
 
 ## Biggest folders inside ~/Library (app data, caches, backups)
 
-- 45.5 GB  `~/Library`
-- 38.3 GB  `~/Library/Application Support`
+- 40.2 GB  `~/Library`
+- 37.3 GB  `~/Library/Application Support`
 - 10.3 GB  `~/Library/Application Support/com.wizards.mtga`
 - 10.3 GB  `~/Library/Application Support/com.wizards.mtga/Downloads`
 - 8.4 GB  `~/Library/Application Support/minecraft`
-- 5.6 GB  `~/Library/Caches`
 - 5.3 GB  `~/Library/Application Support/Steam`
 - 4.5 GB  `~/Library/Application Support/Google`
 - 3.8 GB  `~/Library/Application Support/Google/Chrome`
 - 3.5 GB  `~/Library/Application Support/Steam/steamapps`
-- 2.5 GB  `~/Library/Caches/Google/Chrome`
-- 2.5 GB  `~/Library/Caches/Google`
 - 2.2 GB  `~/Library/Application Support/minecraft/assets`
 - 2.0 GB  `~/Library/Application Support/minecraft/saves`
 - 1.4 GB  `~/Library/Application Support/Ableton`
 - 1.4 GB  `~/Library/Application Support/Steam/Steam.AppBundle`
+- 1.3 GB  `~/Library/Caches`
 - 1.2 GB  `~/Library/Application Support/minecraft/resourcepacks`
 - 1.1 GB  `~/Library/Application Support/Cockatrice`
 - 1.1 GB  `~/Library/Application Support/Cockatrice/Cockatrice`
 - 1.1 GB  `~/Library/Application Support/discord`
-- 1.1 GB  `~/Library/Application Support/Spotify`
-- 1.0 GB  `~/Library/Application Support/Spotify/PersistentCache`
 - 1.0 GB  `~/Library/Application Support/Paradox Interactive`
-- 1.0 GB  `~/Library/Caches/com.operasoftware.Opera/Default`
-- 1.0 GB  `~/Library/Caches/com.operasoftware.Opera`
 - 1.0 GB  `~/Library/Application Support/Battle.net`
 - 0.9 GB  `~/Library/Application Support/Battle.net/Versions`
 - 0.9 GB  `~/Library/Application Support/Ableton/Live 10.1.7`
-- 0.8 GB  `~/Library/Caches/com.spotify.client`
 - 0.8 GB  `~/Library/Application Support/minecraft/backups`
+- 0.8 GB  `~/Library/Application Support/Google/GoogleUpdater`
+- 0.7 GB  `~/Library/Application Support/minecraft/runtime`
+- 0.7 GB  `~/Library/Application Support/discord/Cache`
+- 0.6 GB  `~/Library/Preferences`
+- 0.6 GB  `~/Library/Preferences/Ableton`
+- 0.5 GB  `~/Library/Application Support/Ableton/Live Database`
+- 0.5 GB  `~/Library/Application Support/technic`
 
 ## Biggest single files (100 MB+)
 
@@ -111,12 +111,8 @@
 - 0.41 GB  2024-10-13  `~/Music/Ableton/Factory Packs/Orchestral Strings/Samples/Combined/Violin Solo Legato.aif`
 - 0.40 GB  2024-06-03  `~/Desktop/Sand Machine Mix/just a jam Project/Samples/Imported/Classic Pick Bass Open Dead.aif`
 - 0.40 GB  2018-09-13  `~/Music/Ableton/Factory Packs/e-instruments Studio Bass/Samples/Combined/Classic Pick Bass Open Dead.aif`
-- 0.40 GB  2017-10-25  `~/Downloads/jdk-9.0.1_osx-x64_bin.dmg`
 - 0.39 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Orchestral Brass/Samples/Combined/Brass Ensemble Staccato.aif`
 - 0.39 GB  2025-09-05  `~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/Frameworks/Chromium Embedded Framework.framework/Versions/A/Chromium Embedded Framework`
-- 0.38 GB  2026-10-04  `~/Downloads/Claude.dmg`
-- 0.38 GB  2026-10-04  `~/Downloads/Claude (2).dmg`
-- 0.38 GB  2026-10-04  `~/Downloads/Claude (1).dmg`
 - 0.37 GB  2021-09-22  `~/Downloads/maudioplugins_14_16_setupmac.zip`
 - 0.36 GB  2018-09-13  `~/Music/Ableton/Factory Packs/e-instruments Studio Bass/Samples/Combined/Vintage Pick Bass Open Dead.aif`
 - 0.36 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Guitar and Bass/Samples/Combined/Guitar Open.aif`
@@ -137,7 +133,11 @@
 - 0.29 GB  2018-09-13  `~/Music/Ableton/Factory Packs/e-instruments Studio Bass/Samples/Combined/Vinatge Finger Bass Articulation.aif`
 - 0.28 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Guitar and Bass/Samples/Combined/Electric Bass Open.aif`
 - 0.28 GB  2021-01-19  `~/Desktop/Ethereal Era/Finite Project.zip`
-- 0.27 GB  2024-08-07  `~/Downloads/tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`
+- 0.27 GB  2024-08-07  `~/Downloads/Installers/tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`
+- 0.27 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Orchestral Brass/Samples/Combined/French Horn Solo Legato-2.aif`
+- 0.26 GB  2023-07-17  `~/Library/Application Support/minecraft/backups/2023-07-17_15-14-46_Blam.zip`
+- 0.25 GB  2022-09-10  `~/Downloads/world.zip`
+- 0.25 GB  2018-08-27  `~/Downloads/Green.wav`
 
 ## Biggest apps
 

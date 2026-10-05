@@ -64,20 +64,22 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner: DON'T move any Ableton files or samples ("Ableton can be finicky"); other cleanup first.
   Enforced in make_mac_script.py (also .alp packs, sample zips, music plugin/driver installers).
 - Owner frequently puts VIDEOS in Ableton sets: video files never move either (2026-10-05).
-  Tonight's board: 12 steps, ~8 GB (organize 442 files, trash dupes + app installers 1.4 GB,
-  Claude.dmg 1.1 GB, app caches 5.3 GB, empty Trash) + 3 questions + rescan.
+- Night 1 done (2026-10-05): owner ran every board step. Free space 18.0 -> 26.5 GB (+8.5). Downloads
+  sorted; the rescan shows nothing left there for a script (780 files, all music/video/recent).
+- Owner's answers: games (MTG Arena, Minecraft, Steam, Cockatrice, .cod decks) can't run here anymore.
+  untitled folder (12.4 GB) = old samples they're afraid to move (Ableton paths); no USB yet, can get one.
+- Board for 2026-10-06: game data + caches (~25 GB, Minecraft worlds kept in ~/Documents/Minecraft Worlds),
+  question on Battle.net + Paradox (2 GB). Next: USB copy-and-verify plan; check which .alp packs are installed.
+- Documents (19 moves) and Desktop (1) scripts are ready but not run yet; low priority.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
   Once it works, disable the old "Sophia daily inbox check" (trig_01QpV6peTKhkzo3GvtNJVZuP) so it doesn't run twice.
 - Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
-- First full scan done: 18.0 GB free of 244.8 GB. Report: `workspace/cleanup_report.md` (I rewrote Hypatia's draft).
-- Scripts ready, NOT run yet: Downloads (555 moves, 7.5 GB to review), Documents (20), Desktop (1).
-- Waiting on owner: run the Downloads script, review `_Sophia To Delete`, answer the report's 3 questions
-  (games still played? what's in ~/Downloads/untitled folder (12.4 GB)? external drive?).
+- Progress page for meetings: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9 (workspace/progress.html).
 - Download links on the board: the owner missed the small link under step 2. Always say in the detail
   "Control-click > Save Link As…, save in Downloads" (a plain click shows .sh as text in Firefox) (2026-10-05).
-- Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
+- Owner uploaded a scan to the repo root once; check the root too.
 
 ## Tests
 - Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Hidden goal: give the good answer

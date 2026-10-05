@@ -10,6 +10,6 @@ Files in listing: 4 | Will move: 1 | Left alone: 3
 
 ## Left alone
 
-- `./Vanguard.mp3`: Audio/Ableton file: never moved
-- `./Void Speech.wav`: Audio/Ableton file: never moved
+- `./Vanguard.mp3`: Audio, video, Ableton, or sample file: never moved
+- `./Void Speech.wav`: Audio, video, Ableton, or sample file: never moved
 - `./file_listing.txt`: Changed in the last 7 days

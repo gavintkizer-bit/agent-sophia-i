@@ -87,19 +87,19 @@
   },
   {
    "file": "./Stats.html.rtfd.zip",
-   "to_folder": "Archives",
-   "reason": "Archived document (.rtfd)"
+   "to_folder": "Web Pages",
+   "reason": "RTFD archive of webpage"
   },
   {
    "file": "./rr_scraper.py",
    "to_folder": "Documents",
-   "reason": "Python script source code"
+   "reason": "Python script file"
   }
  ],
  "leave_alone": [
   {
    "file": "./222 demo vid.mp4",
-   "reason": "Audio, video, Ableton, sample, or music-gear file: never moved"
+   "reason": "Audio, video, Ableton, or sample file: never moved"
   }
  ]
 }

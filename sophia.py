@@ -244,6 +244,27 @@ def write_status(results, survey_done):
     print("== wrote workspace/STATUS.md")
 
 
+def check_report(path):
+    """Flag music items in the report's "Biggest wins". Hypatia once listed .alp packs as safe to trash (2026-10-05)."""
+    if not path.exists():
+        return []
+    from make_mac_script import is_protected, MUSIC_GEAR
+    words = re.compile(r"\.alp\b|ableton|sample|splice|\.wav\b|\.aif|\.mp4|\.mov|\.mkv|video", re.I)
+    section, bad = "", []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            section = line.lower()
+            continue
+        if "biggest wins" not in section:
+            continue
+        names = re.findall(r"`([^`]+)`", line)
+        if words.search(line) or MUSIC_GEAR.search(line) or any(is_protected(n) for n in names):
+            bad.append(line.strip())
+    for line in bad:
+        print(f"[WARN] report suggests touching music material; Sophia must fix it: {line[:120]}")
+    return bad
+
+
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description="Process new uploads in workspace/inbox/.")
@@ -263,6 +284,7 @@ def main():
         if not args.dry:
             subprocess.run([sys.executable, str(ROOT / "agent.py"), str(ROOT / "tasks" / "disk_report.md")],
                            cwd=ROOT, check=False)
+            check_report(WS / "cleanup_report.md")
     if args.dry:
         print("== dry run: workspace/STATUS.md not changed")
         return

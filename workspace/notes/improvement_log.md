@@ -71,3 +71,12 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   better one?"), and it worked on test 2.
 - gap → open item: Hypatia's default run again listed the abandoned Claude Desktop as an open
   question. Point first_task.md at sophia_memory.md as the source of truth for settled decisions.
+
+## 2026-10-05 (evening meeting, light cycle)
+- bug → fixed: Hypatia's disk report listed Ableton `.alp` packs, their "(1)" copies and M-Audio
+  installers as "Safe" wins. Report rewritten; rule added to tasks/disk_report.md; `sophia.py`
+  now runs `check_report()` and warns on any music item under "Biggest wins" (caught all 3 rows).
+- gap → fixed: the report re-asked questions the owner had answered. tasks/disk_report.md now
+  points Hypatia at sophia_memory.md.
+- open item: turn the .alp mistake into a drill (report-writing, not file-moving).
+- usability → fixed: board download links say "Control-click > Save Link As…".
