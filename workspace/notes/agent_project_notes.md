@@ -6,6 +6,7 @@ agent project - scratch notes (messy on purpose)
 - path B = THIS ONE. github repo + claude.ai/code cloud session + agent sdk agent. needs API key (separate pay as you go billing??)
 - path C = fix the mac. check About This Mac. maybe free up disk space then upgrade to monterey. opencore legacy patcher for ventura+ but unofficial, back up first
 - want: organized, test workarounds, improve over time
+- NEW GOAL (oct 2026): keep my laptop + life organized. step 1 = clean up Downloads (15 GB) without breaking ableton samples. macOS upgrade / desktop app = later, maybe never (2016 mac tops out at monterey)
 - idea: keep a run log, write one thing to change after every run
 - question: does the cloud network allow api.anthropic.com by default? (check with agent.py --check)
 - question: which model is cheapest for testing - haiku?
