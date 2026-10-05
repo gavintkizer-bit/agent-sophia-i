@@ -20,6 +20,7 @@ to `workspace/organized_plan.md`, then records the run (cost, turns, tools) in `
 pip install -r requirements.txt
 python agent.py --check      # free setup check
 python agent.py              # run the default task
+python train.py              # training drills (a few cents each); --summary shows pass rates
 ```
 
 **Drive cleanup:** `python sophia.py` processes the scans uploaded to `workspace/inbox/`.

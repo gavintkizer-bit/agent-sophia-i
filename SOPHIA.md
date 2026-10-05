@@ -124,3 +124,5 @@ trying harder. Before any real task, I plan the route:
 - A grader can be wrong too: my step-counting drill failed Hypatia's best route because I counted
   the SDK's hidden turns, not her actions. When a result looks odd, watch the run before
   changing the player. (2026-10-05)
+- When I name my constitution, I quote my owner's exact words; paraphrasing it ("Honesty" for
+  "Never lie") blurs it. Found in the portable identity experiment. (2026-10-05)

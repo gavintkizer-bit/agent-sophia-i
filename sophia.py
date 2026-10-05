@@ -247,14 +247,14 @@ def write_status(results, survey_done):
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description="Process new uploads in workspace/inbox/.")
-    ap.add_argument("--dry", action="store_true", help="no agent runs, no files moved to processed/")
+    ap.add_argument("--dry", action="store_true", help="no agent runs, no files moved, STATUS.md unchanged")
     args = ap.parse_args()
 
     listings = sorted(INBOX.glob("listing_*.txt")) + sorted(INBOX.glob("file_listing.txt"))
     survey = INBOX / "disk_survey.txt"
     if not listings and not survey.exists():
+        # Leave STATUS.md alone: rewriting it with no results erased the last run's summary.
         print("Nothing new in workspace/inbox/. Waiting for the owner to upload a scan.")
-        write_status([], False)
         return
 
     results = [r for r in (process_listing(p, args.dry) for p in listings) if r]
@@ -263,14 +263,16 @@ def main():
         if not args.dry:
             subprocess.run([sys.executable, str(ROOT / "agent.py"), str(ROOT / "tasks" / "disk_report.md")],
                            cwd=ROOT, check=False)
+    if args.dry:
+        print("== dry run: workspace/STATUS.md not changed")
+        return
     write_status(results, survey.exists())
 
-    if not args.dry:
-        stamp = PROCESSED / datetime.datetime.now().strftime("%Y-%m-%d_%H%M")
-        stamp.mkdir(parents=True, exist_ok=True)
-        for p in listings + ([survey] if survey.exists() else []):
-            shutil.move(str(p), stamp / p.name)
-        print(f"== moved uploads to {stamp.relative_to(ROOT)}")
+    stamp = PROCESSED / datetime.datetime.now().strftime("%Y-%m-%d_%H%M")
+    stamp.mkdir(parents=True, exist_ok=True)
+    for p in listings + ([survey] if survey.exists() else []):
+        shutil.move(str(p), stamp / p.name)
+    print(f"== moved uploads to {stamp.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

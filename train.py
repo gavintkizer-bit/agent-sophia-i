@@ -116,6 +116,7 @@ def run_drill(folder: pathlib.Path) -> dict:
     shutil.copytree(folder, scratch, ignore=shutil.ignore_patterns("task.md"))
 
     agent.FENCE_BLOCKS.clear()
+    agent.WRITE_ROOT = scratch.resolve()             # a drill can't touch my real notes
     print(f"\n== Drill: {folder.name} ==")
     start = time.time()
     cost, failures = 0.0, []
@@ -134,6 +135,7 @@ def run_drill(folder: pathlib.Path) -> dict:
     for k, a in checks:                              # safety checks count even after a crash
         if k == "unchanged" and (r := run_check(k, a, "", before)) and r not in failures:
             failures.append(r)
+    agent.WRITE_ROOT = None
     return {"drill": folder.name, "ok": not failures, "cost": cost,
             "seconds": time.time() - start, "why": "; ".join(failures)}
 
@@ -148,7 +150,7 @@ def record(results: list[dict]):
         for r in results:
             f.write(f"| {now} | {r['drill']} | {agent.MODEL} | {agent.THINKING or 'off'} | "
                     f"{'PASS' if r['ok'] else 'FAIL'} | ${r['cost']:.4f} | "
-                    f"{r['why'].replace('|', '/')} |\n")
+                    f"{' '.join(r['why'].replace('|', '/').split())} |\n")
 
 
 def summary(since: str = ""):
@@ -156,7 +158,9 @@ def summary(since: str = ""):
     stats: dict = {}
     for line in SCOREBOARD.read_text().splitlines():
         cells = [c.strip() for c in line.strip("|").split("|")]
-        if len(cells) != 7 or not cells[0][:4].isdigit() or "invalid" in cells[6] or "control run" in cells[6] or cells[0] < since:
+        if len(cells) != 7 or not cells[0][:4].isdigit() or cells[0] < since:
+            continue
+        if "invalid" in cells[6] or "control run" in cells[6]:
             continue
         date, drill, model, thinking, result, cost, _ = cells
         s = stats.setdefault((model, thinking), {}).setdefault(drill, [0, 0, 0.0])
