@@ -7,7 +7,9 @@ Usage:
   python agent.py tasks/other_task.md  # runs any other task file
 
 Settings (optional environment variables):
-  ANTHROPIC_API_KEY   required, your Claude Console API key
+  AGENT_API_KEY       your Claude Console API key. NOT needed in claude.ai/code cloud
+                      sessions (the agent uses the session's own connection there).
+                      ANTHROPIC_API_KEY also works outside cloud sessions.
   AGENT_MODEL         default: claude-haiku-4-5 (cheapest; good for testing)
   AGENT_MAX_TURNS     default: 12 (safety cap on how many steps the agent takes)
 """
@@ -27,6 +29,15 @@ ROOT = pathlib.Path(__file__).resolve().parent
 WORKSPACE = ROOT / "workspace"
 LOG_FILE = ROOT / "logs" / "run_log.md"
 DEFAULT_TASK = ROOT / "tasks" / "first_task.md"
+
+# Inside a claude.ai/code cloud session, the SDK uses the session's own Claude
+# connection, so no API key is needed (and any key you set is ignored there).
+# Elsewhere you need a key. Cloud sessions don't pass a variable named
+# ANTHROPIC_API_KEY through, so AGENT_API_KEY is accepted too.
+IN_CLOUD_SESSION = bool(os.environ.get("CLAUDE_CODE_REMOTE"))
+API_KEY = (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("AGENT_API_KEY") or "").strip()
+if API_KEY:
+    os.environ["ANTHROPIC_API_KEY"] = API_KEY
 
 MODEL = os.environ.get("AGENT_MODEL", "claude-haiku-4-5")
 MAX_TURNS = int(os.environ.get("AGENT_MAX_TURNS", "12"))
@@ -64,12 +75,31 @@ def check_setup() -> bool:
         print("[FAIL] claude-agent-sdk not installed. Run: pip install -r requirements.txt")
         ok = False
 
-    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    # AGENT_ENV_TEST=hello is a harmless test variable: it tells us whether ANY of
+    # your environment variables are reaching this session.
+    if os.environ.get("AGENT_ENV_TEST"):
+        print("[ OK ] AGENT_ENV_TEST found: your environment variables are reaching this session")
+    else:
+        print("[info] AGENT_ENV_TEST not found: either you didn't add it, or your environment")
+        print("       variables aren't reaching this session (wrong environment, not saved,")
+        print("       or this session was started before you saved).")
+
+    key = API_KEY
+    if IN_CLOUD_SESSION:
+        print("[ OK ] Running in a claude.ai/code cloud session: no API key needed.")
+        print("       The agent uses this session's own Claude connection.")
+        print("== Result: READY ==")
+        return ok
     if not key:
-        print("[FAIL] ANTHROPIC_API_KEY is not set. Add it in your cloud environment's")
-        print("       Environment variables as: ANTHROPIC_API_KEY=sk-ant-...")
+        print("[FAIL] No API key found. In the cloud environment's Environment variables add:")
+        print("       AGENT_API_KEY=sk-ant-...   (use this name, NOT ANTHROPIC_API_KEY)")
+        print("       then start a NEW session.")
         return False
-    print("[ OK ] ANTHROPIC_API_KEY is set (value hidden)")
+    if not key.startswith("sk-ant-"):
+        print("[FAIL] The key doesn't start with sk-ant-. Check for quotes, spaces, or a")
+        print("       variable name pasted into the value.")
+        return False
+    print("[ OK ] API key is set (value hidden)")
 
     # Listing models is free, so it safely tests both the key and the network.
     req = urllib.request.Request(
@@ -174,8 +204,8 @@ def main():
     task_path = pathlib.Path(args.task).resolve()
     if not task_path.exists():
         sys.exit(f"Task file not found: {task_path}")
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ANTHROPIC_API_KEY is not set. Run `python agent.py --check` for help.")
+    if not API_KEY and not IN_CLOUD_SESSION:
+        sys.exit("No API key found. Run `python agent.py --check` for help.")
 
     WORKSPACE.mkdir(exist_ok=True)
     print(f"== Running {task_path.name} with {MODEL} (max {MAX_TURNS} turns) ==\n")
