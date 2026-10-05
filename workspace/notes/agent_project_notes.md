@@ -16,6 +16,7 @@ ANSWERED (don't ask these again):
 - cheapest model? haiku (claude-haiku-4-5), the default. ~3-5 cents per notes run, ~33 cents for the downloads organizer
 
 DOWNLOADS SO FAR (oct 5):
-- organize.sh made: moves 609 of 1219 files into folders. haven't run it yet
+- full drive scan done oct 5: 18 GB free of 245 GB. report = workspace/cleanup_report.md
+- downloads organize.sh: moves 555 of 1221 files, 7.5 GB into "_Sophia To Delete" for review. haven't run it yet
 - moving doesn't free space. space wins: ableton .alp packs 5.7 GB (delete once installed in ableton), installers .dmg/.pkg 2.4 GB, duplicate "(1)" copies 1.3 GB
 - careful: moving .wav/.mp3/.asd out of downloads can break ableton projects that use them

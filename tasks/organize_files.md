@@ -1,4 +1,5 @@
 # Task: Plan how to organize a folder on my Mac
+<!-- output: organize_plan.json (json) -->
 
 You cannot see or touch my files. You only get a LIST of them. Your job is to plan where
 each file should go; a separate script turns your plan into something I run myself.

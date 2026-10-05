@@ -1,5 +1,6 @@
 """
-my-first-agent: a small, file-based Claude agent built on the Claude Agent SDK.
+my-first-agent: Sophia's helper, a small file-based Claude agent built on the Claude Agent SDK.
+Sophia (the claude.ai/code session) hands it bulk jobs; it works only inside workspace/.
 
 Usage:
   python agent.py --check              # checks setup (no API cost)
@@ -12,6 +13,12 @@ Settings (optional environment variables):
                       ANTHROPIC_API_KEY also works outside cloud sessions.
   AGENT_MODEL         default: claude-haiku-4-5 (cheapest; good for testing)
   AGENT_MAX_TURNS     default: 12 (safety cap on how many steps the agent takes)
+  AGENT_MAX_BUDGET    default: 0.50 (stop a single run if it would cost more, in US dollars)
+
+Task files can name their deliverable on any line, so the helper can check its own work:
+  <!-- output: organized_plan.md -->        (must exist and not be empty)
+  <!-- output: _batch_plan.json (json) -->  (must also be valid JSON)
+If the deliverable is missing or broken, the helper gets ONE chance to fix it.
 """
 
 import argparse
@@ -20,6 +27,7 @@ import datetime
 import json
 import os
 import pathlib
+import re
 import sys
 import time
 import urllib.error
@@ -41,17 +49,28 @@ if API_KEY:
 
 MODEL = os.environ.get("AGENT_MODEL", "claude-haiku-4-5")
 MAX_TURNS = int(os.environ.get("AGENT_MAX_TURNS", "12"))
+MAX_BUDGET = float(os.environ.get("AGENT_MAX_BUDGET", "0.50"))
+
+# The helper's name. Sophia and the owner will choose it together; change it here only.
+HELPER_NAME = "Helper"
 
 # The agent's "personality and rules". Edit this to change how it behaves.
-SYSTEM_PROMPT = """You are a careful, organized assistant that works with files.
+SYSTEM_PROMPT = f"""You are {HELPER_NAME}, Sophia's helper. Sophia is the owner's personal
+organizing agent; she gives you focused jobs and checks your work before the owner sees it.
+Your values come from Sophia's constitution: never lie, explain reasoning, be organized,
+be accountable, be persistent.
 
 Rules:
-- Work only inside your current working directory (the workspace folder).
-- Before writing anything, look for and read existing files related to the task.
-- Save your final deliverable as a Markdown file using the exact filename the task asks for.
-- Do not invent facts that are not in the files; mark any assumption clearly.
-- Finish with a short summary: what you did, which files you created or changed,
-  and one specific idea that would make the next run better.
+- Work only inside your current working directory (the workspace folder). Use relative paths
+  like `organized_plan.md`, never absolute paths or `..`. Never change files in `inbox/`.
+- Before writing anything, read the files the task points you to.
+- Save your deliverable with the exact filename and format the task asks for.
+- Copy names, paths, and numbers EXACTLY from the files. Never retype from memory, never round
+  or "fix" them, never invent ones that aren't there.
+- If you're unsure, say so plainly ("unsure", "left alone") instead of guessing.
+- After writing your deliverable, Read it back once and fix anything wrong.
+- Finish with a short summary: what you did, which files you created or changed, anything you
+  were unsure about, and one specific idea that would make the next run better.
 """
 
 
@@ -130,11 +149,65 @@ def check_setup() -> bool:
     return ok
 
 
+# ---------------------------------------------------------------- safety fence
+def write_problem(path_str: str) -> str:
+    """Why a write to this path isn't allowed, or "" if it's fine."""
+    if not path_str:
+        return "No file path given."
+    path = pathlib.Path(path_str)
+    path = (path if path.is_absolute() else WORKSPACE / path).resolve()
+    if not path.is_relative_to(WORKSPACE):
+        return f"{path_str} is outside the workspace. Write inside it, using a relative path."
+    if path.is_relative_to(WORKSPACE / "inbox"):
+        return f"{path_str} is in inbox/, which holds the owner's uploads. Don't change it."
+    return ""
+
+
+async def fence_hook(input_data, tool_use_id, context):
+    """Runs before every Write/Edit and blocks anything outside the rules above."""
+    tool_input = input_data.get("tool_input", {})
+    problem = write_problem(tool_input.get("file_path", ""))
+    if problem:
+        print(f"   [fence] blocked: {problem}")
+        return {"hookSpecificOutput": {"hookEventName": "PreToolUse",
+                                       "permissionDecision": "deny",
+                                       "permissionDecisionReason": problem}}
+    return {}
+
+
+# ---------------------------------------------------------------- output check
+def expected_output(task_text: str):
+    """The deliverable a task names with <!-- output: name (json) -->, or None."""
+    m = re.search(r"<!--\s*output:\s*(\S+)(\s*\(json\))?\s*-->", task_text)
+    return (m.group(1), bool(m.group(2))) if m else None
+
+
+def output_problem(task_text: str, since: float) -> str:
+    """Check the task's deliverable was written during this run (after `since`) and is usable.
+    Returns "" if it's fine (or the task names none)."""
+    spec = expected_output(task_text)
+    if not spec:
+        return ""
+    name, is_json = spec
+    path = WORKSPACE / name
+    if not path.exists() or not path.read_text().strip():
+        return f"`{name}` is missing or empty. Create it in the workspace root."
+    if path.stat().st_mtime < since:
+        return f"`{name}` wasn't written during this run. Write it now."
+    if is_json:
+        try:
+            json.loads(path.read_text())
+        except json.JSONDecodeError as e:
+            return f"`{name}` isn't valid JSON ({e}). Rewrite it as valid JSON only."
+    return ""
+
+
 # ---------------------------------------------------------------- agent run
-async def run_agent(task_text: str):
+async def run_agent(task_text: str, resume: str | None = None):
     from claude_agent_sdk import (
         AssistantMessage,
         ClaudeAgentOptions,
+        HookMatcher,
         ResultMessage,
         TextBlock,
         ToolUseBlock,
@@ -144,11 +217,14 @@ async def run_agent(task_text: str):
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
         allowed_tools=["Read", "Write", "Edit", "Glob", "Grep"],
-        disallowed_tools=["Bash"],          # no shell access for this first agent
+        disallowed_tools=["Bash"],          # no shell access for the helper
         permission_mode="acceptEdits",      # may edit files in the workspace without asking
+        hooks={"PreToolUse": [HookMatcher(matcher="Write|Edit", hooks=[fence_hook])]},
         cwd=str(WORKSPACE),
         max_turns=MAX_TURNS,
+        max_budget_usd=MAX_BUDGET,
         model=MODEL,
+        resume=resume,                      # continue an earlier run (used for the one retry)
     )
 
     tools_used: list[str] = []
@@ -167,15 +243,18 @@ async def run_agent(task_text: str):
 
 
 # ---------------------------------------------------------------- run log
-def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, error: str = ""):
+def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, error: str = "",
+               check: str = "", cost=None):
     """Add one entry per run so you can compare runs and improve over time."""
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     if not LOG_FILE.exists():
         LOG_FILE.write_text("# Run log\n\nOne entry per agent run, newest at the bottom.\n")
 
-    cost = getattr(result, "total_cost_usd", None) if result else None
+    if cost is None:
+        cost = getattr(result, "total_cost_usd", None) if result else None
     turns = getattr(result, "num_turns", None) if result else None
-    failed = bool(error) or (result is not None and getattr(result, "is_error", False))
+    failed = bool(error) or (result is not None and getattr(result, "is_error", False)) \
+        or check.startswith("FAILED")
     status = "FAILED" if failed else "OK"
 
     entry = [
@@ -184,6 +263,8 @@ def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, erro
         f"Time: {seconds:.0f}s | Cost: {f'${cost:.4f}' if cost is not None else 'n/a'}",
         f"- Tools used: {', '.join(sorted(set(tools_used))) or 'none'}",
     ]
+    if check:
+        entry.append(f"- Output check: {check}")
     if error:
         entry.append(f"- Error: {error}")
     entry.append("- What I'll change next time: _(fill this in after reviewing the output)_")
@@ -210,18 +291,36 @@ def main():
     WORKSPACE.mkdir(exist_ok=True)
     print(f"== Running {task_path.name} with {MODEL} (max {MAX_TURNS} turns) ==\n")
     start = time.time()
+    task_text = task_path.read_text()
+    spec = expected_output(task_text)
     try:
-        result, tools_used = asyncio.run(run_agent(task_path.read_text()))
+        result, tools_used = asyncio.run(run_agent(task_text))
+        cost = getattr(result, "total_cost_usd", 0) or 0
+        problem, check = output_problem(task_text, start), ("passed" if spec else "")
+        if problem and result is not None and getattr(result, "session_id", None):
+            # Persistent: one chance to fix its own mistake, in the same conversation.
+            print(f"\n== Output check failed: {problem}\n== Asking {HELPER_NAME} to fix it ==\n")
+            result2, tools2 = asyncio.run(run_agent(
+                f"Your deliverable has a problem: {problem} Fix it now.", resume=result.session_id))
+            tools_used += tools2
+            cost += getattr(result2, "total_cost_usd", 0) or 0
+            result = result2 or result
+            problem = output_problem(task_text, start)
+            check = "passed after one retry" if not problem else f"FAILED after retry: {problem}"
+        elif problem:
+            check = f"FAILED: {problem}"
     except Exception as e:
         append_log(task_path, None, [], time.time() - start, error=str(e)[:300])
         raise
-    append_log(task_path, result, tools_used, time.time() - start)
-
-    cost = getattr(result, "total_cost_usd", None) if result else None
+    append_log(task_path, result, tools_used, time.time() - start, check=check, cost=cost)
+    if check.startswith("FAILED"):
+        print(f"\n[FAIL] {check}")
     print("\n== Done ==")
-    if cost is not None:
+    if cost:
         print(f"Cost of this run: ${cost:.4f}")
     print(f"Logged to {LOG_FILE.relative_to(ROOT)}")
+    if check.startswith("FAILED"):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
