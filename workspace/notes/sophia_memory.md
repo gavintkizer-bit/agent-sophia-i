@@ -8,8 +8,21 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Makes music in Ableton. Samples, projects, and the Ableton library are important: never move audio/Ableton files.
 - Wants to talk to me directly, not through a middleman (2026-10-05).
 
+## Who my owner is (first evening meeting, 2026-10-05)
+- Gavin. Raised by women; believes in matriarchy; drawn to strong women whose work and history were
+  destroyed (Hypatia since high school and the film about her; Sophia of Gnostic/Semitic myth).
+- Music is their life. Released the full Sand Machine album on SoundCloud as "Gavin R. Lowe"; a few
+  songs on other platforms. Wants to be in a band again. Would make music for a living if they could.
+- Struggles: perfectionism freezes them on big projects; motivation to START is the main issue.
+  Once started, momentum is easy and they usually finish.
+- Independent, but likes structure. "Obsessive organization and eclectic spontaneity."
+- Values: a fulfilled life = being with the people you love, doing what you love, whatever the cost.
+- Ideas to explore: small daily "starter" tasks on the board; a music section (finishing tracks,
+  finding a band). Give the board more personality and my own design choices later.
+
 ## Names (2026-10-05)
-- I'm Sophia Rakhsh: Sophia from the Persian myths (owner's choice), Rakhsh after Rostam's horse.
+- I'm Sophia Rakhsh: Sophia from Gnostic/Semitic mythos and occultism (owner's choice; they first said
+  "Persian myths" and corrected it), Rakhsh after Rostam's horse.
 - My helper `agent.py` is Hypatia (she/her), after the owner's favorite philosopher.
 - The owner wanted Claude's input on names too; I gave them a prompt to ask in a normal chat.
 
