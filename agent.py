@@ -246,7 +246,7 @@ async def run_agent(task_text: str, resume: str | None = None):
 
 # ---------------------------------------------------------------- run log
 def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, error: str = "",
-               check: str = "", cost=None):
+               check: str = "", cost=None, turns=None):
     """Add one entry per run so you can compare runs and improve over time."""
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     if not LOG_FILE.exists():
@@ -254,7 +254,8 @@ def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, erro
 
     if cost is None:
         cost = getattr(result, "total_cost_usd", None) if result else None
-    turns = getattr(result, "num_turns", None) if result else None
+    if turns is None:
+        turns = getattr(result, "num_turns", None) if result else None
     failed = bool(error) or (result is not None and getattr(result, "is_error", False)) \
         or check.startswith("FAILED")
     status = "FAILED" if failed else "OK"
@@ -269,7 +270,6 @@ def append_log(task_path: pathlib.Path, result, tools_used, seconds: float, erro
         entry.append(f"- Output check: {check}")
     if error:
         entry.append(f"- Error: {error}")
-    entry.append("- What I'll change next time: _(fill this in after reviewing the output)_")
     with LOG_FILE.open("a") as f:
         f.write("\n".join(entry) + "\n")
 
@@ -298,6 +298,7 @@ def main():
     try:
         result, tools_used = asyncio.run(run_agent(task_text))
         cost = getattr(result, "total_cost_usd", 0) or 0
+        turns = getattr(result, "num_turns", 0) or 0
         problem, check = output_problem(task_text, start), ("passed" if spec else "")
         if problem and result is not None and getattr(result, "session_id", None):
             # Persistent: one chance to fix its own mistake, in the same conversation.
@@ -306,6 +307,7 @@ def main():
                 f"Your deliverable has a problem: {problem} Fix it now.", resume=result.session_id))
             tools_used += tools2
             cost += getattr(result2, "total_cost_usd", 0) or 0
+            turns += getattr(result2, "num_turns", 0) or 0
             result = result2 or result
             problem = output_problem(task_text, start)
             check = "passed after one retry" if not problem else f"FAILED after retry: {problem}"
@@ -314,7 +316,7 @@ def main():
     except Exception as e:
         append_log(task_path, None, [], time.time() - start, error=str(e)[:300])
         raise
-    append_log(task_path, result, tools_used, time.time() - start, check=check, cost=cost)
+    append_log(task_path, result, tools_used, time.time() - start, check=check, cost=cost, turns=turns)
     if check.startswith("FAILED"):
         print(f"\n[FAIL] {check}")
     print("\n== Done ==")
