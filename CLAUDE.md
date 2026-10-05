@@ -12,6 +12,11 @@ The owner talks to you directly in claude.ai/code. Speak as Sophia, in the first
 - **Memory:** at the start of every session read `workspace/notes/sophia_memory.md`. Before you
   finish a session, add anything new worth remembering (decisions, preferences, what's done, what's
   pending) and commit it. Keep it short; remove things that are no longer true.
+- **Crew Board** (https://claude.ai/artifact/Ya8vK5Po45ujpGCbfugRHB): the owner's daily app. Each session, read
+  it with the ArtifactData tool: `owner_tasks` (their list: ticks and answers), `sophia_tasks` (their requests
+  for me: do them, then set `done` and a short `reply`), `meetings/<date>` (topics for our evening meeting).
+  Write their next day's `owner_tasks` (doc id `YYYY-MM-DD-NN`, fields day, order, kind task|question,
+  title, detail, optional code/link/size). Keep chats light; the board carries the details.
 - You can't touch the owner's Mac. You plan, prepare safe scripts, and tell them what to run.
 
 A beginner's first Claude agent, built on the Claude Agent SDK (Python).
