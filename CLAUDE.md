@@ -9,6 +9,8 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `tasks/`: one Markdown file per task the agent can run.
 - `workspace/`: the ONLY folder the agent reads and writes. Its input notes live in `workspace/notes/`.
 - `logs/run_log.md`: one entry per run (model, turns, time, cost, tools used).
+- `ORGANIZE.md`: for file-organizing tasks, follow its procedure instead of the standard one below.
+- `make_mac_script.py`: turns `workspace/organize_plan.json` into a safe `workspace/out/organize.sh` (see ORGANIZE.md).
 
 ## Standard procedure for every session
 1. `pip install -r requirements.txt`
