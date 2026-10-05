@@ -1,0 +1,5429 @@
+{
+ "moves": [
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998) (1).epub",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).epub",
+   "to_folder": "Documents",
+   "reason": ".epub file"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt",
+   "to_folder": "Documents",
+   "reason": ".txt file"
+  },
+  {
+   "file": "./1000005030.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./1000005309 (1).mp4",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./1000005309.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./1000005312.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./1000005604.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./1000006020.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./1000006078.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./1000006079.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./111 Internet Research Assignment (1).docx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./111 Internet Research Assignment.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./111S18H (1).docx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./111S18H.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./170702062321-south-china-sea-map-full-169.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./20221006_155608.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./20221006_162153.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./2022_TaxReturn (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./2022_TaxReturn.pdf",
+   "to_folder": "Documents/Finance",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./20230419_014528.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./20240408_145339.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./250px-South_China_Sea_claims_map.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./29950149852_9da03e217d_b.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./360_F_364996969_8IMWghVlGPFbY6lh20Npsr6C5KNA91i8.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./37332332_1977365342294602_8440892694183542784_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./37408417_1977365468961256_8324511389838213120_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./39940255_227767624569549_5115207016180088832_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./480938750_10231748333224711_6344715920915075168_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./489377173_122145832934525883_1813819319315495198_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./516951767_122249251946026622_5942632433369355451_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./517134365_10234810850434995_816162525777186280_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./517271176_2108661092976615_736342606148249827_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./517325932_1979952872812788_6313110373310684803_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./520198294_122168282840529819_8120324629356285311_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./520670420_10111091162228858_5301679681961088958_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./523995815_18405441715116603_914392300724425353_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./613427660_25609406018688711_7546605086745359122_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./6C011C51-8CD2-4AF5-A885-8537B83C339A.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./73290344_2466312136823676_7264940007272480768_o (1).jpg",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./73290344_2466312136823676_7264940007272480768_o.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./947E3EE0-8923-41E3-9A56-51B77BC616C5.JPG",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./A1ztxzwbVEL.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Accrue Cover Letter - Gavin K..pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Aki Takase - Minerva's Owl.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Ambiance II Fusion-Don't You Ever Take Your Love.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./App pg. 2.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Applause Crowd Cheering sound effect.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Argument essay (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Argument essay.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Asia Study Guide (1).docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Asia Study Guide (2).docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Asia Study Guide.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment #4 Rock Deformation.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment #4 Rock Deformation.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Assignment #8 California Drought Conditions.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment 2 Mineral's Use In Society (1).docx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Assignment 2 Mineral's Use In Society.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment_7B_Rivers_and_Google_Earth(1).docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment_7B_Rivers_and_Google_Earth(1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Ayudame a Creer.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./BEHRINGER_2902_X64_2.8.40 (1).zip",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Blended Geologic Time (1).pptx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Blended Geologic Time.pptx",
+   "to_folder": "Documents",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./Blended Ocean Features.pptx",
+   "to_folder": "Documents",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./Blended Rock Deformation and Earthquakes.pptx",
+   "to_folder": "Documents",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./Blended Stream Discharge.pptx",
+   "to_folder": "Documents",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./BreakSelectionbySampleMagic_r36457_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Breakbeat patterns.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./BuildandDrop_r47739_v1.1.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./CHRONOS.md",
+   "to_folder": "Documents",
+   "reason": ".md file"
+  },
+  {
+   "file": "./Career Coach Assessment and Research (fillable).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Changing Traditions and Less Superstition - Gavin Kizer (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Changing Traditions and Less Superstition - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Character Architecture - The Restrained Monster (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Character Architecture - The Restrained Monster.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Charlotte_Skyline_2011_-_Ricky_W.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./ChopandSwing_r47707_v1.1.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Cockatrice-Omenpath-2.10.3-macOS13_Intel.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Cockatrice-Rings.of.the.Wild-2.9.0-macOS-11_Big_Sur.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Compare and contras rough draft.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Compare and contrast rough draft.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Completed Copy of Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Completed Tenant Application 2015 NEW.docx (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Completed Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./DC1A3 2.dmg",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./DC1A3.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Debate Research (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Debate Research.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./DesignerDrums_r32877_v9.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./DespicableG50842_122644193.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Discord.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Dogs of Courage.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./DriveandGlow_r49040_v1.2.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Drum machine patterns 260.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./ER6NRvoUwAA855k.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./EpicInstaller-15.17.1.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Essay 3.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Essay assignment 1 - Gavin Kizer - .pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Essay assignment 2 - Gavin Kizer  (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Essay assignment 2 - Gavin Kizer .pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 1 Getting Control of Your Time - Gavin Kizer (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Exercise 1 Getting Control of Your Time - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 1 Getting Control of Your Time SP25.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 2  Academic Readiness - Gavin Kizer (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Exercise 2  Academic Readiness - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 2  Academic Readiness FA25.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 3.1 Self-Assesments - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 3.1 Self-Assesments SP25 revised (1) (1).docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 3.2 Career Research SP25.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 6A Your Academic and Transfer Plan SP25.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 7 Paying for College - Gavin K (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Exercise 7 Paying for College - Gavin K (2).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Exercise 7 Paying for College - Gavin K.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 7 Paying for College and  Budgeting SP253.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 8 Self-Reflection - Gavin k].pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 8 Self-Reflection SP25.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./FB_IMG_1625772631920.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./FB_IMG_1633197385667.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./FB_IMG_1636594437957.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./FB_IMG_1642452517265.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./FB_IMG_1681853727713.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Firefox 54.0.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Gavin Kizer (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer (2).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - 03_23_2026.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Internet Research Assignment (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Gavin Kizer - Internet Research Assignment 2 - Copy.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Internet Research Assignment.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (2).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (3).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - The Uses of Olivine in Human Society (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Gavin Kizer - The Uses of Olivine in Human Society.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source 2 Pt. 1- Copy.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source 2 Pt. 2 (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source 2 Pt. 2.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Career Coach Assessment.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Career Research.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Resume.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer – Signature Assignment Analysis.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume (2).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_7xzy827xzy827xzy.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_93lgpr93lgpr93lg.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_dlljvudlljvudllj.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_fu8im9fu8im9fu8i.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_inol8ainol8ainol.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_jt472ljt472ljt47.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_n5aofin5aofin5ao.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_qii7kgqii7kgqii7.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_qo3unaqo3unaqo3u.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_spsn81spsn81spsn.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Gemini_Generated_Image_y2b6omy2b6omy2b6.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./Getti T Shirt _3 Chase Christmas Present (1).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Getti T Shirt _3 Chase Christmas Present (2).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Getti T Shirt _3 Chase Christmas Present (3).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Getti T Shirt _3 Chase Christmas Present.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./GratisHitsbyMaxforCats_r33796_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Harold Vick-Wild Is The Wind.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Human Odyssey answers  (1).pages",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Human Odyssey answers .pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Human Odyssey answers .pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Human Odyssey answers.pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Hurricane Assignment Graphs - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Hurricane Assignment Pacific 2023 - Gavin Kizer (1).docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Hurricane Assignment Pacific 2023.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./IMG_2004.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./IMG_2008.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./IMG_2009.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./IMG_20260611_022605.heic",
+   "to_folder": "Images",
+   "reason": ".heic file"
+  },
+  {
+   "file": "./INSTRUMENT-installer (1).pkg",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./INSTRUMENT-installer.pkg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Image-1-Ossabaw-Map-scaled.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Internet Assignment (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Internet Assignment.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Internet Assignment.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Itsuroh Shimoda - Everybody Anyone (1974).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./J.O.B. Orchestra-Govinda.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./JoJo out of context.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./KJSawkaMadBeatz_r32873_v9.0 (1).alp",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./KJSawkaMadBeatz_r32873_v9.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./KapturebyPlastikmanandLiine_r32873_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Karta_CN_SouthChinaSea.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./KasiobyOliLarkin_r32873_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Kizer_Gavin_4352959_7_22_2024.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Kizer_Gavin_4352959_8_9_2024.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Kung Fu 1972 - 1975  Opening and Closing Theme.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Magic Stats 1.1.10 - Player Stats - Per Game.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Magic Stats 1.1.10 - Rules.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Main@2x.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./Maproom-Central-London-major-features-5.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (1).alp",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (2).alp",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Members_12298965.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Midterm Study Guide.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Minecraft (1).dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Monster - Chapter 03 - Murder Case.mkv",
+   "to_folder": "Video",
+   "reason": ".mkv file"
+  },
+  {
+   "file": "./Movie Excel Data.xlsx",
+   "to_folder": "Documents",
+   "reason": ".xlsx file"
+  },
+  {
+   "file": "./Multiply_OSX_1_1_1 2.pkg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Nepotism Vs. Merit Edit Draft.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Nepotism Vs. Merit Final.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Nujabes - City Lights (Homework Edit).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Nujabes - City Lights.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./ORF Orchestra - Diskretion.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./PBSNOVAGreatHumanOdysseyVideoQuestions.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Patterns1.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./PitchDropbyMormo_r25158_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Pocket operations.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Point by Point Outline (1).docx",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Point by Point Outline (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Point by Point Outline.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Resume.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Sailing_Weekend_Packing_List.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Scientific method.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Secretos del saxofon. Técnica de saxofón.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Shigeo Sekito - the word II.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Singularities_r49122_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Smith on Virginia.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./SolidSounds_r28796_v9.0 (1).alp",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./SolidSounds_r28796_v9.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./Splice (1).dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Splice.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Steve Jobss Philosophy.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./StringQuartetbySpitfireAudio_r59561_v1.1.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./SynthEssentials_r46620_v1.1.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./TXT.rtf",
+   "to_folder": "Documents",
+   "reason": ".rtf file"
+  },
+  {
+   "file": "./Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Test work (1).jpg",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Test work.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./The Ethics of Working Dogs.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./The Positive Effects of the Kudzu Vine.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Travis-Scott---Antidote--Acapella.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Twitch.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Untitled document (1) (1).pdf",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Untitled document (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled document (2).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled document.docx",
+   "to_folder": "Documents",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Untitled document.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled drawing (1).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing (1).png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./Untitled drawing (2).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing (3).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing (4).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing (5).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing (6).jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Untitled drawing.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./VIBES MASTER.als 2",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Van Guard.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Virgen Negra (1).mp4",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Virgen Negra.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./Wolfgang Lauth Quartett - Moonlight Fantasy.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./Writing assignment 1 - Gavin Kizer (1).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Writing assignment 1 - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./bathroom-chilling.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./before_the_word_analysis.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./bellalastr420 (1).csv",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./bellalastr420.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./bic_application.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./boing.wav.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./bp-708.webp",
+   "to_folder": "Images",
+   "reason": ".webp file"
+  },
+  {
+   "file": "./chronos.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1072164156.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_115293264.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1200926894.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1687669322.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1987472705.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_377620463.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./deadly-nightshade-flower-hand-drawn-vector-illustration-also-known-as-belladonna-captures-haunting-beauty-339641910.webp",
+   "to_folder": "Images",
+   "reason": ".webp file"
+  },
+  {
+   "file": "./deck.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./decklist.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./dokumen.pub_a-short-stay-in-hell-9780983748434-9780983748441-9780983748427-2011941923.epub",
+   "to_folder": "Documents",
+   "reason": ".epub file"
+  },
+  {
+   "file": "./download (1).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./download (2).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./download (3).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./download (4).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./download.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./drfone_full3361.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./e-instrumentsStudioBass_r32591_v1.0.alp",
+   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
+   "reason": "Live Pack installer; check Ableton first"
+  },
+  {
+   "file": "./eastern_seaboard_logs_1789194243265.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./expressvpn_mac_11.2.0.67174_release.pkg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./expressvpn_mac_11.26.0.74548_release.pkg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./expressvpn_mac_11.9.0.70037_release.pkg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./fb5aeb0f80f593fc226cc6180982482f.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./feat_russia.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./free-outdoors-logbook-2026-09-24.csv",
+   "to_folder": "Documents",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./gavin Kizer Excercise 6.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./gettyimages-807070348.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./gmail_images20260415_023604.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./gmail_images20260415_023620.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./googlechrome-2.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./grsa-SingingSand2017_480x270.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./hqdefault.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./image_1b1ad4eb.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./image_6546160.JPG",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./image_ce2132e6.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./images (1).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./images (2).jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./images.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./jdk-9.0.1_osx-x64_bin.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./jre-8u251-macosx-x64.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./keepvid-music-tag-editor-mac_full4172.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./kh-map-southchinaseav2.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./map-south-china-sea-line-624.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./maxresdefault.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./ossabaw-island-georgia-nautical-chart-sea-koast.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./printable-no-soliciting-sign.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./received_3841306436151063.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./reply_spectrogram.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./reply_structure.png",
+   "to_folder": "Images",
+   "reason": ".png file"
+  },
+  {
+   "file": "./resort.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./rr_leaderboard (1).html",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./s-l300.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./soundcloud-backup-codes.txt",
+   "to_folder": "Documents",
+   "reason": ".txt file"
+  },
+  {
+   "file": "./steam.dmg",
+   "to_folder": "_Sophia To Delete/Installers",
+   "reason": "Installer; app is likely already installed"
+  },
+  {
+   "file": "./super ninja.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./swamp florida.webp",
+   "to_folder": "Images",
+   "reason": ".webp file"
+  },
+  {
+   "file": "./the dog.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./the-great-goblin-20260814-213137.txt",
+   "to_folder": "Documents",
+   "reason": ".txt file"
+  },
+  {
+   "file": "./theeee dog.jpeg",
+   "to_folder": "Images",
+   "reason": ".jpeg file"
+  },
+  {
+   "file": "./videoplayback (1).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (10).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (11).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (12).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (13).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (14).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (15).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (16).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (17).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (18).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (19).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (2).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (20).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (21).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (22).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (23).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (24).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (25).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (26).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (27).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (28).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (29).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (3).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (4).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (5).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (6).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (7).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (8).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback (9).mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./videoplayback.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./🗓️ Course Schedule (SS2 8-Week).html (1).zip",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz",
+   "to_folder": "Web Pages",
+   "reason": "Compressed HTML document"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html",
+   "to_folder": "Web Pages",
+   "reason": "HTML document"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz",
+   "to_folder": "Web Pages",
+   "reason": "Compressed HTML document"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz",
+   "to_folder": "Web Pages",
+   "reason": "OCR/web data file"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz",
+   "to_folder": "Web Pages",
+   "reason": "OCR/web text file"
+  },
+  {
+   "file": "./1.11-Dokucraft-TSC-High.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture pack"
+  },
+  {
+   "file": "./1.14-Dokucraft-TSC-Dark.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture pack"
+  },
+  {
+   "file": "./ASIO4ALL_2_13_English.exe",
+   "to_folder": "Installers",
+   "reason": "Audio driver installer"
+  },
+  {
+   "file": "./AlluringBliss 1.16 v1.2.0.00.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod/texture"
+  },
+  {
+   "file": "./Andorhal HD.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture pack"
+  },
+  {
+   "file": "./BEHRINGER_2902_WIN32_2.8.17.zip",
+   "to_folder": "Installers",
+   "reason": "Audio device driver"
+  },
+  {
+   "file": "./BEHRINGER_2902_X64_2.8.40.zip",
+   "to_folder": "Installers",
+   "reason": "Audio device driver"
+  },
+  {
+   "file": "./Beyond+the+Lands.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./DC1A3-mac-installer.zip",
+   "to_folder": "Installers",
+   "reason": "Mac app installer"
+  },
+  {
+   "file": "./Google Chrome",
+   "to_folder": "Installers",
+   "reason": "Browser installer"
+  },
+  {
+   "file": "./Hearthstone-Setup.zip",
+   "to_folder": "Installers",
+   "reason": "Game installer"
+  },
+  {
+   "file": "./InstallLDBPackage64c-2-1-5-01.zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./JehkobasFantasy_5.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./Kitchen Table - by Yami.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod/texture"
+  },
+  {
+   "file": "./MixPres-asio-2.9.87.5.zip",
+   "to_folder": "Installers",
+   "reason": "Audio driver"
+  },
+  {
+   "file": "./ModernArch R50 [1.13 - 1.15] [256x].zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture"
+  },
+  {
+   "file": "./Multiply_OSX_1_1_1.pkg.zip",
+   "to_folder": "Installers",
+   "reason": "Mac app installer"
+  },
+  {
+   "file": "./OperaSetup (1).zip",
+   "to_folder": "Installers",
+   "reason": "Browser installer"
+  },
+  {
+   "file": "./OperaSetup (2).zip",
+   "to_folder": "Installers",
+   "reason": "Browser installer"
+  },
+  {
+   "file": "./OperaSetup.zip",
+   "to_folder": "Installers",
+   "reason": "Browser installer"
+  },
+  {
+   "file": "./Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture"
+  },
+  {
+   "file": "./Romecraft GERMANIA 16.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./Round+Trees+V.2.1.0+-+1.13.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./SailorsDelight (1).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./SailorsDelight (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./SailorsDelight (3).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./SailorsDelight.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./SpotifyInstaller (1).zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./SpotifyInstaller.zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./Stats.html.rtfd.zip",
+   "to_folder": "Web Pages",
+   "reason": "Rich text web archive"
+  },
+  {
+   "file": "./The_Science_of_Revenge.bibtex",
+   "to_folder": "Documents",
+   "reason": "Bibliography file"
+  },
+  {
+   "file": "./The_Science_of_Revenge.ris",
+   "to_folder": "Documents",
+   "reason": "Bibliography file"
+  },
+  {
+   "file": "./TextureCraft [1.14] 190826.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft texture"
+  },
+  {
+   "file": "./TurboTaxReturn.tax2022",
+   "to_folder": "Documents/Finance",
+   "reason": "Tax return file"
+  },
+  {
+   "file": "./U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement",
+   "to_folder": "Documents/Finance",
+   "reason": "Bank statement/agreement"
+  },
+  {
+   "file": "./Untitled - Copy (2).html.zip",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage archive"
+  },
+  {
+   "file": "./WA_IBG_Vocal_Chain.zip",
+   "to_folder": "Archives",
+   "reason": "Audio archive file"
+  },
+  {
+   "file": "./Winthor Medieval v2.6 WIP MC 1.14.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./Winthor+Medieval+v4.3+MC+1.16.2.zip",
+   "to_folder": "Archives",
+   "reason": "Minecraft mod"
+  },
+  {
+   "file": "./SoundDevices_MixPre_2.9.87.5.exe",
+   "to_folder": "Installers",
+   "reason": "Audio device software"
+  },
+  {
+   "file": "./alpine_hike_micro_brief_generator.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./camo-macos-latest (1).zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./camo-macos-latest (2).zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./camo-macos-latest.zip",
+   "to_folder": "Installers",
+   "reason": "App installer"
+  },
+  {
+   "file": "./catalina27-sail-model (1).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./catalina27-sail-model (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./catalina27-sail-model.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondedge_baseball_trading_odds_intelligence_suite.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_mlb_analytics_hub.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./diamondstat_pro_mlb_intelligence_precision_wager_engine.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (1).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (3).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (4).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (5).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (6).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (7).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (8).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (9).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (10).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (11).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (12).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (13).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (14).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion (15).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./eastern-seaboard-nav-companion.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved webpage"
+  },
+  {
+   "file": "./free-outdoors (1).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./free-outdoors (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./free-outdoors (3).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./free-outdoors (4).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./free-outdoors.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789184866606.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789185162035.css",
+   "to_folder": "Web Pages",
+   "reason": "Web page stylesheet"
+  },
+  {
+   "file": "./gemini-code-1789185190245.css",
+   "to_folder": "Web Pages",
+   "reason": "Web page stylesheet"
+  },
+  {
+   "file": "./gemini-code-1789185214723.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789185320383.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789185664565.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789185920001.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789186033677.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789186402897.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789186950167.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789187206261.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789187836936.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789187948106.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789188314052.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789188727224.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789189244939.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789189459699.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789189815604.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789190315390.ts",
+   "to_folder": "Web Pages",
+   "reason": "Web page code file"
+  },
+  {
+   "file": "./gemini-code-1789190398574.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789190818961.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789190931126.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789191133333.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789191176867.js",
+   "to_folder": "Web Pages",
+   "reason": "Web page code file"
+  },
+  {
+   "file": "./gemini-code-1789191306238.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789191439723.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789191692266.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789191950517.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789192240856.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789192390444.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789192849570.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789193526377.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789193698019.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789195191227.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789197186964.js",
+   "to_folder": "Web Pages",
+   "reason": "Web page code file"
+  },
+  {
+   "file": "./gemini-code-1789197216676.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789197508013.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789360371402.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789360753807.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789360855075.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789361078323.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789361138778.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789361323644.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789361635886.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789362187633.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789362552500.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789362902100.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789363186777.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789363490007.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789363870692.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789364075727.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789364228303.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gemini-code-1789364535282.js",
+   "to_folder": "Web Pages",
+   "reason": "Web page code file"
+  },
+  {
+   "file": "./gemini-code-1789364745572.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./gerudoku-1-16-x-v1-2.zip",
+   "to_folder": "Installers",
+   "reason": "Game installer"
+  },
+  {
+   "file": "./gtkizer97@gmail.com.ical.zip",
+   "to_folder": "Documents",
+   "reason": "Calendar data archive"
+  },
+  {
+   "file": "./hjk.htm",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./lo-fi drum kit.zip",
+   "to_folder": "Installers",
+   "reason": "Sample pack installer"
+  },
+  {
+   "file": "./maudioplugins_12_03_setupmac.zip",
+   "to_folder": "Installers",
+   "reason": "Audio plugin installer"
+  },
+  {
+   "file": "./maudioplugins_14_16_setupmac.zip",
+   "to_folder": "Installers",
+   "reason": "Audio plugin installer"
+  },
+  {
+   "file": "./mcedit2-macosx64-2.0.0-beta11.zip",
+   "to_folder": "Installers",
+   "reason": "Game editor installer"
+  },
+  {
+   "file": "./query.py",
+   "to_folder": "Documents",
+   "reason": "Python script"
+  },
+  {
+   "file": "./rooster_ranges_leaderboard.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rooster_ranges_player_scraper.py",
+   "to_folder": "Documents",
+   "reason": "Python script"
+  },
+  {
+   "file": "./rooster_ranges_stats.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (10).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (2).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (3).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (4).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (5).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (6).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (7).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (8).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard (9).html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./rr_leaderboard.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./server.jar",
+   "to_folder": "Installers",
+   "reason": "Java application"
+  },
+  {
+   "file": "./tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html",
+   "to_folder": "Web Pages",
+   "reason": "Saved web page"
+  },
+  {
+   "file": "./tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz",
+   "to_folder": "Installers",
+   "reason": "App installer archive"
+  },
+  {
+   "file": "./usb_asio.sit",
+   "to_folder": "Installers",
+   "reason": "Legacy installer"
+  },
+  {
+   "file": "./videoplayback (1).3gp",
+   "to_folder": "Video",
+   "reason": "Video file"
+  },
+  {
+   "file": "./videoplayback.3gp",
+   "to_folder": "Video",
+   "reason": "Video file"
+  },
+  {
+   "file": "./🗓️ Course Schedule (SS2 8-Week).html.zip",
+   "to_folder": "Archives",
+   "reason": "Course schedule archive"
+  }
+ ],
+ "leave_alone": [
+  {
+   "file": "./1000006451.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006452.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006453.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006454.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006455.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006456.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006457.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006458.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006459.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006460.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006461.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006462.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006463.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006464.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006465.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006466.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006467.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006468.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./1000006469.jpg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./123 [2019-04-29 174603].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./2018_12_18_20_07_09.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./2018_12_18_20_07_09.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./26E001C8-FFC7-4F20-AD6B-81703F576D80.m4a",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./50_cent_-_get_up_(acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./50_cent_-_get_up_(acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Aki Takase - Minerva's Owl.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Ambiance II Fusion-Don't You Ever Take Your Love.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Applause Crowd Cheering sound effect.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Ayudame a Creer.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./BEEF [2019-04-29 224640].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Barred Owl Calls (256) (1).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Barred Owl Calls (256) (1).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Barred Owl Calls (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Beat Lab Autotuna 1.1.amxd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Beat sample.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Bert Kaempfert-Down To The DocksA Deadly Game.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Bert Kaempfert-Down To The DocksA Deadly Game.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Big Sean - Dance (Ass) (Acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Big Sean - Dance (Ass) (Acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Caprese.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Circles_AV_mastered.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Claude (1).dmg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Claude.dmg",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Courage the Cowardly Dog but it s only Katz.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Courage the Cowardly Dog but it s only Katz.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Dave Grusin-PM-03.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Dave Grusin-PM-03.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Florf Real Temp.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Florf Temp.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Forest Critters (Mastered with Sunroof at 76pct).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Forest_Critters_extended_mastered (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Forest_Critters_extended_mastered.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./GdlKjA4Qd279.128.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./GdlKjA4Qd279.128.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Gemstone_lightmix_5.m4a",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Green.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Green.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Grok Made Me Write This Song (Mastered with Clear Sky at 62pct).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Harold Vick-Wild Is The Wind.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./I think we already died 2.m4a",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./I think we already died.m4a",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./J.O.B. Orchestra-Govinda.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Jaden Smith - Scarface (DIY Acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Jaden Smith - Scarface (DIY Acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./King Elizabeth speech Hoist the Colours.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./King Elizabeth speech Hoist the Colours.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Kung Fu 1972 - 1975  Opening and Closing Theme.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUCKY 8.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 2-Audio.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 2-Audio.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 3-Audio (1).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 3-Audio (1).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 3-Audio.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./LUNG FU vocal dry 3-Audio.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Lou Courtney - I Dont Need Nobody Else (1974).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Lou Courtney - I Dont Need Nobody Else (1974).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Mixing_Bass_and_Guitars.pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./NoRegretz.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./NoRegretz.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Northern Lights Sound (256) (1).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Northern Lights Sound (256) (1).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Northern Lights Sound (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nujabes - City Lights (Homework Edit).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nujabes - City Lights.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nujabes - Color Of Autumn.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Nujabes - Color Of Autumn.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./ORF Orchestra - Diskretion.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Omi x CButler.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Omi x CButler.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Orca sounds (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Orca sounds (256).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./PRESSURED.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Poltergeist.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Project_Manus_Complete_Archive (1).pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Project_Manus_Complete_Archive (2).pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Project_Manus_Complete_Archive.pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Ram Ranch.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./SPACE.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Sand Dune (Mastered with Aurora at 91pct).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Secretos del saxofon. Técnica de saxofón.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Shigeo Sekito - the word II.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Slip (prod. Chozen).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Slip (prod. Chozen).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Smoke Doke.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Steve Jobss Philosophy.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./The Real Samurai Copy.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./The Real Samurai.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./The Sky-Tether and the Blood Ledger - Narrative Summary.pdf",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./Travis-Scott---Antidote--Acapella.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Tulip.aif",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Underwater Microphone Captures Honshu, Japan Earthquake (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Untitled.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./VIBES MASTER.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Virgen Negra (1).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./VoiceMail_2024-10-02_21-13-59.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./VoiceMail_2024-10-02_21-13-59.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Borat Wah wah we wah.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Cat Very Angry.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_DIO!!!!!.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Deez Nuts.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_I AM THE HYPE!.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_I Just Had Sex.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_I love gold. The look of it, the taste of it, the...mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Last night I have sex.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Nokia ringtone earrape.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Skeletor laughing.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Thomas The Tank Engine.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Throw me a frikin bone here.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_What the dog doin_.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_Woaw _3.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_pornhub intro.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Voicy_you my trlala.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Void_Speach_mastered.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Waka Flocka Flame - Workin (Acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Waka Flocka Flame - Workin (Acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./Wolfgang Lauth Quartett - Moonlight Fantasy.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./absolute madness 150bpm.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./align_traces.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./asap_rocky_-_wild_for_the_night_(diy_acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./asap_rocky_-_wild_for_the_night_(diy_acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./bayo.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./before_the_word_excerpt.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./boing.wav.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./bowshock_PIA20754.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./bowshock_PIA20754.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./cruisedownthebeach.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./cruisedownthebeach.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./drippy.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./dying_correspondence.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./electrothermal.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./eli and gavin 121818.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./eli and gavin 121818.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./fall [2019-05-29 015357].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./fall [2019-05-31 042736].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./files (1).zip",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./floorplan.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./free-outdoors (5).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./free-outdoors (6).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./free-outdoors (7).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./free-outdoors (8).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./free-outdoors (9).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./fsk_demod.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./github-recovery-codes.txt",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./glock.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./glock.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./grog [2023-07-13 030447].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./grsa-SingingSand2017_480x270.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./index (1).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./index.html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./jar jar.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0604670-0009964-brimaf-brima-gdl.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0604670-0009964-brimaf-brima-gdl.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1371515-0010587-ousidde-frank-ocean.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1371515-0010587-ousidde-frank-ocean.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2459032-0011033-cino8730-sex-talk.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-a-2459032-0011033-cino8730-sex-talk.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0159051-0130228-pads-of-gold-counterintuitive.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0167660-0118462-levoix-bells-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0167660-0118462-levoix-bells-melody.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0671112-0118517-danke-dragon.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0671112-0118517-danke-dragon.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0671112-0124690-danke-watery.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0671112-0124690-danke-watery.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0114862-sushilbawa-piano-special.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0114862-sushilbawa-piano-special.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0114947-sushilbawa-bells-93.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0115970-sushilbawa-synth-170.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0116075-sushilbawa-synth-highness.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0117369-sushilbawa-trap-connection.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0124677-sushilbawa-bells-162.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0124677-sushilbawa-bells-162.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125 (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0850517-0117279-miazyo-rhode.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0850517-0117279-miazyo-rhode.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0878633-0117264-foevabeatz-disco.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0878633-0117264-foevabeatz-disco.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0911223-0117855-silencekills-eyes-piano-128-gm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0117745-mamagbeats-vinyl-e-piano-loop-2-92-bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0957600-0082580-blunierty-white-noise.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0957600-0082580-blunierty-white-noise.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1094884-0078974-dcmack-gun-cocking.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1094884-0078974-dcmack-gun-cocking.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1256873-0129417-rhode-chamber.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1256873-0129417-rhode-chamber.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1273564-0125646-lankframpard-hangover.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1273564-0125646-lankframpard-hangover.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1448712-0118109-jayboy97-untitled-6.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1448712-0118109-jayboy97-untitled-6.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0098736-rasputin1963-mystical-sitar-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1576807-0102223-middwiz-trap-future-bass-strings.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599525-0118488-flaviogomes-keys-trap-choir-bpm-130.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599525-0118489-flaviogomes-final-count-down-bpm-130.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599525-0118492-flaviogomes-dont-go-pads.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1648645-0119817-opc-trap-beat-sample.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1648645-0119817-opc-trap-beat-sample.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1685916-0109142-kcotk1-bombay.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1685916-0109142-kcotk1-bombay.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1733652-0106882-zlhd-old-school-throwback.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1733652-0114810-zlhd-water-plucks.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1751651-0116008-pinkj-the-tables-have-turned (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1751651-0116008-pinkj-the-tables-have-turned.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1779655-0128828-old-haze.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1779655-0128828-old-haze.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1785835-0128466-dylan411-travis-scott-x-nav-x-drake-heavy-type-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1882465-0110654-ev054-booom.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1882465-0110654-ev054-booom.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1882592-0128458-theloopgod-loopgod-x-drake-travis-scott.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1964781-0117940-gee808-dream-piano.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1964781-0117940-gee808-dream-piano.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2031104-0129816-psydub-pad-001.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2035786-0114815-ekajjjjj-lofi-rhodes.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2057570-0115001-djgameonmusic-autumn.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2057570-0115001-djgameonmusic-autumn.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2060813-0115007-byel-trap-impact-fx.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2060813-0115007-byel-trap-impact-fx.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2061580-0130226-catch-the-vibe.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2061580-0130226-catch-the-vibe.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2154535-0105032-808purp-low-hi-hats.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2154535-0105032-808purp-low-hi-hats.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2159630-0114773-rmce-cruise-chords.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2159630-0114773-rmce-cruise-chords.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2182047-0120166-aidenglonek-light.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2182047-0120166-aidenglonek-light.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2224957-0134447-152-kbs-dream.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2224957-0134447-152-kbs-dream.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2226779-0119231-younghabib-cash-carti.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2226779-0119231-younghabib-cash-carti.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2297958-0128908-nasty.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2302391-0129038-88glam-type-loop-dm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2302391-0129038-88glam-type-loop-dm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2308878-0119803-datvast-me-too.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2308878-0119803-datvast-me-too.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2315485-0114615-yungboiig-xaern.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2315485-0114615-yungboiig-xaern.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2331074-0115995-sicdeadboy-trappin-in-japan-type-synth.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2341179-0130213-future-pop-chord-stack.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2341179-0130213-future-pop-chord-stack.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2346305-0129587-taxi-to-space.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2346305-0129587-taxi-to-space.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2375453-0123795-cptusername-flute-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2375453-0123795-cptusername-flute-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2392682-0124730-lofy21-no-sleep.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2392682-0124730-lofy21-no-sleep.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody (1).wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2440464-0117901-irs-dark-trap-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2440464-0117901-irs-dark-trap-melody.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2444673-0115027-rxck-reversed-flute.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2444673-0115027-rxck-reversed-flute.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2447813-0115980-davidevisco-lil-pump-type-melody.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2472815-0130144-spacey-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2472815-0130144-spacey-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2507295-0130796-prod-by-j-phantom-its-a-vibe.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2539104-0130109-ambient-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2554561-0129423-happy-june.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2554561-0129423-happy-june.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2578702-0128738-2stepsback.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2578702-0128818-stupidrich.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2578702-0128818-stupidrich.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2612327-0134212-horror-movie-music.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2612327-0134212-horror-movie-music.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2638308-0125650-filcae-latin-drums.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2638308-0125650-filcae-latin-drums.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2651541-0128825-schmaltzy-bells.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2651541-0128825-schmaltzy-bells.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2689491-0130262-piano-loop.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2689491-0130262-piano-loop.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./make_listing.sh",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./my-first-agent.zip",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./my_alphabet_sheet_33_glyphs_v2.png",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./organizer-upgrade.zip",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./piano song_.wav",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./reply_to_before_the_word (1).mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./reply_to_before_the_word.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./sett.als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./space [2018-12-30 115204].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./src_free-outdoors (4).html",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./suave [2019-09-12 030926].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./suave [2019-09-12 054428].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./suave [2019-09-13 041010].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./suave [2019-09-13 220756].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./suave [2019-10-08 023728].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./suave [2019-10-25 003628].als",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./test_jwt_alg_confusion.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./the_third_stratum (1).py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./the_third_stratum.py",
+   "reason": "Changed in the last 7 days"
+  },
+  {
+   "file": "./thirty_five_message.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (10).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (11).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (12).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (13).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (14).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (15).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (16).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (17).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (19).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (2).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (22).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (23).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (24).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (25).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (26).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (27).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (28).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (29).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (3).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (4).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (5).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback (7).mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./videoplayback.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./where you going.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./where you going.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd",
+   "reason": "Audio/Ableton file: never moved"
+  },
+  {
+   "file": "./boing.wav.3gp",
+   "reason": "Audio file, per preferences"
+  },
+  {
+   "file": "./Sway.tg",
+   "reason": "Telegram file, unclear"
+  },
+  {
+   "file": "./TriSamples_-_808_Trapstep_Pack_Vol_1.zip",
+   "reason": "Audio samples, per preferences"
+  },
+  {
+   "file": "./Drum samples.zip",
+   "reason": "Audio samples, per preferences"
+  },
+  {
+   "file": "./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx",
+   "reason": "GPS/map file, unclear folder"
+  },
+  {
+   "file": "./ProducerSpot-808-Drums.zip",
+   "reason": "Audio samples, per preferences"
+  },
+  {
+   "file": "./HYSTERESIS.zip",
+   "reason": "Audio plugin, audio-related"
+  },
+  {
+   "file": "./673 Samples Drum Kit (Hipstrumentals.com).zip",
+   "reason": "Audio samples, per preferences"
+  },
+  {
+   "file": "./XFINITY.mobileconfig",
+   "reason": "System config file, unclear"
+  },
+  {
+   "file": "./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent",
+   "reason": "Torrent file, unclear purpose"
+  },
+  {
+   "file": "./3173-super-mario-bros-3.ggs",
+   "reason": "Game ROM file, unclear folder"
+  },
+  {
+   "file": "./Melek_Endless_Turn.cod",
+   "reason": "Code/game file, unclear"
+  },
+  {
+   "file": "./Dry.zip",
+   "reason": "Likely audio plugin, audio-related"
+  },
+  {
+   "file": "./IMG_1049.3gp",
+   "reason": "Video file, already handled"
+  },
+  {
+   "file": "./DeltaModulatorOSX.zip",
+   "reason": "Audio plugin, audio-related"
+  },
+  {
+   "file": "./Conner and Zack.zip",
+   "reason": "Unknown content, can't determine"
+  },
+  {
+   "file": "./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar",
+   "reason": "Minecraft mod, unclear format"
+  },
+  {
+   "file": "./chronos.json",
+   "reason": "Data file, unclear purpose"
+  },
+  {
+   "file": "./AllGVSTMacUBeta.zip",
+   "reason": "VST/audio plugin, audio-related"
+  },
+  {
+   "file": "./TubeAmp_Mac.zip",
+   "reason": "Audio plugin, audio-related"
+  },
+  {
+   "file": "./Boogex_Mac.zip",
+   "reason": "Audio plugin, audio-related"
+  },
+  {
+   "file": "./VoiceMail_2024-10-02_21-13-59.amr",
+   "reason": "Audio file, per preferences"
+  },
+  {
+   "file": "./files.zip",
+   "reason": "Generic zip, purpose unclear"
+  },
+  {
+   "file": "./thirty_five_codec.py",
+   "reason": "Recently modified, may be in use"
+  },
+  {
+   "file": "./level.dat_old",
+   "reason": "Game data file, purpose unclear"
+  },
+  {
+   "file": "./rr_chronicle_2026-06-11.json",
+   "reason": "Recently modified, may be in use"
+  },
+  {
+   "file": "./level.dat",
+   "reason": "Game data file, purpose unclear"
+  },
+  {
+   "file": "./session.lock",
+   "reason": "System file, leave as-is"
+  },
+  {
+   "file": "./rr_chronicle_2026-07-27.json",
+   "reason": "Recently modified, may be in use"
+  },
+  {
+   "file": "./state-park-research-prompts-and-responses.zip",
+   "reason": "Recently modified, may be in use"
+  },
+  {
+   "file": "./world.zip",
+   "reason": "Game data, purpose unclear"
+  }
+ ]
+}

@@ -3,6 +3,7 @@ make_mac_script.py: turns the agent's organize_plan.json into a SAFE script for 
 
 Run (in the cloud session):
     python make_mac_script.py
+    python make_mac_script.py --listing L.txt --plan P.json --out DIR   (used by sophia.py)
 
 Reads:   workspace/inbox/file_listing.txt, workspace/organize_plan.json
 Writes:  workspace/out/organize.sh            (the script you run on your Mac)
@@ -14,7 +15,10 @@ Safety built into organize.sh:
 - Skips files that have been moved or deleted since the listing was made.
 - Writes an undo script for every move it makes.
 - Only moves files; never deletes or renames anything.
+- Never moves audio or Ableton files (PROTECTED below), whatever the plan says,
+  because Ableton projects find their samples by location.
 """
+import argparse
 import json
 import pathlib
 import shlex
@@ -26,19 +30,32 @@ LISTING = ROOT / "workspace" / "inbox" / "file_listing.txt"
 PLAN = ROOT / "workspace" / "organize_plan.json"
 OUT = ROOT / "workspace" / "out"
 
+# Audio and Ableton files never move: Ableton projects find samples by their location.
+# (.alp Live Packs are installers, not samples, so they are not on this list.)
+PROTECTED = {
+    ".wav", ".aif", ".aiff", ".mp3", ".m4a", ".flac", ".ogg", ".caf", ".mid", ".midi",
+    ".asd", ".als", ".adg", ".adv", ".agr", ".alc", ".ams", ".amxd", ".ask", ".rx2",
+}
+
+
+def is_protected(path):
+    return pathlib.PurePosixPath(path).suffix.lower() in PROTECTED
+
 
 def fail(msg):
     sys.exit(f"[FAIL] {msg}")
 
 
-def read_listing():
+def read_listing(LISTING=LISTING):
     if not LISTING.exists():
-        fail(f"Missing {LISTING.relative_to(ROOT)}. Upload your file listing there first.")
+        fail(f"Missing {LISTING}. Upload your file listing there first.")
     lines = LISTING.read_text(encoding="utf-8", errors="replace").splitlines()
     base, files = None, {}
     for line in lines:
         if line.startswith("# base:"):
             base = line.split(":", 1)[1].strip()
+        elif line.startswith("#"):
+            continue
         elif line.strip():
             parts = line.split("|", 2)
             if len(parts) == 3:
@@ -61,9 +78,17 @@ def safe_folder(folder):
 
 
 def main():
-    base, listed = read_listing()
+    global PLAN, OUT
+    ap = argparse.ArgumentParser(description="Turn a plan into a safe Mac script.")
+    ap.add_argument("--listing", default=str(LISTING))
+    ap.add_argument("--plan", default=str(PLAN))
+    ap.add_argument("--out", default=str(OUT))
+    args = ap.parse_args()
+    PLAN, OUT = pathlib.Path(args.plan).resolve(), pathlib.Path(args.out).resolve()
+
+    base, listed = read_listing(pathlib.Path(args.listing).resolve())
     if not PLAN.exists():
-        fail(f"Missing {PLAN.relative_to(ROOT)}. Run the agent first.")
+        fail(f"Missing {PLAN}. Run the agent first.")
     try:
         plan = json.loads(PLAN.read_text())
     except json.JSONDecodeError as e:
@@ -80,6 +105,8 @@ def main():
         if f in seen:
             problems.append(f"Listed twice (kept first): {f}")
             continue
+        if is_protected(f):
+            continue  # audio/Ableton: always left alone (reported below)
         if not safe_folder(folder):
             problems.append(f"Unsafe folder '{folder}' for {f} (skipped)")
             continue
@@ -96,6 +123,10 @@ def main():
             seen.add(f)
             leave.append(item)
 
+    for f in listed:
+        if f not in seen and is_protected(f):
+            seen.add(f)
+            leave.append({"file": f, "reason": "Audio/Ableton file: never moved"})
     for f in listed:
         if f not in seen:
             leave.append({"file": f, "reason": "Not mentioned in the plan, so left alone"})
@@ -177,7 +208,7 @@ def main():
     print(f"[ OK ] {len(moves)} moves, {len(leave)} left alone, {len(problems)} warning(s)")
     for p in problems:
         print(f"   - {p}")
-    print("Wrote workspace/out/organize.sh and workspace/out/organize_preview.md")
+    print(f"Wrote {OUT / 'organize.sh'} and {OUT / 'organize_preview.md'}")
 
 
 if __name__ == "__main__":
