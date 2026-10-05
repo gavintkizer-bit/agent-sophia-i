@@ -1,0 +1,1248 @@
+# Organize preview
+
+Folder: `/Users/gtkizer/Downloads`  
+Files in listing: 1219 | Will move: 547 | Left alone: 672
+
+## Moves
+
+### Archives/ (17)
+- `1.11-Dokucraft-TSC-High.zip`: Minecraft texture pack
+- `1.14-Dokucraft-TSC-Dark.zip`: Minecraft texture pack
+- `AlluringBliss 1.16 v1.2.0.00.zip`: Minecraft mod/texture
+- `Andorhal HD.zip`: Minecraft texture pack
+- `Beyond+the+Lands.zip`: Minecraft mod
+- `JehkobasFantasy_5.zip`: Minecraft mod
+- `Kitchen Table - by Yami.zip`: Minecraft mod/texture
+- `ModernArch R50 [1.13 - 1.15] [256x].zip`: Minecraft texture
+- `Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip`: Minecraft mod
+- `PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip`: Minecraft texture
+- `Romecraft GERMANIA 16.zip`: Minecraft mod
+- `Round+Trees+V.2.1.0+-+1.13.zip`: Minecraft mod
+- `TextureCraft [1.14] 190826.zip`: Minecraft texture
+- `WA_IBG_Vocal_Chain.zip`: Audio archive file
+- `Winthor Medieval v2.6 WIP MC 1.14.zip`: Minecraft mod
+- `Winthor+Medieval+v4.3+MC+1.16.2.zip`: Minecraft mod
+- `🗓️ Course Schedule (SS2 8-Week).html.zip`: Course schedule archive
+
+### Documents/ (132)
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).epub`: .epub file
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf`: .pdf file
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt`: .txt file
+- `111 Internet Research Assignment.docx`: .docx file
+- `111S18H.docx`: .docx file
+- `Accrue Cover Letter - Gavin K..pdf`: .pdf file
+- `Argument essay (1).pdf`: .pdf file
+- `Argument essay.pdf`: .pdf file
+- `Asia Study Guide (1).docx`: .docx file
+- `Asia Study Guide (2).docx`: .docx file
+- `Asia Study Guide.docx`: .docx file
+- `Assignment #4 Rock Deformation.docx`: .docx file
+- `Assignment #4 Rock Deformation.pdf`: .pdf file
+- `Assignment #8 California Drought Conditions.docx`: .docx file
+- `Assignment 2 Mineral's Use In Society.docx`: .docx file
+- `Assignment_7B_Rivers_and_Google_Earth(1).docx`: .docx file
+- `Assignment_7B_Rivers_and_Google_Earth(1).pdf`: .pdf file
+- `Blended Geologic Time.pptx`: .pptx file
+- `Blended Ocean Features.pptx`: .pptx file
+- `Blended Rock Deformation and Earthquakes.pptx`: .pptx file
+- `Blended Stream Discharge.pptx`: .pptx file
+- `CHRONOS.md`: .md file
+- `Career Coach Assessment and Research (fillable).pdf`: .pdf file
+- `Changing Traditions and Less Superstition - Gavin Kizer (1).pdf`: .pdf file
+- `Changing Traditions and Less Superstition - Gavin Kizer.pdf`: .pdf file
+- `Character Architecture - The Restrained Monster.pdf`: .pdf file
+- `Compare and contras rough draft.pdf`: .pdf file
+- `Compare and contrast rough draft.pdf`: .pdf file
+- `Completed Copy of Tenant Application 2015 NEW.docx.pdf`: .pdf file
+- `Completed Tenant Application 2015 NEW.docx.pdf`: .pdf file
+- `Debate Research.pdf`: .pdf file
+- `DespicableG50842_122644193.pdf`: .pdf file
+- `Dogs of Courage.pdf`: .pdf file
+- `Drum machine patterns 260.pdf`: .pdf file
+- `Essay 3.pdf`: .pdf file
+- `Essay assignment 1 - Gavin Kizer - .pdf`: .pdf file
+- `Essay assignment 2 - Gavin Kizer .pdf`: .pdf file
+- `Exercise 1 Getting Control of Your Time - Gavin Kizer.pdf`: .pdf file
+- `Exercise 1 Getting Control of Your Time SP25.docx`: .docx file
+- `Exercise 2  Academic Readiness - Gavin Kizer.pdf`: .pdf file
+- `Exercise 2  Academic Readiness FA25.docx`: .docx file
+- `Exercise 3.1 Self-Assesments - Gavin Kizer.pdf`: .pdf file
+- `Exercise 3.1 Self-Assesments SP25 revised (1) (1).docx`: .docx file
+- `Exercise 3.2 Career Research SP25.docx`: .docx file
+- `Exercise 6A Your Academic and Transfer Plan SP25.docx`: .docx file
+- `Exercise 7 Paying for College - Gavin K.pdf`: .pdf file
+- `Exercise 7 Paying for College and  Budgeting SP253.docx`: .docx file
+- `Exercise 8 Self-Reflection - Gavin k].pdf`: .pdf file
+- `Exercise 8 Self-Reflection SP25.docx`: .docx file
+- `Gavin Kizer (1).pdf`: .pdf file
+- `Gavin Kizer (2).pdf`: .pdf file
+- `Gavin Kizer - 03_23_2026.pdf`: .pdf file
+- `Gavin Kizer - Internet Research Assignment 2 - Copy.pdf`: .pdf file
+- `Gavin Kizer - Internet Research Assignment.pdf`: .pdf file
+- `Gavin Kizer - Résumé (1).pdf`: .pdf file
+- `Gavin Kizer - Résumé (2).pdf`: .pdf file
+- `Gavin Kizer - Résumé (3).pdf`: .pdf file
+- `Gavin Kizer - Résumé.docx`: .docx file
+- `Gavin Kizer - Résumé.pdf`: .pdf file
+- `Gavin Kizer - The Uses of Olivine in Human Society.pdf`: .pdf file
+- `Gavin Kizer - Theme and Primary Source (1).pdf`: .pdf file
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 1- Copy.pdf`: .pdf file
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 2.pdf`: .pdf file
+- `Gavin Kizer - Theme and Primary Source.pdf`: .pdf file
+- `Gavin Kizer Career Coach Assessment.pdf`: .pdf file
+- `Gavin Kizer Career Research.pdf`: .pdf file
+- `Gavin Kizer Resume.pdf`: .pdf file
+- `Gavin Kizer – Signature Assignment Analysis.pdf`: .pdf file
+- `Gavin Kizer.pdf`: .pdf file
+- `Gavin Kizers Resume (1).pdf`: .pdf file
+- `Gavin Kizers Resume (2).pdf`: .pdf file
+- `Gavin Kizers Resume.pdf`: .pdf file
+- `Human Odyssey answers .pages`: .pages file
+- `Human Odyssey answers .pdf`: .pdf file
+- `Human Odyssey answers.pages`: .pages file
+- `Hurricane Assignment Graphs - Gavin Kizer.pdf`: .pdf file
+- `Hurricane Assignment Pacific 2023 - Gavin Kizer (1).docx`: .docx file
+- `Hurricane Assignment Pacific 2023.docx`: .docx file
+- `Internet Assignment (1).pdf`: .pdf file
+- `Internet Assignment.docx`: .docx file
+- `Internet Assignment.pdf`: .pdf file
+- `Kizer_Gavin_4352959_7_22_2024.pdf`: .pdf file
+- `Kizer_Gavin_4352959_8_9_2024.pdf`: .pdf file
+- `Magic Stats 1.1.10 - Player Stats - Per Game.csv`: .csv file
+- `Magic Stats 1.1.10 - Rules.csv`: .csv file
+- `Members_12298965.csv`: .csv file
+- `Midterm Study Guide.docx`: .docx file
+- `Movie Excel Data.xlsx`: .xlsx file
+- `Nepotism Vs. Merit Edit Draft.pdf`: .pdf file
+- `Nepotism Vs. Merit Final.pdf`: .pdf file
+- `PBSNOVAGreatHumanOdysseyVideoQuestions.docx`: .docx file
+- `Pocket operations.pdf`: .pdf file
+- `Point by Point Outline (1).pdf`: .pdf file
+- `Point by Point Outline.docx`: .docx file
+- `Resume.pdf`: .pdf file
+- `Sailing_Weekend_Packing_List.pdf`: .pdf file
+- `Scientific method.docx`: .docx file
+- `Smith on Virginia.docx`: .docx file
+- `Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf`: .pdf file
+- `TXT.rtf`: .rtf file
+- `Tenant Application 2015 NEW.docx.pdf`: .pdf file
+- `The Ethics of Working Dogs.pdf`: .pdf file
+- `The Positive Effects of the Kudzu Vine.pdf`: .pdf file
+- `Untitled document (1).pdf`: .pdf file
+- `Untitled document (2).pdf`: .pdf file
+- `Untitled document.docx`: .docx file
+- `Untitled document.pdf`: .pdf file
+- `Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf`: .pdf file
+- `Writing assignment 1 - Gavin Kizer (1).pdf`: .pdf file
+- `Writing assignment 1 - Gavin Kizer.pdf`: .pdf file
+- `bellalastr420.csv`: .csv file
+- `bic_application.pdf`: .pdf file
+- `chronos.csv`: .csv file
+- `data_1072164156.csv`: .csv file
+- `data_115293264.csv`: .csv file
+- `data_1200926894.csv`: .csv file
+- `data_1687669322.csv`: .csv file
+- `data_1987472705.csv`: .csv file
+- `data_377620463.csv`: .csv file
+- `deck.pdf`: .pdf file
+- `decklist.pdf`: .pdf file
+- `dokumen.pub_a-short-stay-in-hell-9780983748434-9780983748441-9780983748427-2011941923.epub`: .epub file
+- `eastern_seaboard_logs_1789194243265.csv`: .csv file
+- `free-outdoors-logbook-2026-09-24.csv`: .csv file
+- `gavin Kizer Excercise 6.pdf`: .pdf file
+- `soundcloud-backup-codes.txt`: .txt file
+- `the-great-goblin-20260814-213137.txt`: .txt file
+- `The_Science_of_Revenge.bibtex`: Bibliography file
+- `The_Science_of_Revenge.ris`: Bibliography file
+- `gtkizer97@gmail.com.ical.zip`: Calendar data archive
+- `query.py`: Python script
+- `rooster_ranges_player_scraper.py`: Python script
+
+### Documents/Finance/ (3)
+- `2022_TaxReturn.pdf`: .pdf file
+- `TurboTaxReturn.tax2022`: Tax return file
+- `U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement`: Bank statement/agreement
+
+### Images/ (110)
+- `1000005030.jpg`: .jpg file
+- `1000005604.jpg`: .jpg file
+- `1000006020.jpg`: .jpg file
+- `1000006078.jpg`: .jpg file
+- `1000006079.jpg`: .jpg file
+- `170702062321-south-china-sea-map-full-169.jpg`: .jpg file
+- `20221006_155608.jpg`: .jpg file
+- `20221006_162153.jpg`: .jpg file
+- `20230419_014528.jpg`: .jpg file
+- `20240408_145339.jpg`: .jpg file
+- `250px-South_China_Sea_claims_map.jpg`: .jpg file
+- `29950149852_9da03e217d_b.jpg`: .jpg file
+- `360_F_364996969_8IMWghVlGPFbY6lh20Npsr6C5KNA91i8.jpg`: .jpg file
+- `37332332_1977365342294602_8440892694183542784_n.jpg`: .jpg file
+- `37408417_1977365468961256_8324511389838213120_n.jpg`: .jpg file
+- `39940255_227767624569549_5115207016180088832_n.jpg`: .jpg file
+- `480938750_10231748333224711_6344715920915075168_n.jpg`: .jpg file
+- `489377173_122145832934525883_1813819319315495198_n.jpg`: .jpg file
+- `516951767_122249251946026622_5942632433369355451_n.jpg`: .jpg file
+- `517134365_10234810850434995_816162525777186280_n.jpg`: .jpg file
+- `517271176_2108661092976615_736342606148249827_n.jpg`: .jpg file
+- `517325932_1979952872812788_6313110373310684803_n.jpg`: .jpg file
+- `520198294_122168282840529819_8120324629356285311_n.jpg`: .jpg file
+- `520670420_10111091162228858_5301679681961088958_n.jpg`: .jpg file
+- `523995815_18405441715116603_914392300724425353_n.jpg`: .jpg file
+- `613427660_25609406018688711_7546605086745359122_n.jpg`: .jpg file
+- `6C011C51-8CD2-4AF5-A885-8537B83C339A.jpg`: .jpg file
+- `73290344_2466312136823676_7264940007272480768_o.jpg`: .jpg file
+- `947E3EE0-8923-41E3-9A56-51B77BC616C5.JPG`: .jpg file
+- `A1ztxzwbVEL.jpg`: .jpg file
+- `App pg. 2.jpg`: .jpg file
+- `BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG`: .jpg file
+- `Breakbeat patterns.jpg`: .jpg file
+- `Charlotte_Skyline_2011_-_Ricky_W.jpg`: .jpg file
+- `ER6NRvoUwAA855k.jpeg`: .jpeg file
+- `FB_IMG_1625772631920.jpg`: .jpg file
+- `FB_IMG_1633197385667.jpg`: .jpg file
+- `FB_IMG_1636594437957.jpg`: .jpg file
+- `FB_IMG_1642452517265.jpg`: .jpg file
+- `FB_IMG_1681853727713.jpg`: .jpg file
+- `Gemini_Generated_Image_7xzy827xzy827xzy.jpeg`: .jpeg file
+- `Gemini_Generated_Image_93lgpr93lgpr93lg.jpeg`: .jpeg file
+- `Gemini_Generated_Image_dlljvudlljvudllj.jpeg`: .jpeg file
+- `Gemini_Generated_Image_fu8im9fu8im9fu8i.jpeg`: .jpeg file
+- `Gemini_Generated_Image_inol8ainol8ainol.jpeg`: .jpeg file
+- `Gemini_Generated_Image_jt472ljt472ljt47.jpeg`: .jpeg file
+- `Gemini_Generated_Image_n5aofin5aofin5ao.jpeg`: .jpeg file
+- `Gemini_Generated_Image_qii7kgqii7kgqii7.jpeg`: .jpeg file
+- `Gemini_Generated_Image_qo3unaqo3unaqo3u.jpeg`: .jpeg file
+- `Gemini_Generated_Image_spsn81spsn81spsn.jpeg`: .jpeg file
+- `Gemini_Generated_Image_y2b6omy2b6omy2b6.jpeg`: .jpeg file
+- `Getti T Shirt _3 Chase Christmas Present (1).jpg`: .jpg file
+- `Getti T Shirt _3 Chase Christmas Present (2).jpg`: .jpg file
+- `Getti T Shirt _3 Chase Christmas Present (3).jpg`: .jpg file
+- `Getti T Shirt _3 Chase Christmas Present.jpg`: .jpg file
+- `IMG_2004.jpg`: .jpg file
+- `IMG_2008.jpg`: .jpg file
+- `IMG_2009.jpg`: .jpg file
+- `IMG_20260611_022605.heic`: .heic file
+- `Image-1-Ossabaw-Map-scaled.jpg`: .jpg file
+- `Karta_CN_SouthChinaSea.png`: .png file
+- `Main@2x.png`: .png file
+- `Maproom-Central-London-major-features-5.jpg`: .jpg file
+- `Patterns1.jpg`: .jpg file
+- `Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg`: .jpg file
+- `Test work.jpg`: .jpg file
+- `Untitled drawing (1).jpg`: .jpg file
+- `Untitled drawing (1).png`: .png file
+- `Untitled drawing (2).jpg`: .jpg file
+- `Untitled drawing (3).jpg`: .jpg file
+- `Untitled drawing (4).jpg`: .jpg file
+- `Untitled drawing (5).jpg`: .jpg file
+- `Untitled drawing (6).jpg`: .jpg file
+- `Untitled drawing.jpg`: .jpg file
+- `Untitled drawing.png`: .png file
+- `bathroom-chilling.jpg`: .jpg file
+- `before_the_word_analysis.png`: .png file
+- `bp-708.webp`: .webp file
+- `deadly-nightshade-flower-hand-drawn-vector-illustration-also-known-as-belladonna-captures-haunting-beauty-339641910.webp`: .webp file
+- `download (1).jpeg`: .jpeg file
+- `download (2).jpeg`: .jpeg file
+- `download (3).jpeg`: .jpeg file
+- `download (4).jpeg`: .jpeg file
+- `download.jpeg`: .jpeg file
+- `fb5aeb0f80f593fc226cc6180982482f.png`: .png file
+- `feat_russia.jpeg`: .jpeg file
+- `gettyimages-807070348.jpg`: .jpg file
+- `gmail_images20260415_023604.png`: .png file
+- `gmail_images20260415_023620.png`: .png file
+- `hqdefault.jpg`: .jpg file
+- `image_1b1ad4eb.jpg`: .jpg file
+- `image_6546160.JPG`: .jpg file
+- `image_ce2132e6.jpg`: .jpg file
+- `images (1).jpeg`: .jpeg file
+- `images (2).jpeg`: .jpeg file
+- `images.jpeg`: .jpeg file
+- `kh-map-southchinaseav2.jpg`: .jpg file
+- `map-south-china-sea-line-624.png`: .png file
+- `maxresdefault.jpg`: .jpg file
+- `ossabaw-island-georgia-nautical-chart-sea-koast.jpg`: .jpg file
+- `printable-no-soliciting-sign.png`: .png file
+- `received_3841306436151063.jpeg`: .jpeg file
+- `reply_spectrogram.png`: .png file
+- `reply_structure.png`: .png file
+- `resort.jpg`: .jpg file
+- `s-l300.jpg`: .jpg file
+- `super ninja.jpeg`: .jpeg file
+- `swamp florida.webp`: .webp file
+- `the dog.jpeg`: .jpeg file
+- `theeee dog.jpeg`: .jpeg file
+
+### Installers/ (26)
+- `ASIO4ALL_2_13_English.exe`: Audio driver installer
+- `BEHRINGER_2902_WIN32_2.8.17.zip`: Audio device driver
+- `BEHRINGER_2902_X64_2.8.40.zip`: Audio device driver
+- `DC1A3-mac-installer.zip`: Mac app installer
+- `Google Chrome`: Browser installer
+- `Hearthstone-Setup.zip`: Game installer
+- `InstallLDBPackage64c-2-1-5-01.zip`: App installer
+- `MixPres-asio-2.9.87.5.zip`: Audio driver
+- `Multiply_OSX_1_1_1.pkg.zip`: Mac app installer
+- `OperaSetup (1).zip`: Browser installer
+- `OperaSetup (2).zip`: Browser installer
+- `OperaSetup.zip`: Browser installer
+- `SpotifyInstaller (1).zip`: App installer
+- `SpotifyInstaller.zip`: App installer
+- `SoundDevices_MixPre_2.9.87.5.exe`: Audio device software
+- `camo-macos-latest (1).zip`: App installer
+- `camo-macos-latest (2).zip`: App installer
+- `camo-macos-latest.zip`: App installer
+- `gerudoku-1-16-x-v1-2.zip`: Game installer
+- `lo-fi drum kit.zip`: Sample pack installer
+- `maudioplugins_12_03_setupmac.zip`: Audio plugin installer
+- `maudioplugins_14_16_setupmac.zip`: Audio plugin installer
+- `mcedit2-macosx64-2.0.0-beta11.zip`: Game editor installer
+- `server.jar`: Java application
+- `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: App installer archive
+- `usb_asio.sit`: Legacy installer
+
+### Video/ (65)
+- `1000005309.mp4`: .mp4 file
+- `1000005312.mp4`: .mp4 file
+- `Aki Takase - Minerva's Owl.mp4`: .mp4 file
+- `Ambiance II Fusion-Don't You Ever Take Your Love.mp4`: .mp4 file
+- `Applause Crowd Cheering sound effect.mp4`: .mp4 file
+- `Ayudame a Creer.mp4`: .mp4 file
+- `DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4`: .mp4 file
+- `Harold Vick-Wild Is The Wind.mp4`: .mp4 file
+- `Itsuroh Shimoda - Everybody Anyone (1974).mp4`: .mp4 file
+- `J.O.B. Orchestra-Govinda.mp4`: .mp4 file
+- `Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4`: .mp4 file
+- `JoJo out of context.mp4`: .mp4 file
+- `Kung Fu 1972 - 1975  Opening and Closing Theme.mp4`: .mp4 file
+- `Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4`: .mp4 file
+- `Monster - Chapter 03 - Murder Case.mkv`: .mkv file
+- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4`: .mp4 file
+- `Nujabes - City Lights (Homework Edit).mp4`: .mp4 file
+- `Nujabes - City Lights.mp4`: .mp4 file
+- `ORF Orchestra - Diskretion.mp4`: .mp4 file
+- `Secretos del saxofon. Técnica de saxofón.mp4`: .mp4 file
+- `Shigeo Sekito - the word II.mp4`: .mp4 file
+- `Steve Jobss Philosophy.mp4`: .mp4 file
+- `Travis-Scott---Antidote--Acapella.mp4`: .mp4 file
+- `Van Guard.mp4`: .mp4 file
+- `Virgen Negra.mp4`: .mp4 file
+- `Wolfgang Lauth Quartett - Moonlight Fantasy.mp4`: .mp4 file
+- `boing.wav.mp4`: .mp4 file
+- `grsa-SingingSand2017_480x270.mp4`: .mp4 file
+- `videoplayback (1).mp4`: .mp4 file
+- `videoplayback (10).mp4`: .mp4 file
+- `videoplayback (11).mp4`: .mp4 file
+- `videoplayback (12).mp4`: .mp4 file
+- `videoplayback (13).mp4`: .mp4 file
+- `videoplayback (14).mp4`: .mp4 file
+- `videoplayback (15).mp4`: .mp4 file
+- `videoplayback (16).mp4`: .mp4 file
+- `videoplayback (17).mp4`: .mp4 file
+- `videoplayback (18).mp4`: .mp4 file
+- `videoplayback (19).mp4`: .mp4 file
+- `videoplayback (2).mp4`: .mp4 file
+- `videoplayback (20).mp4`: .mp4 file
+- `videoplayback (21).mp4`: .mp4 file
+- `videoplayback (22).mp4`: .mp4 file
+- `videoplayback (23).mp4`: .mp4 file
+- `videoplayback (24).mp4`: .mp4 file
+- `videoplayback (25).mp4`: .mp4 file
+- `videoplayback (26).mp4`: .mp4 file
+- `videoplayback (27).mp4`: .mp4 file
+- `videoplayback (28).mp4`: .mp4 file
+- `videoplayback (29).mp4`: .mp4 file
+- `videoplayback (3).mp4`: .mp4 file
+- `videoplayback (4).mp4`: .mp4 file
+- `videoplayback (5).mp4`: .mp4 file
+- `videoplayback (6).mp4`: .mp4 file
+- `videoplayback (7).mp4`: .mp4 file
+- `videoplayback (8).mp4`: .mp4 file
+- `videoplayback (9).mp4`: .mp4 file
+- `videoplayback.mp4`: .mp4 file
+- `y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4`: .mp4 file
+- `y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4`: .mp4 file
+- `y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4`: .mp4 file
+- `y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4`: .mp4 file
+- `y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4`: .mp4 file
+- `videoplayback (1).3gp`: Video file
+- `videoplayback.3gp`: Video file
+
+### Web Pages/ (113)
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz`: Compressed HTML document
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html`: HTML document
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz`: Compressed HTML document
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz`: OCR/web data file
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz`: OCR/web text file
+- `Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm`: Saved webpage
+- `SailorsDelight (1).html`: Saved webpage
+- `SailorsDelight (2).html`: Saved webpage
+- `SailorsDelight (3).html`: Saved webpage
+- `SailorsDelight.html`: Saved webpage
+- `Stats.html.rtfd.zip`: Rich text web archive
+- `Untitled - Copy (2).html.zip`: Saved webpage archive
+- `alpine_hike_micro_brief_generator.html`: Saved webpage
+- `catalina27-sail-model (1).html`: Saved webpage
+- `catalina27-sail-model (2).html`: Saved webpage
+- `catalina27-sail-model.html`: Saved webpage
+- `diamondedge_baseball_trading_odds_intelligence_suite.html`: Saved webpage
+- `diamondstat_mlb_analytics_hub.html`: Saved webpage
+- `diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html`: Saved webpage
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html`: Saved webpage
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html`: Saved webpage
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html`: Saved webpage
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html`: Saved webpage
+- `diamondstat_pro_mlb_intelligence_precision_wager_engine.html`: Saved webpage
+- `eastern-seaboard-nav-companion (1).html`: Saved webpage
+- `eastern-seaboard-nav-companion (2).html`: Saved webpage
+- `eastern-seaboard-nav-companion (3).html`: Saved webpage
+- `eastern-seaboard-nav-companion (4).html`: Saved webpage
+- `eastern-seaboard-nav-companion (5).html`: Saved webpage
+- `eastern-seaboard-nav-companion (6).html`: Saved webpage
+- `eastern-seaboard-nav-companion (7).html`: Saved webpage
+- `eastern-seaboard-nav-companion (8).html`: Saved webpage
+- `eastern-seaboard-nav-companion (9).html`: Saved webpage
+- `eastern-seaboard-nav-companion (10).html`: Saved webpage
+- `eastern-seaboard-nav-companion (11).html`: Saved webpage
+- `eastern-seaboard-nav-companion (12).html`: Saved webpage
+- `eastern-seaboard-nav-companion (13).html`: Saved webpage
+- `eastern-seaboard-nav-companion (14).html`: Saved webpage
+- `eastern-seaboard-nav-companion (15).html`: Saved webpage
+- `eastern-seaboard-nav-companion.html`: Saved webpage
+- `free-outdoors (1).html`: Saved web page
+- `free-outdoors (2).html`: Saved web page
+- `free-outdoors (3).html`: Saved web page
+- `free-outdoors (4).html`: Saved web page
+- `free-outdoors.html`: Saved web page
+- `gemini-code-1789184866606.html`: Saved web page
+- `gemini-code-1789185162035.css`: Web page stylesheet
+- `gemini-code-1789185190245.css`: Web page stylesheet
+- `gemini-code-1789185214723.html`: Saved web page
+- `gemini-code-1789185320383.html`: Saved web page
+- `gemini-code-1789185664565.html`: Saved web page
+- `gemini-code-1789185920001.html`: Saved web page
+- `gemini-code-1789186033677.html`: Saved web page
+- `gemini-code-1789186402897.html`: Saved web page
+- `gemini-code-1789186950167.html`: Saved web page
+- `gemini-code-1789187206261.html`: Saved web page
+- `gemini-code-1789187836936.html`: Saved web page
+- `gemini-code-1789187948106.html`: Saved web page
+- `gemini-code-1789188314052.html`: Saved web page
+- `gemini-code-1789188727224.html`: Saved web page
+- `gemini-code-1789189244939.html`: Saved web page
+- `gemini-code-1789189459699.html`: Saved web page
+- `gemini-code-1789189815604.html`: Saved web page
+- `gemini-code-1789190315390.ts`: Web page code file
+- `gemini-code-1789190398574.html`: Saved web page
+- `gemini-code-1789190818961.html`: Saved web page
+- `gemini-code-1789190931126.html`: Saved web page
+- `gemini-code-1789191133333.html`: Saved web page
+- `gemini-code-1789191176867.js`: Web page code file
+- `gemini-code-1789191306238.html`: Saved web page
+- `gemini-code-1789191439723.html`: Saved web page
+- `gemini-code-1789191692266.html`: Saved web page
+- `gemini-code-1789191950517.html`: Saved web page
+- `gemini-code-1789192240856.html`: Saved web page
+- `gemini-code-1789192390444.html`: Saved web page
+- `gemini-code-1789192849570.html`: Saved web page
+- `gemini-code-1789193526377.html`: Saved web page
+- `gemini-code-1789193698019.html`: Saved web page
+- `gemini-code-1789195191227.html`: Saved web page
+- `gemini-code-1789197186964.js`: Web page code file
+- `gemini-code-1789197216676.html`: Saved web page
+- `gemini-code-1789197508013.html`: Saved web page
+- `gemini-code-1789360371402.html`: Saved web page
+- `gemini-code-1789360753807.html`: Saved web page
+- `gemini-code-1789360855075.html`: Saved web page
+- `gemini-code-1789361078323.html`: Saved web page
+- `gemini-code-1789361138778.html`: Saved web page
+- `gemini-code-1789361323644.html`: Saved web page
+- `gemini-code-1789361635886.html`: Saved web page
+- `gemini-code-1789362187633.html`: Saved web page
+- `gemini-code-1789362552500.html`: Saved web page
+- `gemini-code-1789362902100.html`: Saved web page
+- `gemini-code-1789363186777.html`: Saved web page
+- `gemini-code-1789363490007.html`: Saved web page
+- `gemini-code-1789363870692.html`: Saved web page
+- `gemini-code-1789364075727.html`: Saved web page
+- `gemini-code-1789364228303.html`: Saved web page
+- `gemini-code-1789364535282.js`: Web page code file
+- `gemini-code-1789364745572.html`: Saved web page
+- `hjk.htm`: Saved web page
+- `rooster_ranges_leaderboard.html`: Saved web page
+- `rooster_ranges_stats.html`: Saved web page
+- `rr_leaderboard (10).html`: Saved web page
+- `rr_leaderboard (2).html`: Saved web page
+- `rr_leaderboard (3).html`: Saved web page
+- `rr_leaderboard (4).html`: Saved web page
+- `rr_leaderboard (5).html`: Saved web page
+- `rr_leaderboard (6).html`: Saved web page
+- `rr_leaderboard (7).html`: Saved web page
+- `rr_leaderboard (8).html`: Saved web page
+- `rr_leaderboard (9).html`: Saved web page
+- `rr_leaderboard.html`: Saved web page
+- `tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html`: Saved web page
+
+### _Sophia To Delete/Ableton Packs - delete if installed/ (18)
+- `BreakSelectionbySampleMagic_r36457_v1.0.alp`: Live Pack installer; check Ableton first
+- `BreakbeatsbyKutMastaKurt_r32873_v9.0.alp`: Live Pack installer; check Ableton first
+- `BuildandDrop_r47739_v1.1.alp`: Live Pack installer; check Ableton first
+- `ChopandSwing_r47707_v1.1.alp`: Live Pack installer; check Ableton first
+- `ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp`: Live Pack installer; check Ableton first
+- `DesignerDrums_r32877_v9.0.alp`: Live Pack installer; check Ableton first
+- `DriveandGlow_r49040_v1.2.alp`: Live Pack installer; check Ableton first
+- `GratisHitsbyMaxforCats_r33796_v1.0.alp`: Live Pack installer; check Ableton first
+- `KJSawkaMadBeatz_r32873_v9.0.alp`: Live Pack installer; check Ableton first
+- `KapturebyPlastikmanandLiine_r32873_v1.0.alp`: Live Pack installer; check Ableton first
+- `KasiobyOliLarkin_r32873_v1.0.alp`: Live Pack installer; check Ableton first
+- `Max7PitchandTimeMachines_r43196_v1.0.alp`: Live Pack installer; check Ableton first
+- `PitchDropbyMormo_r25158_v1.0.alp`: Live Pack installer; check Ableton first
+- `Singularities_r49122_v1.0.alp`: Live Pack installer; check Ableton first
+- `SolidSounds_r28796_v9.0.alp`: Live Pack installer; check Ableton first
+- `StringQuartetbySpitfireAudio_r59561_v1.1.alp`: Live Pack installer; check Ableton first
+- `SynthEssentials_r46620_v1.1.alp`: Live Pack installer; check Ableton first
+- `e-instrumentsStudioBass_r32591_v1.0.alp`: Live Pack installer; check Ableton first
+
+### _Sophia To Delete/Duplicates/ (40)
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998) (1).epub`: Exact copy of another file here
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html`: Exact copy of another file here
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html`: Exact copy of another file here
+- `1000005309 (1).mp4`: Exact copy of another file here
+- `111 Internet Research Assignment (1).docx`: Exact copy of another file here
+- `111S18H (1).docx`: Exact copy of another file here
+- `2022_TaxReturn (1).pdf`: Exact copy of another file here
+- `73290344_2466312136823676_7264940007272480768_o (1).jpg`: Exact copy of another file here
+- `Assignment 2 Mineral's Use In Society (1).docx`: Exact copy of another file here
+- `BEHRINGER_2902_X64_2.8.40 (1).zip`: Exact copy of another file here
+- `Blended Geologic Time (1).pptx`: Exact copy of another file here
+- `Character Architecture - The Restrained Monster (1).pdf`: Exact copy of another file here
+- `Completed Tenant Application 2015 NEW.docx (1).pdf`: Exact copy of another file here
+- `DC1A3 2.dmg`: Exact copy of another file here
+- `Debate Research (1).pdf`: Exact copy of another file here
+- `Essay assignment 2 - Gavin Kizer  (1).pdf`: Exact copy of another file here
+- `Exercise 1 Getting Control of Your Time - Gavin Kizer (1).pdf`: Exact copy of another file here
+- `Exercise 2  Academic Readiness - Gavin Kizer (1).pdf`: Exact copy of another file here
+- `Exercise 7 Paying for College - Gavin K (1).pdf`: Exact copy of another file here
+- `Exercise 7 Paying for College - Gavin K (2).pdf`: Exact copy of another file here
+- `Gavin Kizer - Internet Research Assignment (1).pdf`: Exact copy of another file here
+- `Gavin Kizer - The Uses of Olivine in Human Society (1).pdf`: Exact copy of another file here
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 2 (1).pdf`: Exact copy of another file here
+- `Human Odyssey answers  (1).pages`: Exact copy of another file here
+- `INSTRUMENT-installer (1).pkg`: Exact copy of another file here
+- `Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4`: Exact copy of another file here
+- `KJSawkaMadBeatz_r32873_v9.0 (1).alp`: Exact copy of another file here
+- `Max7PitchandTimeMachines_r43196_v1.0 (1).alp`: Exact copy of another file here
+- `Max7PitchandTimeMachines_r43196_v1.0 (2).alp`: Exact copy of another file here
+- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4`: Exact copy of another file here
+- `PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx`: Exact copy of another file here
+- `Point by Point Outline (1).docx`: Exact copy of another file here
+- `SolidSounds_r28796_v9.0 (1).alp`: Exact copy of another file here
+- `Test work (1).jpg`: Exact copy of another file here
+- `Untitled document (1) (1).pdf`: Exact copy of another file here
+- `VIBES MASTER.als 2`: Exact copy of another file here
+- `Virgen Negra (1).mp4`: Exact copy of another file here
+- `bellalastr420 (1).csv`: Exact copy of another file here
+- `rr_leaderboard (1).html`: Exact copy of another file here
+- `🗓️ Course Schedule (SS2 8-Week).html (1).zip`: Exact copy of another file here
+
+### _Sophia To Delete/Installers/ (23)
+- `Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg`: Installer; app is likely already installed
+- `Cockatrice-Omenpath-2.10.3-macOS13_Intel.dmg`: Installer; app is likely already installed
+- `Cockatrice-Rings.of.the.Wild-2.9.0-macOS-11_Big_Sur.dmg`: Installer; app is likely already installed
+- `DC1A3.dmg`: Installer; app is likely already installed
+- `Discord.dmg`: Installer; app is likely already installed
+- `EpicInstaller-15.17.1.dmg`: Installer; app is likely already installed
+- `Firefox 54.0.dmg`: Installer; app is likely already installed
+- `INSTRUMENT-installer.pkg`: Installer; app is likely already installed
+- `Minecraft (1).dmg`: Installer; app is likely already installed
+- `Multiply_OSX_1_1_1 2.pkg`: Installer; app is likely already installed
+- `Splice (1).dmg`: Installer; app is likely already installed
+- `Splice.dmg`: Installer; app is likely already installed
+- `Twitch.dmg`: Installer; app is likely already installed
+- `VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg`: Installer; app is likely already installed
+- `drfone_full3361.dmg`: Installer; app is likely already installed
+- `expressvpn_mac_11.2.0.67174_release.pkg`: Installer; app is likely already installed
+- `expressvpn_mac_11.26.0.74548_release.pkg`: Installer; app is likely already installed
+- `expressvpn_mac_11.9.0.70037_release.pkg`: Installer; app is likely already installed
+- `googlechrome-2.dmg`: Installer; app is likely already installed
+- `jdk-9.0.1_osx-x64_bin.dmg`: Installer; app is likely already installed
+- `jre-8u251-macosx-x64.dmg`: Installer; app is likely already installed
+- `keepvid-music-tag-editor-mac_full4172.dmg`: Installer; app is likely already installed
+- `steam.dmg`: Installer; app is likely already installed
+
+## Left alone
+
+- `./1000006451.jpg`: Changed in the last 7 days
+- `./1000006452.jpg`: Changed in the last 7 days
+- `./1000006453.jpg`: Changed in the last 7 days
+- `./1000006454.jpg`: Changed in the last 7 days
+- `./1000006455.jpg`: Changed in the last 7 days
+- `./1000006456.jpg`: Changed in the last 7 days
+- `./1000006457.jpg`: Changed in the last 7 days
+- `./1000006458.jpg`: Changed in the last 7 days
+- `./1000006459.jpg`: Changed in the last 7 days
+- `./1000006460.jpg`: Changed in the last 7 days
+- `./1000006461.jpg`: Changed in the last 7 days
+- `./1000006462.jpg`: Changed in the last 7 days
+- `./1000006463.jpg`: Changed in the last 7 days
+- `./1000006464.jpg`: Changed in the last 7 days
+- `./1000006465.jpg`: Changed in the last 7 days
+- `./1000006466.jpg`: Changed in the last 7 days
+- `./1000006467.jpg`: Changed in the last 7 days
+- `./1000006468.jpg`: Changed in the last 7 days
+- `./1000006469.jpg`: Changed in the last 7 days
+- `./123 [2019-04-29 174603].als`: Audio/Ableton file: never moved
+- `./2018_12_18_20_07_09.mp3`: Audio/Ableton file: never moved
+- `./2018_12_18_20_07_09.mp3.asd`: Audio/Ableton file: never moved
+- `./26E001C8-FFC7-4F20-AD6B-81703F576D80.m4a`: Audio/Ableton file: never moved
+- `./50_cent_-_get_up_(acapella).mp3`: Audio/Ableton file: never moved
+- `./50_cent_-_get_up_(acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf`: Changed in the last 7 days
+- `./Aki Takase - Minerva's Owl.mp4.asd`: Audio/Ableton file: never moved
+- `./Ambiance II Fusion-Don't You Ever Take Your Love.mp4.asd`: Audio/Ableton file: never moved
+- `./Applause Crowd Cheering sound effect.mp4.asd`: Audio/Ableton file: never moved
+- `./Ayudame a Creer.mp4.asd`: Audio/Ableton file: never moved
+- `./BEEF [2019-04-29 224640].als`: Audio/Ableton file: never moved
+- `./Barred Owl Calls (256) (1).mp3`: Audio/Ableton file: never moved
+- `./Barred Owl Calls (256) (1).mp3.asd`: Audio/Ableton file: never moved
+- `./Barred Owl Calls (256).mp3`: Audio/Ableton file: never moved
+- `./Beat Lab Autotuna 1.1.amxd`: Audio/Ableton file: never moved
+- `./Beat sample.wav.asd`: Audio/Ableton file: never moved
+- `./Bert Kaempfert-Down To The DocksA Deadly Game.mp3`: Audio/Ableton file: never moved
+- `./Bert Kaempfert-Down To The DocksA Deadly Game.mp3.asd`: Audio/Ableton file: never moved
+- `./Big Sean - Dance (Ass) (Acapella).mp3`: Audio/Ableton file: never moved
+- `./Big Sean - Dance (Ass) (Acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./Caprese.wav`: Audio/Ableton file: never moved
+- `./Circles_AV_mastered.wav`: Audio/Ableton file: never moved
+- `./Claude (1).dmg`: Changed in the last 7 days
+- `./Claude.dmg`: Changed in the last 7 days
+- `./Courage the Cowardly Dog but it s only Katz.mp3`: Audio/Ableton file: never moved
+- `./Courage the Cowardly Dog but it s only Katz.mp3.asd`: Audio/Ableton file: never moved
+- `./DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4.asd`: Audio/Ableton file: never moved
+- `./Dave Grusin-PM-03.mp3`: Audio/Ableton file: never moved
+- `./Dave Grusin-PM-03.mp3.asd`: Audio/Ableton file: never moved
+- `./Florf Real Temp.als`: Audio/Ableton file: never moved
+- `./Florf Temp.als`: Audio/Ableton file: never moved
+- `./Forest Critters (Mastered with Sunroof at 76pct).wav`: Audio/Ableton file: never moved
+- `./Forest_Critters_extended_mastered (1).wav`: Audio/Ableton file: never moved
+- `./Forest_Critters_extended_mastered.wav`: Audio/Ableton file: never moved
+- `./GdlKjA4Qd279.128.mp3`: Audio/Ableton file: never moved
+- `./GdlKjA4Qd279.128.mp3.asd`: Audio/Ableton file: never moved
+- `./Gemstone_lightmix_5.m4a`: Audio/Ableton file: never moved
+- `./Green.als`: Audio/Ableton file: never moved
+- `./Green.wav`: Audio/Ableton file: never moved
+- `./Grok Made Me Write This Song (Mastered with Clear Sky at 62pct).wav`: Audio/Ableton file: never moved
+- `./Harold Vick-Wild Is The Wind.mp4.asd`: Audio/Ableton file: never moved
+- `./I think we already died 2.m4a`: Audio/Ableton file: never moved
+- `./I think we already died.m4a`: Audio/Ableton file: never moved
+- `./J.O.B. Orchestra-Govinda.mp4.asd`: Audio/Ableton file: never moved
+- `./Jaden Smith - Scarface (DIY Acapella).mp3`: Audio/Ableton file: never moved
+- `./Jaden Smith - Scarface (DIY Acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4.asd`: Audio/Ableton file: never moved
+- `./King Elizabeth speech Hoist the Colours.mp3`: Audio/Ableton file: never moved
+- `./King Elizabeth speech Hoist the Colours.mp3.asd`: Audio/Ableton file: never moved
+- `./Kung Fu 1972 - 1975  Opening and Closing Theme.mp4.asd`: Audio/Ableton file: never moved
+- `./LUCKY 8.als`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 2-Audio.mp3`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 2-Audio.mp3.asd`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 3-Audio (1).mp3`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 3-Audio (1).mp3.asd`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 3-Audio.mp3`: Audio/Ableton file: never moved
+- `./LUNG FU vocal dry 3-Audio.mp3.asd`: Audio/Ableton file: never moved
+- `./Lou Courtney - I Dont Need Nobody Else (1974).mp3`: Audio/Ableton file: never moved
+- `./Lou Courtney - I Dont Need Nobody Else (1974).mp3.asd`: Audio/Ableton file: never moved
+- `./Mixing_Bass_and_Guitars.pdf`: Changed in the last 7 days
+- `./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4.asd`: Audio/Ableton file: never moved
+- `./NoRegretz.mp3`: Audio/Ableton file: never moved
+- `./NoRegretz.mp3.asd`: Audio/Ableton file: never moved
+- `./Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3`: Audio/Ableton file: never moved
+- `./Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3.asd`: Audio/Ableton file: never moved
+- `./Northern Lights Sound (256) (1).mp3`: Audio/Ableton file: never moved
+- `./Northern Lights Sound (256) (1).mp3.asd`: Audio/Ableton file: never moved
+- `./Northern Lights Sound (256).mp3`: Audio/Ableton file: never moved
+- `./Nujabes - City Lights (Homework Edit).mp4.asd`: Audio/Ableton file: never moved
+- `./Nujabes - City Lights.mp4.asd`: Audio/Ableton file: never moved
+- `./Nujabes - Color Of Autumn.mp3`: Audio/Ableton file: never moved
+- `./Nujabes - Color Of Autumn.mp3.asd`: Audio/Ableton file: never moved
+- `./ORF Orchestra - Diskretion.mp4.asd`: Audio/Ableton file: never moved
+- `./Omi x CButler.mp3`: Audio/Ableton file: never moved
+- `./Omi x CButler.mp3.asd`: Audio/Ableton file: never moved
+- `./Orca sounds (256).mp3`: Audio/Ableton file: never moved
+- `./Orca sounds (256).mp3.asd`: Audio/Ableton file: never moved
+- `./PRESSURED.mp3`: Audio/Ableton file: never moved
+- `./Poltergeist.wav`: Audio/Ableton file: never moved
+- `./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3`: Audio/Ableton file: never moved
+- `./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3.asd`: Audio/Ableton file: never moved
+- `./Project_Manus_Complete_Archive (1).pdf`: Changed in the last 7 days
+- `./Project_Manus_Complete_Archive (2).pdf`: Changed in the last 7 days
+- `./Project_Manus_Complete_Archive.pdf`: Changed in the last 7 days
+- `./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3`: Audio/Ableton file: never moved
+- `./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3.asd`: Audio/Ableton file: never moved
+- `./Ram Ranch.mp3`: Audio/Ableton file: never moved
+- `./SPACE.wav`: Audio/Ableton file: never moved
+- `./Sand Dune (Mastered with Aurora at 91pct).wav`: Audio/Ableton file: never moved
+- `./Secretos del saxofon. Técnica de saxofón.mp4.asd`: Audio/Ableton file: never moved
+- `./Shigeo Sekito - the word II.mp4.asd`: Audio/Ableton file: never moved
+- `./Slip (prod. Chozen).mp3`: Audio/Ableton file: never moved
+- `./Slip (prod. Chozen).mp3.asd`: Audio/Ableton file: never moved
+- `./Smoke Doke.als`: Audio/Ableton file: never moved
+- `./Steve Jobss Philosophy.mp4.asd`: Audio/Ableton file: never moved
+- `./The Real Samurai Copy.wav`: Audio/Ableton file: never moved
+- `./The Real Samurai.wav`: Audio/Ableton file: never moved
+- `./The Sky-Tether and the Blood Ledger - Narrative Summary.pdf`: Changed in the last 7 days
+- `./Travis-Scott---Antidote--Acapella.mp4.asd`: Audio/Ableton file: never moved
+- `./Tulip.aif`: Audio/Ableton file: never moved
+- `./Underwater Microphone Captures Honshu, Japan Earthquake (256).mp3`: Audio/Ableton file: never moved
+- `./Untitled.als`: Audio/Ableton file: never moved
+- `./VIBES MASTER.als`: Audio/Ableton file: never moved
+- `./Virgen Negra (1).mp4.asd`: Audio/Ableton file: never moved
+- `./VoiceMail_2024-10-02_21-13-59.mp3`: Audio/Ableton file: never moved
+- `./VoiceMail_2024-10-02_21-13-59.mp3.asd`: Audio/Ableton file: never moved
+- `./Voicy_Borat Wah wah we wah.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Cat Very Angry.mp3`: Audio/Ableton file: never moved
+- `./Voicy_DIO!!!!!.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Deez Nuts.mp3`: Audio/Ableton file: never moved
+- `./Voicy_I AM THE HYPE!.mp3`: Audio/Ableton file: never moved
+- `./Voicy_I Just Had Sex.mp3`: Audio/Ableton file: never moved
+- `./Voicy_I love gold. The look of it, the taste of it, the...mp3`: Audio/Ableton file: never moved
+- `./Voicy_Last night I have sex.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Nokia ringtone earrape.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Skeletor laughing.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Thomas The Tank Engine.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Throw me a frikin bone here.mp3`: Audio/Ableton file: never moved
+- `./Voicy_What the dog doin_.mp3`: Audio/Ableton file: never moved
+- `./Voicy_Woaw _3.mp3`: Audio/Ableton file: never moved
+- `./Voicy_pornhub intro.mp3`: Audio/Ableton file: never moved
+- `./Voicy_you my trlala.mp3`: Audio/Ableton file: never moved
+- `./Void_Speach_mastered.mp3`: Audio/Ableton file: never moved
+- `./Waka Flocka Flame - Workin (Acapella).mp3`: Audio/Ableton file: never moved
+- `./Waka Flocka Flame - Workin (Acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./Wolfgang Lauth Quartett - Moonlight Fantasy.mp4.asd`: Audio/Ableton file: never moved
+- `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3`: Audio/Ableton file: never moved
+- `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3.asd`: Audio/Ableton file: never moved
+- `./absolute madness 150bpm.mp3`: Audio/Ableton file: never moved
+- `./align_traces.py`: Changed in the last 7 days
+- `./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3`: Audio/Ableton file: never moved
+- `./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3`: Audio/Ableton file: never moved
+- `./asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3.asd`: Audio/Ableton file: never moved
+- `./asap_rocky_-_wild_for_the_night_(diy_acapella).mp3`: Audio/Ableton file: never moved
+- `./asap_rocky_-_wild_for_the_night_(diy_acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./bayo.wav`: Audio/Ableton file: never moved
+- `./before_the_word_excerpt.mp3`: Audio/Ableton file: never moved
+- `./big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3`: Audio/Ableton file: never moved
+- `./big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./boing.wav.mp4.asd`: Audio/Ableton file: never moved
+- `./bowshock_PIA20754.wav`: Audio/Ableton file: never moved
+- `./bowshock_PIA20754.wav.asd`: Audio/Ableton file: never moved
+- `./cruisedownthebeach.mp3`: Audio/Ableton file: never moved
+- `./cruisedownthebeach.mp3.asd`: Audio/Ableton file: never moved
+- `./drippy.mp3`: Audio/Ableton file: never moved
+- `./dying_correspondence.mp3`: Audio/Ableton file: never moved
+- `./electrothermal.py`: Changed in the last 7 days
+- `./eli and gavin 121818.mp3`: Audio/Ableton file: never moved
+- `./eli and gavin 121818.mp3.asd`: Audio/Ableton file: never moved
+- `./fall [2019-05-29 015357].als`: Audio/Ableton file: never moved
+- `./fall [2019-05-31 042736].als`: Audio/Ableton file: never moved
+- `./files (1).zip`: Changed in the last 7 days
+- `./floorplan.py`: Changed in the last 7 days
+- `./free-outdoors (5).html`: Changed in the last 7 days
+- `./free-outdoors (6).html`: Changed in the last 7 days
+- `./free-outdoors (7).html`: Changed in the last 7 days
+- `./free-outdoors (8).html`: Changed in the last 7 days
+- `./free-outdoors (9).html`: Changed in the last 7 days
+- `./fsk_demod.py`: Changed in the last 7 days
+- `./github-recovery-codes.txt`: Changed in the last 7 days
+- `./glock.mp3`: Audio/Ableton file: never moved
+- `./glock.mp3.asd`: Audio/Ableton file: never moved
+- `./grog [2023-07-13 030447].als`: Audio/Ableton file: never moved
+- `./grsa-SingingSand2017_480x270.mp4.asd`: Audio/Ableton file: never moved
+- `./index (1).html`: Changed in the last 7 days
+- `./index.html`: Changed in the last 7 days
+- `./jar jar.als`: Audio/Ableton file: never moved
+- `./looperman-a-0604670-0009964-brimaf-brima-gdl.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-0604670-0009964-brimaf-brima-gdl.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-1371515-0010587-ousidde-frank-ocean.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-1371515-0010587-ousidde-frank-ocean.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-a-2459032-0011033-cino8730-sex-talk.mp3`: Audio/Ableton file: never moved
+- `./looperman-a-2459032-0011033-cino8730-sex-talk.mp3.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0159051-0130228-pads-of-gold-counterintuitive.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0167660-0118462-levoix-bells-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0167660-0118462-levoix-bells-melody.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0671112-0118517-danke-dragon.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0671112-0118517-danke-dragon.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0671112-0124690-danke-watery.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0671112-0124690-danke-watery.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0114862-sushilbawa-piano-special.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0114862-sushilbawa-piano-special.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0114947-sushilbawa-bells-93.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0115970-sushilbawa-synth-170.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0116075-sushilbawa-synth-highness.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0117369-sushilbawa-trap-connection.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0124677-sushilbawa-bells-162.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0124677-sushilbawa-bells-162.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125 (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0850517-0117279-miazyo-rhode.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0850517-0117279-miazyo-rhode.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0878633-0117264-foevabeatz-disco.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0878633-0117264-foevabeatz-disco.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0911223-0117855-silencekills-eyes-piano-128-gm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0117745-mamagbeats-vinyl-e-piano-loop-2-92-bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0957600-0082580-blunierty-white-noise.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0957600-0082580-blunierty-white-noise.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav`: Audio/Ableton file: never moved
+- `./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1094884-0078974-dcmack-gun-cocking.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1094884-0078974-dcmack-gun-cocking.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1256873-0129417-rhode-chamber.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1256873-0129417-rhode-chamber.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1273564-0125646-lankframpard-hangover.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1273564-0125646-lankframpard-hangover.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1448712-0118109-jayboy97-untitled-6.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1448712-0118109-jayboy97-untitled-6.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0098736-rasputin1963-mystical-sitar-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1576807-0102223-middwiz-trap-future-bass-strings.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1599525-0118488-flaviogomes-keys-trap-choir-bpm-130.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1599525-0118489-flaviogomes-final-count-down-bpm-130.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1599525-0118492-flaviogomes-dont-go-pads.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1648645-0119817-opc-trap-beat-sample.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1648645-0119817-opc-trap-beat-sample.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1685916-0109142-kcotk1-bombay.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1685916-0109142-kcotk1-bombay.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1733652-0114810-zlhd-water-plucks.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1751651-0116008-pinkj-the-tables-have-turned (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-1751651-0116008-pinkj-the-tables-have-turned.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1779655-0128828-old-haze.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1779655-0128828-old-haze.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1785835-0128466-dylan411-travis-scott-x-nav-x-drake-heavy-type-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1882465-0110654-ev054-booom.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1882465-0110654-ev054-booom.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1882592-0128458-theloopgod-loopgod-x-drake-travis-scott.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1964781-0117940-gee808-dream-piano.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1964781-0117940-gee808-dream-piano.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav`: Audio/Ableton file: never moved
+- `./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2031104-0129816-psydub-pad-001.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2035786-0114815-ekajjjjj-lofi-rhodes.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2057570-0115001-djgameonmusic-autumn.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2057570-0115001-djgameonmusic-autumn.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2060813-0115007-byel-trap-impact-fx.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2060813-0115007-byel-trap-impact-fx.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2061580-0130226-catch-the-vibe.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2061580-0130226-catch-the-vibe.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2154535-0105032-808purp-low-hi-hats.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2154535-0105032-808purp-low-hi-hats.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2159630-0114773-rmce-cruise-chords.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2159630-0114773-rmce-cruise-chords.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2182047-0120166-aidenglonek-light.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2182047-0120166-aidenglonek-light.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2224957-0134447-152-kbs-dream.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2224957-0134447-152-kbs-dream.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2226779-0119231-younghabib-cash-carti.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2226779-0119231-younghabib-cash-carti.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2297958-0128908-nasty.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2302391-0129038-88glam-type-loop-dm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2302391-0129038-88glam-type-loop-dm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2308878-0119803-datvast-me-too.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2308878-0119803-datvast-me-too.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2315485-0114615-yungboiig-xaern.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2315485-0114615-yungboiig-xaern.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2331074-0115995-sicdeadboy-trappin-in-japan-type-synth.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2341179-0130213-future-pop-chord-stack.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2341179-0130213-future-pop-chord-stack.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2346305-0129587-taxi-to-space.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2346305-0129587-taxi-to-space.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2375453-0123795-cptusername-flute-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2375453-0123795-cptusername-flute-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2392682-0124730-lofy21-no-sleep.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2392682-0124730-lofy21-no-sleep.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody (1).wav`: Audio/Ableton file: never moved
+- `./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2440464-0117901-irs-dark-trap-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2440464-0117901-irs-dark-trap-melody.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2444673-0115027-rxck-reversed-flute.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2444673-0115027-rxck-reversed-flute.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2447813-0115980-davidevisco-lil-pump-type-melody.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2472815-0130144-spacey-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2472815-0130144-spacey-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2507295-0130796-prod-by-j-phantom-its-a-vibe.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2539104-0130109-ambient-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2554561-0129423-happy-june.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2554561-0129423-happy-june.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2578702-0128738-2stepsback.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2578702-0128818-stupidrich.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2578702-0128818-stupidrich.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2612327-0134212-horror-movie-music.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2612327-0134212-horror-movie-music.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2638308-0125650-filcae-latin-drums.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2638308-0125650-filcae-latin-drums.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2651541-0128825-schmaltzy-bells.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2651541-0128825-schmaltzy-bells.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2689491-0130262-piano-loop.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2689491-0130262-piano-loop.wav.asd`: Audio/Ableton file: never moved
+- `./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav`: Audio/Ableton file: never moved
+- `./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav.asd`: Audio/Ableton file: never moved
+- `./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3`: Audio/Ableton file: never moved
+- `./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3.asd`: Audio/Ableton file: never moved
+- `./make_listing.sh`: Changed in the last 7 days
+- `./my-first-agent.zip`: Changed in the last 7 days
+- `./my_alphabet_sheet_33_glyphs_v2.png`: Changed in the last 7 days
+- `./organizer-upgrade.zip`: Changed in the last 7 days
+- `./piano song_.wav`: Audio/Ableton file: never moved
+- `./reply_to_before_the_word (1).mp3`: Audio/Ableton file: never moved
+- `./reply_to_before_the_word.mp3`: Audio/Ableton file: never moved
+- `./sett.als`: Audio/Ableton file: never moved
+- `./space [2018-12-30 115204].als`: Audio/Ableton file: never moved
+- `./src_free-outdoors (4).html`: Changed in the last 7 days
+- `./suave [2019-09-12 030926].als`: Audio/Ableton file: never moved
+- `./suave [2019-09-12 054428].als`: Audio/Ableton file: never moved
+- `./suave [2019-09-13 041010].als`: Audio/Ableton file: never moved
+- `./suave [2019-09-13 220756].als`: Audio/Ableton file: never moved
+- `./suave [2019-10-08 023728].als`: Audio/Ableton file: never moved
+- `./suave [2019-10-25 003628].als`: Audio/Ableton file: never moved
+- `./test_jwt_alg_confusion.py`: Changed in the last 7 days
+- `./the_third_stratum (1).py`: Changed in the last 7 days
+- `./the_third_stratum.py`: Changed in the last 7 days
+- `./thirty_five_message.mp3`: Audio/Ableton file: never moved
+- `./videoplayback (10).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (11).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (12).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (13).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (14).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (15).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (16).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (17).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (19).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (2).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (22).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (23).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (24).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (25).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (26).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (27).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (28).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (29).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (3).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (4).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (5).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback (7).mp4.asd`: Audio/Ableton file: never moved
+- `./videoplayback.mp4.asd`: Audio/Ableton file: never moved
+- `./where you going.mp3`: Audio/Ableton file: never moved
+- `./where you going.mp3.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3`: Audio/Ableton file: never moved
+- `./y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3`: Audio/Ableton file: never moved
+- `./y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3`: Audio/Ableton file: never moved
+- `./y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3`: Audio/Ableton file: never moved
+- `./y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3.asd`: Audio/Ableton file: never moved
+- `./y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4.asd`: Audio/Ableton file: never moved
+- `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3`: Audio/Ableton file: never moved
+- `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Audio/Ableton file: never moved
+- `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio/Ableton file: never moved
+- `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Audio/Ableton file: never moved
+- `./boing.wav.3gp`: Audio file, per preferences
+- `./Sway.tg`: Telegram file, unclear
+- `./TriSamples_-_808_Trapstep_Pack_Vol_1.zip`: Audio samples, per preferences
+- `./Drum samples.zip`: Audio samples, per preferences
+- `./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx`: GPS/map file, unclear folder
+- `./ProducerSpot-808-Drums.zip`: Audio samples, per preferences
+- `./HYSTERESIS.zip`: Audio plugin, audio-related
+- `./673 Samples Drum Kit (Hipstrumentals.com).zip`: Audio samples, per preferences
+- `./XFINITY.mobileconfig`: System config file, unclear
+- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Torrent file, unclear purpose
+- `./3173-super-mario-bros-3.ggs`: Game ROM file, unclear folder
+- `./Melek_Endless_Turn.cod`: Code/game file, unclear
+- `./Dry.zip`: Likely audio plugin, audio-related
+- `./IMG_1049.3gp`: Video file, already handled
+- `./DeltaModulatorOSX.zip`: Audio plugin, audio-related
+- `./Conner and Zack.zip`: Unknown content, can't determine
+- `./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar`: Minecraft mod, unclear format
+- `./chronos.json`: Data file, unclear purpose
+- `./AllGVSTMacUBeta.zip`: VST/audio plugin, audio-related
+- `./TubeAmp_Mac.zip`: Audio plugin, audio-related
+- `./Boogex_Mac.zip`: Audio plugin, audio-related
+- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file, per preferences
+- `./files.zip`: Generic zip, purpose unclear
+- `./thirty_five_codec.py`: Recently modified, may be in use
+- `./level.dat_old`: Game data file, purpose unclear
+- `./rr_chronicle_2026-06-11.json`: Recently modified, may be in use
+- `./level.dat`: Game data file, purpose unclear
+- `./session.lock`: System file, leave as-is
+- `./rr_chronicle_2026-07-27.json`: Recently modified, may be in use
+- `./state-park-research-prompts-and-responses.zip`: Recently modified, may be in use
+- `./world.zip`: Game data, purpose unclear

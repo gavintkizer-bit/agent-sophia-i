@@ -21,6 +21,9 @@ python agent.py --check      # free setup check
 python agent.py              # run the default task
 ```
 
+**Drive cleanup:** `python sophia.py` processes the scans uploaded to `workspace/inbox/`.
+See `ORGANIZE.md` for how it works and `workspace/STATUS.md` for what's ready now.
+
 ## Improve it over time
 After each run, open `logs/run_log.md` and fill in "What I'll change next time".
 Then change ONE thing per run:

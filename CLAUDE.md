@@ -10,7 +10,9 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `workspace/`: the ONLY folder the agent reads and writes. Its input notes live in `workspace/notes/`.
 - `logs/run_log.md`: one entry per run (model, turns, time, cost, tools used).
 - `ORGANIZE.md`: for file-organizing tasks, follow its procedure instead of the standard one below.
-- `make_mac_script.py`: turns `workspace/organize_plan.json` into a safe `workspace/out/organize.sh` (see ORGANIZE.md).
+- `make_mac_script.py`: turns a plan into a safe `organize.sh` (see ORGANIZE.md).
+- `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
+- `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
 ## Standard procedure for every session
 1. `pip install -r requirements.txt`
@@ -23,6 +25,7 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 ## Rules
 - Never print, echo, log, or commit the value of ANTHROPIC_API_KEY.
 - If `.gitignore` is missing, create it with: `__pycache__/`, `*.pyc`, `.env`, `.venv/`.
+- The owner allows merging PRs into main without asking (granted 2026-10-05).
 - Keep the default model (claude-haiku-4-5) unless the owner asks otherwise; it's cheapest.
 - Explain technical steps briefly and in plain English; the owner is new to this.
 
