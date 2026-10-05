@@ -7,7 +7,8 @@ Usage:
   python agent.py tasks/other_task.md  # runs any other task file
 
 Settings (optional environment variables):
-  ANTHROPIC_API_KEY   required, your Claude Console API key
+  AGENT_API_KEY       required, your Claude Console API key (ANTHROPIC_API_KEY also
+                      works locally, but cloud sessions don't pass that name through)
   AGENT_MODEL         default: claude-haiku-4-5 (cheapest; good for testing)
   AGENT_MAX_TURNS     default: 12 (safety cap on how many steps the agent takes)
 """
@@ -27,6 +28,13 @@ ROOT = pathlib.Path(__file__).resolve().parent
 WORKSPACE = ROOT / "workspace"
 LOG_FILE = ROOT / "logs" / "run_log.md"
 DEFAULT_TASK = ROOT / "tasks" / "first_task.md"
+
+# Claude Code cloud sessions appear not to pass a variable named ANTHROPIC_API_KEY
+# through to your code (the platform uses ANTHROPIC_* names for its own connection). So we also accept the key
+# under a different name, AGENT_API_KEY, and hand it to the SDK as ANTHROPIC_API_KEY.
+API_KEY = (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("AGENT_API_KEY") or "").strip()
+if API_KEY:
+    os.environ["ANTHROPIC_API_KEY"] = API_KEY
 
 MODEL = os.environ.get("AGENT_MODEL", "claude-haiku-4-5")
 MAX_TURNS = int(os.environ.get("AGENT_MAX_TURNS", "12"))
@@ -64,12 +72,26 @@ def check_setup() -> bool:
         print("[FAIL] claude-agent-sdk not installed. Run: pip install -r requirements.txt")
         ok = False
 
-    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    # AGENT_ENV_TEST=hello is a harmless test variable: it tells us whether ANY of
+    # your environment variables are reaching this session.
+    if os.environ.get("AGENT_ENV_TEST"):
+        print("[ OK ] AGENT_ENV_TEST found: your environment variables are reaching this session")
+    else:
+        print("[info] AGENT_ENV_TEST not found: either you didn't add it, or your environment")
+        print("       variables aren't reaching this session (wrong environment, not saved,")
+        print("       or this session was started before you saved).")
+
+    key = API_KEY
     if not key:
-        print("[FAIL] ANTHROPIC_API_KEY is not set. Add it in your cloud environment's")
-        print("       Environment variables as: ANTHROPIC_API_KEY=sk-ant-...")
+        print("[FAIL] No API key found. In the cloud environment's Environment variables add:")
+        print("       AGENT_API_KEY=sk-ant-...   (use this name, NOT ANTHROPIC_API_KEY)")
+        print("       then start a NEW session.")
         return False
-    print("[ OK ] ANTHROPIC_API_KEY is set (value hidden)")
+    if not key.startswith("sk-ant-"):
+        print("[FAIL] The key doesn't start with sk-ant-. Check for quotes, spaces, or a")
+        print("       variable name pasted into the value.")
+        return False
+    print("[ OK ] API key is set (value hidden)")
 
     # Listing models is free, so it safely tests both the key and the network.
     req = urllib.request.Request(
@@ -174,8 +196,8 @@ def main():
     task_path = pathlib.Path(args.task).resolve()
     if not task_path.exists():
         sys.exit(f"Task file not found: {task_path}")
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ANTHROPIC_API_KEY is not set. Run `python agent.py --check` for help.")
+    if not API_KEY:
+        sys.exit("No API key found. Run `python agent.py --check` for help.")
 
     WORKSPACE.mkdir(exist_ok=True)
     print(f"== Running {task_path.name} with {MODEL} (max {MAX_TURNS} turns) ==\n")

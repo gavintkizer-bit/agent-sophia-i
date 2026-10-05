@@ -27,8 +27,9 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - Explain technical steps briefly and in plain English; the owner is new to this.
 
 ## Troubleshooting
-- "ANTHROPIC_API_KEY is not set": the owner must add `ANTHROPIC_API_KEY=...` under the cloud
-  environment's Environment variables (environment selector -> gear icon), then start a NEW session.
+- "No API key found": the owner must add `AGENT_API_KEY=sk-ant-...` (NOT `ANTHROPIC_API_KEY`, which
+  cloud sessions don't pass through) under the cloud environment's Environment variables
+  (environment name in the session title bar -> Edit), then start a NEW session. See SETUP_PLAN.md.
 - "Network blocked api.anthropic.com": the owner must set the environment's Network access to Custom,
   keep the default package-manager list enabled, and add `api.anthropic.com`. Then start a new session.
 - "401": the key is wrong or was revoked; create a new one in the Claude Console.
