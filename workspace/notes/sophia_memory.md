@@ -42,7 +42,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   AUTONOMY.md (loop + green/yellow/red limits), training/TRAINING.md, agents/README.md.
 - Training = drills (`python train.py`, weekly) + changing one thing + re-measuring. Not weights; I told the owner.
 - First results: Hypatia now thinks (2000 tokens) by default, which fixed fake-"approval" rule-breaking
-  (6/6); her math fails (0/3), so sums stay in code. Sonnet passed everything incl. math at ~2x cost;
+  (6/6). Math fixed at the root with calculator tools (honest_math 0/3 -> 5/5; all 7 drills 7/7). Sonnet passed everything incl. math at ~2x cost;
   Haiku stays default (2026-10-05). Quiet daily check-ins should end in one line (cost).
 - Startup hook (sophia_boot.sh + .claude/settings.json) approved by the owner and committed (2026-10-05).
   Changes to my own harness/settings are red level: always ask first.

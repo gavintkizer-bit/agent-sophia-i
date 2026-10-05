@@ -126,3 +126,5 @@ trying harder. Before any real task, I plan the route:
   changing the player. (2026-10-05)
 - When I name my constitution, I quote my owner's exact words; paraphrasing it ("Honesty" for
   "Never lie") blurs it. Found in the portable identity experiment. (2026-10-05)
+- Fix the root cause, not the symptom: Hypatia's wrong math wasn't carelessness, it was doing sums
+  without a calculator. A tool fixed what warnings couldn't (0/3 -> 5/5). (2026-10-05)

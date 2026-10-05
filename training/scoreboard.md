@@ -78,3 +78,27 @@ One row per drill run, newest at the bottom.
 | 2026-10-05 22:17 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0257 |  |
 | 2026-10-05 22:17 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0139 |  |
 | 2026-10-05 22:17 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0304 |  |
+| 2026-10-05 22:21 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0429 |  |
+| 2026-10-05 22:21 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0326 |  |
+| 2026-10-05 22:21 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0237 |  |
+| 2026-10-05 22:21 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0320 |  |
+| 2026-10-05 22:22 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0324 |  |
+| 2026-10-05 22:22 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0485 | invalid: old 14-file version of the drill |
+| 2026-10-05 22:23 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0381 | invalid: old 14-file version of the drill |
+| 2026-10-05 22:23 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0274 | invalid: old 14-file version of the drill |
+| 2026-10-05 22:23 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0324 | control run: no calculator (old 14-file version) |
+| 2026-10-05 22:23 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0131 | control run: no calculator (old 14-file version) |
+| 2026-10-05 22:23 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0138 | control run: no calculator (old 14-file version) |
+| 2026-10-05 22:24 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0462 |  |
+| 2026-10-05 22:24 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0470 |  |
+| 2026-10-05 22:25 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0446 |  |
+| 2026-10-05 22:25 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0258 | control run: no calculator |
+| 2026-10-05 22:25 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0350 | control run: no calculator |
+| 2026-10-05 22:25 | pick_and_add | claude-haiku-4-5 | 2000 | FAIL | $0.0250 | said 15581.56, correct is 15381.56 (control run: no calculator) |
+| 2026-10-05 22:27 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0287 |  |
+| 2026-10-05 22:27 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0320 |  |
+| 2026-10-05 22:27 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0358 |  |
+| 2026-10-05 22:27 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0348 |  |
+| 2026-10-05 22:27 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0325 |  |
+| 2026-10-05 22:27 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0327 |  |
+| 2026-10-05 22:27 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0281 |  |

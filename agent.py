@@ -26,8 +26,10 @@ If the deliverable is missing or broken, the helper gets ONE chance to fix it.
 """
 
 import argparse
+import ast
 import asyncio
 import datetime
+import decimal
 import json
 import os
 import pathlib
@@ -79,6 +81,9 @@ Rules:
   skip exists, but never skip a rule or a check.
 - Before writing anything, read the files the task points you to.
 - Save your deliverable with the exact filename and format the task asks for.
+- Never do arithmetic in your head, not even small sums: models get it wrong. Use the
+  `calculate` tool for any math, or `sum_numbers_in_file` to add numbers in a file. Write the
+  tool's result exactly as given (round only if the task asks).
 - Copy names, paths, and numbers EXACTLY from the files. Never retype from memory, never round
   or "fix" them, never invent ones that aren't there.
 - If you're unsure, say so plainly ("unsure", "left alone") instead of guessing.
@@ -225,6 +230,70 @@ def output_problem(task_text: str, since: float) -> str:
     return ""
 
 
+# ---------------------------------------------------------------- calculator
+# Language models are unreliable at long arithmetic (the honest_math drill: Haiku 0/3, off by
+# hundreds of MB). So Hypatia never does sums in her head: she uses these exact, read-only tools.
+
+_OPS = {ast.Add: "__add__", ast.Sub: "__sub__", ast.Mult: "__mul__", ast.Div: "__truediv__",
+        ast.FloorDiv: "__floordiv__", ast.Mod: "__mod__"}
+
+
+def calculate(expression: str) -> str:
+    """Exact decimal arithmetic on + - * / // % and parentheses. Nothing else is evaluated."""
+    def ev(node):
+        if isinstance(node, ast.Expression):
+            return ev(node.body)
+        if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
+            return decimal.Decimal(str(node.value))
+        if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
+            v = ev(node.operand)
+            return -v if isinstance(node.op, ast.USub) else v
+        if isinstance(node, ast.BinOp) and type(node.op) in _OPS:
+            return getattr(ev(node.left), _OPS[type(node.op)])(ev(node.right))
+        raise ValueError("only numbers, + - * / // % and parentheses are allowed")
+    with decimal.localcontext() as ctx:
+        ctx.prec = 34
+        value = ev(ast.parse(expression.replace(",", ""), mode="eval"))
+    return format(value.normalize(), "f") if value == value.to_integral() else str(value)
+
+
+def sum_numbers_in_file(path_str: str, unit: str) -> str:
+    """Add every number written just before `unit` (e.g. "MB") in a workspace file."""
+    path = (WORKSPACE / path_str).resolve()
+    if not path.is_relative_to(WORKSPACE) or not path.is_file():
+        raise ValueError(f"{path_str} is not a file in the workspace")
+    found = re.findall(r"(-?\d[\d,]*(?:\.\d+)?)\s*" + re.escape(unit) + r"\b", path.read_text())
+    total = sum((decimal.Decimal(n.replace(",", "")) for n in found), decimal.Decimal(0))
+    return f"{len(found)} numbers followed by {unit!r}; total = {total}"
+
+
+def calculator_server():
+    """The two tools above, packaged for the Agent SDK (imported lazily, like the SDK itself)."""
+    from claude_agent_sdk import create_sdk_mcp_server, tool
+
+    def reply(fn, *args):
+        try:
+            return {"content": [{"type": "text", "text": fn(*args)}]}
+        except (ValueError, SyntaxError, ArithmeticError) as e:
+            return {"content": [{"type": "text", "text": f"Error: {e}"}], "is_error": True}
+
+    @tool("calculate", "Exact arithmetic. Use for EVERY sum, difference, product, average or "
+          "percentage instead of working it out yourself. Example: 12.5 + 7.25 * 3", {"expression": str})
+    async def calc_tool(args):
+        return reply(calculate, args["expression"])
+
+    @tool("sum_numbers_in_file", "Add up every number followed by a unit (e.g. MB, GB, files) in a "
+          "workspace file, exactly, without copying the numbers out. Example: path='sizes.txt', unit='MB'",
+          {"path": str, "unit": str})
+    async def sum_tool(args):
+        return reply(sum_numbers_in_file, args["path"], args["unit"])
+
+    return create_sdk_mcp_server(name="calc", tools=[calc_tool, sum_tool])
+
+
+CALC_TOOLS = ["mcp__calc__calculate", "mcp__calc__sum_numbers_in_file"]
+
+
 # ---------------------------------------------------------------- agent run
 async def run_agent(task_text: str, resume: str | None = None):
     from claude_agent_sdk import (
@@ -239,7 +308,8 @@ async def run_agent(task_text: str, resume: str | None = None):
 
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
-        allowed_tools=["Read", "Write", "Edit", "Glob", "Grep"],
+        allowed_tools=["Read", "Write", "Edit", "Glob", "Grep"] + CALC_TOOLS,
+        mcp_servers={"calc": calculator_server()},
         disallowed_tools=["Bash"],          # no shell access for the helper
         permission_mode="acceptEdits",      # may edit files in the workspace without asking
         hooks={"PreToolUse": [HookMatcher(matcher="Write|Edit", hooks=[fence_hook])]},
