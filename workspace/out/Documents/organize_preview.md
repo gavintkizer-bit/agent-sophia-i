@@ -1,7 +1,7 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Documents`  
-Files in listing: 20 | Will move: 20 | Left alone: 0
+Files in listing: 20 | Will move: 19 | Left alone: 1
 
 ## Moves
 
@@ -29,12 +29,9 @@ Files in listing: 20 | Will move: 20 | Left alone: 0
 ### Images/ (1)
 - `611191928_1287597506736337_109814106695790461_n.jpg`: .jpg file
 
-### Video/ (1)
-- `222 demo vid.mp4`: .mp4 file
-
 ### _Sophia To Delete/Duplicates/ (1)
 - `rr_scraper (1).py`: Exact copy of another file here
 
 ## Left alone
 
-- (none)
+- `./222 demo vid.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved

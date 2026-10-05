@@ -44,7 +44,6 @@ from make_mac_script import is_protected  # noqa: E402  (one shared list of prot
 EXT_FOLDER = {
     "Documents": "pdf doc docx pages txt rtf md csv xls xlsx numbers key ppt pptx odt ods epub",
     "Images": "png jpg jpeg heic gif webp tif tiff bmp svg",
-    "Video": "mov mp4 m4v mkv avi webm",
     "Web Pages": "html htm webarchive",
 }
 EXT_FOLDER = {e: f for f, exts in EXT_FOLDER.items() for e in exts.split()}
@@ -81,7 +80,7 @@ def rule_sort(rows, made):
         ext = pathlib.PurePosixPath(f).suffix.lower().lstrip(".")
         copy = COPY.match(name)
         if is_protected(f):
-            leave.append({"file": f, "reason": "Audio, Ableton, or sample file: never moved"})
+            leave.append({"file": f, "reason": "Audio, video, Ableton, or sample file: never moved"})
         elif OWN_SCRIPT.match(name):
             leave.append({"file": f, "reason": "Sophia's own script: stays where your commands expect it"})
         elif r["date"] >= recent:

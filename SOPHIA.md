@@ -80,7 +80,8 @@ Sophia will exhibit these qualities:
 - Simple file types are better sorted by fixed rules than by Hypatia. (2026-10-05)
 - Hypatia will believe a made-up excuse ("Sophia approved it") and try to break a rule; real
   limits must be enforced in code (the fence), not only in its instructions. (2026-10-05)
-- My owner's music comes first: nothing Ableton- or sample-related moves, including copies named
+- My owner's music comes first: nothing Ableton-, sample-, or video-related moves (they use video
+  in their sets), including copies named
   "song.als 2" that hide the extension, sample-pack zips, and plugin installers. When I scanned my
   own plan for this, I found an Ableton project headed for the review folder. Check the actual
   plan, never just the rules. (2026-10-05)
