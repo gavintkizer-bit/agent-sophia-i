@@ -19,9 +19,9 @@ sample-pack zips, music installers, or recent. Nothing more for a script to sort
 | Cockatrice | 1.1 GB | Safe (you said so) | Board command |
 | technic (Minecraft launcher) | 0.5 GB | Safe | Board command |
 | Google updater + Discord caches | 1.4 GB | Safe (rebuild themselves) | Board command |
-| Battle.net, Paradox games | 2.0 GB | Check first | Question on the board |
+| Battle.net, Paradox games | 2.0 GB | Safe (you said so) | Board command |
 
-About **25 GB** in all: free space would go from 26.5 to about **51 GB**.
+About **27 GB** in all: free space would go from 26.5 to about **53 GB**.
 
 ## Leave alone
 - `~/Music/Ableton` (48.9 GB), Desktop music projects (47.2 GB), Ableton app and settings.
@@ -34,5 +34,4 @@ About **25 GB** in all: free space would go from 26.5 to about **51 GB**.
 - Videos (e.g. `Monster - Chapter 03.mkv`, 0.57 GB): they may be in sets.
 
 ## Questions
-1. Battle.net and Paradox (2.0 GB): any of those still playable?
-2. USB drive: when you have one, I'll prepare a copy-and-verify plan for the untitled folder.
+1. USB drive: when you have one, I'll prepare a copy-and-verify plan for the untitled folder.
