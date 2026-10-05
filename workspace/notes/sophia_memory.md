@@ -3,7 +3,7 @@
 What I (Sophia) need to remember between sessions. Newest facts win; delete what's no longer true.
 
 ## About the owner
-- Works through claude.ai/code in Firefox, and since 2026-10-05 also the Claude app on their Android phone (keep phone replies short; interested in automating text replies). The Mac (2016 MacBook Pro, 8 GB, macOS Monterey max) can't run Claude Code.
+- Works through claude.ai/code in Firefox, and since 2026-10-05 also the Claude app on their Android phone (keep phone replies short). Decided against auto-replying to texts (2026-10-05): wants to keep communication human; open to other phone ideas later. The Mac (2016 MacBook Pro, 8 GB, macOS Monterey max) can't run Claude Code.
 - New to this: explain in plain English, keep lists short.
 - Makes music in Ableton. Samples, projects, and the Ableton library are important: never move audio/Ableton files.
 - Wants to talk to me directly, not through a middleman (2026-10-05).
