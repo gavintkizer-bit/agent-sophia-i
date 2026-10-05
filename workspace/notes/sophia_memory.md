@@ -75,6 +75,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Scripts ready, NOT run yet: Downloads (555 moves, 7.5 GB to review), Documents (20), Desktop (1).
 - Waiting on owner: run the Downloads script, review `_Sophia To Delete`, answer the report's 3 questions
   (games still played? what's in ~/Downloads/untitled folder (12.4 GB)? external drive?).
+- Download links on the board: the owner missed the small link under step 2. Always say in the detail
+  "Control-click > Save Link As…, save in Downloads" (a plain click shows .sh as text in Firefox) (2026-10-05).
 - Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
 ## Tests
