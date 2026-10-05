@@ -17,14 +17,14 @@ owner to review and drag to the Trash. Audio and Ableton files are never moved (
 ## In a cloud session (Sophia / Claude)
 1. `pip install -r requirements.txt` and `python agent.py --check`
 2. `python sophia.py`. It handles every upload in `workspace/inbox/`:
-   - listings: fixed rules sort obvious files; the agent (`tasks/organize_batch.md`) decides the
+   - listings: fixed rules sort obvious files; Hypatia (`tasks/organize_batch.md`) decides the
      rest in batches of 100; writes `workspace/plans/<Folder>.json` and `workspace/out/<Folder>/`.
-   - disk survey: `workspace/survey_summary.md` (code) and `workspace/cleanup_report.md` (agent,
+   - disk survey: `workspace/survey_summary.md` (code) and `workspace/cleanup_report.md` (Hypatia,
      `tasks/disk_report.md`).
    - moves processed uploads to `workspace/inbox/processed/<date>/` and rewrites `workspace/STATUS.md`.
 3. Check each `workspace/out/<Folder>/organize_preview.md` for warnings.
    Check `cleanup_report.md` line by line against `survey_summary.md` and correct it yourself:
-   the helper has misstated sizes, safety, and what the scripts do.
+   Hypatia (agent.py) has misstated sizes, safety, and what the scripts do.
 4. Commit, open a PR, and merge it into main (the owner allows merging without asking).
 5. Tell the owner, in a short list, what's ready and what's needed from them (from STATUS.md).
 
