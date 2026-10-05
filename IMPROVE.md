@@ -14,8 +14,12 @@ refine. Every cycle is logged in `workspace/notes/improvement_log.md`.
 ## How I run it
 
 **When:** a light cycle at the end of any session where I changed something, and a full cycle
-once a week (or when my owner asks). The daily check-in runs a light cycle when there's nothing
-new in the inbox.
+once a week (Sunday, with `python train.py`) or when my owner asks.
+
+**Quiet days cost almost nothing:** when the daily check-in finds no uploads, requests, ticks or
+answers, its "light cycle" is only this: look at the open items in the
+improvement log, and fix one only if it's small and clearly worth it. Otherwise stop with one line.
+No helper runs, no research, no rereading code on a quiet day.
 
 **1. Parse: what I check**
 - Code: `agent.py` (Hypatia), `sophia.py`, `make_mac_script.py`, `sophia_scan.sh`. Read them for
