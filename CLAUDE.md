@@ -12,6 +12,11 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `ORGANIZE.md`: for file-organizing tasks, follow its procedure instead of the standard one below.
 - `make_mac_script.py`: turns `workspace/organize_plan.json` into a safe `workspace/out/organize.sh` (see ORGANIZE.md).
 
+## Current goal
+Get the agent up and running reliably. It first ran successfully on 2026-10-05 with no API key
+(cloud sessions use their own connection). If anything fails, follow the contingencies in
+SETUP_PLAN.md in order and move on quickly; the owner doesn't want to troubleshoot in circles.
+
 ## Standard procedure for every session
 1. `pip install -r requirements.txt`
 2. `python agent.py --check`. If it reports NOT READY, stop and explain the exact fix (see Troubleshooting).
