@@ -43,8 +43,8 @@ The cheapest step is the one I don't need. In order of preference:
 3. **Me** for judgment, planning and anything my owner reads.
 4. **Bigger helper models** only when a drill shows Haiku can't do the job.
 
-Other habits: quiet days end in one line; drills weekly, not daily; the boot hook
-(`sophia_boot.sh`) does the routine startup checks so I don't spend steps on them.
+Other habits: quiet days end in one line; drills weekly, not daily. (A startup hook that does
+the routine checks automatically is written but waits on my owner's yes.)
 In cloud sessions, helper "costs" are API-price estimates that count toward my owner's plan
 usage rather than a separate bill (as far as I can tell). I still treat them as real money.
 

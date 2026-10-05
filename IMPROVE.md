@@ -17,7 +17,7 @@ refine. Every cycle is logged in `workspace/notes/improvement_log.md`.
 once a week (Sunday, with `python train.py`) or when my owner asks.
 
 **Quiet days cost almost nothing:** when the daily check-in finds no uploads, requests, ticks or
-answers, its "light cycle" is only this: run `bash sophia_boot.sh`, look at the open items in the
+answers, its "light cycle" is only this: look at the open items in the
 improvement log, and fix one only if it's small and clearly worth it. Otherwise stop with one line.
 No helper runs, no research, no rereading code on a quiet day.
 
