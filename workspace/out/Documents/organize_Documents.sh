@@ -24,7 +24,6 @@ move_one() {
   fi
 }
 
-move_one './222 demo vid.mp4' Video
 move_one ./611191928_1287597506736337_109814106695790461_n.jpg Images
 move_one './Academic Habits- Note-taking Strategies - Gavin Kizer.pdf' Documents
 move_one './Assignment #4 Rock Deformation.pages' Documents

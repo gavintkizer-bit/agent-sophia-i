@@ -17,10 +17,10 @@ bash ~/Downloads/organize_Downloads.sh --go   # moves files (an undo script is s
 
 ### Latest run: Downloads
 
-- 1221 files: 512 will move, 709 stay put (audio/Ableton, recent, or unclear).
-- Folders: Archives 21, Documents 149, Documents/Finance 3, Images 110, Installers 11, Video 66, Web Pages 103, _Sophia To Delete/Duplicates 32, _Sophia To Delete/Installers 17
+- 1221 files: 442 will move, 779 stay put (audio, video, Ableton, samples, recent, or unclear).
+- Folders: Archives 21, Documents 149, Documents/Finance 3, Images 110, Installers 11, Web Pages 103, _Sophia To Delete/Duplicates 28, _Sophia To Delete/Installers 17
 
-- **1.45 GB** goes to `_Sophia To Delete/` for you to check, then drag to the Trash.
+- **1.4 GB** goes to `_Sophia To Delete/` for you to check, then drag to the Trash.
 
 ## Where your disk space goes
 

@@ -36,6 +36,8 @@ OUT = ROOT / "workspace" / "out"
 PROTECTED = {
     ".wav", ".aif", ".aiff", ".mp3", ".m4a", ".flac", ".ogg", ".caf", ".mid", ".midi",
     ".asd", ".als", ".adg", ".adv", ".agr", ".alc", ".ams", ".amxd", ".ask", ".rx2", ".alp",
+    # Video too: the owner often puts videos in Ableton sets (2026-10-05).
+    ".mov", ".mp4", ".m4v", ".mkv", ".avi", ".webm", ".3gp", ".wmv", ".flv", ".mpg", ".mpeg",
 }
 # Archives whose names sound like music material (sample packs, kits, racks, chains) also stay put.
 ARCHIVES = (".zip", ".rar", ".7z", ".gz", ".tgz", ".tar")
@@ -151,7 +153,7 @@ def main():
     for f in listed:
         if f not in seen and is_protected(f):
             seen.add(f)
-            leave.append({"file": f, "reason": "Audio, Ableton, or sample file: never moved"})
+            leave.append({"file": f, "reason": "Audio, video, Ableton, or sample file: never moved"})
     for f in listed:
         if f not in seen:
             leave.append({"file": f, "reason": "Not mentioned in the plan, so left alone"})

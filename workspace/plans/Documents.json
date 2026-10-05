@@ -1,11 +1,6 @@
 {
  "moves": [
   {
-   "file": "./222 demo vid.mp4",
-   "to_folder": "Video",
-   "reason": ".mp4 file"
-  },
-  {
    "file": "./611191928_1287597506736337_109814106695790461_n.jpg",
    "to_folder": "Images",
    "reason": ".jpg file"
@@ -101,5 +96,10 @@
    "reason": "Python script source code"
   }
  ],
- "leave_alone": []
+ "leave_alone": [
+  {
+   "file": "./222 demo vid.mp4",
+   "reason": "Audio, video, Ableton, sample, or music-gear file: never moved"
+  }
+ ]
 }

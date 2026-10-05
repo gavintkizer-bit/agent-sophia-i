@@ -45,3 +45,5 @@ Decision: owner chose to stay with the current cloud setup (2026-10-05). Closed.
 | 12 | gap | Music plugin/driver installers (Splice, Voxengo, DC1A3, Behringer, M-Audio...) were in the Trash group; old free ones may not be re-downloadable. | Protected as music gear. | fixed |
 
 Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked against the script itself).
+
+| 13 | gap | Owner puts videos in Ableton sets; 70 videos in Downloads (and 1 in Documents) were being moved. | Video extensions added to PROTECTED; Video folder removed. Downloads script now 442 moves; verified no media/Ableton file in any script. | fixed |

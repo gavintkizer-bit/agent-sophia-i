@@ -32,9 +32,6 @@ move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html' 'Web Pages'
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt' Documents
 move_one ./1000005030.jpg Images
-move_one './1000005309 (1).mp4' '_Sophia To Delete/Duplicates'
-move_one ./1000005309.mp4 Video
-move_one ./1000005312.mp4 Video
 move_one ./1000005604.jpg Images
 move_one ./1000006020.jpg Images
 move_one ./1000006078.jpg Images
@@ -72,10 +69,7 @@ move_one ./73290344_2466312136823676_7264940007272480768_o.jpg Images
 move_one ./947E3EE0-8923-41E3-9A56-51B77BC616C5.JPG Images
 move_one ./A1ztxzwbVEL.jpg Images
 move_one './Accrue Cover Letter - Gavin K..pdf' Documents
-move_one './Aki Takase - Minerva'"'"'s Owl.mp4' Video
-move_one './Ambiance II Fusion-Don'"'"'t You Ever Take Your Love.mp4' Video
 move_one './App pg. 2.jpg' Images
-move_one './Applause Crowd Cheering sound effect.mp4' Video
 move_one './Argument essay (1).pdf' Documents
 move_one './Argument essay.pdf' Documents
 move_one './Asia Study Guide (1).docx' Documents
@@ -88,7 +82,6 @@ move_one './Assignment 2 Mineral'"'"'s Use In Society (1).docx' '_Sophia To Dele
 move_one './Assignment 2 Mineral'"'"'s Use In Society.docx' Documents
 move_one './Assignment_7B_Rivers_and_Google_Earth(1).docx' Documents
 move_one './Assignment_7B_Rivers_and_Google_Earth(1).pdf' Documents
-move_one './Ayudame a Creer.mp4' Video
 move_one ./BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG Images
 move_one './Blended Geologic Time (1).pptx' '_Sophia To Delete/Duplicates'
 move_one './Blended Geologic Time.pptx' Documents
@@ -111,7 +104,6 @@ move_one './Compare and contrast rough draft.pdf' Documents
 move_one './Completed Copy of Tenant Application 2015 NEW.docx.pdf' Documents
 move_one './Completed Tenant Application 2015 NEW.docx (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Completed Tenant Application 2015 NEW.docx.pdf' Documents
-move_one './DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4' Video
 move_one './Debate Research (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Debate Research.pdf' Documents
 move_one ./DespicableG50842_122644193.pdf Documents
@@ -187,7 +179,6 @@ move_one './Getti T Shirt _3 Chase Christmas Present (1).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present (2).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present (3).jpg' Images
 move_one './Getti T Shirt _3 Chase Christmas Present.jpg' Images
-move_one './Harold Vick-Wild Is The Wind.mp4' Video
 move_one './Human Odyssey answers  (1).pages' '_Sophia To Delete/Duplicates'
 move_one './Human Odyssey answers .pages' Documents
 move_one './Human Odyssey answers .pdf' Documents
@@ -203,33 +194,20 @@ move_one ./Image-1-Ossabaw-Map-scaled.jpg Images
 move_one './Internet Assignment (1).pdf' Documents
 move_one './Internet Assignment.docx' Documents
 move_one './Internet Assignment.pdf' Documents
-move_one './Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4' '_Sophia To Delete/Duplicates'
-move_one './Itsuroh Shimoda - Everybody Anyone (1974).mp4' Video
-move_one './J.O.B. Orchestra-Govinda.mp4' Video
 move_one './Jackdaw _ Assassin'"'"'s Creed Wiki _ FANDOM powered by Wikia.htm' 'Web Pages'
-move_one './Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4' Video
-move_one './JoJo out of context.mp4' Video
 move_one ./Karta_CN_SouthChinaSea.png Images
 move_one ./Kizer_Gavin_4352959_7_22_2024.pdf Documents
 move_one ./Kizer_Gavin_4352959_8_9_2024.pdf Documents
-move_one './Kung Fu 1972 - 1975  Opening and Closing Theme.mp4' Video
 move_one './Magic Stats 1.1.10 - Player Stats - Per Game.csv' Documents
 move_one './Magic Stats 1.1.10 - Rules.csv' Documents
 move_one ./Main@2x.png Images
 move_one ./Maproom-Central-London-major-features-5.jpg Images
-move_one './Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4' Video
 move_one ./Members_12298965.csv Documents
 move_one './Midterm Study Guide.docx' Documents
 move_one './Minecraft (1).dmg' '_Sophia To Delete/Installers'
-move_one './Monster - Chapter 03 - Murder Case.mkv' Video
 move_one './Movie Excel Data.xlsx' Documents
 move_one './Nepotism Vs. Merit Edit Draft.pdf' Documents
 move_one './Nepotism Vs. Merit Final.pdf' Documents
-move_one './No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4' '_Sophia To Delete/Duplicates'
-move_one './No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4' Video
-move_one './Nujabes - City Lights (Homework Edit).mp4' Video
-move_one './Nujabes - City Lights.mp4' Video
-move_one './ORF Orchestra - Diskretion.mp4' Video
 move_one './PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx' '_Sophia To Delete/Duplicates'
 move_one ./PBSNOVAGreatHumanOdysseyVideoQuestions.docx Documents
 move_one ./Patterns1.jpg Images
@@ -245,10 +223,7 @@ move_one './SailorsDelight (3).html' 'Web Pages'
 move_one ./SailorsDelight.html 'Web Pages'
 move_one './Scientific method.docx' Documents
 move_one ./Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg Images
-move_one './Secretos del saxofon. Técnica de saxofón.mp4' Video
-move_one './Shigeo Sekito - the word II.mp4' Video
 move_one './Smith on Virginia.docx' Documents
-move_one './Steve Jobss Philosophy.mp4' Video
 move_one './Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf' Documents
 move_one ./TXT.rtf Documents
 move_one './Tenant Application 2015 NEW.docx.pdf' Documents
@@ -256,7 +231,6 @@ move_one './Test work (1).jpg' '_Sophia To Delete/Duplicates'
 move_one './Test work.jpg' Images
 move_one './The Ethics of Working Dogs.pdf' Documents
 move_one './The Positive Effects of the Kudzu Vine.pdf' Documents
-move_one ./Travis-Scott---Antidote--Acapella.mp4 Video
 move_one ./Twitch.dmg '_Sophia To Delete/Installers'
 move_one './Untitled document (1) (1).pdf' '_Sophia To Delete/Duplicates'
 move_one './Untitled document (1).pdf' Documents
@@ -273,10 +247,6 @@ move_one './Untitled drawing (6).jpg' Images
 move_one './Untitled drawing.jpg' Images
 move_one './Untitled drawing.png' Images
 move_one './Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf' Documents
-move_one './Van Guard.mp4' Video
-move_one './Virgen Negra (1).mp4' '_Sophia To Delete/Duplicates'
-move_one './Virgen Negra.mp4' Video
-move_one './Wolfgang Lauth Quartett - Moonlight Fantasy.mp4' Video
 move_one './Writing assignment 1 - Gavin Kizer (1).pdf' Documents
 move_one './Writing assignment 1 - Gavin Kizer.pdf' Documents
 move_one ./alpine_hike_micro_brief_generator.html 'Web Pages'
@@ -285,7 +255,6 @@ move_one ./before_the_word_analysis.png Images
 move_one './bellalastr420 (1).csv' '_Sophia To Delete/Duplicates'
 move_one ./bellalastr420.csv Documents
 move_one ./bic_application.pdf Documents
-move_one ./boing.wav.mp4 Video
 move_one ./bp-708.webp Images
 move_one './catalina27-sail-model (1).html' 'Web Pages'
 move_one './catalina27-sail-model (2).html' 'Web Pages'
@@ -396,7 +365,6 @@ move_one ./gettyimages-807070348.jpg Images
 move_one ./gmail_images20260415_023604.png Images
 move_one ./gmail_images20260415_023620.png Images
 move_one ./googlechrome-2.dmg '_Sophia To Delete/Installers'
-move_one ./grsa-SingingSand2017_480x270.mp4 Video
 move_one ./hjk.htm 'Web Pages'
 move_one ./hqdefault.jpg Images
 move_one ./image_1b1ad4eb.jpg Images
@@ -439,41 +407,6 @@ move_one './the dog.jpeg' Images
 move_one ./the-great-goblin-20260814-213137.txt Documents
 move_one './theeee dog.jpeg' Images
 move_one ./tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html 'Web Pages'
-move_one './videoplayback (1).mp4' Video
-move_one './videoplayback (10).mp4' Video
-move_one './videoplayback (11).mp4' Video
-move_one './videoplayback (12).mp4' Video
-move_one './videoplayback (13).mp4' Video
-move_one './videoplayback (14).mp4' Video
-move_one './videoplayback (15).mp4' Video
-move_one './videoplayback (16).mp4' Video
-move_one './videoplayback (17).mp4' Video
-move_one './videoplayback (18).mp4' Video
-move_one './videoplayback (19).mp4' Video
-move_one './videoplayback (2).mp4' Video
-move_one './videoplayback (20).mp4' Video
-move_one './videoplayback (21).mp4' Video
-move_one './videoplayback (22).mp4' Video
-move_one './videoplayback (23).mp4' Video
-move_one './videoplayback (24).mp4' Video
-move_one './videoplayback (25).mp4' Video
-move_one './videoplayback (26).mp4' Video
-move_one './videoplayback (27).mp4' Video
-move_one './videoplayback (28).mp4' Video
-move_one './videoplayback (29).mp4' Video
-move_one './videoplayback (3).mp4' Video
-move_one './videoplayback (4).mp4' Video
-move_one './videoplayback (5).mp4' Video
-move_one './videoplayback (6).mp4' Video
-move_one './videoplayback (7).mp4' Video
-move_one './videoplayback (8).mp4' Video
-move_one './videoplayback (9).mp4' Video
-move_one ./videoplayback.mp4 Video
-move_one './y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4' Video
-move_one './y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4' Video
-move_one './y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4' Video
-move_one './y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4' Video
-move_one './y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4' Video
 move_one './🗓️ Course Schedule (SS2 8-Week).html (1).zip' '_Sophia To Delete/Duplicates'
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz' Documents
 move_one './(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz' Documents
@@ -488,7 +421,6 @@ move_one './Andorhal HD.zip' Archives
 move_one ./Beyond+the+Lands.zip Archives
 move_one ./BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar Archives
 move_one ./Hearthstone-Setup.zip Installers
-move_one ./IMG_1049.3gp Video
 move_one ./JehkobasFantasy_5.zip Archives
 move_one ./Melek_Endless_Turn.cod Archives
 move_one './ModernArch R50 [1.13 - 1.15] [256x].zip' Archives
@@ -533,8 +465,6 @@ move_one ./server.jar Archives
 move_one ./state-park-research-prompts-and-responses.zip Documents
 move_one ./thirty_five_codec.py Documents
 move_one ./tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz Installers
-move_one './videoplayback (1).3gp' Video
-move_one ./videoplayback.3gp Video
 move_one './🗓️ Course Schedule (SS2 8-Week).html.zip' Documents
 
 echo ""

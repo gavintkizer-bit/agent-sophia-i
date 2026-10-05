@@ -1,7 +1,7 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 1221 | Will move: 512 | Left alone: 709
+Files in listing: 1221 | Will move: 442 | Left alone: 779
 
 ## Moves
 
@@ -309,74 +309,6 @@ Files in listing: 1221 | Will move: 512 | Left alone: 709
 - `camo-macos-latest.zip`: App installer
 - `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: Music app installer
 
-### Video/ (66)
-- `1000005309.mp4`: .mp4 file
-- `1000005312.mp4`: .mp4 file
-- `Aki Takase - Minerva's Owl.mp4`: .mp4 file
-- `Ambiance II Fusion-Don't You Ever Take Your Love.mp4`: .mp4 file
-- `Applause Crowd Cheering sound effect.mp4`: .mp4 file
-- `Ayudame a Creer.mp4`: .mp4 file
-- `DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4`: .mp4 file
-- `Harold Vick-Wild Is The Wind.mp4`: .mp4 file
-- `Itsuroh Shimoda - Everybody Anyone (1974).mp4`: .mp4 file
-- `J.O.B. Orchestra-Govinda.mp4`: .mp4 file
-- `Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4`: .mp4 file
-- `JoJo out of context.mp4`: .mp4 file
-- `Kung Fu 1972 - 1975  Opening and Closing Theme.mp4`: .mp4 file
-- `Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4`: .mp4 file
-- `Monster - Chapter 03 - Murder Case.mkv`: .mkv file
-- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4`: .mp4 file
-- `Nujabes - City Lights (Homework Edit).mp4`: .mp4 file
-- `Nujabes - City Lights.mp4`: .mp4 file
-- `ORF Orchestra - Diskretion.mp4`: .mp4 file
-- `Secretos del saxofon. Técnica de saxofón.mp4`: .mp4 file
-- `Shigeo Sekito - the word II.mp4`: .mp4 file
-- `Steve Jobss Philosophy.mp4`: .mp4 file
-- `Travis-Scott---Antidote--Acapella.mp4`: .mp4 file
-- `Van Guard.mp4`: .mp4 file
-- `Virgen Negra.mp4`: .mp4 file
-- `Wolfgang Lauth Quartett - Moonlight Fantasy.mp4`: .mp4 file
-- `boing.wav.mp4`: .mp4 file
-- `grsa-SingingSand2017_480x270.mp4`: .mp4 file
-- `videoplayback (1).mp4`: .mp4 file
-- `videoplayback (10).mp4`: .mp4 file
-- `videoplayback (11).mp4`: .mp4 file
-- `videoplayback (12).mp4`: .mp4 file
-- `videoplayback (13).mp4`: .mp4 file
-- `videoplayback (14).mp4`: .mp4 file
-- `videoplayback (15).mp4`: .mp4 file
-- `videoplayback (16).mp4`: .mp4 file
-- `videoplayback (17).mp4`: .mp4 file
-- `videoplayback (18).mp4`: .mp4 file
-- `videoplayback (19).mp4`: .mp4 file
-- `videoplayback (2).mp4`: .mp4 file
-- `videoplayback (20).mp4`: .mp4 file
-- `videoplayback (21).mp4`: .mp4 file
-- `videoplayback (22).mp4`: .mp4 file
-- `videoplayback (23).mp4`: .mp4 file
-- `videoplayback (24).mp4`: .mp4 file
-- `videoplayback (25).mp4`: .mp4 file
-- `videoplayback (26).mp4`: .mp4 file
-- `videoplayback (27).mp4`: .mp4 file
-- `videoplayback (28).mp4`: .mp4 file
-- `videoplayback (29).mp4`: .mp4 file
-- `videoplayback (3).mp4`: .mp4 file
-- `videoplayback (4).mp4`: .mp4 file
-- `videoplayback (5).mp4`: .mp4 file
-- `videoplayback (6).mp4`: .mp4 file
-- `videoplayback (7).mp4`: .mp4 file
-- `videoplayback (8).mp4`: .mp4 file
-- `videoplayback (9).mp4`: .mp4 file
-- `videoplayback.mp4`: .mp4 file
-- `y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4`: .mp4 file
-- `y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4`: .mp4 file
-- `y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4`: .mp4 file
-- `y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4`: .mp4 file
-- `y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4`: .mp4 file
-- `IMG_1049.3gp`: Video file
-- `videoplayback (1).3gp`: Video file
-- `videoplayback.3gp`: Video file
-
 ### Web Pages/ (103)
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html`: .html file
 - `Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm`: .htm file
@@ -482,11 +414,10 @@ Files in listing: 1221 | Will move: 512 | Left alone: 709
 - `Stats.html.rtfd.zip`: HTML page archive
 - `Untitled - Copy (2).html.zip`: HTML page archive
 
-### _Sophia To Delete/Duplicates/ (32)
+### _Sophia To Delete/Duplicates/ (28)
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998) (1).epub`: Exact copy of another file here
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html`: Exact copy of another file here
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html`: Exact copy of another file here
-- `1000005309 (1).mp4`: Exact copy of another file here
 - `111 Internet Research Assignment (1).docx`: Exact copy of another file here
 - `111S18H (1).docx`: Exact copy of another file here
 - `2022_TaxReturn (1).pdf`: Exact copy of another file here
@@ -505,13 +436,10 @@ Files in listing: 1221 | Will move: 512 | Left alone: 709
 - `Gavin Kizer - The Uses of Olivine in Human Society (1).pdf`: Exact copy of another file here
 - `Gavin Kizer - Theme and Primary Source 2 Pt. 2 (1).pdf`: Exact copy of another file here
 - `Human Odyssey answers  (1).pages`: Exact copy of another file here
-- `Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4`: Exact copy of another file here
-- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4`: Exact copy of another file here
 - `PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx`: Exact copy of another file here
 - `Point by Point Outline (1).docx`: Exact copy of another file here
 - `Test work (1).jpg`: Exact copy of another file here
 - `Untitled document (1) (1).pdf`: Exact copy of another file here
-- `Virgen Negra (1).mp4`: Exact copy of another file here
 - `bellalastr420 (1).csv`: Exact copy of another file here
 - `rr_leaderboard (1).html`: Exact copy of another file here
 - `🗓️ Course Schedule (SS2 8-Week).html (1).zip`: Exact copy of another file here
@@ -1246,3 +1174,73 @@ Files in listing: 1221 | Will move: 512 | Left alone: 709
 - `./DeltaModulatorOSX.zip`: Audio, Ableton, sample, or music-gear file: never moved
 - `./maudioplugins_12_03_setupmac.zip`: Audio, Ableton, sample, or music-gear file: never moved
 - `./maudioplugins_14_16_setupmac.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./1000005309 (1).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./1000005309.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./1000005312.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Aki Takase - Minerva's Owl.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Ambiance II Fusion-Don't You Ever Take Your Love.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Applause Crowd Cheering sound effect.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Ayudame a Creer.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Harold Vick-Wild Is The Wind.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Itsuroh Shimoda - Everybody Anyone (1974).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./J.O.B. Orchestra-Govinda.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./JoJo out of context.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Kung Fu 1972 - 1975  Opening and Closing Theme.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Monster - Chapter 03 - Murder Case.mkv`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Nujabes - City Lights (Homework Edit).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Nujabes - City Lights.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./ORF Orchestra - Diskretion.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Secretos del saxofon. Técnica de saxofón.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Shigeo Sekito - the word II.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Steve Jobss Philosophy.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Travis-Scott---Antidote--Acapella.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Van Guard.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Virgen Negra (1).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Virgen Negra.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./Wolfgang Lauth Quartett - Moonlight Fantasy.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./boing.wav.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./grsa-SingingSand2017_480x270.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (1).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (10).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (11).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (12).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (13).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (14).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (15).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (16).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (17).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (18).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (19).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (2).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (20).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (21).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (22).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (23).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (24).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (25).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (26).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (27).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (28).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (29).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (3).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (4).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (5).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (6).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (7).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (8).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (9).mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./IMG_1049.3gp`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback (1).3gp`: Audio, video, Ableton, sample, or music-gear file: never moved
+- `./videoplayback.3gp`: Audio, video, Ableton, sample, or music-gear file: never moved
