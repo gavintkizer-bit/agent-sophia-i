@@ -45,6 +45,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   Don't bring it up again unless they do. The 3 Claude.dmg files in Downloads (1.1 GB) can go.
 
 ## Status (2026-10-05)
+- Owner offered to run my Terminal commands; I choose what to clean and in what order (2026-10-05).
+  Tonight's board = 15 ordered steps (~10 GB): organize, trash dupes/installers, Studio Bass .alp,
+  Claude.dmg x3, app caches, then empty Trash. Waiting on two pasted outputs: installed Ableton packs
+  (step 6) and the doubled-folder check (step 9), then I write the next trash commands.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
 - First full scan done: 18.0 GB free of 244.8 GB. Report: `workspace/cleanup_report.md` (I rewrote Hypatia's draft).
