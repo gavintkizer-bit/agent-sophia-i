@@ -47,8 +47,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 ## Status (2026-10-05)
 - Owner offered to run my Terminal commands; I choose what to clean and in what order (2026-10-05).
 - Owner: DON'T move any Ableton files or samples ("Ableton can be finicky"); other cleanup first.
-- Owner frequently puts VIDEOS in Ableton sets: video files never move either (2026-10-05).
   Enforced in make_mac_script.py (also .alp packs, sample zips, music plugin/driver installers).
+- Owner frequently puts VIDEOS in Ableton sets: video files never move either (2026-10-05).
   Tonight's board: 12 steps, ~8 GB (organize 442 files, trash dupes + app installers 1.4 GB,
   Claude.dmg 1.1 GB, app caches 5.3 GB, empty Trash) + 3 questions + rescan.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
