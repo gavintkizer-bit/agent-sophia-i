@@ -2,6 +2,15 @@
 
 My first Claude agent, built with the Claude Agent SDK and run in claude.ai/code cloud sessions.
 
+## Goal
+Keep my laptop and my life organized, one small, safe step at a time.
+- **Laptop:** free up disk space and keep Downloads tidy, without breaking my Ableton samples or projects.
+- **Life:** turn my messy notes into clear plans I can act on.
+- **Safety:** the agent never touches my Mac or deletes anything. It makes plans and scripts; I review and run them.
+
+**Later (bigger scope, not now):** the rest of the hard drive, a macOS upgrade / Claude desktop,
+a weekly scheduled run, web search.
+
 **What it does right now:** reads my notes in `workspace/notes/` and writes an organized plan
 to `workspace/organized_plan.md`, then records the run (cost, turns, tools) in `logs/run_log.md`.
 

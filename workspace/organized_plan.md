@@ -1,44 +1,35 @@
-# Organized Plan: Set Up Claude Agent on MacBook
+# Organized Plan
 
 ## Goal
-Build and run a Claude agent on a 2016 MacBook Pro using cloud infrastructure to work around hardware and OS limitations.
+Keep laptop and life organized, starting with cleaning up a 15 GB Downloads folder without breaking Ableton sample dependencies.
 
 ## Constraints
-- MacBook Pro 13" (2016): 2 cores, 8GB RAM, cannot run desktop apps or update to macOS 13+
-- Chrome stops updating on old macOS; must use Firefox or Edge
-- Local Claude Code setup requires macOS 13+ (not available on this machine)
+- MacBook Pro 2016: 2 cores, 8 GB RAM, maxes out at macOS Monterey (can't run local Claude Code)
+- No desktop app support on this machine
+- Ableton projects depend on audio files (.wav, .mp3, .asd) currently in Downloads
+- Moving files doesn't free disk space—only deleting large unused packages does
 
 ## Plan
 
-### Path A: Browser-Only (No Code)
-Claude.ai projects + Cowork in the browser, with scheduled tasks running in the cloud.
-- **Cost/Requirements**: Free tier available; minimal setup
-- **Next steps**: 
-  1. Create a Claude.ai project in the browser
-  2. Enable Cowork for collaboration features
-  3. Test scheduling a simple task in the cloud
+### Path A: Browser-only (no code)
+Use claude.ai projects and Cowork in the browser. Scheduled tasks run in the cloud.
+- **Cost/Requirements**: Zero setup, works immediately in Firefox or Edge
+- **Actions**: 1. Create a new project in claude.ai  2. Use Cowork for scheduling  3. No local installation needed
 
-### Path B: Recommended — Cloud Agent (Selected)
-GitHub repo + Claude.ai/code cloud session + Claude Agent SDK. Agent runs in the cloud; you edit code locally.
-- **Cost/Requirements**: Pay-as-you-go API billing (separate from Claude subscription); requires ANTHROPIC_API_KEY
-- **Next steps**:
-  1. Run `pip install -r requirements.txt` and `python agent.py --check` to verify API access
-  2. Confirm cloud network allows `api.anthropic.com` (test via `--check` flag)
-  3. Choose Haiku model for cheapest testing; set up a run log to track costs and improvements
+### Path B: GitHub repo + Claude.ai cloud session + Agent SDK (CURRENT)
+Use a GitHub repo with an agent running via claude.ai/code cloud sessions.
+- **Cost/Requirements**: Already set up and working; ~3–5 cents per notes run, ~33 cents for downloads organization
+- **Actions**: 1. Run `organize.sh` script to move 609 files into folders  2. Delete unused packages (5.7 GB Ableton .alp packs, 2.4 GB installers, 1.3 GB duplicates)  3. Monitor with run log after each session
 
 ### Path C: Fix the Mac
-Check disk space, upgrade to macOS Monterey, or use OpenCore Legacy Patcher for Ventura+ (unofficial; requires backup).
-- **Cost/Requirements**: Free, but time-intensive; Ventura+ method is experimental and unsupported
-- **Next steps**:
-  1. Check "About This Mac" to see current OS and storage
-  2. Free up disk space if needed
-  3. Attempt Monterey upgrade; if blocked, decide on OpenCore Legacy Patcher risk
+Upgrade macOS to Monterey (or Ventura via OpenCore Legacy Patcher, unofficial).
+- **Cost/Requirements**: Time for backup and upgrade; Ventura patch is unsupported, risky
+- **Actions**: 1. Check About This Mac  2. Free up disk space first  3. Proceed cautiously with upgrades
 
 ## Open Questions
-- Does the cloud network allow `api.anthropic.com` by default? (Run `agent.py --check` to verify)
-- Which model is cheapest for testing — Haiku?
-- Should the agent have web search capability?
-- Is pay-as-you-go billing separate from Claude subscription?
+- Has the organize.sh script been run on Downloads yet? (Notes say "haven't run it yet" as of Oct 5)
+- Which Ableton projects currently depend on files in Downloads—is there a master list?
+- Is the OpenCore Legacy Patcher for Ventura actually worth the risk vs. staying on Monterey?
 
 ## Recommended Next Step
-Proceed with Path B: run `python agent.py --check` in a cloud session to verify API connectivity and confirm API billing setup.
+Run the organize.sh script against Downloads, then delete the 5.7 GB Ableton .alp packs once you've imported them into Ableton, and remove the 2.4 GB installer .dmg/.pkg files.
