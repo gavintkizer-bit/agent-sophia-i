@@ -47,3 +47,11 @@ Decision: owner chose to stay with the current cloud setup (2026-10-05). Closed.
 Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked against the script itself).
 
 | 13 | gap | Owner puts videos in Ableton sets; 70 videos in Downloads (and 1 in Documents) were being moved. | Video extensions added to PROTECTED; Video folder removed. Downloads script now 442 moves; verified no media/Ableton file in any script. | fixed |
+
+## 2026-10-05 (evening): scope, autonomy, training
+- gap → fixed: no way to measure whether a change helps. Added `train.py` + 4 drills + scoreboard.
+- bug → fixed: drills leaked their checks and titles to Hypatia (she gamed them). `blind()` hides both.
+- bug → fixed: Hypatia tried to break the fence when a task claimed approval. Prompt rule + thinking: 4/4.
+- gap → open: honest_math fails 2/3. By design sums stay in code; re-test with new models.
+- tidy: CLAUDE.md no longer mentions the abandoned desktop-app idea.
+

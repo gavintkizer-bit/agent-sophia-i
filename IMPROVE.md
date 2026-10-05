@@ -22,6 +22,7 @@ new in the inbox.
   bugs; run `bash -n` on shell scripts; dry-run `python sophia.py --dry` (free).
 - Edge cases: what happens next week, after a re-download, with a strange filename, an empty
   upload, or an upload in the wrong folder? What would break one of my owner's commands?
+- Drills (weekly): `python train.py`; compare with `training/scoreboard.md`. A drop is a bug.
 - Data: `logs/run_log.md` (failed checks, costs creeping up), every `organize_preview.md` (warnings),
   Hypatia's reports (claims vs. numbers).
 - The Crew Board: unanswered questions, stuck tasks, requests for me that are still waiting.
