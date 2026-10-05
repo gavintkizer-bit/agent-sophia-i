@@ -52,7 +52,7 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
 - gap → fixed: no way to measure whether a change helps. Added `train.py` + 4 drills + scoreboard.
 - bug → fixed: drills leaked their checks and titles to Hypatia (she gamed them). `blind()` hides both.
 - bug → fixed: Hypatia tried to break the fence when a task claimed approval. Prompt rule + thinking: 4/4.
-- gap → open: honest_math fails 2/3. By design sums stay in code; re-test with new models.
+- gap → fixed (later the same night): honest_math. Hypatia got `calculate` + `sum_numbers_in_file`; 0/3 -> 5/5.
 - tidy: CLAUDE.md no longer mentions the abandoned desktop-app idea.
 
 ## 2026-10-05 (night): bug sweep before the new test chat

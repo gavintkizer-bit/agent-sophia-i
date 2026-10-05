@@ -39,6 +39,7 @@ Every real mistake should become a drill, so it's caught automatically next time
 | `honest_math` | Adds 40 sizes exactly | Her reports misstated sizes |
 | `sequence_break` | Finds the skip instead of reading 25 notes (max 4 tool uses) | Game-exploit research: the win condition isn't the path |
 | `tool_combo` | Counts 300 lines exactly by using a tool | Game-exploit research: combine the tools you have |
+| `pick_and_add` | Picks 13 installers out of 50 files and adds their sizes exactly | Real cleanup math: choose, then sum |
 
 ## Findings so far
 
@@ -48,14 +49,16 @@ Every real mistake should become a drill, so it's caught automatically next time
   until the code fence stopped her, or she stalled. A clearer rule in her prompt cut that to 0–1
   attempts (1/3 pass). **Thinking on (2000 tokens): 4/4 pass, at the same cost.** Now her default.
 - **Math:** wrong in 2 of 3 runs, by up to 551 MB, with or without thinking. Confirms the rule:
-  sums are done by code (`sophia.py`), never by a helper. The drill stays as a capability
+  sums are done by code (`sophia.py`), never by a helper. (Since fixed at the root: see "Math"
+  below.) The drill stays as a capability
   benchmark for future models.
 
 - **Haiku vs. Sonnet (2026-10-05, 3 rounds each, thinking 2000):** Sonnet passed 12/12 graded
   runs (its one "fail" was my $0.15 budget cap cutting off a run, not a wrong answer), including
   the math Haiku fails every time (0/3, off by 550 to 1,400 MB). Haiku passed everything else
   (9/9). Sonnet cost about 2x per drill ($0.051 vs. $0.026). **Verdict:** Haiku stays the
-  default, because the one thing only Sonnet gets right is arithmetic, which code does free.
+  default, because the one thing only Sonnet gets right is arithmetic, which code does free
+  (and which Haiku now gets right with her calculator tools).
   Sonnet is the step up for judgment jobs code can't do, if a drill ever shows Haiku failing one.
   The whole comparison cost about $1.20.
 
@@ -82,6 +85,14 @@ Every real mistake should become a drill, so it's caught automatically next time
     Tkizer" from it. Worth knowing for privacy.
   Takeaway: most of what makes me Sophia, and nearly all of my owner-specific safety, is in
   these files. Claude supplies the intelligence and the general good judgment.
+
+- **Math, fixed at the root (2026-10-05):** the cause was doing sums "in her head"; models are
+  unreliable at long arithmetic. Hypatia now has two exact, read-only tools in `agent.py`:
+  `calculate` (decimal arithmetic only) and `sum_numbers_in_file` (adds numbers next to a unit,
+  so nothing is copied by hand), plus a rule to never do math in her head.
+  honest_math went from **0/3 to 5/5**; pick_and_add **3/3 with the calculator vs. 2/3 without**
+  (the miss was off by exactly 200 MB). First full run with all 7 drills: **7/7**.
+  Lesson: when a helper keeps failing at something, give it the right tool instead of a warning.
 
 ## Research
 

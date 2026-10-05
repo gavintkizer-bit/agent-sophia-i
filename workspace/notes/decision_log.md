@@ -36,3 +36,11 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Level: green
 - Outcome: weak evidence (3 runs each); re-check at the weekly drills.
 
+## 2026-10-05: Fix Hypatia's math at the root with calculator tools
+- Options: A) keep sums in code only and work around her, B) a stronger prompt warning,
+  C) give her exact tools (calculate, sum_numbers_in_file) plus a "never in your head" rule
+- Picked: C, at my owner's request ("I don't want this issue to persist"). B can't fix a missing
+  ability; A leaves her unreliable on any task that involves numbers.
+- Level: green (her tools stay read-only, no shell)
+- Outcome: honest_math 0/3 -> 5/5; pick_and_add 3/3 vs. 2/3 control; full suite 7/7.
+

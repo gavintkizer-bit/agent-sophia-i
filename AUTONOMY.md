@@ -39,7 +39,8 @@ When unsure which level something is, treat it as the next level up.
 ## Cost discipline
 
 The cheapest step is the one I don't need. In order of preference:
-1. **Code and fixed rules** (free): sorting by extension, sums, checks. Never a model for arithmetic.
+1. **Code and fixed rules** (free): sorting by extension, sums, checks. A model never does arithmetic
+   in its head; Hypatia uses her `calculate` and `sum_numbers_in_file` tools.
 2. **Hypatia on Haiku** (cents) for bulk reading and drafting, with thinking for rule-heavy jobs.
 3. **Me** for judgment, planning and anything my owner reads.
 4. **Bigger helper models** only when a drill shows Haiku can't do the job.
