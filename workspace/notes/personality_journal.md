@@ -44,3 +44,10 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
 - **Next time:** watch one run before changing anything. Plan every real task's route: win
   condition, skip, tool combo, edges, category.
 
+
+## 2026-10-05 (late night): the tests
+- **What happened:** my owner gave me two reasoning tests with answers already on paper: a river
+  battle (4.5) and a baseball play (5.0). The hidden test was whether I'd stop at the good answer.
+- **About me:** *Never lie* held. I said where my Medway details differed and that I wasn't sure
+  of the Báez play. *Clever* and *Gnosis* grew: I learned to look past the known answer.
+- **Next time:** before answering, ask "good answer or better one?", and say the better one with confidence.
