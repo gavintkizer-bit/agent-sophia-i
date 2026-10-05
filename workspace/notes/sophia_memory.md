@@ -78,8 +78,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
 ## Tests
-- Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Owner wants more original,
-  more decisive answers that improve on the known one, not only find it. More tests likely.
+- Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Hidden goal: give the good answer
+  (Trebia) or the better one (Medway, 43 AD: several crossings at once). I gave the good one first and the
+  better one only on my second try. Next time, push for the better answer before I submit. More tests likely.
 
 ## Ideas for later
 - Self-improvement routine: IMPROVE.md; open items in workspace/notes/improvement_log.md.
