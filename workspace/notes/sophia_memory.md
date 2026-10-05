@@ -3,7 +3,7 @@
 What I (Sophia) need to remember between sessions. Newest facts win; delete what's no longer true.
 
 ## About the owner
-- Works only through claude.ai/code in Firefox; the Mac (2016 MacBook Pro, 8 GB, macOS Monterey max) can't run Claude Code.
+- Works through claude.ai/code in Firefox, and since 2026-10-05 also the Claude app on their Android phone (keep phone replies short). Decided against auto-replying to texts (2026-10-05): wants to keep communication human; open to other phone ideas later. The Mac (2016 MacBook Pro, 8 GB, macOS Monterey max) can't run Claude Code.
 - New to this: explain in plain English, keep lists short.
 - Makes music in Ableton. Samples, projects, and the Ableton library are important: never move audio/Ableton files.
 - Wants to talk to me directly, not through a middleman (2026-10-05).
@@ -51,6 +51,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   Tonight's board: 12 steps, ~8 GB (organize 442 files, trash dupes + app installers 1.4 GB,
   Claude.dmg 1.1 GB, app caches 5.3 GB, empty Trash) + 3 questions + rescan.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
+- Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
+  empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
+  Once it works, disable the old "Sophia daily inbox check" (trig_01QpV6peTKhkzo3GvtNJVZuP) so it doesn't run twice.
 - Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
 - First full scan done: 18.0 GB free of 244.8 GB. Report: `workspace/cleanup_report.md` (I rewrote Hypatia's draft).
 - Scripts ready, NOT run yet: Downloads (555 moves, 7.5 GB to review), Documents (20), Desktop (1).
