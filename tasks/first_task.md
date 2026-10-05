@@ -1,4 +1,5 @@
 # Task: Turn my messy notes into an organized plan
+<!-- output: organized_plan.md -->
 
 Read every file in the `notes/` folder.
 

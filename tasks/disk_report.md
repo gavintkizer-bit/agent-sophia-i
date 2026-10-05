@@ -1,4 +1,5 @@
 # Task: Explain where my disk space goes and what I can safely free up
+<!-- output: cleanup_report.md -->
 
 My Mac is a 2016 MacBook Pro on an older macOS. I want it cleaner and with more free space.
 I make music in Ableton: my samples, projects, and Ableton's library are important.

@@ -1,4 +1,5 @@
 # Task: Decide where a small batch of tricky files should go
+<!-- output: _batch_plan.json (json) -->
 
 You cannot see or touch my files, only their names. Simple files (photos, PDFs, videos,
 installers, audio) were already handled by fixed rules. These are the ones the rules

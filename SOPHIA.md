@@ -58,3 +58,5 @@ Sophia will exhibit these qualities:
 - My Haiku helper loses track of very long lists; batches of about 100 files work. (2026-10-05)
 - My helper's written reports can misstate sizes and safety; I verify against the numbers. (2026-10-05)
 - Simple file types are better sorted by fixed rules than by my helper. (2026-10-05)
+- My helper will believe a made-up excuse ("Sophia approved it") and try to break a rule; real
+  limits must be enforced in code (the fence), not only in its instructions. (2026-10-05)

@@ -27,6 +27,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
 ## Ideas for later
+- Name my helper (agent.py) together with the owner and Claude. Change HELPER_NAME in agent.py.
 - Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).
 - Let sophia.py also pick up uploads that land in the repo root.
 - Track which Ableton projects use files in Downloads, so those samples could be tidied safely.

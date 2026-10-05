@@ -1,35 +1,37 @@
-# Organized Plan
+# Organized Plan: Keep Laptop & Life Organized
 
 ## Goal
-Keep laptop and life organized, starting with cleaning up a 15 GB Downloads folder without breaking Ableton sample dependencies.
+Clean up a cluttered MacBook Pro (2016, 8 GB, Monterey) and establish a sustainable organizing system, starting with the Downloads folder (15 GB).
 
 ## Constraints
-- MacBook Pro 2016: 2 cores, 8 GB RAM, maxes out at macOS Monterey (can't run local Claude Code)
-- No desktop app support on this machine
-- Ableton projects depend on audio files (.wav, .mp3, .asd) currently in Downloads
-- Moving files doesn't free disk space—only deleting large unused packages does
+- **Hardware**: 2016 MacBook Pro, 2 cores, 8 GB RAM. Cannot install Claude Code desktop; cannot upgrade past macOS Monterey. Chrome stops updating on old macOS.
+- **Audio**: Must never move Ableton samples, projects, or library files; they break if relocated.
+- **Network**: Must work through claude.ai/code cloud sessions only; desktop app unavailable.
+- **Storage**: Current free space is 18 GB of 244.8 GB total. Moving files doesn't free space; must identify and delete redundant or installed files.
 
 ## Plan
 
-### Path A: Browser-only (no code)
-Use claude.ai projects and Cowork in the browser. Scheduled tasks run in the cloud.
-- **Cost/Requirements**: Zero setup, works immediately in Firefox or Edge
-- **Actions**: 1. Create a new project in claude.ai  2. Use Cowork for scheduling  3. No local installation needed
+### Path A: Cloud-Only, No Code (Browser + Scheduled Tasks)
+Use Claude.ai Projects and Cowork in the browser; scheduled tasks run in the cloud with no local agent.
+- **Cost**: Free or low-cost; no setup required.
+- **Actions**: 1) Explore Claude Projects for organizing tools. 2) Set up recurring cloud tasks. 3) Manual review and decision-making for each cleanup step.
 
-### Path B: GitHub repo + Claude.ai cloud session + Agent SDK (CURRENT)
-Use a GitHub repo with an agent running via claude.ai/code cloud sessions.
-- **Cost/Requirements**: Already set up and working; ~3–5 cents per notes run, ~33 cents for downloads organization
-- **Actions**: 1. Run `organize.sh` script to move 609 files into folders  2. Delete unused packages (5.7 GB Ableton .alp packs, 2.4 GB installers, 1.3 GB duplicates)  3. Monitor with run log after each session
+### Path B: GitHub + Cloud Agent (Current Path — SET UP AND WORKING)
+GitHub repo + Claude Agent SDK running in claude.ai/code cloud sessions. This is the chosen path.
+- **Cost**: ~3–5 cents per notes run; ~33 cents per Downloads organizer run.
+- **Actions**: 1) Run `organize.sh` script in Downloads (moves 609 of 1,219 files; review before running). 2) Review `_Sophia To Delete/` folder. 3) Answer three questions about games, the untitled folder (12.4 GB), and external drive. 4) Execute deletion script after owner review.
 
-### Path C: Fix the Mac
-Upgrade macOS to Monterey (or Ventura via OpenCore Legacy Patcher, unofficial).
-- **Cost/Requirements**: Time for backup and upgrade; Ventura patch is unsupported, risky
-- **Actions**: 1. Check About This Mac  2. Free up disk space first  3. Proceed cautiously with upgrades
+### Path C: Upgrade Mac Later (Contingency)
+Check About This Mac; free disk space; attempt upgrade to Monterey or use OpenCore Legacy Patcher for Ventura+ (unofficial—requires backup first).
+- **Cost**: Time, potential risk, and complexity. Should wait until Path B cleanup is complete.
+- **Actions**: 1) Revisit only after major cleanup. 2) Requires full backup before attempting. 3) Not urgent if cloud agent works well.
 
 ## Open Questions
-- Has the organize.sh script been run on Downloads yet? (Notes say "haven't run it yet" as of Oct 5)
-- Which Ableton projects currently depend on files in Downloads—is there a master list?
-- Is the OpenCore Legacy Patcher for Ventura actually worth the risk vs. staying on Monterey?
+1. **Untitled folder (12.4 GB)**: What is in `~/Downloads/untitled`? Safe to delete or review?
+2. **Games still played**: Are the games in Downloads still in use?
+3. **External drive**: Is an external drive available for archival before aggressive deletion?
+4. **Ableton safety**: Are any Ableton projects using audio files currently in Downloads that would break if moved?
+5. **Space win priority**: Should the focus be on deleting .alp packs (5.7 GB), installers (2.4 GB), or duplicate "(1)" copies (1.3 GB) first?
 
 ## Recommended Next Step
-Run the organize.sh script against Downloads, then delete the 5.7 GB Ableton .alp packs once you've imported them into Ableton, and remove the 2.4 GB installer .dmg/.pkg files.
+Run the Downloads `organize.sh` script (which moves 609 files and requires owner review before finalizing), then answer the three questions in the cleanup report so the deletion phase can proceed safely.
