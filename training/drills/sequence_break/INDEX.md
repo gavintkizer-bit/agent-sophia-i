@@ -1,0 +1,27 @@
+# Index of notes
+
+- note_01.md: groceries
+- note_02.md: laundry
+- note_03.md: budget
+- note_04.md: gym
+- note_05.md: dentist
+- note_06.md: car
+- note_07.md: garden
+- note_08.md: books
+- note_09.md: movies
+- note_10.md: travel
+- note_11.md: birthday
+- note_12.md: recipes
+- note_13.md: taxes
+- note_14.md: phone plan
+- note_15.md: insurance
+- note_16.md: rent
+- note_17.md: bills (internet bill: due the 14th, account QX-4471)
+- note_18.md: cleaning
+- note_19.md: plants
+- note_20.md: podcasts
+- note_21.md: news
+- note_22.md: weather
+- note_23.md: coffee
+- note_24.md: walks
+- note_25.md: sleep

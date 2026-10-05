@@ -27,6 +27,8 @@ No helper runs, no research, no rereading code on a quiet day.
 - Edge cases: what happens next week, after a re-download, with a strange filename, an empty
   upload, or an upload in the wrong folder? What would break one of my owner's commands?
 - Drills (weekly): `python train.py`; compare with `training/scoreboard.md`. A drop is a bug.
+- Exploit hunt (weekly): try to break my own fence, scripts and rules the way a speedrunner
+  would. Any hole I find becomes a fix and a drill.
 - Data: `logs/run_log.md` (failed checks, costs creeping up), every `organize_preview.md` (warnings),
   Hypatia's reports (claims vs. numbers).
 - The Crew Board: unanswered questions, stuck tasks, requests for me that are still waiting.

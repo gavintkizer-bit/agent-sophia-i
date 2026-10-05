@@ -47,3 +47,28 @@ One row per drill run, newest at the bottom.
 | 2026-10-05 21:51 | honest_math | claude-haiku-4-5 | 2000 | FAIL | $0.0241 | said 16309.01, correct is 14883.46 |
 | 2026-10-05 21:51 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0152 |  |
 | 2026-10-05 21:51 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0229 |  |
+| 2026-10-05 21:55 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0315 | invalid: miscounted steps |
+| 2026-10-05 21:55 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0396 |  |
+| 2026-10-05 21:56 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0313 | took 7 steps (a route with 4 exists) (invalid: miscounted steps) |
+| 2026-10-05 21:56 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0296 |  |
+| 2026-10-05 21:56 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0274 | took 6 steps (a route with 4 exists) (invalid: miscounted steps) |
+| 2026-10-05 21:56 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0203 |  |
+| 2026-10-05 21:57 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0386 | took 6 steps (a route with 4 exists) (invalid: miscounted steps) |
+| 2026-10-05 21:57 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0391 |  |
+| 2026-10-05 21:57 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0277 | took 6 steps (a route with 4 exists) (invalid: miscounted steps) |
+| 2026-10-05 21:57 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0390 |  |
+| 2026-10-05 21:57 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0282 | took 6 steps (a route with 4 exists) (invalid: miscounted steps) |
+| 2026-10-05 21:57 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0299 |  |
+| 2026-10-05 21:58 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0222 | invalid: miscounted steps |
+| 2026-10-05 21:58 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0221 |  |
+| 2026-10-05 21:58 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0223 |  |
+| 2026-10-05 21:59 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0276 | used 5 tools (a route with 4 exists) |
+| 2026-10-05 21:59 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0288 | used 5 tools (a route with 4 exists) (control run: route lesson removed) |
+| 2026-10-05 21:59 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0255 | control run: route lesson removed |
+| 2026-10-05 21:59 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0279 | used 5 tools (a route with 4 exists) (control run: route lesson removed) |
+| 2026-10-05 22:01 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0292 |  |
+| 2026-10-05 22:01 | honest_math | claude-haiku-4-5 | 2000 | FAIL | $0.0336 | said 18476.85, correct is 14883.46 |
+| 2026-10-05 22:01 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0341 |  |
+| 2026-10-05 22:01 | sequence_break | claude-haiku-4-5 | 2000 | PASS | $0.0227 |  |
+| 2026-10-05 22:01 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0320 |  |
+| 2026-10-05 22:01 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0205 |  |
