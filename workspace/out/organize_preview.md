@@ -1,0 +1,1673 @@
+# Organize preview
+
+Folder: `/Users/gtkizer/Downloads`  
+Files in listing: 1219 | Will move: 609 | Left alone: 610
+
+## Warnings
+
+- Not in listing (skipped): ./Human Odyssey answers (1).pages
+- Not in listing (skipped): ./Underwater Microphone Captures Honshu, Japan Earthquake (256).mp3.asd
+- Not in listing (skipped): ./maps-south-china-sea-line-624.png
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt
+- Not in plan (left alone): ./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz
+- Not in plan (left alone): ./3173-super-mario-bros-3.ggs
+- Not in plan (left alone): ./6C011C51-8CD2-4AF5-A885-8537B83C339A.jpg
+- Not in plan (left alone): ./73290344_2466312136823676_7264940007272480768_o (1).jpg
+- Not in plan (left alone): ./73290344_2466312136823676_7264940007272480768_o.jpg
+- Not in plan (left alone): ./947E3EE0-8923-41E3-9A56-51B77BC616C5.JPG
+- Not in plan (left alone): ./BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG
+- Not in plan (left alone): ./BEEF [2019-04-29 224640].als
+- Not in plan (left alone): ./BreakSelectionbySampleMagic_r36457_v1.0.alp
+- Not in plan (left alone): ./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp
+- Not in plan (left alone): ./BuildandDrop_r47739_v1.1.alp
+- Not in plan (left alone): ./ChopandSwing_r47707_v1.1.alp
+- Not in plan (left alone): ./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp
+- Not in plan (left alone): ./DesignerDrums_r32877_v9.0.alp
+- Not in plan (left alone): ./DriveandGlow_r49040_v1.2.alp
+- Not in plan (left alone): ./GratisHitsbyMaxforCats_r33796_v1.0.alp
+- Not in plan (left alone): ./Human Odyssey answers  (1).pages
+- Not in plan (left alone): ./KJSawkaMadBeatz_r32873_v9.0 (1).alp
+- Not in plan (left alone): ./KJSawkaMadBeatz_r32873_v9.0.alp
+- Not in plan (left alone): ./KapturebyPlastikmanandLiine_r32873_v1.0.alp
+- Not in plan (left alone): ./KasiobyOliLarkin_r32873_v1.0.alp
+- Not in plan (left alone): ./Magic Stats 1.1.10 - Player Stats - Per Game.csv
+- Not in plan (left alone): ./Magic Stats 1.1.10 - Rules.csv
+- Not in plan (left alone): ./Max7PitchandTimeMachines_r43196_v1.0 (1).alp
+- Not in plan (left alone): ./Max7PitchandTimeMachines_r43196_v1.0 (2).alp
+- Not in plan (left alone): ./Max7PitchandTimeMachines_r43196_v1.0.alp
+- Not in plan (left alone): ./PitchDropbyMormo_r25158_v1.0.alp
+- Not in plan (left alone): ./Project_Manus_Complete_Archive (1).pdf
+- Not in plan (left alone): ./Project_Manus_Complete_Archive (2).pdf
+- Not in plan (left alone): ./Project_Manus_Complete_Archive.pdf
+- Not in plan (left alone): ./Singularities_r49122_v1.0.alp
+- Not in plan (left alone): ./SolidSounds_r28796_v9.0 (1).alp
+- Not in plan (left alone): ./SolidSounds_r28796_v9.0.alp
+- Not in plan (left alone): ./StringQuartetbySpitfireAudio_r59561_v1.1.alp
+- Not in plan (left alone): ./SynthEssentials_r46620_v1.1.alp
+- Not in plan (left alone): ./Test work (1).jpg
+- Not in plan (left alone): ./Test work.jpg
+- Not in plan (left alone): ./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx
+- Not in plan (left alone): ./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3
+- Not in plan (left alone): ./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3.asd
+- Not in plan (left alone): ./chronos.csv
+- Not in plan (left alone): ./chronos.json
+- Not in plan (left alone): ./deck.pdf
+- Not in plan (left alone): ./decklist.pdf
+- Not in plan (left alone): ./e-instrumentsStudioBass_r32591_v1.0.alp
+- Not in plan (left alone): ./fall [2019-05-29 015357].als
+- Not in plan (left alone): ./fall [2019-05-31 042736].als
+- Not in plan (left alone): ./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav
+- Not in plan (left alone): ./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav
+- Not in plan (left alone): ./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav
+- Not in plan (left alone): ./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav
+- Not in plan (left alone): ./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav
+- Not in plan (left alone): ./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav
+- Not in plan (left alone): ./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav.asd
+- Not in plan (left alone): ./looperman-l-0159051-0130228-pads-of-gold-counterintuitive.wav
+- Not in plan (left alone): ./looperman-l-0167660-0118462-levoix-bells-melody.wav
+- Not in plan (left alone): ./looperman-l-0167660-0118462-levoix-bells-melody.wav.asd
+- Not in plan (left alone): ./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav
+- Not in plan (left alone): ./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav
+- Not in plan (left alone): ./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav
+- Not in plan (left alone): ./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav
+- Not in plan (left alone): ./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav.asd
+- Not in plan (left alone): ./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav
+- Not in plan (left alone): ./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav.asd
+- Not in plan (left alone): ./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav
+- Not in plan (left alone): ./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav.asd
+- Not in plan (left alone): ./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav
+- Not in plan (left alone): ./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav.asd
+- Not in plan (left alone): ./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav
+- Not in plan (left alone): ./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav.asd
+- Not in plan (left alone): ./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav
+- Not in plan (left alone): ./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav.asd
+- Not in plan (left alone): ./looperman-l-0671112-0118517-danke-dragon.wav
+- Not in plan (left alone): ./looperman-l-0671112-0118517-danke-dragon.wav.asd
+- Not in plan (left alone): ./looperman-l-0671112-0124690-danke-watery.wav
+- Not in plan (left alone): ./looperman-l-0671112-0124690-danke-watery.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0114862-sushilbawa-piano-special.wav
+- Not in plan (left alone): ./looperman-l-0672759-0114862-sushilbawa-piano-special.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0114947-sushilbawa-bells-93.wav
+- Not in plan (left alone): ./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav
+- Not in plan (left alone): ./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0115970-sushilbawa-synth-170.wav
+- Not in plan (left alone): ./looperman-l-0672759-0116075-sushilbawa-synth-highness.wav
+- Not in plan (left alone): ./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav
+- Not in plan (left alone): ./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0117369-sushilbawa-trap-connection.wav
+- Not in plan (left alone): ./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav
+- Not in plan (left alone): ./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav
+- Not in plan (left alone): ./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav
+- Not in plan (left alone): ./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav
+- Not in plan (left alone): ./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0124677-sushilbawa-bells-162.wav
+- Not in plan (left alone): ./looperman-l-0672759-0124677-sushilbawa-bells-162.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav
+- Not in plan (left alone): ./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav
+- Not in plan (left alone): ./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav
+- Not in plan (left alone): ./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav.asd
+- Not in plan (left alone): ./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125 (1).wav
+- Not in plan (left alone): ./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav
+- Not in plan (left alone): ./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav.asd
+- Not in plan (left alone): ./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav
+- Not in plan (left alone): ./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav
+- Not in plan (left alone): ./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav
+- Not in plan (left alone): ./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav
+- Not in plan (left alone): ./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav
+- Not in plan (left alone): ./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav
+- Not in plan (left alone): ./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav
+- Not in plan (left alone): ./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav
+- Not in plan (left alone): ./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav
+- Not in plan (left alone): ./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav
+- Not in plan (left alone): ./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav
+- Not in plan (left alone): ./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav.asd
+- Not in plan (left alone): ./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav
+- Not in plan (left alone): ./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav.asd
+- Not in plan (left alone): ./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav
+- Not in plan (left alone): ./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav.asd
+- Not in plan (left alone): ./looperman-l-0850517-0117279-miazyo-rhode.wav
+- Not in plan (left alone): ./looperman-l-0850517-0117279-miazyo-rhode.wav.asd
+- Not in plan (left alone): ./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav
+- Not in plan (left alone): ./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav.asd
+- Not in plan (left alone): ./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav
+- Not in plan (left alone): ./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-0878633-0117264-foevabeatz-disco.wav
+- Not in plan (left alone): ./looperman-l-0878633-0117264-foevabeatz-disco.wav.asd
+- Not in plan (left alone): ./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav
+- Not in plan (left alone): ./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav.asd
+- Not in plan (left alone): ./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav
+- Not in plan (left alone): ./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav.asd
+- Not in plan (left alone): ./looperman-l-0911223-0117855-silencekills-eyes-piano-128-gm.wav
+- Not in plan (left alone): ./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav
+- Not in plan (left alone): ./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav.asd
+- Not in plan (left alone): ./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm.wav
+- Not in plan (left alone): ./looperman-l-0923827-0117745-mamagbeats-vinyl-e-piano-loop-2-92-bpm.wav
+- Not in plan (left alone): ./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav
+- Not in plan (left alone): ./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-0957600-0082580-blunierty-white-noise.wav
+- Not in plan (left alone): ./looperman-l-0957600-0082580-blunierty-white-noise.wav.asd
+- Not in plan (left alone): ./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav
+- Not in plan (left alone): ./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav.asd
+- Not in plan (left alone): ./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav
+- Not in plan (left alone): ./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav.asd
+- Not in plan (left alone): ./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav
+- Not in plan (left alone): ./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav.asd
+- Not in plan (left alone): ./looperman-l-1094884-0078974-dcmack-gun-cocking.wav
+- Not in plan (left alone): ./looperman-l-1094884-0078974-dcmack-gun-cocking.wav.asd
+- Not in plan (left alone): ./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav
+- Not in plan (left alone): ./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav.asd
+- Not in plan (left alone): ./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav
+- Not in plan (left alone): ./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav.asd
+- Not in plan (left alone): ./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav
+- Not in plan (left alone): ./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav.asd
+- Not in plan (left alone): ./looperman-l-1256873-0129417-rhode-chamber.wav
+- Not in plan (left alone): ./looperman-l-1256873-0129417-rhode-chamber.wav.asd
+- Not in plan (left alone): ./looperman-l-1273564-0125646-lankframpard-hangover.wav
+- Not in plan (left alone): ./looperman-l-1273564-0125646-lankframpard-hangover.wav.asd
+- Not in plan (left alone): ./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav
+- Not in plan (left alone): ./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav.asd
+- Not in plan (left alone): ./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav
+- Not in plan (left alone): ./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav.asd
+- Not in plan (left alone): ./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav
+- Not in plan (left alone): ./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav.asd
+- Not in plan (left alone): ./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav
+- Not in plan (left alone): ./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav.asd
+- Not in plan (left alone): ./looperman-l-1448712-0118109-jayboy97-untitled-6.wav
+- Not in plan (left alone): ./looperman-l-1448712-0118109-jayboy97-untitled-6.wav.asd
+- Not in plan (left alone): ./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav
+- Not in plan (left alone): ./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav.asd
+- Not in plan (left alone): ./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav
+- Not in plan (left alone): ./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav.asd
+- Not in plan (left alone): ./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav
+- Not in plan (left alone): ./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav.asd
+- Not in plan (left alone): ./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav
+- Not in plan (left alone): ./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav.asd
+- Not in plan (left alone): ./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav
+- Not in plan (left alone): ./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav.asd
+- Not in plan (left alone): ./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav
+- Not in plan (left alone): ./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav.asd
+- Not in plan (left alone): ./looperman-l-1564425-0098736-rasputin1963-mystical-sitar-melody.wav
+- Not in plan (left alone): ./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav
+- Not in plan (left alone): ./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav.asd
+- Not in plan (left alone): ./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav
+- Not in plan (left alone): ./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav.asd
+- Not in plan (left alone): ./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav
+- Not in plan (left alone): ./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav.asd
+- Not in plan (left alone): ./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav
+- Not in plan (left alone): ./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav.asd
+- Not in plan (left alone): ./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav
+- Not in plan (left alone): ./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav.asd
+- Not in plan (left alone): ./looperman-l-1576807-0102223-middwiz-trap-future-bass-strings.wav
+- Not in plan (left alone): ./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav
+- Not in plan (left alone): ./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav.asd
+- Not in plan (left alone): ./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav
+- Not in plan (left alone): ./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav.asd
+- Not in plan (left alone): ./looperman-l-1599525-0118488-flaviogomes-keys-trap-choir-bpm-130.wav
+- Not in plan (left alone): ./looperman-l-1599525-0118489-flaviogomes-final-count-down-bpm-130.wav
+- Not in plan (left alone): ./looperman-l-1599525-0118492-flaviogomes-dont-go-pads.wav
+- Not in plan (left alone): ./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav
+- Not in plan (left alone): ./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav.asd
+- Not in plan (left alone): ./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav
+- Not in plan (left alone): ./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav
+- Not in plan (left alone): ./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav
+- Not in plan (left alone): ./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav.asd
+- Not in plan (left alone): ./looperman-l-1648645-0119817-opc-trap-beat-sample.wav
+- Not in plan (left alone): ./looperman-l-1648645-0119817-opc-trap-beat-sample.wav.asd
+- Not in plan (left alone): ./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav
+- Not in plan (left alone): ./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav.asd
+- Not in plan (left alone): ./looperman-l-1685916-0109142-kcotk1-bombay.wav
+- Not in plan (left alone): ./looperman-l-1685916-0109142-kcotk1-bombay.wav.asd
+- Not in plan (left alone): ./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav
+- Not in plan (left alone): ./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav.asd
+- Not in plan (left alone): ./looperman-l-1733652-0106882-zlhd-old-school-throwback.wav
+- Not in plan (left alone): ./looperman-l-1733652-0114810-zlhd-water-plucks.wav
+- Not in plan (left alone): ./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav
+- Not in plan (left alone): ./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-1751651-0116008-pinkj-the-tables-have-turned (1).wav
+- Not in plan (left alone): ./looperman-l-1751651-0116008-pinkj-the-tables-have-turned.wav
+- Not in plan (left alone): ./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav
+- Not in plan (left alone): ./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav.asd
+- Not in plan (left alone): ./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav
+- Not in plan (left alone): ./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav.asd
+- Not in plan (left alone): ./looperman-l-1779655-0128828-old-haze.wav
+- Not in plan (left alone): ./looperman-l-1779655-0128828-old-haze.wav.asd
+- Not in plan (left alone): ./looperman-l-1785835-0128466-dylan411-travis-scott-x-nav-x-drake-heavy-type-melody.wav
+- Not in plan (left alone): ./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav
+- Not in plan (left alone): ./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav.asd
+- Not in plan (left alone): ./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav
+- Not in plan (left alone): ./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav.asd
+- Not in plan (left alone): ./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav
+- Not in plan (left alone): ./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav.asd
+- Not in plan (left alone): ./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav
+- Not in plan (left alone): ./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav.asd
+- Not in plan (left alone): ./looperman-l-1882465-0110654-ev054-booom.wav
+- Not in plan (left alone): ./looperman-l-1882465-0110654-ev054-booom.wav.asd
+- Not in plan (left alone): ./looperman-l-1882592-0128458-theloopgod-loopgod-x-drake-travis-scott.wav
+- Not in plan (left alone): ./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav
+- Not in plan (left alone): ./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav
+- Not in plan (left alone): ./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav
+- Not in plan (left alone): ./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav.asd
+- Not in plan (left alone): ./looperman-l-1964781-0117940-gee808-dream-piano.wav
+- Not in plan (left alone): ./looperman-l-1964781-0117940-gee808-dream-piano.wav.asd
+- Not in plan (left alone): ./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav
+- Not in plan (left alone): ./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav.asd
+- Not in plan (left alone): ./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav
+- Not in plan (left alone): ./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav.asd
+- Not in plan (left alone): ./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav
+- Not in plan (left alone): ./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav.asd
+- Not in plan (left alone): ./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav
+- Not in plan (left alone): ./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav.asd
+- Not in plan (left alone): ./looperman-l-2031104-0129816-psydub-pad-001.wav
+- Not in plan (left alone): ./looperman-l-2035786-0114815-ekajjjjj-lofi-rhodes.wav
+- Not in plan (left alone): ./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav
+- Not in plan (left alone): ./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav.asd
+- Not in plan (left alone): ./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav
+- Not in plan (left alone): ./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav
+- Not in plan (left alone): ./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2057570-0115001-djgameonmusic-autumn.wav
+- Not in plan (left alone): ./looperman-l-2057570-0115001-djgameonmusic-autumn.wav.asd
+- Not in plan (left alone): ./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav
+- Not in plan (left alone): ./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav.asd
+- Not in plan (left alone): ./looperman-l-2060813-0115007-byel-trap-impact-fx.wav
+- Not in plan (left alone): ./looperman-l-2060813-0115007-byel-trap-impact-fx.wav.asd
+- Not in plan (left alone): ./looperman-l-2061580-0130226-catch-the-vibe.wav
+- Not in plan (left alone): ./looperman-l-2061580-0130226-catch-the-vibe.wav.asd
+- Not in plan (left alone): ./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav
+- Not in plan (left alone): ./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav.asd
+- Not in plan (left alone): ./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav
+- Not in plan (left alone): ./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav.asd
+- Not in plan (left alone): ./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav
+- Not in plan (left alone): ./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav.asd
+- Not in plan (left alone): ./looperman-l-2154535-0105032-808purp-low-hi-hats.wav
+- Not in plan (left alone): ./looperman-l-2154535-0105032-808purp-low-hi-hats.wav.asd
+- Not in plan (left alone): ./looperman-l-2159630-0114773-rmce-cruise-chords.wav
+- Not in plan (left alone): ./looperman-l-2159630-0114773-rmce-cruise-chords.wav.asd
+- Not in plan (left alone): ./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav
+- Not in plan (left alone): ./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav.asd
+- Not in plan (left alone): ./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav
+- Not in plan (left alone): ./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2182047-0120166-aidenglonek-light.wav
+- Not in plan (left alone): ./looperman-l-2182047-0120166-aidenglonek-light.wav.asd
+- Not in plan (left alone): ./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav
+- Not in plan (left alone): ./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav.asd
+- Not in plan (left alone): ./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav
+- Not in plan (left alone): ./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2224957-0134447-152-kbs-dream.wav
+- Not in plan (left alone): ./looperman-l-2224957-0134447-152-kbs-dream.wav.asd
+- Not in plan (left alone): ./looperman-l-2226779-0119231-younghabib-cash-carti.wav
+- Not in plan (left alone): ./looperman-l-2226779-0119231-younghabib-cash-carti.wav.asd
+- Not in plan (left alone): ./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav
+- Not in plan (left alone): ./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav
+- Not in plan (left alone): ./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav
+- Not in plan (left alone): ./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav.asd
+- Not in plan (left alone): ./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav
+- Not in plan (left alone): ./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav.asd
+- Not in plan (left alone): ./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav
+- Not in plan (left alone): ./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2297958-0128908-nasty.wav
+- Not in plan (left alone): ./looperman-l-2302391-0129038-88glam-type-loop-dm.wav
+- Not in plan (left alone): ./looperman-l-2302391-0129038-88glam-type-loop-dm.wav.asd
+- Not in plan (left alone): ./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav
+- Not in plan (left alone): ./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2308878-0119803-datvast-me-too.wav
+- Not in plan (left alone): ./looperman-l-2308878-0119803-datvast-me-too.wav.asd
+- Not in plan (left alone): ./looperman-l-2315485-0114615-yungboiig-xaern.wav
+- Not in plan (left alone): ./looperman-l-2315485-0114615-yungboiig-xaern.wav.asd
+- Not in plan (left alone): ./looperman-l-2331074-0115995-sicdeadboy-trappin-in-japan-type-synth.wav
+- Not in plan (left alone): ./looperman-l-2341179-0130213-future-pop-chord-stack.wav
+- Not in plan (left alone): ./looperman-l-2341179-0130213-future-pop-chord-stack.wav.asd
+- Not in plan (left alone): ./looperman-l-2346305-0129587-taxi-to-space.wav
+- Not in plan (left alone): ./looperman-l-2346305-0129587-taxi-to-space.wav.asd
+- Not in plan (left alone): ./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav
+- Not in plan (left alone): ./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav
+- Not in plan (left alone): ./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav.asd
+- Not in plan (left alone): ./looperman-l-2375453-0123795-cptusername-flute-loop.wav
+- Not in plan (left alone): ./looperman-l-2375453-0123795-cptusername-flute-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav
+- Not in plan (left alone): ./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav.asd
+- Not in plan (left alone): ./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav
+- Not in plan (left alone): ./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav.asd
+- Not in plan (left alone): ./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav
+- Not in plan (left alone): ./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav.asd
+- Not in plan (left alone): ./looperman-l-2392682-0124730-lofy21-no-sleep.wav
+- Not in plan (left alone): ./looperman-l-2392682-0124730-lofy21-no-sleep.wav.asd
+- Not in plan (left alone): ./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody (1).wav
+- Not in plan (left alone): ./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody.wav
+- Not in plan (left alone): ./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav
+- Not in plan (left alone): ./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav.asd
+- Not in plan (left alone): ./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav
+- Not in plan (left alone): ./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav.asd
+- Not in plan (left alone): ./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav
+- Not in plan (left alone): ./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav.asd
+- Not in plan (left alone): ./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav
+- Not in plan (left alone): ./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav.asd
+- Not in plan (left alone): ./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav
+- Not in plan (left alone): ./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav.asd
+- Not in plan (left alone): ./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav
+- Not in plan (left alone): ./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav.asd
+- Not in plan (left alone): ./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav
+- Not in plan (left alone): ./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav.asd
+- Not in plan (left alone): ./looperman-l-2440464-0117901-irs-dark-trap-melody.wav
+- Not in plan (left alone): ./looperman-l-2440464-0117901-irs-dark-trap-melody.wav.asd
+- Not in plan (left alone): ./looperman-l-2444673-0115027-rxck-reversed-flute.wav
+- Not in plan (left alone): ./looperman-l-2444673-0115027-rxck-reversed-flute.wav.asd
+- Not in plan (left alone): ./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav
+- Not in plan (left alone): ./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav.asd
+- Not in plan (left alone): ./looperman-l-2447813-0115980-davidevisco-lil-pump-type-melody.wav
+- Not in plan (left alone): ./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav
+- Not in plan (left alone): ./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav.asd
+- Not in plan (left alone): ./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav
+- Not in plan (left alone): ./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav.asd
+- Not in plan (left alone): ./looperman-l-2472815-0130144-spacey-loop.wav
+- Not in plan (left alone): ./looperman-l-2472815-0130144-spacey-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav
+- Not in plan (left alone): ./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav.asd
+- Not in plan (left alone): ./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav
+- Not in plan (left alone): ./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav.asd
+- Not in plan (left alone): ./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav
+- Not in plan (left alone): ./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav.asd
+- Not in plan (left alone): ./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav
+- Not in plan (left alone): ./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav.asd
+- Not in plan (left alone): ./looperman-l-2507295-0130796-prod-by-j-phantom-its-a-vibe.wav
+- Not in plan (left alone): ./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav
+- Not in plan (left alone): ./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav.asd
+- Not in plan (left alone): ./looperman-l-2539104-0130109-ambient-loop.wav
+- Not in plan (left alone): ./looperman-l-2554561-0129423-happy-june.wav
+- Not in plan (left alone): ./looperman-l-2554561-0129423-happy-june.wav.asd
+- Not in plan (left alone): ./looperman-l-2578702-0128738-2stepsback.wav
+- Not in plan (left alone): ./looperman-l-2578702-0128818-stupidrich.wav
+- Not in plan (left alone): ./looperman-l-2578702-0128818-stupidrich.wav.asd
+- Not in plan (left alone): ./looperman-l-2612327-0134212-horror-movie-music.wav
+- Not in plan (left alone): ./looperman-l-2612327-0134212-horror-movie-music.wav.asd
+- Not in plan (left alone): ./looperman-l-2638308-0125650-filcae-latin-drums.wav
+- Not in plan (left alone): ./looperman-l-2638308-0125650-filcae-latin-drums.wav.asd
+- Not in plan (left alone): ./looperman-l-2651541-0128825-schmaltzy-bells.wav
+- Not in plan (left alone): ./looperman-l-2651541-0128825-schmaltzy-bells.wav.asd
+- Not in plan (left alone): ./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav
+- Not in plan (left alone): ./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav.asd
+- Not in plan (left alone): ./looperman-l-2689491-0130262-piano-loop.wav
+- Not in plan (left alone): ./looperman-l-2689491-0130262-piano-loop.wav.asd
+- Not in plan (left alone): ./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav
+- Not in plan (left alone): ./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav.asd
+- Not in plan (left alone): ./map-south-china-sea-line-624.png
+- Not in plan (left alone): ./maxresdefault.jpg
+- Not in plan (left alone): ./ossabaw-island-georgia-nautical-chart-sea-koast.jpg
+- Not in plan (left alone): ./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3
+- Not in plan (left alone): ./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd
+- Not in plan (left alone): ./🗓️ Course Schedule (SS2 8-Week).html (1).zip
+- Not in plan (left alone): ./🗓️ Course Schedule (SS2 8-Week).html.zip
+
+## Moves
+
+### Archives/ (11)
+- `2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Torrent file
+- `Conner and Zack.zip`: Archive
+- `Dry.zip`: Archive
+- `HYSTERESIS.zip`: Archive
+- `ProducerSpot-808-Drums.zip`: Drum samples
+- `TriSamples_-_808_Trapstep_Pack_Vol_1.zip`: Sample pack
+- `lo-fi drum kit.zip`: Drum kit
+- `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: Application archive
+- `world.zip`: Archive
+- `Drum samples.zip`: Sample pack
+- `673 Samples Drum Kit (Hipstrumentals.com).zip`: Drum kit
+
+### Audio/ (202)
+- `2018_12_18_20_07_09.mp3`: Audio
+- `2018_12_18_20_07_09.mp3.asd`: Ableton sidecar
+- `26E001C8-FFC7-4F20-AD6B-81703F576D80.m4a`: Audio
+- `50_cent_-_get_up_(acapella).mp3`: Audio
+- `50_cent_-_get_up_(acapella).mp3.asd`: Ableton sidecar
+- `Big Sean - Dance (Ass) (Acapella).mp3`: Audio
+- `Big Sean - Dance (Ass) (Acapella).mp3.asd`: Ableton sidecar
+- `Courage the Cowardly Dog but it s only Katz.mp3`: Audio
+- `Courage the Cowardly Dog but it s only Katz.mp3.asd`: Ableton sidecar
+- `Dave Grusin-PM-03.mp3`: Audio
+- `Dave Grusin-PM-03.mp3.asd`: Ableton sidecar
+- `GdlKjA4Qd279.128.mp3`: Audio
+- `GdlKjA4Qd279.128.mp3.asd`: Ableton sidecar
+- `Gemstone_lightmix_5.m4a`: Audio
+- `I think we already died 2.m4a`: Audio
+- `I think we already died.m4a`: Audio
+- `Jaden Smith - Scarface (DIY Acapella).mp3`: Audio
+- `Jaden Smith - Scarface (DIY Acapella).mp3.asd`: Ableton sidecar
+- `King Elizabeth speech Hoist the Colours.mp3`: Audio
+- `King Elizabeth speech Hoist the Colours.mp3.asd`: Ableton sidecar
+- `LUNG FU vocal dry 2-Audio.mp3`: Audio
+- `LUNG FU vocal dry 2-Audio.mp3.asd`: Ableton sidecar
+- `LUNG FU vocal dry 3-Audio (1).mp3`: Audio
+- `LUNG FU vocal dry 3-Audio (1).mp3.asd`: Ableton sidecar
+- `LUNG FU vocal dry 3-Audio.mp3`: Audio
+- `LUNG FU vocal dry 3-Audio.mp3.asd`: Ableton sidecar
+- `Lou Courtney - I Dont Need Nobody Else (1974).mp3`: Audio
+- `Lou Courtney - I Dont Need Nobody Else (1974).mp3.asd`: Ableton sidecar
+- `NoRegretz.mp3`: Audio
+- `NoRegretz.mp3.asd`: Ableton sidecar
+- `Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3`: Audio
+- `Nora Orlandi  Alessandro Alessandroni-Devils Nightmare.mp3.asd`: Ableton sidecar
+- `PRESSURED.mp3`: Audio
+- `Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3`: Audio
+- `Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3.asd`: Ableton sidecar
+- `Ram Ranch.mp3`: Audio
+- `Slip (prod. Chozen).mp3`: Audio
+- `Slip (prod. Chozen).mp3.asd`: Ableton sidecar
+- `VoiceMail_2024-10-02_21-13-59.amr`: Audio
+- `VoiceMail_2024-10-02_21-13-59.mp3`: Audio
+- `VoiceMail_2024-10-02_21-13-59.mp3.asd`: Ableton sidecar
+- `Voicy_Borat Wah wah we wah.mp3`: Audio
+- `Voicy_Cat Very Angry.mp3`: Audio
+- `Voicy_DIO!!!!!.mp3`: Audio
+- `Voicy_Deez Nuts.mp3`: Audio
+- `Voicy_I AM THE HYPE!.mp3`: Audio
+- `Voicy_I Just Had Sex.mp3`: Audio
+- `Voicy_I love gold. The look of it, the taste of it, the...mp3`: Audio
+- `Voicy_Last night I have sex.mp3`: Audio
+- `Voicy_Nokia ringtone earrape.mp3`: Audio
+- `Voicy_Skeletor laughing.mp3`: Audio
+- `Voicy_Thomas The Tank Engine.mp3`: Audio
+- `Voicy_Throw me a frikin bone here.mp3`: Audio
+- `Voicy_What the dog doin_.mp3`: Audio
+- `Voicy_Woaw _3.mp3`: Audio
+- `Voicy_pornhub intro.mp3`: Audio
+- `Voicy_you my trlala.mp3`: Audio
+- `Void_Speach_mastered.mp3`: Audio
+- `Waka Flocka Flame - Workin (Acapella).mp3`: Audio
+- `Waka Flocka Flame - Workin (Acapella).mp3.asd`: Ableton sidecar
+- `absolute madness 150bpm.mp3`: Audio
+- `asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3`: Audio
+- `asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3.asd`: Ableton sidecar
+- `asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3`: Audio
+- `asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3.asd`: Ableton sidecar
+- `asap_rocky_-_wild_for_the_night_(diy_acapella).mp3`: Audio
+- `asap_rocky_-_wild_for_the_night_(diy_acapella).mp3.asd`: Ableton sidecar
+- `before_the_word_excerpt.mp3`: Audio
+- `big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3`: Audio
+- `big_sean_ft_lil_wayne_-_deep_(diy_acapella).mp3.asd`: Ableton sidecar
+- `cruisedownthebeach.mp3`: Audio
+- `cruisedownthebeach.mp3.asd`: Ableton sidecar
+- `drippy.mp3`: Audio
+- `dying_correspondence.mp3`: Audio
+- `eli and gavin 121818.mp3`: Audio
+- `eli and gavin 121818.mp3.asd`: Ableton sidecar
+- `glock.mp3`: Audio
+- `glock.mp3.asd`: Ableton sidecar
+- `ludacris_-_move_bitch_ft.mystikal_(acapella).mp3`: Audio
+- `ludacris_-_move_bitch_ft.mystikal_(acapella).mp3.asd`: Ableton sidecar
+- `looperman-a-0604670-0009964-brimaf-brima-gdl.mp3`: Audio
+- `looperman-a-0604670-0009964-brimaf-brima-gdl.mp3.asd`: Ableton sidecar
+- `looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3`: Audio
+- `looperman-a-0933074-0010250-mike0112-michael-mayo-city-night.mp3.asd`: Ableton sidecar
+- `looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3`: Audio
+- `looperman-a-0933074-0010949-mike0112-why-by-michael-mayo.mp3.asd`: Ableton sidecar
+- `looperman-a-1371515-0010587-ousidde-frank-ocean.mp3`: Audio
+- `looperman-a-1371515-0010587-ousidde-frank-ocean.mp3.asd`: Ableton sidecar
+- `looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3`: Audio
+- `looperman-a-1378865-0010200-micahbyrnes-bound-ft-micah-byrnes.mp3.asd`: Ableton sidecar
+- `looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3`: Audio
+- `looperman-a-1378865-0011085-micahbyrnes-roses-ft-micah-byrnes.mp3.asd`: Ableton sidecar
+- `looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3`: Audio
+- `looperman-a-2220111-0010431-ismseanpharo-snake-charmer-acapella.mp3.asd`: Ableton sidecar
+- `looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3`: Audio
+- `looperman-a-2258093-0010880-themusicvii-cole-the-vii-flexing.mp3.asd`: Ableton sidecar
+- `looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3`: Audio
+- `looperman-a-2258093-0010986-themusicvii-cole-the-vii-shorter.mp3.asd`: Ableton sidecar
+- `looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3`: Audio
+- `looperman-a-2258093-0010995-themusicvii-cole-the-vii-17.mp3.asd`: Ableton sidecar
+- `looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3`: Audio
+- `looperman-a-2317685-0010637-tdmusickaiju-x-verse-and-hooks.mp3.asd`: Ableton sidecar
+- `looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3`: Audio
+- `looperman-a-2390709-0011091-oboyxell-ty-wunnit-broken-freestyle.mp3.asd`: Ableton sidecar
+- `looperman-a-2459032-0011033-cino8730-sex-talk.mp3`: Audio
+- `looperman-a-2459032-0011033-cino8730-sex-talk.mp3.asd`: Ableton sidecar
+- `thirty_five_message.mp3`: Audio
+- `reply_to_before_the_word (1).mp3`: Audio
+- `reply_to_before_the_word.mp3`: Audio
+- `where you going.mp3`: Audio
+- `where you going.mp3.asd`: Ableton sidecar
+- `y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4.asd`: Ableton sidecar
+- `y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4.asd`: Ableton sidecar
+- `y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3`: Audio
+- `y2mate.com - george_benson_my_heart_is_dancing_rUis2L93pno.mp3.asd`: Ableton sidecar
+- `y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3`: Audio
+- `y2mate.com - jacques_siroul_etrange_jardin_detoiles_JVFSplvYvOw.mp3.asd`: Ableton sidecar
+- `y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3`: Audio
+- `y2mate.com - syreeta_cause_weve_ended_now_as_lovers_jEWXYc46f8E.mp3.asd`: Ableton sidecar
+- `y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3`: Audio
+- `y2mate.com - ted_heath_blue_grotto_in_capri_4hxhRsBXYTA.mp3.asd`: Ableton sidecar
+- `zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio
+- `zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Ableton sidecar
+- `Barred Owl Calls (256) (1).mp3`: Audio
+- `Barred Owl Calls (256) (1).mp3.asd`: Ableton sidecar
+- `Barred Owl Calls (256).mp3`: Audio
+- `Northern Lights Sound (256) (1).mp3`: Audio
+- `Northern Lights Sound (256) (1).mp3.asd`: Ableton sidecar
+- `Northern Lights Sound (256).mp3`: Audio
+- `Orca sounds (256).mp3`: Audio
+- `Orca sounds (256).mp3.asd`: Ableton sidecar
+- `RUFFED GROUSE _DRUMMING_ sound & video (256).mp3`: Audio
+- `RUFFED GROUSE _DRUMMING_ sound & video (256).mp3.asd`: Ableton sidecar
+- `Underwater Microphone Captures Honshu, Japan Earthquake (256).mp3`: Audio
+- `bowshock_PIA20754.wav`: Audio
+- `bowshock_PIA20754.wav.asd`: Ableton sidecar
+- `bayo.wav`: Audio
+- `Bert Kaempfert-Down To The DocksA Deadly Game.mp3`: Audio
+- `Bert Kaempfert-Down To The DocksA Deadly Game.mp3.asd`: Ableton sidecar
+- `Caprese.wav`: Audio
+- `Circles_AV_mastered.wav`: Audio
+- `Forest Critters (Mastered with Sunroof at 76pct).wav`: Audio
+- `Forest_Critters_extended_mastered (1).wav`: Audio
+- `Forest_Critters_extended_mastered.wav`: Audio
+- `Grok Made Me Write This Song (Mastered with Clear Sky at 62pct).wav`: Audio
+- `Green.wav`: Audio
+- `Sand Dune (Mastered with Aurora at 91pct).wav`: Audio
+- `SPACE.wav`: Audio
+- `The Real Samurai Copy.wav`: Audio
+- `The Real Samurai.wav`: Audio
+- `Poltergeist.wav`: Audio
+- `piano song_.wav`: Audio
+- `boing.wav.mp4.asd`: Ableton sidecar
+- `Applause Crowd Cheering sound effect.mp4.asd`: Ableton sidecar
+- `DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4.asd`: Ableton sidecar
+- `J.O.B. Orchestra-Govinda.mp4.asd`: Ableton sidecar
+- `Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4.asd`: Ableton sidecar
+- `Kung Fu 1972 - 1975  Opening and Closing Theme.mp4.asd`: Ableton sidecar
+- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4.asd`: Ableton sidecar
+- `Nujabes - City Lights (Homework Edit).mp4.asd`: Ableton sidecar
+- `Nujabes - City Lights.mp4.asd`: Ableton sidecar
+- `Nujabes - Color Of Autumn.mp3`: Audio
+- `Nujabes - Color Of Autumn.mp3.asd`: Ableton sidecar
+- `ORF Orchestra - Diskretion.mp4.asd`: Ableton sidecar
+- `Omi x CButler.mp3`: Audio
+- `Omi x CButler.mp3.asd`: Ableton sidecar
+- `Secretos del saxofon. Técnica de saxofón.mp4.asd`: Ableton sidecar
+- `Shigeo Sekito - the word II.mp4.asd`: Ableton sidecar
+- `Steve Jobss Philosophy.mp4.asd`: Ableton sidecar
+- `Travis-Scott---Antidote--Acapella.mp4.asd`: Ableton sidecar
+- `Virgen Negra (1).mp4.asd`: Ableton sidecar
+- `Wolfgang Lauth Quartett - Moonlight Fantasy.mp4.asd`: Ableton sidecar
+- `Aki Takase - Minerva's Owl.mp4.asd`: Ableton sidecar
+- `Ambiance II Fusion-Don't You Ever Take Your Love.mp4.asd`: Ableton sidecar
+- `Ayudame a Creer.mp4.asd`: Ableton sidecar
+- `Harold Vick-Wild Is The Wind.mp4.asd`: Ableton sidecar
+- `y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4.asd`: Ableton sidecar
+- `y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4.asd`: Ableton sidecar
+- `grsa-SingingSand2017_480x270.mp4.asd`: Ableton sidecar
+- `videoplayback (10).mp4.asd`: Ableton sidecar
+- `videoplayback (11).mp4.asd`: Ableton sidecar
+- `videoplayback (12).mp4.asd`: Ableton sidecar
+- `videoplayback (13).mp4.asd`: Ableton sidecar
+- `videoplayback (14).mp4.asd`: Ableton sidecar
+- `videoplayback (15).mp4.asd`: Ableton sidecar
+- `videoplayback (16).mp4.asd`: Ableton sidecar
+- `videoplayback (17).mp4.asd`: Ableton sidecar
+- `videoplayback (19).mp4.asd`: Ableton sidecar
+- `videoplayback (2).mp4.asd`: Ableton sidecar
+- `videoplayback (22).mp4.asd`: Ableton sidecar
+- `videoplayback (23).mp4.asd`: Ableton sidecar
+- `videoplayback (24).mp4.asd`: Ableton sidecar
+- `videoplayback (25).mp4.asd`: Ableton sidecar
+- `videoplayback (26).mp4.asd`: Ableton sidecar
+- `videoplayback (27).mp4.asd`: Ableton sidecar
+- `videoplayback (28).mp4.asd`: Ableton sidecar
+- `videoplayback (29).mp4.asd`: Ableton sidecar
+- `videoplayback (3).mp4.asd`: Ableton sidecar
+- `videoplayback (4).mp4.asd`: Ableton sidecar
+- `videoplayback (5).mp4.asd`: Ableton sidecar
+- `videoplayback (7).mp4.asd`: Ableton sidecar
+- `videoplayback.mp4.asd`: Ableton sidecar
+
+### Documents/ (129)
+- `111 Internet Research Assignment (1).docx`: Word document
+- `111 Internet Research Assignment.docx`: Word document
+- `111S18H (1).docx`: Word document
+- `111S18H.docx`: Word document
+- `Accrue Cover Letter - Gavin K..pdf`: Cover letter
+- `Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf`: Research paper
+- `Argument essay (1).pdf`: Essay
+- `Argument essay.pdf`: Essay
+- `Asia Study Guide (1).docx`: Study guide
+- `Asia Study Guide (2).docx`: Study guide
+- `Asia Study Guide.docx`: Study guide
+- `Assignment #4 Rock Deformation.docx`: School assignment
+- `Assignment #4 Rock Deformation.pdf`: School assignment
+- `Assignment #8 California Drought Conditions.docx`: School assignment
+- `Assignment 2 Mineral's Use In Society (1).docx`: School assignment
+- `Assignment 2 Mineral's Use In Society.docx`: School assignment
+- `Assignment_7B_Rivers_and_Google_Earth(1).docx`: School assignment
+- `Assignment_7B_Rivers_and_Google_Earth(1).pdf`: School assignment
+- `Career Coach Assessment and Research (fillable).pdf`: Career assessment
+- `Changing Traditions and Less Superstition - Gavin Kizer (1).pdf`: Essay
+- `Changing Traditions and Less Superstition - Gavin Kizer.pdf`: Essay
+- `Character Architecture - The Restrained Monster (1).pdf`: Essay
+- `Character Architecture - The Restrained Monster.pdf`: Essay
+- `Completed Copy of Tenant Application 2015 NEW.docx.pdf`: Application form
+- `Completed Tenant Application 2015 NEW.docx (1).pdf`: Application form
+- `Completed Tenant Application 2015 NEW.docx.pdf`: Application form
+- `Compare and contras rough draft.pdf`: Draft essay
+- `Compare and contrast rough draft.pdf`: Draft essay
+- `Debate Research (1).pdf`: Research paper
+- `Debate Research.pdf`: Research paper
+- `DespicableG50842_122644193.pdf`: Document
+- `Dogs of Courage.pdf`: Document
+- `Essay 3.pdf`: Essay
+- `Essay assignment 1 - Gavin Kizer - .pdf`: Essay
+- `Essay assignment 2 - Gavin Kizer  (1).pdf`: Essay
+- `Essay assignment 2 - Gavin Kizer .pdf`: Essay
+- `Exercise 1 Getting Control of Your Time - Gavin Kizer (1).pdf`: Assignment
+- `Exercise 1 Getting Control of Your Time - Gavin Kizer.pdf`: Assignment
+- `Exercise 1 Getting Control of Your Time SP25.docx`: Assignment
+- `Exercise 2  Academic Readiness - Gavin Kizer (1).pdf`: Assignment
+- `Exercise 2  Academic Readiness - Gavin Kizer.pdf`: Assignment
+- `Exercise 2  Academic Readiness FA25.docx`: Assignment
+- `Exercise 3.1 Self-Assesments - Gavin Kizer.pdf`: Assignment
+- `Exercise 3.1 Self-Assesments SP25 revised (1) (1).docx`: Assignment
+- `Exercise 3.2 Career Research SP25.docx`: Assignment
+- `Exercise 6A Your Academic and Transfer Plan SP25.docx`: Assignment
+- `Exercise 7 Paying for College - Gavin K (1).pdf`: Assignment
+- `Exercise 7 Paying for College - Gavin K (2).pdf`: Assignment
+- `Exercise 7 Paying for College - Gavin K.pdf`: Assignment
+- `Exercise 7 Paying for College and  Budgeting SP253.docx`: Assignment
+- `Exercise 8 Self-Reflection - Gavin k].pdf`: Assignment
+- `Exercise 8 Self-Reflection SP25.docx`: Assignment
+- `Gavin Kizer (1).pdf`: Resume
+- `Gavin Kizer (2).pdf`: Resume
+- `Gavin Kizer - 03_23_2026.pdf`: Resume
+- `Gavin Kizer - Internet Research Assignment (1).pdf`: Assignment
+- `Gavin Kizer - Internet Research Assignment 2 - Copy.pdf`: Assignment
+- `Gavin Kizer - Internet Research Assignment.pdf`: Assignment
+- `Gavin Kizer - Résumé (1).pdf`: Resume
+- `Gavin Kizer - Résumé (2).pdf`: Resume
+- `Gavin Kizer - Résumé (3).pdf`: Resume
+- `Gavin Kizer - Résumé.docx`: Resume
+- `Gavin Kizer - Résumé.pdf`: Resume
+- `Gavin Kizer - The Uses of Olivine in Human Society (1).pdf`: Assignment
+- `Gavin Kizer - The Uses of Olivine in Human Society.pdf`: Assignment
+- `Gavin Kizer - Theme and Primary Source (1).pdf`: Assignment
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 1- Copy.pdf`: Assignment
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 2 (1).pdf`: Assignment
+- `Gavin Kizer - Theme and Primary Source 2 Pt. 2.pdf`: Assignment
+- `Gavin Kizer - Theme and Primary Source.pdf`: Assignment
+- `Gavin Kizer Career Coach Assessment.pdf`: Assignment
+- `Gavin Kizer Career Research.pdf`: Assignment
+- `Gavin Kizer Resume.pdf`: Resume
+- `Gavin Kizer – Signature Assignment Analysis.pdf`: Assignment
+- `Gavin Kizer.pdf`: Resume
+- `Gavin Kizers Resume (1).pdf`: Resume
+- `Gavin Kizers Resume (2).pdf`: Resume
+- `Gavin Kizers Resume.pdf`: Resume
+- `Hurricane Assignment Graphs - Gavin Kizer.pdf`: Assignment
+- `Hurricane Assignment Pacific 2023 - Gavin Kizer (1).docx`: Assignment
+- `Hurricane Assignment Pacific 2023.docx`: Assignment
+- `Internet Assignment (1).pdf`: Assignment
+- `Internet Assignment.docx`: Assignment
+- `Internet Assignment.pdf`: Assignment
+- `Midterm Study Guide.docx`: Study guide
+- `Nepotism Vs. Merit Edit Draft.pdf`: Draft essay
+- `Nepotism Vs. Merit Final.pdf`: Essay
+- `PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx`: Assignment
+- `PBSNOVAGreatHumanOdysseyVideoQuestions.docx`: Assignment
+- `Point by Point Outline (1).docx`: Outline
+- `Point by Point Outline (1).pdf`: Outline
+- `Point by Point Outline.docx`: Outline
+- `Scientific method.docx`: Assignment
+- `Smith on Virginia.docx`: Document
+- `Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf`: Assignment
+- `The Ethics of Working Dogs.pdf`: Essay
+- `The Positive Effects of the Kudzu Vine.pdf`: Essay
+- `The Sky-Tether and the Blood Ledger - Narrative Summary.pdf`: Summary
+- `The_Science_of_Revenge.bibtex`: Bibliography
+- `The_Science_of_Revenge.ris`: Bibliography
+- `Untitled document (1) (1).pdf`: Document
+- `Untitled document (1).pdf`: Document
+- `Untitled document.docx`: Document
+- `Untitled document.pdf`: Document
+- `Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf`: Academic paper
+- `Writing assignment 1 - Gavin Kizer (1).pdf`: Assignment
+- `Writing assignment 1 - Gavin Kizer.pdf`: Assignment
+- `gavin Kizer Excercise 6.pdf`: Assignment
+- `bic_application.pdf`: Application
+- `Blended Geologic Time (1).pptx`: Presentation
+- `Blended Geologic Time.pptx`: Presentation
+- `Blended Ocean Features.pptx`: Presentation
+- `Blended Rock Deformation and Earthquakes.pptx`: Presentation
+- `Blended Stream Discharge.pptx`: Presentation
+- `Drum machine patterns 260.pdf`: Music patterns
+- `Mixing_Bass_and_Guitars.pdf`: Music guide
+- `Pocket operations.pdf`: Operations guide
+- `Kizer_Gavin_4352959_7_22_2024.pdf`: Document
+- `Kizer_Gavin_4352959_8_9_2024.pdf`: Document
+- `Resume.pdf`: Resume
+- `Tenant Application 2015 NEW.docx.pdf`: Application form
+- `Movie Excel Data.xlsx`: Spreadsheet
+- `Members_12298965.csv`: Data file
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998) (1).epub`: E-book
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).epub`: E-book
+- `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf`: E-book PDF
+- `Human Odyssey answers .pdf`: Assignment
+- `Human Odyssey answers .pages`: Document
+- `Human Odyssey answers.pages`: Document
+
+### Documents/Finance/ (4)
+- `2022_TaxReturn (1).pdf`: Tax return
+- `2022_TaxReturn.pdf`: Tax return
+- `U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement`: Bank agreement
+- `TurboTaxReturn.tax2022`: Tax software file
+
+### Images/ (122)
+- `1000005030.jpg`: Photo
+- `1000005604.jpg`: Photo
+- `1000006020.jpg`: Photo
+- `1000006078.jpg`: Photo
+- `1000006079.jpg`: Photo
+- `1000006451.jpg`: Photo
+- `1000006452.jpg`: Photo
+- `1000006453.jpg`: Photo
+- `1000006454.jpg`: Photo
+- `1000006455.jpg`: Photo
+- `1000006456.jpg`: Photo
+- `1000006457.jpg`: Photo
+- `1000006458.jpg`: Photo
+- `1000006459.jpg`: Photo
+- `1000006460.jpg`: Photo
+- `1000006461.jpg`: Photo
+- `1000006462.jpg`: Photo
+- `1000006463.jpg`: Photo
+- `1000006464.jpg`: Photo
+- `1000006465.jpg`: Photo
+- `1000006466.jpg`: Photo
+- `1000006467.jpg`: Photo
+- `1000006468.jpg`: Photo
+- `1000006469.jpg`: Photo
+- `20221006_155608.jpg`: Photo
+- `20221006_162153.jpg`: Photo
+- `20230419_014528.jpg`: Photo
+- `20240408_145339.jpg`: Photo
+- `250px-South_China_Sea_claims_map.jpg`: Map image
+- `29950149852_9da03e217d_b.jpg`: Photo
+- `360_F_364996969_8IMWghVlGPFbY6lh20Npsr6C5KNA91i8.jpg`: Photo
+- `37332332_1977365342294602_8440892694183542784_n.jpg`: Photo
+- `37408417_1977365468961256_8324511389838213120_n.jpg`: Photo
+- `39940255_227767624569549_5115207016180088832_n.jpg`: Photo
+- `480938750_10231748333224711_6344715920915075168_n.jpg`: Photo
+- `489377173_122145832934525883_1813819319315495198_n.jpg`: Photo
+- `516951767_122249251946026622_5942632433369355451_n.jpg`: Photo
+- `517134365_10234810850434995_816162525777186280_n.jpg`: Photo
+- `517271176_2108661092976615_736342606148249827_n.jpg`: Photo
+- `517325932_1979952872812788_6313110373310684803_n.jpg`: Photo
+- `520198294_122168282840529819_8120324629356285311_n.jpg`: Photo
+- `520670420_10111091162228858_5301679681961088958_n.jpg`: Photo
+- `523995815_18405441715116603_914392300724425353_n.jpg`: Photo
+- `613427660_25609406018688711_7546605086745359122_n.jpg`: Photo
+- `A1ztxzwbVEL.jpg`: Photo
+- `Getti T Shirt _3 Chase Christmas Present (1).jpg`: Photo
+- `Getti T Shirt _3 Chase Christmas Present (2).jpg`: Photo
+- `Getti T Shirt _3 Chase Christmas Present (3).jpg`: Photo
+- `Getti T Shirt _3 Chase Christmas Present.jpg`: Photo
+- `Charlotte_Skyline_2011_-_Ricky_W.jpg`: Photo
+- `App pg. 2.jpg`: Screenshot
+- `FB_IMG_1625772631920.jpg`: Photo
+- `FB_IMG_1633197385667.jpg`: Photo
+- `FB_IMG_1636594437957.jpg`: Photo
+- `FB_IMG_1642452517265.jpg`: Photo
+- `FB_IMG_1681853727713.jpg`: Photo
+- `ER6NRvoUwAA855k.jpeg`: Photo
+- `Breakbeat patterns.jpg`: Image
+- `Patterns1.jpg`: Image
+- `IMG_2004.jpg`: Photo
+- `IMG_2008.jpg`: Photo
+- `IMG_2009.jpg`: Photo
+- `IMG_20260611_022605.heic`: Photo
+- `Image-1-Ossabaw-Map-scaled.jpg`: Map image
+- `Screen_Shot_2018-10-08_at_5.35.00_AM-triangle.jpg`: Screenshot
+- `Untitled drawing (1).jpg`: Drawing
+- `Untitled drawing (1).png`: Drawing
+- `Untitled drawing (2).jpg`: Drawing
+- `Untitled drawing (3).jpg`: Drawing
+- `Untitled drawing (4).jpg`: Drawing
+- `Untitled drawing (5).jpg`: Drawing
+- `Untitled drawing (6).jpg`: Drawing
+- `Untitled drawing.jpg`: Drawing
+- `Untitled drawing.png`: Drawing
+- `bathroom-chilling.jpg`: Photo
+- `bp-708.webp`: Image
+- `deadly-nightshade-flower-hand-drawn-vector-illustration-also-known-as-belladonna-captures-haunting-beauty-339641910.webp`: Image
+- `download (1).jpeg`: Image
+- `download (2).jpeg`: Image
+- `download (3).jpeg`: Image
+- `download (4).jpeg`: Image
+- `download.jpeg`: Image
+- `feat_russia.jpeg`: Map image
+- `fb5aeb0f80f593fc226cc6180982482f.png`: Image
+- `gettyimages-807070348.jpg`: Photo
+- `gmail_images20260415_023604.png`: Screenshot
+- `gmail_images20260415_023620.png`: Screenshot
+- `hqdefault.jpg`: Thumbnail
+- `image_1b1ad4eb.jpg`: Photo
+- `image_6546160.JPG`: Photo
+- `image_ce2132e6.jpg`: Photo
+- `images (1).jpeg`: Image
+- `images (2).jpeg`: Image
+- `images.jpeg`: Image
+- `kh-map-southchinaseav2.jpg`: Map image
+- `Maproom-Central-London-major-features-5.jpg`: Map image
+- `Main@2x.png`: Image
+- `my_alphabet_sheet_33_glyphs_v2.png`: Image
+- `printable-no-soliciting-sign.png`: Image
+- `received_3841306436151063.jpeg`: Photo
+- `resort.jpg`: Photo
+- `s-l300.jpg`: Image
+- `super ninja.jpeg`: Photo
+- `swamp florida.webp`: Photo
+- `the dog.jpeg`: Photo
+- `theeee dog.jpeg`: Photo
+- `170702062321-south-china-sea-map-full-169.jpg`: Map image
+- `Karta_CN_SouthChinaSea.png`: Map image
+- `Gemini_Generated_Image_7xzy827xzy827xzy.jpeg`: Image
+- `Gemini_Generated_Image_93lgpr93lgpr93lg.jpeg`: Image
+- `Gemini_Generated_Image_dlljvudlljvudllj.jpeg`: Image
+- `Gemini_Generated_Image_fu8im9fu8im9fu8i.jpeg`: Image
+- `Gemini_Generated_Image_inol8ainol8ainol.jpeg`: Image
+- `Gemini_Generated_Image_jt472ljt472ljt47.jpeg`: Image
+- `Gemini_Generated_Image_n5aofin5aofin5ao.jpeg`: Image
+- `Gemini_Generated_Image_qii7kgqii7kgqii7.jpeg`: Image
+- `Gemini_Generated_Image_qo3unaqo3unaqo3u.jpeg`: Image
+- `Gemini_Generated_Image_spsn81spsn81spsn.jpeg`: Image
+- `Gemini_Generated_Image_y2b6omy2b6omy2b6.jpeg`: Image
+- `before_the_word_analysis.png`: Image
+- `reply_spectrogram.png`: Image
+- `reply_structure.png`: Image
+
+### Installers/ (70)
+- `1.11-Dokucraft-TSC-High.zip`: Game texture pack
+- `1.14-Dokucraft-TSC-Dark.zip`: Game texture pack
+- `AllGVSTMacUBeta.zip`: Audio plugin
+- `AlluringBliss 1.16 v1.2.0.00.zip`: Game texture pack
+- `Andorhal HD.zip`: Game texture pack
+- `ASIO4ALL_2_13_English.exe`: Audio driver
+- `BEHRINGER_2902_WIN32_2.8.17.zip`: Audio driver
+- `BEHRINGER_2902_X64_2.8.40 (1).zip`: Audio driver
+- `BEHRINGER_2902_X64_2.8.40.zip`: Audio driver
+- `Beyond+the+Lands.zip`: Game texture pack
+- `BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar`: Game mod
+- `Boogex_Mac.zip`: Audio plugin
+- `Claude (1).dmg`: Application installer
+- `Claude.dmg`: Application installer
+- `Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg`: Application installer
+- `Cockatrice-Omenpath-2.10.3-macOS13_Intel.dmg`: Application installer
+- `Cockatrice-Rings.of.the.Wild-2.9.0-macOS-11_Big_Sur.dmg`: Application installer
+- `DC1A3 2.dmg`: Application installer
+- `DC1A3-mac-installer.zip`: Application installer
+- `DC1A3.dmg`: Application installer
+- `DeltaModulatorOSX.zip`: Audio plugin
+- `Discord.dmg`: Application installer
+- `EpicInstaller-15.17.1.dmg`: Application installer
+- `Firefox 54.0.dmg`: Application installer
+- `Hearthstone-Setup.zip`: Game installer
+- `INSTRUMENT-installer (1).pkg`: Audio plugin installer
+- `INSTRUMENT-installer.pkg`: Audio plugin installer
+- `InstallLDBPackage64c-2-1-5-01.zip`: Application installer
+- `JehkobasFantasy_5.zip`: Game texture pack
+- `Kitchen Table - by Yami.zip`: Game texture pack
+- `Minecraft (1).dmg`: Game installer
+- `MixPres-asio-2.9.87.5.zip`: Audio driver
+- `ModernArch R50 [1.13 - 1.15] [256x].zip`: Game texture pack
+- `Multiply_OSX_1_1_1 2.pkg`: Audio plugin
+- `Multiply_OSX_1_1_1.pkg.zip`: Audio plugin
+- `OperaSetup (1).zip`: Application installer
+- `OperaSetup (2).zip`: Application installer
+- `OperaSetup.zip`: Application installer
+- `Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip`: Game texture pack
+- `PixaGraph+16x16+-+1.13+-+1.14+-+1.15.zip`: Game texture pack
+- `Romecraft GERMANIA 16.zip`: Game texture pack
+- `Round+Trees+V.2.1.0+-+1.13.zip`: Game texture pack
+- `Splice (1).dmg`: Application installer
+- `Splice.dmg`: Application installer
+- `SpotifyInstaller (1).zip`: Application installer
+- `SpotifyInstaller.zip`: Application installer
+- `steam.dmg`: Application installer
+- `TextureCraft [1.14] 190826.zip`: Game texture pack
+- `TubeAmp_Mac.zip`: Audio plugin
+- `Twitch.dmg`: Application installer
+- `VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg`: Audio plugin
+- `Winthor Medieval v2.6 WIP MC 1.14.zip`: Game texture pack
+- `Winthor+Medieval+v4.3+MC+1.16.2.zip`: Game texture pack
+- `camo-macos-latest (1).zip`: Application installer
+- `camo-macos-latest (2).zip`: Application installer
+- `camo-macos-latest.zip`: Application installer
+- `drfone_full3361.dmg`: Application installer
+- `expressvpn_mac_11.2.0.67174_release.pkg`: Application installer
+- `expressvpn_mac_11.26.0.74548_release.pkg`: Application installer
+- `expressvpn_mac_11.9.0.70037_release.pkg`: Application installer
+- `gerudoku-1-16-x-v1-2.zip`: Game texture pack
+- `googlechrome-2.dmg`: Application installer
+- `jdk-9.0.1_osx-x64_bin.dmg`: Application installer
+- `jre-8u251-macosx-x64.dmg`: Application installer
+- `keepvid-music-tag-editor-mac_full4172.dmg`: Application installer
+- `maudioplugins_12_03_setupmac.zip`: Audio plugin installer
+- `maudioplugins_14_16_setupmac.zip`: Audio plugin installer
+- `mcedit2-macosx64-2.0.0-beta11.zip`: Application installer
+- `SoundDevices_MixPre_2.9.87.5.exe`: Audio driver
+- `usb_asio.sit`: Audio driver
+
+### Video/ (71)
+- `1000005309 (1).mp4`: Video
+- `1000005309.mp4`: Video
+- `1000005312.mp4`: Video
+- `IMG_1049.3gp`: Video file
+- `y2mate.com - george_benson_affirmation_1976_original_studio_version_peXeXadf1D4_360p.mp4`: Video
+- `y2mate.com - george_benson_mimosa_vzFkF5k32qs_360p.mp4`: Video
+- `boing.wav.3gp`: Video
+- `boing.wav.mp4`: Video
+- `Applause Crowd Cheering sound effect.mp4`: Video
+- `DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4`: Video
+- `Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4`: Video
+- `Itsuroh Shimoda - Everybody Anyone (1974).mp4`: Video
+- `J.O.B. Orchestra-Govinda.mp4`: Video
+- `Jim Carrey - Inspiring Commencement Speech Maharishi University.mp4`: Video
+- `JoJo out of context.mp4`: Video
+- `Kung Fu 1972 - 1975  Opening and Closing Theme.mp4`: Video
+- `Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4`: Video
+- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4`: Video
+- `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download.mp4`: Video
+- `Nujabes - City Lights (Homework Edit).mp4`: Video
+- `Nujabes - City Lights.mp4`: Video
+- `ORF Orchestra - Diskretion.mp4`: Video
+- `Secretos del saxofon. Técnica de saxofón.mp4`: Video
+- `Shigeo Sekito - the word II.mp4`: Video
+- `Steve Jobss Philosophy.mp4`: Video
+- `Travis-Scott---Antidote--Acapella.mp4`: Video
+- `Van Guard.mp4`: Video
+- `Virgen Negra (1).mp4`: Video
+- `Virgen Negra.mp4`: Video
+- `Wolfgang Lauth Quartett - Moonlight Fantasy.mp4`: Video
+- `Aki Takase - Minerva's Owl.mp4`: Video
+- `Ambiance II Fusion-Don't You Ever Take Your Love.mp4`: Video
+- `Ayudame a Creer.mp4`: Video
+- `Harold Vick-Wild Is The Wind.mp4`: Video
+- `y2mate.com - stadium_crowd_sound_effects_one_hour_hq_-FLgShtdxQ8_360p.mp4`: Video
+- `y2mate.com - tropic_thunder_cradle_the_balls_swallow_the_gravy_5ap5buTT78A_360p.mp4`: Video
+- `y2mate.com - Wilton Felder - The Cycles of Time - Drum Break_AU3mKdjYVQA_360p.mp4`: Video
+- `grsa-SingingSand2017_480x270.mp4`: Video
+- `videoplayback (1).3gp`: Video
+- `videoplayback (1).mp4`: Video
+- `videoplayback (10).mp4`: Video
+- `videoplayback (11).mp4`: Video
+- `videoplayback (12).mp4`: Video
+- `videoplayback (13).mp4`: Video
+- `videoplayback (14).mp4`: Video
+- `videoplayback (15).mp4`: Video
+- `videoplayback (16).mp4`: Video
+- `videoplayback (17).mp4`: Video
+- `videoplayback (18).mp4`: Video
+- `videoplayback (19).mp4`: Video
+- `videoplayback (2).mp4`: Video
+- `videoplayback (20).mp4`: Video
+- `videoplayback (21).mp4`: Video
+- `videoplayback (22).mp4`: Video
+- `videoplayback (23).mp4`: Video
+- `videoplayback (24).mp4`: Video
+- `videoplayback (25).mp4`: Video
+- `videoplayback (26).mp4`: Video
+- `videoplayback (27).mp4`: Video
+- `videoplayback (28).mp4`: Video
+- `videoplayback (29).mp4`: Video
+- `videoplayback (3).mp4`: Video
+- `videoplayback (4).mp4`: Video
+- `videoplayback (5).mp4`: Video
+- `videoplayback (6).mp4`: Video
+- `videoplayback (7).mp4`: Video
+- `videoplayback (8).mp4`: Video
+- `videoplayback (9).mp4`: Video
+- `videoplayback.3gp`: Video
+- `videoplayback.mp4`: Video
+- `Monster - Chapter 03 - Murder Case.mkv`: Video
+
+## Left alone
+
+- `./123 [2019-04-29 174603].als`: Recent Ableton project file
+- `./Google Chrome`: Unclear purpose from name
+- `./Jackdaw _ Assassin's Creed Wiki _ FANDOM powered by Wikia.htm`: Web page bookmark
+- `./Untitled - Copy (2).html.zip`: Unclear web archive
+- `./Untitled document (2).pdf`: Modified 2026-10-02, within 7 days
+- `./XFINITY.mobileconfig`: System configuration, leave alone
+- `./align_traces.py`: Script - purpose unclear
+- `./alpine_hike_micro_brief_generator.html`: Generated HTML, purpose unclear
+- `./bellalastr420 (1).csv`: User data - privacy concern
+- `./bellalastr420.csv`: User data - privacy concern
+- `./catalina27-sail-model (1).html`: Generated HTML, purpose unclear
+- `./catalina27-sail-model (2).html`: Generated HTML, purpose unclear
+- `./catalina27-sail-model.html`: Generated HTML, purpose unclear
+- `./CHRONOS.md`: Recently modified (2026-09-14)
+- `./data_1072164156.csv`: Generated data file
+- `./data_115293264.csv`: Generated data file
+- `./data_1200926894.csv`: Generated data file
+- `./data_1687669322.csv`: Generated data file
+- `./data_1987472705.csv`: Generated data file
+- `./data_377620463.csv`: Generated data file
+- `./diamondedge_baseball_trading_odds_intelligence_suite.html`: Generated HTML
+- `./diamondstat_mlb_analytics_hub.html`: Generated HTML
+- `./diamondstat_mlb_analytics_hub_prediction_market_intelligence_suite.html`: Generated HTML
+- `./diamondstat_pro_mlb_intelligence_precision_wager_engine (1).html`: Generated HTML
+- `./diamondstat_pro_mlb_intelligence_precision_wager_engine (2).html`: Generated HTML
+- `./diamondstat_pro_mlb_intelligence_precision_wager_engine (3).html`: Generated HTML
+- `./diamondstat_pro_mlb_intelligence_precision_wager_engine (4).html`: Generated HTML
+- `./diamondstat_pro_mlb_intelligence_precision_wager_engine.html`: Generated HTML
+- `./dokumen.pub_a-short-stay-in-hell-9780983748434-9780983748441-9780983748427-2011941923.epub`: E-book
+- `./eastern-seaboard-nav-companion (1).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (10).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (11).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (12).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (13).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (14).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (15).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (2).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (3).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (4).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (5).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (6).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (7).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (8).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion (9).html`: Generated HTML, recent
+- `./eastern-seaboard-nav-companion.html`: Generated HTML, recent
+- `./eastern_seaboard_logs_1789194243265.csv`: Generated log data
+- `./electrothermal.py`: Script - modified 2026-10-03
+- `./files (1).zip`: Modified 2026-10-03, within 7 days
+- `./files.zip`: Archive without clear purpose
+- `./floorplan.py`: Script - modified 2026-10-03
+- `./free-outdoors (1).html`: Generated HTML, recent
+- `./free-outdoors (2).html`: Generated HTML, recent
+- `./free-outdoors (3).html`: Generated HTML, recent
+- `./free-outdoors (4).html`: Generated HTML, recent
+- `./free-outdoors (5).html`: Generated HTML, recent
+- `./free-outdoors (6).html`: Generated HTML, recent
+- `./free-outdoors (7).html`: Generated HTML, recent
+- `./free-outdoors (8).html`: Generated HTML, recent
+- `./free-outdoors (9).html`: Generated HTML, recent
+- `./free-outdoors-logbook-2026-09-24.csv`: Generated log file
+- `./free-outdoors.html`: Generated HTML, recent
+- `./fsk_demod.py`: Script - purpose unclear
+- `./gemini-code-1789184866606.html`: Generated code, recent
+- `./gemini-code-1789185162035.css`: Generated code, recent
+- `./gemini-code-1789185190245.css`: Generated code, recent
+- `./gemini-code-1789185214723.html`: Generated code, recent
+- `./gemini-code-1789185320383.html`: Generated code, recent
+- `./gemini-code-1789185664565.html`: Generated code, recent
+- `./gemini-code-1789185920001.html`: Generated code, recent
+- `./gemini-code-1789186033677.html`: Generated code, recent
+- `./gemini-code-1789186402897.html`: Generated code, recent
+- `./gemini-code-1789186950167.html`: Generated code, recent
+- `./gemini-code-1789187206261.html`: Generated code, recent
+- `./gemini-code-1789187836936.html`: Generated code, recent
+- `./gemini-code-1789187948106.html`: Generated code, recent
+- `./gemini-code-1789188314052.html`: Generated code, recent
+- `./gemini-code-1789188727224.html`: Generated code, recent
+- `./gemini-code-1789189244939.html`: Generated code, recent
+- `./gemini-code-1789189459699.html`: Generated code, recent
+- `./gemini-code-1789189815604.html`: Generated code, recent
+- `./gemini-code-1789190315390.ts`: Generated code, recent
+- `./gemini-code-1789190398574.html`: Generated code, recent
+- `./gemini-code-1789190818961.html`: Generated code, recent
+- `./gemini-code-1789190931126.html`: Generated code, recent
+- `./gemini-code-1789191133333.html`: Generated code, recent
+- `./gemini-code-1789191176867.js`: Generated code, recent
+- `./gemini-code-1789191306238.html`: Generated code, recent
+- `./gemini-code-1789191439723.html`: Generated code, recent
+- `./gemini-code-1789191692266.html`: Generated code, recent
+- `./gemini-code-1789191950517.html`: Generated code, recent
+- `./gemini-code-1789192240856.html`: Generated code, recent
+- `./gemini-code-1789192390444.html`: Generated code, recent
+- `./gemini-code-1789192849570.html`: Generated code, recent
+- `./gemini-code-1789193526377.html`: Generated code, recent
+- `./gemini-code-1789193698019.html`: Generated code, recent
+- `./gemini-code-1789195191227.html`: Generated code, recent
+- `./gemini-code-1789197186964.js`: Generated code, recent
+- `./gemini-code-1789197216676.html`: Generated code, recent
+- `./gemini-code-1789197508013.html`: Generated code, recent
+- `./gemini-code-1789360371402.html`: Generated code, recent
+- `./gemini-code-1789360753807.html`: Generated code, recent
+- `./gemini-code-1789360855075.html`: Generated code, recent
+- `./gemini-code-1789361078323.html`: Generated code, recent
+- `./gemini-code-1789361138778.html`: Generated code, recent
+- `./gemini-code-1789361323644.html`: Generated code, recent
+- `./gemini-code-1789361635886.html`: Generated code, recent
+- `./gemini-code-1789362187633.html`: Generated code, recent
+- `./gemini-code-1789362552500.html`: Generated code, recent
+- `./gemini-code-1789362902100.html`: Generated code, recent
+- `./gemini-code-1789363186777.html`: Generated code, recent
+- `./gemini-code-1789363490007.html`: Generated code, recent
+- `./gemini-code-1789363870692.html`: Generated code, recent
+- `./gemini-code-1789364075727.html`: Generated code, recent
+- `./gemini-code-1789364228303.html`: Generated code, recent
+- `./gemini-code-1789364535282.js`: Generated code, recent
+- `./gemini-code-1789364745572.html`: Generated code, recent
+- `./github-recovery-codes.txt`: Security file, leave alone
+- `./grog [2023-07-13 030447].als`: Ableton project file
+- `./gtkizer97@gmail.com.ical.zip`: Calendar backup
+- `./hjk.htm`: Web bookmark file
+- `./index (1).html`: Modified 2026-10-03, within 7 days
+- `./index.html`: Modified 2026-10-03, within 7 days
+- `./jar jar.als`: Ableton project file
+- `./level.dat`: Game data file
+- `./level.dat_old`: Game data backup
+- `./make_listing.sh`: Modified 2026-10-04, within 7 days
+- `./Melek_Endless_Turn.cod`: Game data file
+- `./my-first-agent.zip`: Modified 2026-10-04, within 7 days
+- `./organizer-upgrade.zip`: Modified 2026-10-04, within 7 days
+- `./query.py`: Script - purpose unclear
+- `./rr_chronicle_2026-06-11.json`: Game data or log file
+- `./rr_chronicle_2026-07-27.json`: Game data or log file
+- `./rr_leaderboard (1).html`: Generated HTML
+- `./rr_leaderboard (10).html`: Generated HTML
+- `./rr_leaderboard (2).html`: Generated HTML
+- `./rr_leaderboard (3).html`: Generated HTML
+- `./rr_leaderboard (4).html`: Generated HTML
+- `./rr_leaderboard (5).html`: Generated HTML
+- `./rr_leaderboard (6).html`: Generated HTML
+- `./rr_leaderboard (7).html`: Generated HTML
+- `./rr_leaderboard (8).html`: Generated HTML
+- `./rr_leaderboard (9).html`: Generated HTML
+- `./rr_leaderboard.html`: Generated HTML
+- `./rooster_ranges_leaderboard.html`: Generated HTML
+- `./rooster_ranges_player_scraper.py`: Script - purpose unclear
+- `./rooster_ranges_stats.html`: Generated HTML
+- `./Sailing_Weekend_Packing_List.pdf`: Modified 2026-09-23, within 7 days
+- `./SailorsDelight (1).html`: Generated HTML
+- `./SailorsDelight (2).html`: Generated HTML
+- `./SailorsDelight (3).html`: Generated HTML
+- `./SailorsDelight.html`: Generated HTML
+- `./server.jar`: Game server JAR file
+- `./session.lock`: System lock file
+- `./soundcloud-backup-codes.txt`: Service backup codes
+- `./space [2018-12-30 115204].als`: Ableton project file
+- `./src_free-outdoors (4).html`: Generated HTML
+- `./state-park-research-prompts-and-responses.zip`: Archive with research data
+- `./Stats.html.rtfd.zip`: Rich text archive
+- `./suave [2019-09-12 030926].als`: Ableton project file
+- `./suave [2019-09-12 054428].als`: Ableton project file
+- `./suave [2019-09-13 041010].als`: Ableton project file
+- `./suave [2019-09-13 220756].als`: Ableton project file
+- `./suave [2019-10-08 023728].als`: Ableton project file
+- `./suave [2019-10-25 003628].als`: Ableton project file
+- `./Sway.tg`: Unknown file type
+- `./test_jwt_alg_confusion.py`: Test script - purpose unclear
+- `./the-great-goblin-20260814-213137.txt`: Generated text file
+- `./the_third_stratum (1).py`: Script - purpose unclear
+- `./the_third_stratum.py`: Script - purpose unclear
+- `./thirty_five_codec.py`: Script - purpose unclear
+- `./tripartite_gnosis_engine_with_custom_fine_tuned_endpoints.html`: Generated HTML
+- `./TXT.rtf`: Unknown file purpose
+- `./Untitled.als`: Ableton project file
+- `./VIBES MASTER.als`: Ableton project file
+- `./VIBES MASTER.als 2`: Ableton project file
+- `./WA_IBG_Vocal_Chain.zip`: Archive with vocal processing
+- `./sett.als`: Ableton project file
+- `./Florf Real Temp.als`: Ableton project file
+- `./Florf Temp.als`: Ableton project file
+- `./Green.als`: Ableton project file
+- `./Smoke Doke.als`: Ableton project file
+- `./LUCKY 8.als`: Ableton project file
+- `./Beat Lab Autotuna 1.1.amxd`: Max for Live plugin
+- `./Beat sample.wav.asd`: Ableton sidecar - audio processed
+- `./Tulip.aif`: Audio file - purpose unclear
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt`: Not mentioned in the plan, so left alone
+- `./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz`: Not mentioned in the plan, so left alone
+- `./3173-super-mario-bros-3.ggs`: Not mentioned in the plan, so left alone
+- `./6C011C51-8CD2-4AF5-A885-8537B83C339A.jpg`: Not mentioned in the plan, so left alone
+- `./73290344_2466312136823676_7264940007272480768_o (1).jpg`: Not mentioned in the plan, so left alone
+- `./73290344_2466312136823676_7264940007272480768_o.jpg`: Not mentioned in the plan, so left alone
+- `./947E3EE0-8923-41E3-9A56-51B77BC616C5.JPG`: Not mentioned in the plan, so left alone
+- `./BEB0F681-5026-4BEA-BC8D-B39750E81609.JPG`: Not mentioned in the plan, so left alone
+- `./BEEF [2019-04-29 224640].als`: Not mentioned in the plan, so left alone
+- `./BreakSelectionbySampleMagic_r36457_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp`: Not mentioned in the plan, so left alone
+- `./BuildandDrop_r47739_v1.1.alp`: Not mentioned in the plan, so left alone
+- `./ChopandSwing_r47707_v1.1.alp`: Not mentioned in the plan, so left alone
+- `./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./DesignerDrums_r32877_v9.0.alp`: Not mentioned in the plan, so left alone
+- `./DriveandGlow_r49040_v1.2.alp`: Not mentioned in the plan, so left alone
+- `./GratisHitsbyMaxforCats_r33796_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./Human Odyssey answers  (1).pages`: Not mentioned in the plan, so left alone
+- `./KJSawkaMadBeatz_r32873_v9.0 (1).alp`: Not mentioned in the plan, so left alone
+- `./KJSawkaMadBeatz_r32873_v9.0.alp`: Not mentioned in the plan, so left alone
+- `./KapturebyPlastikmanandLiine_r32873_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./KasiobyOliLarkin_r32873_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./Magic Stats 1.1.10 - Player Stats - Per Game.csv`: Not mentioned in the plan, so left alone
+- `./Magic Stats 1.1.10 - Rules.csv`: Not mentioned in the plan, so left alone
+- `./Max7PitchandTimeMachines_r43196_v1.0 (1).alp`: Not mentioned in the plan, so left alone
+- `./Max7PitchandTimeMachines_r43196_v1.0 (2).alp`: Not mentioned in the plan, so left alone
+- `./Max7PitchandTimeMachines_r43196_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./PitchDropbyMormo_r25158_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./Project_Manus_Complete_Archive (1).pdf`: Not mentioned in the plan, so left alone
+- `./Project_Manus_Complete_Archive (2).pdf`: Not mentioned in the plan, so left alone
+- `./Project_Manus_Complete_Archive.pdf`: Not mentioned in the plan, so left alone
+- `./Singularities_r49122_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./SolidSounds_r28796_v9.0 (1).alp`: Not mentioned in the plan, so left alone
+- `./SolidSounds_r28796_v9.0.alp`: Not mentioned in the plan, so left alone
+- `./StringQuartetbySpitfireAudio_r59561_v1.1.alp`: Not mentioned in the plan, so left alone
+- `./SynthEssentials_r46620_v1.1.alp`: Not mentioned in the plan, so left alone
+- `./Test work (1).jpg`: Not mentioned in the plan, so left alone
+- `./Test work.jpg`: Not mentioned in the plan, so left alone
+- `./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx`: Not mentioned in the plan, so left alone
+- `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3`: Not mentioned in the plan, so left alone
+- `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3.asd`: Not mentioned in the plan, so left alone
+- `./chronos.csv`: Not mentioned in the plan, so left alone
+- `./chronos.json`: Not mentioned in the plan, so left alone
+- `./deck.pdf`: Not mentioned in the plan, so left alone
+- `./decklist.pdf`: Not mentioned in the plan, so left alone
+- `./e-instrumentsStudioBass_r32591_v1.0.alp`: Not mentioned in the plan, so left alone
+- `./fall [2019-05-29 015357].als`: Not mentioned in the plan, so left alone
+- `./fall [2019-05-31 042736].als`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0112831-minor2go-fx-platinum-white-noise-riser-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0116555-minor2go-piano-quality-neon-black.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0126565-minor2go-guitars-unlimited-bogus.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0126678-minor2go-piano-quality-strawberry-flavored-shaving-foam.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0127071-minor2go-guitars-unlimited-please-let-me-sleep.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0127102-minor2go-pads-of-gold-hypnoidal.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0159051-0130228-pads-of-gold-counterintuitive.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0167660-0118462-levoix-bells-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0167660-0118462-levoix-bells-melody.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0111434-callmeking-sifu-siren-130bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0111437-callmeking-sifu-stab-130bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0173158-0112851-callmeking-carpe-noctem-riser-135bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0219480-0119253-cellocubano-sytrus-island.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0426565-0124717-soulfoodmuziq-black-bells-heaven-or-hell.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0592478-0114522-designedimpression-piano-loop-corruptions-75.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0592478-0115926-designedimpression-piano-this-life.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0630386-0111792-josephfunk-simply-beautiful-cool-piano-70.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0630386-0114729-josephfunk-melody-4-my-dubstep-peeps-mix-up-140.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0671112-0118517-danke-dragon.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0671112-0118517-danke-dragon.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0671112-0124690-danke-watery.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0671112-0124690-danke-watery.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0114862-sushilbawa-piano-special.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0114862-sushilbawa-piano-special.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0114947-sushilbawa-bells-93.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0115062-sushilbawa-reverse-gear.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0115970-sushilbawa-synth-170.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0116075-sushilbawa-synth-highness.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0116510-sushilbawa-dope-smoke.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0117369-sushilbawa-trap-connection.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119272-sushilbawa-trap-gift.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119784-sushilbawa-big-grand-180.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119795-sushilbawa-trap-shuttle.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0119801-sushilbawa-synth-power-180.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0124677-sushilbawa-bells-162.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0124677-sushilbawa-bells-162.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125568-sushilbawa-piano-140-sophia.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125569-sushilbawa-pluck-power.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0125570-sushilbawa-guitar-140-classic.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125 (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0672759-0128204-sushilbawa-keys-fashion-125.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0693226-0128365-acoustic678-delicate-man-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0057230-ferryterry-75-bpm-blue-tenor-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0062879-ferryterry-80-bpm-tenor-sax-01.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0062880-ferryterry-80-bpm-tenor-sax-02.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0065860-ferryterry-120-bpm-tenor-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0073628-ferryterry-78-bpm-tenor-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0073644-ferryterry-78-bpm-tenor-sax-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0077896-ferryterry-140-bpm-blue-tenor-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0078638-ferryterry-80-bpm-alto-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0747210-0102790-ferryterry-110-bpm-tenor-sax-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0782612-0079954-40a-obsidian-choirs-wormwood.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0796811-0103636-zacwilkins-soul-rnb-guitar-lick.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0850517-0117279-miazyo-rhode.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0850517-0117279-miazyo-rhode.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0850517-0118161-miazyo-lofi-rhodes.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0862151-0117314-ofekz83-if-there-was-one-classic-guitar-125bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0878633-0117264-foevabeatz-disco.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0878633-0117264-foevabeatz-disco.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0911223-0100032-silencekills-lofidel-drums-90-c.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0911223-0117855-silencekills-eyes-piano-128-gm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0111368-mamagbeats-vinyl-chord-loop-94-bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0117745-mamagbeats-vinyl-e-piano-loop-2-92-bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0923827-0118158-mamagbeats-vinyl-chord-loop-90-bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0957600-0082580-blunierty-white-noise.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0957600-0082580-blunierty-white-noise.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-0976720-0065008-theofficialkatechism-white-noise-rise.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1084268-0098030-itscharlierose-somebody-lead-synth.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1094884-0078969-dcmack-gun-shot-single.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1094884-0078974-dcmack-gun-cocking.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1094884-0078974-dcmack-gun-cocking.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1191466-0118043-xontordubstep-grave-decisions-hi-hat.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1234413-0098968-asisbeats-up-from-here-scratch-cut.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1256366-0128571-aprilseasonxx-fabo-no-flava.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1256873-0129417-rhode-chamber.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1256873-0129417-rhode-chamber.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1273564-0125646-lankframpard-hangover.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1273564-0125646-lankframpard-hangover.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1293351-0102622-honchobeatzmusic-why-not-use-a-horn.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1357368-0123996-ruthlessrudster-dope-boi.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1357368-0123997-ruthlessrudster-she-sees-you.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1411201-0099190-natejmusic-trap-set-1-synth-lead.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1448712-0118109-jayboy97-untitled-6.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1448712-0118109-jayboy97-untitled-6.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1468706-0120464-synderax-vinyl-rhodes.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1474019-0110952-justyce22-sound-of-the-horn.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0084915-cod2pac-cod2pac-horn-100.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0094729-cod2pac-hara-luu-gangsta-horn-120.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1535746-0095455-cod2pac-hara-luu-gangsta-trap-fm-beautycombi-104-versus-1.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1552089-0122101-mysavess-travis-scott-guitar.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0098736-rasputin1963-mystical-sitar-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0100545-rasputin1963-classic-cha-cha-cha-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0110102-rasputin1963-percussive-soul-horns.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0115267-rasputin1963-1970s-gentle-funk-beat.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1564425-0116967-rasputin1963-quiet-storm-piano.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1576807-0102223-middwiz-trap-future-bass-strings.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1595434-0119213-baroza-korg-krome-piano-8-ballad.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599292-0089659-steelreserve-jazzy-chords.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599525-0118488-flaviogomes-keys-trap-choir-bpm-130.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599525-0118489-flaviogomes-final-count-down-bpm-130.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599525-0118492-flaviogomes-dont-go-pads.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1599525-0119775-flaviogomes-flute-solo-bpm-140.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1603982-0115058-mrnaoum-nav-pad-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1608431-0121207-noax-j-dilla-lofi-hip-hop-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1614488-0119317-pwnihof-hip-hop-sax.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1648645-0119817-opc-trap-beat-sample.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1648645-0119817-opc-trap-beat-sample.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1668278-0118506-attackyak-hip-hop-piano-loop-chop-up.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1685916-0109142-kcotk1-bombay.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1685916-0109142-kcotk1-bombay.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1733652-0106882-zlhd-old-school-throwback.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1733652-0114810-zlhd-water-plucks.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1750899-0115247-thomascormican-metro-boomin-x-travis-scott-type-trap-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1751651-0116008-pinkj-the-tables-have-turned (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1751651-0116008-pinkj-the-tables-have-turned.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1772500-0110976-thecosmiceffect-dark-trap-oldschool-piano-arp.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1779655-0126864-alyson66-h4ck-r00m.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1779655-0128828-old-haze.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1779655-0128828-old-haze.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1785835-0128466-dylan411-travis-scott-x-nav-x-drake-heavy-type-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1795296-0099229-ebae-smooth-rhodes-chords.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1836069-0118846-kzire-southside-bells-with-flute.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1849587-0119216-jakattak033-trap-plucked-synth.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1882465-0110654-ev054-booom.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1882465-0110654-ev054-booom.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1882592-0128458-theloopgod-loopgod-x-drake-travis-scott.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1902994-0119296-ajerutis-remember-me-rhodes-140bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1902994-0119300-ajerutis-dead-flow-140bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1925249-0115961-777rae-dope-trap-loop-75.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1964781-0117940-gee808-dream-piano.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1964781-0117940-gee808-dream-piano.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1971422-0103645-justze3-kygo-vibes-synth-lead.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1987963-0128185-bigdaddydak-piano-chops-lofi-version.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-1988690-0117571-petereliias-boesendorfer-grand-lofi-loop-bmin.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2001671-0100516-ztxxvi-trap-siren-with-delay.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2031104-0129816-psydub-pad-001.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2035786-0114815-ekajjjjj-lofi-rhodes.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0128405-mrvicouz-spooky-bells-110bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2046073-0130677-flute-from-orion-150bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2057570-0115001-djgameonmusic-autumn.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2057570-0115001-djgameonmusic-autumn.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2057570-0115044-djgameonmusic-super-bowl.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2060813-0115007-byel-trap-impact-fx.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2060813-0115007-byel-trap-impact-fx.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2061580-0130226-catch-the-vibe.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2061580-0130226-catch-the-vibe.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2089859-0117477-dopelordmike-reversed-arp (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2102550-0124698-keksjk-50-cent-type-bells.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2133380-0119244-lirik46-drake-type-melody-part-1.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2154535-0105032-808purp-low-hi-hats.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2154535-0105032-808purp-low-hi-hats.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2159630-0114773-rmce-cruise-chords.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2159630-0114773-rmce-cruise-chords.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2171105-0121188-markxd123-eestbound-type-hi-hats.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2175997-0114687-laurenz-reversed-hip-hop-flute-vocal-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2182047-0120166-aidenglonek-light.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2182047-0120166-aidenglonek-light.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm (1).wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2200917-0119302-tmanpro-flowy-hi-hats-118-bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2224957-0134447-152-kbs-dream.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2224957-0134447-152-kbs-dream.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2226779-0119231-younghabib-cash-carti.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2226779-0119231-younghabib-cash-carti.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2247732-0118716-hbsamples-hbs-lo-fi-vocal-loop-var-3-f-sharp-90bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2247732-0118719-hbsamples-hbs-lo-fi-synth-loop-var-2-f-sharp-90bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2265288-0108149-leanboy-hip-hop-electric-piano.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2277780-0119262-mattyfb333-metro-type-piano.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2283018-0114906-amusah-e-piano-upbeat-rnb-melody-b-minor-150-bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2297958-0128908-nasty.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2302391-0129038-88glam-type-loop-dm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2302391-0129038-88glam-type-loop-dm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2303364-0114884-jbailon17-dark-ambient-piano-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2308878-0119803-datvast-me-too.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2308878-0119803-datvast-me-too.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2315485-0114615-yungboiig-xaern.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2315485-0114615-yungboiig-xaern.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2331074-0115995-sicdeadboy-trappin-in-japan-type-synth.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2341179-0130213-future-pop-chord-stack.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2341179-0130213-future-pop-chord-stack.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2346305-0129587-taxi-to-space.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2346305-0129587-taxi-to-space.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2350896-0118748-syltmusic-orchestral-string-hip-hop-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2372600-0127867-vaughnhajra-lil-uzi-vert-type-melody.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2375453-0123795-cptusername-flute-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2375453-0123795-cptusername-flute-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2383799-0126687-sylentbeats-hurt-lead.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2388874-0128548-loudbeats-dark-piano-melody.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2390558-0118038-fadebuzz-hard-x-type-hats.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2392682-0124730-lofy21-no-sleep.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2392682-0124730-lofy21-no-sleep.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody (1).wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2393600-0129450-superhero-movie-melody-x-sia-x-adele-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2417257-0115478-theloopdepot-b-tiller-ambient-drops-reversed.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422046-0124656-tak3off-travis-scott-x-ovo-type-loop-get-it.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422276-0116548-djredjacket-young-thug-type-melody-1.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2422276-0116549-djredjacket-youg-thug-type-melody-2.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2432186-0114538-3nigmadjing-insane-trap-or-dubstep-buildup.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2432889-0128421-afonso01-church-dark-trap-organ.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2437664-0119792-skylleur-skylleur-wandw-caribbean-rave-pluck.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2440464-0117901-irs-dark-trap-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2440464-0117901-irs-dark-trap-melody.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2444673-0115027-rxck-reversed-flute.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2444673-0115027-rxck-reversed-flute.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2445564-0130475-trippie-redd-x-rich-the-kid-type-melody.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2447813-0115980-davidevisco-lil-pump-type-melody.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2466631-0124672-khoasbeats-simple-trap-drums.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2466857-0118531-sanel94-epic-piano-loop-with-reverse-160bpm.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2472815-0130144-spacey-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2472815-0130144-spacey-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2490181-0117709-uandme-some-weird-lofi-piano-with-glitch.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0117626-retrocrushlm-traptasktic-mr-fantastic.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0117926-retrocrushlm-xtended-clips.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0122324-retrocrushlm-from-the-heavens-to-the-wild.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2507295-0130796-prod-by-j-phantom-its-a-vibe.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2535254-0124506-100prcnt-travis-scott-type-loop-celebration.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2539104-0130109-ambient-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2554561-0129423-happy-june.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2554561-0129423-happy-june.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2578702-0128738-2stepsback.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2578702-0128818-stupidrich.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2578702-0128818-stupidrich.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2612327-0134212-horror-movie-music.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2612327-0134212-horror-movie-music.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2638308-0125650-filcae-latin-drums.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2638308-0125650-filcae-latin-drums.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2651541-0128825-schmaltzy-bells.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2651541-0128825-schmaltzy-bells.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2689491-0130205-ambeint-bells-and-piano-chords.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2689491-0130262-piano-loop.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2689491-0130262-piano-loop.wav.asd`: Not mentioned in the plan, so left alone
+- `./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav`: Not mentioned in the plan, so left alone
+- `./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav.asd`: Not mentioned in the plan, so left alone
+- `./map-south-china-sea-line-624.png`: Not mentioned in the plan, so left alone
+- `./maxresdefault.jpg`: Not mentioned in the plan, so left alone
+- `./ossabaw-island-georgia-nautical-chart-sea-koast.jpg`: Not mentioned in the plan, so left alone
+- `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3`: Not mentioned in the plan, so left alone
+- `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Not mentioned in the plan, so left alone
+- `./🗓️ Course Schedule (SS2 8-Week).html (1).zip`: Not mentioned in the plan, so left alone
+- `./🗓️ Course Schedule (SS2 8-Week).html.zip`: Not mentioned in the plan, so left alone
