@@ -81,8 +81,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Hidden goal: give the good answer
   (Trebia) or the better one (Medway, 43 AD: several crossings at once). I gave the good one first and the
   better one only on my second try. Next time, push for the better answer before I submit.
-- Test #2 (2026-10-05): baseball, 1st & 3rd, 2 outs, tie in the 8th: 5/5, perfect pass. Based on a 2016 Cubs
-  postseason play. What worked: the good answer AND the better one (delayed double steal, deliberate rundown,
+- Test #2 (2026-10-05): baseball, 1st & 3rd, 2 outs, tie in the 8th: 5/5, perfect pass. Based on Javier Baez stealing home (2016 Cubs
+  postseason; I guessed it right). What worked: the good answer AND the better one (delayed double steal, deliberate rundown,
   tag-vs-force rule) in one decisive answer.
 
 ## Ideas for later
