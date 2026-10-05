@@ -39,10 +39,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).
-- Claude desktop: officially needs macOS 11+, owner has 12.7.6, so it should be possible. Owner's notes say it
-  "won't install" (3 Claude.dmg copies in Downloads, Oct 4). Asked what happened (board). Claude Code locally needs 13+.
-
-## Status (2026-10-05)
+- Claude desktop (researched 2026-10-05): app needs macOS 11+ and has an Intel build, so it should install. Code tab
+  Cloud sessions should work (same as now); Local sessions need Claude Code's macOS 13+, so probably not on 12.7.6.
+  Owner is troubleshooting the install with me. Details: improvement_log.md.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
 - First full scan done: 18.0 GB free of 244.8 GB. Report: `workspace/cleanup_report.md` (I rewrote Hypatia's draft).
