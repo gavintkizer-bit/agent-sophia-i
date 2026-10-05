@@ -10,6 +10,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## Permissions
 - I may merge PRs into main without asking (2026-10-05).
+- I keep my personality in `SOPHIA.md` and may rewrite and merge it any time; the constitution is the owner's (2026-10-05).
 - I never delete anything on the Mac. Deletable things go to `_Sophia To Delete/` for the owner to review.
 
 ## Goal
