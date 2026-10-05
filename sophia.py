@@ -81,7 +81,7 @@ def rule_sort(rows, made):
         ext = pathlib.PurePosixPath(f).suffix.lower().lstrip(".")
         copy = COPY.match(name)
         if is_protected(f):
-            leave.append({"file": f, "reason": "Audio/Ableton file: never moved"})
+            leave.append({"file": f, "reason": "Audio, Ableton, or sample file: never moved"})
         elif OWN_SCRIPT.match(name):
             leave.append({"file": f, "reason": "Sophia's own script: stays where your commands expect it"})
         elif r["date"] >= recent:
@@ -92,9 +92,6 @@ def rule_sort(rows, made):
         elif ext in ("dmg", "pkg", "mpkg"):
             moves.append({"file": f, "to_folder": f"{TO_DELETE}/Installers",
                           "reason": "Installer; app is likely already installed"})
-        elif ext == "alp":
-            moves.append({"file": f, "to_folder": f"{TO_DELETE}/Ableton Packs - delete if installed",
-                          "reason": "Live Pack installer; check Ableton first"})
         elif ext in EXT_FOLDER:
             folder = EXT_FOLDER[ext]
             if folder == "Documents" and FINANCE.search(name):

@@ -1,21 +1,19 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 1221 | Will move: 555 | Left alone: 666
+Files in listing: 1221 | Will move: 512 | Left alone: 709
 
 ## Moves
 
-### Archives/ (24)
+### Archives/ (21)
 - `1.11-Dokucraft-TSC-High.zip`: Minecraft texture pack
 - `1.14-Dokucraft-TSC-Dark.zip`: Minecraft texture pack
 - `3173-super-mario-bros-3.ggs`: Sega ROM backup
-- `AllGVSTMacUBeta.zip`: Audio plugin archive
 - `AlluringBliss 1.16 v1.2.0.00.zip`: Minecraft texture pack
 - `Andorhal HD.zip`: Minecraft texture pack
 - `Beyond+the+Lands.zip`: Minecraft mod archive
 - `BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar`: Minecraft mod
 - `JehkobasFantasy_5.zip`: Minecraft texture pack
-- `Kitchen Table - by Yami.zip`: Minecraft texture pack
 - `Melek_Endless_Turn.cod`: Game data file
 - `ModernArch R50 [1.13 - 1.15] [256x].zip`: Minecraft texture pack
 - `Ovos Rustic Redemption v1.4.1 - for 1.10.X.zip`: Minecraft texture pack
@@ -24,7 +22,6 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `Round+Trees+V.2.1.0+-+1.13.zip`: Minecraft texture pack
 - `SoundDevices_MixPre_2.9.87.5.exe`: Audio driver archive
 - `TextureCraft [1.14] 190826.zip`: Minecraft texture pack
-- `WA_IBG_Vocal_Chain.zip`: Audio archive (see rules)
 - `Winthor Medieval v2.6 WIP MC 1.14.zip`: Minecraft texture pack
 - `Winthor+Medieval+v4.3+MC+1.16.2.zip`: Minecraft texture pack
 - `gerudoku-1-16-x-v1-2.zip`: Minecraft mod archive
@@ -299,15 +296,9 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `the dog.jpeg`: .jpeg file
 - `theeee dog.jpeg`: .jpeg file
 
-### Installers/ (19)
+### Installers/ (11)
 - `ASIO4ALL_2_13_English.exe`: Audio driver installer
-- `BEHRINGER_2902_WIN32_2.8.17.zip`: Audio device driver
-- `BEHRINGER_2902_X64_2.8.40.zip`: Audio device driver
-- `Boogex_Mac.zip`: Audio plugin Mac installer
-- `DC1A3-mac-installer.zip`: Audio plugin installer
-- `DeltaModulatorOSX.zip`: Audio plugin Mac installer
 - `Hearthstone-Setup.zip`: Game installer
-- `InstallLDBPackage64c-2-1-5-01.zip`: Audio software installer
 - `OperaSetup (1).zip`: Browser installer
 - `OperaSetup (2).zip`: Browser installer
 - `OperaSetup.zip`: Browser installer
@@ -316,8 +307,6 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `camo-macos-latest (1).zip`: App installer
 - `camo-macos-latest (2).zip`: App installer
 - `camo-macos-latest.zip`: App installer
-- `maudioplugins_12_03_setupmac.zip`: Audio plugin installer
-- `maudioplugins_14_16_setupmac.zip`: Audio plugin installer
 - `tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`: Music app installer
 
 ### Video/ (66)
@@ -493,27 +482,7 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `Stats.html.rtfd.zip`: HTML page archive
 - `Untitled - Copy (2).html.zip`: HTML page archive
 
-### _Sophia To Delete/Ableton Packs - delete if installed/ (18)
-- `BreakSelectionbySampleMagic_r36457_v1.0.alp`: Live Pack installer; check Ableton first
-- `BreakbeatsbyKutMastaKurt_r32873_v9.0.alp`: Live Pack installer; check Ableton first
-- `BuildandDrop_r47739_v1.1.alp`: Live Pack installer; check Ableton first
-- `ChopandSwing_r47707_v1.1.alp`: Live Pack installer; check Ableton first
-- `ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp`: Live Pack installer; check Ableton first
-- `DesignerDrums_r32877_v9.0.alp`: Live Pack installer; check Ableton first
-- `DriveandGlow_r49040_v1.2.alp`: Live Pack installer; check Ableton first
-- `GratisHitsbyMaxforCats_r33796_v1.0.alp`: Live Pack installer; check Ableton first
-- `KJSawkaMadBeatz_r32873_v9.0.alp`: Live Pack installer; check Ableton first
-- `KapturebyPlastikmanandLiine_r32873_v1.0.alp`: Live Pack installer; check Ableton first
-- `KasiobyOliLarkin_r32873_v1.0.alp`: Live Pack installer; check Ableton first
-- `Max7PitchandTimeMachines_r43196_v1.0.alp`: Live Pack installer; check Ableton first
-- `PitchDropbyMormo_r25158_v1.0.alp`: Live Pack installer; check Ableton first
-- `Singularities_r49122_v1.0.alp`: Live Pack installer; check Ableton first
-- `SolidSounds_r28796_v9.0.alp`: Live Pack installer; check Ableton first
-- `StringQuartetbySpitfireAudio_r59561_v1.1.alp`: Live Pack installer; check Ableton first
-- `SynthEssentials_r46620_v1.1.alp`: Live Pack installer; check Ableton first
-- `e-instrumentsStudioBass_r32591_v1.0.alp`: Live Pack installer; check Ableton first
-
-### _Sophia To Delete/Duplicates/ (40)
+### _Sophia To Delete/Duplicates/ (32)
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998) (1).epub`: Exact copy of another file here
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 2.html`: Exact copy of another file here
 - `(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr 3.html`: Exact copy of another file here
@@ -523,11 +492,9 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `2022_TaxReturn (1).pdf`: Exact copy of another file here
 - `73290344_2466312136823676_7264940007272480768_o (1).jpg`: Exact copy of another file here
 - `Assignment 2 Mineral's Use In Society (1).docx`: Exact copy of another file here
-- `BEHRINGER_2902_X64_2.8.40 (1).zip`: Exact copy of another file here
 - `Blended Geologic Time (1).pptx`: Exact copy of another file here
 - `Character Architecture - The Restrained Monster (1).pdf`: Exact copy of another file here
 - `Completed Tenant Application 2015 NEW.docx (1).pdf`: Exact copy of another file here
-- `DC1A3 2.dmg`: Exact copy of another file here
 - `Debate Research (1).pdf`: Exact copy of another file here
 - `Essay assignment 2 - Gavin Kizer  (1).pdf`: Exact copy of another file here
 - `Exercise 1 Getting Control of Your Time - Gavin Kizer (1).pdf`: Exact copy of another file here
@@ -538,38 +505,26 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `Gavin Kizer - The Uses of Olivine in Human Society (1).pdf`: Exact copy of another file here
 - `Gavin Kizer - Theme and Primary Source 2 Pt. 2 (1).pdf`: Exact copy of another file here
 - `Human Odyssey answers  (1).pages`: Exact copy of another file here
-- `INSTRUMENT-installer (1).pkg`: Exact copy of another file here
 - `Itsuroh Shimoda - Everybody Anyone (1974) (1).mp4`: Exact copy of another file here
-- `KJSawkaMadBeatz_r32873_v9.0 (1).alp`: Exact copy of another file here
-- `Max7PitchandTimeMachines_r43196_v1.0 (1).alp`: Exact copy of another file here
-- `Max7PitchandTimeMachines_r43196_v1.0 (2).alp`: Exact copy of another file here
 - `No Copyright Copyright Free Videos Motion Graphics Movies Background Animation Clips Download (1).mp4`: Exact copy of another file here
 - `PBSNOVAGreatHumanOdysseyVideoQuestions (1).docx`: Exact copy of another file here
 - `Point by Point Outline (1).docx`: Exact copy of another file here
-- `SolidSounds_r28796_v9.0 (1).alp`: Exact copy of another file here
 - `Test work (1).jpg`: Exact copy of another file here
 - `Untitled document (1) (1).pdf`: Exact copy of another file here
-- `VIBES MASTER.als 2`: Exact copy of another file here
 - `Virgen Negra (1).mp4`: Exact copy of another file here
 - `bellalastr420 (1).csv`: Exact copy of another file here
 - `rr_leaderboard (1).html`: Exact copy of another file here
 - `🗓️ Course Schedule (SS2 8-Week).html (1).zip`: Exact copy of another file here
 
-### _Sophia To Delete/Installers/ (23)
+### _Sophia To Delete/Installers/ (17)
 - `Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg`: Installer; app is likely already installed
 - `Cockatrice-Omenpath-2.10.3-macOS13_Intel.dmg`: Installer; app is likely already installed
 - `Cockatrice-Rings.of.the.Wild-2.9.0-macOS-11_Big_Sur.dmg`: Installer; app is likely already installed
-- `DC1A3.dmg`: Installer; app is likely already installed
 - `Discord.dmg`: Installer; app is likely already installed
 - `EpicInstaller-15.17.1.dmg`: Installer; app is likely already installed
 - `Firefox 54.0.dmg`: Installer; app is likely already installed
-- `INSTRUMENT-installer.pkg`: Installer; app is likely already installed
 - `Minecraft (1).dmg`: Installer; app is likely already installed
-- `Multiply_OSX_1_1_1 2.pkg`: Installer; app is likely already installed
-- `Splice (1).dmg`: Installer; app is likely already installed
-- `Splice.dmg`: Installer; app is likely already installed
 - `Twitch.dmg`: Installer; app is likely already installed
-- `VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg`: Installer; app is likely already installed
 - `drfone_full3361.dmg`: Installer; app is likely already installed
 - `expressvpn_mac_11.2.0.67174_release.pkg`: Installer; app is likely already installed
 - `expressvpn_mac_11.26.0.74548_release.pkg`: Installer; app is likely already installed
@@ -1248,3 +1203,46 @@ Files in listing: 1221 | Will move: 555 | Left alone: 666
 - `./Google Chrome`: Unclear purpose; possibly config
 - `./ProducerSpot-808-Drums.zip`: Audio samples (protected)
 - `./673 Samples Drum Kit (Hipstrumentals.com).zip`: Audio samples (protected)
+- `./BreakSelectionbySampleMagic_r36457_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp`: Audio, Ableton, or sample file: never moved
+- `./BuildandDrop_r47739_v1.1.alp`: Audio, Ableton, or sample file: never moved
+- `./ChopandSwing_r47707_v1.1.alp`: Audio, Ableton, or sample file: never moved
+- `./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./DesignerDrums_r32877_v9.0.alp`: Audio, Ableton, or sample file: never moved
+- `./DriveandGlow_r49040_v1.2.alp`: Audio, Ableton, or sample file: never moved
+- `./GratisHitsbyMaxforCats_r33796_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./KJSawkaMadBeatz_r32873_v9.0 (1).alp`: Audio, Ableton, or sample file: never moved
+- `./KJSawkaMadBeatz_r32873_v9.0.alp`: Audio, Ableton, or sample file: never moved
+- `./KapturebyPlastikmanandLiine_r32873_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./KasiobyOliLarkin_r32873_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./Max7PitchandTimeMachines_r43196_v1.0 (1).alp`: Audio, Ableton, or sample file: never moved
+- `./Max7PitchandTimeMachines_r43196_v1.0 (2).alp`: Audio, Ableton, or sample file: never moved
+- `./Max7PitchandTimeMachines_r43196_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./PitchDropbyMormo_r25158_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./Singularities_r49122_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./SolidSounds_r28796_v9.0 (1).alp`: Audio, Ableton, or sample file: never moved
+- `./SolidSounds_r28796_v9.0.alp`: Audio, Ableton, or sample file: never moved
+- `./StringQuartetbySpitfireAudio_r59561_v1.1.alp`: Audio, Ableton, or sample file: never moved
+- `./SynthEssentials_r46620_v1.1.alp`: Audio, Ableton, or sample file: never moved
+- `./e-instrumentsStudioBass_r32591_v1.0.alp`: Audio, Ableton, or sample file: never moved
+- `./InstallLDBPackage64c-2-1-5-01.zip`: Audio, Ableton, or sample file: never moved
+- `./Kitchen Table - by Yami.zip`: Audio, Ableton, or sample file: never moved
+- `./WA_IBG_Vocal_Chain.zip`: Audio, Ableton, or sample file: never moved
+- `./BEHRINGER_2902_X64_2.8.40 (1).zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./DC1A3 2.dmg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./DC1A3.dmg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./INSTRUMENT-installer (1).pkg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./INSTRUMENT-installer.pkg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./Multiply_OSX_1_1_1 2.pkg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./Splice (1).dmg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./Splice.dmg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./VIBES MASTER.als 2`: Audio, Ableton, sample, or music-gear file: never moved
+- `./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg`: Audio, Ableton, sample, or music-gear file: never moved
+- `./AllGVSTMacUBeta.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./BEHRINGER_2902_WIN32_2.8.17.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./BEHRINGER_2902_X64_2.8.40.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./Boogex_Mac.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./DC1A3-mac-installer.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./DeltaModulatorOSX.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./maudioplugins_12_03_setupmac.zip`: Audio, Ableton, sample, or music-gear file: never moved
+- `./maudioplugins_14_16_setupmac.zip`: Audio, Ableton, sample, or music-gear file: never moved

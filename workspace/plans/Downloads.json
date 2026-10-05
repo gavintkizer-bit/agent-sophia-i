@@ -331,11 +331,6 @@
    "reason": ".jpg file"
   },
   {
-   "file": "./BEHRINGER_2902_X64_2.8.40 (1).zip",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
    "file": "./Blended Geologic Time (1).pptx",
    "to_folder": "_Sophia To Delete/Duplicates",
    "reason": "Exact copy of another file here"
@@ -361,24 +356,9 @@
    "reason": ".pptx file"
   },
   {
-   "file": "./BreakSelectionbySampleMagic_r36457_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./Breakbeat patterns.jpg",
    "to_folder": "Images",
    "reason": ".jpg file"
-  },
-  {
-   "file": "./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
-   "file": "./BuildandDrop_r47739_v1.1.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./CHRONOS.md",
@@ -414,16 +394,6 @@
    "file": "./Charlotte_Skyline_2011_-_Ricky_W.jpg",
    "to_folder": "Images",
    "reason": ".jpg file"
-  },
-  {
-   "file": "./ChopandSwing_r47707_v1.1.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
-   "file": "./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./Cockatrice-Omenpath-2.10.1-beta-macOS14_Apple.dmg",
@@ -466,16 +436,6 @@
    "reason": ".pdf file"
   },
   {
-   "file": "./DC1A3 2.dmg",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./DC1A3.dmg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
-  },
-  {
    "file": "./DJENT DRUM TRACK - _TEMPERANCE_ - 100 BPM - Metal! Drum Kit.mp4",
    "to_folder": "Video",
    "reason": ".mp4 file"
@@ -491,11 +451,6 @@
    "reason": ".pdf file"
   },
   {
-   "file": "./DesignerDrums_r32877_v9.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./DespicableG50842_122644193.pdf",
    "to_folder": "Documents",
    "reason": ".pdf file"
@@ -509,11 +464,6 @@
    "file": "./Dogs of Courage.pdf",
    "to_folder": "Documents",
    "reason": ".pdf file"
-  },
-  {
-   "file": "./DriveandGlow_r49040_v1.2.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./Drum machine patterns 260.pdf",
@@ -866,11 +816,6 @@
    "reason": ".jpg file"
   },
   {
-   "file": "./GratisHitsbyMaxforCats_r33796_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./Harold Vick-Wild Is The Wind.mp4",
    "to_folder": "Video",
    "reason": ".mp4 file"
@@ -931,16 +876,6 @@
    "reason": ".heic file"
   },
   {
-   "file": "./INSTRUMENT-installer (1).pkg",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./INSTRUMENT-installer.pkg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
-  },
-  {
    "file": "./Image-1-Ossabaw-Map-scaled.jpg",
    "to_folder": "Images",
    "reason": ".jpg file"
@@ -991,29 +926,9 @@
    "reason": ".mp4 file"
   },
   {
-   "file": "./KJSawkaMadBeatz_r32873_v9.0 (1).alp",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./KJSawkaMadBeatz_r32873_v9.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
-   "file": "./KapturebyPlastikmanandLiine_r32873_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./Karta_CN_SouthChinaSea.png",
    "to_folder": "Images",
    "reason": ".png file"
-  },
-  {
-   "file": "./KasiobyOliLarkin_r32873_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./Kizer_Gavin_4352959_7_22_2024.pdf",
@@ -1051,21 +966,6 @@
    "reason": ".jpg file"
   },
   {
-   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (1).alp",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (2).alp",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./Max7PitchandTimeMachines_r43196_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4",
    "to_folder": "Video",
    "reason": ".mp4 file"
@@ -1094,11 +994,6 @@
    "file": "./Movie Excel Data.xlsx",
    "to_folder": "Documents",
    "reason": ".xlsx file"
-  },
-  {
-   "file": "./Multiply_OSX_1_1_1 2.pkg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
   },
   {
    "file": "./Nepotism Vs. Merit Edit Draft.pdf",
@@ -1149,11 +1044,6 @@
    "file": "./Patterns1.jpg",
    "to_folder": "Images",
    "reason": ".jpg file"
-  },
-  {
-   "file": "./PitchDropbyMormo_r25158_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./Pocket operations.pdf",
@@ -1226,34 +1116,9 @@
    "reason": ".mp4 file"
   },
   {
-   "file": "./Singularities_r49122_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
    "file": "./Smith on Virginia.docx",
    "to_folder": "Documents",
    "reason": ".docx file"
-  },
-  {
-   "file": "./SolidSounds_r28796_v9.0 (1).alp",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
-   "file": "./SolidSounds_r28796_v9.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
-   "file": "./Splice (1).dmg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
-  },
-  {
-   "file": "./Splice.dmg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
   },
   {
    "file": "./Steve Jobss Philosophy.mp4",
@@ -1264,16 +1129,6 @@
    "file": "./Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf",
    "to_folder": "Documents",
    "reason": ".pdf file"
-  },
-  {
-   "file": "./StringQuartetbySpitfireAudio_r59561_v1.1.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
-  },
-  {
-   "file": "./SynthEssentials_r46620_v1.1.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./TXT.rtf",
@@ -1386,11 +1241,6 @@
    "reason": ".png file"
   },
   {
-   "file": "./VIBES MASTER.als 2",
-   "to_folder": "_Sophia To Delete/Duplicates",
-   "reason": "Exact copy of another file here"
-  },
-  {
    "file": "./Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf",
    "to_folder": "Documents",
    "reason": ".pdf file"
@@ -1409,11 +1259,6 @@
    "file": "./Virgen Negra.mp4",
    "to_folder": "Video",
    "reason": ".mp4 file"
-  },
-  {
-   "file": "./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg",
-   "to_folder": "_Sophia To Delete/Installers",
-   "reason": "Installer; app is likely already installed"
   },
   {
    "file": "./Wolfgang Lauth Quartett - Moonlight Fantasy.mp4",
@@ -1609,11 +1454,6 @@
    "file": "./drfone_full3361.dmg",
    "to_folder": "_Sophia To Delete/Installers",
    "reason": "Installer; app is likely already installed"
-  },
-  {
-   "file": "./e-instrumentsStudioBass_r32591_v1.0.alp",
-   "to_folder": "_Sophia To Delete/Ableton Packs - delete if installed",
-   "reason": "Live Pack installer; check Ableton first"
   },
   {
    "file": "./eastern-seaboard-nav-companion (1).html",
@@ -2456,11 +2296,6 @@
    "reason": "Audio driver installer"
   },
   {
-   "file": "./AllGVSTMacUBeta.zip",
-   "to_folder": "Archives",
-   "reason": "Audio plugin archive"
-  },
-  {
    "file": "./AlluringBliss 1.16 v1.2.0.00.zip",
    "to_folder": "Archives",
    "reason": "Minecraft texture pack"
@@ -2469,16 +2304,6 @@
    "file": "./Andorhal HD.zip",
    "to_folder": "Archives",
    "reason": "Minecraft texture pack"
-  },
-  {
-   "file": "./BEHRINGER_2902_WIN32_2.8.17.zip",
-   "to_folder": "Installers",
-   "reason": "Audio device driver"
-  },
-  {
-   "file": "./BEHRINGER_2902_X64_2.8.40.zip",
-   "to_folder": "Installers",
-   "reason": "Audio device driver"
   },
   {
    "file": "./Beyond+the+Lands.zip",
@@ -2491,21 +2316,6 @@
    "reason": "Minecraft mod"
   },
   {
-   "file": "./Boogex_Mac.zip",
-   "to_folder": "Installers",
-   "reason": "Audio plugin Mac installer"
-  },
-  {
-   "file": "./DC1A3-mac-installer.zip",
-   "to_folder": "Installers",
-   "reason": "Audio plugin installer"
-  },
-  {
-   "file": "./DeltaModulatorOSX.zip",
-   "to_folder": "Installers",
-   "reason": "Audio plugin Mac installer"
-  },
-  {
    "file": "./Hearthstone-Setup.zip",
    "to_folder": "Installers",
    "reason": "Game installer"
@@ -2516,17 +2326,7 @@
    "reason": "Video file"
   },
   {
-   "file": "./InstallLDBPackage64c-2-1-5-01.zip",
-   "to_folder": "Installers",
-   "reason": "Audio software installer"
-  },
-  {
    "file": "./JehkobasFantasy_5.zip",
-   "to_folder": "Archives",
-   "reason": "Minecraft texture pack"
-  },
-  {
-   "file": "./Kitchen Table - by Yami.zip",
    "to_folder": "Archives",
    "reason": "Minecraft texture pack"
   },
@@ -2631,11 +2431,6 @@
    "reason": "HTML page archive"
   },
   {
-   "file": "./WA_IBG_Vocal_Chain.zip",
-   "to_folder": "Archives",
-   "reason": "Audio archive (see rules)"
-  },
-  {
    "file": "./Winthor Medieval v2.6 WIP MC 1.14.zip",
    "to_folder": "Archives",
    "reason": "Minecraft texture pack"
@@ -2704,16 +2499,6 @@
    "file": "./gtkizer97@gmail.com.ical.zip",
    "to_folder": "Documents",
    "reason": "Calendar file"
-  },
-  {
-   "file": "./maudioplugins_12_03_setupmac.zip",
-   "to_folder": "Installers",
-   "reason": "Audio plugin installer"
-  },
-  {
-   "file": "./maudioplugins_14_16_setupmac.zip",
-   "to_folder": "Installers",
-   "reason": "Audio plugin installer"
   },
   {
    "file": "./mcedit2-macosx64-2.0.0-beta11.zip",
@@ -5440,6 +5225,178 @@
   {
    "file": "./673 Samples Drum Kit (Hipstrumentals.com).zip",
    "reason": "Audio samples (protected)"
+  },
+  {
+   "file": "./BreakSelectionbySampleMagic_r36457_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./BreakbeatsbyKutMastaKurt_r32873_v9.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./BuildandDrop_r47739_v1.1.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./ChopandSwing_r47707_v1.1.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./DesignerDrums_r32877_v9.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./DriveandGlow_r49040_v1.2.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./GratisHitsbyMaxforCats_r33796_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./KJSawkaMadBeatz_r32873_v9.0 (1).alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./KJSawkaMadBeatz_r32873_v9.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./KapturebyPlastikmanandLiine_r32873_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./KasiobyOliLarkin_r32873_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (1).alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0 (2).alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./Max7PitchandTimeMachines_r43196_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./PitchDropbyMormo_r25158_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./Singularities_r49122_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./SolidSounds_r28796_v9.0 (1).alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./SolidSounds_r28796_v9.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./StringQuartetbySpitfireAudio_r59561_v1.1.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./SynthEssentials_r46620_v1.1.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./e-instrumentsStudioBass_r32591_v1.0.alp",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./InstallLDBPackage64c-2-1-5-01.zip",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./Kitchen Table - by Yami.zip",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./WA_IBG_Vocal_Chain.zip",
+   "reason": "Audio, Ableton, or sample file: never moved"
+  },
+  {
+   "file": "./BEHRINGER_2902_X64_2.8.40 (1).zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./DC1A3 2.dmg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./DC1A3.dmg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./INSTRUMENT-installer (1).pkg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./INSTRUMENT-installer.pkg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./Multiply_OSX_1_1_1 2.pkg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./Splice (1).dmg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./Splice.dmg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./VIBES MASTER.als 2",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./VoxengoOldSkoolVerb_241_Mac_VST_VST3_setup.dmg",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./AllGVSTMacUBeta.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./BEHRINGER_2902_WIN32_2.8.17.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./BEHRINGER_2902_X64_2.8.40.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./Boogex_Mac.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./DC1A3-mac-installer.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./DeltaModulatorOSX.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./maudioplugins_12_03_setupmac.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
+  },
+  {
+   "file": "./maudioplugins_14_16_setupmac.zip",
+   "reason": "Audio, Ableton, sample, or music-gear file: never moved"
   }
  ]
 }

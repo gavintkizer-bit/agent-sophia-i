@@ -35,3 +35,13 @@ Mac: 2016 MacBook Pro, Intel, macOS 12.7.6 Monterey.
 | Cowork | official pages don't say; blogs say Apple Silicon only | unknown, likely no | blogs only |
 
 Decision: owner chose to stay with the current cloud setup (2026-10-05). Closed.
+
+## Cycle 3: 2026-10-05 (owner rule: no Ableton files or samples)
+
+| # | Severity | Finding | Fix | Status |
+|---|----------|---------|-----|--------|
+| 10 | bug | The Downloads plan moved all 22 `.alp` Ableton packs (to the review folder) and `WA_IBG_Vocal_Chain.zip`. | `.alp` added to PROTECTED; archives with music words protected. | fixed |
+| 11 | bug | `VIBES MASTER.als 2` (an Ableton project with a copy mark after the extension) was headed for Duplicates. | Protection ignores trailing copy marks (" 2", " (1)"). | fixed |
+| 12 | gap | Music plugin/driver installers (Splice, Voxengo, DC1A3, Behringer, M-Audio...) were in the Trash group; old free ones may not be re-downloadable. | Protected as music gear. | fixed |
+
+Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked against the script itself).
