@@ -39,7 +39,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## Goal
 - Keep laptop + life organized. Now: clean up the whole drive, starting with Downloads (15 GB).
-- macOS upgrade / Claude desktop: later, maybe never (hardware tops out at Monterey).
+- Claude desktop: officially needs macOS 11+, owner has 12.7.6, so it should be possible. Owner's notes say it
+  "won't install" (3 Claude.dmg copies in Downloads, Oct 4). Asked what happened (board). Claude Code locally needs 13+.
 
 ## Status (2026-10-05)
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
@@ -51,6 +52,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
 ## Ideas for later
+- Self-improvement routine: IMPROVE.md; open items in workspace/notes/improvement_log.md.
 - Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).
 - Let sophia.py also pick up uploads that land in the repo root.
 - Track which Ableton projects use files in Downloads, so those samples could be tidied safely.

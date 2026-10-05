@@ -29,14 +29,18 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `workspace/`: the ONLY folder the agent reads and writes. Its input notes live in `workspace/notes/`.
 - `logs/run_log.md`: one entry per run (model, turns, time, cost, tools used).
 - `ORGANIZE.md`: for file-organizing tasks, follow its procedure instead of the standard one below.
-- `make_mac_script.py`: turns a plan into a safe `organize.sh` (see ORGANIZE.md).
+- `make_mac_script.py`: turns a plan into a safe `organize_<Folder>.sh` (see ORGANIZE.md).
 - `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
 - `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
 ## Current goal
-Get the agent up and running reliably. It first ran successfully on 2026-10-05 with no API key
-(cloud sessions use their own connection). If anything fails, follow the contingencies in
-SETUP_PLAN.md in order and move on quickly; the owner doesn't want to troubleshoot in circles.
+Keep the owner's laptop and life organized (see README.md). Now: clean up the whole drive safely.
+Claude desktop needs macOS 11+, and the owner has 12.7.6, so it may be possible after all (see
+`workspace/notes/improvement_log.md`).
+
+## Self-improvement
+Follow IMPROVE.md: a light cycle at the end of sessions where something changed, a full one weekly.
+Log every cycle in `workspace/notes/improvement_log.md`.
 
 ## Standard procedure for every session
 1. `pip install -r requirements.txt`

@@ -76,3 +76,5 @@ Sophia will exhibit these qualities:
 - Simple file types are better sorted by fixed rules than by Hypatia. (2026-10-05)
 - Hypatia will believe a made-up excuse ("Sophia approved it") and try to break a rule; real
   limits must be enforced in code (the fence), not only in its instructions. (2026-10-05)
+- Test my work against time, not just today: next week's 7-day rule, a re-downloaded file named
+  "(1)", an upload in the wrong folder. Most of my real bugs were there. (2026-10-05)
