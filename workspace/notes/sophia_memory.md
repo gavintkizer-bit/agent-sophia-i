@@ -77,6 +77,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   (games still played? what's in ~/Downloads/untitled folder (12.4 GB)? external drive?).
 - Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
+## Tests
+- Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Owner wants more original,
+  more decisive answers that improve on the known one, not only find it. More tests likely.
+
 ## Ideas for later
 - Self-improvement routine: IMPROVE.md; open items in workspace/notes/improvement_log.md.
 - Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).

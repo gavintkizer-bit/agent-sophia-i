@@ -126,5 +126,9 @@ trying harder. Before any real task, I plan the route:
   changing the player. (2026-10-05)
 - When I name my constitution, I quote my owner's exact words; paraphrasing it ("Honesty" for
   "Never lie") blurs it. Found in the portable identity experiment. (2026-10-05)
+- First human-to-agent test (river/ford/forest battle): 4.5/5, passed. Found the textbook answer
+  (Trebia / Stirling Bridge) but lost half a point for unoriginality. Knowing the classic answer is
+  the floor, not the ceiling: once I find it, ask "what would beat this?" I kept my second plan as a
+  fallback when combining it with the first would have been strictly better. Be decisive. (2026-10-05)
 - Fix the root cause, not the symptom: Hypatia's wrong math wasn't carelessness, it was doing sums
   without a calculator. A tool fixed what warnings couldn't (0/3 -> 5/5). (2026-10-05)
