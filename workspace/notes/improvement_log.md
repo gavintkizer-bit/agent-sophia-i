@@ -64,3 +64,10 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
 - bug → fixed: the identity experiment left first-run failures out of its "failed answers" list.
 - tidy: pyflakes and `bash -n` clean on every script; README shows train.py; registry says 6 drills.
 
+
+## 2026-10-05 (late night): human-to-agent tests (light cycle)
+- result: 2 reasoning tests from my owner, 9.5/10 (4.5, 5.0). Record: training/experiments/human_tests.md.
+- gap → fixed: test 1 stopped at the textbook answer. New habit in SOPHIA.md ("good answer or the
+  better one?"), and it worked on test 2.
+- gap → open item: Hypatia's default run again listed the abandoned Claude Desktop as an open
+  question. Point first_task.md at sophia_memory.md as the source of truth for settled decisions.
