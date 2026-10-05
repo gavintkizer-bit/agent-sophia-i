@@ -22,3 +22,16 @@ One entry per cycle (see IMPROVE.md). Newest at the bottom. Severity: bug / gap 
 - Fixed #6 and #7 above in `agent.py`; setup check still READY. No paid runs needed.
 - Owner's board: nothing ticked yet (they were asleep). Their list carries over as is.
 - Still open: #8 (scan reads ~/Library twice), #9 (Ableton pack names in the scan). Next full cycle: weekly.
+
+## Research: Claude Desktop on the owner's Mac (2026-10-05, owner asked)
+
+Mac: 2016 MacBook Pro, Intel, macOS 12.7.6 Monterey.
+
+| Piece | Official requirement | On this Mac | Source |
+|---|---|---|---|
+| Desktop app (Chat) | macOS 11+; universal build for Intel and Apple Silicon | should work | [support: install](https://support.claude.com/en/articles/10065433-install-claude-desktop), [docs: desktop](https://code.claude.com/docs/en/desktop) |
+| Code tab, **Cloud** sessions | runs in the cloud (like claude.ai/code now) | likely works; not confirmed | [docs: desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart) |
+| Code tab, **Local** sessions | runs Claude Code on the Mac; Claude Code needs macOS 13+ | probably not on 12.7.6 (inferred; docs don't state the desktop limit) | [docs: setup](https://code.claude.com/docs/en/setup) |
+| Cowork | official pages don't say; blogs say Apple Silicon only | unknown, likely no | blogs only |
+
+Open: what error the owner got installing Claude.dmg (asked on the board too).
