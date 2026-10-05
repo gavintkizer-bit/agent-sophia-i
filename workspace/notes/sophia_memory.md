@@ -18,10 +18,15 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## Status (2026-10-05)
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
-- Downloads script ready (`workspace/out/Downloads/organize.sh`): 547 moves, 7.5 GB to review. NOT run yet.
-- Waiting on owner: run the Downloads script, review `_Sophia To Delete`, run `sophia_scan.sh`, upload the results.
-- Daily check-in routine at 14:47 UTC processes new uploads in `workspace/inbox/`.
+- Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
+- First full scan done: 18.0 GB free of 244.8 GB. Report: `workspace/cleanup_report.md` (I rewrote the helper's draft).
+- Scripts ready, NOT run yet: Downloads (555 moves, 7.5 GB to review), Documents (20), Desktop (1).
+- Waiting on owner: run the Downloads script, review `_Sophia To Delete`, answer the report's 3 questions
+  (games still played? what's in ~/Downloads/untitled folder (12.4 GB)? external drive?).
+- Owner uploaded the scan to the repo root, not workspace/inbox/. I moved it. Check the root next time too.
 
 ## Ideas for later
+- Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).
+- Let sophia.py also pick up uploads that land in the repo root.
 - Track which Ableton projects use files in Downloads, so those samples could be tidied safely.
 - Weekly scheduled run; web search for the helper.

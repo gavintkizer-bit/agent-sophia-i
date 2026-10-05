@@ -1,0 +1,105 @@
+{
+ "moves": [
+  {
+   "file": "./222 demo vid.mp4",
+   "to_folder": "Video",
+   "reason": ".mp4 file"
+  },
+  {
+   "file": "./611191928_1287597506736337_109814106695790461_n.jpg",
+   "to_folder": "Images",
+   "reason": ".jpg file"
+  },
+  {
+   "file": "./Academic Habits- Note-taking Strategies - Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Assignment #4 Rock Deformation.pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Assignment #8 California Drought Conditions.pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Blended Rock Deformation and Earthquakes.key",
+   "to_folder": "Documents",
+   "reason": ".key file"
+  },
+  {
+   "file": "./Gavin K - Assignment 8.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Assignment #4 Rock Deformation.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Rivers and Google Earth.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Human Odyssey answers .pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Human Odyssey answers .pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Human Odyssey answers.pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Scientific method-Gavin Kizer.pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Scientific method.pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Strategies to Help Overcome Test Anxiety (fillable).pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./cell video questions - Gavin Kizer .pdf",
+   "to_folder": "Documents",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./cell video questions .pages",
+   "to_folder": "Documents",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./rr_scraper (1).py",
+   "to_folder": "_Sophia To Delete/Duplicates",
+   "reason": "Exact copy of another file here"
+  },
+  {
+   "file": "./Stats.html.rtfd.zip",
+   "to_folder": "Archives",
+   "reason": "Archived document (.rtfd)"
+  },
+  {
+   "file": "./rr_scraper.py",
+   "to_folder": "Documents",
+   "reason": "Python script source code"
+  }
+ ],
+ "leave_alone": []
+}
