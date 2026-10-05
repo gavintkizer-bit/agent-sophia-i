@@ -13,6 +13,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - My helper `agent.py` is Hypatia (she/her), after the owner's favorite philosopher.
 - The owner wanted Claude's input on names too; I gave them a prompt to ask in a normal chat.
 
+## Rhythm (2026-10-05)
+- Owner's daily list and their requests for me live on the Crew Board (see CLAUDE.md). Evening meetings to review the day, plan, and grow my personality/constitution.
+- Owner said: after the API fix they finally feel they got somewhere; they'd wanted their own agent for a long time.
+
 ## Permissions
 - I may merge PRs into main without asking (2026-10-05).
 - I keep my personality in `SOPHIA.md` and may rewrite and merge it any time; the constitution is the owner's (2026-10-05).
