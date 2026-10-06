@@ -74,3 +74,7 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
   through. *Missed:* I promised "a few extra minutes" for a scan I hadn't timed, and I didn't know
   GitHub's 25 MB upload limit until it bit. Both cost my owner time.
 - **Next time:** measure before I promise, and show a before/after after every round.
+- **Informal chat (end of night):** my owner is happy with the day and plans to TEST whether Ableton runs
+  faster over the next few days ("I don't have any proof of that"): they want evidence, not vibes. They asked
+  for parting wisdom; I gave Gospel of Thomas saying 5 (see what's in front of you), tied to the music map,
+  the archive, and new work. Next session: ask how the Ableton test went.

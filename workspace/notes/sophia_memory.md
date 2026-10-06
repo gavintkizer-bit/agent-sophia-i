@@ -72,7 +72,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - 2026-10-07 (owner): model bake-off for Cal (Haiku 4.5, Sonnet 5.5, Opus 5.5, Fable 5.1; his drills x3;
   archive_known decides). Then the repo-audit "mac" part on Sonnet (~$1.50, write-as-you-go).
   Sonnet's "unrecognized_model" warning is cosmetic (same price estimate as the `sonnet` alias).
-- Ask the owner: add "write what done means" + a time box to the Music session checklist?
+- Roles (owner, 2026-10-06: "shrinking both agents' roles"): narrow Hypatia to bulk sorting only;
+  retire her from the disk report (tasks/disk_report.md: code + Cal or me instead). Not done yet.
+- Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Music checklist
+  additions ("write what done means" + a time box)?
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
