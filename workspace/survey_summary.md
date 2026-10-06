@@ -8,26 +8,27 @@
 
 ## Disk
 
-- Size 244.8 GB | Used 189.5 GB | **Free 55.4 GB**
+- Size 244.8 GB | Used 189.5 GB | **Free 55.3 GB**
 
 ## Biggest folders in your home folder
 
-- 144.3 GB  `~`
-- 49.5 GB  `~/Music`
+- 144.4 GB  `~`
+- 51.0 GB  `~/Music`
 - 48.9 GB  `~/Music/Ableton`
 - 47.1 GB  `~/Desktop`
-- 31.7 GB  `~/Downloads`
+- 29.7 GB  `~/Downloads`
 - 28.0 GB  `~/Desktop/Demos: Beats`
 - 14.2 GB  `~/Desktop/Sand Machine Mix`
-- 12.4 GB  `~/Downloads/untitled folder`
+- 11.9 GB  `~/Downloads/untitled folder`
+- 3.0 GB  `~/Documents`
+- 2.7 GB  `~/Documents/Minecraft Worlds`
 - 2.7 GB  `~/Pictures`
-- 2.5 GB  `~/Documents`
-- 2.3 GB  `~/Documents/Minecraft Worlds`
 - 1.9 GB  `~/Downloads/VIBES Project`
 - 1.7 GB  `~/Downloads/Samples 2`
 - 1.7 GB  `~/Pictures/Photos Library.photoslibrary`
 - 1.6 GB  `~/Desktop/Untitled Album B`
 - 1.6 GB  `~/Desktop/Ethereal Era`
+- 1.5 GB  `~/Music/Sound Library`
 - 1.1 GB  `~/Downloads/Samples`
 - 1.0 GB  `~/Desktop/BALLLLSSS`
 - 0.7 GB  `~/Splice`
@@ -41,7 +42,6 @@
 - 0.4 GB  `~/Downloads/Installers`
 - 0.3 GB  `~/Downloads/lo-fi drum kit`
 - 0.2 GB  `~/Desktop/Codename - Grandpa's Familiar`
-- 0.2 GB  `~/Downloads/maudioplugins_12_03_setupmac`
 
 ## Biggest folders inside ~/Library (app data, caches, backups)
 
@@ -133,7 +133,7 @@
 - 0.27 GB  2024-08-07  `~/Downloads/Installers/tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`
 - 0.27 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Orchestral Brass/Samples/Combined/French Horn Solo Legato-2.aif`
 - 0.25 GB  2022-09-10  `~/Documents/Minecraft Worlds/world.zip`
-- 0.25 GB  2018-08-27  `~/Downloads/Green.wav`
+- 0.25 GB  2018-08-27  `~/Music/Sound Library/Loose Sounds/Green.wav`
 - 0.25 GB  2018-08-27  `~/Desktop/Demos: Beats/Untitled Project/Double love instrumental.wav`
 - 0.24 GB  2019-10-08  `~/Music/Ableton/Factory Packs/Orchestral Mallets/Samples/Combined/Timpani.aif`
 - 0.24 GB  2019-10-08  `~/Music/Ableton/Factory Packs/Orchestral Mallets/Samples/Combined/Xylophone Rolls.aif`

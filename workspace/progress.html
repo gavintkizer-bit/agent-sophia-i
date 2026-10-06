@@ -58,16 +58,16 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   </header>
 
   <div class="tiles">
-    <div class="tile"><b>+35.6 GB</b><span>freed tonight</span></div>
-    <div class="tile"><b>442</b><span>Downloads files sorted</span></div>
+    <div class="tile"><b>+37.3 GB</b><span>freed tonight</span></div>
+    <div class="tile"><b>995</b><span>files and folders put in their place</span></div>
     <div class="tile"><b>7 of 7</b><span>Hypatia's drills passing</span></div>
-    <div class="tile"><b>$4.43</b><span>Hypatia's reported cost today</span></div>
+    <div class="tile"><b>$4.95</b><span>Hypatia's reported cost, all of it</span></div>
   </div>
 
   <section>
     <h2>Free space on your Mac</h2>
-    <p class="note">From your three scans: before cleanup, after round 1 (Downloads, installers, caches), and after round 2 (old games).</p>
-    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 GB after round 1, 53.6 GB after round 2"></svg></div>
+    <p class="note">From your scans: before cleanup, after round 1 (Downloads, installers, caches), round 2 (old games), and after organizing.</p>
+    <div class="chart"><svg id="space" viewBox="0 0 600 240" role="img" aria-label="Free space: 18.0 GB at first scan, 26.5 after round 1, 53.6 after round 2, 55.3 after organizing"></svg></div>
       </section>
 
   <section>
@@ -92,18 +92,28 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
   </section>
 
   <section>
+    <h2>Organized tonight</h2>
+    <ul>
+      <li><b>Documents:</b> School, Finance, Code, Books, Papers. <b>Pictures:</b> Photos, Screenshots, Images.</li>
+      <li><b>Music &gt; Sound Library (new):</b> 196 loose sounds and one drum folder that no project uses, checked against 151,385 sample links in 1,368 Ableton files.</li>
+      <li><b>Minecraft:</b> your worlds, about 17,000 pack and map files, and a loose world, together in Documents.</li>
+      <li>Every move has an undo file in Documents &gt; Sophia &gt; Undo.</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Next steps</h2>
     <ol>
-      <li><b>Done tonight:</b> old games and caches cleared; your Minecraft worlds are safe in Documents. The safe, non-music cleanup is basically finished.</li>
-      <li><b>USB drive:</b> when you have one, I'll plan a copy-and-check for the untitled folder (12.4 GB). Nothing gets removed until the copy is verified.</li>
-      <li><b>Ableton packs:</b> check which of the 22 packs are already installed. Only those copies could go, and only with your yes.</li>
+      <li><b>Music, round 2:</b> sample packs in Downloads stay until each project that uses them is self-contained (Ableton's "Collect All and Save"). Then whole packs can move safely.</li>
+      <li><b>USB drive:</b> copy, check, then remove: finished projects and the untitled folder (12 GB).</li>
+      <li><b>Ableton packs:</b> check which of the 22 <code>.alp</code> files are installed. Only those copies could go, with your yes.</li>
     </ol>
   </section>
 
   <section>
     <h2>Goals</h2>
     <ul>
-      <li>Free space: from 18 GB to 50 GB or more, without touching your music. <b>Reached: 53.6 GB.</b></li>
+      <li>Free space: from 18 GB to 50 GB or more, without breaking any music. <b>Reached: 55.3 GB.</b></li>
       <li>Keep Hypatia's drills at 7 of 7, and turn each new mistake into a drill.</li>
       <li>Then the music section on the board: finishing tracks, finding a band.</li>
     </ul>
@@ -134,6 +144,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
     { label: "First scan", v: 18.0, note: "First scan, before any cleanup: 18.0 GB free" },
     { label: "Round 1", v: 26.5, note: "After round 1: 26.5 GB free (+8.5 GB)" },
     { label: "Round 2", v: 53.6, note: "After round 2 (games and caches): 53.6 GB free (+27.1 GB)" },
+    { label: "Organized", v: 55.3, note: "After the organizing rounds and the last games: 55.3 GB free" },
   ];
   const top = 20, base = 200, max = 60, h = (v) => (base - top) * v / max;
   [0, 20, 40, 60].forEach((t) => {
@@ -142,7 +153,7 @@ td, th { text-align: left; padding: 4px 12px 4px 0; border-bottom: 1px solid var
     add(space, "text", { x: 58, y: y + 5, "text-anchor": "end" }, t + " GB");
   });
   bars.forEach((b, i) => {
-    const w = 110, x = 90 + i * 170, y = base - h(b.v);
+    const w = 96, x = 84 + i * 128, y = base - h(b.v);
     const r = add(space, "path", {
       d: `M${x},${base} V${y + 4} Q${x},${y} ${x + 4},${y} H${x + w - 4} Q${x + w},${y} ${x + w},${y + 4} V${base} Z`,
       fill: b.forecast ? "var(--saffron-soft)" : "var(--lapis)",
