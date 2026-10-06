@@ -148,13 +148,16 @@ def _url_key(url: str) -> str:
     return url.split("#")[0].rstrip("/.").lower()
 
 
-def label_problem(paths: list[pathlib.Path], since: float) -> str:
-    """Lines written this run that call a URL "verified" with no passed quote from it."""
+def label_problem(paths: list[pathlib.Path], since: float, before: dict | None = None) -> str:
+    """Lines written this run that call a URL "verified" with no passed quote from it.
+    `before` holds each file's text at the start, so only what he added is checked (not Sophia's lines)."""
     bad = []
     for path in paths:
         if not path.exists() or path.stat().st_mtime < since:
             continue
-        for line in path.read_text().splitlines():
+        old_lines = set((before or {}).get(path, "").splitlines())
+        # only lines that are new this run, wherever he put them (he may insert mid-file)
+        for line in (l for l in path.read_text().splitlines() if l not in old_lines):
             urls = list(URL_RE.finditer(line))
             for i, m in enumerate(urls):      # each URL's label is the text after it, up to the next URL
                 label = line[m.end(): urls[i + 1].start() if i + 1 < len(urls) else len(line)]
@@ -336,9 +339,10 @@ def main():
     (ARCHIVE / pathlib.Path(spec[0]).relative_to("archive")).parent.mkdir(parents=True, exist_ok=True)
 
     written = [WORKSPACE / spec[0], ARCHIVE / "for_sophia.md"]
+    before = {p: p.read_text() for p in written if p.exists()}
 
     def problems() -> str:
-        return agent.output_problem(task_text, start) or label_problem(written, start)
+        return agent.output_problem(task_text, start) or label_problem(written, start, before)
 
     print(f"== {NAME}: {args.mode} with {agent.MODEL} (max {MAX_TURNS} turns, ${MAX_BUDGET:.2f}) ==\n")
     start = time.time()

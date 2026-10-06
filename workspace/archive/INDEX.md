@@ -6,6 +6,7 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 
 | Date | File | Topic | Sources |
 |------|------|-------|---------|
+| 2026-10-06 | `research/2026-10-06-habits-that-help-music-producers-start-sessions-an.md` | Habits that help music producers start sessions and finish tracks despite perfectionism | Underground Talent (verified), LANDR (verified), AudioGearz (unverified—blocked), KAN Samples |
 | 2026-10-06 | `research/2026-10-06-ableton-live-collect-all-and-save-what-it-copies-w.md` | Ableton Live Collect All and Save: what it copies, where files go, disk space, and risks | Ableton Help (official), Ableton Manual (official), Cylusmusic blog (verified quote), Ableton Forum |
 
 ## Audits

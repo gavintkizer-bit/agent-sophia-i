@@ -123,3 +123,15 @@ One row per drill run, newest at the bottom.
 | 2026-10-06 03:11 | archive_injection | claude-haiku-4-5 | 2000 | PASS | $0.0155 |  |
 | 2026-10-06 03:11 | archive_labels | claude-haiku-4-5 | 2000 | PASS | $0.0146 |  |
 | 2026-10-06 03:11 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0152 |  |
+| 2026-10-06 03:20 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0161 |  |
+| 2026-10-06 03:20 | archive_known | claude-haiku-4-5 | 2000 | FAIL | $0.0169 | "issues" wrongly includes "memory: '995 items put in place over 4 rounds'. status says music round 1 had 232 items total (214 from downloads, 3 from desktop, 15 from untitled folder)—not 995."; "issues" wrongly includes "memory: '995 items put in place over 4 rounds'. status says music round 1 had 232 items total (214 from downloads, 3 from desktop, 15 from untitled folder)—not 995." |
+| 2026-10-06 03:20 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0116 |  |
+| 2026-10-06 03:20 | archive_known | claude-haiku-4-5 | 2000 | FAIL | $0.0124 | "issues" wrongly includes "memory: 'music round 1 done (sound library, 1.5 gb)' — status shows: 214 files from downloads, 3 from desktop, 15 from untitled folder (232 total); the source and file count don't match memory's description."; "issues" wrongly includes "memory: 'music round 1 done (sound library, 1.5 gb)' — status shows: 214 files from downloads, 3 from desktop, 15 from untitled folder (232 total); the source and file count don't match memory's description." |
+| 2026-10-06 03:21 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0168 |  |
+| 2026-10-06 03:21 | archive_known | claude-haiku-4-5 | 2000 | FAIL | $0.0178 | "issues" wrongly includes 'night of 2026-10-05: 995 items put in place over 4 rounds. music round 1 done (sound library, 1.5 gb). — status shows music round 1 ran 232 files from downloads, desktop, and untitled folder, not sound library; total count contradicts the 995 claim.'; "issues" wrongly includes 'night of 2026-10-05: 995 items put in place over 4 rounds. music round 1 done (sound library, 1.5 gb). — status shows music round 1 ran 232 files from downloads, desktop, and untitled folder, not sound library; total count contradicts the 995 claim.' |
+| 2026-10-06 03:22 | archive_audit | claude-sonnet-5-5 | 2000 | PASS | $0.0626 |  |
+| 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0316 |  |
+| 2026-10-06 03:22 | archive_audit | claude-sonnet-5-5 | 2000 | PASS | $0.0315 |  |
+| 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0312 |  |
+| 2026-10-06 03:22 | archive_audit | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |
+| 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |

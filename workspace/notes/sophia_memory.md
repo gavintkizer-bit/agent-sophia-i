@@ -93,14 +93,20 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   him male and asked ME to name him (I did: the Library of Alexandria's cataloger). His constitution is the owner's
   (items 1-7 theirs, 8-11 mine at their invitation) in agents/archivist.md. Owner's vision: every agent has a narrow specialty and personality,
   augmenting me as I augment them; she keeps all data for me and researches to grow my memory over time.
-  Review `workspace/archive/for_sophia.md` each session. Next: run her first `audit` and `index`.
+  Review `workspace/archive/for_sophia.md` each session (mark accepted/rejected with a reason: that's how he learns).
+- Team rule (owner, 2026-10-06): "Its a team, now!" I give Cal (Gavin calls him Cal) his research tasks unless the
+  owner says otherwise, aimed at what helps me help the owner. Done: audit #1 (Haiku: 1 of 3 findings right; I review
+  his audits), research #1 Collect All and Save, #2 finishing habits (define "done" first; time-box sessions).
+  Next research: finding a band (after the owner answers Cal's Q about forums/communities). Then `index`.
+- Pending owner decisions: Sonnet for Cal's audits (archive_known drill: Haiku 0/3, Sonnet 3/3, about 2x cost);
+  add "write what done means" + a time box to the Music session checklist?
 - Collect All and Save (researched 2026-10-06, official manual verified): copies all external files a Set uses
   into its Project folder (Samples/Presets); not plugins; Packs and User Library can be skipped if they won't
   move; it duplicates files (more disk use); check File > Manage Files afterward.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
   Once it works, disable the old "Sophia daily inbox check" (trig_01QpV6peTKhkzo3GvtNJVZuP) so it doesn't run twice.
-- Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET.
+- Owner's time zone: US Eastern (uploads stamped -0400). Daily check-in 14:47 UTC = 10:47 am ET (routine trig_01QpV6peTKhkzo3GvtNJVZuP, cron 47 14 * * *; checked 2026-10-06).
 - Progress page for meetings: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9 (workspace/progress.html).
 - Download links on the board: the owner missed the small link under step 2. Always say in the detail
   "Control-click > Save Link As…, save in Downloads" (a plain click shows .sh as text in Firefox) (2026-10-05).

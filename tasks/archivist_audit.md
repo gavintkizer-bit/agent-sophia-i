@@ -13,6 +13,10 @@ Look for:
 - **Unproven**: a claim in memory nothing in the record supports.
 - **Missing**: something important in the record (a decision, a result) that memory lacks.
 
+Before you file any finding, Grep the memory file for the newer fact (a key number, date or
+name). If memory already states it anywhere, even in another line, it is NOT a finding. Quote the
+memory line exactly and only file a finding the quoted evidence proves.
+
 Write `workspace/archive/audits/{date}-memory.md`: one bullet per finding, each with the type,
 the memory line (quoted exactly), the evidence (file + quoted line) and a suggested fix. If you
 find nothing in a category, say "none found". At most 12 findings, most important first.

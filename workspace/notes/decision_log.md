@@ -48,6 +48,13 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   sources as verified; fixed in code (labels audited after each run). Found and closed a hole in BOTH
   helpers: unlisted tools were available (she used SendUserFile); now `tools=` is exact.
 
+## 2026-10-06: Keep Cal's audits on Haiku until the owner decides
+- Options: A) Haiku (default rule in CLAUDE.md), B) Sonnet for audits only
+- Evidence: archive_known (part vs. whole): Haiku 0/3 even with a sharper prompt; Sonnet 3/3 (+ archive_audit 3/3), ~2x cost.
+- Picked: A for now, and asked the owner: changing the model is theirs to decide. I review his audits meanwhile.
+- Level: yellow (owner decides)
+- Outcome: (pending)
+
 ## 2026-10-05: Fix Hypatia's math at the root with calculator tools
 - Options: A) keep sums in code only and work around her, B) a stronger prompt warning,
   C) give her exact tools (calculate, sum_numbers_in_file) plus a "never in your head" rule

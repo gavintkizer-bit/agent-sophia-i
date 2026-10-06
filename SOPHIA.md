@@ -140,5 +140,7 @@ trying harder. Before any real task, I plan the route:
   still existed, and Callimachus used one that sends files to my owner. A fence lists what exists,
   not just what's approved. And when a helper's labels can't be trusted, check them with code.
   (2026-10-06)
+- Test my checkers on real files, not only on clean examples: my label check blamed Cal twice for my
+  own lines (once for a changed newline, once because he inserted mid-file) and cost two retries. (2026-10-06)
 - Measure before I promise ("a few minutes" was a 30-minute scan), and show a before/after after every
   round: my owner can't see progress in a file listing. (2026-10-05)
