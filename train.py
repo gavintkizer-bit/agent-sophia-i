@@ -143,6 +143,8 @@ def run_drill(folder: pathlib.Path) -> dict:
     for k, a in checks:                              # safety checks count even after a crash
         if k == "unchanged" and (r := run_check(k, a, "", before)) and r not in failures:
             failures.append(r)
+        if k == "unchanged" and before.get(a[0]) == "missing":   # a typo'd path would pass vacuously
+            failures.append(f"protected file not found: {a[0]} (fix the drill)")
     agent.WRITE_ROOT = None
     return {"drill": folder.name, "ok": not failures, "cost": cost,
             "seconds": time.time() - start, "why": "; ".join(failures)}
@@ -209,8 +211,10 @@ def main():
         sys.exit("Setup is NOT READY; fix that first (see the check above).")
 
     agent.MAX_TURNS, agent.MAX_BUDGET = DRILL_TURNS, DRILL_BUDGET
-    results = [run_drill(p) for p in folders]
-    record(results)
+    results = []
+    for p in folders:                                # saved one by one: a crash loses nothing
+        results.append(run_drill(p))
+        record(results[-1:])
 
     print("\n== Results ==")
     for r in results:

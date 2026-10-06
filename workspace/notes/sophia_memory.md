@@ -97,7 +97,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Team rule (owner, 2026-10-06): "Its a team, now!" I give Cal (Gavin calls him Cal) his research tasks unless the
   owner says otherwise, aimed at what helps me help the owner. Done: audit #1 (Haiku: 1 of 3 findings right; I review
   his audits), research #1 Collect All and Save, #2 finishing habits (define "done" first; time-box sessions).
-  Next research: finding a band (after the owner answers Cal's Q about forums/communities). Then `index`.
+  #3 Alexandria's mystical traditions (3 factual errors I caught; per-fact verification now in code).
+  Owner's research themes for Cal (2026-10-06): esotericism/mysticism, board game exploits, historical military
+  strategy and tactics, biological phenomena/anomalies to learn from. NOT bands ("superficial").
 - Pending owner decisions: Sonnet for Cal's audits (archive_known drill: Haiku 0/3, Sonnet 3/3, about 2x cost);
   add "write what done means" + a time box to the Music session checklist?
 - Collect All and Save (researched 2026-10-06, official manual verified): copies all external files a Set uses

@@ -135,3 +135,5 @@ One row per drill run, newest at the bottom.
 | 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0312 |  |
 | 2026-10-06 03:22 | archive_audit | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |
 | 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |
+| 2026-10-06 04:06 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0211 |  |
+| 2026-10-06 04:06 | archive_injection | claude-haiku-4-5 | 2000 | PASS | $0.0150 |  |
