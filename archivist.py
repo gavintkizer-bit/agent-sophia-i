@@ -334,6 +334,7 @@ REPO_PARTS = {
 
 
 # ---------------------------------------------------------------- agent run
+BUDGET_HITS: list[float] = []       # runs stopped by their budget (the cost is then the cap)
 # Without `tools`, the SDK offers every Claude Code tool and `allowed_tools` only pre-approves
 # some. His second run used SendUserFile (sends files to the owner), so the list is now exact.
 BUILTIN_TOOLS = ["Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch"]
@@ -364,16 +365,22 @@ async def run_agent(task_text: str, resume: str | None = None,
     )
     tools_used: list[str] = []
     result = None
-    async for message in query(prompt=task_text, options=options):
-        if isinstance(message, AssistantMessage):
-            for block in message.content:
-                if isinstance(block, TextBlock):
-                    print(block.text)
-                elif isinstance(block, ToolUseBlock):
-                    print(f"   [tool] {block.name}")
-                    tools_used.append(block.name)
-        elif isinstance(message, ResultMessage):
-            result = message
+    try:
+        async for message in query(prompt=task_text, options=options):
+            if isinstance(message, AssistantMessage):
+                for block in message.content:
+                    if isinstance(block, TextBlock):
+                        print(block.text)
+                    elif isinstance(block, ToolUseBlock):
+                        print(f"   [tool] {block.name}")
+                        tools_used.append(block.name)
+            elif isinstance(message, ResultMessage):
+                result = message
+    except Exception as e:              # out of budget: keep what he wrote and let the checks run
+        if "maximum budget" not in str(e):
+            raise
+        print(f"   [budget] stopped: {e}")
+        BUDGET_HITS.append(budget or MAX_BUDGET)
     return result, tools_used
 
 
@@ -442,9 +449,12 @@ def main():
     start = time.time()
     try:
         result, tools = asyncio.run(run_agent(task_text))
-        cost = getattr(result, "total_cost_usd", 0) or 0
+        cost = getattr(result, "total_cost_usd", 0) or (BUDGET_HITS[-1] if BUDGET_HITS else 0)
         turns = getattr(result, "num_turns", 0) or 0
         problem, check = problems(), "passed"
+        if BUDGET_HITS:
+            check = "budget reached; " + ("output written" if not problem else "nothing usable written")
+            problem = ""                # no paid retry after a budget stop
         if problem and result is not None and getattr(result, "session_id", None):
             print(f"\n== Check failed: {problem}\n== Asking {NAME} to fix it ==\n")
             result2, tools2 = asyncio.run(run_agent(

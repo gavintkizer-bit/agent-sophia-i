@@ -7,6 +7,10 @@ finding costs her time; only report what the files prove. You can read but not r
 
 Files for this part ({part}): {files}
 
+Work so a budget cutoff never loses your work (two audits ran out of money before writing):
+first Write the report file with its five headings, then read, then add each finding with Edit
+as soon as you've confirmed it. Keep thinking short; the report is what counts.
+
 Then look for:
 {focus}
 
