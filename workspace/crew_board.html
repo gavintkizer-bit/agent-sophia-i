@@ -1,0 +1,600 @@
+<title>Crew Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column, a header with the day, three tabs (yours / music / Sophia's), and the evening meeting at the foot. Lapis and saffron, after Persian tilework. */
+:root {
+  --bg: #eef1f5;
+  --surface: #ffffff;
+  --ink: #18223a;
+  --muted: #5d6781;
+  --line: #d6dce6;
+  --lapis: #22408f;
+  --lapis-soft: #e3e9f7;
+  --saffron: #b9770e;
+  --saffron-soft: #fbefd9;
+  --done: #2f7d5b;
+  --font-display: "Marcellus", "Iowan Old Style", Georgia, serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1424; --surface: #161e33; --ink: #e8ecf5; --muted: #9aa5bf; --line: #283352;
+    --lapis: #8ea8f0; --lapis-soft: #1d2a4d; --saffron: #f0b44c; --saffron-soft: #33280f; --done: #6cc79c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1424; --surface: #161e33; --ink: #e8ecf5; --muted: #9aa5bf; --line: #283352;
+  --lapis: #8ea8f0; --lapis-soft: #1d2a4d; --saffron: #f0b44c; --saffron-soft: #33280f; --done: #6cc79c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.5 var(--font-body); }
+.wrap { max-width: 640px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 56px; display: grid; gap: 22px; }
+header { display: grid; gap: 4px; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--saffron); }
+h1 { font: 400 clamp(30px, 7vw, 40px)/1.1 var(--font-display); margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+.meter { display: grid; gap: 6px; }
+.meter-bar { height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.meter-fill { height: 100%; width: 0; background: var(--saffron); border-radius: 99px; transition: width .4s ease; }
+.meter-label { font: 13px var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.tab { font: 600 15px var(--font-body); color: var(--muted); background: none; border: 0; padding: 10px 12px; border-bottom: 3px solid transparent; margin-bottom: -1px; cursor: pointer; }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--lapis); }
+.tab:focus-visible, button:focus-visible, textarea:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--lapis); outline-offset: 2px; }
+.list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; }
+.item.q { border-left: 4px solid var(--saffron); }
+.item.is-done { opacity: .62; }
+.item.is-done .title { text-decoration: line-through; text-decoration-color: var(--muted); }
+.check { width: 24px; height: 24px; margin: 1px 0 0; accent-color: var(--done); cursor: pointer; flex: none; }
+.body { min-width: 0; display: grid; gap: 6px; }
+.title { font-weight: 600; margin: 0; }
+.tag { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--saffron); background: var(--saffron-soft); border-radius: 4px; padding: 2px 6px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
+.detail { color: var(--muted); margin: 0; font-size: 15px; }
+.code { display: flex; gap: 8px; align-items: center; background: var(--lapis-soft); border-radius: 6px; padding: 6px 6px 6px 10px; min-width: 0; }
+.code code { font: 13px var(--font-mono); overflow-x: auto; white-space: nowrap; flex: 1; min-width: 0; }
+.btn { font: 600 13px var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+.btn.primary { background: var(--lapis); color: var(--surface); border-color: var(--lapis); }
+.btn:disabled { opacity: .5; cursor: default; }
+.link { color: var(--lapis); font-weight: 600; font-size: 15px; }
+textarea, input[type=text], select { width: 100%; font: 15px/1.45 var(--font-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+textarea { min-height: 64px; resize: vertical; }
+.saved { font: 12px var(--font-mono); color: var(--done); min-height: 1em; }
+.add { display: flex; gap: 8px; }
+.add input { flex: 1; min-width: 0; }
+.status { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 2px 6px; }
+.status.wait { color: var(--lapis); background: var(--lapis-soft); }
+.status.ok { color: var(--done); background: transparent; border: 1px solid var(--done); }
+.reply { margin: 0; font-size: 15px; border-left: 3px solid var(--lapis); padding-left: 10px; }
+.reply b { font-family: var(--font-display); font-weight: 400; color: var(--lapis); }
+.empty { color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 16px; margin: 0; }
+.meeting { display: grid; gap: 10px; border-top: 1px solid var(--line); padding-top: 20px; }
+h2 { font: 400 24px/1.2 var(--font-display); margin: 0; }
+h3 { font: 400 20px/1.2 var(--font-display); margin: 0; }
+.note { color: var(--muted); font-size: 14px; margin: 0; }
+.banner { background: var(--saffron-soft); color: var(--ink); border-radius: 8px; padding: 10px 12px; margin: 0; font-size: 14px; }
+details.done-earlier summary, details.more summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.x { margin-left: auto; }
+/* Music tab */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.card.session { border-top: 4px solid var(--saffron); }
+.group { display: grid; gap: 6px; }
+.group-label { font: 500 11px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.tick { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; cursor: pointer; }
+.tick input { margin-top: 1px; }
+.tick.on span { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--muted); }
+.tick small { display: block; color: var(--muted); font-size: 13px; }
+.stage { display: flex; gap: 4px; flex-wrap: wrap; }
+.stage button { font: 500 12px var(--font-mono); letter-spacing: .04em; border: 1px solid var(--line); background: var(--bg); color: var(--muted); border-radius: 99px; padding: 3px 10px; cursor: pointer; }
+.stage button[aria-pressed="true"] { background: var(--lapis); border-color: var(--lapis); color: var(--surface); }
+.name { font: 600 17px var(--font-body); border: 0; background: none; padding: 0; color: var(--ink); width: 100%; }
+.name:focus { outline: 2px solid var(--lapis); outline-offset: 2px; border-radius: 4px; }
+.folder { font: 12px var(--font-mono); color: var(--muted); overflow-wrap: anywhere; margin: 0; }
+.tracks { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.tracks li { display: flex; gap: 8px; align-items: center; font-size: 15px; }
+.pill { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; color: var(--lapis); background: var(--lapis-soft); }
+.pill.final { color: var(--done); background: transparent; border: 1px solid var(--done); }
+.log { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.log li { font-size: 14px; border-left: 3px solid var(--line); padding-left: 10px; }
+.log time { font: 12px var(--font-mono); color: var(--muted); display: block; }
+@media (prefers-reduced-motion: reduce) { .meter-fill { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow" id="today-label">Today</span>
+    <h1>Crew Board</h1>
+    <p class="sub">You, Sophia Rakhsh, and Hypatia. What each of us is doing today.</p>
+  </header>
+
+  <p class="banner" id="offline" hidden>Changes can't be saved in this view. Open the board on claude.ai while signed in.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-you" aria-selected="true" aria-controls="panel-you">Your list</button>
+    <button class="tab" role="tab" id="tab-music" aria-selected="false" aria-controls="panel-music">Music</button>
+    <button class="tab" role="tab" id="tab-sophia" aria-selected="false" aria-controls="panel-sophia">Sophia's list</button>
+  </div>
+
+  <section id="panel-you" role="tabpanel" aria-labelledby="tab-you" style="display:grid;gap:14px">
+    <div class="meter">
+      <div class="meter-bar"><div class="meter-fill" id="meter-fill"></div></div>
+      <span class="meter-label" id="meter-label">Loading your list…</span>
+    </div>
+    <ul class="list" id="owner-list"></ul>
+    <p class="empty" id="owner-empty" hidden>Nothing for you yet. Sophia adds your list each morning.</p>
+    <details class="done-earlier" id="owner-earlier" hidden><summary></summary><ul class="list" id="owner-earlier-list" style="margin-top:10px"></ul></details>
+  </section>
+
+  <section id="panel-music" role="tabpanel" aria-labelledby="tab-music" hidden style="display:grid;gap:18px">
+    <div class="card session" id="session-card">
+      <div class="row"><h3>Session</h3><span class="note x" id="session-since"></span></div>
+      <label class="group">
+        <span class="group-label">Song</span>
+        <select id="session-song"><option value="">Pick a song…</option></select>
+      </label>
+      <label class="group">
+        <span class="group-label">Today's one small goal</span>
+        <input type="text" id="session-goal" maxlength="200" placeholder="e.g. finish the drums in the bridge">
+      </label>
+      <div class="group" id="session-start"><p class="group-label">Start</p></div>
+      <div class="group" id="session-end"><p class="group-label">End</p></div>
+      <label class="group">
+        <span class="group-label">One line: what changed, what's next</span>
+        <input type="text" id="session-note" maxlength="300" placeholder="e.g. new bass take; next: tighten the intro">
+      </label>
+      <div class="row">
+        <button class="btn primary" type="button" id="session-finish">Finish session</button>
+        <span class="saved" id="session-saved"></span>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>Songs</h2>
+      <div class="list" id="song-list"></div>
+      <p class="empty" id="song-empty" hidden>No songs yet. Add the one you're working on.</p>
+      <form class="add" id="song-form">
+        <input type="text" id="song-input" placeholder="New song title" aria-label="New song title" maxlength="120">
+        <button class="btn primary" type="submit">Add song</button>
+      </form>
+    </div>
+
+    <div class="group">
+      <h2>Albums</h2>
+      <div class="list" id="album-list"></div>
+      <p class="empty" id="album-empty" hidden>No albums yet.</p>
+      <form class="add" id="album-form">
+        <input type="text" id="album-input" placeholder="New album name" aria-label="New album name" maxlength="120">
+        <button class="btn primary" type="submit">Add album</button>
+      </form>
+    </div>
+
+    <details class="more" id="log-box" hidden><summary>Recent sessions</summary><ul class="log" id="session-log" style="margin-top:10px"></ul></details>
+  </section>
+
+  <section id="panel-sophia" role="tabpanel" aria-labelledby="tab-sophia" hidden style="display:grid;gap:14px">
+    <form class="add" id="add-form">
+      <input type="text" id="add-input" placeholder="Ask Sophia to…" aria-label="Something for Sophia to do" maxlength="300">
+      <button class="btn primary" type="submit">Add</button>
+    </form>
+    <ul class="list" id="sophia-list"></ul>
+    <p class="empty" id="sophia-empty" hidden>Nothing here yet. Add anything you'd like Sophia to do; she reads this list each session.</p>
+  </section>
+
+  <section class="meeting">
+    <h2>Tonight's meeting</h2>
+    <p class="note" id="sophia-meeting" hidden></p>
+    <label for="meeting-notes" class="note">What you want to talk about tonight</label>
+    <textarea id="meeting-notes" placeholder="Plans, ideas, things to add to Sophia's constitution…"></textarea>
+    <span class="saved" id="meeting-saved"></span>
+  </section>
+</div>
+
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const pad = (n) => String(n).padStart(2, "0");
+  const now = new Date();
+  const today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+  $("today-label").textContent = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+
+  // ---- tabs (remembered per viewer)
+  const TABS = ["you", "music", "sophia"];
+  function showTab(which) {
+    if (!TABS.includes(which)) which = "you";
+    TABS.forEach((t) => {
+      $("tab-" + t).setAttribute("aria-selected", String(t === which));
+      $("panel-" + t).hidden = t !== which;
+    });
+    try { localStorage.setItem("crew-tab", which); } catch (e) {}
+  }
+  TABS.forEach((t) => $("tab-" + t).addEventListener("click", () => showTab(t)));
+  try { showTab(localStorage.getItem("crew-tab") || "you"); } catch (e) {}
+  if (location.hash === "#music") showTab("music");
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+  function copyBtn(text) {
+    const b = el("button", "btn", "Copy");
+    b.type = "button";
+    b.addEventListener("click", () => {
+      const done = () => { b.textContent = "Copied"; setTimeout(() => (b.textContent = "Copy"), 1500); };
+      try {
+        navigator.clipboard.writeText(text).then(done, () => selectCode(b));
+      } catch (e) { selectCode(b); }
+    });
+    return b;
+  }
+  function selectCode(b) {
+    const code = b.parentElement.querySelector("code");
+    const r = document.createRange(); r.selectNodeContents(code);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    b.textContent = "Selected";
+  }
+
+  let db = null;
+  const answerDrafts = {};
+
+  // ---- your list
+  function ownerItem(snap) {
+    const t = snap.data();
+    const li = el("li", "item" + (t.kind === "question" ? " q" : "") + (t.done ? " is-done" : ""));
+    const box = el("input", "check");
+    box.type = "checkbox"; box.checked = !!t.done; box.id = "chk-" + snap.id;
+    box.setAttribute("aria-label", "Done: " + t.title);
+    box.disabled = !db;
+    box.addEventListener("change", async () => {
+      box.disabled = true;
+      try { await db.doc("owner_tasks/" + snap.id).update({ done: box.checked, doneAt: box.checked ? new Date().toISOString() : null }); }
+      catch (e) { box.checked = !box.checked; }
+      box.disabled = false;
+    });
+    const body = el("div", "body");
+    const title = el("p", "title", t.title);
+    if (t.size) title.appendChild(el("span", "tag", t.size));
+    if (t.kind === "question") title.appendChild(el("span", "tag", "Question"));
+    body.appendChild(title);
+    if (t.detail) body.appendChild(el("p", "detail", t.detail));
+    if (t.code) {
+      const c = el("div", "code");
+      c.appendChild(el("code", null, t.code));
+      c.appendChild(copyBtn(t.code));
+      body.appendChild(c);
+    }
+    if (t.link && t.link.url) {
+      const a = el("a", "link", t.link.label || t.link.url);
+      a.href = t.link.url; a.target = "_blank"; a.rel = "noopener";
+      body.appendChild(a);
+    }
+    if (t.kind === "question") {
+      const ta = el("textarea");
+      ta.id = "ans-" + snap.id;
+      ta.placeholder = "Your answer";
+      ta.setAttribute("aria-label", "Answer: " + t.title);
+      ta.value = answerDrafts[snap.id] != null ? answerDrafts[snap.id] : (t.answer || "");
+      ta.disabled = !db;
+      const saved = el("span", "saved");
+      const save = debounce(async () => {
+        try {
+          await db.doc("owner_tasks/" + snap.id).update({ answer: ta.value, done: ta.value.trim() !== "" || !!t.done });
+          delete answerDrafts[snap.id];
+          saved.textContent = "Saved";
+        } catch (e) { saved.textContent = "Not saved. Try again."; }
+      }, 900);
+      ta.addEventListener("input", () => { answerDrafts[snap.id] = ta.value; saved.textContent = "Saving…"; save(); });
+      body.appendChild(ta); body.appendChild(saved);
+    }
+    li.appendChild(box); li.appendChild(body);
+    return li;
+  }
+
+  let pendingOwner = null;
+  function renderOwner(docs) {
+    // Don't rebuild the list under someone who is typing an answer; catch up when they leave the box.
+    const a = document.activeElement;
+    if (a && a.tagName === "TEXTAREA" && ($("owner-list").contains(a) || $("owner-earlier-list").contains(a))) {
+      pendingOwner = docs; return;
+    }
+    pendingOwner = null;
+    const sorted = docs.slice().sort((a, b) => ((a.data().day || "").localeCompare(b.data().day || "")) || ((a.data().order || 0) - (b.data().order || 0)));
+    const current = sorted.filter((d) => !d.data().done || d.data().day === today);
+    const earlier = sorted.filter((d) => d.data().done && d.data().day !== today);
+    const list = $("owner-list"); list.replaceChildren(...current.map(ownerItem));
+    $("owner-empty").hidden = current.length > 0;
+    const doneCount = current.filter((d) => d.data().done).length;
+    $("meter-fill").style.width = current.length ? (100 * doneCount / current.length) + "%" : "0";
+    $("meter-label").textContent = current.length ? doneCount + " of " + current.length + " done" : "All clear";
+    $("owner-earlier").hidden = earlier.length === 0;
+    $("owner-earlier").querySelector("summary").textContent = earlier.length + " finished on earlier days";
+    $("owner-earlier-list").replaceChildren(...earlier.map(ownerItem));
+  }
+
+  $("panel-you").addEventListener("focusout", () => setTimeout(() => { if (pendingOwner) renderOwner(pendingOwner); }, 0));
+
+  // ---- music: Session >> Song >> Album (owner, 2026-10-05)
+  const SESSION_START = [
+    ["home", "Open the song from Music/Projects/2026", "New song? Save it there first: File > Save Live Set As…"],
+    ["goal", "Write one small goal for today", "It goes in the box above."],
+  ];
+  const SESSION_END = [
+    ["collect", "File > Collect All and Save", "Copies every sound into the project folder, so it's complete and safe to move."],
+    ["bounce", "Export a rough bounce to Music/Bounces", "Name it \"Song – date\". Rough is the point: it's not a release."],
+    ["note", "Write one line: what changed, what's next", "In the box below. It shows on the song's card next time."],
+  ];
+  const SONG_STEPS = [
+    ["basics", "Working title, tempo and key noted"],
+    ["arranged", "Idea to full arrangement (start to finish)"],
+    ["mixed", "Mix pass"],
+    ["second", "Listened on a second device (phone or headphones)"],
+    ["final", "Final bounce exported + final Collect All and Save"],
+    ["home", "Assigned to an album, or marked as a single"],
+  ];
+  const STAGES = ["idea", "arranged", "mixed", "final"];
+  const ALBUM_STEPS = [
+    ["name", "Name and a working tracklist"],
+    ["order", "Track order"],
+    ["art", "Artwork"],
+    ["gathered", "Final bounces gathered in one album folder"],
+    ["loud", "Final pass so the songs sit at the same loudness"],
+    ["release", "Release plan (SoundCloud as Gavin R. Lowe, or elsewhere)"],
+  ];
+
+  let songs = [], albums = [], session = {}, sessionDirty = false;
+
+  function tick(id, label, hint, on, onChange) {
+    const l = el("label", "tick" + (on ? " on" : ""));
+    const box = el("input", "check"); box.type = "checkbox"; box.id = id; box.checked = !!on; box.disabled = !db;
+    const span = el("span", null, label);
+    if (hint) span.appendChild(el("small", null, hint));
+    box.addEventListener("change", () => { l.classList.toggle("on", box.checked); onChange(box.checked); });
+    l.appendChild(box); l.appendChild(span);
+    return l;
+  }
+  function nameInput(id, value, onSave) {
+    const i = el("input", "name"); i.type = "text"; i.id = id; i.value = value || ""; i.maxLength = 120; i.disabled = !db;
+    i.setAttribute("aria-label", "Name");
+    i.addEventListener("change", () => { const v = i.value.trim(); if (v) onSave(v); else i.value = value || ""; });
+    return i;
+  }
+  const save = (path, data) => db && db.doc(path).update(data).catch(() => {});
+
+  // Session
+  const saveSession = debounce(async () => {
+    try { await db.doc("music_session/current").set(session); sessionDirty = false; $("session-saved").textContent = "Saved"; }
+    catch (e) { $("session-saved").textContent = "Not saved. Try again."; }
+  }, 700);
+  function touchSession() {
+    if (!db) return;
+    if (!session.startedAt) session.startedAt = new Date().toISOString();
+    sessionDirty = true; $("session-saved").textContent = "Saving…"; saveSession();
+  }
+  function renderSession() {
+    const busy = document.activeElement && $("session-card").contains(document.activeElement) && document.activeElement.type === "text";
+    const sel = $("session-song");
+    sel.replaceChildren(el("option", null, "Pick a song…"), ...songs.map((s) => { const o = el("option", null, s.data().title); o.value = s.id; return o; }));
+    sel.firstChild.value = "";
+    sel.value = session.song || "";
+    if (!busy) { $("session-goal").value = session.goal || ""; $("session-note").value = session.note || ""; }
+    const checks = session.checks || {};
+    const mk = (list) => list.map(([k, label, hint]) => tick("s-" + k, label, hint, checks[k], (v) => {
+      session.checks = Object.assign({}, session.checks, { [k]: v }); touchSession();
+    }));
+    $("session-start").replaceChildren(el("p", "group-label", "Start"), ...mk(SESSION_START));
+    $("session-end").replaceChildren(el("p", "group-label", "End"), ...mk(SESSION_END));
+    $("session-since").textContent = session.startedAt ? "Started " + new Date(session.startedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
+    [sel, $("session-goal"), $("session-note"), $("session-finish")].forEach((n) => (n.disabled = !db));
+  }
+  $("session-song").addEventListener("change", (e) => { session.song = e.target.value; touchSession(); });
+  $("session-goal").addEventListener("input", (e) => {
+    session.goal = e.target.value;
+    session.checks = Object.assign({}, session.checks, { goal: e.target.value.trim() !== "" });
+    $("s-goal").checked = session.checks.goal; $("s-goal").parentElement.classList.toggle("on", session.checks.goal);
+    touchSession();
+  });
+  $("session-note").addEventListener("input", (e) => {
+    session.note = e.target.value;
+    session.checks = Object.assign({}, session.checks, { note: e.target.value.trim() !== "" });
+    $("s-note").checked = session.checks.note; $("s-note").parentElement.classList.toggle("on", session.checks.note);
+    touchSession();
+  });
+  $("session-finish").addEventListener("click", async () => {
+    if (!db) return;
+    const b = $("session-finish"); b.disabled = true;
+    const song = songs.find((s) => s.id === session.song);
+    try {
+      await db.collection("music_sessions").add({
+        day: today, endedAt: new Date().toISOString(), startedAt: session.startedAt || null,
+        song: session.song || "", songTitle: song ? song.data().title : "", goal: session.goal || "",
+        note: session.note || "", checks: session.checks || {},
+      });
+      if (song && (session.note || "").trim()) await db.doc("music_projects/" + song.id).update({ lastNote: session.note.trim(), lastSession: today });
+      session = {}; await db.doc("music_session/current").set({});
+      $("session-saved").textContent = "Session saved. Nice work.";
+    } catch (e) { $("session-saved").textContent = "Not saved. Try again."; }
+    b.disabled = false;
+  });
+
+  // Songs
+  function songCard(snap) {
+    const t = snap.data(), checks = t.checks || {};
+    const c = el("div", "card");
+    c.appendChild(nameInput("song-name-" + snap.id, t.title, (v) => save("music_projects/" + snap.id, { title: v })));
+    const stage = el("div", "stage"); stage.setAttribute("role", "group"); stage.setAttribute("aria-label", "Status");
+    STAGES.forEach((s) => {
+      const b = el("button", null, s); b.type = "button"; b.setAttribute("aria-pressed", String(t.stage === s)); b.disabled = !db;
+      b.addEventListener("click", () => save("music_projects/" + snap.id, { stage: t.stage === s ? "" : s }));
+      stage.appendChild(b);
+    });
+    c.appendChild(stage);
+    if (t.folder) c.appendChild(el("p", "folder", t.folder));
+    if (t.lastNote) {
+      const r = el("p", "reply"); r.appendChild(el("b", null, "Last session: ")); r.appendChild(document.createTextNode(t.lastNote));
+      c.appendChild(r);
+    }
+    const g = el("div", "group");
+    SONG_STEPS.forEach(([k, label]) => g.appendChild(tick("p-" + snap.id + "-" + k, label, null, checks[k], (v) =>
+      save("music_projects/" + snap.id, { checks: Object.assign({}, checks, { [k]: v }) }))));
+    c.appendChild(g);
+    const sel = el("select"); sel.id = "song-album-" + snap.id; sel.setAttribute("aria-label", "Album"); sel.disabled = !db;
+    sel.appendChild(el("option", null, "No album (single)")); sel.firstChild.value = "";
+    albums.forEach((a) => { const o = el("option", null, "Album: " + a.data().title); o.value = a.id; sel.appendChild(o); });
+    sel.value = t.album || "";
+    sel.addEventListener("change", () => save("music_projects/" + snap.id, { album: sel.value }));
+    c.appendChild(sel);
+    return c;
+  }
+  // Albums
+  function albumCard(snap) {
+    const t = snap.data(), checks = t.checks || {};
+    const c = el("div", "card");
+    c.appendChild(nameInput("album-name-" + snap.id, t.title, (v) => save("music_albums/" + snap.id, { title: v })));
+    const mine = songs.filter((s) => s.data().album === snap.id);
+    const finals = mine.filter((s) => s.data().stage === "final").length;
+    c.appendChild(el("p", "note", mine.length ? finals + " of " + mine.length + " songs final" : "No songs yet: pick this album on a song's card."));
+    if (mine.length) {
+      const ul = el("ul", "tracks");
+      mine.forEach((s) => { const li = el("li"); li.appendChild(el("span", "pill" + (s.data().stage === "final" ? " final" : ""), s.data().stage || "no status")); li.appendChild(el("span", null, s.data().title)); ul.appendChild(li); });
+      c.appendChild(ul);
+    }
+    const g = el("div", "group");
+    ALBUM_STEPS.forEach(([k, label]) => g.appendChild(tick("a-" + snap.id + "-" + k, label, null, checks[k], (v) =>
+      save("music_albums/" + snap.id, { checks: Object.assign({}, checks, { [k]: v }) }))));
+    c.appendChild(g);
+    return c;
+  }
+  function renderMusic() {
+    const by = (a, b) => (a.data().order || 0) - (b.data().order || 0) || (a.data().createdAt || "").localeCompare(b.data().createdAt || "");
+    songs.sort(by); albums.sort(by);
+    $("song-list").replaceChildren(...songs.map(songCard));
+    $("song-empty").hidden = songs.length > 0;
+    $("album-list").replaceChildren(...albums.map(albumCard));
+    $("album-empty").hidden = albums.length > 0;
+    renderSession();
+  }
+  function addForm(form, input, coll, extra) {
+    $(form).addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const v = $(input).value.trim(); if (!v || !db) return;
+      $(input).disabled = true;
+      try { await db.collection(coll).add(Object.assign({ title: v, checks: {}, createdAt: new Date().toISOString(), order: Date.now() }, extra)); $(input).value = ""; }
+      catch (err) { /* keep the text */ }
+      $(input).disabled = false;
+    });
+  }
+  addForm("song-form", "song-input", "music_projects", { stage: "", album: "", folder: "", lastNote: "" });
+  addForm("album-form", "album-input", "music_albums", {});
+  function renderLog(docs) {
+    const recent = docs.slice().sort((a, b) => (b.data().endedAt || "").localeCompare(a.data().endedAt || "")).slice(0, 8);
+    $("log-box").hidden = recent.length === 0;
+    $("session-log").replaceChildren(...recent.map((s) => {
+      const t = s.data(), li = el("li");
+      li.appendChild(el("time", null, new Date(t.endedAt).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) + (t.songTitle ? " · " + t.songTitle : "")));
+      li.appendChild(document.createTextNode((t.goal ? "Goal: " + t.goal + ". " : "") + (t.note || "")));
+      return li;
+    }));
+  }
+
+  // ---- Sophia's list
+  function sophiaItem(snap) {
+    const t = snap.data();
+    const li = el("li", "item" + (t.done ? " is-done" : ""));
+    li.style.gridTemplateColumns = "1fr";
+    const body = el("div", "body");
+    const row = el("div", "row");
+    row.appendChild(el("span", "status " + (t.done ? "ok" : "wait"), t.done ? "Done" : "Waiting"));
+    if (!t.done && db) {
+      const x = el("button", "btn x", "Remove");
+      x.type = "button";
+      x.addEventListener("click", async () => { x.disabled = true; try { await db.doc("sophia_tasks/" + snap.id).delete(); } catch (e) { x.disabled = false; } });
+      row.appendChild(x);
+    }
+    body.appendChild(row);
+    body.appendChild(el("p", "title", t.title));
+    if (t.reply) {
+      const r = el("p", "reply");
+      r.appendChild(el("b", null, "Sophia: "));
+      r.appendChild(document.createTextNode(t.reply));
+      body.appendChild(r);
+    }
+    li.appendChild(body);
+    return li;
+  }
+  function renderSophia(docs) {
+    const sorted = docs.slice().sort((a, b) => (Number(!!a.data().done) - Number(!!b.data().done)) || (b.data().createdAt || "").localeCompare(a.data().createdAt || ""));
+    $("sophia-list").replaceChildren(...sorted.map(sophiaItem));
+    $("sophia-empty").hidden = sorted.length > 0;
+  }
+
+  $("add-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const v = $("add-input").value.trim();
+    if (!v || !db) return;
+    $("add-input").disabled = true;
+    try {
+      await db.collection("sophia_tasks").add({ title: v, done: false, reply: "", day: today, createdAt: new Date().toISOString() });
+      $("add-input").value = "";
+    } catch (err) { /* keep the text so nothing is lost */ }
+    $("add-input").disabled = false;
+    $("add-input").focus();
+  });
+
+  // ---- tonight's meeting
+  let meetingDirty = false;
+  const saveMeeting = debounce(async () => {
+    try {
+      await db.doc("meetings/" + today).set({ day: today, ownerNotes: $("meeting-notes").value, sophiaNotes: lastSophiaNotes });
+      meetingDirty = false;
+      $("meeting-saved").textContent = "Saved";
+    } catch (e) { $("meeting-saved").textContent = "Not saved. Try again."; }
+  }, 900);
+  let lastSophiaNotes = "";
+  $("meeting-notes").addEventListener("input", () => {
+    if (!db) return;
+    meetingDirty = true; $("meeting-saved").textContent = "Saving…"; saveMeeting();
+  });
+
+  // ---- connect
+  function offline() {
+    $("offline").hidden = false;
+    $("meter-label").textContent = "Your list appears here once the board can load.";
+    $("owner-empty").hidden = false;
+    $("sophia-empty").hidden = false;
+    $("add-input").disabled = true;
+    $("meeting-notes").disabled = true;
+    $("song-empty").hidden = false; $("album-empty").hidden = false;
+    renderSession();
+  }
+  renderMusic();
+  (window.claude && window.claude.use ? window.claude.use("db") : Promise.resolve(null)).then((d) => {
+    db = d;
+    if (!db) return offline();
+    db.collection("owner_tasks").onSnapshot((s) => renderOwner(s.docs), offline);
+    db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
+    db.collection("music_projects").onSnapshot((s) => { songs = s.docs.slice(); renderMusic(); }, () => {});
+    db.collection("music_albums").onSnapshot((s) => { albums = s.docs.slice(); renderMusic(); }, () => {});
+    db.collection("music_sessions").onSnapshot((s) => renderLog(s.docs), () => {});
+    db.doc("music_session/current").onSnapshot((s) => {
+      if (sessionDirty) return;  // don't overwrite what's being typed
+      session = s.exists ? Object.assign({}, s.data()) : {};
+      renderSession();
+    }, () => {});
+    db.doc("meetings/" + today).onSnapshot((s) => {
+      const m = s.exists ? s.data() : {};
+      lastSophiaNotes = m.sophiaNotes || "";
+      $("sophia-meeting").hidden = !lastSophiaNotes;
+      $("sophia-meeting").textContent = lastSophiaNotes ? "Sophia: " + lastSophiaNotes : "";
+      if (!meetingDirty && document.activeElement !== $("meeting-notes")) $("meeting-notes").value = m.ownerNotes || "";
+    }, () => {});
+  }, offline);
+})();
+</script>

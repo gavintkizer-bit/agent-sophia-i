@@ -81,7 +81,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   edit or release it again. Focus is NEW music and good workflow habits. Archive stays ON THE MAC (no USB:
   thumb drives get lost): ~/Music/Archive/<year>/, whole project folders + a listening copy; next scan adds .als dates.
 - Owner wants all 3 habits at once (one home: Music/Projects/2026; Collect All and Save at session end; rough
-  bounce each session) as checklists at 3 levels: Session >> Project >> Album.
+  bounce each session) as checklists at 3 levels: Session >> Project >> Album. BUILT (2026-10-06): Crew Board
+  "Music" tab (source: workspace/crew_board.html). Collections: music_session/current, music_sessions (log),
+  music_projects, music_albums. Seeded: album "Grandpa's Familiar" (Desktop folder "Codename - ..."), song
+  "Void Speech" (owner spells it VOID SPEACH; self-contained already).
 - Music round 2 idea: packs in Downloads stay until projects using them are self-contained ("Collect All and
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
