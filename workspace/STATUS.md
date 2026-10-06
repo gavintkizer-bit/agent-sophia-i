@@ -15,39 +15,15 @@ bash ~/Downloads/organize_all.sh --go   # moves files; undo files go to Document
 If your Mac saved it as `organize_all (1).sh`, delete the old one and rename
 the new one, so you never run an outdated script.
 
-### Latest run: Desktop
-
-- 4 files: 2 will move, 2 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Downloads/_Sophia To Delete/Sophia leftovers 1, ~/Pictures/Screenshots 1
-
-- **0.0 GB** goes to `~/Downloads/_Sophia To Delete/` for you to check, then drag to the Trash.
-
 ### Latest run: Documents
 
-- 20 files: 18 will move, 2 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Code 1, ~/Documents/Papers 1, ~/Documents/School 14, ~/Downloads/_Sophia To Delete/Duplicates 1, ~/Pictures/Photos 1
-
-- **0.0 GB** goes to `~/Downloads/_Sophia To Delete/` for you to check, then drag to the Trash.
-
-### Latest run: Downloads-Documents-Finance
-
-- 3 files: 3 will move, 0 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Finance 3
-
-### Latest run: Downloads-Documents
-
-- 149 files: 135 will move, 14 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Books 2, ~/Documents/Code 9, ~/Documents/Papers 87, ~/Documents/School 37
-
-### Latest run: Downloads-Images
-
-- 110 files: 110 will move, 0 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Pictures/Images 83, ~/Pictures/Photos 27
+- 2 files: 1 will move, 1 stay put (audio/Ableton, recent, or unclear).
+- Folders: ~/Documents/Papers 1
 
 ### Latest run: Downloads
 
-- 780 files: 2 will move, 778 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Code 1, ~/Downloads/_Sophia To Delete/Sophia leftovers 1
+- 779 files: 53 will move, 726 stay put (audio/Ableton, recent, or unclear).
+- Folders: ~/Documents/Code 9, ~/Documents/Minecraft Worlds 1, ~/Documents/Minecraft Worlds/Loose world files 3, ~/Documents/Papers 6, ~/Documents/Sophia/Undo 1, ~/Downloads/Archives 2, ~/Downloads/Web Pages 9, ~/Downloads/_Sophia To Delete/Sophia leftovers 2, ~/Pictures/Images 1, ~/Pictures/Photos 19
 
 - **0.0 GB** goes to `~/Downloads/_Sophia To Delete/` for you to check, then drag to the Trash.
 

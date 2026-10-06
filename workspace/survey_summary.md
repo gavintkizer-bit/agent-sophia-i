@@ -8,20 +8,20 @@
 
 ## Disk
 
-- Size 244.8 GB | Used 191.2 GB | **Free 53.6 GB**
+- Size 244.8 GB | Used 190.6 GB | **Free 54.2 GB**
 
 ## Biggest folders in your home folder
 
-- 145.5 GB  `~`
+- 144.3 GB  `~`
 - 49.5 GB  `~/Music`
 - 48.9 GB  `~/Music/Ableton`
-- 47.2 GB  `~/Desktop`
-- 32.3 GB  `~/Downloads`
+- 47.1 GB  `~/Desktop`
+- 32.1 GB  `~/Downloads`
 - 28.0 GB  `~/Desktop/Demos: Beats`
 - 14.2 GB  `~/Desktop/Sand Machine Mix`
 - 12.4 GB  `~/Downloads/untitled folder`
-- 2.4 GB  `~/Pictures`
-- 2.1 GB  `~/Documents`
+- 2.6 GB  `~/Pictures`
+- 2.3 GB  `~/Documents`
 - 2.0 GB  `~/Documents/Minecraft Worlds`
 - 1.9 GB  `~/Downloads/VIBES Project`
 - 1.7 GB  `~/Downloads/Samples 2`
@@ -45,8 +45,8 @@
 
 ## Biggest folders inside ~/Library (app data, caches, backups)
 
-- 11.2 GB  `~/Library`
-- 8.3 GB  `~/Library/Application Support`
+- 10.0 GB  `~/Library`
+- 7.3 GB  `~/Library/Application Support`
 - 3.8 GB  `~/Library/Application Support/Google`
 - 3.8 GB  `~/Library/Application Support/Google/Chrome`
 - 1.4 GB  `~/Library/Application Support/Ableton`
@@ -55,7 +55,6 @@
 - 0.6 GB  `~/Library/Preferences`
 - 0.6 GB  `~/Library/Preferences/Ableton`
 - 0.5 GB  `~/Library/Application Support/Ableton/Live Database`
-- 0.4 GB  `~/Library/Application Support/DrFoneApps`
 - 0.4 GB  `~/Library/Application Support/com.operasoftware.Opera`
 - 0.4 GB  `~/Library/Application Support/discord`
 - 0.4 GB  `~/Library/Containers`
@@ -63,18 +62,19 @@
 - 0.3 GB  `~/Library/Caches/Firefox/Profiles`
 - 0.3 GB  `~/Library/Caches/Firefox`
 - 0.3 GB  `~/Library/Application Support/discord/0.0.364`
-- 0.3 GB  `~/Library/Application Support/Sid Meier's Civilization VI`
-- 0.2 GB  `~/Library/Application Support/Colossal Order`
-- 0.2 GB  `~/Library/Application Support/Colossal Order/Cities_Skylines`
-- 0.2 GB  `~/Library/The Creative Assembly/Rome2`
-- 0.2 GB  `~/Library/The Creative Assembly`
-- 0.2 GB  `~/Library/The Creative Assembly/Rome2/save_games`
 - 0.2 GB  `~/Library/Application Support/Cycling '74/Max 8`
 - 0.2 GB  `~/Library/Application Support/com.operasoftware.Opera/Default`
 - 0.2 GB  `~/Library/Trial`
 - 0.2 GB  `~/Library/Trial/v6`
 - 0.2 GB  `~/Library/Trial/v6/AssetStore`
 - 0.2 GB  `~/Library/Application Support/MeldaProduction`
+- 0.2 GB  `~/Library/Caches/com.google.SoftwareUpdate/Downloads`
+- 0.2 GB  `~/Library/Caches/com.google.SoftwareUpdate`
+- 0.2 GB  `~/Library/Caches/com.splice.Instrument/WebKit`
+- 0.2 GB  `~/Library/Caches/com.splice.Instrument`
+- 0.1 GB  `~/Library/Application Support/Cycling '74/Max 9`
+- 0.1 GB  `~/Library/Preferences/Ableton/Live 9.7.5`
+- 0.1 GB  `~/Library/Containers/com.apple.iMovieApp`
 
 ## Biggest single files (100 MB+)
 
