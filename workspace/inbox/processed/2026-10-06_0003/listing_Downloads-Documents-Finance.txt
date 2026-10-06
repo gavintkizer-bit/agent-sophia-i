@@ -1,0 +1,5 @@
+# base: /Users/gtkizer/Downloads/Documents/Finance
+# made: 2026-10-05
+2024-04-15|523494|./2022_TaxReturn.pdf
+2024-04-15|3204763|./TurboTaxReturn.tax2022
+2018-05-10|72648|./U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement

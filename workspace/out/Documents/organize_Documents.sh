@@ -7,10 +7,11 @@ BASE=/Users/gtkizer/Documents
 echo 'Sophia plan for /Users/gtkizer/Documents (from your scan of 2026-10-05)'
 GO=0; [ "${1:-}" = "--go" ] && GO=1
 cd "$BASE" || { echo "Cannot open $BASE"; exit 1; }
-UNDO="$BASE/undo_organize_$(date +%Y%m%d_%H%M%S).sh"
+UNDO="$HOME/Documents/Sophia/Undo/undo_Documents_$(date +%Y%m%d_%H%M%S).sh"
 moved=0; skipped=0
 if [ "$GO" -eq 1 ]; then
-  { echo "#!/bin/bash"; printf "cd %q || exit 1\n" "$BASE"; } > "$UNDO"
+  mkdir -p "$HOME/Documents/Sophia/Undo" || exit 1
+  { echo "#!/bin/bash"; printf "mkdir -p %q && cd %q || exit 1\n" "$BASE" "$BASE"; } > "$UNDO"
 fi
 move_one() {
   src="$1"; dir="$2"; dest="$dir/$(basename "$src")"
@@ -24,24 +25,24 @@ move_one() {
   fi
 }
 
-move_one ./611191928_1287597506736337_109814106695790461_n.jpg Images
-move_one './Academic Habits- Note-taking Strategies - Gavin Kizer.pdf' Documents
-move_one './Assignment #4 Rock Deformation.pages' Documents
-move_one './Assignment #8 California Drought Conditions.pages' Documents
-move_one './Blended Rock Deformation and Earthquakes.key' Documents
-move_one './Gavin K - Assignment 8.pdf' Documents
-move_one './Gavin Kizer - Assignment #4 Rock Deformation.pdf' Documents
-move_one './Gavin Kizer Rivers and Google Earth.pdf' Documents
-move_one './Human Odyssey answers .pages' Documents
-move_one './Human Odyssey answers .pdf' Documents
-move_one './Human Odyssey answers.pages' Documents
-move_one './Scientific method-Gavin Kizer.pdf' Documents
-move_one './Scientific method.pages' Documents
-move_one './Strategies to Help Overcome Test Anxiety (fillable).pdf' Documents
-move_one './cell video questions - Gavin Kizer .pdf' Documents
-move_one './cell video questions .pages' Documents
-move_one './rr_scraper (1).py' '_Sophia To Delete/Duplicates'
-move_one ./Stats.html.rtfd.zip 'Web Pages'
+move_one ./611191928_1287597506736337_109814106695790461_n.jpg "$HOME"/Pictures/Photos
+move_one './Academic Habits- Note-taking Strategies - Gavin Kizer.pdf' "$HOME"/Documents/School
+move_one './Assignment #4 Rock Deformation.pages' "$HOME"/Documents/School
+move_one './Assignment #8 California Drought Conditions.pages' "$HOME"/Documents/School
+move_one './Blended Rock Deformation and Earthquakes.key' "$HOME"/Documents/School
+move_one './Gavin K - Assignment 8.pdf' "$HOME"/Documents/School
+move_one './Gavin Kizer - Assignment #4 Rock Deformation.pdf' "$HOME"/Documents/School
+move_one './Gavin Kizer Rivers and Google Earth.pdf' "$HOME"/Documents/Papers
+move_one './Human Odyssey answers .pages' "$HOME"/Documents/School
+move_one './Human Odyssey answers .pdf' "$HOME"/Documents/School
+move_one './Human Odyssey answers.pages' "$HOME"/Documents/School
+move_one './Scientific method-Gavin Kizer.pdf' "$HOME"/Documents/School
+move_one './Scientific method.pages' "$HOME"/Documents/School
+move_one './Strategies to Help Overcome Test Anxiety (fillable).pdf' "$HOME"/Documents/School
+move_one './cell video questions - Gavin Kizer .pdf' "$HOME"/Documents/School
+move_one './cell video questions .pages' "$HOME"/Documents/School
+move_one './rr_scraper (1).py' "$HOME"/'Downloads/_Sophia To Delete/Duplicates'
+move_one ./rr_scraper.py "$HOME"/Documents/Code
 
 echo ""
 if [ "$GO" -eq 1 ]; then

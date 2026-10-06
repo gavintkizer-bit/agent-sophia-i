@@ -84,3 +84,17 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   .alp packs, videos and M-Audio installers again (5 rows, all caught by check_report). Now sophia.py
   moves a flagged report to cleanup_report_draft.md and restores the previous one. Lesson confirmed:
   rules that matter live in code. Open item stays: a report-writing drill.
+
+## 2026-10-06 (just after midnight): home organization plan
+- feature: one home per kind of file (owner: "clean and easy to find", music excluded). Plans can now
+  target ~/Documents, ~/Pictures, ~/Downloads, ~/Desktop (never ~/Music or ~/Library, enforced in
+  make_mac_script.safe_folder). One combined `organize_all.sh`; undo files in ~/Documents/Sophia/Undo.
+- bug → fixed (found by the new sandbox test): an undo file couldn't restore files into a folder the
+  script had removed as empty. Undo now recreates the folder first.
+- bug → fixed: undo files from several folders in the same second would have shared one name.
+- bug → fixed: a downloaded map ("170702062321-...jpg") was filed as a phone photo.
+- bug → fixed: `sophia.py --dry` overwrites plans with "(dry run)" leaves. Not fixed in code yet: don't
+  use --dry after a real run without rerunning. (open item)
+- new: `sandbox_test.sh` replays organize_all.sh on a fake copy of the scan: preview changes nothing,
+  no music/video moves, undo restores all. Run it before every script handoff.
+- new: secrets (recovery/backup codes) are never moved; flagged for a locked note instead.

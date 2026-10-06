@@ -2,8 +2,13 @@
  "moves": [
   {
    "file": "./Screen Shot 2026-09-24 at 1.56.43 AM.png",
-   "to_folder": "Images",
+   "to_folder": "~/Pictures/Screenshots",
    "reason": ".png file"
+  },
+  {
+   "file": "./file_listing.txt",
+   "to_folder": "~/Downloads/_Sophia To Delete/Sophia leftovers",
+   "reason": "Old Sophia file nothing uses anymore"
   }
  ],
  "leave_alone": [
@@ -14,10 +19,6 @@
   {
    "file": "./Void Speech.wav",
    "reason": "Audio, video, Ableton, or sample file: never moved"
-  },
-  {
-   "file": "./file_listing.txt",
-   "reason": "Changed in the last 7 days"
   }
  ]
 }

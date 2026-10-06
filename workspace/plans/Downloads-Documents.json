@@ -1,0 +1,737 @@
+{
+ "moves": [
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).epub",
+   "to_folder": "~/Documents/Books",
+   "reason": ".epub file"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".txt file"
+  },
+  {
+   "file": "./111 Internet Research Assignment.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./111S18H.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Accrue Cover Letter - Gavin K..pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Argument essay (1).pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Argument essay.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Asia Study Guide (1).docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Asia Study Guide (2).docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Asia Study Guide.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment #4 Rock Deformation.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment #4 Rock Deformation.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Assignment #8 California Drought Conditions.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment 2 Mineral's Use In Society.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment_7B_Rivers_and_Google_Earth(1).docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Assignment_7B_Rivers_and_Google_Earth(1).pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Blended Geologic Time.pptx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./Blended Ocean Features.pptx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./Blended Rock Deformation and Earthquakes.pptx",
+   "to_folder": "~/Documents/School",
+   "reason": "Same topic as a school file"
+  },
+  {
+   "file": "./Blended Stream Discharge.pptx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pptx file"
+  },
+  {
+   "file": "./CHRONOS.md",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".md file"
+  },
+  {
+   "file": "./Career Coach Assessment and Research (fillable).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Changing Traditions and Less Superstition - Gavin Kizer (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Changing Traditions and Less Superstition - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Character Architecture - The Restrained Monster.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Compare and contras rough draft.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Compare and contrast rough draft.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Completed Copy of Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Completed Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Debate Research.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./DespicableG50842_122644193.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Dogs of Courage.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Drum machine patterns 260.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Essay 3.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Essay assignment 1 - Gavin Kizer - .pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Essay assignment 2 - Gavin Kizer .pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 1 Getting Control of Your Time - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 1 Getting Control of Your Time SP25.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 2  Academic Readiness - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 2  Academic Readiness FA25.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 3.1 Self-Assesments - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 3.1 Self-Assesments SP25 revised (1) (1).docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 3.2 Career Research SP25.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 6A Your Academic and Transfer Plan SP25.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 7 Paying for College - Gavin K.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 7 Paying for College and  Budgeting SP253.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Exercise 8 Self-Reflection - Gavin k].pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Exercise 8 Self-Reflection SP25.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Gavin Kizer (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer (2).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - 03_23_2026.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Internet Research Assignment 2 - Copy.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Internet Research Assignment.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (2).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé (3).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Gavin Kizer - Résumé.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - The Uses of Olivine in Human Society.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source 2 Pt. 1- Copy.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source 2 Pt. 2.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer - Theme and Primary Source.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Career Coach Assessment.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Career Research.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer Resume.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer – Signature Assignment Analysis.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizer.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume (2).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Gavin Kizers Resume.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Human Odyssey answers .pages",
+   "to_folder": "~/Documents/School",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Human Odyssey answers .pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Human Odyssey answers.pages",
+   "to_folder": "~/Documents/School",
+   "reason": ".pages file"
+  },
+  {
+   "file": "./Hurricane Assignment Graphs - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Hurricane Assignment Pacific 2023 - Gavin Kizer (1).docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Hurricane Assignment Pacific 2023.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Internet Assignment (1).pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Internet Assignment.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Internet Assignment.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Kizer_Gavin_4352959_7_22_2024.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Kizer_Gavin_4352959_8_9_2024.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Magic Stats 1.1.10 - Player Stats - Per Game.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Magic Stats 1.1.10 - Rules.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Members_12298965.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./Midterm Study Guide.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Movie Excel Data.xlsx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".xlsx file"
+  },
+  {
+   "file": "./Nepotism Vs. Merit Edit Draft.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Nepotism Vs. Merit Final.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./PBSNOVAGreatHumanOdysseyVideoQuestions.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Pocket operations.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Point by Point Outline (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Point by Point Outline.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Resume.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Sailing_Weekend_Packing_List.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Scientific method.docx",
+   "to_folder": "~/Documents/School",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Smith on Virginia.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Strategies to Help Overcome Test Anxiety (fillable) Gavin Kizer.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./TXT.rtf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".rtf file"
+  },
+  {
+   "file": "./Tenant Application 2015 NEW.docx.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./The Ethics of Working Dogs.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./The Positive Effects of the Kudzu Vine.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled document (1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled document (2).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Untitled document.docx",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".docx file"
+  },
+  {
+   "file": "./Untitled document.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Van Auken 2018 Review, Harry Miller, The Gongyang Commentary (JAOS 138.1).pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Writing assignment 1 - Gavin Kizer (1).pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./Writing assignment 1 - Gavin Kizer.pdf",
+   "to_folder": "~/Documents/School",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./bellalastr420.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./bic_application.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./chronos.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1072164156.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_115293264.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1200926894.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1687669322.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_1987472705.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./data_377620463.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./deck.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./decklist.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./dokumen.pub_a-short-stay-in-hell-9780983748434-9780983748441-9780983748427-2011941923.epub",
+   "to_folder": "~/Documents/Books",
+   "reason": ".epub file"
+  },
+  {
+   "file": "./eastern_seaboard_logs_1789194243265.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./free-outdoors-logbook-2026-09-24.csv",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".csv file"
+  },
+  {
+   "file": "./gavin Kizer Excercise 6.pdf",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./gemini-code-1789190315390.ts",
+   "to_folder": "~/Documents/Code",
+   "reason": ".ts file"
+  },
+  {
+   "file": "./gemini-code-1789191176867.js",
+   "to_folder": "~/Documents/Code",
+   "reason": ".js file"
+  },
+  {
+   "file": "./gemini-code-1789197186964.js",
+   "to_folder": "~/Documents/Code",
+   "reason": ".js file"
+  },
+  {
+   "file": "./gemini-code-1789364535282.js",
+   "to_folder": "~/Documents/Code",
+   "reason": ".js file"
+  },
+  {
+   "file": "./query.py",
+   "to_folder": "~/Documents/Code",
+   "reason": ".py file"
+  },
+  {
+   "file": "./rooster_ranges_player_scraper.py",
+   "to_folder": "~/Documents/Code",
+   "reason": ".py file"
+  },
+  {
+   "file": "./rr_chronicle_2026-06-11.json",
+   "to_folder": "~/Documents/Code",
+   "reason": ".json file"
+  },
+  {
+   "file": "./rr_chronicle_2026-07-27.json",
+   "to_folder": "~/Documents/Code",
+   "reason": ".json file"
+  },
+  {
+   "file": "./the-great-goblin-20260814-213137.txt",
+   "to_folder": "~/Documents/Papers",
+   "reason": ".txt file"
+  },
+  {
+   "file": "./thirty_five_codec.py",
+   "to_folder": "~/Documents/Code",
+   "reason": ".py file"
+  }
+ ],
+ "leave_alone": [
+  {
+   "file": "./soundcloud-backup-codes.txt",
+   "reason": "Looks like a secret: keep it in a password manager instead"
+  },
+  {
+   "file": "./The_Science_of_Revenge.ris",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./gemini-code-1789185162035.css",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr (1).html.gz",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./gemini-code-1789185190245.css",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_pageindex.json.gz",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_chocr.html.gz",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./XFINITY.mobileconfig",
+   "reason": "Network config; unclear if still needed"
+  },
+  {
+   "file": "./The_Science_of_Revenge.bibtex",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./(Arcade Cioran) E. M. Cioran, Cioran - The Trouble with Being Born (Arcade Cioran)-Arcade (1998)_hocr_searchtext.txt.gz",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./state-park-research-prompts-and-responses.zip",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./Turner-Creek-Marina-at-Youngs-Home-Base-to-Raccoon-Key-Raccoon-Island.gpx",
+   "reason": "GPS data; unclear purpose"
+  },
+  {
+   "file": "./🗓️ Course Schedule (SS2 8-Week).html.zip",
+   "reason": "Sophia wasn't sure, so left alone"
+  },
+  {
+   "file": "./gtkizer97@gmail.com.ical.zip",
+   "reason": "Email-linked calendar; unclear scope"
+  }
+ ]
+}

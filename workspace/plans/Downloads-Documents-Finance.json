@@ -1,0 +1,20 @@
+{
+ "moves": [
+  {
+   "file": "./2022_TaxReturn.pdf",
+   "to_folder": "~/Documents/Finance",
+   "reason": ".pdf file"
+  },
+  {
+   "file": "./TurboTaxReturn.tax2022",
+   "to_folder": "~/Documents/Finance",
+   "reason": "Tax return document"
+  },
+  {
+   "file": "./U.S.Bank Prepaid Online Banking and Mobile Agreement.pdf.bank prepaid online banking and mobile agreement",
+   "to_folder": "~/Documents/Finance",
+   "reason": "Bank agreement, finance document"
+  }
+ ],
+ "leave_alone": []
+}

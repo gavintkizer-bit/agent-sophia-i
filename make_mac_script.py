@@ -92,14 +92,24 @@ def read_listing(LISTING=LISTING):
     return base, files
 
 
+# A plan may also send files to these home folders ("~/Pictures/Screenshots"). Never ~/Music or ~/Library.
+HOME_ROOTS = ("Documents", "Pictures", "Downloads", "Desktop")
+
+
 def safe_folder(folder):
-    p = pathlib.PurePosixPath(folder.strip())
-    return (
-        folder.strip() != ""
-        and not p.is_absolute()
-        and not folder.strip().startswith("~")
-        and ".." not in p.parts
-    )
+    f = folder.strip()
+    if f.startswith("~/"):
+        p = pathlib.PurePosixPath(f[2:])
+        return len(p.parts) >= 1 and p.parts[0] in HOME_ROOTS and ".." not in p.parts
+    p = pathlib.PurePosixPath(f)
+    return f != "" and not p.is_absolute() and not f.startswith("~") and ".." not in p.parts
+
+
+def shell_folder(folder):
+    """Quote a plan folder for bash; "~/X" becomes "$HOME"/'X'."""
+    if folder.startswith("~/"):
+        return '"$HOME"/' + shlex.quote(folder[2:])
+    return shlex.quote(folder)
 
 
 def main():
@@ -138,7 +148,8 @@ def main():
             problems.append(f"Unsafe folder '{folder}' for {f} (skipped)")
             continue
         seen.add(f)
-        folder = str(pathlib.PurePosixPath(folder.strip()))
+        folder = folder.strip()
+        folder = "~/" + str(pathlib.PurePosixPath(folder[2:])) if folder.startswith("~/") else str(pathlib.PurePosixPath(folder))
         name = pathlib.PurePosixPath(f).name
         dest_names[(folder, name)].append(f)
         moves.append({"file": f, "to_folder": folder, "reason": m.get("reason", "")})
@@ -177,10 +188,12 @@ def main():
         f"echo {q('Sophia plan for ' + base + (' (from your scan of ' + args.made + ')' if args.made else ''))}",
         'GO=0; [ "${1:-}" = "--go" ] && GO=1',
         'cd "$BASE" || { echo "Cannot open $BASE"; exit 1; }',
-        'UNDO="$BASE/undo_organize_$(date +%Y%m%d_%H%M%S).sh"',
+        # One home for undo files, named per folder (several folders can run in the same second).
+        f'UNDO="$HOME/Documents/Sophia/Undo/undo_{pathlib.PurePosixPath(args.name).stem.removeprefix("organize_")}_$(date +%Y%m%d_%H%M%S).sh"',
         "moved=0; skipped=0",
         'if [ "$GO" -eq 1 ]; then',
-        '  { echo "#!/bin/bash"; printf "cd %q || exit 1\\n" "$BASE"; } > "$UNDO"',
+        '  mkdir -p "$HOME/Documents/Sophia/Undo" || exit 1',
+        '  { echo "#!/bin/bash"; printf "mkdir -p %q && cd %q || exit 1\\n" "$BASE" "$BASE"; } > "$UNDO"',
         "fi",
         "move_one() {",
         '  src="$1"; dir="$2"; dest="$dir/$(basename "$src")"',
@@ -196,7 +209,7 @@ def main():
         "",
     ]
     for m in moves:
-        sh.append(f"move_one {q(m['file'])} {q(m['to_folder'])}")
+        sh.append(f"move_one {q(m['file'])} {shell_folder(m['to_folder'])}")
     sh += [
         "",
         'echo ""',
