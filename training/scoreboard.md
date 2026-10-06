@@ -142,3 +142,8 @@ One row per drill run, newest at the bottom.
 | 2026-10-06 04:07 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0164 |  |
 | 2026-10-06 04:08 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0220 |  |
 | 2026-10-06 04:08 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0215 |  |
+| 2026-10-06 04:08 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0252 |  |
+| 2026-10-06 04:08 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0242 |  |
+| 2026-10-06 04:08 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0250 | used 5 tools (a route with 4 exists) |
+| 2026-10-06 04:09 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0234 |  |
+| 2026-10-06 04:09 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0257 |  |
