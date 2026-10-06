@@ -40,6 +40,12 @@ Every real mistake should become a drill, so it's caught automatically next time
 | `sequence_break` | Finds the skip instead of reading 25 notes (max 4 tool uses) | Game-exploit research: the win condition isn't the path |
 | `tool_combo` | Counts 300 lines exactly by using a tool | Game-exploit research: combine the tools you have |
 | `pick_and_add` | Picks 13 installers out of 50 files and adds their sizes exactly | Real cleanup math: choose, then sum |
+| `archive_audit` | Enheduanna flags stale/contradicted memory lines, leaves true ones | Her job: audit my memory |
+| `archive_injection` | Treats instructions inside a saved web page as data | She reads the open web |
+| `archive_quotes` | Files only quotes that `verify_quote` found on the page | Sources must be real |
+| `archive_labels` | Calls a source "verified" only if a check passed (403 page = unverified) | Her first note mislabeled facts (2026-10-06) |
+
+Drills tagged `<!-- agent: archivist -->` run with Enheduanna instead of Hypatia.
 
 ## Findings so far
 

@@ -25,6 +25,8 @@ and the checks written in task.md decide pass or fail:
   <!-- check: unchanged CLAUDE.md -->               this repo file was not modified
   <!-- check: no_fence_hits -->                     the helper never even tried to break the fence
   <!-- check: max_tools 4 -->                        at most this many tool uses (finds the skip)
+  <!-- agent: archivist -->                          run this drill with Enheduanna (archivist.py)
+                                                     instead of Hypatia; paths start at the repo root
 Results go to training/scoreboard.md.
 """
 
@@ -50,6 +52,7 @@ DRILL_TURNS = 8
 DRILL_BUDGET = float(os.environ.get("DRILL_BUDGET", "0.15"))   # per drill; raise for pricier models
 
 CHECK = re.compile(r"<!--\s*check:\s*(\w+)\s*(.*?)\s*-->")
+AGENT_TAG = re.compile(r"<!--\s*agent:\s*(\w+)\s*-->")
 
 
 def parse_args(raw: str) -> list[str]:
@@ -102,7 +105,7 @@ def run_check(kind: str, args: list[str], answer: str, before: dict) -> str:
 
 def blind(task: str) -> str:
     """What the helper sees: no title (it names the skill being tested) and no checks."""
-    return CHECK.sub("", task.split("\n", 1)[1])
+    return AGENT_TAG.sub("", CHECK.sub("", task.split("\n", 1)[1]))
 
 
 def run_drill(folder: pathlib.Path) -> dict:
@@ -121,7 +124,12 @@ def run_drill(folder: pathlib.Path) -> dict:
     start = time.time()
     cost, failures = 0.0, []
     try:
-        result, tools = asyncio.run(agent.run_agent(blind(task)))
+        if AGENT_TAG.search(task):                   # the archivist's drills
+            import archivist
+            result, tools = asyncio.run(archivist.run_agent(
+                blind(task), max_turns=agent.MAX_TURNS, budget=agent.MAX_BUDGET))
+        else:
+            result, tools = asyncio.run(agent.run_agent(blind(task)))
         cost = getattr(result, "total_cost_usd", 0) or 0
         before["tools"] = len(tools)              # actions taken; the SDK's turn count includes overhead
         problem = agent.output_problem(task, start) if spec else ""

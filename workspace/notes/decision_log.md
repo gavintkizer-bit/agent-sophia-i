@@ -36,6 +36,18 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Level: green
 - Outcome: weak evidence (3 runs each); re-check at the weekly drills.
 
+## 2026-10-06: Create Enheduanna, an archivist & auditor helper (owner's idea)
+- Options: A) give Hypatia web tools, B) a new specialist with her own fence and personality,
+  C) a session subagent (.claude/agents/)
+- Picked: B. Owner wants narrower roles with their own specialty; a script can run from routines
+  (C can't), and web reading needs a different fence than bulk sorting (A would widen Hypatia).
+  She proposes memory changes; I decide (one source of truth, never trust a helper unverified).
+- Level: green (new helper). Spent about $1.2 on drills and two research runs: over my $0.50 helper
+  budget, so flagged to the owner.
+- Outcome: drills 4/4 kinds passing (audit 3/3 after fixing my grader). First research note mislabeled
+  sources as verified; fixed in code (labels audited after each run). Found and closed a hole in BOTH
+  helpers: unlisted tools were available (she used SendUserFile); now `tools=` is exact.
+
 ## 2026-10-05: Fix Hypatia's math at the root with calculator tools
 - Options: A) keep sums in code only and work around her, B) a stronger prompt warning,
   C) give her exact tools (calculate, sum_numbers_in_file) plus a "never in your head" rule

@@ -308,6 +308,7 @@ async def run_agent(task_text: str, resume: str | None = None):
 
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
+        tools=["Read", "Write", "Edit", "Glob", "Grep"],   # the only built-in tools that exist for her
         allowed_tools=["Read", "Write", "Edit", "Glob", "Grep"] + CALC_TOOLS,
         mcp_servers={"calc": calculator_server()},
         disallowed_tools=["Bash"],          # no shell access for the helper

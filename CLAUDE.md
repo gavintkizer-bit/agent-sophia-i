@@ -34,6 +34,9 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `make_mac_script.py`: turns a plan into a safe `organize_<Folder>.sh` (see ORGANIZE.md).
 - `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
 - `train.py` + `training/`: drills and scoreboard. `agents/README.md`: registry of my agents.
+- `archivist.py`: **Enheduanna** (working name), my archivist & auditor: `research "topic"`, `audit`,
+  `index`, `code-audit` (free). Her archive is `workspace/archive/`; each session, review her
+  `for_sophia.md` proposals before trusting them (mark accepted/rejected, merge into memory).
 - `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
 ## Current goal

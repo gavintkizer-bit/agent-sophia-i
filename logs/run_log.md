@@ -185,3 +185,13 @@ One entry per agent run, newest at the bottom.
 - Model: claude-haiku-4-5 (thinking 2000) | Turns: 11 | Time: 81s | Cost: $0.1130
 - Tools used: Edit, Glob, Read, Write
 - Output check: passed
+
+## 2026-10-06 02:55 | Enheduanna research | OK
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 16 | Time: 81s | Cost: $0.1308
+- Tools used: Glob, Read, ToolSearch, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: passed
+
+## 2026-10-06 03:01 | Enheduanna research | FAILED
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 25 | Time: 221s | Cost: $0.5684
+- Tools used: Edit, Read, SendUserFile, ToolSearch, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: FAILED after retry: These sources are labeled verified, but no quote from them passed verify_quote this run: https://forum.ableton.com/viewtopic.php?t=245534. Verify a quote from each, or relabel those facts unverified, in every file you wrote.
