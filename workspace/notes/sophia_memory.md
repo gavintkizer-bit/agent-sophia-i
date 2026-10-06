@@ -78,12 +78,12 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   done: ~/Music/Sound Library (1.5 GB, unused sounds); no project points at anything moved. Scans upload as
   sophia_scan.zip (GitHub web limit 25 MB). Owner said it "looked like nothing changed": show before/after.
 - Owner's music direction (meeting 2026-10-05 ET): ARCHIVE old music (made before 2021): easy to access, won't
-  edit or release it again. Focus is NEW music and good workflow habits. Plan proposed: archive = whole project
-  folders (never split) + a listenable copy; pick location (USB / Mac / both); next scan adds .als dates.
+  edit or release it again. Focus is NEW music and good workflow habits. Archive stays ON THE MAC (no USB:
+  thumb drives get lost): ~/Music/Archive/<year>/, whole project folders + a listening copy; next scan adds .als dates.
+- Owner wants all 3 habits at once (one home: Music/Projects/2026; Collect All and Save at session end; rough
+  bounce each session) as checklists at 3 levels: Session >> Project >> Album.
 - Music round 2 idea: packs in Downloads stay until projects using them are self-contained ("Collect All and
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
-- Next: owner gets a USB drive (64 GB+) -> copy, verify, then remove: finished Desktop projects, untitled
-  folder (2019 zips first). Then the music organization plan (separate, with the owner).
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
