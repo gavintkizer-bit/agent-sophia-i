@@ -1,0 +1,5 @@
+# base: /Users/gtkizer/Desktop
+# made: 2026-10-05
+2026-10-05|0|./Seaworthy Vessels
+2026-10-05|0|./Academic Adventures
+2026-10-05|0|./All MTG decks

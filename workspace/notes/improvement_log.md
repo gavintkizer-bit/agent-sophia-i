@@ -108,3 +108,16 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   gzip, Live 10 + 12 formats, "x.als 2" copies) and music_files.txt (all files in Downloads + Desktop).
   Tested on fake projects. Next: a music plan that only moves files no project uses.
 - test fix: sandbox_test.sh now replays only the undo files from its own run.
+
+## 2026-10-06 (00:50): first music round
+- upload hit GitHub's 25 MB web limit (music_refs.txt was 23.5 MB + others): zip fixed it. Keep scans zipped;
+  processed/ keeps only the zip of big files.
+- music map: 1,368 Ableton files read, 151,385 sample links, 38,534 files in Downloads+Desktop.
+- new `music_plan.py`: a music file moves only if no project names it (path OR bare name, since Live 10
+  stores names only), into a new ~/Music/Sound Library (fence allows only that inside ~/Music); folders move
+  whole. Second, independent check (substring search of all links) agreed: 0 of 196 loose sounds named.
+  It flagged "Drum samples" (a Factory Pack folder of the same name): false alarm, verified.
+- sandbox_test.sh now fails if music moves anywhere except Sound Library, or touches Music/Ableton; I
+  confirmed it catches both on fake lines.
+- Not moved, on purpose: sample packs with any used file (673 Samples, Samples 1+2, lo-fi, TriSamples,
+  ProducerSpot), project folders, .als/.alp/devices, videos, plugin/driver folders.

@@ -74,11 +74,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   Documents/{School,Finance,Code,Books,Papers}, Pictures/{Photos,Screenshots,Images}, Downloads = inbox
   (+Installers, Archives, Web Pages), Desktop = current music projects. Undo files: Documents/Sophia/Undo.
   Rules in sophia.py + preferences.md; one `organize_all.sh`; test with `sandbox_test.sh` before handoff.
-- 4th scan (2026-10-06): organize round worked (54.2 GB free). Owner said it looked unchanged: the visible
-  mess is MUSIC (~760 loose files + ~20 folders in Downloads, Desktop projects). Owner: organize music only if
-  I can do it safely. Plan: sophia_scan.sh now maps which samples each Ableton project uses (music_refs.txt);
-  next round moves only music files no project uses, whole project folders stay intact.
-- Board #30-36: leftover script (54 files), trash recovery-code files, new scan with music map, upload.
+- Music map works (scan zipped: GitHub web upload max 25 MB). music_plan.py moves only music NO project
+  uses into ~/Music/Sound Library; packs/projects move whole or not at all. Round 1 (board #40+): 196 unused
+  loose sounds + "Drum samples", Minecraft packs/world pieces, web-page folders, Desktop non-music folders.
+  Still in place (used by projects): sample packs in Downloads, all project folders, Desktop projects.
 - Next: owner gets a USB drive (64 GB+) -> copy, verify, then remove: finished Desktop projects, untitled
   folder (2019 zips first). Then the music organization plan (separate, with the owner).
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.

@@ -15,17 +15,24 @@ bash ~/Downloads/organize_all.sh --go   # moves files; undo files go to Document
 If your Mac saved it as `organize_all (1).sh`, delete the old one and rename
 the new one, so you never run an outdated script.
 
-### Latest run: Documents
+### Latest run: Music-Downloads
 
-- 2 files: 1 will move, 1 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Papers 1
-
-### Latest run: Downloads
-
-- 779 files: 53 will move, 726 stay put (audio/Ableton, recent, or unclear).
-- Folders: ~/Documents/Code 9, ~/Documents/Minecraft Worlds 1, ~/Documents/Minecraft Worlds/Loose world files 3, ~/Documents/Papers 6, ~/Documents/Sophia/Undo 1, ~/Downloads/Archives 2, ~/Downloads/Web Pages 9, ~/Downloads/_Sophia To Delete/Sophia leftovers 2, ~/Pictures/Images 1, ~/Pictures/Photos 19
+- 214 files: 214 will move, 0 stay put (audio/Ableton, recent, or unclear).
+- Folders: ~/Documents/Code 2, ~/Documents/Minecraft Worlds/Loose world files 9, ~/Documents/Papers 2, ~/Downloads/Web Pages 2, ~/Downloads/_Sophia To Delete/Installers 1, ~/Downloads/_Sophia To Delete/Minecraft 1, ~/Music/Sound Library/Loose Sounds 196, ~/Music/Sound Library/Sample Packs 1
 
 - **0.0 GB** goes to `~/Downloads/_Sophia To Delete/` for you to check, then drag to the Trash.
+
+### Latest run: Music-Desktop
+
+- 3 files: 3 will move, 0 stay put (audio/Ableton, recent, or unclear).
+- Folders: ~/Documents/School 1, ~/Downloads/_Sophia To Delete/Games 1, ~/Pictures 1
+
+- **0.0 GB** goes to `~/Downloads/_Sophia To Delete/` for you to check, then drag to the Trash.
+
+### Latest run: Music-untitled_folder
+
+- 15 files: 15 will move, 0 stay put (audio/Ableton, recent, or unclear).
+- Folders: ~/Documents/Minecraft Worlds/Packs and maps 15
 
 ## Where your disk space goes
 
