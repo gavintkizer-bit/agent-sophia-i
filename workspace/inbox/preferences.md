@@ -27,7 +27,9 @@ Desktop is for what I'm working on right now (today: my music projects).
   I put videos in my Ableton sets), Ableton files
   (.als, .asd, .alp, racks, even copies like "song.als 2"), sample-pack zips, or music plugin and
   driver installers. Ableton is finicky; other cleanup comes first. (Enforced in code, 2026-10-05.)
-- Never touch ~/Music or ~/Library. (Enforced in code.)
+- Never touch ~/Library, ~/Music/Ableton, or anything already in ~/Music. (Enforced in code.)
+- Music that NO Ableton project uses (checked against the scan's music map by music_plan.py) may move to
+  `~/Music/Sound Library` (a new folder). Sample packs and project folders move only whole, never split.
 - Leave alone anything whose purpose I can't tell from the name.
 - Leave alone anything modified in the last 7 days; I may still be working on it.
 - Leave alone anything that looks like a password or recovery code; Sophia will remind me to store it safely.

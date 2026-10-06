@@ -8,7 +8,7 @@
 
 ## Disk
 
-- Size 244.8 GB | Used 190.6 GB | **Free 54.2 GB**
+- Size 244.8 GB | Used 189.5 GB | **Free 55.4 GB**
 
 ## Biggest folders in your home folder
 
@@ -16,13 +16,13 @@
 - 49.5 GB  `~/Music`
 - 48.9 GB  `~/Music/Ableton`
 - 47.1 GB  `~/Desktop`
-- 32.1 GB  `~/Downloads`
+- 31.7 GB  `~/Downloads`
 - 28.0 GB  `~/Desktop/Demos: Beats`
 - 14.2 GB  `~/Desktop/Sand Machine Mix`
 - 12.4 GB  `~/Downloads/untitled folder`
-- 2.6 GB  `~/Pictures`
-- 2.3 GB  `~/Documents`
-- 2.0 GB  `~/Documents/Minecraft Worlds`
+- 2.7 GB  `~/Pictures`
+- 2.5 GB  `~/Documents`
+- 2.3 GB  `~/Documents/Minecraft Worlds`
 - 1.9 GB  `~/Downloads/VIBES Project`
 - 1.7 GB  `~/Downloads/Samples 2`
 - 1.7 GB  `~/Pictures/Photos Library.photoslibrary`
@@ -132,7 +132,7 @@
 - 0.28 GB  2021-01-19  `~/Desktop/Ethereal Era/Finite Project.zip`
 - 0.27 GB  2024-08-07  `~/Downloads/Installers/tuxguitar-1.6.3-macosx-swt-cocoa-x86_64.app.tar.gz`
 - 0.27 GB  2018-08-06  `~/Music/Ableton/Factory Packs/Orchestral Brass/Samples/Combined/French Horn Solo Legato-2.aif`
-- 0.25 GB  2022-09-10  `~/Downloads/world.zip`
+- 0.25 GB  2022-09-10  `~/Documents/Minecraft Worlds/world.zip`
 - 0.25 GB  2018-08-27  `~/Downloads/Green.wav`
 - 0.25 GB  2018-08-27  `~/Desktop/Demos: Beats/Untitled Project/Double love instrumental.wav`
 - 0.24 GB  2019-10-08  `~/Music/Ableton/Factory Packs/Orchestral Mallets/Samples/Combined/Timpani.aif`

@@ -96,11 +96,20 @@ def read_listing(LISTING=LISTING):
 HOME_ROOTS = ("Documents", "Pictures", "Downloads", "Desktop")
 
 
+# Music checked as unused by every Ableton project (music_plan.py) may go here, and only here.
+# A new folder: it never touches ~/Music/Ableton or anything else already in ~/Music.
+SOUND_LIBRARY = "~/Music/Sound Library"
+
+
 def safe_folder(folder):
     f = folder.strip()
     if f.startswith("~/"):
         p = pathlib.PurePosixPath(f[2:])
-        return len(p.parts) >= 1 and p.parts[0] in HOME_ROOTS and ".." not in p.parts
+        if ".." in p.parts:
+            return False
+        if f == SOUND_LIBRARY or f.startswith(SOUND_LIBRARY + "/"):
+            return True
+        return len(p.parts) >= 1 and p.parts[0] in HOME_ROOTS
     p = pathlib.PurePosixPath(f)
     return f != "" and not p.is_absolute() and not f.startswith("~") and ".." not in p.parts
 
@@ -120,6 +129,8 @@ def main():
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--name", default="organize.sh", help="script filename (unique per folder)")
     ap.add_argument("--made", default="", help="date of the listing, printed by the script")
+    ap.add_argument("--music-checked", action="store_true",
+                    help="allow music files marked music_checked (unused by every project) into ~/Music/Sound Library")
     args = ap.parse_args()
     PLAN, OUT = pathlib.Path(args.plan).resolve(), pathlib.Path(args.out).resolve()
 
@@ -142,7 +153,9 @@ def main():
         if f in seen:
             problems.append(f"Listed twice (kept first): {f}")
             continue
-        if is_protected(f):
+        music_ok = (args.music_checked and m.get("music_checked") is True
+                    and str(folder).strip().startswith(SOUND_LIBRARY))
+        if is_protected(f) and not music_ok:
             continue  # audio/Ableton: always left alone (reported below)
         if not safe_folder(folder):
             problems.append(f"Unsafe folder '{folder}' for {f} (skipped)")
