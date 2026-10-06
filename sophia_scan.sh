@@ -66,10 +66,11 @@ done
   find "$HOME" -xdev \( -path "$HOME/Library" -o -path "$HOME/.Trash" -o -path "$HOME/Music/Ableton/Factory Packs" \) -prune \
     -o -type f \( -iname '*.als' -o -iname '*.als [0-9]*' -o -iname '*.alc' -o -iname '*.adg' -o -iname '*.adv' \) -print 2>/dev/null |
   while IFS= read -r SET; do
-    gzip -dcf "$SET" 2>/dev/null |
-      grep -oiE 'Value="[^"]*\.(wav|aif|aiff|mp3|m4a|flac|ogg|caf|aac|mid|midi|mp4|mov|m4v|mkv|avi|webm)"' |
-      sed 's/^Value="//; s/"$//' | sort -u | awk -v set="$SET" '{print set "\t" $0}'
-  done
+    # One gzip per project; a single grep below handles them all (much faster on an old Mac).
+    printf '@@SET %s\n' "$SET"; gzip -dcf "$SET" 2>/dev/null; echo
+  done |
+  grep -aoiE '^@@SET .*|Value="[^"]*\.(wav|aif|aiff|mp3|m4a|flac|ogg|caf|aac|mid|midi|mp4|mov|m4v|mkv|avi|webm)"' |
+  awk '/^@@SET /{set=substr($0,7); next} {v=substr($0,8); sub(/"$/,"",v); k=set "\t" v; if(!(k in seen)){seen[k]=1; print k}}'
 } > "$OUT/music_refs.txt"
 echo "  wrote music_refs.txt ($(grep -vc '^#' "$OUT/music_refs.txt") sample links)"
 {
