@@ -7,10 +7,11 @@ BASE=/Users/gtkizer/Downloads
 echo 'Sophia plan for /Users/gtkizer/Downloads (from your scan of 2026-10-05)'
 GO=0; [ "${1:-}" = "--go" ] && GO=1
 cd "$BASE" || { echo "Cannot open $BASE"; exit 1; }
-UNDO="$BASE/undo_organize_$(date +%Y%m%d_%H%M%S).sh"
+UNDO="$HOME/Documents/Sophia/Undo/undo_Downloads_$(date +%Y%m%d_%H%M%S).sh"
 moved=0; skipped=0
 if [ "$GO" -eq 1 ]; then
-  { echo "#!/bin/bash"; printf "cd %q || exit 1\n" "$BASE"; } > "$UNDO"
+  mkdir -p "$HOME/Documents/Sophia/Undo" || exit 1
+  { echo "#!/bin/bash"; printf "mkdir -p %q && cd %q || exit 1\n" "$BASE" "$BASE"; } > "$UNDO"
 fi
 move_one() {
   src="$1"; dir="$2"; dest="$dir/$(basename "$src")"
@@ -24,7 +25,8 @@ move_one() {
   fi
 }
 
-move_one './Google Chrome' Installers
+move_one ./chronos.json "$HOME"/Documents/Code
+move_one ./organize_Downloads.txt "$HOME"/'Downloads/_Sophia To Delete/Sophia leftovers'
 
 echo ""
 if [ "$GO" -eq 1 ]; then

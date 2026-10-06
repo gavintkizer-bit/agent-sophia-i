@@ -22,6 +22,7 @@ import datetime
 import json
 import pathlib
 import re
+import shlex
 import shutil
 import subprocess
 import sys
@@ -36,18 +37,31 @@ OUT = WS / "out"
 BATCH_LISTING = INBOX / "_batch.txt"
 BATCH_PLAN = WS / "_batch_plan.json"
 BATCH_SIZE = 100
-TO_DELETE = "_Sophia To Delete"
+TO_DELETE = "~/Downloads/_Sophia To Delete"  # one review folder for every scan
 
 sys.path.insert(0, str(ROOT))
 from make_mac_script import is_protected  # noqa: E402  (one shared list of protected types)
 
+# One home per kind of file (owner, 2026-10-05: "clean and easy to find"; music is a separate plan).
 EXT_FOLDER = {
-    "Documents": "pdf doc docx pages txt rtf md csv xls xlsx numbers key ppt pptx odt ods epub",
-    "Images": "png jpg jpeg heic gif webp tif tiff bmp svg",
-    "Web Pages": "html htm webarchive",
+    "~/Documents/Papers": "pdf doc docx pages txt rtf md csv xls xlsx numbers key ppt pptx odt ods",
+    "~/Documents/Books": "epub mobi azw azw3",
+    "~/Pictures/Images": "png jpg jpeg heic gif webp tif tiff bmp svg",
+    "~/Downloads/Web Pages": "html htm webarchive",
+    "~/Documents/Code": "py js ts json ipynb rb go c cpp h java",
 }
 EXT_FOLDER = {e: f for f, exts in EXT_FOLDER.items() for e in exts.split()}
+ALLOWED = set(EXT_FOLDER.values()) | {"~/Documents/School", "~/Documents/Finance", "~/Pictures/Photos",
+                                      "~/Pictures/Screenshots", "~/Downloads/Installers", "~/Downloads/Archives"}
 FINANCE = re.compile(r"invoice|receipt|statement|tax|w-?2\b|1099|bank|pay ?stub|paycheck", re.I)
+SCHOOL = re.compile(r"assignment|homework|quiz|\bexam\b|midterm|syllabus|lecture|lab report|essay|"
+                    r"study|academic|answers|worksheet|questions|scientific method|test anxiety|\bclass\b|course", re.I)
+SCREENSHOT = re.compile(r"^screen ?shot|^screenshot|^screen recording", re.I)
+PHOTO = re.compile(r"^(img|dsc|pxl|photo)[_ -]?\d|^\d{8,}( \(\d+\))?\.\w+$|^\d{8}_\d{6}|_n\.(jpe?g|png)$", re.I)
+# Secrets stay put and get flagged: the owner should keep them in a password manager, not Downloads.
+SENSITIVE = re.compile(r"recovery.?codes?|backup.?codes?|password|private.?key|seed.?phrase|\.pem$", re.I)
+# Leftovers from Sophia's earlier tools that nothing uses anymore.
+LEFTOVER = re.compile(r"^(file_listing\.txt|organize_\w+\.txt)$", re.I)
 # Sophia's own scripts and undo files never move, or the owner's commands would stop working.
 OWN_SCRIPT = re.compile(r"^(organize|undo_organize|sophia_scan|make_listing)[^/]*\.sh$", re.I)
 COPY = re.compile(r"^(?P<stem>.+?)(?: \(\d+\)| \d+)(?P<ext>\.[^./]+)?$")
@@ -81,8 +95,13 @@ def rule_sort(rows, made):
         copy = COPY.match(name)
         if is_protected(f):
             leave.append({"file": f, "reason": "Audio, video, Ableton, or sample file: never moved"})
+        elif SENSITIVE.search(name):
+            leave.append({"file": f, "reason": "Looks like a secret: keep it in a password manager instead"})
         elif OWN_SCRIPT.match(name):
             leave.append({"file": f, "reason": "Sophia's own script: stays where your commands expect it"})
+        elif LEFTOVER.match(name):
+            moves.append({"file": f, "to_folder": f"{TO_DELETE}/Sophia leftovers",
+                          "reason": "Old Sophia file nothing uses anymore"})
         elif r["date"] >= recent:
             leave.append({"file": f, "reason": "Changed in the last 7 days"})
         elif copy and ("./" + copy["stem"] + (copy["ext"] or ""), r["size"]) in by_name:
@@ -93,12 +112,32 @@ def rule_sort(rows, made):
                           "reason": "Installer; app is likely already installed"})
         elif ext in EXT_FOLDER:
             folder = EXT_FOLDER[ext]
-            if folder == "Documents" and FINANCE.search(name):
-                folder = "Documents/Finance"
+            if folder == "~/Documents/Papers":
+                folder = ("~/Documents/Finance" if FINANCE.search(name)
+                          else "~/Documents/School" if SCHOOL.search(name) else folder)
+            elif folder == "~/Pictures/Images":
+                folder = ("~/Pictures/Screenshots" if SCREENSHOT.search(name)
+                          else "~/Pictures/Photos" if PHOTO.search(name) else folder)
             moves.append({"file": f, "to_folder": folder, "reason": f".{ext} file"})
         else:
             unknown.append(r)
+    school_topics(moves)
     return moves, leave, unknown
+
+
+OWNER = {"gavin", "kizer"}  # the owner's name is on everything they write, so it isn't a topic
+
+
+def school_topics(moves):
+    """A paper that shares a two-word topic with a school file goes to School too
+    ("Blended Rock Deformation and Earthquakes.key" next to "Assignment #4 Rock Deformation")."""
+    def pairs(f):
+        words = re.findall(r"[a-z]{3,}", pathlib.PurePosixPath(f).stem.lower())
+        return {(a, b) for a, b in zip(words, words[1:]) if a not in OWNER and b not in OWNER}
+    topics = set().union(*(pairs(m["file"]) for m in moves if m["to_folder"] == "~/Documents/School"))
+    for m in moves:
+        if m["to_folder"] == "~/Documents/Papers" and pairs(m["file"]) & topics:
+            m["to_folder"], m["reason"] = "~/Documents/School", "Same topic as a school file"
 
 
 def agent_sort(base, made, unknown, dry):
@@ -123,6 +162,8 @@ def agent_sort(base, made, unknown, dry):
             plan = {}
         done = set()
         for m in plan.get("moves", []):
+            if str(m.get("to_folder", "")).strip().strip("/") not in ALLOWED:
+                continue  # only the folders in preferences.md
             if m.get("file") in names and m["file"] not in done:
                 done.add(m["file"])
                 moves.append({**m, "to_folder": str(m.get("to_folder", "")).strip().strip("/")})
@@ -213,19 +254,42 @@ def summarize_survey(path):
 
 
 # ---------------------------------------------------------------- status page
+def write_all(results):
+    """One script for the owner to download: every folder's script, run in turn (same preview / --go)."""
+    parts = [r for r in results if r["moves"]]
+    if not parts:
+        return
+    sh = ["#!/bin/bash", "# Generated by Sophia: organizes every folder from your latest scan in one go.",
+          "#   Preview (moves nothing):  bash ~/Downloads/organize_all.sh",
+          "#   Do it for real:           bash ~/Downloads/organize_all.sh --go",
+          "# Each folder saves its own undo script in that folder.", ""]
+    for n, r in enumerate(parts, 1):
+        body = (OUT / r["name"] / f"organize_{r['name']}.sh").read_text()
+        sh += [f'echo ""; echo "=== {n}/{len(parts)}: {r["base"]} ==="',
+               f"bash -s -- \"$@\" <<'SOPHIA_PART_{n}'", body.rstrip("\n"), f"SOPHIA_PART_{n}", ""]
+    # Folders Sophia made inside Downloads that are now empty (rmdir refuses anything not empty).
+    emptied = [r["base"] for r in parts if r["base"].count("/") > 3 and "/Downloads/" in r["base"]]
+    if emptied:
+        sh += ['if [ "${1:-}" = "--go" ]; then']
+        sh += [f"  rmdir {shlex.quote(b)} 2>/dev/null && echo {shlex.quote('Removed empty folder ' + b)}"
+               for b in sorted(emptied, key=len, reverse=True)]
+        sh += ["fi"]
+    path = OUT / "organize_all.sh"
+    path.write_text("\n".join(sh) + "\n")
+    print(f"== wrote {path.relative_to(ROOT)} ({len(parts)} folders)")
+
+
 def write_status(results, survey_done):
     lines = ["# Sophia status", "", f"_Updated {datetime.date.today().isoformat()}_", "",
              "## Ready for you to run on your Mac", ""]
-    scripts = sorted(p.parent.name for p in OUT.glob("*/organize_*.sh"))
-    if scripts:
-        lines += ["Download, then in Terminal run the preview first, then `--go`:", ""]
-        for s in scripts:
-            url = f"https://github.com/gavintkizer-bit/agent-sophia-i/raw/main/workspace/out/{s}/organize_{s}.sh"
-            lines.append(f"- **{s}**: [organize_{s}.sh]({url}) (preview: `workspace/out/{s}/organize_preview.md`)")
-        lines += ["", "```", "bash ~/Downloads/organize_Downloads.sh        # preview, changes nothing",
-                  "bash ~/Downloads/organize_Downloads.sh --go   # moves files (an undo script is saved)",
-                  "```", "", "If your Mac saved it as `organize_Downloads (1).sh`, delete the old one and rename",
-                  "the new one, so you never run an outdated script. The script prints its plan date first.", ""]
+    if (OUT / "organize_all.sh").exists():
+        url = "https://github.com/gavintkizer-bit/agent-sophia-i/raw/main/workspace/out/organize_all.sh"
+        lines += [f"One script for everything: [organize_all.sh]({url}). Control-click > Save Link As..., save in Downloads.",
+                  "Previews for each folder: `workspace/out/<folder>/organize_preview.md`.", "",
+                  "```", "bash ~/Downloads/organize_all.sh        # preview, changes nothing",
+                  "bash ~/Downloads/organize_all.sh --go   # moves files; undo files go to Documents/Sophia/Undo",
+                  "```", "", "If your Mac saved it as `organize_all (1).sh`, delete the old one and rename",
+                  "the new one, so you never run an outdated script.", ""]
     else:
         lines += ["- Nothing yet.", ""]
     for r in results:
@@ -295,6 +359,7 @@ def main():
     if args.dry:
         print("== dry run: workspace/STATUS.md not changed")
         return
+    write_all(results)
     write_status(results, survey.exists())
 
     stamp = PROCESSED / datetime.datetime.now().strftime("%Y-%m-%d_%H%M")

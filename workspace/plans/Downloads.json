@@ -1,9 +1,14 @@
 {
  "moves": [
   {
-   "file": "./Google Chrome",
-   "to_folder": "Installers",
-   "reason": "App installer folder"
+   "file": "./chronos.json",
+   "to_folder": "~/Documents/Code",
+   "reason": ".json file"
+  },
+  {
+   "file": "./organize_Downloads.txt",
+   "to_folder": "~/Downloads/_Sophia To Delete/Sophia leftovers",
+   "reason": "Old Sophia file nothing uses anymore"
   }
  ],
  "leave_alone": [
@@ -1041,7 +1046,7 @@
   },
   {
    "file": "./github-recovery-codes.txt",
-   "reason": "Changed in the last 7 days"
+   "reason": "Looks like a secret: keep it in a password manager instead"
   },
   {
    "file": "./glock.mp3",
@@ -2672,10 +2677,6 @@
    "reason": "Sophia's own script: stays where your commands expect it"
   },
   {
-   "file": "./organize_Downloads.txt",
-   "reason": "Changed in the last 7 days"
-  },
-  {
    "file": "./organizer-upgrade.zip",
    "reason": "Changed in the last 7 days"
   },
@@ -3064,64 +3065,64 @@
    "reason": "Audio, video, Ableton, or sample file: never moved"
   },
   {
-   "file": "./Sway.tg",
-   "reason": "Unknown file format"
-  },
-  {
-   "file": "./MixPres-asio-2.9.87.5.zip",
-   "reason": "Audio driver/plugin, protected"
-  },
-  {
    "file": "./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent",
-   "reason": "Audio sample pack, protected"
+   "reason": "Audio/music related torrent"
   },
   {
-   "file": "./VoiceMail_2024-10-02_21-13-59.amr",
-   "reason": "Audio file, unknown purpose"
+   "file": "./usb_asio.sit",
+   "reason": "Audio driver file"
   },
   {
-   "file": "./world.zip",
-   "reason": "Possibly game data, uncertain"
+   "file": "./HYSTERESIS.zip",
+   "reason": "Possibly audio/music sample pack"
   },
   {
    "file": "./TubeAmp_Mac.zip",
-   "reason": "Audio plugin, protected"
+   "reason": "Audio plugin installer"
   },
   {
-   "file": "./Dry.zip",
-   "reason": "Purpose unclear from name"
+   "file": "./Sway.tg",
+   "reason": "Unknown file type"
   },
   {
-   "file": "./session.lock",
-   "reason": "System lock file, leave alone"
+   "file": "./world.zip",
+   "reason": "Game file, purpose unclear"
   },
   {
-   "file": "./level.dat_old",
-   "reason": "Game data backup, unclear purpose"
-  },
-  {
-   "file": "./level.dat",
-   "reason": "Game data file, unclear purpose"
-  },
-  {
-   "file": "./files.zip",
-   "reason": "Generic name, purpose unclear"
+   "file": "./MixPres-asio-2.9.87.5.zip",
+   "reason": "Audio plugin driver"
   },
   {
    "file": "./Conner and Zack.zip",
    "reason": "Purpose unclear from name"
   },
   {
-   "file": "./usb_asio.sit",
-   "reason": "Audio driver, protected"
+   "file": "./level.dat",
+   "reason": "Game data file, purpose unclear"
   },
   {
-   "file": "./HYSTERESIS.zip",
-   "reason": "Possibly audio or plugin, uncertain"
+   "file": "./Google Chrome",
+   "reason": "Sophia wasn't sure, so left alone"
   },
   {
-   "file": "./chronos.json",
-   "reason": "Data file, purpose unclear"
+   "file": "./files.zip",
+   "reason": "Purpose unclear from name"
+  },
+  {
+   "file": "./session.lock",
+   "reason": "Lock/temporary system file"
+  },
+  {
+   "file": "./Dry.zip",
+   "reason": "Purpose unclear from name"
+  },
+  {
+   "file": "./level.dat_old",
+   "reason": "Game data backup file"
+  },
+  {
+   "file": "./VoiceMail_2024-10-02_21-13-59.amr",
+   "reason": "Audio voicemail file"
   }
  ]
 }

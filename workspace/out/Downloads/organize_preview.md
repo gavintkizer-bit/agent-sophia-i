@@ -1,12 +1,15 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 780 | Will move: 1 | Left alone: 779
+Files in listing: 780 | Will move: 2 | Left alone: 778
 
 ## Moves
 
-### Installers/ (1)
-- `Google Chrome`: App installer folder
+### ~/Documents/Code/ (1)
+- `chronos.json`: .json file
+
+### ~/Downloads/_Sophia To Delete/Sophia leftovers/ (1)
+- `organize_Downloads.txt`: Old Sophia file nothing uses anymore
 
 ## Left alone
 
@@ -268,7 +271,7 @@ Files in listing: 780 | Will move: 1 | Left alone: 779
 - `./free-outdoors (8).html`: Changed in the last 7 days
 - `./free-outdoors (9).html`: Changed in the last 7 days
 - `./fsk_demod.py`: Changed in the last 7 days
-- `./github-recovery-codes.txt`: Changed in the last 7 days
+- `./github-recovery-codes.txt`: Looks like a secret: keep it in a password manager instead
 - `./glock.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./glock.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./grog [2023-07-13 030447].als`: Audio, video, Ableton, or sample file: never moved
@@ -676,7 +679,6 @@ Files in listing: 780 | Will move: 1 | Left alone: 779
 - `./my-first-agent.zip`: Changed in the last 7 days
 - `./my_alphabet_sheet_33_glyphs_v2.png`: Changed in the last 7 days
 - `./organize_Downloads.sh`: Sophia's own script: stays where your commands expect it
-- `./organize_Downloads.txt`: Changed in the last 7 days
 - `./organizer-upgrade.zip`: Changed in the last 7 days
 - `./piano song_.wav`: Audio, video, Ableton, or sample file: never moved
 - `./reply_to_before_the_word (1).mp3`: Audio, video, Ableton, or sample file: never moved
@@ -774,18 +776,18 @@ Files in listing: 780 | Will move: 1 | Left alone: 779
 - `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./Sway.tg`: Unknown file format
-- `./MixPres-asio-2.9.87.5.zip`: Audio driver/plugin, protected
-- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Audio sample pack, protected
-- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio file, unknown purpose
-- `./world.zip`: Possibly game data, uncertain
-- `./TubeAmp_Mac.zip`: Audio plugin, protected
-- `./Dry.zip`: Purpose unclear from name
-- `./session.lock`: System lock file, leave alone
-- `./level.dat_old`: Game data backup, unclear purpose
-- `./level.dat`: Game data file, unclear purpose
-- `./files.zip`: Generic name, purpose unclear
+- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Audio/music related torrent
+- `./usb_asio.sit`: Audio driver file
+- `./HYSTERESIS.zip`: Possibly audio/music sample pack
+- `./TubeAmp_Mac.zip`: Audio plugin installer
+- `./Sway.tg`: Unknown file type
+- `./world.zip`: Game file, purpose unclear
+- `./MixPres-asio-2.9.87.5.zip`: Audio plugin driver
 - `./Conner and Zack.zip`: Purpose unclear from name
-- `./usb_asio.sit`: Audio driver, protected
-- `./HYSTERESIS.zip`: Possibly audio or plugin, uncertain
-- `./chronos.json`: Data file, purpose unclear
+- `./level.dat`: Game data file, purpose unclear
+- `./Google Chrome`: Sophia wasn't sure, so left alone
+- `./files.zip`: Purpose unclear from name
+- `./session.lock`: Lock/temporary system file
+- `./Dry.zip`: Purpose unclear from name
+- `./level.dat_old`: Game data backup file
+- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio voicemail file

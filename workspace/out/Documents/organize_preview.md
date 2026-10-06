@@ -5,14 +5,19 @@ Files in listing: 20 | Will move: 18 | Left alone: 2
 
 ## Moves
 
-### Documents/ (15)
+### ~/Documents/Code/ (1)
+- `rr_scraper.py`: .py file
+
+### ~/Documents/Papers/ (1)
+- `Gavin Kizer Rivers and Google Earth.pdf`: .pdf file
+
+### ~/Documents/School/ (14)
 - `Academic Habits- Note-taking Strategies - Gavin Kizer.pdf`: .pdf file
 - `Assignment #4 Rock Deformation.pages`: .pages file
 - `Assignment #8 California Drought Conditions.pages`: .pages file
-- `Blended Rock Deformation and Earthquakes.key`: .key file
+- `Blended Rock Deformation and Earthquakes.key`: Same topic as a school file
 - `Gavin K - Assignment 8.pdf`: .pdf file
 - `Gavin Kizer - Assignment #4 Rock Deformation.pdf`: .pdf file
-- `Gavin Kizer Rivers and Google Earth.pdf`: .pdf file
 - `Human Odyssey answers .pages`: .pages file
 - `Human Odyssey answers .pdf`: .pdf file
 - `Human Odyssey answers.pages`: .pages file
@@ -22,16 +27,13 @@ Files in listing: 20 | Will move: 18 | Left alone: 2
 - `cell video questions - Gavin Kizer .pdf`: .pdf file
 - `cell video questions .pages`: .pages file
 
-### Images/ (1)
-- `611191928_1287597506736337_109814106695790461_n.jpg`: .jpg file
-
-### Web Pages/ (1)
-- `Stats.html.rtfd.zip`: HTML Rich Text Format bundle zipped
-
-### _Sophia To Delete/Duplicates/ (1)
+### ~/Downloads/_Sophia To Delete/Duplicates/ (1)
 - `rr_scraper (1).py`: Exact copy of another file here
+
+### ~/Pictures/Photos/ (1)
+- `611191928_1287597506736337_109814106695790461_n.jpg`: .jpg file
 
 ## Left alone
 
 - `./222 demo vid.mp4`: Audio, video, Ableton, or sample file: never moved
-- `./rr_scraper.py`: Python script, unclear if project-specific
+- `./Stats.html.rtfd.zip`: Sophia wasn't sure, so left alone
