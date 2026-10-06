@@ -88,6 +88,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Music round 2 idea: packs in Downloads stay until projects using them are self-contained ("Collect All and
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
+- Web access ON (owner changed the environment, verified 2026-10-06): general sites reachable through the proxy.
+  Unblocks "web search for Hypatia" (idea below).
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
   Once it works, disable the old "Sophia daily inbox check" (trig_01QpV6peTKhkzo3GvtNJVZuP) so it doesn't run twice.
