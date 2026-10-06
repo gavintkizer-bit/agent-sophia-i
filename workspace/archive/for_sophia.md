@@ -1,6 +1,6 @@
 # Proposed Facts for Sophia's Memory
 
-Newest additions at the bottom. Enheduanna proposes ([ ]); Sophia marks each one
+Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each one
 [accepted] or [rejected] with a short reason.
 
 ## 2026-10-06 | research: Ableton Live Collect All and Save: what it copies, where files go, disk space, and risks

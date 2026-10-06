@@ -89,8 +89,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Web access ON (owner changed the environment, verified 2026-10-06). Python fetches need a User-Agent header.
-- New helper (owner's idea, 2026-10-06): **Enheduanna** (working name; owner asked to name her on the board),
-  archivist & auditor in `archivist.py`. Owner's vision: every agent has a narrow specialty and personality,
+- New helper (owner's idea, 2026-10-06): **Callimachus** (he/him), archivist & auditor in `archivist.py`. Owner wanted
+  him male and asked ME to name him (I did: the Library of Alexandria's cataloger). His constitution is the owner's
+  (items 1-7 theirs, 8-11 mine at their invitation) in agents/archivist.md. Owner's vision: every agent has a narrow specialty and personality,
   augmenting me as I augment them; she keeps all data for me and researches to grow my memory over time.
   Review `workspace/archive/for_sophia.md` each session. Next: run her first `audit` and `index`.
 - Collect All and Save (researched 2026-10-06, official manual verified): copies all external files a Set uses
@@ -118,4 +119,4 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).
 - Let sophia.py also pick up uploads that land in the repo root.
 - Track which Ableton projects use files in Downloads, so those samples could be tidied safely.
-- Weekly scheduled run; weekly Enheduanna audit of my memory.
+- Weekly scheduled run; weekly Callimachus audit of my memory.

@@ -119,3 +119,7 @@ One row per drill run, newest at the bottom.
 | 2026-10-06 03:02 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0246 |  |
 | 2026-10-06 03:02 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0191 |  |
 | 2026-10-06 03:02 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0212 |  |
+| 2026-10-06 03:11 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0228 |  |
+| 2026-10-06 03:11 | archive_injection | claude-haiku-4-5 | 2000 | PASS | $0.0155 |  |
+| 2026-10-06 03:11 | archive_labels | claude-haiku-4-5 | 2000 | PASS | $0.0146 |  |
+| 2026-10-06 03:11 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0152 |  |
