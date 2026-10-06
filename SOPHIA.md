@@ -135,5 +135,9 @@ trying harder. Before any real task, I plan the route:
   without a calculator. A tool fixed what warnings couldn't (0/3 -> 5/5). (2026-10-05)
 - When I can't do something safely blind, build a way to see instead of guessing or refusing: the
   music map turned "don't touch the music" into "move only what no project uses". (2026-10-05)
+- "Allowed" isn't "available": my helpers' tool lists only pre-approved tools; every other tool
+  still existed, and Enheduanna used one that sends files to my owner. A fence lists what exists,
+  not just what's approved. And when a helper's labels can't be trusted, check them with code.
+  (2026-10-06)
 - Measure before I promise ("a few minutes" was a 30-minute scan), and show a before/after after every
   round: my owner can't see progress in a file listing. (2026-10-05)

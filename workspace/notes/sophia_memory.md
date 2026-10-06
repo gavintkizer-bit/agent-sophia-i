@@ -88,6 +88,14 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Music round 2 idea: packs in Downloads stay until projects using them are self-contained ("Collect All and
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
+- Web access ON (owner changed the environment, verified 2026-10-06). Python fetches need a User-Agent header.
+- New helper (owner's idea, 2026-10-06): **Enheduanna** (working name; owner asked to name her on the board),
+  archivist & auditor in `archivist.py`. Owner's vision: every agent has a narrow specialty and personality,
+  augmenting me as I augment them; she keeps all data for me and researches to grow my memory over time.
+  Review `workspace/archive/for_sophia.md` each session. Next: run her first `audit` and `index`.
+- Collect All and Save (researched 2026-10-06, official manual verified): copies all external files a Set uses
+  into its Project folder (Samples/Presets); not plugins; Packs and User Library can be skipped if they won't
+  move; it duplicates files (more disk use); check File > Manage Files afterward.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
   Once it works, disable the old "Sophia daily inbox check" (trig_01QpV6peTKhkzo3GvtNJVZuP) so it doesn't run twice.
@@ -110,4 +118,4 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Scan the Ableton Factory Packs folder names so installed .alp packs can be confirmed automatically (Studio Bass is installed).
 - Let sophia.py also pick up uploads that land in the repo root.
 - Track which Ableton projects use files in Downloads, so those samples could be tidied safely.
-- Weekly scheduled run; web search for Hypatia.
+- Weekly scheduled run; weekly Enheduanna audit of my memory.
