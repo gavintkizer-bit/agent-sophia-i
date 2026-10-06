@@ -1,6 +1,6 @@
 # Research: Ableton Live "Collect All and Save"
 
-**Date:** 2026-10-06 | **Researcher:** Enheduanna
+**Date:** 2026-10-06 | **Researcher:** Enheduanna (now Callimachus)
 
 ## Question
 What does Ableton Live's "Collect All and Save" do, what files does it copy, where do they go, what disk space is needed, and what are the risks?

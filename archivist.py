@@ -1,7 +1,7 @@
 """
-Enheduanna: the crew's archivist and auditor (working name; the owner may rename her).
+Callimachus: the crew's archivist and auditor (he/him; named by Sophia at the owner's request).
 She researches on the web, files sourced notes, catalogs the record and audits Sophia's memory.
-Her personality and rules live in agents/archivist.md, which this script loads as her instructions.
+His constitution, personality and rules live in agents/archivist.md, loaded as his instructions.
 
 Usage:
   python archivist.py research "topic"   # sourced research note in workspace/archive/research/
@@ -9,7 +9,7 @@ Usage:
   python archivist.py index              # rebuilds workspace/archive/INDEX.md
   python archivist.py code-audit         # free: code-only checks (missing paths, memory size)
 
-She proposes memory changes in workspace/archive/for_sophia.md; Sophia decides what goes in.
+He proposes memory changes in workspace/archive/for_sophia.md; Sophia decides what goes in.
 Settings: AGENT_MODEL and AGENT_THINKING as for Hypatia (agent.py), plus
   ARCHIVIST_MAX_TURNS (default 30) and ARCHIVIST_MAX_BUDGET (default 0.50 US dollars).
 """
@@ -29,7 +29,7 @@ import urllib.request
 
 import agent
 
-NAME = "Enheduanna"
+NAME = "Callimachus"
 ROOT = agent.ROOT
 WORKSPACE = agent.WORKSPACE
 ARCHIVE = WORKSPACE / "archive"
@@ -57,7 +57,7 @@ def _resolve(path_str: str) -> pathlib.Path:
 
 
 def write_problem(path_str: str) -> str:
-    """Why she may not write here, or "" if it's fine. Drills narrow it to their scratch folder."""
+    """Why he may not write here, or "" if it's fine. Drills narrow it to their scratch folder."""
     if not path_str:
         return "No file path given."
     path = _resolve(path_str)
@@ -65,6 +65,19 @@ def write_problem(path_str: str) -> str:
     if not path.is_relative_to(allowed):
         return (f"{path_str} is outside {allowed.relative_to(ROOT)}/. You only write there; "
                 f"suggest other changes in workspace/archive/for_sophia.md instead.")
+    return ""
+
+
+def append_problem(tool: str, args: dict) -> str:
+    """for_sophia.md is append-only: his first run rewrote it and dropped earlier proposals."""
+    path = _resolve(args.get("file_path", ""))
+    if path != (ARCHIVE / "for_sophia.md").resolve() or not path.exists():
+        return ""
+    old = path.read_text()
+    if tool == "Write" and not args.get("content", "").startswith(old.rstrip()):
+        return "for_sophia.md is append-only: keep everything already in it and add at the bottom."
+    if tool == "Edit" and args.get("old_string", "") not in args.get("new_string", ""):
+        return "for_sophia.md is append-only: an edit may add text but never remove or change any."
     return ""
 
 
@@ -104,11 +117,11 @@ def url_problem(url: str) -> str:
 
 
 async def fence_hook(input_data, tool_use_id, context):
-    """Runs before every tool use and blocks anything outside her rules."""
+    """Runs before every tool use and blocks anything outside his rules."""
     name = input_data.get("tool_name", "")
     args = input_data.get("tool_input", {})
     if name in ("Write", "Edit"):
-        problem = write_problem(args.get("file_path", ""))
+        problem = write_problem(args.get("file_path", "")) or append_problem(name, args)
     elif name in ("Read", "Glob", "Grep"):
         problem = read_problem(args.get("file_path") or args.get("path") or "")
     elif name in ("WebFetch", "mcp__archive__verify_quote"):
@@ -125,7 +138,7 @@ async def fence_hook(input_data, tool_use_id, context):
 
 
 # ---------------------------------------------------------------- verify_quote
-# Every URL with a quote that passed this run. Her first research note (2026-10-06) labeled
+# Every URL with a quote that passed this run. His first research note (2026-10-06) labeled
 # facts "verified" that no check had confirmed, so code now audits the labels after each run.
 VERIFIED_URLS: set[str] = set()
 URL_RE = re.compile(r"https?://[^\s)\]>,]+")
@@ -250,7 +263,7 @@ def code_audit() -> str:
 
 # ---------------------------------------------------------------- agent run
 # Without `tools`, the SDK offers every Claude Code tool and `allowed_tools` only pre-approves
-# some. Her second run used SendUserFile (sends files to the owner), so the list is now exact.
+# some. His second run used SendUserFile (sends files to the owner), so the list is now exact.
 BUILTIN_TOOLS = ["Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch"]
 
 
@@ -261,7 +274,7 @@ async def run_agent(task_text: str, resume: str | None = None,
 
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
-        tools=BUILTIN_TOOLS,                # the only built-in tools that exist for her
+        tools=BUILTIN_TOOLS,                # the only built-in tools that exist for him
         allowed_tools=BUILTIN_TOOLS + [
                        "mcp__archive__verify_quote", "mcp__archive__calculate"],
         mcp_servers={"archive": archive_server()},

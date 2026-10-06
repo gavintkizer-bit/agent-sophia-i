@@ -36,7 +36,7 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Level: green
 - Outcome: weak evidence (3 runs each); re-check at the weekly drills.
 
-## 2026-10-06: Create Enheduanna, an archivist & auditor helper (owner's idea)
+## 2026-10-06: Create an archivist & auditor helper, Callimachus (owner's idea; first called Enheduanna)
 - Options: A) give Hypatia web tools, B) a new specialist with her own fence and personality,
   C) a session subagent (.claude/agents/)
 - Picked: B. Owner wants narrower roles with their own specialty; a script can run from routines
