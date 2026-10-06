@@ -1,0 +1,4 @@
+# base: /Users/gtkizer/Documents
+# made: 2026-10-05
+2019-05-23|86023862|./222 demo vid.mp4
+2026-06-11|16798|./Stats.html.rtfd.zip
