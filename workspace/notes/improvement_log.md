@@ -136,3 +136,9 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 | 15 | gap | No report-writing drill (the .alp mistake) (mind-7) | write the drill | open |
 | 16 | gap | Constitution change isn't shown at boot (mind-8) | boot hook warning: red, owner decides | open (ask) |
 | 17 | gap | Repo audit "mac" part not done | re-run on the chosen model | open (2026-10-07) |
+
+## Daily check-in 2026-10-06 (Tuesday, quiet)
+
+- No uploads, requests, ticks, or answers since last night. Owner's list for today is already on the board.
+- Reviewed Cal's 3 unreviewed proposals (band-finding research): rejected, since the owner called band research "superficial".
+- No helper runs, no code changes.
