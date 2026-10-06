@@ -335,6 +335,18 @@ def main():
     ap.add_argument("--dry", action="store_true", help="no agent runs, no files moved, STATUS.md unchanged")
     args = ap.parse_args()
 
+    # Scans arrive as one sophia_scan.zip (GitHub's upload page takes 25 MB per file), sometimes one folder up.
+    for z in [INBOX / "sophia_scan.zip", WS / "sophia_scan.zip"]:
+        if z.exists():
+            import zipfile
+            with zipfile.ZipFile(z) as zf:
+                for m in zf.namelist():
+                    if m.endswith(".txt") and "/" not in m.lstrip("./"):
+                        (INBOX / pathlib.PurePosixPath(m).name).write_bytes(zf.read(m))
+            if not args.dry:
+                PROCESSED.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(z), PROCESSED / datetime.datetime.now().strftime("scan_%Y-%m-%d_%H%M.zip"))
+            print(f"== unpacked {z.name}")
     listings = sorted(INBOX.glob("listing_*.txt")) + sorted(INBOX.glob("file_listing.txt"))
     survey = INBOX / "disk_survey.txt"
     if not listings and not survey.exists():

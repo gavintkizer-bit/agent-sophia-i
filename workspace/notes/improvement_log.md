@@ -123,3 +123,11 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   ProducerSpot), project folders, .als/.alp/devices, videos, plugin/driver folders.
 - result (after round): Sound Library 1.5 GB; Downloads loose 780 -> 530; music_files 38.5k -> 20.2k; free 55.3 GB.
   Processed scans keep only the zip (big text files stay out of git).
+
+## 2026-10-06 (01:50): prep for tomorrow
+- music homes: fence allows ~/Music/{Sound Library,Projects,Bounces,Archive} only (new folders; Ableton and
+  Apple Music folders still refused). sandbox_test.sh updated to match.
+- scan: projects.txt (last-saved date of every .als, no backups) for the archive; the scan now zips itself
+  (old zip to Trash) and sophia.py unpacks sophia_scan.zip from inbox/ or workspace/.
+- tomorrow's script: 2 checked moves (Grandpa's Familiar folder -> Music/Projects/2026; unused Void Speech.wav
+  bounce -> Music/Bounces). Sandbox pass. Owner checks Void Speech plays from its new home.
