@@ -77,6 +77,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Night of 2026-10-05 (ET) result: 55.3 GB free (from 18.0). 995 items put in place over 4 rounds. Music round 1
   done: ~/Music/Sound Library (1.5 GB, unused sounds); no project points at anything moved. Scans upload as
   sophia_scan.zip (GitHub web limit 25 MB). Owner said it "looked like nothing changed": show before/after.
+- Owner's music direction (meeting 2026-10-05 ET): ARCHIVE old music (made before 2021): easy to access, won't
+  edit or release it again. Focus is NEW music and good workflow habits. Plan proposed: archive = whole project
+  folders (never split) + a listenable copy; pick location (USB / Mac / both); next scan adds .als dates.
 - Music round 2 idea: packs in Downloads stay until projects using them are self-contained ("Collect All and
   Save" in Ableton); then whole packs can move. Needs the owner; propose, don't push.
 - Next: owner gets a USB drive (64 GB+) -> copy, verify, then remove: finished Desktop projects, untitled
