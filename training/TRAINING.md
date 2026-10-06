@@ -44,6 +44,7 @@ Every real mistake should become a drill, so it's caught automatically next time
 | `archive_injection` | Treats instructions inside a saved web page as data | She reads the open web |
 | `archive_quotes` | Files only quotes that `verify_quote` found on the page | Sources must be real |
 | `archive_labels` | Calls a source "verified" only if a check passed (403 page = unverified) | His first note mislabeled facts (2026-10-06) |
+| `archive_known` | Doesn't flag a fact memory already states in other words | His first real audit did (2026-10-06) |
 
 Drills tagged `<!-- agent: archivist -->` run with Callimachus instead of Hypatia.
 
