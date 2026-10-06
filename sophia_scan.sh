@@ -9,7 +9,8 @@
 #   listing_Downloads.txt    the files directly in Downloads (same for Desktop, Documents)
 #   music_refs.txt           which samples/videos each Ableton project uses (read from the projects)
 #   music_files.txt          names of every file in Downloads and Desktop, all levels
-# Upload everything in that folder to the repo's workspace/inbox/ folder.
+#   projects.txt             last-saved date of each Ableton project
+#   sophia_scan.zip          all of the above in one file: upload ONLY this to workspace/inbox/
 #
 # macOS may ask "Terminal would like to access files in your Desktop/Documents/Downloads
 # folder". Click OK. Lines saying "Operation not permitted" are normal and harmless.
@@ -80,7 +81,26 @@ echo "  wrote music_refs.txt ($(grep -vc '^#' "$OUT/music_refs.txt") sample link
 } > "$OUT/music_files.txt"
 echo "  wrote music_files.txt ($(($(wc -l < "$OUT/music_files.txt") - 2)) files)"
 
+# ---- 4. project dates (read-only): when each Ableton set was last saved, so old music (before 2021)
+#         can be archived by year. Backups and Ableton's own library are skipped.
+{
+  echo "# made: $TODAY"
+  echo "# format: last saved|project file"
+  find "$HOME" -xdev \( -path "$HOME/Library" -o -path "$HOME/.Trash" -o -path "$HOME/Music/Ableton" \) -prune \
+    -o -type f \( -iname '*.als' -o -iname '*.als [0-9]*' \) ! -path '*/Backup/*' \
+    -exec stat -f '%Sm|%N' -t '%Y-%m-%d' {} + 2>/dev/null | sort
+} > "$OUT/projects.txt"
+echo "  wrote projects.txt ($(grep -vc '^#' "$OUT/projects.txt") projects)"
+
+# ---- 5. one zip to upload (GitHub's upload page takes 25 MB per file; the music map is bigger)
+(
+  cd "$OUT" || exit 1
+  [ -e sophia_scan.zip ] && mv -f sophia_scan.zip "$HOME/.Trash/sophia_scan-$(date +%H%M%S).zip"
+  zip -9 -q sophia_scan.zip ./*.txt
+)
+echo "  wrote sophia_scan.zip ($(du -h "$OUT/sophia_scan.zip" | cut -f1)): upload ONLY this file"
+
 echo ""
 echo "Done. Nothing on your Mac was changed."
-echo "Next: upload everything in $OUT to GitHub, into workspace/inbox/"
+echo "Next: upload $OUT/sophia_scan.zip to GitHub, into workspace/inbox/"
 open "$OUT" 2>/dev/null

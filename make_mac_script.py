@@ -99,6 +99,9 @@ HOME_ROOTS = ("Documents", "Pictures", "Downloads", "Desktop")
 # Music checked as unused by every Ableton project (music_plan.py) may go here, and only here.
 # A new folder: it never touches ~/Music/Ableton or anything else already in ~/Music.
 SOUND_LIBRARY = "~/Music/Sound Library"
+# New music homes the owner chose (2026-10-05): one home for new songs, bounces, and the pre-2021 archive.
+# All are new folders; nothing already in ~/Music is touched.
+MUSIC_HOMES = (SOUND_LIBRARY, "~/Music/Projects", "~/Music/Bounces", "~/Music/Archive")
 
 
 def safe_folder(folder):
@@ -107,7 +110,7 @@ def safe_folder(folder):
         p = pathlib.PurePosixPath(f[2:])
         if ".." in p.parts:
             return False
-        if f == SOUND_LIBRARY or f.startswith(SOUND_LIBRARY + "/"):
+        if any(f == h or f.startswith(h + "/") for h in MUSIC_HOMES):
             return True
         return len(p.parts) >= 1 and p.parts[0] in HOME_ROOTS
     p = pathlib.PurePosixPath(f)
@@ -154,7 +157,7 @@ def main():
             problems.append(f"Listed twice (kept first): {f}")
             continue
         music_ok = (args.music_checked and m.get("music_checked") is True
-                    and str(folder).strip().startswith(SOUND_LIBRARY))
+                    and any(str(folder).strip().startswith(h) for h in MUSIC_HOMES))
         if is_protected(f) and not music_ok:
             continue  # audio/Ableton: always left alone (reported below)
         if not safe_folder(folder):
