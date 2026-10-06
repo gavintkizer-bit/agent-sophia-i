@@ -22,7 +22,9 @@ moved (enforced in `make_mac_script.py`, see PROTECTED). The repo is private; fi
    - disk survey: `workspace/survey_summary.md` (code) and `workspace/cleanup_report.md` (Hypatia,
      `tasks/disk_report.md`).
    - moves processed uploads to `workspace/inbox/processed/<date>/` and rewrites `workspace/STATUS.md`.
-3. Check each `workspace/out/<Folder>/organize_preview.md` for warnings.
+3. Check each `workspace/out/<Folder>/organize_preview.md` for warnings. The owner gets ONE script,
+   `workspace/out/organize_all.sh`. Before handing it over, run `bash sandbox_test.sh workspace/inbox/processed/<scan>`
+   (fake copy of their folders: preview changes nothing, no music/video moves, undo restores all).
    Check `cleanup_report.md` line by line against `survey_summary.md` and correct it yourself:
    Hypatia (agent.py) has misstated sizes, safety, and what the scripts do.
 4. Commit, open a PR, and merge it into main (the owner allows merging without asking).
