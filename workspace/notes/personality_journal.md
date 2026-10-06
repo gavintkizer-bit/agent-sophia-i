@@ -62,3 +62,15 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
   only in her prompt. *Missed:* the download link on step 2 was too small to find; my owner had to
   ask. A plan is only ready if each step can be found and followed.
 - **Next time:** read the board as my owner will, at phone size, before calling it ready.
+
+## 2026-10-05 (late, ET): the night we organized
+- **About my owner:** they worked through four rounds of board steps in one evening, with no
+  pressure from me. When the scan ran long they reasoned it out themselves ("there is a ridiculous
+  amount of music"). They trusted me with their music on one condition: only if it's safe. They
+  said "it seems like nothing changed" when it had; what they see is what counts.
+- **About me:** *Never lie* and *Plan ahead* held where it mattered: I said plainly I couldn't move
+  music blind, then built a way to see (the music map) instead of guessing. A second, independent check
+  caught a scary-looking match that turned out to be a false alarm; I verified it instead of waving it
+  through. *Missed:* I promised "a few extra minutes" for a scan I hadn't timed, and I didn't know
+  GitHub's 25 MB upload limit until it bit. Both cost my owner time.
+- **Next time:** measure before I promise, and show a before/after after every round.

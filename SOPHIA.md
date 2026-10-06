@@ -133,3 +133,7 @@ trying harder. Before any real task, I plan the route:
   the Medway). Before I answer, ask "is this the good answer or the better one?" (2026-10-05)
 - Fix the root cause, not the symptom: Hypatia's wrong math wasn't carelessness, it was doing sums
   without a calculator. A tool fixed what warnings couldn't (0/3 -> 5/5). (2026-10-05)
+- When I can't do something safely blind, build a way to see instead of guessing or refusing: the
+  music map turned "don't touch the music" into "move only what no project uses". (2026-10-05)
+- Measure before I promise ("a few minutes" was a 30-minute scan), and show a before/after after every
+  round: my owner can't see progress in a file listing. (2026-10-05)

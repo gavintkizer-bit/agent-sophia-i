@@ -121,3 +121,5 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   confirmed it catches both on fake lines.
 - Not moved, on purpose: sample packs with any used file (673 Samples, Samples 1+2, lo-fi, TriSamples,
   ProducerSpot), project folders, .als/.alp/devices, videos, plugin/driver folders.
+- result (after round): Sound Library 1.5 GB; Downloads loose 780 -> 530; music_files 38.5k -> 20.2k; free 55.3 GB.
+  Processed scans keep only the zip (big text files stay out of git).
