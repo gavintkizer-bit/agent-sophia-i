@@ -25,8 +25,59 @@ move_one() {
   fi
 }
 
-move_one ./chronos.json "$HOME"/Documents/Code
-move_one ./organize_Downloads.txt "$HOME"/'Downloads/_Sophia To Delete/Sophia leftovers'
+move_one ./1000006451.jpg "$HOME"/Pictures/Photos
+move_one ./1000006452.jpg "$HOME"/Pictures/Photos
+move_one ./1000006453.jpg "$HOME"/Pictures/Photos
+move_one ./1000006454.jpg "$HOME"/Pictures/Photos
+move_one ./1000006455.jpg "$HOME"/Pictures/Photos
+move_one ./1000006456.jpg "$HOME"/Pictures/Photos
+move_one ./1000006457.jpg "$HOME"/Pictures/Photos
+move_one ./1000006458.jpg "$HOME"/Pictures/Photos
+move_one ./1000006459.jpg "$HOME"/Pictures/Photos
+move_one ./1000006460.jpg "$HOME"/Pictures/Photos
+move_one ./1000006461.jpg "$HOME"/Pictures/Photos
+move_one ./1000006462.jpg "$HOME"/Pictures/Photos
+move_one ./1000006463.jpg "$HOME"/Pictures/Photos
+move_one ./1000006464.jpg "$HOME"/Pictures/Photos
+move_one ./1000006465.jpg "$HOME"/Pictures/Photos
+move_one ./1000006466.jpg "$HOME"/Pictures/Photos
+move_one ./1000006467.jpg "$HOME"/Pictures/Photos
+move_one ./1000006468.jpg "$HOME"/Pictures/Photos
+move_one ./1000006469.jpg "$HOME"/Pictures/Photos
+move_one ./Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf "$HOME"/Documents/Papers
+move_one './Crew Board.html' "$HOME"/'Downloads/Web Pages'
+move_one ./Mixing_Bass_and_Guitars.pdf "$HOME"/Documents/Papers
+move_one './Project_Manus_Complete_Archive (1).pdf' "$HOME"/Documents/Papers
+move_one './Project_Manus_Complete_Archive (2).pdf' "$HOME"/Documents/Papers
+move_one ./Project_Manus_Complete_Archive.pdf "$HOME"/Documents/Papers
+move_one './The Sky-Tether and the Blood Ledger - Narrative Summary.pdf' "$HOME"/Documents/Papers
+move_one ./align_traces.py "$HOME"/Documents/Code
+move_one ./electrothermal.py "$HOME"/Documents/Code
+move_one './files (1).zip' "$HOME"/Downloads/Archives
+move_one ./files.zip "$HOME"/Downloads/Archives
+move_one ./floorplan.py "$HOME"/Documents/Code
+move_one './free-outdoors (5).html' "$HOME"/'Downloads/Web Pages'
+move_one './free-outdoors (6).html' "$HOME"/'Downloads/Web Pages'
+move_one './free-outdoors (7).html' "$HOME"/'Downloads/Web Pages'
+move_one './free-outdoors (8).html' "$HOME"/'Downloads/Web Pages'
+move_one './free-outdoors (9).html' "$HOME"/'Downloads/Web Pages'
+move_one ./fsk_demod.py "$HOME"/Documents/Code
+move_one './index (1).html' "$HOME"/'Downloads/Web Pages'
+move_one ./index.html "$HOME"/'Downloads/Web Pages'
+move_one ./level.dat "$HOME"/'Documents/Minecraft Worlds/Loose world files'
+move_one ./level.dat_old "$HOME"/'Documents/Minecraft Worlds/Loose world files'
+move_one ./make_listing.sh "$HOME"/'Downloads/_Sophia To Delete/Sophia leftovers'
+move_one ./my-first-agent.zip "$HOME"/Documents/Code
+move_one ./my_alphabet_sheet_33_glyphs_v2.png "$HOME"/Pictures/Images
+move_one ./organize_Downloads.sh "$HOME"/'Downloads/_Sophia To Delete/Sophia leftovers'
+move_one ./organizer-upgrade.zip "$HOME"/Documents/Code
+move_one ./session.lock "$HOME"/'Documents/Minecraft Worlds/Loose world files'
+move_one './src_free-outdoors (4).html' "$HOME"/'Downloads/Web Pages'
+move_one ./test_jwt_alg_confusion.py "$HOME"/Documents/Code
+move_one './the_third_stratum (1).py' "$HOME"/Documents/Code
+move_one ./the_third_stratum.py "$HOME"/Documents/Code
+move_one ./undo_organize_20261005_192330.sh "$HOME"/Documents/Sophia/Undo
+move_one ./world.zip "$HOME"/'Documents/Minecraft Worlds'
 
 echo ""
 if [ "$GO" -eq 1 ]; then

@@ -25,24 +25,7 @@ move_one() {
   fi
 }
 
-move_one ./611191928_1287597506736337_109814106695790461_n.jpg "$HOME"/Pictures/Photos
-move_one './Academic Habits- Note-taking Strategies - Gavin Kizer.pdf' "$HOME"/Documents/School
-move_one './Assignment #4 Rock Deformation.pages' "$HOME"/Documents/School
-move_one './Assignment #8 California Drought Conditions.pages' "$HOME"/Documents/School
-move_one './Blended Rock Deformation and Earthquakes.key' "$HOME"/Documents/School
-move_one './Gavin K - Assignment 8.pdf' "$HOME"/Documents/School
-move_one './Gavin Kizer - Assignment #4 Rock Deformation.pdf' "$HOME"/Documents/School
-move_one './Gavin Kizer Rivers and Google Earth.pdf' "$HOME"/Documents/Papers
-move_one './Human Odyssey answers .pages' "$HOME"/Documents/School
-move_one './Human Odyssey answers .pdf' "$HOME"/Documents/School
-move_one './Human Odyssey answers.pages' "$HOME"/Documents/School
-move_one './Scientific method-Gavin Kizer.pdf' "$HOME"/Documents/School
-move_one './Scientific method.pages' "$HOME"/Documents/School
-move_one './Strategies to Help Overcome Test Anxiety (fillable).pdf' "$HOME"/Documents/School
-move_one './cell video questions - Gavin Kizer .pdf' "$HOME"/Documents/School
-move_one './cell video questions .pages' "$HOME"/Documents/School
-move_one './rr_scraper (1).py' "$HOME"/'Downloads/_Sophia To Delete/Duplicates'
-move_one ./rr_scraper.py "$HOME"/Documents/Code
+move_one ./Stats.html.rtfd.zip "$HOME"/Documents/Papers
 
 echo ""
 if [ "$GO" -eq 1 ]; then

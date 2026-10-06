@@ -7,6 +7,8 @@
 # It creates the folder ~/Desktop/sophia_upload/ with:
 #   disk_survey.txt          where the space on your drive is going
 #   listing_Downloads.txt    the files directly in Downloads (same for Desktop, Documents)
+#   music_refs.txt           which samples/videos each Ableton project uses (read from the projects)
+#   music_files.txt          names of every file in Downloads and Desktop, all levels
 # Upload everything in that folder to the repo's workspace/inbox/ folder.
 #
 # macOS may ask "Terminal would like to access files in your Desktop/Documents/Downloads
@@ -54,6 +56,28 @@ for NAME in Downloads Desktop Documents; do
   } > "$OUT/listing_$NAME.txt"
   echo "  wrote listing_$NAME.txt ($(($(wc -l < "$OUT/listing_$NAME.txt") - 2)) files)"
 done
+
+# ---- 3. music map (read-only): which samples and videos each Ableton project uses, so Sophia
+#         can tell which loose music files are safe to tidy. Projects are only READ (gzip -dc).
+{
+  echo "# made: $TODAY"
+  echo "# home: $HOME"
+  echo "# format: project<TAB>file it uses (as Ableton stored it)"
+  find "$HOME" -xdev \( -path "$HOME/Library" -o -path "$HOME/.Trash" -o -path "$HOME/Music/Ableton/Factory Packs" \) -prune \
+    -o -type f \( -iname '*.als' -o -iname '*.als [0-9]*' -o -iname '*.alc' -o -iname '*.adg' -o -iname '*.adv' \) -print 2>/dev/null |
+  while IFS= read -r SET; do
+    gzip -dcf "$SET" 2>/dev/null |
+      grep -oiE 'Value="[^"]*\.(wav|aif|aiff|mp3|m4a|flac|ogg|caf|aac|mid|midi|mp4|mov|m4v|mkv|avi|webm)"' |
+      sed 's/^Value="//; s/"$//' | sort -u | awk -v set="$SET" '{print set "\t" $0}'
+  done
+} > "$OUT/music_refs.txt"
+echo "  wrote music_refs.txt ($(grep -vc '^#' "$OUT/music_refs.txt") sample links)"
+{
+  echo "# made: $TODAY"
+  echo "# every file inside Downloads and Desktop, all levels (names only)"
+  find "$HOME/Downloads" "$HOME/Desktop" -xdev -type f ! -name '.*' -print 2>/dev/null
+} > "$OUT/music_files.txt"
+echo "  wrote music_files.txt ($(($(wc -l < "$OUT/music_files.txt") - 2)) files)"
 
 echo ""
 echo "Done. Nothing on your Mac was changed."

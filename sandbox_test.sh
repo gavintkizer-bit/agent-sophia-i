@@ -20,11 +20,12 @@ find home -type f | sort > before.txt
 fail=0
 HOME="$H" bash all.sh > /dev/null
 find home -type f | sort | diff -q - before.txt > /dev/null || { echo "FAIL: preview changed files"; fail=1; }
+touch start.marker; sleep 1
 HOME="$H" bash all.sh --go > go.txt
 moved=$(grep -c '^MOVED' go.txt)
 grep '^MOVED' go.txt | grep -iE '\.(wav|aiff?|mp3|m4a|flac|als|alp|asd|adg|mp4|mov|mkv|m4v)( |$)' && { echo "FAIL: music/video moved"; fail=1; }
-for u in home/Documents/Sophia/Undo/*.sh; do HOME="$H" bash "$u"; done
-find home -type f | grep -v 'Documents/Sophia/Undo' | sort | diff -q - before.txt > /dev/null || { echo "FAIL: undo did not restore everything"; fail=1; }
+find home/Documents/Sophia/Undo -name "*.sh" -newer start.marker | while IFS= read -r u; do HOME="$H" bash "$u"; done
+find home -type f | grep -v 'Documents/Sophia/Undo/undo_' | sort | diff -q - <(grep -v 'Documents/Sophia/Undo/undo_' before.txt) > /dev/null || { echo "FAIL: undo did not restore everything"; fail=1; }
 rm -rf "$SB"
 [ "$fail" -eq 0 ] && echo "PASS: preview safe, $moved moved, no music/video, undo restores all"
 exit "$fail"

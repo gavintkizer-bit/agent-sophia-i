@@ -98,3 +98,13 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
 - new: `sandbox_test.sh` replays organize_all.sh on a fake copy of the scan: preview changes nothing,
   no music/video moves, undo restores all. Run it before every script handoff.
 - new: secrets (recovery/backup codes) are never moved; flagged for a locked note instead.
+
+## 2026-10-06 (00:20): leftovers + music map
+- owner felt "nothing changed": the 4th scan proved the moves worked (Documents/Pictures sorted); what they
+  see is music clutter (≈760 loose music files + ~20 music folders in Downloads, Desktop all projects).
+  Lesson: after a round, SHOW the before/after, or progress is invisible.
+- owner OK'd organizing recent files too; 54 leftovers hand-planned (small set: my judgment beats a guess).
+- new: sophia_scan.sh writes music_refs.txt (every sample/video each Ableton set/rack/clip uses, read via
+  gzip, Live 10 + 12 formats, "x.als 2" copies) and music_files.txt (all files in Downloads + Desktop).
+  Tested on fake projects. Next: a music plan that only moves files no project uses.
+- test fix: sandbox_test.sh now replays only the undo files from its own run.

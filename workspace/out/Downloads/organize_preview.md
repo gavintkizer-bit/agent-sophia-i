@@ -1,40 +1,101 @@
 # Organize preview
 
 Folder: `/Users/gtkizer/Downloads`  
-Files in listing: 780 | Will move: 2 | Left alone: 778
+Files in listing: 779 | Will move: 53 | Left alone: 726
 
 ## Moves
 
-### ~/Documents/Code/ (1)
-- `chronos.json`: .json file
+### ~/Documents/Code/ (9)
+- `align_traces.py`: code
+- `electrothermal.py`: code
+- `floorplan.py`: code
+- `fsk_demod.py`: code
+- `my-first-agent.zip`: code
+- `organizer-upgrade.zip`: code
+- `test_jwt_alg_confusion.py`: code
+- `the_third_stratum (1).py`: code
+- `the_third_stratum.py`: code
 
-### ~/Downloads/_Sophia To Delete/Sophia leftovers/ (1)
-- `organize_Downloads.txt`: Old Sophia file nothing uses anymore
+### ~/Documents/Minecraft Worlds/ (1)
+- `world.zip`: Minecraft world
+
+### ~/Documents/Minecraft Worlds/Loose world files/ (3)
+- `level.dat`: Minecraft world file
+- `level.dat_old`: Minecraft world file
+- `session.lock`: Minecraft world file
+
+### ~/Documents/Papers/ (6)
+- `Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf`: document
+- `Mixing_Bass_and_Guitars.pdf`: document
+- `Project_Manus_Complete_Archive (1).pdf`: document
+- `Project_Manus_Complete_Archive (2).pdf`: document
+- `Project_Manus_Complete_Archive.pdf`: document
+- `The Sky-Tether and the Blood Ledger - Narrative Summary.pdf`: document
+
+### ~/Documents/Sophia/Undo/ (1)
+- `undo_organize_20261005_192330.sh`: undo file from night 1
+
+### ~/Downloads/Archives/ (2)
+- `files (1).zip`: archive
+- `files.zip`: archive
+
+### ~/Downloads/Web Pages/ (9)
+- `Crew Board.html`: saved web page
+- `free-outdoors (5).html`: saved web page
+- `free-outdoors (6).html`: saved web page
+- `free-outdoors (7).html`: saved web page
+- `free-outdoors (8).html`: saved web page
+- `free-outdoors (9).html`: saved web page
+- `index (1).html`: saved web page
+- `index.html`: saved web page
+- `src_free-outdoors (4).html`: saved web page
+
+### ~/Downloads/_Sophia To Delete/Sophia leftovers/ (2)
+- `make_listing.sh`: old Sophia file, replaced
+- `organize_Downloads.sh`: old Sophia file, replaced
+
+### ~/Pictures/Images/ (1)
+- `my_alphabet_sheet_33_glyphs_v2.png`: image
+
+### ~/Pictures/Photos/ (19)
+- `1000006451.jpg`: phone photo
+- `1000006452.jpg`: phone photo
+- `1000006453.jpg`: phone photo
+- `1000006454.jpg`: phone photo
+- `1000006455.jpg`: phone photo
+- `1000006456.jpg`: phone photo
+- `1000006457.jpg`: phone photo
+- `1000006458.jpg`: phone photo
+- `1000006459.jpg`: phone photo
+- `1000006460.jpg`: phone photo
+- `1000006461.jpg`: phone photo
+- `1000006462.jpg`: phone photo
+- `1000006463.jpg`: phone photo
+- `1000006464.jpg`: phone photo
+- `1000006465.jpg`: phone photo
+- `1000006466.jpg`: phone photo
+- `1000006467.jpg`: phone photo
+- `1000006468.jpg`: phone photo
+- `1000006469.jpg`: phone photo
 
 ## Left alone
 
+- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./Conner and Zack.zip`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./Dry.zip`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./Google Chrome`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./HYSTERESIS.zip`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./MixPres-asio-2.9.87.5.zip`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./Sway.tg`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./TubeAmp_Mac.zip`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./VoiceMail_2024-10-02_21-13-59.amr`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./github-recovery-codes.txt`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./organize_all.sh`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./sophia_scan.sh`: Music gear, a secret, a Sophia tool in use, or unclear
+- `./usb_asio.sit`: Music gear, a secret, a Sophia tool in use, or unclear
 - `./1000005309 (1).mp4`: Audio, video, Ableton, or sample file: never moved
 - `./1000005309.mp4`: Audio, video, Ableton, or sample file: never moved
 - `./1000005312.mp4`: Audio, video, Ableton, or sample file: never moved
-- `./1000006451.jpg`: Changed in the last 7 days
-- `./1000006452.jpg`: Changed in the last 7 days
-- `./1000006453.jpg`: Changed in the last 7 days
-- `./1000006454.jpg`: Changed in the last 7 days
-- `./1000006455.jpg`: Changed in the last 7 days
-- `./1000006456.jpg`: Changed in the last 7 days
-- `./1000006457.jpg`: Changed in the last 7 days
-- `./1000006458.jpg`: Changed in the last 7 days
-- `./1000006459.jpg`: Changed in the last 7 days
-- `./1000006460.jpg`: Changed in the last 7 days
-- `./1000006461.jpg`: Changed in the last 7 days
-- `./1000006462.jpg`: Changed in the last 7 days
-- `./1000006463.jpg`: Changed in the last 7 days
-- `./1000006464.jpg`: Changed in the last 7 days
-- `./1000006465.jpg`: Changed in the last 7 days
-- `./1000006466.jpg`: Changed in the last 7 days
-- `./1000006467.jpg`: Changed in the last 7 days
-- `./1000006468.jpg`: Changed in the last 7 days
-- `./1000006469.jpg`: Changed in the last 7 days
 - `./123 [2019-04-29 174603].als`: Audio, video, Ableton, or sample file: never moved
 - `./2018_12_18_20_07_09.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./2018_12_18_20_07_09.mp3.asd`: Audio, video, Ableton, or sample file: never moved
@@ -42,7 +103,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./50_cent_-_get_up_(acapella).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./50_cent_-_get_up_(acapella).mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./673 Samples Drum Kit (Hipstrumentals.com).zip`: Audio, video, Ableton, or sample file: never moved
-- `./Advanced_LLM_Alignment_and_Component_Dissolution_Whitepaper.pdf`: Changed in the last 7 days
 - `./Aki Takase - Minerva's Owl.mp4`: Audio, video, Ableton, or sample file: never moved
 - `./Aki Takase - Minerva's Owl.mp4.asd`: Audio, video, Ableton, or sample file: never moved
 - `./AllGVSTMacUBeta.zip`: Audio, video, Ableton, or sample file: never moved
@@ -75,7 +135,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./ClassicSynthsbyKatsuhiroChiba_r32873_v1.0.alp`: Audio, video, Ableton, or sample file: never moved
 - `./Courage the Cowardly Dog but it s only Katz.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./Courage the Cowardly Dog but it s only Katz.mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./Crew Board.html`: Changed in the last 7 days
 - `./DC1A3 2.dmg`: Audio, video, Ableton, or sample file: never moved
 - `./DC1A3-mac-installer.zip`: Audio, video, Ableton, or sample file: never moved
 - `./DC1A3.dmg`: Audio, video, Ableton, or sample file: never moved
@@ -138,7 +197,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./Max7PitchandTimeMachines_r43196_v1.0 (2).alp`: Audio, video, Ableton, or sample file: never moved
 - `./Max7PitchandTimeMachines_r43196_v1.0.alp`: Audio, video, Ableton, or sample file: never moved
 - `./Meiko Kaji - Flower of Carnage - Shura No Hana - 1973.mp4`: Audio, video, Ableton, or sample file: never moved
-- `./Mixing_Bass_and_Guitars.pdf`: Changed in the last 7 days
 - `./Monster - Chapter 03 - Murder Case.mkv`: Audio, video, Ableton, or sample file: never moved
 - `./Multiply_OSX_1_1_1 2.pkg`: Audio, video, Ableton, or sample file: never moved
 - `./Multiply_OSX_1_1_1.pkg.zip`: Audio, video, Ableton, or sample file: never moved
@@ -170,9 +228,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./ProducerSpot-808-Drums.zip`: Audio, video, Ableton, or sample file: never moved
 - `./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./Project X #1 Movie CLIP - No More Than 20 People (2012) HD.mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./Project_Manus_Complete_Archive (1).pdf`: Changed in the last 7 days
-- `./Project_Manus_Complete_Archive (2).pdf`: Changed in the last 7 days
-- `./Project_Manus_Complete_Archive.pdf`: Changed in the last 7 days
 - `./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./RUFFED GROUSE _DRUMMING_ sound & video (256).mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./Ram Ranch.mp3`: Audio, video, Ableton, or sample file: never moved
@@ -196,7 +251,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./SynthEssentials_r46620_v1.1.alp`: Audio, video, Ableton, or sample file: never moved
 - `./The Real Samurai Copy.wav`: Audio, video, Ableton, or sample file: never moved
 - `./The Real Samurai.wav`: Audio, video, Ableton, or sample file: never moved
-- `./The Sky-Tether and the Blood Ledger - Narrative Summary.pdf`: Changed in the last 7 days
 - `./Travis-Scott---Antidote--Acapella.mp4`: Audio, video, Ableton, or sample file: never moved
 - `./Travis-Scott---Antidote--Acapella.mp4.asd`: Audio, video, Ableton, or sample file: never moved
 - `./TriSamples_-_808_Trapstep_Pack_Vol_1.zip`: Audio, video, Ableton, or sample file: never moved
@@ -237,7 +291,6 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./_JULIA_ [Actual Speed] Unexplained Scary Sound From The Ocean. (256).mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./absolute madness 150bpm.mp3`: Audio, video, Ableton, or sample file: never moved
-- `./align_traces.py`: Changed in the last 7 days
 - `./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./asap_ferg_ft_remy_ma_-_east_coast_(acapella).mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./asap_rocky_-_wild_for_the_night_(diy_acapella) (1).mp3`: Audio, video, Ableton, or sample file: never moved
@@ -258,27 +311,15 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./drippy.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./dying_correspondence.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./e-instrumentsStudioBass_r32591_v1.0.alp`: Audio, video, Ableton, or sample file: never moved
-- `./electrothermal.py`: Changed in the last 7 days
 - `./eli and gavin 121818.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./eli and gavin 121818.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./fall [2019-05-29 015357].als`: Audio, video, Ableton, or sample file: never moved
 - `./fall [2019-05-31 042736].als`: Audio, video, Ableton, or sample file: never moved
-- `./files (1).zip`: Changed in the last 7 days
-- `./floorplan.py`: Changed in the last 7 days
-- `./free-outdoors (5).html`: Changed in the last 7 days
-- `./free-outdoors (6).html`: Changed in the last 7 days
-- `./free-outdoors (7).html`: Changed in the last 7 days
-- `./free-outdoors (8).html`: Changed in the last 7 days
-- `./free-outdoors (9).html`: Changed in the last 7 days
-- `./fsk_demod.py`: Changed in the last 7 days
-- `./github-recovery-codes.txt`: Looks like a secret: keep it in a password manager instead
 - `./glock.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./glock.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./grog [2023-07-13 030447].als`: Audio, video, Ableton, or sample file: never moved
 - `./grsa-SingingSand2017_480x270.mp4`: Audio, video, Ableton, or sample file: never moved
 - `./grsa-SingingSand2017_480x270.mp4.asd`: Audio, video, Ableton, or sample file: never moved
-- `./index (1).html`: Changed in the last 7 days
-- `./index.html`: Changed in the last 7 days
 - `./jar jar.als`: Audio, video, Ableton, or sample file: never moved
 - `./lo-fi drum kit.zip`: Audio, video, Ableton, or sample file: never moved
 - `./looperman-a-0604670-0009964-brimaf-brima-gdl.mp3`: Audio, video, Ableton, or sample file: never moved
@@ -673,31 +714,20 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./looperman-l-2703887-0127633-aprilseasonxx-team-rocket.wav.asd`: Audio, video, Ableton, or sample file: never moved
 - `./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./ludacris_-_move_bitch_ft.mystikal_(acapella).mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./make_listing.sh`: Sophia's own script: stays where your commands expect it
 - `./maudioplugins_12_03_setupmac.zip`: Audio, video, Ableton, or sample file: never moved
 - `./maudioplugins_14_16_setupmac.zip`: Audio, video, Ableton, or sample file: never moved
-- `./my-first-agent.zip`: Changed in the last 7 days
-- `./my_alphabet_sheet_33_glyphs_v2.png`: Changed in the last 7 days
-- `./organize_Downloads.sh`: Sophia's own script: stays where your commands expect it
-- `./organizer-upgrade.zip`: Changed in the last 7 days
 - `./piano song_.wav`: Audio, video, Ableton, or sample file: never moved
 - `./reply_to_before_the_word (1).mp3`: Audio, video, Ableton, or sample file: never moved
 - `./reply_to_before_the_word.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./sett.als`: Audio, video, Ableton, or sample file: never moved
-- `./sophia_scan.sh`: Sophia's own script: stays where your commands expect it
 - `./space [2018-12-30 115204].als`: Audio, video, Ableton, or sample file: never moved
-- `./src_free-outdoors (4).html`: Changed in the last 7 days
 - `./suave [2019-09-12 030926].als`: Audio, video, Ableton, or sample file: never moved
 - `./suave [2019-09-12 054428].als`: Audio, video, Ableton, or sample file: never moved
 - `./suave [2019-09-13 041010].als`: Audio, video, Ableton, or sample file: never moved
 - `./suave [2019-09-13 220756].als`: Audio, video, Ableton, or sample file: never moved
 - `./suave [2019-10-08 023728].als`: Audio, video, Ableton, or sample file: never moved
 - `./suave [2019-10-25 003628].als`: Audio, video, Ableton, or sample file: never moved
-- `./test_jwt_alg_confusion.py`: Changed in the last 7 days
-- `./the_third_stratum (1).py`: Changed in the last 7 days
-- `./the_third_stratum.py`: Changed in the last 7 days
 - `./thirty_five_message.mp3`: Audio, video, Ableton, or sample file: never moved
-- `./undo_organize_20261005_192330.sh`: Sophia's own script: stays where your commands expect it
 - `./videoplayback (1).3gp`: Audio, video, Ableton, or sample file: never moved
 - `./videoplayback (1).mp4`: Audio, video, Ableton, or sample file: never moved
 - `./videoplayback (10).mp4`: Audio, video, Ableton, or sample file: never moved
@@ -776,18 +806,3 @@ Files in listing: 780 | Will move: 2 | Left alone: 778
 - `./y2mate.is - Bongos sample-q0p-saP4EkQ-192k-1712621370.mp3.asd`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3`: Audio, video, Ableton, or sample file: never moved
 - `./zapsplat_horror_drone_swell_dark_slightly_mysterious_72967.mp3.asd`: Audio, video, Ableton, or sample file: never moved
-- `./2010 Huge Hip-Hop Acapella Pack (6+ Gigs) (1400 Acapellas).torrent`: Audio/music related torrent
-- `./usb_asio.sit`: Audio driver file
-- `./HYSTERESIS.zip`: Possibly audio/music sample pack
-- `./TubeAmp_Mac.zip`: Audio plugin installer
-- `./Sway.tg`: Unknown file type
-- `./world.zip`: Game file, purpose unclear
-- `./MixPres-asio-2.9.87.5.zip`: Audio plugin driver
-- `./Conner and Zack.zip`: Purpose unclear from name
-- `./level.dat`: Game data file, purpose unclear
-- `./Google Chrome`: Sophia wasn't sure, so left alone
-- `./files.zip`: Purpose unclear from name
-- `./session.lock`: Lock/temporary system file
-- `./Dry.zip`: Purpose unclear from name
-- `./level.dat_old`: Game data backup file
-- `./VoiceMail_2024-10-02_21-13-59.amr`: Audio voicemail file
