@@ -70,9 +70,14 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   untitled folder (12.4 GB) = old samples they're afraid to move (Ableton paths); no USB yet, can get one.
 - Round 2 done the same night (owner did "tomorrow's" board early): games + caches gone, worlds in
   ~/Documents/Minecraft Worlds. Free space 53.6 GB (from 18.0). Safe non-music cleanup is basically done.
+- Home layout (owner 2026-10-06: "organize it how I like it, clean and easy to find"; music separate, later):
+  Documents/{School,Finance,Code,Books,Papers}, Pictures/{Photos,Screenshots,Images}, Downloads = inbox
+  (+Installers, Archives, Web Pages), Desktop = current music projects. Undo files: Documents/Sophia/Undo.
+  Rules in sophia.py + preferences.md; one `organize_all.sh`; test with `sandbox_test.sh` before handoff.
+- Board 2026-10-06 #20-29: trash Civ VI/Cities/Rome II/DrFone (all OK'd), run organize_all.sh (267 files),
+  Misc Photos -> Pictures, recovery codes (GitHub, SoundCloud) -> locked note, then rescan.
 - Next: owner gets a USB drive (64 GB+) -> copy, verify, then remove: finished Desktop projects, untitled
-  folder (2019 zips first). Open question on board: Civ VI / Cities Skylines / Rome II / DrFone (~1.5 GB).
-- Documents (18 moves) and Desktop (1) scripts are ready but not run yet; low priority.
+  folder (2019 zips first). Then the music organization plan (separate, with the owner).
 - Old API key: removed from repo, revoked by owner. No key needed in cloud sessions.
 - Phone + email notifications (2026-10-05): a routine I create from a session can't attach the repo (tested: it got an
   empty folder; I deleted it). Owner is creating one in the claude.ai Routines screen with the repo + push/email.
