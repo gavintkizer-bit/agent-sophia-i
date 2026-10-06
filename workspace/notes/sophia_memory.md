@@ -100,8 +100,11 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   #3 Alexandria's mystical traditions (3 factual errors I caught; per-fact verification now in code).
   Owner's research themes for Cal (2026-10-06): esotericism/mysticism, board game exploits, historical military
   strategy and tactics, biological phenomena/anomalies to learn from. NOT bands ("superficial").
-- Pending owner decisions: Sonnet for Cal's audits (archive_known drill: Haiku 0/3, Sonnet 3/3, about 2x cost);
-  add "write what done means" + a time box to the Music session checklist?
+- TOMORROW (owner, 2026-10-06): model bake-off for Cal: Haiku 4.5, Sonnet 5.5, Opus 5.5, Fable 5.1, each on his
+  drills x3 (archive_known is the decider: Haiku 0/4, Sonnet 3/3), pass rate vs cost; then finish the repo audit
+  "mac" part (~$1.50 on Sonnet; write-as-you-go now). Sonnet's "unrecognized_model" warning is cosmetic: same
+  price estimate as the `sonnet` alias. Sonnet audits of a 15k-token bundle reach $1 in a few turns.
+- Pending owner decision: add "write what done means" + a time box to the Music session checklist?
 - Collect All and Save (researched 2026-10-06, official manual verified): copies all external files a Set uses
   into its Project folder (Samples/Presets); not plugins; Packs and User Library can be skipped if they won't
   move; it duplicates files (more disk use); check File > Manage Files afterward.
