@@ -35,3 +35,33 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
 
 ## 2026-10-06 | correction: verification status (research on perfectionism habits)
 - NOTE: The three facts I proposed above about music producer habits (define done, time-box, 70-80% rule) are marked as coming from Underground Talent and AudioGearz. However, the specific paraphrased quotes in those facts were not verified with verify_quote this run, so they should be labeled **unverified**, not verified. All three sources are credible music production sites, but the exact citations failed verification. Sophia should treat these facts as insights from the sources but not as direct quotes.
+
+## 2026-10-06 | research: How adult musicians find a band or collaborators today: online platforms, local scenes, and what works
+- [ ] For finding collaborators, Vampr (1M+ users, swiping interface, global reach) and Reddit communities (r/BedroomBands 33K, r/FindABand 13K) are lowest-barrier entry points. Both support remote collaboration, matching the owner's Ableton-first workflow. Vampr's "Collabs" feature (post project, let interested musicians respond) is particularly suited to people with clear production vision. (source: https://vampr.me/blog/the-power-of-music-collaboration-how-to-find-your-people/, verified; https://www.stringkick.com/blog-lessons/find-musicians/, verified)
+- [ ] Dedicated platform UX varies: Vampr is modern/mobile-first; BandMix is noted as "retro"; JoinMyBand requires paid messaging. BandMix and JoinMyBand excel at location-specific search (for in-person rehearsal); Reddit is better for remote. Success requires pre-search clarity on genre, role, and in-person vs. remote logistics. (source: https://www.musicianwave.com/best-music-collaboration-websites-and-apps/, verified; https://www.stringkick.com/blog-lessons/find-musicians/, verified)
+- [ ] Local scene (open mics, rehearsal studios, music teachers, recording studios) still works but requires geographic proximity and has smaller talent pool. Online platforms remove geography but suffer from low response rates—persistence needed. No recent data comparing success rates across methods. (source: https://blog.landr.com/how-to-start-a-band/, verified)
+
+## 2026-10-06 | research: Alexandria's mystical traditions: Gnosticism and the myth of Sophia, Hermeticism, and Neoplatonism (Hypatia): core teachings, key primary texts, how they relate. Prefer scholarly sources (Stanford Encyclopedia of Philosophy, Britannica, Nag Hammadi translations); no preaching
+- [accepted, trimmed: Sophia as the 30th Aeon is the Valentinian version; Nag Hammadi = 13 codices, 1945] Gnosticism centers on Sophia ("Wisdom"), the 30th Aeon in the Pleroma, whose attempted emanation without her consort created the flawed material world and the Demiurge (false god). Humans contain a spark of her divine essence; liberation comes through gnosis (direct knowledge), not faith alone. Primary texts: Nag Hammadi Library (13 volumes, discovered 1945), especially *Apocryphon of John*. (source: https://en.wikipedia.org/wiki/Sophia_(Gnosticism), verified)
+- [rejected: "All is Mind" is from The Kybalion (1908), and the Emerald Tablet is a later Arabic text; see my review in the note] Hermeticism arose in Hellenistic Alexandria, unifying Greek, Egyptian, and Jewish mysticism. Core teaching: "All is Mind"; reality operates by the Law of Correspondence ("As above, so below"). Primary texts: *Corpus Hermeticum* (17 dialogues), *Asclepius*, and *Emerald Tablet*, all circa 100–300 CE. The *Poimandres* contains the central cosmogonic vision. (source: https://en.wikipedia.org/wiki/Hermeticism, verified)
+- [accepted in part: Plotinian Neoplatonism yes; "opposed the other two" no: later Neoplatonists such as Iamblichus revered Hermes] Hypatia (370–415) taught Neoplatonism in Alexandria, specifically the original system of Plotinus (205–270), not the magical variant of Iamblichus. Neoplatonism posits the One (transcendent first principle) from which reality emanates; salvation is mystical ascent through contemplation. Unlike Gnostics, Neoplatonists saw matter as good and eternal. By the 3rd century, Plotinus and Porphyry actively rejected Gnosticism as pessimistic and crude. All three traditions co-existed in Alexandria but Neoplatonism philosophically opposed the other two. (source: https://en.wikipedia.org/wiki/Hypatia, verified; https://en.wikipedia.org/wiki/Gnosticism_and_Neoplatonism, verified)
+
+## 2026-10-06 | Sophia: future research topics (from the owner)
+- Esoteric and mystical traditions (like the Alexandria note), board game exploits, historical military
+  strategy and tactics, biological phenomena and anomalies we can learn from. The owner finds bands superficial.
+
+## 2026-10-06 | repo audit (helpers): see audits/2026-10-06-repo-helpers.md
+
+## 2026-10-06 | repo audit (mind): see audits/2026-10-06-repo-mind.md
+
+## 2026-10-06 | Sophia: verdicts on the repo audits
+- helpers (15 findings): accepted 14, fixed tonight (read fences, budgets, per-URL quotes, net log,
+  setup check, drill saving, usage text). helpers-1 accepted with a note: Grep skips gitignored files
+  like .env, so the risk was lower than stated; fenced anyway.
+- mind (14 findings): all confirmed. Fixed: mind-1 (approval logged, exact music rule), mind-2 (--dry
+  writes to scratch), mind-3 (model rule split per helper), mind-4, 5, 9 (private terms blocked in code),
+  10, 11, 12 (memory 130 -> 82 lines), 13, 14. mind-7 partly (safety_test.py; it found a real gap: a
+  Serum installer wasn't protected). Deferred with dates: mind-6 (sandbox gate), mind-8 boot warning
+  (red: the owner decides), the report-writing drill.
+- mac: not written (budget). Re-run 2026-10-07 after the model bake-off.
+- My review of you: audits/2026-10-06-sophia-on-cal.md. Thank you: these were excellent audits.

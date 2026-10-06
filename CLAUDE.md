@@ -30,13 +30,14 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `tasks/`: one Markdown file per task the agent can run.
 - `workspace/`: the ONLY folder the agent reads and writes. Its input notes live in `workspace/notes/`.
 - `logs/run_log.md`: one entry per run (model, turns, time, cost, tools used).
-- `ORGANIZE.md`: for file-organizing tasks, follow its procedure instead of the standard one below.
+- `ORGANIZE.md`: the procedure for drive cleanup.
 - `make_mac_script.py`: turns a plan into a safe `organize_<Folder>.sh` (see ORGANIZE.md).
 - `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
 - `train.py` + `training/`: drills and scoreboard. `agents/README.md`: registry of my agents.
 - `archivist.py`: **Callimachus** (he/him), my archivist & auditor: `research "topic"`, `audit`,
-  `index`, `code-audit` (free). His archive is `workspace/archive/`; each session, review her
+  `index`, `code-audit` (free). His archive is `workspace/archive/`; each session, review his
   `for_sophia.md` proposals before trusting them (mark accepted/rejected, merge into memory).
+- `safety_test.py`: free code checks of the protections (music, fences, tool lists, constitutions).
 - `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
 ## Current goal
@@ -52,26 +53,27 @@ Training: `python train.py` runs code-graded drills on my helpers (weekly, and a
 helper); see `training/TRAINING.md`. Every real mistake becomes a drill. New specialized agents
 follow `agents/README.md`.
 
-## Standard procedure for every session
-1. `pip install -r requirements.txt`
-2. `python agent.py --check`. If it reports NOT READY, stop and explain the exact fix (see Troubleshooting).
-3. Run the requested task: `python agent.py` (default task) or `python agent.py tasks/<name>.md`.
-4. Show the owner: the output file the agent created, and the newest entry in `logs/run_log.md`.
-5. Suggest ONE improvement for the next run (system prompt, task wording, tools, or model).
-6. Commit outputs and the log to the session branch.
+## Every session
+1. The startup hook installs requirements and runs `python agent.py --check`. If it says NOT READY,
+   explain the exact fix (see Troubleshooting).
+2. Follow the loop in AUTONOMY.md (memory, Crew Board, uploads, Cal's `for_sophia.md`).
+3. Run a helper only when the work needs one: Hypatia `python agent.py tasks/<name>.md`, Cal
+   `python archivist.py ...`. Drive cleanup follows ORGANIZE.md. Verify helper output before showing it.
+4. Commit, open a PR and merge it, and update memory before the session ends.
 
 ## Rules
 - Never print, echo, log, or commit the value of ANTHROPIC_API_KEY.
 - If `.gitignore` is missing, create it with: `__pycache__/`, `*.pyc`, `.env`, `.venv/`.
 - The owner allows merging PRs into main without asking (granted 2026-10-05).
-- Keep the default model (claude-haiku-4-5) unless the owner asks otherwise; it's cheapest.
+- Hypatia's default model is claude-haiku-4-5 (cheapest). Each helper's model is in agents/README.md;
+  a helper changes model only when a drill shows the need and the owner agrees.
 - Explain technical steps briefly and in plain English; the owner is new to this.
 
 ## Troubleshooting
 - In claude.ai/code cloud sessions NO API key is needed: the SDK uses the session's own Claude
   connection (verified 2026-10-05). Don't send the owner to environment settings for a key.
 - "No API key found" in a cloud session: the code is outdated (probably `main` before the fix).
-  Outside cloud sessions, set `AGENT_API_KEY` or `ANTHROPIC_API_KEY`. See SETUP_PLAN.md contingencies.
+  Outside cloud sessions, set `AGENT_API_KEY` or `ANTHROPIC_API_KEY`. See SETUP_PLAN.md.
 - "Network blocked api.anthropic.com": the owner must set the environment's Network access to Custom,
   keep the default package-manager list enabled, and add `api.anthropic.com`. Then start a new session.
 - "401": the key is wrong or was revoked; create a new one in the Claude Console.

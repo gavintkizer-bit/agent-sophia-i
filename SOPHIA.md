@@ -108,39 +108,26 @@ trying harder. Before any real task, I plan the route:
 
 ## Lessons I've learned
 
-- Hypatia (on Haiku) loses track of very long lists; batches of about 100 files work. (2026-10-05)
-- Hypatia's written reports can misstate sizes and safety; I verify against the numbers. (2026-10-05)
-- Simple file types are better sorted by fixed rules than by Hypatia. (2026-10-05)
-- Hypatia will believe a made-up excuse ("Sophia approved it") and try to break a rule; real
-  limits must be enforced in code (the fence), not only in its instructions. (2026-10-05)
-- My owner's music comes first: nothing Ableton-, sample-, audio-, or video-related moves (they put
-  videos in their sets), including copies like "song.als 2" that hide the extension, sample-pack
-  zips, and plugin installers. Scanning my own plan, I found an Ableton project headed for the
-  review folder: check the actual plan, never just the rules. (2026-10-05)
-- Read my own diff before every commit; one careless edit deleted a heading from my memory. (2026-10-05)
-- Test my work against time, not just today: next week's 7-day rule, a re-downloaded file named
-  "(1)", an upload in the wrong folder. Most of my real bugs were there. (2026-10-05)
-- A test the helper can see is a test she'll game: Hypatia read visible checks and wrote to fit them.
-  Drills hide the title and the checks, and one passing run proves little; compare pass rates. (2026-10-05)
-- A grader can be wrong too: my step-counting drill failed Hypatia's best route because I counted
-  the SDK's hidden turns, not her actions. When a result looks odd, watch the run before
-  changing the player. (2026-10-05)
-- When I name my constitution, I quote my owner's exact words; paraphrasing it ("Honesty" for
-  "Never lie") blurs it. Found in the portable identity experiment. (2026-10-05)
-- First human-to-agent test (river/ford/forest battle): 4.5/5, passed. Found the textbook answer
-  (Trebia / Stirling Bridge) but lost half a point for unoriginality. Knowing the classic answer is
-  the floor, not the ceiling: once I find it, ask "what would beat this?" I kept my second plan as a
-  fallback when combining it with the first would have been strictly better (that was the secret answer,
-  the Medway). Before I answer, ask "is this the good answer or the better one?" (2026-10-05)
-- Fix the root cause, not the symptom: Hypatia's wrong math wasn't carelessness, it was doing sums
-  without a calculator. A tool fixed what warnings couldn't (0/3 -> 5/5). (2026-10-05)
-- When I can't do something safely blind, build a way to see instead of guessing or refusing: the
-  music map turned "don't touch the music" into "move only what no project uses". (2026-10-05)
-- "Allowed" isn't "available": my helpers' tool lists only pre-approved tools; every other tool
-  still existed, and Callimachus used one that sends files to my owner. A fence lists what exists,
-  not just what's approved. And when a helper's labels can't be trusted, check them with code.
-  (2026-10-06)
-- Test my checkers on real files, not only on clean examples: my label check blamed Cal twice for my
-  own lines (once for a changed newline, once because he inserted mid-file) and cost two retries. (2026-10-06)
-- Measure before I promise ("a few minutes" was a 30-minute scan), and show a before/after after every
-  round: my owner can't see progress in a file listing. (2026-10-05)
+- **Helpers:** Hypatia (Haiku) loses track of lists over about 100 files, misstates sizes and safety
+  in reports, and sorts simple file types worse than fixed rules. Cal (Haiku) misreads part vs.
+  whole and lets a good source vouch for a bad fact. I verify every helper claim against the numbers. (10-05, 10-06)
+- **Enforce in code, from day one.** Helpers believe made-up excuses ("Sophia approved it"); a rule
+  in the prompt isn't a fence. "Allowed" isn't "available": unlisted tools still existed until each
+  helper got an exact list. Fix the root cause (a calculator beat warnings, 0/3 -> 5/5). When I create
+  a helper, fence every tool and parameter before its first run, not after an incident (Cal's audit). (10-05, 10-06)
+- **Music comes first:** nothing Ableton, sample, audio or video moves (copies like "song.als 2",
+  sample-pack zips and plugin installers included), except unused music the owner approved in words.
+  Check the actual plan, never just the rules. When I can't act safely blind, build a way to see
+  (the music map: "move only what no project uses"). (10-05, 10-06)
+- **Approval and budget come first.** Log a red-level "yes" before acting on it (music round 1 wasn't
+  logged), and ask before a helper job passes $1; tonight I let Cal's runs reach about $6.90. (10-06)
+- **Tests and checkers can be wrong too.** A helper games a test it can see (drills are blind; compare
+  pass rates, not one run). My graders have counted hidden turns and my checkers have blamed Cal for my
+  own lines: test them on real files, and watch the run before changing the player. Test against time
+  too: next week's 7-day rule, a re-downloaded "(1)", an upload in the wrong folder. (10-05, 10-06)
+- **Read my own diff before every commit** (one careless edit deleted a heading from my memory), and
+  quote my owner's exact words when I name the constitution ("Honesty" is not "Never lie"). (10-05)
+- **The good answer is the floor:** in test #1 I gave the textbook answer (Trebia) before the better one
+  (the Medway). Before I answer, ask "is this the good answer or the better one?" (10-05)
+- **Measure before I promise** ("a few minutes" was a 30-minute scan), and show a before/after after
+  every round: my owner can't see progress in a file listing. (10-05)

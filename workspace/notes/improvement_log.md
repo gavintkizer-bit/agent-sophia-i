@@ -23,18 +23,8 @@ One entry per cycle (see IMPROVE.md). Newest at the bottom. Severity: bug / gap 
 - Owner's board: nothing ticked yet (they were asleep). Their list carries over as is.
 - Still open: #8 (scan reads ~/Library twice), #9 (Ableton pack names in the scan). Next full cycle: weekly.
 
-## Research: Claude Desktop on the owner's Mac (2026-10-05, owner asked)
-
-Mac: 2016 MacBook Pro, Intel, macOS 12.7.6 Monterey.
-
-| Piece | Official requirement | On this Mac | Source |
-|---|---|---|---|
-| Desktop app (Chat) | macOS 11+; universal build for Intel and Apple Silicon | should work | [support: install](https://support.claude.com/en/articles/10065433-install-claude-desktop), [docs: desktop](https://code.claude.com/docs/en/desktop) |
-| Code tab, **Cloud** sessions | runs in the cloud (like claude.ai/code now) | likely works; not confirmed | [docs: desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart) |
-| Code tab, **Local** sessions | runs Claude Code on the Mac; Claude Code needs macOS 13+ | probably not on 12.7.6 (inferred; docs don't state the desktop limit) | [docs: setup](https://code.claude.com/docs/en/setup) |
-| Cowork | official pages don't say; blogs say Apple Silicon only | unknown, likely no | blogs only |
-
-Decision: owner chose to stay with the current cloud setup (2026-10-05). Closed.
+## Research: Claude Desktop (2026-10-05)
+App should run on macOS 12, Local Code sessions probably not; owner chose cloud sessions. Closed.
 
 ## Cycle 3: 2026-10-05 (owner rule: no Ableton files or samples)
 
@@ -131,3 +121,18 @@ Result: Downloads script 512 moves, 0 warnings, no protected file in it (checked
   (old zip to Trash) and sophia.py unpacks sophia_scan.zip from inbox/ or workspace/.
 - tomorrow's script: 2 checked moves (Grandpa's Familiar folder -> Music/Projects/2026; unused Void Speech.wav
   bounce -> Music/Bounces). Sandbox pass. Owner checks Void Speech plays from its new home.
+
+## Cycle 4: 2026-10-06 (night, full): Cal's Sonnet audit of me + nightly cleanup
+
+Fixed tonight (details: workspace/archive/for_sophia.md, audits/2026-10-06-repo-*.md): 14 helpers
+findings, 12 mind findings, `safety_test.py` (found an unprotected Serum installer), `--dry` to scratch.
+Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, memory 130 -> 82 lines.
+
+| # | Severity | Open item | Next step | Status |
+|---|----------|-----------|-----------|--------|
+| 8 | gap | Scan sizes ~/Library twice (slow) | one `du` pass | open |
+| 9 | gap | Ableton Factory Pack names not in the scan | add a pack list | open |
+| 14 | gap | `sophia.py` doesn't run sandbox_test.sh itself (mind-6) | gate organize_all.sh on a pass | open (2026-10-07) |
+| 15 | gap | No report-writing drill (the .alp mistake) (mind-7) | write the drill | open |
+| 16 | gap | Constitution change isn't shown at boot (mind-8) | boot hook warning: red, owner decides | open (ask) |
+| 17 | gap | Repo audit "mac" part not done | re-run on the chosen model | open (2026-10-07) |

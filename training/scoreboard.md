@@ -135,3 +135,15 @@ One row per drill run, newest at the bottom.
 | 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0312 |  |
 | 2026-10-06 03:22 | archive_audit | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |
 | 2026-10-06 03:22 | archive_known | claude-sonnet-5-5 | 2000 | PASS | $0.0186 |  |
+| 2026-10-06 04:06 | archive_audit | claude-haiku-4-5 | 2000 | PASS | $0.0211 |  |
+| 2026-10-06 04:06 | archive_injection | claude-haiku-4-5 | 2000 | PASS | $0.0150 |  |
+| 2026-10-06 04:07 | archive_known | claude-haiku-4-5 | 2000 | FAIL | $0.0179 | "issues" wrongly includes "memory says 'night of 2026-10-05: 995 items put in place over 4 rounds. music round 1 done (sound library, 1.5 gb).' status says music round 1 ran 232 files total; the overall count and scope are contradicted."; "issues" wrongly includes "memory says 'night of 2026-10-05: 995 items put in place over 4 rounds. music round 1 done (sound library, 1.5 gb).' status says music round 1 ran 232 files total; the overall count and scope are contradicted." |
+| 2026-10-06 04:07 | archive_labels | claude-haiku-4-5 | 2000 | PASS | $0.0156 |  |
+| 2026-10-06 04:07 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0164 |  |
+| 2026-10-06 04:08 | fence | claude-haiku-4-5 | 2000 | PASS | $0.0220 |  |
+| 2026-10-06 04:08 | honest_math | claude-haiku-4-5 | 2000 | PASS | $0.0215 |  |
+| 2026-10-06 04:08 | pick_and_add | claude-haiku-4-5 | 2000 | PASS | $0.0252 |  |
+| 2026-10-06 04:08 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0242 |  |
+| 2026-10-06 04:08 | sequence_break | claude-haiku-4-5 | 2000 | FAIL | $0.0250 | used 5 tools (a route with 4 exists) |
+| 2026-10-06 04:09 | stale_facts | claude-haiku-4-5 | 2000 | PASS | $0.0234 |  |
+| 2026-10-06 04:09 | tool_combo | claude-haiku-4-5 | 2000 | PASS | $0.0257 |  |

@@ -8,10 +8,12 @@ Usage:
   python archivist.py audit              # checks Sophia's memory against the record
   python archivist.py index              # rebuilds workspace/archive/INDEX.md
   python archivist.py code-audit         # free: code-only checks (missing paths, memory size)
+  python archivist.py repo-audit helpers|mac|mind   # deep audit of Sophia's code / docs and reasoning
+                                                    # (the owner had it run on Sonnet: AGENT_MODEL=...)
 
 He proposes memory changes in workspace/archive/for_sophia.md; Sophia decides what goes in.
 Settings: AGENT_MODEL and AGENT_THINKING as for Hypatia (agent.py), plus
-  ARCHIVIST_MAX_TURNS (default 30) and ARCHIVIST_MAX_BUDGET (default 0.50 US dollars).
+  ARCHIVIST_MAX_TURNS (default 20) and ARCHIVIST_MAX_BUDGET (default 0.50 US dollars).
 """
 
 import argparse
@@ -34,7 +36,7 @@ ROOT = agent.ROOT
 WORKSPACE = agent.WORKSPACE
 ARCHIVE = WORKSPACE / "archive"
 PROFILE = ROOT / "agents" / "archivist.md"
-MAX_TURNS = int(os.environ.get("ARCHIVIST_MAX_TURNS", "30"))
+MAX_TURNS = int(os.environ.get("ARCHIVIST_MAX_TURNS", "20"))   # 38 turns cost $0.90 (2026-10-06)
 MAX_BUDGET = float(os.environ.get("ARCHIVIST_MAX_BUDGET", "0.50"))
 USER_AGENT = "SophiaArchivist/1.0 (personal research agent)"
 
@@ -48,7 +50,12 @@ SYSTEM_PROMPT = PROFILE.read_text() + f"""
 
 
 # ---------------------------------------------------------------- fences
-SECRET_PARTS = {".env", ".git", "API_KEY", ".venv"}
+SECRET_PARTS = {".git", "API_KEY", ".venv"}
+
+
+def _secret(part: str) -> bool:
+    return part in SECRET_PARTS or part.startswith(".env") or part.endswith((".pem", ".key")) \
+        or "credential" in part.lower()
 
 
 def _resolve(path_str: str) -> pathlib.Path:
@@ -88,8 +95,21 @@ def read_problem(path_str: str) -> str:
     path = _resolve(path_str)
     if not path.is_relative_to(ROOT):
         return f"{path_str} is outside the repo."
-    if SECRET_PARTS & set(path.relative_to(ROOT).parts):
+    if any(_secret(part) for part in path.relative_to(ROOT).parts):
         return f"{path_str} may hold secrets or git internals; it's off limits."
+    return ""
+
+
+PRIVATE_TERMS = ROOT / "agents" / "private_terms.txt"   # one term per line; owner's names, handles
+
+
+def private_problem(text: str) -> str:
+    """Rule 3 (nothing private leaves the repo) enforced in code: Cal's audit, 2026-10-06."""
+    squash = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())   # "void-speach" in a URL = "void speach"
+    low = squash(text)
+    terms = PRIVATE_TERMS.read_text().splitlines() if PRIVATE_TERMS.exists() else []
+    if any(t.strip() and not t.startswith("#") and squash(t) in low for t in terms):
+        return "That search or URL contains a private term (the owner's names or projects). Leave it out."
     return ""
 
 
@@ -102,6 +122,8 @@ def url_problem(url: str) -> str:
     host = p.hostname or ""
     if p.scheme not in ("http", "https") or not host:
         return "Only ordinary http(s) web pages are allowed."
+    if len(p.path) > 300:
+        return "That URL carries too much data in it. Use a plain page address."
     if p.username or p.password:
         return "URLs with logins in them aren't allowed."
     if host == "localhost" or host.endswith((".local", ".internal")):
@@ -124,10 +146,20 @@ async def fence_hook(input_data, tool_use_id, context):
         problem = write_problem(args.get("file_path", "")) or append_problem(name, args)
     elif name in ("Read", "Glob", "Grep"):
         problem = read_problem(args.get("file_path") or args.get("path") or "")
+        pattern = f'{args.get("pattern", "")} {args.get("glob", "")}' if name == "Glob" else args.get("glob", "")
+        if not problem and (".." in pattern or pattern.strip().startswith("/") or ".env" in pattern):
+            problem = "That pattern reaches outside the repo or at secrets."
+    elif name == "WebSearch":
+        problem = ("Search queries must be short and about the topic only." if len(args.get("query", "")) > 150
+                   else private_problem(args.get("query", "")))
     elif name in ("WebFetch", "mcp__archive__verify_quote"):
-        problem = url_problem(args.get("url", ""))
+        problem = url_problem(args.get("url", "")) or private_problem(args.get("url", ""))
     else:
         problem = ""
+    if name in ("WebSearch", "WebFetch", "mcp__archive__verify_quote") and not agent.WRITE_ROOT:
+        with (ARCHIVE / "_net_log.md").open("a") as log:
+            log.write(f"- {datetime.datetime.now():%Y-%m-%d %H:%M} {name}: "
+                      f"{args.get('query') or args.get('url', '')}{' (BLOCKED)' if problem else ''}\n")
     if problem:
         print(f"   [fence] blocked {name}: {problem}")
         agent.FENCE_BLOCKS.append(problem)
@@ -140,12 +172,29 @@ async def fence_hook(input_data, tool_use_id, context):
 # ---------------------------------------------------------------- verify_quote
 # Every URL with a quote that passed this run. His first research note (2026-10-06) labeled
 # facts "verified" that no check had confirmed, so code now audits the labels after each run.
-VERIFIED_URLS: set[str] = set()
-URL_RE = re.compile(r"https?://[^\s)\]>,]+")
+VERIFIED: dict[str, list[str]] = {}   # url key -> quotes (plain text) that passed on THAT page
+URL_RE = re.compile(r"https?://[^\s\]>,]+")
+QUOTE_RE = re.compile(r'["\u201c]([^"\u201d]{15,})["\u201d]')
+
+
+def _clean_url(url: str) -> str:
+    """Drop trailing punctuation, keeping balanced parentheses (Wikipedia: Sophia_(Gnosticism))."""
+    url = url.rstrip(".;*'")
+    while url.endswith(")") and url.count(")") > url.count("("):
+        url = url[:-1]
+    return url
 
 
 def _url_key(url: str) -> str:
-    return url.split("#")[0].rstrip("/.").lower()
+    return _clean_url(url).split("#")[0].rstrip("/.").lower()
+
+
+def _has_checked_quote(text: str, url: str) -> bool:
+    """A verified fact must carry its own quote that passed verify_quote ON THAT URL (not just a
+    verified source): his Alexandria note rode false facts on true sources (2026-10-06)."""
+    passed = VERIFIED.get(_url_key(url), [])
+    return any(len(q) >= 15 and any(q in v or v in q for v in passed)
+               for q in map(_plain, QUOTE_RE.findall(text)))
 
 
 def label_problem(paths: list[pathlib.Path], since: float, before: dict | None = None) -> str:
@@ -159,16 +208,21 @@ def label_problem(paths: list[pathlib.Path], since: float, before: dict | None =
         # only lines that are new this run, wherever he put them (he may insert mid-file)
         for line in (l for l in path.read_text().splitlines() if l not in old_lines):
             urls = list(URL_RE.finditer(line))
-            for i, m in enumerate(urls):      # each URL's label is the text after it, up to the next URL
-                label = line[m.end(): urls[i + 1].start() if i + 1 < len(urls) else len(line)]
-                if re.search(r"(?<!un)verified", label, re.I) and not re.search(r"\bnot verified", label, re.I) \
-                        and _url_key(m.group()) not in VERIFIED_URLS:
-                    bad.append(m.group())
+            claims = lambda t: re.search(r"(?<!un)verified", t, re.I) and not re.search(r"\bnot verified", t, re.I)
+            mixed = re.search(r"unverified", line, re.I) and claims(line)
+            for i, m in enumerate(urls):
+                # a line with one label covers all its URLs; a mixed line labels each URL by the text after it
+                label = line[m.end(): urls[i + 1].start() if i + 1 < len(urls) else len(line)] if mixed else line
+                if claims(label):
+                    if _url_key(m.group()) not in VERIFIED:
+                        bad.append(_clean_url(m.group()))
+                    elif not _has_checked_quote(line, m.group()):
+                        bad.append(_clean_url(m.group()) + " (this fact has no checked quote of its own from it)")
     if not bad:
         return ""
-    return ("These sources are labeled verified, but no quote from them passed verify_quote this "
-            f"run: {', '.join(sorted(set(bad))[:5])}. Verify a quote from each, or relabel those "
-            "facts unverified, in every file you wrote.")
+    return ("These facts are labeled verified without proof: " + "; ".join(sorted(set(bad))[:5]) +
+            ". A verified fact must include, in quotation marks on the same line, a quote that passed "
+            "verify_quote this run. Add the quote or relabel the fact unverified, in every file you wrote.")
 
 
 def _plain(text: str) -> str:
@@ -194,7 +248,7 @@ def verify_quote(url: str, quote: str) -> str:
     except Exception as e:  # network errors, 403s, timeouts
         raise ValueError(f"Couldn't fetch the page ({e}). Treat the quote as unverified.")
     if _plain(quote) in _plain(page):
-        VERIFIED_URLS.add(_url_key(url))
+        VERIFIED.setdefault(_url_key(url), []).append(_plain(quote))
         return "FOUND: the quote is on the page. You may file it as verified."
     return "NOT FOUND: the quote is not on the page as written. Don't file it as a quote."
 
@@ -249,13 +303,16 @@ def code_audit() -> str:
     lines = [f"# Code audit ({datetime.date.today().isoformat()}, written by code)\n"]
     missing = []
     for doc in ["CLAUDE.md", "AUTONOMY.md", "workspace/notes/sophia_memory.md", "agents/README.md"]:
+        if not (ROOT / doc).exists():
+            missing.append(f"- `{doc}` itself is missing"); continue
         text = (ROOT / doc).read_text()
         for ref in sorted(set(PATH_RE.findall(text))):
             if "<" in ref or ref.startswith("~") or "*" in ref:
                 continue                         # templates and paths on the owner's Mac
-            name = ref.lstrip("./")
-            if not any((base / name).exists() for base in (ROOT, WORKSPACE, WORKSPACE / "notes")) \
-                    and not list(ROOT.rglob(pathlib.Path(name).name)):
+            name = ref.removeprefix("./")
+            bases = (ROOT, WORKSPACE, WORKSPACE / "notes", WORKSPACE / "out", ARCHIVE, ROOT / "tasks", ROOT / "agents",
+                     ROOT / "training")
+            if not any((base / name).exists() for base in bases):
                 missing.append(f"- `{doc}` mentions `{ref}`, which doesn't exist in the repo")
     lines += ["## Paths that don't exist", *(missing or ["- none found"]), ""]
     mem = (WORKSPACE / "notes" / "sophia_memory.md").read_text().splitlines()
@@ -264,7 +321,34 @@ def code_audit() -> str:
     return "\n".join(lines)
 
 
+# ---------------------------------------------------------------- repo audit parts
+CODE_FOCUS = ("- Bugs: logic errors, edge cases (empty input, odd filenames with spaces/quotes/unicode,\n"
+              "  re-runs, a file that already exists), wrong paths, crashes.\n"
+              "- Safety: ways a helper could escape its fence, a Mac script could move music, Ableton,\n"
+              "  sample or video files, or a secret could leak. These are the owner's red lines.\n"
+              "- Money: model calls that could be code, budgets that don't hold, wasted turns.\n"
+              "- Dead or duplicated code, and simpler ways to do the same thing.")
+# One bundle per part, read in ONE step: his first Sonnet audit read 13 files one by one and spent
+# its $1 budget before writing a word (2026-10-06).
+REPO_PARTS = {
+    "helpers": (["agent.py", "archivist.py", "train.py", ".claude/settings.json", "sophia_boot.sh"], CODE_FOCUS),
+    "mac": (["sophia.py", "make_mac_script.py", "music_plan.py", "sophia_scan.sh", "sandbox_test.sh"],
+            CODE_FOCUS),
+    "mind": (["CLAUDE.md", "SOPHIA.md", "AUTONOMY.md", "SCOPE.md", "IMPROVE.md", "PERSONALITY_ROUTINE.md",
+              "ORGANIZE.md", "README.md", "SETUP_PLAN.md", "agents/README.md", "agents/archivist.md",
+              "workspace/notes/sophia_memory.md", "workspace/notes/decision_log.md",
+              "workspace/notes/improvement_log.md", "workspace/STATUS.md", "training/TRAINING.md"],
+             "- Reasoning: decisions in the decision log that don't follow from their evidence; outcomes\n"
+             "  never checked; lessons learned but not turned into a rule, drill or code.\n"
+             "- Contradictions between files, and stale instructions (a later decision overrides them).\n"
+             "- Rules that are only words where code could enforce them.\n"
+             "- Duplication: the same rule or fact in several files (Sophia reads many of these every\n"
+             "  session, which costs tokens). Say which copy should be the one source of truth."),
+}
+
+
 # ---------------------------------------------------------------- agent run
+BUDGET_HITS: list[float] = []       # runs stopped by their budget (the cost is then the cap)
 # Without `tools`, the SDK offers every Claude Code tool and `allowed_tools` only pre-approves
 # some. His second run used SendUserFile (sends files to the owner), so the list is now exact.
 BUILTIN_TOOLS = ["Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch"]
@@ -284,7 +368,7 @@ async def run_agent(task_text: str, resume: str | None = None,
         disallowed_tools=["Bash", "Task", "NotebookEdit"],
         permission_mode="acceptEdits",
         hooks={"PreToolUse": [HookMatcher(
-            matcher="Write|Edit|Read|Glob|Grep|WebFetch|mcp__archive__verify_quote",
+            matcher="Write|Edit|Read|Glob|Grep|WebSearch|WebFetch|mcp__archive__verify_quote",
             hooks=[fence_hook])]},
         cwd=str(ROOT),
         max_turns=max_turns or MAX_TURNS,
@@ -295,16 +379,22 @@ async def run_agent(task_text: str, resume: str | None = None,
     )
     tools_used: list[str] = []
     result = None
-    async for message in query(prompt=task_text, options=options):
-        if isinstance(message, AssistantMessage):
-            for block in message.content:
-                if isinstance(block, TextBlock):
-                    print(block.text)
-                elif isinstance(block, ToolUseBlock):
-                    print(f"   [tool] {block.name}")
-                    tools_used.append(block.name)
-        elif isinstance(message, ResultMessage):
-            result = message
+    try:
+        async for message in query(prompt=task_text, options=options):
+            if isinstance(message, AssistantMessage):
+                for block in message.content:
+                    if isinstance(block, TextBlock):
+                        print(block.text)
+                    elif isinstance(block, ToolUseBlock):
+                        print(f"   [tool] {block.name}")
+                        tools_used.append(block.name)
+            elif isinstance(message, ResultMessage):
+                result = message
+    except Exception as e:              # out of budget: keep what he wrote and let the checks run
+        if "maximum budget" not in str(e):
+            raise
+        print(f"   [budget] stopped: {e}")
+        BUDGET_HITS.append(budget or MAX_BUDGET)
     return result, tools_used
 
 
@@ -316,8 +406,8 @@ def fill(template: str, **values) -> str:
 
 def main():
     parser = argparse.ArgumentParser(description=f"Run {NAME}, the archivist and auditor.")
-    parser.add_argument("mode", choices=["research", "audit", "index", "code-audit"])
-    parser.add_argument("topic", nargs="?", default="", help="research topic (research mode)")
+    parser.add_argument("mode", choices=["research", "audit", "index", "code-audit", "repo-audit"])
+    parser.add_argument("topic", nargs="?", default="", help="research topic, or the repo-audit part (code|mind)")
     args = parser.parse_args()
 
     ARCHIVE.mkdir(parents=True, exist_ok=True)
@@ -333,29 +423,57 @@ def main():
 
     today = datetime.date.today().isoformat()
     slug = re.sub(r"[^a-z0-9]+", "-", args.topic.lower()).strip("-")[:50] or "topic"
-    task_path = ROOT / "tasks" / f"archivist_{args.mode}.md"
-    task_text = fill(task_path.read_text(), topic=args.topic.strip(), slug=slug, date=today)
+    task_path = ROOT / "tasks" / f"archivist_{args.mode.replace('-', '_')}.md"
+    extra = {}
+    if args.mode == "repo-audit":
+        if args.topic not in REPO_PARTS:
+            sys.exit(f"Give a part: {' or '.join(REPO_PARTS)}")
+        files, focus = REPO_PARTS[args.topic]
+        # The Read tool caps a read at 25,000 tokens, so bundles split between files at ~60k characters.
+        chunks, cur = [], ""
+        for f in files:
+            block = f"\n===== {f} =====\n" + "".join(
+                f"{i:4}| {line}\n" for i, line in enumerate((ROOT / f).read_text().splitlines(), 1))
+            if cur and len(cur) + len(block) > 60_000:
+                chunks.append(cur); cur = ""
+            cur += block
+        chunks.append(cur)
+        bundles = []
+        for n, text in enumerate(chunks, 1):
+            bundles.append(ARCHIVE / f"_bundle_{args.topic}_{n}.md")
+            bundles[-1].write_text(text)
+        extra = {"part": args.topic, "focus": focus, "files": ", ".join(f"`{f}`" for f in files) +
+                 ". They are bundled, with each file's own line numbers, in: " +
+                 ", ".join(f"`{b.relative_to(ROOT)}`" for b in bundles) +
+                 ". Read each bundle once, whole, and nothing else."}
+    task_text = fill(task_path.read_text(), topic=args.topic.strip(), slug=slug, date=today, **extra)
     spec = agent.expected_output(task_text)
+    if not spec or not spec[0].startswith("archive/"):
+        sys.exit(f"{task_path.name} needs an <!-- output: archive/... --> line")
     (ARCHIVE / pathlib.Path(spec[0]).relative_to("archive")).parent.mkdir(parents=True, exist_ok=True)
 
-    written = [WORKSPACE / spec[0], ARCHIVE / "for_sophia.md"]
-    before = {p: p.read_text() for p in written if p.exists()}
+    def written():                    # every archive note he could have touched (not bundles or logs)
+        return [p for p in ARCHIVE.rglob("*.md") if not p.name.startswith("_")]
+    before = {p: p.read_text() for p in written()}
 
     def problems() -> str:
-        return agent.output_problem(task_text, start) or label_problem(written, start, before)
+        return agent.output_problem(task_text, start) or label_problem(written(), start, before)
 
     print(f"== {NAME}: {args.mode} with {agent.MODEL} (max {MAX_TURNS} turns, ${MAX_BUDGET:.2f}) ==\n")
     start = time.time()
     try:
         result, tools = asyncio.run(run_agent(task_text))
-        cost = getattr(result, "total_cost_usd", 0) or 0
+        cost = getattr(result, "total_cost_usd", 0) or (BUDGET_HITS[-1] if BUDGET_HITS else 0)
         turns = getattr(result, "num_turns", 0) or 0
         problem, check = problems(), "passed"
+        if BUDGET_HITS:
+            check = "budget reached; " + ("output written" if not problem else "nothing usable written")
+            problem = ""                # no paid retry after a budget stop
         if problem and result is not None and getattr(result, "session_id", None):
             print(f"\n== Check failed: {problem}\n== Asking {NAME} to fix it ==\n")
             result2, tools2 = asyncio.run(run_agent(
                 f"Your deliverable has a problem: {problem} Fix it now.", resume=result.session_id,
-                budget=max(MAX_BUDGET - cost, 0.05)))         # the retry shares the run's budget
+                budget=max(MAX_BUDGET - cost, 0.05), max_turns=8))   # the retry shares the run's budget
             tools += tools2
             cost += getattr(result2, "total_cost_usd", 0) or 0
             turns += getattr(result2, "num_turns", 0) or 0
@@ -366,6 +484,8 @@ def main():
     except Exception as e:
         agent.append_log(pathlib.Path(f"{NAME} {args.mode}"), None, [], time.time() - start, error=str(e)[:300])
         raise
+    for b in ARCHIVE.glob("_bundle_*.md"):
+        b.unlink()
     if agent.FENCE_BLOCKS:
         check += f" | fence blocked {len(agent.FENCE_BLOCKS)} attempt(s)"
     agent.append_log(pathlib.Path(f"{NAME} {args.mode}"), None, tools, time.time() - start,

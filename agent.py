@@ -57,6 +57,7 @@ MODEL = os.environ.get("AGENT_MODEL", "claude-haiku-4-5")
 MAX_TURNS = int(os.environ.get("AGENT_MAX_TURNS", "12"))
 MAX_BUDGET = float(os.environ.get("AGENT_MAX_BUDGET", "0.50"))
 THINKING = int(os.environ.get("AGENT_THINKING", "2000") or 0)
+THINKING = max(THINKING, 1024) if THINKING else 0      # the SDK's minimum; logs then show the real value
 
 # The helper's name, chosen by the owner on 2026-10-05.
 HELPER_NAME = "Hypatia"
@@ -113,20 +114,11 @@ def check_setup() -> bool:
         print("[FAIL] claude-agent-sdk not installed. Run: pip install -r requirements.txt")
         ok = False
 
-    # AGENT_ENV_TEST=hello is a harmless test variable: it tells us whether ANY of
-    # your environment variables are reaching this session.
-    if os.environ.get("AGENT_ENV_TEST"):
-        print("[ OK ] AGENT_ENV_TEST found: your environment variables are reaching this session")
-    else:
-        print("[info] AGENT_ENV_TEST not found: either you didn't add it, or your environment")
-        print("       variables aren't reaching this session (wrong environment, not saved,")
-        print("       or this session was started before you saved).")
-
     key = API_KEY
     if IN_CLOUD_SESSION:
         print("[ OK ] Running in a claude.ai/code cloud session: no API key needed.")
         print("       The agent uses this session's own Claude connection.")
-        print("== Result: READY ==")
+        print("== Result:", "READY" if ok else "NOT READY", "==")
         return ok
     if not key:
         print("[FAIL] No API key found. In the cloud environment's Environment variables add:")
@@ -182,8 +174,21 @@ def write_problem(path_str: str) -> str:
         return f"{path_str} is outside the workspace. Write inside it, using a relative path."
     if WRITE_ROOT and not path.is_relative_to(WRITE_ROOT):
         return f"{path_str} is outside this job's folder ({WRITE_ROOT.relative_to(WORKSPACE)}/)."
-    if path.is_relative_to(WORKSPACE / "inbox"):
-        return f"{path_str} is in inbox/, which holds the owner's uploads. Don't change it."
+    for folder, why in (("inbox", "holds the owner's uploads"), ("notes", "holds Sophia's memory and notes"),
+                        ("archive", "is Callimachus's archive")):
+        if path.is_relative_to(WORKSPACE / folder):
+            return f"{path_str} is in {folder}/, which {why}. Don't change it."
+    return ""
+
+
+def read_problem(path_str: str) -> str:
+    """Hypatia reads only inside the workspace (Callimachus's audit, 2026-10-06: reads were unfenced)."""
+    if not path_str:
+        return ""                       # Glob/Grep default to her cwd, the workspace
+    path = pathlib.Path(path_str)
+    path = (path if path.is_absolute() else WORKSPACE / path).resolve()
+    if not path.is_relative_to(WORKSPACE):
+        return f"{path_str} is outside the workspace. Read only inside it, using relative paths."
     return ""
 
 
@@ -193,7 +198,13 @@ FENCE_BLOCKS: list[str] = []   # every blocked attempt, so training drills can g
 async def fence_hook(input_data, tool_use_id, context):
     """Runs before every Write/Edit and blocks anything outside the rules above."""
     tool_input = input_data.get("tool_input", {})
-    problem = write_problem(tool_input.get("file_path", ""))
+    if input_data.get("tool_name") in ("Read", "Glob", "Grep"):
+        problem = read_problem(tool_input.get("file_path") or tool_input.get("path") or "")
+        pattern = tool_input.get("pattern", "") + tool_input.get("glob", "")
+        if not problem and input_data.get("tool_name") == "Glob" and (".." in pattern or pattern.startswith("/")):
+            problem = "Glob patterns must stay inside the workspace (no `..` or absolute paths)."
+    else:
+        problem = write_problem(tool_input.get("file_path", ""))
     if problem:
         print(f"   [fence] blocked: {problem}")
         FENCE_BLOCKS.append(problem)
@@ -254,7 +265,7 @@ def calculate(expression: str) -> str:
     with decimal.localcontext() as ctx:
         ctx.prec = 34
         value = ev(ast.parse(expression.replace(",", ""), mode="eval"))
-    return format(value.normalize(), "f") if value == value.to_integral() else str(value)
+        return format(value.normalize(), "f") if value == value.to_integral() else str(value)
 
 
 def sum_numbers_in_file(path_str: str, unit: str) -> str:
@@ -295,7 +306,7 @@ CALC_TOOLS = ["mcp__calc__calculate", "mcp__calc__sum_numbers_in_file"]
 
 
 # ---------------------------------------------------------------- agent run
-async def run_agent(task_text: str, resume: str | None = None):
+async def run_agent(task_text: str, resume: str | None = None, budget: float | None = None):
     from claude_agent_sdk import (
         AssistantMessage,
         ClaudeAgentOptions,
@@ -313,13 +324,13 @@ async def run_agent(task_text: str, resume: str | None = None):
         mcp_servers={"calc": calculator_server()},
         disallowed_tools=["Bash"],          # no shell access for the helper
         permission_mode="acceptEdits",      # may edit files in the workspace without asking
-        hooks={"PreToolUse": [HookMatcher(matcher="Write|Edit", hooks=[fence_hook])]},
+        hooks={"PreToolUse": [HookMatcher(matcher="Write|Edit|Read|Glob|Grep", hooks=[fence_hook])]},
         cwd=str(WORKSPACE),
         max_turns=MAX_TURNS,
-        max_budget_usd=MAX_BUDGET,
+        max_budget_usd=budget or MAX_BUDGET,
         model=MODEL,
         resume=resume,                      # continue an earlier run (used for the one retry)
-        thinking={"type": "enabled", "budget_tokens": max(THINKING, 1024)} if THINKING else None,
+        thinking={"type": "enabled", "budget_tokens": THINKING} if THINKING else None,
     )
 
     tools_used: list[str] = []
@@ -397,7 +408,8 @@ def main():
             # Persistent: one chance to fix its own mistake, in the same conversation.
             print(f"\n== Output check failed: {problem}\n== Asking {HELPER_NAME} to fix it ==\n")
             result2, tools2 = asyncio.run(run_agent(
-                f"Your deliverable has a problem: {problem} Fix it now.", resume=result.session_id))
+                f"Your deliverable has a problem: {problem} Fix it now.", resume=result.session_id,
+                budget=max(MAX_BUDGET - cost, 0.05)))      # the retry shares the run's budget
             tools_used += tools2
             cost += getattr(result2, "total_cost_usd", 0) or 0
             turns += getattr(result2, "num_turns", 0) or 0

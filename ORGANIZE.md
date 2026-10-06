@@ -3,8 +3,11 @@
 Sophia never touches the Mac. She only sees what the owner uploads (sizes and filenames),
 plans, and produces scripts the OWNER runs. Scripts only MOVE files (dry run by default,
 with an undo script). Anything that looks deletable is moved into `_Sophia To Delete/` for the
-owner to review and drag to the Trash. Audio, Ableton, sample, and music-gear files are never
-moved (enforced in `make_mac_script.py`, see PROTECTED). The repo is private; filenames are visible only to the owner.
+owner to review and drag to the Trash. Audio, Ableton, sample, video and music-gear files are
+never moved (`make_mac_script.py` PROTECTED; tested by `safety_test.py`), with ONE exception: a
+music file that no Ableton set uses (checked by `music_plan.py` against every set) may move into the
+owner's music homes, `~/Music/{Sound Library,Projects,Bounces,Archive}`, and only in a round the
+owner approved in words (decision log, 2026-10-06). The repo is private; filenames are visible only to the owner.
 
 ## On the Mac (owner)
 1. Download `sophia_scan.sh` (lands in Downloads). Run: `bash ~/Downloads/sophia_scan.sh`
@@ -33,6 +36,6 @@ moved (enforced in `make_mac_script.py`, see PROTECTED). The repo is private; fi
 ## Rules
 - Never edit `organize_<Folder>.sh` by hand; regenerate it with `sophia.py` / `make_mac_script.py`.
 - To change folders or rules, edit `workspace/inbox/preferences.md` and the rules in `sophia.py`.
-- Never organize inside ~/Library, ~/Music, Ableton folders, /Applications, or /System.
+- Never organize inside ~/Library, Ableton folders, /Applications, /System, or anything in ~/Music
+  except the four music homes above.
   Space there is reported in `cleanup_report.md` for the owner to handle by hand.
-- `make_listing.sh` and `tasks/organize_files.md` are the older one-folder version; prefer the above.

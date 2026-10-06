@@ -32,6 +32,7 @@ ROOT = pathlib.Path(__file__).resolve().parent
 WS = ROOT / "workspace"
 INBOX = WS / "inbox"
 PROCESSED = INBOX / "processed"
+DRY = ROOT / "workspace" / "_dry"            # --dry writes here only
 PLANS = WS / "plans"
 OUT = WS / "out"
 BATCH_LISTING = INBOX / "_batch.txt"
@@ -187,10 +188,13 @@ def process_listing(path, dry):
           f"asking Sophia about {len(unknown)}")
     a_moves, a_leave = agent_sort(base, made, unknown, dry)
     plan = {"moves": moves + a_moves, "leave_alone": leave + a_leave}
-    PLANS.mkdir(parents=True, exist_ok=True)
-    plan_path = PLANS / f"{name}.json"
+    # --dry used to overwrite the real plans and scripts with "(dry run)" leaves (Cal's audit,
+    # 2026-10-06), so a dry run now writes only to a scratch folder.
+    plans_dir, out_dir = (DRY / "plans", DRY / "out") if dry else (PLANS, OUT)
+    plans_dir.mkdir(parents=True, exist_ok=True)
+    plan_path = plans_dir / f"{name}.json"
     plan_path.write_text(json.dumps(plan, indent=1, ensure_ascii=False))
-    out = OUT / name
+    out = out_dir / name
     subprocess.run([sys.executable, str(ROOT / "make_mac_script.py"), "--listing", str(path),
                     "--plan", str(plan_path), "--out", str(out), "--name", f"organize_{name}.sh",
                     "--made", made or ""], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
