@@ -2,6 +2,10 @@
 
 _Updated 2026-10-06_
 
+> **2026-10-06, Sophia:** the round below (music round 1: 214 + 3 + 15 files) has ALREADY RUN.
+> The script on `main` now makes 2 moves (Grandpa's Familiar folder, Void Speech bounce): see the
+> Crew Board steps for 2026-10-06. This page is rewritten by `sophia.py` on the next scan.
+
 ## Ready for you to run on your Mac
 
 One script for everything: [organize_all.sh](https://github.com/gavintkizer-bit/agent-sophia-i/raw/main/workspace/out/organize_all.sh). Control-click > Save Link As..., save in Downloads.

@@ -100,6 +100,19 @@ def read_problem(path_str: str) -> str:
     return ""
 
 
+PRIVATE_TERMS = ROOT / "agents" / "private_terms.txt"   # one term per line; owner's names, handles
+
+
+def private_problem(text: str) -> str:
+    """Rule 3 (nothing private leaves the repo) enforced in code: Cal's audit, 2026-10-06."""
+    squash = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())   # "void-speach" in a URL = "void speach"
+    low = squash(text)
+    terms = PRIVATE_TERMS.read_text().splitlines() if PRIVATE_TERMS.exists() else []
+    if any(t.strip() and not t.startswith("#") and squash(t) in low for t in terms):
+        return "That search or URL contains a private term (the owner's names or projects). Leave it out."
+    return ""
+
+
 def url_problem(url: str) -> str:
     """Block URLs that could leak data or reach private machines."""
     try:
@@ -137,9 +150,10 @@ async def fence_hook(input_data, tool_use_id, context):
         if not problem and (".." in pattern or pattern.strip().startswith("/") or ".env" in pattern):
             problem = "That pattern reaches outside the repo or at secrets."
     elif name == "WebSearch":
-        problem = "Search queries must be short and about the topic only." if len(args.get("query", "")) > 150 else ""
+        problem = ("Search queries must be short and about the topic only." if len(args.get("query", "")) > 150
+                   else private_problem(args.get("query", "")))
     elif name in ("WebFetch", "mcp__archive__verify_quote"):
-        problem = url_problem(args.get("url", ""))
+        problem = url_problem(args.get("url", "")) or private_problem(args.get("url", ""))
     else:
         problem = ""
     if name in ("WebSearch", "WebFetch", "mcp__archive__verify_quote") and not agent.WRITE_ROOT:
@@ -318,8 +332,8 @@ CODE_FOCUS = ("- Bugs: logic errors, edge cases (empty input, odd filenames with
 # its $1 budget before writing a word (2026-10-06).
 REPO_PARTS = {
     "helpers": (["agent.py", "archivist.py", "train.py", ".claude/settings.json", "sophia_boot.sh"], CODE_FOCUS),
-    "mac": (["sophia.py", "make_mac_script.py", "music_plan.py", "sophia_scan.sh", "sandbox_test.sh",
-             "make_listing.sh"], CODE_FOCUS),
+    "mac": (["sophia.py", "make_mac_script.py", "music_plan.py", "sophia_scan.sh", "sandbox_test.sh"],
+            CODE_FOCUS),
     "mind": (["CLAUDE.md", "SOPHIA.md", "AUTONOMY.md", "SCOPE.md", "IMPROVE.md", "PERSONALITY_ROUTINE.md",
               "ORGANIZE.md", "README.md", "SETUP_PLAN.md", "agents/README.md", "agents/archivist.md",
               "workspace/notes/sophia_memory.md", "workspace/notes/decision_log.md",

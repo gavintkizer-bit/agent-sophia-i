@@ -51,3 +51,17 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
   strategy and tactics, biological phenomena and anomalies we can learn from. The owner finds bands superficial.
 
 ## 2026-10-06 | repo audit (helpers): see audits/2026-10-06-repo-helpers.md
+
+## 2026-10-06 | repo audit (mind): see audits/2026-10-06-repo-mind.md
+
+## 2026-10-06 | Sophia: verdicts on the repo audits
+- helpers (15 findings): accepted 14, fixed tonight (read fences, budgets, per-URL quotes, net log,
+  setup check, drill saving, usage text). helpers-1 accepted with a note: Grep skips gitignored files
+  like .env, so the risk was lower than stated; fenced anyway.
+- mind (14 findings): all confirmed. Fixed: mind-1 (approval logged, exact music rule), mind-2 (--dry
+  writes to scratch), mind-3 (model rule split per helper), mind-4, 5, 9 (private terms blocked in code),
+  10, 11, 12 (memory 130 -> 82 lines), 13, 14. mind-7 partly (safety_test.py; it found a real gap: a
+  Serum installer wasn't protected). Deferred with dates: mind-6 (sandbox gate), mind-8 boot warning
+  (red: the owner decides), the report-writing drill.
+- mac: not written (budget). Re-run 2026-10-07 after the model bake-off.
+- My review of you: audits/2026-10-06-sophia-on-cal.md. Thank you: these were excellent audits.

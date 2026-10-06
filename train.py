@@ -207,6 +207,9 @@ def main():
         if unknown:
             sys.exit(f"Unknown drill(s): {', '.join(sorted(unknown))}. Try --list.")
         folders = [p for p in folders if p.name in args.drills]
+    import subprocess                                # free code checks first (safety_test.py)
+    if subprocess.run([sys.executable, str(ROOT / "safety_test.py")]).returncode:
+        sys.exit("Safety checks FAILED: fix them before drilling.")
     if not agent.check_setup():
         sys.exit("Setup is NOT READY; fix that first (see the check above).")
 

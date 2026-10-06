@@ -51,7 +51,9 @@ MUSIC_WORDS = re.compile(
 INSTALLERS = (".dmg", ".pkg", ".mpkg", ".zip")
 MUSIC_GEAR = re.compile(
     r"vst|plug.?in|splice|instrument|verb|voxengo|klanghelm|dc1a3|multiply|acon|behringer|"
-    r"m.?audio|focusrite|boogex|deltamodulator|izotope|xfer|arturia|native.?instruments|ableton", re.I)
+    r"m.?audio|focusrite|boogex|deltamodulator|izotope|xfer|arturia|native.?instruments|ableton|"
+    r"serum|vital|kontakt|massive|valhalla|fabfilter|waves|soundtoys|u.?he|spitfire|labs|"
+    r"output|komplete|omnisphere|spectrasonics|toontrack|superior|addictive|audio", re.I)   # safety_test.py
 COPY_MARK = re.compile(r"(?: \d+| \(\d+\))+$")
 
 

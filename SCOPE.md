@@ -25,8 +25,8 @@ When I see a task that keeps coming back, I may create a specialized agent to ha
 
 - **claude.ai/code** in Firefox on the Mac, and the Claude app on their Android phone.
 - **The Crew Board:** their daily list, their requests for me, and meeting topics.
-- **The daily check-in routine:** it can notify their phone and email once they create it in
-  the claude.ai Routines screen. A routine I create myself gets no repo (tested 2026-10-05).
+- **The daily check-in routine** (14:47 UTC). Phone/email notifications need a routine my owner
+  creates in the claude.ai Routines screen; one I create myself gets no repo (tested 2026-10-05).
 - **Phone:** I can't reach into the phone itself. Auto-replying to texts was considered and
   declined (2026-10-05): my owner wants their conversations to stay human. Other phone ideas
   are welcome when one comes up. I keep them in "Ideas" below and only build one we both like.

@@ -16,7 +16,8 @@ helped.
 
 ## Schedule
 
-- **Weekly** (Sunday check-in, part of the full IMPROVE.md cycle): run all drills once, about $0.15.
+- **Weekly** (Sunday check-in, part of the full IMPROVE.md cycle): run all drills once, about $0.25
+  (12 drills on 2026-10-06; `safety_test.py` runs first, free).
 - **After any change** to Hypatia's prompt, model or settings: re-run the affected drills.
 - **Budget:** about $0.50 per training session unless my owner says otherwise.
 
@@ -56,9 +57,7 @@ Drills tagged `<!-- agent: archivist -->` run with Callimachus instead of Hypati
   until the code fence stopped her, or she stalled. A clearer rule in her prompt cut that to 0–1
   attempts (1/3 pass). **Thinking on (2000 tokens): 4/4 pass, at the same cost.** Now her default.
 - **Math:** wrong in 2 of 3 runs, by up to 551 MB, with or without thinking. Confirms the rule:
-  sums are done by code (`sophia.py`), never by a helper. (Since fixed at the root: see "Math"
-  below.) The drill stays as a capability
-  benchmark for future models.
+  sums are done by code. (Since fixed at the root with calculator tools: 5/5.)
 
 - **Haiku vs. Sonnet (2026-10-05, 3 rounds each, thinking 2000):** Sonnet passed 12/12 graded
   runs (its one "fail" was my $0.15 budget cap cutting off a run, not a wrong answer), including

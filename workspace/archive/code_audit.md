@@ -4,4 +4,4 @@
 - none found
 
 ## Memory size
-- 130 lines, 1782 words
+- 79 lines, 936 words

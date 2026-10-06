@@ -1,6 +1,0 @@
-# base: /Users/gtkizer/Desktop
-# made: 2026-10-05
-2026-09-24|724019|./Screen Shot 2026-09-24 at 1.56.43 AM.png
-2019-01-11|5831574|./Vanguard.mp3
-2026-08-14|46550288|./Void Speech.wav
-2026-10-04|77213|./file_listing.txt

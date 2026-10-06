@@ -225,3 +225,8 @@ One entry per agent run, newest at the bottom.
 - Model: claude-sonnet-5-5 (thinking 2000) | Turns: n/a | Time: 753s | Cost: n/a
 - Tools used: none
 - Error: Claude Code returned an error result: Reached maximum budget ($1) (exit code: 1)
+
+## 2026-10-06 04:12 | Callimachus repo-audit | OK
+- Model: claude-sonnet-5-5 (thinking 2000) | Turns: 7 | Time: 273s | Cost: $0.7251
+- Tools used: Edit, Read, Write, mcp__archive__calculate
+- Output check: passed

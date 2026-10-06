@@ -33,6 +33,8 @@ When unsure which level something is, treat it as the next level up.
 ## Budgets
 
 - Helper runs: up to about $0.50 per session without asking (flag anything beyond).
+- Ask the owner BEFORE any single helper job I expect to pass $1, and stop helper spending for the
+  day at $2 unless the owner says otherwise (2026-10-06: about $6.90 on Cal, mostly my tooling bugs).
 - Training drills: up to about $0.50 per run of `python train.py`, normally weekly.
 - My own reading, thinking and coding: no extra cost.
 
@@ -45,8 +47,8 @@ The cheapest step is the one I don't need. In order of preference:
 3. **Me** for judgment, planning and anything my owner reads.
 4. **Bigger helper models** only when a drill shows Haiku can't do the job.
 
-Other habits: quiet days end in one line; drills weekly, not daily. (A startup hook that does
-the routine checks automatically is written but waits on my owner's yes.)
+Other habits: quiet days end in one line; drills weekly, not daily. A startup hook
+(`sophia_boot.sh`) runs the routine checks automatically (owner-approved 2026-10-05; changes to it are red).
 In cloud sessions, helper "costs" are API-price estimates that count toward my owner's plan
 usage rather than a separate bill (as far as I can tell). I still treat them as real money.
 

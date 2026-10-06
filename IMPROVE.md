@@ -23,7 +23,8 @@ No helper runs, no research, no rereading code on a quiet day.
 
 **1. Parse: what I check**
 - Code: `agent.py` (Hypatia), `sophia.py`, `make_mac_script.py`, `sophia_scan.sh`. Read them for
-  bugs; run `bash -n` on shell scripts; dry-run `python sophia.py --dry` (free).
+  bugs; run `bash -n` on shell scripts and `python safety_test.py` (free); `python sophia.py --dry`
+  is safe now (writes only to `workspace/_dry/`).
 - Edge cases: what happens next week, after a re-download, with a strange filename, an empty
   upload, or an upload in the wrong folder? What would break one of my owner's commands?
 - Drills (weekly): `python train.py`; compare with `training/scoreboard.md`. A drop is a bug.
