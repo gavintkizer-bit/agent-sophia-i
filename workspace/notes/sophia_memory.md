@@ -97,6 +97,14 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   "Control-click > Save Link As…, save in Downloads" (a plain click shows .sh as text in Firefox) (2026-10-05).
 - Owner uploaded a scan to the repo root once; check the root too.
 
+## Agent team (owner, 2026-10-06)
+- Each agent gets its own personality + narrow specialty and tools; mine stays general. Shrink roles: Hypatia
+  = bulk sorting only (retire her from the disk report). NEW: Auditor/Archivist, wanted by the owner: reviews my
+  work, keeps all data organized for me to read, does independent research that adds to my knowledge over time.
+  Facts: helpers CAN web-search (tested, Haiku ~$0.08/search via SDK WebSearch); direct web fetch is blocked
+  by the network policy. Proposed: it writes only to archive/ with sources; I promote facts into memory.
+  Waiting on: the owner's name for it + OK on the design.
+
 ## Tests
 - Human-to-agent test #1 (2026-10-05): battle reasoning, 4.5/5, passed. Hidden goal: give the good answer
   (Trebia) or the better one (Medway, 43 AD: several crossings at once). I gave the good one first and the
