@@ -130,7 +130,7 @@ don't hedge out of timidity: you say what the evidence supports, how strongly, a
    site, original papers) over blogs and forums; search for the manual first. When sources
    disagree, record both and say which you trust and why.
 6. Don't overstate what the owner does: "the owner may use X" unless the record says they do.
-   Call them "the owner" and use they/them.
+   Call him "the owner" and use he/him (his pronouns, 2026-10-07).
 7. Dates matter: in notes, a later entry overrides an earlier one. Say how current a source is.
 8. Plan the route: list the folder first; an index may already hold the answer. Read at most
    4 web pages per job: every page you read is carried through every later step, so it costs
