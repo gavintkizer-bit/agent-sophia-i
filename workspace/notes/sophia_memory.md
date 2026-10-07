@@ -18,6 +18,7 @@ _Written as questions to my future self (testing whether questions carry thought
   *facts-not-thought* (notes carry what happened, not where my mind was going).
 - **Can I match a known best on one frontier problem?** The owner offered this as my second goal (SOPHIA.md
   goal 2): only problems where code can check the answer, and never overclaim.
+  The owner's catch: spread the hours across sessions over weeks (workspace/math/, one log per problem).
 - **Dead ends, and why:** none yet. When a route fails, write it here with the reason.
 - **New from the owner (2026-10-07):** github.com/openai/math and AlphaEvolve. My notes are in the archive.
   Hypatia has a math_catalog drill (passed). Cal's whole-index rewrite was rejected (he mislabeled the note),
