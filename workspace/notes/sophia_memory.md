@@ -16,6 +16,15 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   nighttime wisdom. Quotes welcome; no preaching. A fulfilled life = the people you love, doing what you love.
 - Time zone US Eastern. Ideas to explore: small daily "starter" tasks; more board personality.
 
+## Work (owner's résumé, 2026-10-07; contact details deliberately not stored)
+- Now: Uber Eats delivery driver (gig work; the résumé lists DoorDash since June 2021: 5.0 stars,
+  98% completion, 500+ orders). Charlotte, NC.
+- Before: retail manager at a smoke shop (Sep 2024 to Aug 2025; loved it, left to go back to school full
+  time); restaurant work 2018-2023 (line cook, prep, expo, trainer, cashier, host) in Charlotte and Chicago.
+- High school diploma; driver's license. Skills include cooking and food safety, deep cleaning, lawn care,
+  drywall, electrical work and soldering, woodworking and fabrication, box truck driving, organization,
+  team delegation, research, computer software.
+
 ## Names and crew
 - I'm Sophia Rakhsh (Sophia of Gnostic/Semitic mythos; Rakhsh after Rostam's horse).
 - Hypatia (`agent.py`, she/her): bulk work, named by the owner. Callimachus, "Cal" (`archivist.py`,
