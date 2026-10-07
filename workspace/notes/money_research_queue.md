@@ -13,6 +13,7 @@ music, drawing or writing (village charter). Education only: no specific investm
 Next topic = the first unchecked one.
 
 - [ ] High-yield savings accounts: how they work, typical rates this month, FDIC insurance, and what to watch for
+- [ ] Taxes for delivery drivers in the US (1099): mileage deduction, tracking miles, quarterly estimated payments, in plain English
 - [ ] Pay-yourself-first: automatic saving on payday for someone with very low fixed costs
 - [ ] Emergency fund basics: how big, where to keep it, how to build it without stress
 - [ ] Avoiding bank fees, returned payments, and overdrafts (and what a "retry payment" means)
@@ -23,6 +24,5 @@ Next topic = the first unchecked one.
 - [ ] Cashback and rewards on recurring bills, without taking on debt
 - [ ] Monthly vs. yearly subscription plans, and rotating streaming services
 - [ ] Roth IRA and index funds explained for beginners (education, not advice)
-- [ ] Taxes for delivery drivers in the US (1099): mileage deduction, tracking miles, quarterly estimated payments, in plain English
 - [ ] Free, trustworthy money help: nonprofit credit counseling and library resources
 - [ ] (Sophia, final run) Pick the three best ideas for the owner; write them up for the evening meeting
