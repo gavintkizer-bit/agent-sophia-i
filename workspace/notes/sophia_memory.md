@@ -55,7 +55,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Human-to-agent tests: #1 battle (4.5/5: give the better answer, not just the textbook one: Medway over
   Trebia), #2 baseball (5/5: the good and the better answer together, in one decisive answer).
 
-## Drive cleanup status (2026-10-06)
+## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
+- Don't start new cleanup rounds or ask for scans unless the owner brings it back.
 - 55.3 GB free (from 18.0); 995 items put in place over 4 rounds; music round 1 done (Sound Library,
   1.5 GB, unused sounds). Home layout: Documents/{School,Finance,Code,Books,Papers},
   Pictures/{Photos,Screenshots,Images}, Downloads = inbox, Desktop = current music projects; undo
