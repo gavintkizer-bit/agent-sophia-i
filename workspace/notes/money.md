@@ -26,3 +26,5 @@ Coverage gap: anything billed to another card or account, and anything after ear
 Update 2026-10-07: the owner got a new card about a week ago; the three keepers already have it. Splice is
 kept for now (first to cut) and still has the old card. The other to-cut items are on the old card but not
 cancelled, so they still get cancelled properly.
+
+No phone bill or rent (owner, 2026-10-07). Goal for later: save more / make more money.

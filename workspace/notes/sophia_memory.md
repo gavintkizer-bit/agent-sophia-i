@@ -95,6 +95,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   (24th; assumed monthly from "scheduled for Oct 24"), plus a once-reminder when the policy period ends
   2027-02-24 (check the renewal rate).
   AMC+ ad-free $10.99/mo (renews the 1st; free trial already ended).
+- Owner does NOT pay their own phone bill or rent (2026-10-07). Example phone bill removed from the agenda.
+  They want to use that advantage to save more / make more money "soon": bring a few calm, concrete ideas
+  to an evening meeting when they're ready (not unprompted lists).
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements
   (2026-10-07): findings in workspace/notes/money.md; 5 checks on the agenda as goal steps.
   Statements never committed; extracted text lived only in the session scratchpad.
