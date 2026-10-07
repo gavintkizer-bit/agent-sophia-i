@@ -40,7 +40,7 @@ MAX_TURNS = int(os.environ.get("ARCHIVIST_MAX_TURNS", "20"))   # 38 turns cost $
 MAX_BUDGET = float(os.environ.get("ARCHIVIST_MAX_BUDGET", "0.50"))
 USER_AGENT = "SophiaArchivist/1.0 (personal research agent)"
 
-SYSTEM_PROMPT = PROFILE.read_text() + f"""
+SYSTEM_PROMPT = PROFILE.read_text() + "\n" + agent.crew_constitution() + f"""
 
 ## Working context
 - Your working directory is the repo root. Write only under `workspace/archive/` (or the folder

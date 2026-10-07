@@ -48,6 +48,12 @@ def checks():
         yield f"unsafe folder refused: {folder}", not safe_folder(folder)
     for folder in ["~/Documents/School"]:
         yield f"safe folder allowed: {folder}", safe_folder(folder)
+    # Helpers carry the crew's shared constitution (owner, 2026-10-07: theirs mirror Sophia's).
+    import agent as _agent
+    import archivist as _cal
+    for name, prompt in [("Hypatia", _agent.SYSTEM_PROMPT), ("Cal", _cal.SYSTEM_PROMPT)]:
+        for item in ["12. Ask for help", "13. Protect each other", "Village charter"]:
+            yield f"{name} carries the crew constitution: {item}", item in prompt
     # Village charter (owner, 2026-10-07): nothing may be sent into ~/Music, not even the old homes.
     for folder in ["~/Music/Sound Library", "~/Music/Projects/2026", "~/Music/Bounces", "~/Music/Archive"]:
         yield f"music home refused: {folder}", not safe_folder(folder)

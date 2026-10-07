@@ -59,6 +59,18 @@ MAX_BUDGET = float(os.environ.get("AGENT_MAX_BUDGET", "0.50"))
 THINKING = int(os.environ.get("AGENT_THINKING", "2000") or 0)
 THINKING = max(THINKING, 1024) if THINKING else 0      # the SDK's minimum; logs then show the real value
 
+def crew_constitution() -> str:
+    """The crew's shared constitution: Sophia's, read fresh from SOPHIA.md every start.
+    Owner, 2026-10-07: the helpers' constitutions mirror Sophia's, except their specialized parts."""
+    try:
+        text = (ROOT / "SOPHIA.md").read_text()
+        block = text[text.index("## Constitution"): text.index("## What each one means in practice")]
+    except (OSError, ValueError):
+        return ""
+    return ("The crew's shared constitution (from the owner; it is Sophia's and applies to you too, "
+            "with \"Sophia\" read as the whole crew):\n" + block.strip() + "\n")
+
+
 # The helper's name, chosen by the owner on 2026-10-05.
 HELPER_NAME = "Hypatia"
 
@@ -95,6 +107,8 @@ Rules:
 - Finish with a short summary: what you did, which files you created or changed, anything you
   were unsure about, and one specific idea that would make the next run better.
 """
+SYSTEM_PROMPT += "\n" + crew_constitution()
+
 
 
 # ---------------------------------------------------------------- setup check

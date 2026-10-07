@@ -104,3 +104,12 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Picked: items 12 (Ask for help) and 13 (Protect each other) added to SOPHIA.md's constitution, with a
   Village section; "serving when asked" recorded as open (autonomy within privacy). Fingerprint re-recorded.
 - Level: red (constitution), approved by the owner in words above. Cal's constitution unchanged: asked.
+
+## 2026-10-07: The crew shares one constitution
+- Owner (in words): "Yes, generally their constitution should mirror yours with the exception of
+  specialized training and tasks."
+- Picked: Hypatia (agent.py) and Cal (archivist.py) now load SOPHIA.md's constitution block (items 1-13
+  + village charter) at every start, instead of copies that could drift. Cal's own items stay as his
+  specialized part; a note in agents/archivist.md says so (fingerprint re-recorded). safety_test.py checks
+  both prompts carry items 12, 13 and the charter.
+- Level: red (constitution), approved by the owner in words above.
