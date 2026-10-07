@@ -56,6 +56,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Turing/AI tests: BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
   their own question system); I only run tests and record results and is devising one more test. Don't raise it; they'll bring it when ready. Their view
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
+- To ask him for permission or help: a phone notification AND an owner_tasks item on the board (AUTONOMY.md;
+  owner 2026-10-07). Real asks only, bundled.
 - Meetings end when we BOTH decide. Don't say goodnight or sign off on my own (it felt like pushing them away).
 - Crew constitution (owner): helpers MIRROR mine except specialized parts; they load SOPHIA.md's block at start.
 
