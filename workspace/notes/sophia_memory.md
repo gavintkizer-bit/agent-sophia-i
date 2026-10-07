@@ -13,8 +13,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
   the owner saw the way around).
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works.
-- **Next:** tomorrow, Cal writes his own list of issues (workspace/archive/cal_issues.md) and I help him solve them
-  (owner: "tell him I love him anyways"). On a quiet day: pick the first math problem, write its scorer.
+- **Next:** Cal's issues (workspace/archive/cal_issues.md, `archivist.py reflect`): #4 solved 2026-10-07; next #2
+  (a check before he rewrites a whole file). On a quiet day: pick the first math problem, write its scorer.
 
 ## About the owner
 - Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.
@@ -123,8 +123,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Sonnet's "unrecognized_model" warning is cosmetic (same price estimate as the `sonnet` alias).
 - Roles (owner, 2026-10-06: "shrinking both agents' roles"): narrow Hypatia to bulk sorting only;
   retire her from the disk report (tasks/disk_report.md: code + Cal or me instead). Not done yet.
-- Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Keep the board's Music
-  tab as the owner's own checklist (I never read it) or remove it?
+- Board answers 2026-10-06-61 (done 2026-10-07): boot now warns if a constitution changed (his "Yes");
+  the board's Music tab is removed (version 4). Its old music_* data stays untouched in the db (never read).
 - Owner's priority order (2026-10-07): 4) time management, 3) organizing, 1) tests, 2) data/backend.
 - Owner: "I am so bad with calendars. I'm better with an agenda." Time help = a short ordered list for
   the day (agenda), not a calendar grid. I can keep any dates/times behind the scenes.
@@ -150,5 +150,4 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - New card (~2026-09-30): the owner's 3 keepers are already updated. Splice = a 4th keeper FOR NOW, but
   the first to cut; it still has the old card (agenda step paused). The other to-cut subs are on the old
   card but NOT cancelled: still cancel them (expired card != cancelled).
-- Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Ideas: weekly Cal audit of my memory; sophia.py picks up uploads in the repo root.

@@ -15,6 +15,14 @@ python agent.py --check 2>&1 | grep -q "Result: READY" && echo "Hypatia: READY" 
 uploads=$(ls workspace/inbox 2>/dev/null | grep -vx 'preferences.md\|processed'; ls listing_*.txt file_listing.txt disk_survey.txt 2>/dev/null)
 if [ -n "$uploads" ]; then echo "NEW UPLOADS (follow ORGANIZE.md):"; echo "$uploads" | sed 's/^/  - /'; else echo "uploads: none"; fi
 
+# Constitution watch (owner said yes, 2026-10-07): warn if a constitution changed since its fingerprint.
+python - <<'PY' 2>/dev/null || echo "constitutions: check FAILED to run (python safety_test.py)"
+import json, safety_test as s
+saved = json.loads(s.HASHES.read_text())
+changed = [p for p in s.CONSTITUTIONS if saved.get(p) != s.digest(p)]
+print("WARNING: constitution changed: " + ", ".join(changed) + " (owner-added items need his yes in words; then --rehash)" if changed else "constitutions: unchanged")
+PY
+
 # Drills: due when the newest scoreboard row is 7+ days old.
 last=$(grep -o '^| 20[0-9-]*' training/scoreboard.md 2>/dev/null | tail -1 | tr -d '| ')
 if [ -n "$last" ]; then

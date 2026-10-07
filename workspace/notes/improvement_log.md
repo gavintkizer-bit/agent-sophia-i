@@ -152,3 +152,7 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 - Measured: Hypatia math_catalog PASS ($0.04); Cal archive_index PASS ($0.02). Cal's full-index rewrite FAILED
   in real use (mislabeled the note), so I rejected it.
 - One change: Cal indexes one row at a time. My thread gains *named obstacles* and *dead ends, and why*.
+
+## 2026-10-07 (light): Cal's issues, #4
+- Measured: Cal's reflect run passed after one retry ($0.11); his quote drills afterward 3/3 PASS ($0.06).
+- One change: verify_quote explains a NOT FOUND (closest text, nothing close, or no readable text).

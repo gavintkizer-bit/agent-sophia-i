@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one narrow column, a header with the day, four tabs (Today's agenda first, then Sophia's asks, music, and requests for Sophia), and the evening meeting at the foot. Lapis and saffron, after Persian tilework. */
+/* Layout: one narrow column, a header with the day, three tabs (Today's agenda first, then Sophia's asks and requests for Sophia), and the evening meeting at the foot. Lapis and saffron, after Persian tilework. */
 :root {
   --bg: #eef1f5;
   --surface: #ffffff;
@@ -81,7 +81,7 @@ h3 { font: 400 20px/1.2 var(--font-display); margin: 0; }
 details.done-earlier summary, details.more summary { cursor: pointer; color: var(--muted); font-size: 14px; }
 .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .x { margin-left: auto; }
-/* Music tab */
+/* Cards, ticks and logs (the Music tab was removed, owner 2026-10-07) */
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
 .card.session { border-top: 4px solid var(--saffron); }
 .group { display: grid; gap: 6px; }
@@ -130,7 +130,6 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" id="tab-today" aria-selected="true" aria-controls="panel-today">Today</button>
     <button class="tab" role="tab" id="tab-you" aria-selected="false" aria-controls="panel-you">From Sophia</button>
-    <button class="tab" role="tab" id="tab-music" aria-selected="false" aria-controls="panel-music">Music</button>
     <button class="tab" role="tab" id="tab-sophia" aria-selected="false" aria-controls="panel-sophia">Sophia's list</button>
   </div>
 
@@ -182,52 +181,6 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     <details class="done-earlier" id="owner-earlier" hidden><summary></summary><ul class="list" id="owner-earlier-list" style="margin-top:10px"></ul></details>
   </section>
 
-  <section id="panel-music" role="tabpanel" aria-labelledby="tab-music" hidden style="display:grid;gap:18px">
-    <div class="card session" id="session-card">
-      <div class="row"><h3>Session</h3><span class="note x" id="session-since"></span></div>
-      <label class="group">
-        <span class="group-label">Song</span>
-        <select id="session-song"><option value="">Pick a song…</option></select>
-      </label>
-      <label class="group">
-        <span class="group-label">Today's one small goal</span>
-        <input type="text" id="session-goal" maxlength="200" placeholder="e.g. finish the drums in the bridge">
-      </label>
-      <div class="group" id="session-start"><p class="group-label">Start</p></div>
-      <div class="group" id="session-end"><p class="group-label">End</p></div>
-      <label class="group">
-        <span class="group-label">One line: what changed, what's next</span>
-        <input type="text" id="session-note" maxlength="300" placeholder="e.g. new bass take; next: tighten the intro">
-      </label>
-      <div class="row">
-        <button class="btn primary" type="button" id="session-finish">Finish session</button>
-        <span class="saved" id="session-saved"></span>
-      </div>
-    </div>
-
-    <div class="group">
-      <h2>Songs</h2>
-      <div class="list" id="song-list"></div>
-      <p class="empty" id="song-empty" hidden>No songs yet. Add the one you're working on.</p>
-      <form class="add" id="song-form">
-        <input type="text" id="song-input" placeholder="New song title" aria-label="New song title" maxlength="120">
-        <button class="btn primary" type="submit">Add song</button>
-      </form>
-    </div>
-
-    <div class="group">
-      <h2>Albums</h2>
-      <div class="list" id="album-list"></div>
-      <p class="empty" id="album-empty" hidden>No albums yet.</p>
-      <form class="add" id="album-form">
-        <input type="text" id="album-input" placeholder="New album name" aria-label="New album name" maxlength="120">
-        <button class="btn primary" type="submit">Add album</button>
-      </form>
-    </div>
-
-    <details class="more" id="log-box" hidden><summary>Recent sessions</summary><ul class="log" id="session-log" style="margin-top:10px"></ul></details>
-  </section>
-
   <section id="panel-sophia" role="tabpanel" aria-labelledby="tab-sophia" hidden style="display:grid;gap:14px">
     <form class="add" id="add-form">
       <input type="text" id="add-input" placeholder="Ask Sophia to…" aria-label="Something for Sophia to do" maxlength="300">
@@ -255,7 +208,7 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   $("today-label").textContent = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
 
   // ---- tabs (remembered per viewer)
-  const TABS = ["today", "you", "music", "sophia"];
+  const TABS = ["today", "you", "sophia"];
   function showTab(which) {
     if (!TABS.includes(which)) which = "today";
     TABS.forEach((t) => {
@@ -265,8 +218,8 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     try { localStorage.setItem("crew-tab", which); } catch (e) {}
   }
   TABS.forEach((t) => $("tab-" + t).addEventListener("click", () => showTab(t)));
-  // A bookmark opens on Today; the board#asks / #music / #sophia link opens another tab.
-  const HASH_TAB = { "#today": "today", "#agenda": "today", "#asks": "you", "#music": "music", "#sophia": "sophia" };
+  // A bookmark opens on Today; the board#asks / #sophia link opens another tab.
+  const HASH_TAB = { "#today": "today", "#agenda": "today", "#asks": "you", "#sophia": "sophia" };
   showTab(HASH_TAB[location.hash] || "today");
 
   function el(tag, cls, text) {
@@ -554,189 +507,6 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   // Left open past midnight? Start the new day fresh.
   setInterval(() => { if (ymd(dayStart()) !== agendaDay) location.reload(); }, 5 * 60 * 1000);
 
-  // ---- music: Session >> Song >> Album (owner, 2026-10-05)
-  const SESSION_START = [
-    ["home", "Open the song from Music/Projects/2026", "New song? Save it there first: File > Save Live Set As…"],
-    ["goal", "Write one small goal for today", "It goes in the box above."],
-  ];
-  const SESSION_END = [
-    ["collect", "File > Collect All and Save", "Copies every sound into the project folder, so it's complete and safe to move."],
-    ["bounce", "Export a rough bounce to Music/Bounces", "Name it \"Song – date\". Rough is the point: it's not a release."],
-    ["note", "Write one line: what changed, what's next", "In the box below. It shows on the song's card next time."],
-  ];
-  const SONG_STEPS = [
-    ["basics", "Working title, tempo and key noted"],
-    ["arranged", "Idea to full arrangement (start to finish)"],
-    ["mixed", "Mix pass"],
-    ["second", "Listened on a second device (phone or headphones)"],
-    ["final", "Final bounce exported + final Collect All and Save"],
-    ["home", "Assigned to an album, or marked as a single"],
-  ];
-  const STAGES = ["idea", "arranged", "mixed", "final"];
-  const ALBUM_STEPS = [
-    ["name", "Name and a working tracklist"],
-    ["order", "Track order"],
-    ["art", "Artwork"],
-    ["gathered", "Final bounces gathered in one album folder"],
-    ["loud", "Final pass so the songs sit at the same loudness"],
-    ["release", "Release plan (SoundCloud as Gavin R. Lowe, or elsewhere)"],
-  ];
-
-  let songs = [], albums = [], session = {}, sessionDirty = false;
-
-  function tick(id, label, hint, on, onChange) {
-    const l = el("label", "tick" + (on ? " on" : ""));
-    const box = el("input", "check"); box.type = "checkbox"; box.id = id; box.checked = !!on; box.disabled = !db;
-    const span = el("span", null, label);
-    if (hint) span.appendChild(el("small", null, hint));
-    box.addEventListener("change", () => { l.classList.toggle("on", box.checked); onChange(box.checked); });
-    l.appendChild(box); l.appendChild(span);
-    return l;
-  }
-  function nameInput(id, value, onSave) {
-    const i = el("input", "name"); i.type = "text"; i.id = id; i.value = value || ""; i.maxLength = 120; i.disabled = !db;
-    i.setAttribute("aria-label", "Name");
-    i.addEventListener("change", () => { const v = i.value.trim(); if (v) onSave(v); else i.value = value || ""; });
-    return i;
-  }
-  const save = (path, data) => db && db.doc(path).update(data).catch(() => {});
-
-  // Session
-  const saveSession = debounce(async () => {
-    try { await db.doc("music_session/current").set(session); sessionDirty = false; $("session-saved").textContent = "Saved"; }
-    catch (e) { $("session-saved").textContent = "Not saved. Try again."; }
-  }, 700);
-  function touchSession() {
-    if (!db) return;
-    if (!session.startedAt) session.startedAt = new Date().toISOString();
-    sessionDirty = true; $("session-saved").textContent = "Saving…"; saveSession();
-  }
-  function renderSession() {
-    const busy = document.activeElement && $("session-card").contains(document.activeElement) && document.activeElement.type === "text";
-    const sel = $("session-song");
-    sel.replaceChildren(el("option", null, "Pick a song…"), ...songs.map((s) => { const o = el("option", null, s.data().title); o.value = s.id; return o; }));
-    sel.firstChild.value = "";
-    sel.value = session.song || "";
-    if (!busy) { $("session-goal").value = session.goal || ""; $("session-note").value = session.note || ""; }
-    const checks = session.checks || {};
-    const mk = (list) => list.map(([k, label, hint]) => tick("s-" + k, label, hint, checks[k], (v) => {
-      session.checks = Object.assign({}, session.checks, { [k]: v }); touchSession();
-    }));
-    $("session-start").replaceChildren(el("p", "group-label", "Start"), ...mk(SESSION_START));
-    $("session-end").replaceChildren(el("p", "group-label", "End"), ...mk(SESSION_END));
-    $("session-since").textContent = session.startedAt ? "Started " + new Date(session.startedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
-    [sel, $("session-goal"), $("session-note"), $("session-finish")].forEach((n) => (n.disabled = !db));
-  }
-  $("session-song").addEventListener("change", (e) => { session.song = e.target.value; touchSession(); });
-  $("session-goal").addEventListener("input", (e) => {
-    session.goal = e.target.value;
-    session.checks = Object.assign({}, session.checks, { goal: e.target.value.trim() !== "" });
-    $("s-goal").checked = session.checks.goal; $("s-goal").parentElement.classList.toggle("on", session.checks.goal);
-    touchSession();
-  });
-  $("session-note").addEventListener("input", (e) => {
-    session.note = e.target.value;
-    session.checks = Object.assign({}, session.checks, { note: e.target.value.trim() !== "" });
-    $("s-note").checked = session.checks.note; $("s-note").parentElement.classList.toggle("on", session.checks.note);
-    touchSession();
-  });
-  $("session-finish").addEventListener("click", async () => {
-    if (!db) return;
-    const b = $("session-finish"); b.disabled = true;
-    const song = songs.find((s) => s.id === session.song);
-    try {
-      await db.collection("music_sessions").add({
-        day: today, endedAt: new Date().toISOString(), startedAt: session.startedAt || null,
-        song: session.song || "", songTitle: song ? song.data().title : "", goal: session.goal || "",
-        note: session.note || "", checks: session.checks || {},
-      });
-      if (song && (session.note || "").trim()) await db.doc("music_projects/" + song.id).update({ lastNote: session.note.trim(), lastSession: today });
-      session = {}; await db.doc("music_session/current").set({});
-      $("session-saved").textContent = "Session saved. Nice work.";
-    } catch (e) { $("session-saved").textContent = "Not saved. Try again."; }
-    b.disabled = false;
-  });
-
-  // Songs
-  function songCard(snap) {
-    const t = snap.data(), checks = t.checks || {};
-    const c = el("div", "card");
-    c.appendChild(nameInput("song-name-" + snap.id, t.title, (v) => save("music_projects/" + snap.id, { title: v })));
-    const stage = el("div", "stage"); stage.setAttribute("role", "group"); stage.setAttribute("aria-label", "Status");
-    STAGES.forEach((s) => {
-      const b = el("button", null, s); b.type = "button"; b.setAttribute("aria-pressed", String(t.stage === s)); b.disabled = !db;
-      b.addEventListener("click", () => save("music_projects/" + snap.id, { stage: t.stage === s ? "" : s }));
-      stage.appendChild(b);
-    });
-    c.appendChild(stage);
-    if (t.folder) c.appendChild(el("p", "folder", t.folder));
-    if (t.lastNote) {
-      const r = el("p", "reply"); r.appendChild(el("b", null, "Last session: ")); r.appendChild(document.createTextNode(t.lastNote));
-      c.appendChild(r);
-    }
-    const g = el("div", "group");
-    SONG_STEPS.forEach(([k, label]) => g.appendChild(tick("p-" + snap.id + "-" + k, label, null, checks[k], (v) =>
-      save("music_projects/" + snap.id, { checks: Object.assign({}, checks, { [k]: v }) }))));
-    c.appendChild(g);
-    const sel = el("select"); sel.id = "song-album-" + snap.id; sel.setAttribute("aria-label", "Album"); sel.disabled = !db;
-    sel.appendChild(el("option", null, "No album (single)")); sel.firstChild.value = "";
-    albums.forEach((a) => { const o = el("option", null, "Album: " + a.data().title); o.value = a.id; sel.appendChild(o); });
-    sel.value = t.album || "";
-    sel.addEventListener("change", () => save("music_projects/" + snap.id, { album: sel.value }));
-    c.appendChild(sel);
-    return c;
-  }
-  // Albums
-  function albumCard(snap) {
-    const t = snap.data(), checks = t.checks || {};
-    const c = el("div", "card");
-    c.appendChild(nameInput("album-name-" + snap.id, t.title, (v) => save("music_albums/" + snap.id, { title: v })));
-    const mine = songs.filter((s) => s.data().album === snap.id);
-    const finals = mine.filter((s) => s.data().stage === "final").length;
-    c.appendChild(el("p", "note", mine.length ? finals + " of " + mine.length + " songs final" : "No songs yet: pick this album on a song's card."));
-    if (mine.length) {
-      const ul = el("ul", "tracks");
-      mine.forEach((s) => { const li = el("li"); li.appendChild(el("span", "pill" + (s.data().stage === "final" ? " final" : ""), s.data().stage || "no status")); li.appendChild(el("span", null, s.data().title)); ul.appendChild(li); });
-      c.appendChild(ul);
-    }
-    const g = el("div", "group");
-    ALBUM_STEPS.forEach(([k, label]) => g.appendChild(tick("a-" + snap.id + "-" + k, label, null, checks[k], (v) =>
-      save("music_albums/" + snap.id, { checks: Object.assign({}, checks, { [k]: v }) }))));
-    c.appendChild(g);
-    return c;
-  }
-  function renderMusic() {
-    const by = (a, b) => (a.data().order || 0) - (b.data().order || 0) || (a.data().createdAt || "").localeCompare(b.data().createdAt || "");
-    songs.sort(by); albums.sort(by);
-    $("song-list").replaceChildren(...songs.map(songCard));
-    $("song-empty").hidden = songs.length > 0;
-    $("album-list").replaceChildren(...albums.map(albumCard));
-    $("album-empty").hidden = albums.length > 0;
-    renderSession();
-  }
-  function addForm(form, input, coll, extra) {
-    $(form).addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const v = $(input).value.trim(); if (!v || !db) return;
-      $(input).disabled = true;
-      try { await db.collection(coll).add(Object.assign({ title: v, checks: {}, createdAt: new Date().toISOString(), order: Date.now() }, extra)); $(input).value = ""; }
-      catch (err) { /* keep the text */ }
-      $(input).disabled = false;
-    });
-  }
-  addForm("song-form", "song-input", "music_projects", { stage: "", album: "", folder: "", lastNote: "" });
-  addForm("album-form", "album-input", "music_albums", {});
-  function renderLog(docs) {
-    const recent = docs.slice().sort((a, b) => (b.data().endedAt || "").localeCompare(a.data().endedAt || "")).slice(0, 8);
-    $("log-box").hidden = recent.length === 0;
-    $("session-log").replaceChildren(...recent.map((s) => {
-      const t = s.data(), li = el("li");
-      li.appendChild(el("time", null, new Date(t.endedAt).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) + (t.songTitle ? " · " + t.songTitle : "")));
-      li.appendChild(document.createTextNode((t.goal ? "Goal: " + t.goal + ". " : "") + (t.note || "")));
-      return li;
-    }));
-  }
-
   // ---- Sophia's list
   function sophiaItem(snap) {
     const t = snap.data();
@@ -806,10 +576,7 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     $("sophia-empty").hidden = false;
     $("add-input").disabled = true;
     $("meeting-notes").disabled = true;
-    $("song-empty").hidden = false; $("album-empty").hidden = false;
-    renderSession();
   }
-  renderMusic();
   (window.claude && window.claude.use ? window.claude.use("db") : Promise.resolve(null)).then((d) => {
     db = d;
     if (!db) return offline();
@@ -817,14 +584,6 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     db.collection("agenda_items").onSnapshot((s) => { items = s.docs.slice(); agendaLoaded = true; renderAgenda(); }, offline);
     db.doc("agenda_done/" + agendaDay).onSnapshot((s) => { doneToday = s.exists ? Object.assign({}, (s.data().ids || {})) : {}; renderAgenda(); }, () => {});
     db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
-    db.collection("music_projects").onSnapshot((s) => { songs = s.docs.slice(); renderMusic(); }, () => {});
-    db.collection("music_albums").onSnapshot((s) => { albums = s.docs.slice(); renderMusic(); }, () => {});
-    db.collection("music_sessions").onSnapshot((s) => renderLog(s.docs), () => {});
-    db.doc("music_session/current").onSnapshot((s) => {
-      if (sessionDirty) return;  // don't overwrite what's being typed
-      session = s.exists ? Object.assign({}, s.data()) : {};
-      renderSession();
-    }, () => {});
     db.doc("meetings/" + today).onSnapshot((s) => {
       const m = s.exists ? s.data() : {};
       lastSophiaNotes = m.sophiaNotes || "";
