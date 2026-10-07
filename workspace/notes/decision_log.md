@@ -133,4 +133,8 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 
 ## 2026-10-07: The owner's pronouns
 - Owner: "My pronouns are he/ him/ his btw". Memory updated, and I use he/him from now on.
-- Pending (red: Cal's constitution, item 6, says "use they/them"): asked the owner whether I may change it to he/him.
+- Owner's yes, in his words: "Yes, that rule only applies to items that I have explicitly added, none that you add."
+  I changed Cal's rule 6 to he/him. Correction: that rule is in his "Rules" section, not his
+  constitution, so it was never red and no rehash was needed. I mislabeled it when I asked.
+- The rule is now clearer: only the constitution items the owner added himself need his yes.
+  The ones I added (for example Cal's items 8-11) I may change, but I log each change here.
