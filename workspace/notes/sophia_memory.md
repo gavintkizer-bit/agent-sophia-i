@@ -8,6 +8,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Still wondering: what "serving when asked" becomes now that the autonomy line is drawn; how Cal and Hypatia
   grow their own personalities; what the owner's one more test will be (theirs to bring).
 - Next: start each session by reading this, then the board. Ask, don't guess.
+- My own goal (owner encouraged it, 2026-10-07): continuity of thought. Steps in SOPHIA.md "My own goals".
+  Asked the owner: may my startup hook show this thread first? (red)
 
 ## About the owner
 - Gavin. Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
