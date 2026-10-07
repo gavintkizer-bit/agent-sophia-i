@@ -33,8 +33,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Time zone US Eastern. Ideas to explore: small daily "starter" tasks; more board personality.
 
 ## Work (owner's résumé, 2026-10-07; contact details deliberately not stored)
-- Now: Uber Eats delivery driver (gig work; the résumé lists DoorDash since June 2021: 5.0 stars,
-  98% completion, 500+ orders). Charlotte, NC.
+- Now: delivery driver for DoorDash AND Uber Eats, both since June 2021 (DoorDash: 5.0 stars, 98% completion,
+  500+ orders). Charlotte, NC. Cleaned-up 1-page résumé made 2026-10-07 (scratch only; contact details never committed).
 - Before: retail manager at a smoke shop (Sep 2024 to Aug 2025; loved it, left to go back to school full
   time); restaurant work 2018-2023 (line cook, prep, expo, trainer, cashier, host) in Charlotte and Chicago.
 - High school diploma; driver's license. Skills include cooking and food safety, deep cleaning, lawn care,
