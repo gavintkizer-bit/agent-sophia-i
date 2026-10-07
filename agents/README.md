@@ -35,3 +35,6 @@ Each agent has a specialty, a personality and a constitution from my owner; mine
 
 - **A diff reviewer:** give Callimachus a diff-review task (he already audits) if a careless
   commit of mine happens again.
+
+**Constitutions (owner, 2026-10-07):** every helper's constitution mirrors Sophia's (loaded from
+SOPHIA.md via `agent.crew_constitution()`), plus only its own specialized items and training.
