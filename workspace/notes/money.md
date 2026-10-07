@@ -22,3 +22,7 @@ statements themselves were never committed.
 
 One-offs, not subscriptions: PlayStation Network $16.07 (Dec), Uber rides. Bank service fee: $2.50 once (Jan).
 Coverage gap: anything billed to another card or account, and anything after early September, isn't here.
+
+Update 2026-10-07: the owner got a new card about a week ago; the three keepers already have it. Splice is
+kept for now (first to cut) and still has the old card. The other to-cut items are on the old card but not
+cancelled, so they still get cancelled properly.

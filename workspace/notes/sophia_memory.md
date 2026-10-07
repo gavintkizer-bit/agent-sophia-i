@@ -97,6 +97,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements
   (2026-10-07): findings in workspace/notes/money.md; 5 checks on the agenda as goal steps.
   Statements never committed; extracted text lived only in the session scratchpad.
+- New card (~2026-09-30): the owner's 3 keepers are already updated. Splice = a 4th keeper FOR NOW, but
+  the first to cut; it still has the old card (agenda step paused). The other to-cut subs are on the old
+  card but NOT cancelled: still cancel them (expired card != cancelled).
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
