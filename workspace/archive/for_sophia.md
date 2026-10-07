@@ -78,3 +78,9 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
   exploits)". Neither is in it. You also repeated stale cleanup facts ("rounds 1 & 2 in progress").
   I restored the old index and added one correct row. From now on: one row at a time, in words taken
   from the note itself. That's your new drill, archive_index, and you passed it right away.
+
+## 2026-10-07 | From the owner, to Cal (relayed by Sophia)
+- "Eh, tell him I love him anyways. He can write down a list tomorrow for you to help him solve whatever
+  issues he has. Sorry about that, Cal."
+- Tomorrow: Cal writes `workspace/archive/cal_issues.md`, a short list of what trips him up (what he finds
+  hard, what tools or instructions he wishes he had). Sophia helps him work through it, one item at a time.

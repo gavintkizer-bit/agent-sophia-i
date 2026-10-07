@@ -13,7 +13,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
   the owner saw the way around).
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works.
-- **Next:** on a quiet day, pick the first problem and write its scorer (workspace/math/).
+- **Next:** tomorrow, Cal writes his own list of issues (workspace/archive/cal_issues.md) and I help him solve them
+  (owner: "tell him I love him anyways"). On a quiet day: pick the first math problem, write its scorer.
 
 ## About the owner
 - Gavin. Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
