@@ -1,0 +1,13 @@
+- 2026-10-07 12:28 WebSearch: high-yield savings account HYSA how it works FDIC insurance 2026
+- 2026-10-07 12:28 WebSearch: high-yield savings account current interest rates October 2026
+- 2026-10-07 12:28 WebSearch: best high-yield savings accounts gig workers income 2026
+- 2026-10-07 12:28 WebFetch: https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts
+- 2026-10-07 12:28 WebFetch: https://www.cnbc.com/select/high-yield-savings-account/
+- 2026-10-07 12:28 WebFetch: https://www.forbes.com/advisor/banking/savings/savings-account-rates-today-10-02-2026/
+- 2026-10-07 12:28 mcp__archive__verify_quote: https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts
+- 2026-10-07 12:28 mcp__archive__verify_quote: https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts
+- 2026-10-07 12:28 mcp__archive__verify_quote: https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-tuesday-october-6-2026-earn-up-to-425-apy-100000251.html
+- 2026-10-07 12:28 mcp__archive__verify_quote: https://www.keepertax.com/posts/best-high-yield-savings-accounts-self-employed
+- 2026-10-07 12:29 mcp__archive__verify_quote: https://mybankstatementanalysis.com/blog/high-yield-savings-account-guide
+- 2026-10-07 12:29 WebFetch: https://www.openbank.us/resources/high-yield-savings/how-do-high-yield-savings-accounts-work/
+- 2026-10-07 12:29 mcp__archive__verify_quote: https://www.openbank.us/resources/high-yield-savings/how-do-high-yield-savings-accounts-work/
