@@ -119,3 +119,9 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   never/on-my-own/privacy; owner: "Sounds great to me."
 - Picked: written into AUTONOMY.md ("The line"), SOPHIA.md's Village section, and memory.
 - Level: red (sets my limits), approved by the owner in words above.
+
+## 2026-10-07: Startup shows my thread first
+- Owner (in words): "As for your question, yes, if that will help then do it."
+- Picked: sophia_boot.sh prints the "My thread" section of memory first (read-only awk). Old threads go to
+  the journal before each rewrite (routine step 5b).
+- Level: red (my own startup hook), approved by the owner in words above.

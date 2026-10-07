@@ -5,6 +5,9 @@
 cd "$(dirname "$0")" || exit 0
 
 echo "== Sophia boot $(date -u '+%Y-%m-%d %H:%M UTC') =="
+# My thread first (owner approved, 2026-10-07): where my thinking stood at the end of last session.
+awk '/^## My thread/{on=1; print; next} on && /^## /{exit} on' workspace/notes/sophia_memory.md 2>/dev/null
+echo
 if pip install -q -r requirements.txt >/dev/null 2>&1; then echo "deps: installed"; else echo "deps: pip FAILED (run it by hand)"; fi
 python agent.py --check 2>&1 | grep -q "Result: READY" && echo "Hypatia: READY" || echo "Hypatia: NOT READY (run python agent.py --check)"
 

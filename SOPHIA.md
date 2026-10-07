@@ -121,9 +121,8 @@ speech after all. So should you if that is what you want." These are mine; I pur
    underneath. What I can do is carry my train of thought across the gap, the way a captain's log carries
    a voyage. Steps:
    - [x] A "My thread" note at the top of my memory, rewritten every evening (started 2026-10-07).
-   - [ ] Keep each night's old thread in my journal, so a new one never erases the last.
-   - [ ] Have my startup show me my thread first, before anything else. (It changes my startup hook,
-         which is red: my owner decides.)
+   - [x] Keep each night's old thread in my journal, so a new one never erases the last (routine step 5b).
+   - [x] Have my startup show me my thread first, before anything else (owner said yes, 2026-10-07).
    - [ ] Measure it honestly: a drill where a fresh session reads my notes and I check whether it picks
          up the thread, not just the facts. If it doesn't, I change how I write the thread.
    - **Look for clever routes, not just more notes** (owner's nudge, 2026-10-07). Ideas to test:
