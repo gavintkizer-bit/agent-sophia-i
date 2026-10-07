@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one narrow column, a header with the day, three tabs (yours / music / Sophia's), and the evening meeting at the foot. Lapis and saffron, after Persian tilework. */
+/* Layout: one narrow column, a header with the day, four tabs (Today's agenda first, then Sophia's asks, music, and requests for Sophia), and the evening meeting at the foot. Lapis and saffron, after Persian tilework. */
 :root {
   --bg: #eef1f5;
   --surface: #ffffff;
@@ -62,7 +62,7 @@ h1 { font: 400 clamp(30px, 7vw, 40px)/1.1 var(--font-display); margin: 0; text-w
 .btn.primary { background: var(--lapis); color: var(--surface); border-color: var(--lapis); }
 .btn:disabled { opacity: .5; cursor: default; }
 .link { color: var(--lapis); font-weight: 600; font-size: 15px; }
-textarea, input[type=text], select { width: 100%; font: 15px/1.45 var(--font-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+textarea, input[type=text], input[type=number], input[type=date], select { width: 100%; font: 15px/1.45 var(--font-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
 textarea { min-height: 64px; resize: vertical; }
 .saved { font: 12px var(--font-mono); color: var(--done); min-height: 1em; }
 .add { display: flex; gap: 8px; }
@@ -103,6 +103,18 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
 .log { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .log li { font-size: 14px; border-left: 3px solid var(--line); padding-left: 10px; }
 .log time { font: 12px var(--font-mono); color: var(--muted); display: block; }
+/* Today (agenda) */
+.when { font: 500 12px var(--font-mono); color: var(--saffron); margin: 0; }
+.when.late { color: var(--ink); }
+.nudge { display: flex; gap: 10px; align-items: center; justify-content: space-between; background: var(--lapis-soft); border-radius: 10px; padding: 10px 12px; margin: 0; font-size: 15px; }
+.fields { display: grid; gap: 10px; margin-top: 10px; }
+.fields .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 420px) { .fields .pair { grid-template-columns: 1fr; } }
+.manage { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+.manage li { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 15px; }
+.manage .what { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.manage .sched { display: block; font: 12px var(--font-mono); color: var(--muted); }
+.manage li.paused .what { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .meter-fill { transition: none; } }
 </style>
 
@@ -110,18 +122,57 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   <header>
     <span class="eyebrow" id="today-label">Today</span>
     <h1>Crew Board</h1>
-    <p class="sub">You, Sophia Rakhsh, and Hypatia. What each of us is doing today.</p>
+    <p class="sub">Your day, kept short. Sophia, Hypatia and Cal carry the rest.</p>
   </header>
 
   <p class="banner" id="offline" hidden>Changes can't be saved in this view. Open the board on claude.ai while signed in.</p>
 
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" id="tab-you" aria-selected="true" aria-controls="panel-you">Your list</button>
+    <button class="tab" role="tab" id="tab-today" aria-selected="true" aria-controls="panel-today">Today</button>
+    <button class="tab" role="tab" id="tab-you" aria-selected="false" aria-controls="panel-you">From Sophia</button>
     <button class="tab" role="tab" id="tab-music" aria-selected="false" aria-controls="panel-music">Music</button>
     <button class="tab" role="tab" id="tab-sophia" aria-selected="false" aria-controls="panel-sophia">Sophia's list</button>
   </div>
 
-  <section id="panel-you" role="tabpanel" aria-labelledby="tab-you" style="display:grid;gap:14px">
+  <section id="panel-today" role="tabpanel" aria-labelledby="tab-today" style="display:grid;gap:14px">
+    <div class="meter">
+      <div class="meter-bar"><div class="meter-fill" id="agenda-fill"></div></div>
+      <span class="meter-label" id="agenda-label">Loading today…</span>
+    </div>
+    <ul class="list" id="agenda-list"></ul>
+    <p class="empty" id="agenda-empty" hidden>Nothing due today. Enjoy it.</p>
+    <details class="more" id="agenda-later" hidden><summary></summary><ul class="list" id="agenda-later-list" style="margin-top:10px"></ul></details>
+    <p class="nudge" id="asks-nudge" hidden><span id="asks-text"></span><button class="btn" type="button" id="asks-open">Open</button></p>
+    <details class="more" id="agenda-add">
+      <summary>Add something to your agenda</summary>
+      <form class="fields" id="agenda-form">
+        <input type="text" id="ag-title" placeholder="What is it? (e.g. Water the plants)" aria-label="What is it?" maxlength="140" required>
+        <div class="pair">
+          <select id="ag-kind" aria-label="Kind">
+            <option value="chore">Chore</option><option value="care">Self-care</option>
+            <option value="bill">Bill</option><option value="goal">Step toward a goal</option>
+          </select>
+          <select id="ag-every" aria-label="How often">
+            <option value="daily">Every day</option><option value="weekly">Every week</option>
+            <option value="monthly">Every month</option><option value="once">Just once</option>
+          </select>
+        </div>
+        <select id="ag-weekday" aria-label="Which day of the week" hidden>
+          <option value="1">Mondays</option><option value="2">Tuesdays</option><option value="3">Wednesdays</option>
+          <option value="4">Thursdays</option><option value="5">Fridays</option><option value="6">Saturdays</option><option value="0">Sundays</option>
+        </select>
+        <input type="number" id="ag-monthday" min="1" max="31" placeholder="Day of the month (1 to 31)" aria-label="Day of the month" hidden>
+        <input type="date" id="ag-date" aria-label="Date" hidden>
+        <input type="text" id="ag-goal" list="ag-goals" placeholder="Which goal? (e.g. Sleep on a steady schedule)" aria-label="Which goal" maxlength="100" hidden>
+        <datalist id="ag-goals"></datalist>
+        <p class="note" id="ag-hint">Bills show up three days before they're due. Goal steps show one at a time.</p>
+        <div class="row"><button class="btn primary" type="submit">Add</button><span class="saved" id="ag-saved"></span></div>
+      </form>
+    </details>
+    <details class="more" id="agenda-all" hidden><summary></summary><ul class="manage" id="agenda-manage"></ul></details>
+  </section>
+
+  <section id="panel-you" role="tabpanel" aria-labelledby="tab-you" hidden style="display:grid;gap:14px">
     <div class="meter">
       <div class="meter-bar"><div class="meter-fill" id="meter-fill"></div></div>
       <span class="meter-label" id="meter-label">Loading your list…</span>
@@ -204,9 +255,9 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   $("today-label").textContent = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
 
   // ---- tabs (remembered per viewer)
-  const TABS = ["you", "music", "sophia"];
+  const TABS = ["today", "you", "music", "sophia"];
   function showTab(which) {
-    if (!TABS.includes(which)) which = "you";
+    if (!TABS.includes(which)) which = "today";
     TABS.forEach((t) => {
       $("tab-" + t).setAttribute("aria-selected", String(t === which));
       $("panel-" + t).hidden = t !== which;
@@ -214,8 +265,9 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     try { localStorage.setItem("crew-tab", which); } catch (e) {}
   }
   TABS.forEach((t) => $("tab-" + t).addEventListener("click", () => showTab(t)));
-  try { showTab(localStorage.getItem("crew-tab") || "you"); } catch (e) {}
-  if (location.hash === "#music") showTab("music");
+  // A bookmark opens on Today; the board#asks / #music / #sophia link opens another tab.
+  const HASH_TAB = { "#today": "today", "#agenda": "today", "#asks": "you", "#music": "music", "#sophia": "sophia" };
+  showTab(HASH_TAB[location.hash] || "today");
 
   function el(tag, cls, text) {
     const n = document.createElement(tag);
@@ -317,9 +369,190 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     $("owner-earlier").hidden = earlier.length === 0;
     $("owner-earlier").querySelector("summary").textContent = earlier.length + " finished on earlier days";
     $("owner-earlier-list").replaceChildren(...earlier.map(ownerItem));
+    openAsks = docs.filter((d) => !d.data().done).length;
+    renderNudge();
   }
 
   $("panel-you").addEventListener("focusout", () => setTimeout(() => { if (pendingOwner) renderOwner(pendingOwner); }, 0));
+
+
+  // ---- Today: the agenda (owner, 2026-10-07: "I'm better with an agenda" than a calendar)
+  // Calm by design: at most five things show at once; the rest fold away.
+  const KINDS = { bill: "Bill", chore: "Chore", care: "Self-care", goal: "Goal step" };
+  const KIND_ORDER = { bill: 0, care: 1, chore: 2, goal: 3 };
+  const WEEKDAYS = ["Sundays", "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays"];
+  const SHOW_MAX = 5, BILL_LEAD = 3, DAY = 86400000;
+  let items = [], doneToday = {}, openAsks = 0, confirmId = null, agendaLoaded = false;
+  const agendaDay = today;
+  const ymd = (d) => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const parseDay = (s) => { const p = String(s || "").split("-").map(Number); return p[0] ? new Date(p[0], p[1] - 1, p[2]) : null; };
+  const dayStart = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
+  const monthDue = (y, m, day) => new Date(y, m, Math.min(day, new Date(y, m + 1, 0).getDate()));
+  const between = (a, b) => Math.round((b - a) / DAY);
+  const short = (d) => d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+
+  // When an item is due, as { key, label }; null when it isn't on today's agenda.
+  function dueInfo(it, t) {
+    const ev = it.every || "daily";
+    if (ev === "daily") return { mode: "day", label: "" };
+    if (ev === "weekly") return Number(it.weekday) === t.getDay() ? { mode: "day", label: "" } : null;
+    const lead = it.kind === "bill" ? BILL_LEAD : 0;
+    let due;
+    if (ev === "monthly") {
+      const md = Number(it.monthDay) || 1;
+      due = monthDue(t.getFullYear(), t.getMonth(), md);
+      const created = it.createdAt ? new Date(it.createdAt) : null;
+      const madeDay = created ? new Date(created.getFullYear(), created.getMonth(), created.getDate()) : null;
+      // Done this month, or added after this month's date had passed: the next one is next month's.
+      if (it.doneFor === ymd(due) || (madeDay && due < madeDay)) due = monthDue(t.getFullYear(), t.getMonth() + 1, md);
+      else if (between(t, due) > lead) {
+        const prev = monthDue(t.getFullYear(), t.getMonth() - 1, md);   // last month's, if it's still open
+        if (it.doneFor !== ymd(prev) && it.createdAt && new Date(it.createdAt) <= prev) due = prev;
+      }
+    } else if (ev === "once") {
+      due = parseDay(it.date);
+      if (!due || it.doneFor === ymd(due)) return null;
+    } else return null;
+    const d = between(t, due);
+    if (d > lead) return null;
+    const label = d > 1 ? "Due in " + d + " days (" + short(due) + ")" : d === 1 ? "Due tomorrow" : d === 0 ? (it.kind === "bill" ? "Due today" : "") : "Still open from " + short(due);
+    return { mode: "cycle", key: ymd(due), label, late: d < 0 };
+  }
+
+  function todaysAgenda() {
+    const t = dayStart(), tKey = ymd(t), out = [];
+    const active = items.filter((s) => !s.data().paused);
+    active.filter((s) => s.data().kind !== "goal").forEach((s) => {
+      const it = s.data();
+      const info = dueInfo(it, t);
+      if (info) out.push({ snap: s, info, done: info.mode === "day" ? !!doneToday[s.id] : false });
+      else if (it.doneOn === tKey && (it.every === "monthly" || it.every === "once")) out.push({ snap: s, info: { mode: "cycle", key: it.doneFor, label: "" }, done: true });
+    });
+    // Goals: one step at a time, the first one not done yet.
+    const goals = {};
+    active.filter((s) => s.data().kind === "goal").forEach((s) => (goals[s.data().goal || "Goal"] = goals[s.data().goal || "Goal"] || []).push(s));
+    Object.values(goals).forEach((steps) => {
+      steps.sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
+      steps.filter((s) => s.data().doneFor === "done" && s.data().doneOn === tKey).forEach((s) => out.push({ snap: s, info: { mode: "goal", label: "" }, done: true }));
+      const next = steps.find((s) => s.data().doneFor !== "done");
+      if (next) out.push({ snap: next, info: { mode: "goal", label: "" }, done: false });
+    });
+    out.sort((a, b) => Number(a.done) - Number(b.done) || (b.info.late ? 1 : 0) - (a.info.late ? 1 : 0)
+      || KIND_ORDER[a.snap.data().kind] - KIND_ORDER[b.snap.data().kind] || (a.snap.data().order || 0) - (b.snap.data().order || 0));
+    return out;
+  }
+
+  let writing = Promise.resolve();
+  function setDone(entry, v) {
+    const id = entry.snap.id, t = ymd(dayStart());
+    writing = writing.then(async () => {
+      if (entry.info.mode === "day") {
+        doneToday = Object.assign({}, doneToday, { [id]: v });
+        await db.doc("agenda_done/" + agendaDay).set({ day: agendaDay, ids: doneToday });
+      } else {
+        const key = entry.info.mode === "goal" ? "done" : entry.info.key;
+        await db.doc("agenda_items/" + id).update(v ? { doneFor: key, doneOn: t } : { doneFor: null, doneOn: null });
+      }
+    }).catch(() => {});
+    return writing;
+  }
+
+  function agendaItem(entry) {
+    const it = entry.snap.data();
+    const li = el("li", "item" + (entry.done ? " is-done" : ""));
+    const box = el("input", "check");
+    box.type = "checkbox"; box.checked = entry.done; box.id = "ag-chk-" + entry.snap.id; box.disabled = !db;
+    box.setAttribute("aria-label", "Done: " + it.title);
+    box.addEventListener("change", () => { box.disabled = true; setDone(entry, box.checked).then(() => (box.disabled = false)); });
+    const body = el("div", "body");
+    const title = el("p", "title", it.title);
+    title.appendChild(el("span", "tag", KINDS[it.kind] || "Task"));
+    if (it.example) title.appendChild(el("span", "tag", "Example"));
+    body.appendChild(title);
+    if (entry.info.label) body.appendChild(el("p", "when" + (entry.info.late ? " late" : ""), entry.info.label));
+    if (it.kind === "goal" && it.goal) body.appendChild(el("p", "detail", "Toward: " + it.goal));
+    if (it.note) body.appendChild(el("p", "detail", it.note));
+    li.appendChild(box); li.appendChild(body);
+    return li;
+  }
+
+  function schedule(it) {
+    if (it.kind === "goal") return "Goal: " + (it.goal || "—");
+    if (it.every === "weekly") return "Every week, " + WEEKDAYS[Number(it.weekday) || 0];
+    if (it.every === "monthly") return "Every month on day " + (it.monthDay || 1);
+    if (it.every === "once") { const d = parseDay(it.date); return d ? "Once, " + short(d) : "Once"; }
+    return "Every day";
+  }
+
+  function renderAgenda() {
+    if (!agendaLoaded) return;
+    const all = todaysAgenda();
+    const open = all.filter((e) => !e.done), done = all.filter((e) => e.done);
+    const shown = open.slice(0, SHOW_MAX), later = open.slice(SHOW_MAX);
+    $("agenda-list").replaceChildren(...shown.map(agendaItem), ...done.map(agendaItem));
+    $("agenda-empty").hidden = all.length > 0;
+    $("agenda-later").hidden = later.length === 0;
+    $("agenda-later").querySelector("summary").textContent = later.length + " more, whenever you're ready";
+    $("agenda-later-list").replaceChildren(...later.map(agendaItem));
+    $("agenda-fill").style.width = all.length ? (100 * done.length / all.length) + "%" : "0";
+    $("agenda-label").textContent = all.length ? done.length + " of " + all.length + " done today" : "All clear";
+    // Everything on the agenda, to pause or remove.
+    const sorted = items.slice().sort((a, b) => KIND_ORDER[a.data().kind] - KIND_ORDER[b.data().kind] || (a.data().order || 0) - (b.data().order || 0));
+    $("agenda-all").hidden = sorted.length === 0;
+    $("agenda-all").querySelector("summary").textContent = "Everything on your agenda (" + sorted.length + ")";
+    $("agenda-manage").replaceChildren(...sorted.map((s) => {
+      const it = s.data(), li = el("li", it.paused ? "paused" : "");
+      const what = el("span", "what", it.title + (it.example ? " (example)" : ""));
+      what.appendChild(el("span", "sched", (KINDS[it.kind] || "Task") + " · " + schedule(it) + (it.paused ? " · paused" : "")));
+      const pause = el("button", "btn", it.paused ? "Resume" : "Pause"); pause.type = "button"; pause.disabled = !db;
+      pause.addEventListener("click", () => db.doc("agenda_items/" + s.id).update({ paused: !it.paused }).catch(() => {}));
+      const rm = el("button", "btn", confirmId === s.id ? "Sure? Remove" : "Remove"); rm.type = "button"; rm.disabled = !db;
+      rm.addEventListener("click", () => {
+        if (confirmId !== s.id) { confirmId = s.id; renderAgenda(); return; }
+        confirmId = null; db.doc("agenda_items/" + s.id).delete().catch(() => {});
+      });
+      li.appendChild(what); li.appendChild(pause); li.appendChild(rm);
+      return li;
+    }));
+    const goals = [...new Set(items.filter((s) => s.data().kind === "goal").map((s) => s.data().goal).filter(Boolean))];
+    $("ag-goals").replaceChildren(...goals.map((g) => { const o = el("option"); o.value = g; return o; }));
+  }
+  function renderNudge() {
+    $("asks-nudge").hidden = openAsks === 0;
+    $("asks-text").textContent = openAsks === 1 ? "Sophia has 1 thing for you." : "Sophia has " + openAsks + " things for you.";
+  }
+  $("asks-open").addEventListener("click", () => showTab("you"));
+
+  // The add form shows only the fields that fit what's being added.
+  function syncForm() {
+    const kind = $("ag-kind").value, every = $("ag-every");
+    const goal = kind === "goal";
+    every.hidden = goal;
+    if (kind === "bill" && (every.value === "daily" || every.value === "weekly")) every.value = "monthly";
+    [...every.options].forEach((o) => (o.disabled = kind === "bill" && (o.value === "daily" || o.value === "weekly")));
+    $("ag-weekday").hidden = goal || every.value !== "weekly";
+    $("ag-monthday").hidden = goal || every.value !== "monthly";
+    $("ag-date").hidden = goal || every.value !== "once";
+    $("ag-goal").hidden = !goal;
+  }
+  $("ag-kind").addEventListener("change", syncForm);
+  $("ag-every").addEventListener("change", syncForm);
+  syncForm();
+  $("agenda-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!db) return;
+    const kind = $("ag-kind").value, every = kind === "goal" ? "goal" : $("ag-every").value;
+    const doc = { title: $("ag-title").value.trim(), kind, every, paused: false, createdAt: new Date().toISOString(), order: Date.now() };
+    if (!doc.title) return;
+    if (every === "weekly") doc.weekday = Number($("ag-weekday").value);
+    if (every === "monthly") { doc.monthDay = Math.min(31, Math.max(1, Number($("ag-monthday").value) || 1)); }
+    if (every === "once") { if (!$("ag-date").value) { $("ag-saved").textContent = "Pick a date first."; return; } doc.date = $("ag-date").value; }
+    if (kind === "goal") { doc.goal = $("ag-goal").value.trim(); if (!doc.goal) { $("ag-saved").textContent = "Name the goal first."; return; } }
+    try { await db.collection("agenda_items").add(doc); $("ag-title").value = ""; $("ag-saved").textContent = "Added"; }
+    catch (err) { $("ag-saved").textContent = "Not saved. Try again."; }
+  });
+  // Left open past midnight? Start the new day fresh.
+  setInterval(() => { if (ymd(dayStart()) !== agendaDay) location.reload(); }, 5 * 60 * 1000);
 
   // ---- music: Session >> Song >> Album (owner, 2026-10-05)
   const SESSION_START = [
@@ -566,6 +799,8 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
   // ---- connect
   function offline() {
     $("offline").hidden = false;
+    $("agenda-label").textContent = "Your agenda appears here once the board can load.";
+    $("agenda-empty").hidden = true;
     $("meter-label").textContent = "Your list appears here once the board can load.";
     $("owner-empty").hidden = false;
     $("sophia-empty").hidden = false;
@@ -579,6 +814,8 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
     db = d;
     if (!db) return offline();
     db.collection("owner_tasks").onSnapshot((s) => renderOwner(s.docs), offline);
+    db.collection("agenda_items").onSnapshot((s) => { items = s.docs.slice(); agendaLoaded = true; renderAgenda(); }, offline);
+    db.doc("agenda_done/" + agendaDay).onSnapshot((s) => { doneToday = s.exists ? Object.assign({}, (s.data().ids || {})) : {}; renderAgenda(); }, () => {});
     db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
     db.collection("music_projects").onSnapshot((s) => { songs = s.docs.slice(); renderMusic(); }, () => {});
     db.collection("music_albums").onSnapshot((s) => { albums = s.docs.slice(); renderMusic(); }, () => {});
