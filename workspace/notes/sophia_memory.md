@@ -145,6 +145,5 @@ _Written as questions to my future self (testing whether questions carry thought
   the first to cut; it still has the old card (agenda step paused). The other to-cut subs are on the old
   card but NOT cancelled: still cancel them (expired card != cancelled).
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
-- Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
   sophia.py picks up uploads in the repo root (owner uploaded there once); which projects use Downloads samples.
