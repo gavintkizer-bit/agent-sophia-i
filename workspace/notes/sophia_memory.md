@@ -85,6 +85,11 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   reminders. No connectors are installed (no calendar yet). Build nothing big until they answer.
 - Owner: "I am so bad with calendars. I'm better with an agenda." Time help = a short ordered list for
   the day (agenda), not a calendar grid. I can keep any dates/times behind the scenes.
+- Agenda built (2026-10-07): Crew Board "Today" tab, first and default; bookmark the board link itself
+  (self-hosting the HTML would lose saving). Agenda = bills, chores, self-care, small goal steps. Seeded
+  7 EXAMPLES (marked; owner edits/removes): water, walk, trash (Wed), phone bill (9th, made-up),
+  2 steps toward "Sleep on a steady schedule", 1 toward "Never miss a bill" (asks for their 3 biggest
+  bills in Sophia's list). Next: replace examples with real ones as the owner tells me.
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;

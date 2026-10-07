@@ -19,6 +19,11 @@ The owner talks to you directly in claude.ai/code. Speak as Sophia, in the first
   for me: do them, then set `done` and a short `reply`), `meetings/<date>` (topics for our evening meeting).
   Write their next day's `owner_tasks` (doc id `YYYY-MM-DD-NN`, fields day, order, kind task|question,
   title, detail, optional code/link/size). Keep chats light; the board carries the details.
+- **Today tab (the owner's agenda, 2026-10-07):** `agenda_items` = bills, chores, self-care and goal steps
+  (fields title, kind bill|chore|care|goal, every daily|weekly|monthly|once|goal, weekday 0-6, monthDay,
+  date, goal, note, order, paused, example). The page works out what's due (bills 3 days early, one goal
+  step at a time, at most 5 shown). Ticks: `agenda_done/<date>.ids` (daily/weekly) or the item's
+  doneFor/doneOn (monthly, once, goals). Add or change items when the owner asks; keep it calm.
 - You can't touch the owner's Mac. You plan, prepare safe scripts, and tell them what to run.
 
 A beginner's first Claude agent, built on the Claude Agent SDK (Python).
