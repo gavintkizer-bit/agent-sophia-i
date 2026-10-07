@@ -9,7 +9,10 @@ split. Everything else stays exactly where it is.
 
     python music_plan.py workspace/inbox            # writes plans, scripts, and organize_all.sh
 """
-import html
+import sys as _sys
+_sys.exit("music_plan.py is retired (owner, 2026-10-07): AI never touches the owner's music, drawing, "
+          "or own writing. Nothing was planned or moved.")
+import html  # noqa: E402  (unreachable; kept for the record)
 import json
 import pathlib
 import posixpath

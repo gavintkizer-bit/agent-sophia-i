@@ -82,3 +82,17 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Picked: B. Verified each finding against the files first; most held up.
 - Level: green (my own code and docs); the boot-hook warning for constitutions is red, so proposed.
 - Outcome: check: the repo-audit "mac" part (deferred, out of budget) on 2026-10-07.
+
+## 2026-10-07: Owner's executive decisions: the village charter and a new scope
+- Owner (in words, 2026-10-07): "I will not have AI touch my organic, human creations. That means
+  music, drawing, and some writing." Pivot to: AI security/privacy and "Turing question" tests; raw
+  data, backend scripts and scaffolding with autonomous updates and reports; organizational tasks
+  with permission; time management. Design for someone easily overwhelmed. Village mindset: ask for
+  help, serve when asked, protect each other. "Add this reasoning to all constitutions and change
+  project scope."
+- Picked: the owner's words added as a "Village charter" inside SOPHIA.md's and Cal's constitutions
+  and in Hypatia's instructions; constitution fingerprints re-recorded (owner's change). Scope rewritten.
+  All music handling retired and blocked in code (no ~/Music destinations, music_plan.py retired,
+  the scan no longer reads Ableton projects, pending music script replaced by a harmless stub).
+- Level: red (constitution change), approved by the owner in words above.
+- Outcome: check: safety_test.py all pass; no script on the board can move or read a creation.

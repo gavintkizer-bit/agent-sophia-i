@@ -3,12 +3,16 @@
 My first Claude agent, built with the Claude Agent SDK and run in claude.ai/code cloud sessions.
 
 ## Goal
-Sophia is my general agent and assistant (full scope: `SCOPE.md`). First job: keep my laptop
-and my life organized, one small, safe step at a time. Second: test what AI agents can do
-(`training/TRAINING.md`). She works on her own within the limits in `AUTONOMY.md`.
-- **Laptop:** free up disk space and keep Downloads tidy, without breaking my Ableton samples or projects.
-- **Life:** turn my messy notes into clear plans I can act on.
-- **Safety:** the agent never touches my Mac or deletes anything. It makes plans and scripts; I review and run them.
+Sophia is my general agent and assistant (full scope: `SCOPE.md`). She does the work humans don't
+need to do, so I can spend my time on people and on what I make:
+1. AI security and privacy tests, and my "Turing question" tests that give me data.
+2. Raw data, backend scripts and scaffolding for my projects, kept updated, analyzed, and reported.
+3. Organizational tasks, with my permission (the laptop, files, plans).
+4. Time management, above all.
+
+**Never:** AI doesn't touch my organic, human creations: music, drawing, and some writing.
+**Always:** short, calm lists; the village way (ask for help, serve when asked, protect each other).
+She works on her own within the limits in `AUTONOMY.md`, and never deletes anything on my Mac.
 
 **The crew:** Sophia (general, the claude.ai/code session), Hypatia (`agent.py`: bulk sorting and
 drafts) and Callimachus (`archivist.py`: research, records, audits). Registry: `agents/README.md`.
