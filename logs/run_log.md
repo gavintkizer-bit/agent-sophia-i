@@ -235,3 +235,8 @@ One entry per agent run, newest at the bottom.
 - Model: claude-haiku-4-5 (thinking 2000) | Turns: 9 | Time: 61s | Cost: $0.0929
 - Tools used: Read, Write
 - Output check: passed
+
+## 2026-10-07 12:30 | Callimachus research | FAILED
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 23 | Time: 131s | Cost: $0.3140
+- Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: FAILED after retry: These facts are labeled verified without proof: https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts (this fact has no checked quote of its own from it); https://www.openbank.us/resources/high-yield-savings/how-do-high-yield-savings-accounts-work/ (this fact has no checked quote of its own from it). A verified fact must include, in quotation marks on the same line, a quote that passed verify_quote this run. Add the quote or relabel the fact unverified, in every file you wrote.

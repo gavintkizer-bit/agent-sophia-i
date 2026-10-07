@@ -12,7 +12,7 @@ music, drawing or writing (village charter). Education only: no specific investm
 
 Next topic = the first unchecked one.
 
-- [ ] High-yield savings accounts: how they work, typical rates this month, FDIC insurance, and what to watch for
+- [x] High-yield savings accounts: how they work, typical rates this month, FDIC insurance, and what to watch for
 - [ ] Taxes for delivery drivers in the US (1099): mileage deduction, tracking miles, quarterly estimated payments, in plain English
 - [ ] Pay-yourself-first: automatic saving on payday for someone with very low fixed costs
 - [ ] Emergency fund basics: how big, where to keep it, how to build it without stress
