@@ -80,8 +80,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   retire her from the disk report (tasks/disk_report.md: code + Cal or me instead). Not done yet.
 - Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Keep the board's Music
   tab as the owner's own checklist (I never read it) or remove it?
-- Next for the new scope: ask the owner which ONE to start with (tests, data/backend, organizing, or
-  time management). Don't build a big plan before they choose.
+- Owner's priority order (2026-10-07): 4) time management, 3) organizing, 1) tests, 2) data/backend.
+  Starting time management: asked what weighs on them, where their time lives, and how they want
+  reminders. No connectors are installed (no calendar yet). Build nothing big until they answer.
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
