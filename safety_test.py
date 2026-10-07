@@ -46,8 +46,11 @@ def checks():
     # Scripts may only move into the owner's chosen homes, never into ~/Library or out of home.
     for folder in ["~/Library/x", "~/Music/Ableton", "/Applications", "~/../etc", "~/Music"]:
         yield f"unsafe folder refused: {folder}", not safe_folder(folder)
-    for folder in ["~/Music/Sound Library", "~/Documents/School"]:
+    for folder in ["~/Documents/School"]:
         yield f"safe folder allowed: {folder}", safe_folder(folder)
+    # Village charter (owner, 2026-10-07): nothing may be sent into ~/Music, not even the old homes.
+    for folder in ["~/Music/Sound Library", "~/Music/Projects/2026", "~/Music/Bounces", "~/Music/Archive"]:
+        yield f"music home refused: {folder}", not safe_folder(folder)
     # Each helper has an exact tool list (unlisted tools used to be available: SendUserFile).
     src = (ROOT / "agent.py").read_text()
     yield "Hypatia's tools are exact", 'tools=["Read", "Write", "Edit", "Glob", "Grep"]' in src

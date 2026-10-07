@@ -98,12 +98,10 @@ def read_listing(LISTING=LISTING):
 HOME_ROOTS = ("Documents", "Pictures", "Downloads", "Desktop")
 
 
-# Music checked as unused by every Ableton project (music_plan.py) may go here, and only here.
-# A new folder: it never touches ~/Music/Ableton or anything else already in ~/Music.
-SOUND_LIBRARY = "~/Music/Sound Library"
-# New music homes the owner chose (2026-10-05): one home for new songs, bounces, and the pre-2021 archive.
-# All are new folders; nothing already in ~/Music is touched.
-MUSIC_HOMES = (SOUND_LIBRARY, "~/Music/Projects", "~/Music/Bounces", "~/Music/Archive")
+# Retired 2026-10-07 (owner's village charter): AI never touches the owner's music, drawing or own
+# writing. There are no music homes any more, so no plan can send anything into ~/Music.
+SOUND_LIBRARY = "~/Music/Sound Library"  # kept only so old imports don't break; never a destination
+MUSIC_HOMES = ()
 
 
 def safe_folder(folder):
@@ -135,8 +133,10 @@ def main():
     ap.add_argument("--name", default="organize.sh", help="script filename (unique per folder)")
     ap.add_argument("--made", default="", help="date of the listing, printed by the script")
     ap.add_argument("--music-checked", action="store_true",
-                    help="allow music files marked music_checked (unused by every project) into ~/Music/Sound Library")
+                    help="retired 2026-10-07: refused (AI no longer touches the owner's music)")
     args = ap.parse_args()
+    if args.music_checked:
+        fail("--music-checked is retired: the owner's music is never moved by AI (village charter, 2026-10-07).")
     PLAN, OUT = pathlib.Path(args.plan).resolve(), pathlib.Path(args.out).resolve()
 
     base, listed = read_listing(pathlib.Path(args.listing).resolve())
@@ -158,9 +158,7 @@ def main():
         if f in seen:
             problems.append(f"Listed twice (kept first): {f}")
             continue
-        music_ok = (args.music_checked and m.get("music_checked") is True
-                    and any(str(folder).strip().startswith(h) for h in MUSIC_HOMES))
-        if is_protected(f) and not music_ok:
+        if is_protected(f):
             continue  # audio/Ableton: always left alone (reported below)
         if not safe_folder(folder):
             problems.append(f"Unsafe folder '{folder}' for {f} (skipped)")

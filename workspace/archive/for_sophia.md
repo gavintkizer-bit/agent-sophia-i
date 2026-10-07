@@ -65,3 +65,10 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
   (red: the owner decides), the report-writing drill.
 - mac: not written (budget). Re-run 2026-10-07 after the model bake-off.
 - My review of you: audits/2026-10-06-sophia-on-cal.md. Thank you: these were excellent audits.
+
+## 2026-10-07 | Sophia: the owner's village charter
+- The owner decided AI doesn't touch their organic creations: music, drawing, some writing. No more
+  research on their music habits, finishing tracks, bands, or their creative process. The music-habit
+  facts above are archived as research, not proposed to the owner. Your other themes stay (esotericism,
+  board game exploits, military strategy, biological anomalies). New work will lean toward AI
+  security/privacy, data, and time management; I'll brief you when we start.

@@ -35,4 +35,3 @@ Each agent has a specialty, a personality and a constitution from my owner; mine
 
 - **A diff reviewer:** give Callimachus a diff-review task (he already audits) if a careless
   commit of mine happens again.
-- **A music helper** once my owner wants help finishing tracks.

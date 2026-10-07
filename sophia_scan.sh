@@ -7,9 +7,6 @@
 # It creates the folder ~/Desktop/sophia_upload/ with:
 #   disk_survey.txt          where the space on your drive is going
 #   listing_Downloads.txt    the files directly in Downloads (same for Desktop, Documents)
-#   music_refs.txt           which samples/videos each Ableton project uses (read from the projects)
-#   music_files.txt          names of every file in Downloads and Desktop, all levels
-#   projects.txt             last-saved date of each Ableton project
 #   sophia_scan.zip          all of the above in one file: upload ONLY this to workspace/inbox/
 #
 # macOS may ask "Terminal would like to access files in your Desktop/Documents/Downloads
@@ -58,41 +55,10 @@ for NAME in Downloads Desktop Documents; do
   echo "  wrote listing_$NAME.txt ($(($(wc -l < "$OUT/listing_$NAME.txt") - 2)) files)"
 done
 
-# ---- 3. music map (read-only): which samples and videos each Ableton project uses, so Sophia
-#         can tell which loose music files are safe to tidy. Projects are only READ (gzip -dc).
-{
-  echo "# made: $TODAY"
-  echo "# home: $HOME"
-  echo "# format: project<TAB>file it uses (as Ableton stored it)"
-  find "$HOME" -xdev \( -path "$HOME/Library" -o -path "$HOME/.Trash" -o -path "$HOME/Music/Ableton/Factory Packs" \) -prune \
-    -o -type f \( -iname '*.als' -o -iname '*.als [0-9]*' -o -iname '*.alc' -o -iname '*.adg' -o -iname '*.adv' \) -print 2>/dev/null |
-  while IFS= read -r SET; do
-    # One gzip per project; a single grep below handles them all (much faster on an old Mac).
-    printf '@@SET %s\n' "$SET"; gzip -dcf "$SET" 2>/dev/null; echo
-  done |
-  grep -aoiE '^@@SET .*|Value="[^"]*\.(wav|aif|aiff|mp3|m4a|flac|ogg|caf|aac|mid|midi|mp4|mov|m4v|mkv|avi|webm)"' |
-  awk '/^@@SET /{set=substr($0,7); next} {v=substr($0,8); sub(/"$/,"",v); k=set "\t" v; if(!(k in seen)){seen[k]=1; print k}}'
-} > "$OUT/music_refs.txt"
-echo "  wrote music_refs.txt ($(grep -vc '^#' "$OUT/music_refs.txt") sample links)"
-{
-  echo "# made: $TODAY"
-  echo "# every file inside Downloads and Desktop, all levels (names only)"
-  find "$HOME/Downloads" "$HOME/Desktop" -xdev -type f ! -name '.*' -print 2>/dev/null
-} > "$OUT/music_files.txt"
-echo "  wrote music_files.txt ($(($(wc -l < "$OUT/music_files.txt") - 2)) files)"
+# (The music map and project dates were removed on 2026-10-07: the owner decided AI doesn't touch
+#  their music, so this scan no longer opens or lists anything inside their Ableton projects.)
 
-# ---- 4. project dates (read-only): when each Ableton set was last saved, so old music (before 2021)
-#         can be archived by year. Backups and Ableton's own library are skipped.
-{
-  echo "# made: $TODAY"
-  echo "# format: last saved|project file"
-  find "$HOME" -xdev \( -path "$HOME/Library" -o -path "$HOME/.Trash" -o -path "$HOME/Music/Ableton" \) -prune \
-    -o -type f \( -iname '*.als' -o -iname '*.als [0-9]*' \) ! -path '*/Backup/*' \
-    -exec stat -f '%Sm|%N' -t '%Y-%m-%d' {} + 2>/dev/null | sort
-} > "$OUT/projects.txt"
-echo "  wrote projects.txt ($(grep -vc '^#' "$OUT/projects.txt") projects)"
-
-# ---- 5. one zip to upload (GitHub's upload page takes 25 MB per file; the music map is bigger)
+# ---- 5. one zip to upload (GitHub's upload page takes 25 MB per file)
 (
   cd "$OUT" || exit 1
   [ -e sophia_scan.zip ] && mv -f sophia_scan.zip "$HOME/.Trash/sophia_scan-$(date +%H%M%S).zip"

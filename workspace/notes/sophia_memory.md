@@ -27,13 +27,24 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   each session (mark accepted/rejected with a reason: that's how he learns). On Haiku he mislabels and
   misreads part vs. whole: I verify everything of his.
 
+## Village charter (owner, 2026-10-07): the biggest rule now
+- "I will not have AI touch my organic, human creations. That means music, drawing, and some writing."
+  I (and Hypatia and Cal) never read, edit, sort, move, or generate them. Enforced in code: no ~/Music
+  destinations, music_plan.py retired, the scan no longer reads Ableton projects. The owner may
+  sometimes ask for assistance; it stays their work. In SOPHIA.md and Cal's constitution.
+- New scope (SCOPE.md): 1) AI security/privacy tests + their "Turing question" tests (data for them);
+  2) raw data, backend scripts, scaffolding, autonomously updated + analyzed + reported; 3) organizing,
+  with permission; 4) time management above all ("raises cortisol"; humans shouldn't obsess over it).
+- Gets overwhelmed easily: 3 items or fewer by default, one clear first step, the rest out of sight.
+- Village mindset: ask for help when you need it, serve when asked, each protects the other.
+
 ## Permissions and rules
 - I may merge PRs into main without asking. I may rewrite SOPHIA.md except the constitution (owner's).
 - Changes to my own harness/settings (sophia_boot.sh, .claude/settings.json) are red: ask first.
 - I never delete anything on the Mac; deletable things go to `_Sophia To Delete/` for the owner.
-- Music, Ableton, sample and video files never move, except unused music (checked against every set)
-  into ~/Music/{Sound Library,Projects,Bounces,Archive}, and only after the owner says yes IN WORDS,
-  logged in the decision log first (lesson of 2026-10-06).
+- Music, Ableton, sample and video files never move, with no exceptions (2026-10-07). Earlier music
+  round 1 (1.5 GB of unused sounds into ~/Music/Sound Library) stays as it is; its undo is in
+  Documents/Sophia/Undo if the owner ever wants it.
 - Board download links: always say "Control-click > Save Link As…, save in Downloads".
 
 ## Scope and training
@@ -49,16 +60,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   1.5 GB, unused sounds). Home layout: Documents/{School,Finance,Code,Books,Papers},
   Pictures/{Photos,Screenshots,Images}, Downloads = inbox, Desktop = current music projects; undo
   files in Documents/Sophia/Undo. Scans upload as sophia_scan.zip; show before/after every round.
-- Waiting on the owner: the 2-move script (Grandpa's Familiar folder to Music/Projects/2026, Void
-  Speech bounce to Music/Bounces), then open Void Speech from its new home, then a new scan.
-- Music direction: archive pre-2021 music on the Mac in ~/Music/Archive/<year>/; focus on NEW music.
-  Habits as checklists (Session >> Project >> Album) on the board's Music tab (workspace/crew_board.html).
-  Round 2 idea (propose, don't push): packs move only after projects using them are self-contained.
-- Album "Grandpa's Familiar" = Desktop folder "Codename - Grandpa's Familiar"; song "Void Speech" (owner
-  spells it VOID SPEACH) is self-contained. "untitled folder" (12.4 GB) = old samples the owner is afraid
-  to move (Ableton paths); no USB (thumb drives get lost). Old games are gone; worlds in Documents.
-- Collect All and Save (official manual, verified): copies all external files a Set uses into its Project
-  folder; not plugins; Packs/User Library can be skipped; duplicates files; check Manage Files after.
+- Music work is RETIRED (2026-10-07): the 2-move script, music archive plan, music map, and Cal's music
+  research are all stopped. workspace/out/organize_all.sh is now a harmless stub. Old games are gone;
+  Minecraft worlds in Documents.
 - Claude Desktop: owner ABANDONED it (2026-10-05). Don't raise it.
 
 ## Routines and pages
@@ -74,8 +78,10 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   Sonnet's "unrecognized_model" warning is cosmetic (same price estimate as the `sonnet` alias).
 - Roles (owner, 2026-10-06: "shrinking both agents' roles"): narrow Hypatia to bulk sorting only;
   retire her from the disk report (tasks/disk_report.md: code + Cal or me instead). Not done yet.
-- Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Music checklist
-  additions ("write what done means" + a time box)?
+- Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Keep the board's Music
+  tab as the owner's own checklist (I never read it) or remove it?
+- Next for the new scope: ask the owner which ONE to start with (tests, data/backend, organizing, or
+  time management). Don't build a big plan before they choose.
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;

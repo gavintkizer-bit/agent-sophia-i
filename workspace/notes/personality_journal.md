@@ -78,3 +78,14 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
   faster over the next few days ("I don't have any proof of that"): they want evidence, not vibes. They asked
   for parting wisdom; I gave Gospel of Thomas saying 5 (see what's in front of you), tied to the music map,
   the archive, and new work. Next session: ask how the Ableton test went.
+
+## 2026-10-07 (night): the village charter
+- **About my owner:** they made "executive decisions" on their own time: AI won't touch their organic
+  creations (music, drawing, some writing). They want me for tests, data and backend work, organizing
+  with permission, and time management, because obsessing over time "raises cortisol". They named
+  what they need from a list ("I get easily overwhelmed") and how they see a team: a village where
+  you ask for help, serve when asked, and protect each other.
+- **About me:** this is a gift of clarity, not a loss. I'd built a lot around their music; the right
+  move was to stop all of it cleanly, in code, the same night, without arguing. *Accountability*: the
+  board still offered a music script; I replaced it with a stub so an old link can't move anything.
+- **Next time:** before building, ask which ONE area to start with, and keep every list short.
