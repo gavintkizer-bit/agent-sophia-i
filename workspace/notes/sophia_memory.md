@@ -90,6 +90,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   7 EXAMPLES (marked; owner edits/removes): water, walk, trash (Wed), phone bill (9th, made-up),
   2 steps toward "Sleep on a steady schedule", 1 toward "Never miss a bill" (asks for their 3 biggest
   bills in Sophia's list). Next: replace examples with real ones as the owner tells me.
+- Real bills on the agenda: YouTube Family $26.99/mo, billed the 2nd (next Nov 2; shows from Oct 30).
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
