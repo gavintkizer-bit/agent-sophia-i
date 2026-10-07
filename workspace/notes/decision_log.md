@@ -125,3 +125,8 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Picked: sophia_boot.sh prints the "My thread" section of memory first (read-only awk). Old threads go to
   the journal before each rewrite (routine step 5b).
 - Level: red (my own startup hook), approved by the owner in words above.
+
+## 2026-10-07: Standing routine for frontier sources
+- Owner: "I will keep bringing you frontier proofs and I'd like you to use them to keep you and the crew sharp."
+- Picked: each source gets one checked note, one lesson and one drill, so it stays small. Log is training/research/frontier_proofs.md.
+- Level: green (training and notes only; no harness or constitution change).

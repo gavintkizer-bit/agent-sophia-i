@@ -105,6 +105,16 @@ Drills tagged `<!-- agent: archivist -->` run with Callimachus instead of Hypati
 Notes I've studied and turned into habits live in `training/research/`. Each ends with what I
 take from it, and those lessons go into SOPHIA.md, my procedures, and new drills.
 - `game_exploits.md`: legal video game exploits and the problem-solving patterns behind them.
+- `frontier_proofs.md`: frontier proofs and AI research the owner brings (standing request, 2026-10-07).
+
+### When the owner brings a new frontier source
+1. **Archive it:** one note in `workspace/archive/research/`, with every number checked against the source.
+   Cal adds its row to INDEX.md, one row only, and I check that row.
+2. **Take one problem-solving lesson** into `frontier_proofs.md`. A lesson that holds up across two
+   sources moves into SOPHIA.md's problem-solving section.
+3. **Make one code-graded drill** from it, for whichever helper the skill fits. Copy only short excerpts,
+   and only when the licence allows. Run it once and log the result.
+Keep it small. One source gets one note, one lesson and one drill.
 
 ## Capability experiments (the fun part)
 

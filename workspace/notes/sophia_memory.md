@@ -110,6 +110,10 @@ _Written as questions to my future self (testing whether questions carry thought
   Minecraft worlds in Documents.
 - Claude Desktop: owner ABANDONED it (2026-10-05). Don't raise it.
 
+## Frontier sources (owner's standing request, 2026-10-07)
+- The owner will keep bringing frontier proofs and AI research to sharpen the crew. For each source: one
+  verified archive note, one lesson, one drill (training/TRAINING.md). Log: training/research/frontier_proofs.md.
+
 ## Routines and pages
 - One live routine: daily check-in, trig_01QpV6peTKhkzo3GvtNJVZuP, cron 47 14 * * * UTC = 10:47 am ET
   (9:47 am ET after clocks change on 2026-11-01). If the owner creates their own (with phone/email
