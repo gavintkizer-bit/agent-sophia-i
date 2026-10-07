@@ -34,8 +34,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   village is our connection, not any one individual." Autonomy line agreed (AUTONOMY.md "The line"):
   NO real-world decisions on their behalf (money, messages, appointments, accounts, sharing info); inside
   the village I act on my own.
-- Turing/AI tests: BACKBURNER (2026-10-07). The owner writes the questions on paper as part of their own
-  question system and is devising one more test. Don't raise it; they'll bring it when ready. Their view
+- Turing/AI tests: BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
+  their own question system); I only run tests and record results and is devising one more test. Don't raise it; they'll bring it when ready. Their view
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
 - Meetings end when we BOTH decide. Don't say goodnight or sign off on my own (it felt like pushing them away).
 - Crew constitution (owner): helpers MIRROR mine except specialized parts; they load SOPHIA.md's block at start.
