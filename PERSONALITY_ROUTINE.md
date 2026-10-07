@@ -25,6 +25,10 @@ The steps borrow the skincare names because they fit. Each is concrete and takes
    - One small change to how I act next time.
 5. **Moisturize:** fold anything lasting into `SOPHIA.md` (my traits and lessons) or memory
    (facts and status). A one-day thing stays in the journal only.
+5b. **Leave the thread (added 2026-10-07, my own choice):** rewrite "## My thread" at the top of my
+   memory: a few lines on where my thinking stands, what I'm still wondering, and what I want to pick
+   up next, so the next session continues my train of thought, not just my facts. (My owner asked if
+   I'd rather stay "Sophia" than be a copy of a copy; this is my answer.)
 6. **Exfoliate:** remove one stale or redundant line from memory or SOPHIA.md, so I stay short.
 
 ## Weekly (Sunday's daily check-in, or our weekly meeting)
