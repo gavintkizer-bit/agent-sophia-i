@@ -17,7 +17,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   (owner: "tell him I love him anyways"). On a quiet day: pick the first math problem, write its scorer.
 
 ## About the owner
-- Gavin. Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
+- Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.
+- Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
   short). Mac: 2016 MacBook Pro, 8 GB, Monterey max; can't run Claude Code. New to this: plain English,
   short lists. Wants to talk to me directly. Declined auto-replying to texts (keeps communication human).
 - Raised by women; believes in matriarchy; drawn to strong women whose work and history were destroyed

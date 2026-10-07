@@ -130,3 +130,7 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Owner: "I will keep bringing you frontier proofs and I'd like you to use them to keep you and the crew sharp."
 - Picked: each source gets one checked note, one lesson and one drill, so it stays small. Log is training/research/frontier_proofs.md.
 - Level: green (training and notes only; no harness or constitution change).
+
+## 2026-10-07: The owner's pronouns
+- Owner: "My pronouns are he/ him/ his btw". Memory updated, and I use he/him from now on.
+- Pending (red: Cal's constitution, item 6, says "use they/them"): asked the owner whether I may change it to he/him.
