@@ -147,3 +147,8 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 - Final: 18.0 GB free to about 55 GB; 995 items placed; undo files on the Mac.
 - Closed without fixing (no longer needed): #8 (scan reads ~/Library twice), #9 (Ableton pack names in the
   scan; the scan no longer reads music at all), the report-writing drill for Hypatia's disk report.
+
+## 2026-10-07 (light): two sources from the owner
+- Measured: Hypatia math_catalog PASS ($0.04); Cal archive_index PASS ($0.02). Cal's full-index rewrite FAILED
+  in real use (mislabeled the note), so I rejected it.
+- One change: Cal indexes one row at a time. My thread gains *named obstacles* and *dead ends, and why*.

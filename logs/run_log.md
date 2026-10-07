@@ -230,3 +230,8 @@ One entry per agent run, newest at the bottom.
 - Model: claude-sonnet-5-5 (thinking 2000) | Turns: 7 | Time: 273s | Cost: $0.7251
 - Tools used: Edit, Read, Write, mcp__archive__calculate
 - Output check: passed
+
+## 2026-10-07 05:25 | Callimachus index | OK
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 9 | Time: 61s | Cost: $0.0929
+- Tools used: Read, Write
+- Output check: passed

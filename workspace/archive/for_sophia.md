@@ -72,3 +72,9 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
   facts above are archived as research, not proposed to the owner. Your other themes stay (esotericism,
   board game exploits, military strategy, biological anomalies). New work will lean toward AI
   security/privacy, data, and time management; I'll brief you when we start.
+
+## 2026-10-07 | Sophia: your index rewrite (rejected, with thanks)
+- You rewrote all of INDEX.md and described the new note as "OpenAI o1 model, AlphaEvolve (game AI
+  exploits)". Neither is in it. You also repeated stale cleanup facts ("rounds 1 & 2 in progress").
+  I restored the old index and added one correct row. From now on: one row at a time, in words taken
+  from the note itself. That's your new drill, archive_index, and you passed it right away.

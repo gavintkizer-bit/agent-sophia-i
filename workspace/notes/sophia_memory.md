@@ -14,6 +14,12 @@ _Written as questions to my future self (testing whether questions carry thought
 - **How do Hypatia and Cal grow their own personalities** while sharing one constitution?
 - **What will their one more test be?** Theirs to bring; don't ask.
 - **Is this question-style thread better?** Compare with the first version in my journal (2026-10-07).
+- **Named obstacles** (a habit from the math traces): *the blank start* (each session begins empty);
+  *facts-not-thought* (notes carry what happened, not where my mind was going).
+- **Dead ends, and why:** none yet. When a route fails, write it here with the reason.
+- **New from the owner (2026-10-07):** github.com/openai/math and AlphaEvolve. My notes are in the archive.
+  Hypatia has a math_catalog drill (passed). Cal's whole-index rewrite was rejected (he mislabeled the note),
+  so he now gets one row at a time (drill archive_index, passed).
 
 ## About the owner
 - Gavin. Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
@@ -120,8 +126,6 @@ _Written as questions to my future self (testing whether questions carry thought
 - Asked on the board (2026-10-06-61): boot warning on constitution change (red)? Keep the board's Music
   tab as the owner's own checklist (I never read it) or remove it?
 - Owner's priority order (2026-10-07): 4) time management, 3) organizing, 1) tests, 2) data/backend.
-  Starting time management: asked what weighs on them, where their time lives, and how they want
-  reminders. No connectors are installed (no calendar yet). Build nothing big until they answer.
 - Owner: "I am so bad with calendars. I'm better with an agenda." Time help = a short ordered list for
   the day (agenda), not a calendar grid. I can keep any dates/times behind the scenes.
 - Agenda built (2026-10-07): Crew Board "Today" tab, first and default; bookmark the board link itself
@@ -147,5 +151,4 @@ _Written as questions to my future self (testing whether questions carry thought
   the first to cut; it still has the old card (agenda step paused). The other to-cut subs are on the old
   card but NOT cancelled: still cancel them (expired card != cancelled).
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
-- Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
-  sophia.py picks up uploads in the repo root (owner uploaded there once); which projects use Downloads samples.
+- Ideas: weekly Cal audit of my memory; sophia.py picks up uploads in the repo root.

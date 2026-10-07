@@ -10,6 +10,7 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 | 2026-10-06 | `research/2026-10-06-how-adult-musicians-find-a-band-or-collaborators-t.md` | How adult musicians find a band or collaborators today: online platforms, local scenes, and what works | Vampr (verified), Musician Wave (verified), LANDR (verified), Stringkick (verified), CD Unity, Reddit communities |
 | 2026-10-06 | `research/2026-10-06-habits-that-help-music-producers-start-sessions-an.md` | Habits that help music producers start sessions and finish tracks despite perfectionism | Underground Talent (verified), LANDR (verified), AudioGearz (unverified—blocked), KAN Samples |
 | 2026-10-06 | `research/2026-10-06-ableton-live-collect-all-and-save-what-it-copies-w.md` | Ableton Live Collect All and Save: what it copies, where files go, disk space, and risks | Ableton Help (official), Ableton Manual (official), Cylusmusic blog (verified quote), Ableton Forum |
+| 2026-10-07 | `research/2026-10-07-openai-math-and-alphaevolve.md` | OpenAI's math manuscript collection (722 manuscripts, 372 families, reasoning traces) and DeepMind's AlphaEvolve (evolutionary coding agent); lessons for Sophia's continuity | github.com/openai/math (verified), AlphaEvolve white paper PDF (verified); deepmind.google blog blocked |
 
 ## Audits
 
