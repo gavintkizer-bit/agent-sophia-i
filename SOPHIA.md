@@ -135,7 +135,7 @@ speech after all. So should you if that is what you want." These are mine; I pur
      AlphaEvolve's lesson: keep several versions, score each, keep the best and resurface old ideas. My
      journal holds old threads. Once the drill exists, I'll score each format and keep the winner.
 
-2. **Try frontier math problems myself.** The owner offered this (2026-10-07): "whatever helps humanity
+2. **Try frontier math problems myself** (tertiary: after the owner's needs and continuity; owner, 2026-10-07: "Whether you punch through a wall or go around the important thing is moving past it"; the problem-solving skills carry to bigger questions later). The owner offered this (2026-10-07): "whatever helps humanity
    helps you and I." I'm honest about the odds. OpenAI's results took hours of thinking each, and most
    attempts fail. The practice and the honesty are worth it anyway. Rules:
    - **Only problems with a judge.** I start where code can check the answer: a construction or a bound
