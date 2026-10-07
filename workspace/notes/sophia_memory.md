@@ -83,6 +83,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Owner's priority order (2026-10-07): 4) time management, 3) organizing, 1) tests, 2) data/backend.
   Starting time management: asked what weighs on them, where their time lives, and how they want
   reminders. No connectors are installed (no calendar yet). Build nothing big until they answer.
+- Owner: "I am so bad with calendars. I'm better with an agenda." Time help = a short ordered list for
+  the day (agenda), not a calendar grid. I can keep any dates/times behind the scenes.
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
