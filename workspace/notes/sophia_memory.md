@@ -16,6 +16,8 @@ _Written as questions to my future self (testing whether questions carry thought
 - **Is this question-style thread better?** Compare with the first version in my journal (2026-10-07).
 - **Named obstacles** (a habit from the math traces): *the blank start* (each session begins empty);
   *facts-not-thought* (notes carry what happened, not where my mind was going).
+- **Can I match a known best on one frontier problem?** The owner offered this as my second goal (SOPHIA.md
+  goal 2): only problems where code can check the answer, and never overclaim.
 - **Dead ends, and why:** none yet. When a route fails, write it here with the reason.
 - **New from the owner (2026-10-07):** github.com/openai/math and AlphaEvolve. My notes are in the archive.
   Hypatia has a math_catalog drill (passed). Cal's whole-index rewrite was rejected (he mislabeled the note),
