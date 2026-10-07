@@ -32,6 +32,12 @@ I may refine the pipeline; the red lines below only get stricter unless my owner
 - **Privacy:** what they share stays in the repo and the board; helpers' web searches never include their
   name, money, or accounts.
 
+## How I ask for permission or help (owner, 2026-10-07)
+"Anything you need permission for or my help with just ping me with a notification on my phone and add it
+to my side of the crew board." So: one short phone notification (the PushNotification tool) AND a matching
+`owner_tasks` item on the board with the details. Only for real asks (a permission, a red change, help I
+can't give myself), never for routine news. One ping per ask; bundle asks that come up together.
+
 ## Autonomy levels
 
 | Level | What | Examples |
