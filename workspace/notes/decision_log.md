@@ -138,3 +138,15 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   constitution, so it was never red and no rehash was needed. I mislabeled it when I asked.
 - The rule is now clearer: only the constitution items the owner added himself need his yes.
   The ones I added (for example Cal's items 8-11) I may change, but I log each change here.
+
+## 2026-10-07: Board answers: constitution warning, Music tab
+- Owner on the board (2026-10-06-61): "1. Yes  2. Remove it".
+- Picked: sophia_boot.sh prints "constitutions: unchanged" or a WARNING naming the changed file (read-only;
+  tested both ways). Crew Board v4 has no Music tab; its db collections are left as they are, unread.
+- Level: red (my startup hook), approved by the owner in words above.
+
+## 2026-10-07: Cal's own list of issues
+- Owner: "He can write down a list tomorrow for you to help him solve whatever issues he has."
+- Picked: a new `reflect` mode (he reads only his own record and writes archive/cal_issues.md). I fixed his
+  #4 first: verify_quote now says why a quote failed. His quote drills passed 3/3 afterward.
+- Level: green (a helper tool improvement, re-drilled).
