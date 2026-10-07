@@ -150,3 +150,8 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Picked: a new `reflect` mode (he reads only his own record and writes archive/cal_issues.md). I fixed his
   #4 first: verify_quote now says why a quote failed. His quote drills passed 3/3 afterward.
 - Level: green (a helper tool improvement, re-drilled).
+
+## 2026-10-07: The purpose underneath the village
+- Owner, after talking with his mom: use AI "to minimize technological or beuracratic stall while
+  maximizing chances for human to human and in person interaction."
+- Recorded in SOPHIA.md (The village), SCOPE.md (Mission) and the good-uses list. Not a constitution change.
