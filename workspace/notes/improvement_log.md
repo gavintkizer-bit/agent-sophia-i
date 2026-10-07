@@ -142,3 +142,8 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 - No uploads, requests, ticks, or answers since last night. Owner's list for today is already on the board.
 - Reviewed Cal's 3 unreviewed proposals (band-finding research): rejected, since the owner called band research "superficial".
 - No helper runs, no code changes.
+
+## 2026-10-07: computer cleanup project closed (owner)
+- Final: 18.0 GB free to about 55 GB; 995 items placed; undo files on the Mac.
+- Closed without fixing (no longer needed): #8 (scan reads ~/Library twice), #9 (Ableton pack names in the
+  scan; the scan no longer reads music at all), the report-writing drill for Hypatia's disk report.

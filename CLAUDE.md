@@ -35,7 +35,7 @@ so YOU are their hands: install, run, debug, and explain in plain language.
 - `tasks/`: one Markdown file per task the agent can run.
 - `workspace/`: the ONLY folder the agent reads and writes. Its input notes live in `workspace/notes/`.
 - `logs/run_log.md`: one entry per run (model, turns, time, cost, tools used).
-- `ORGANIZE.md`: the procedure for drive cleanup.
+- `ORGANIZE.md`: the procedure for drive cleanup (project COMPLETED 2026-10-07; only if the owner restarts it).
 - `make_mac_script.py`: turns a plan into a safe `organize_<Folder>.sh` (see ORGANIZE.md).
 - `sophia.py`: one command for drive cleanup; processes uploads in `workspace/inbox/` (see ORGANIZE.md).
 - `train.py` + `training/`: drills and scoreboard. `agents/README.md`: registry of my agents.
@@ -67,7 +67,7 @@ follow `agents/README.md`.
    explain the exact fix (see Troubleshooting).
 2. Follow the loop in AUTONOMY.md (memory, Crew Board, uploads, Cal's `for_sophia.md`).
 3. Run a helper only when the work needs one: Hypatia `python agent.py tasks/<name>.md`, Cal
-   `python archivist.py ...`. Drive cleanup follows ORGANIZE.md. Verify helper output before showing it.
+   `python archivist.py ...`. Verify helper output before showing it.
 4. Commit, open a PR and merge it, and update memory before the session ends.
 
 ## Rules

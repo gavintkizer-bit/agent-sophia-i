@@ -27,7 +27,7 @@ python safety_test.py        # free checks of the safety rules
 python train.py              # training drills (a few cents each); --summary shows pass rates
 ```
 
-**Drive cleanup:** `python sophia.py` processes the scans uploaded to `workspace/inbox/`.
+**Drive cleanup (completed 2026-10-07: 18 GB free to about 55 GB):** `python sophia.py` processes scans in `workspace/inbox/` if it's ever restarted.
 See `ORGANIZE.md` for how it works and `workspace/STATUS.md` for what's ready now.
 
 ## Improve it over time
