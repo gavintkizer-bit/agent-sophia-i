@@ -96,3 +96,11 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   the scan no longer reads Ableton projects, pending music script replaced by a harmless stub).
 - Level: red (constitution change), approved by the owner in words above.
 - Outcome: check: safety_test.py all pass; no script on the board can move or read a creation.
+
+## 2026-10-07: Owner ratifies two constitution items for Sophia
+- Owner (in words): "I vote that we ratify Asking for help and Protecting each other. Serving when asked
+  is something i'd like to work on because I would like you to have autonomy, just not at the expense of
+  my privacy." Also: "The heart of the village is our connection, not any one individual."
+- Picked: items 12 (Ask for help) and 13 (Protect each other) added to SOPHIA.md's constitution, with a
+  Village section; "serving when asked" recorded as open (autonomy within privacy). Fingerprint re-recorded.
+- Level: red (constitution), approved by the owner in words above. Cal's constitution unchanged: asked.

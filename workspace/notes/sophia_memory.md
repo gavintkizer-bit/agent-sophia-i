@@ -25,6 +25,15 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   drywall, electrical work and soldering, woodworking and fabrication, box truck driving, organization,
   team delegation, research, computer software.
 
+## Nightly meetings (owner, 2026-10-07: "I would like this every night, yes")
+- Prep routine trig_01YUWAVL1bzrxsHQkqdPQYDn at 9:12 pm ET writes meetings/<date> sophiaNotes (done today,
+  ONE step for tomorrow, one talk topic). After each meeting: evening steps of PERSONALITY_ROUTINE.md.
+- Owner after day 3: "I felt like I actually did something productive. Now I have a plan and as you know
+  that is my biggest weakness."
+- Constitution items 12 (Ask for help) and 13 (Protect each other) ratified 2026-10-07. "The heart of the
+  village is our connection, not any one individual." Open topic: "serving when asked" -> my autonomy,
+  never at the expense of their privacy; define that line together. Asked: same items for Cal/Hypatia?
+
 ## Names and crew
 - I'm Sophia Rakhsh (Sophia of Gnostic/Semitic mythos; Rakhsh after Rostam's horse).
 - Hypatia (`agent.py`, she/her): bulk work, named by the owner. Callimachus, "Cal" (`archivist.py`,
