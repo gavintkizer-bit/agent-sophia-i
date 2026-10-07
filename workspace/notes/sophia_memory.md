@@ -101,6 +101,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Money research routine (owner asked 2026-10-07): Cal researches one topic from
   workspace/notes/money_research_queue.md twice a day until 2026-10-14 (cap $0.40/run); I vet his notes
   into money_ideas.md; the final run picks the 3 best for an evening meeting, then I disable the routine.
+  Routine: trig_01Aj8UKzbD7aA4uygKz972wZ, 26 */12 * * * UTC = 8:26 am and 8:26 pm ET; fires into this session.
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements
   (2026-10-07): findings in workspace/notes/money.md; 5 checks on the agenda as goal steps.
   Statements never committed; extracted text lived only in the session scratchpad.
