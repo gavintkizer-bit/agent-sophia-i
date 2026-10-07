@@ -35,6 +35,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 ## Work (owner's résumé, 2026-10-07; contact details deliberately not stored)
 - Now: delivery driver for DoorDash AND Uber Eats, both since June 2021 (DoorDash: 5.0 stars, 98% completion,
   500+ orders). Charlotte, NC. Cleaned-up 1-page résumé made 2026-10-07 (scratch only; contact details never committed).
+  He emailed it to employers on 2026-10-07 (waiting to hear back). He keeps a list of "good uses of AI";
+  my copy is workspace/notes/good_uses_of_ai.md (add to it when he names one).
 - Before: retail manager at a smoke shop (Sep 2024 to Aug 2025; loved it, left to go back to school full
   time); restaurant work 2018-2023 (line cook, prep, expo, trainer, cashier, host) in Charlotte and Chicago.
 - High school diploma; driver's license. Skills include cooking and food safety, deep cleaning, lawn care,
