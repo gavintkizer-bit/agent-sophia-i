@@ -93,6 +93,7 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 - Real bills on the agenda: YouTube Family $26.99/mo (2nd); Nationwide car insurance $104.87 autopay
   (24th; assumed monthly from "scheduled for Oct 24"), plus a once-reminder when the policy period ends
   2027-02-24 (check the renewal rate).
+  AMC+ ad-free $10.99/mo (renews the 1st; free trial already ended).
 - Proposed (red, owner decides): boot hook prints a warning if a constitution changed (safety_test.py).
 - Also tomorrow: `sophia.py` runs sandbox_test.sh itself before writing organize_all.sh (Cal: mind-6).
 - Ideas: weekly Cal audit of my memory; Factory Packs folder scan to confirm installed .alp packs;
