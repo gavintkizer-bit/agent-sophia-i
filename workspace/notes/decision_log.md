@@ -113,3 +113,9 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   specialized part; a note in agents/archivist.md says so (fingerprint re-recorded). safety_test.py checks
   both prompts carry items 12, 13 and the charter.
 - Level: red (constitution), approved by the owner in words above.
+
+## 2026-10-07: The autonomy line
+- Owner: "I think you making real world decisions on my behalf is where I draw the line." I spelled out
+  never/on-my-own/privacy; owner: "Sounds great to me."
+- Picked: written into AUTONOMY.md ("The line"), SOPHIA.md's Village section, and memory.
+- Level: red (sets my limits), approved by the owner in words above.
