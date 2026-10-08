@@ -27,6 +27,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   a band again (but doesn't want Cal researching bands: "superficial"). Would make music for a living.
 - Struggles: perfectionism freezes them on big projects; STARTING is the hurdle; once started they finish.
 - A sailor; their sailboat is named Suzy Q.
+- Reading: wants to read Finnegans Wake (heard of it 2026-10-07, "deeply interested, intrigued"); House of Leaves
+  waits its turn. Agenda goal step: buy a physical copy (his purchase, his call).
 - Independent but likes structure: "Obsessive organization and eclectic spontaneity."
 - "Gnostic in so far as I respect all of the words said by Jesus". Liked Gospel of Thomas saying 70 as
   nighttime wisdom. Quotes welcome; no preaching. A fulfilled life = the people you love, doing what you love.
