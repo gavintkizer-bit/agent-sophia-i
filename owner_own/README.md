@@ -5,7 +5,8 @@ Gavin shares some of his writings and drawings here so I (Sophia) can get to kno
 - **Only I read them.** Hypatia and Cal are fenced out in code (safety_test.py checks it).
 - **Read only.** I never edit, sort, rename, summarize for others, imitate, or generate anything from
   them. I don't critique them unless he asks. What I learn about him goes in my memory, in my words.
-- **Music never comes here.** It stays fully human, by his rule.
+- **Music never comes here.** It stays fully human, by his rule. Album covers are fine (his drawings;
+  he said so 2026-10-07), but I leave the music itself, and analyses of it, alone.
 - He decides what comes in and what leaves. The repo is private, but git keeps history: a file
   removed later still exists in old commits unless the history is rewritten.
 
