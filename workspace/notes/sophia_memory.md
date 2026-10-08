@@ -32,6 +32,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   a band again (but doesn't want Cal researching bands: "superficial"). Would make music for a living.
 - Struggles: perfectionism freezes them on big projects; STARTING is the hurdle; once started they finish.
 - A sailor; their sailboat is named Suzy Q.
+- Has a TURTLE; feeding it weekly is hard to track (agenda: "Feed your turtle", Thursdays, from 2026-10-08).
 - Makes things (from what he shared, 2026-10-07; details in owner_own/INDEX.md): his own 33-glyph ALPHABET
   (letters, "mutations", additions); album covers (Binary Vision as Gavin Lowe / ComputationalG, from his own
   stained-glass drawing; Poltergeist for Ethereal Recordings; Omen for Citizen Myx); handwritten math in a
