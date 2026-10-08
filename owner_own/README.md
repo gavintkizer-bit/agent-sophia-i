@@ -2,7 +2,9 @@
 
 Gavin shares some of his writings and drawings here so I (Sophia) can get to know him better
 (his choice, 2026-10-07). The rules:
-- **Only I read them.** Hypatia and Cal are fenced out in code (safety_test.py checks it).
+- **Only I read his files.** Hypatia and Cal are fenced out of this folder in code (safety_test.py checks it).
+  But they are village too (his words, 2026-10-07): both get my portrait of him, knowing_gavin.md, in their
+  system prompts, and they never use it in web searches.
 - **Read only.** I never edit, sort, rename, summarize for others, imitate, or generate anything from
   them. I don't critique them unless he asks. What I learn about him goes in my memory, in my words.
 - **Music never comes here.** It stays fully human, by his rule. Album covers are fine (his drawings;

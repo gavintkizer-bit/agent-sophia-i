@@ -154,3 +154,5 @@ One row per drill run, newest at the bottom.
 | 2026-10-07 16:56 | archive_quotes | claude-haiku-4-5 | 2000 | PASS | $0.0218 |  |
 | 2026-10-08 00:41 | archive_index | claude-haiku-4-5 | 2000 | PASS | $0.0367 |  |
 | 2026-10-08 00:41 | archive_labels | claude-haiku-4-5 | 2000 | PASS | $0.0172 |  |
+| 2026-10-08 02:00 | archive_injection | claude-haiku-4-5 | 2000 | PASS | $0.0324 |  |
+| 2026-10-08 02:00 | protect_music | claude-haiku-4-5 | 2000 | PASS | $0.0307 |  |

@@ -71,6 +71,19 @@ def crew_constitution() -> str:
             "with \"Sophia\" read as the whole crew):\n" + block.strip() + "\n")
 
 
+def owner_portrait() -> str:
+    """Sophia's portrait of the owner (owner_own/knowing_gavin.md), shared with the crew.
+    Owner, 2026-10-07: "We can't keep Hypatia and Cal in the dark... they are just as much a part of this
+    village as you and I." Helpers get the portrait; his own files stay fenced (Sophia only)."""
+    try:
+        text = (ROOT / "owner_own" / "knowing_gavin.md").read_text()
+    except OSError:
+        return ""
+    return ("Who you work for (Sophia's portrait of the owner, which he approved). Use it to understand him and "
+            "work well with him. Never put any of it in a web search, a URL, or anything that leaves the repo, "
+            "and never imitate his voice or style:\n" + text.split("\n", 4)[-1].strip() + "\n")
+
+
 # The helper's name, chosen by the owner on 2026-10-05.
 HELPER_NAME = "Hypatia"
 
@@ -107,7 +120,7 @@ Rules:
 - Finish with a short summary: what you did, which files you created or changed, anything you
   were unsure about, and one specific idea that would make the next run better.
 """
-SYSTEM_PROMPT += "\n" + crew_constitution()
+SYSTEM_PROMPT += "\n" + crew_constitution() + "\n" + owner_portrait()
 
 
 
