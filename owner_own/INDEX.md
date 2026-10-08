@@ -9,7 +9,7 @@ Sorted 2026-10-07 at his request: which files are really his. My own words; noth
   from his own stained-glass-style drawing; "Poltergeist" (Ethereal Recordings), his layout over a portrait;
   "Omen" (Citizen Myx). Music itself stays out.
 - **Test work.jpg**: his handwritten math (functions, shifts, vertex form) in a ring-bound leather journal.
-- **Getti T-shirt cat**: probably his design (a Christmas present for Chase); to confirm.
+- **Getti T-shirt cat**: his design (a Christmas present for Chase; confirmed).
 - **D&D character sheet**: his fill-out.
 
 ## Not his (came along in the folders)
@@ -22,8 +22,8 @@ Sorted 2026-10-07 at his request: which files are really his. My own words; noth
   Kudzu papers, Rivers and Google Earth, Hurricanes, Rock Deformation, the career and self-reflection exercises,
   test-anxiety and note-taking fill-outs, and the argument and writing assignments.
 - **The Restrained Monster** (Kōdō Soraaruki, Captain of Squad 9, in the Bleach world): his story. The outline
-  Google Doc ("Untitled document (2)") reads as his; "Character Architecture" and "The Sky-Tether and the Blood
-  Ledger" read as written up with AI help. To confirm with him.
+  Google Doc ("Untitled document (2)") is his own writing; "Character Architecture" and "The Sky-Tether and the Blood
+  Ledger" were written up with AI help (he confirmed).
 - **Games:** a Goblins Commander decklist ("the great goblin") and two D&D sheets (a Half-Elf paladin).
 - An early résumé ("Untitled document.pdf"; contact details, so I don't quote it).
 
