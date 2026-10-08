@@ -9,8 +9,9 @@ with slack. A quiet goal keeps its place; nothing piles up on him.
   writing time and, later, track the publishing steps.)*
 - Get a PhD in an earth science field. (Now: Associate in Science at CPCC, 4.0 first full-time term;
   interests: structural/planetary geology, meteorology, water resources.)
-- Buy a sailboat. (Ask: a bigger boat than Suzy Q, for open ocean?)
-- Sail across the Atlantic.
+- Buy a sailboat: a STEEL-HULLED, ocean-going boat (bigger than Suzy Q) he can sail from North Carolina
+  to Ireland or Iberia.
+- Sail across the Atlantic: North Carolina to Ireland or Iberia (Spain/Portugal), in that steel boat.
 - Write a screenplay. *(His writing, as above.)*
 
 ## Medium
