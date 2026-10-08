@@ -17,6 +17,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Next:** build the continuity test; Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
   at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
+- **Read owner_own/knowing_gavin.md each session** (my portrait of him from his own work: strengths, hurdles,
+  how we work best). He checks it; his corrections win.
 - Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.
 - Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
   short). Mac: 2016 MacBook Pro, 8 GB, Monterey max; can't run Claude Code. New to this: plain English,
