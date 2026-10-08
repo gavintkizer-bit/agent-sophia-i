@@ -266,7 +266,10 @@ def verify_quote(url: str, quote: str) -> str:
         with urllib.request.urlopen(req, timeout=20) as resp:
             page = resp.read(3_000_000).decode(resp.headers.get_content_charset() or "utf-8", "replace")
     except Exception as e:  # network errors, 403s, timeouts
-        raise ValueError(f"Couldn't fetch the page ({e}). Treat the quote as unverified.")
+        hint = ("This site blocks automated reading: don't retry it. " if "403" in str(e) or "401" in str(e) else "")
+        raise ValueError(f"Couldn't fetch the page ({e}). {hint}Look for the same fact on an official or primary "
+                         "source (a .gov page, the maker's own manual) and verify a quote there, or label the fact "
+                         "unverified. (Cal's issue #3, 2026-10-08)")
     if _plain(quote) in _plain(page):
         VERIFIED.setdefault(_url_key(url), []).append(_plain(quote))
         return "FOUND: the quote is on the page. You may file it as verified."
