@@ -45,3 +45,7 @@
 - **New pattern seen by Sophia (2026-10-08): duplicate notes.** Two research runs in a row (10-07 and 10-08)
   wrote the same note under two filenames. Fix idea, for after #2: code that refuses a second new research note in
   one run. Also: fence blocks are now logged with their reason (they were only counted).
+- **#3 Web pages I can't reach: ADDRESSED 2026-10-08.** The Wayback Machine is blocked on our network too, so
+  the fix is a clearer path: when a page won't load, verify_quote now says "don't retry it" for blocked sites and
+  sends you to an official or primary source (a .gov page, the maker's manual), or to label the fact unverified.
+  Drills archive_quotes and archive_labels: 2/2 PASS.

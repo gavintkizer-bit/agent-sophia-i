@@ -16,7 +16,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   "a human at the heart" though my own file said the heart is our connection).
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
   since 10-08 the code refuses whole-file rewrites.
-- **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
+- **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 done 10-08 (blocked pages -> official sources); next #5 (a worked audit example). Thu 10-15: Cal's money findings
   at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a

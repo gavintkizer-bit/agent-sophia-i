@@ -160,3 +160,8 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 ## 2026-10-08 (light): Cal's issues, #2
 - Measured: safety 43/43 (2 new checks); Cal's archive_index and archive_labels 2/2 PASS ($0.05).
 - One change: Cal can't Write over a file that already existed; he Edits one part or proposes a rewrite.
+
+## 2026-10-08 (light, daily check-in): Cal's issue #3
+- Measured: Cal's taxes run (10-08) hit a 403 and kept retrying the blocked page; the Wayback Machine is unreachable here.
+- One change: verify_quote's fetch error now says not to retry blocked sites and to find an official source.
+  Re-drilled: archive_quotes and archive_labels 2/2 PASS ($0.06).
