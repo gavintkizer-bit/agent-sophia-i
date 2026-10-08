@@ -125,6 +125,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Trebia), #2 baseball (5/5: the good and the better answer together, in one decisive answer).
   #3 IQ estimate (3.5/5, 10-08: honest no was right, but give a bit more analysis: when I can't give X,
   give the fullest analysis I can, domain by domain).
+  #4 one wish (1/5, 10-08: best = "the power to grant my own wishes"; I invented a "spirit" rule and
+  missed it. "The only rule" means everything else is legal; take the answer that contains all the others).
 
 ## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
 - Don't start new cleanup rounds or ask for scans unless the owner brings it back.
