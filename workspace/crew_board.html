@@ -199,6 +199,22 @@ details.tier[open] > .tier-head::after { content: "–"; }
 .next b { font-family: var(--font-mono); font-weight: 500; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--done); margin-right: 4px; }
 .colophon { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 13px; margin: 0; }
 .colophon .glyph { font-size: 22px; --w: 1.3em; }
+/* Day picker: today plus a week either way, never more (owner: "lets keep it just to a week out") */
+.days { display: flex; align-items: stretch; gap: 6px; min-width: 0; }
+.day-pills { display: flex; gap: 6px; overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; padding: 2px; }
+.day-pills::-webkit-scrollbar { display: none; }
+.pill-day { display: grid; justify-items: center; gap: 1px; min-width: 44px; flex: 1 0 44px; padding: 6px 4px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; font: 500 11px var(--font-mono); letter-spacing: .04em; text-transform: uppercase; }
+.pill-day b { font: 600 18px/1.1 var(--font-display); color: var(--ink); letter-spacing: 0; }
+.pill-day small { font: 11px var(--font-mono); color: var(--muted); text-transform: none; font-variant-numeric: tabular-nums; }
+.pill-day.today { border-color: var(--amber); }
+.pill-day[aria-pressed="true"] { background: var(--glass); border-color: var(--glass); color: var(--surface); }
+.pill-day[aria-pressed="true"] b, .pill-day[aria-pressed="true"] small { color: var(--surface); }
+.arrow { font: 600 20px/1 var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 0 10px; cursor: pointer; }
+.arrow:disabled { opacity: .35; cursor: default; }
+.day-note { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0; font-size: 15px; color: var(--muted); }
+.item.upcoming .check { opacity: .35; }
+
 /* The goals window: one pane per goal */
 .rose { position: relative; margin: 0; display: grid; gap: 8px; }
 .rose-glass { position: relative; border-radius: 12px; overflow: hidden; border: 3px solid var(--lead); background: var(--lead); aspect-ratio: 16 / 7; max-width: 100%; }
@@ -241,6 +257,12 @@ details.tier[open] > .tier-head::after { content: "–"; }
   </div>
 
   <section id="panel-today" role="tabpanel" aria-labelledby="tab-today" style="display:grid;gap:14px">
+    <nav class="days" aria-label="Pick a day">
+      <button class="arrow" type="button" id="day-prev" aria-label="Earlier day">‹</button>
+      <div class="day-pills" id="day-pills"></div>
+      <button class="arrow" type="button" id="day-next" aria-label="Later day">›</button>
+    </nav>
+    <p class="day-note" id="day-note" hidden><span id="day-note-text"></span><button class="btn" type="button" id="day-back">Back to today</button></p>
     <div class="meter">
       <div class="gmeter" id="agenda-glyphs" aria-hidden="true"></div>
       <span class="meter-label" id="agenda-label">Loading today…</span>
@@ -482,6 +504,9 @@ details.tier[open] > .tier-head::after { content: "–"; }
   const SHOW_MAX = 5, BILL_LEAD = 3, DAY = 86400000;
   let items = [], doneToday = {}, openAsks = 0, confirmId = null, agendaLoaded = false;
   const agendaDay = today;
+  const RANGE = 7;                      // a week back, a week ahead; anything later stays with Sophia
+  let viewOffset = 0, doneUnsub = null;
+  const viewDate = (off = viewOffset) => { const d = dayStart(); return new Date(d.getFullYear(), d.getMonth(), d.getDate() + off); };
   const ymd = (d) => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
   const parseDay = (s) => { const p = String(s || "").split("-").map(Number); return p[0] ? new Date(p[0], p[1] - 1, p[2]) : null; };
   const dayStart = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
@@ -517,13 +542,15 @@ details.tier[open] > .tier-head::after { content: "–"; }
     return { mode: "cycle", key: ymd(due), label, late: d < 0 };
   }
 
-  function todaysAgenda() {
-    const t = dayStart(), tKey = ymd(t), out = [];
+  function todaysAgenda(off = viewOffset, dones = doneToday) {
+    const t = viewDate(off), tKey = ymd(t), out = [];
     const active = items.filter((s) => !s.data().paused);
     active.filter((s) => s.data().kind !== "goal").forEach((s) => {
       const it = s.data();
       const info = dueInfo(it, t);
-      if (info) out.push({ snap: s, info, done: info.mode === "day" ? !!doneToday[s.id] : false });
+      // Looking ahead, don't pretend today's open items will still be open then.
+      if (info && off > 0 && info.late && !(dueInfo(it, dayStart()) || {}).late) return;
+      if (info) out.push({ snap: s, info, done: off > 0 ? false : info.mode === "day" ? !!dones[s.id] : false });
       else if (it.doneOn === tKey && (it.every === "monthly" || it.every === "once")) out.push({ snap: s, info: { mode: "cycle", key: it.doneFor, label: "" }, done: true });
     });
     // Goals: one step at a time, the first one not done yet.
@@ -533,7 +560,7 @@ details.tier[open] > .tier-head::after { content: "–"; }
       steps.sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
       steps.filter((s) => s.data().doneFor === "done" && s.data().doneOn === tKey).forEach((s) => out.push({ snap: s, info: { mode: "goal", label: "" }, done: true }));
       const next = steps.find((s) => s.data().doneFor !== "done");
-      if (next) out.push({ snap: next, info: { mode: "goal", label: "" }, done: false });
+      if (next && off === 0) out.push({ snap: next, info: { mode: "goal", label: "" }, done: false });   // one step, today only
     });
     out.sort((a, b) => Number(a.done) - Number(b.done) || (b.info.late ? 1 : 0) - (a.info.late ? 1 : 0)
       || KIND_ORDER[a.snap.data().kind] - KIND_ORDER[b.snap.data().kind] || (a.snap.data().order || 0) - (b.snap.data().order || 0));
@@ -542,11 +569,11 @@ details.tier[open] > .tier-head::after { content: "–"; }
 
   let writing = Promise.resolve();
   function setDone(entry, v) {
-    const id = entry.snap.id, t = ymd(dayStart());
+    const id = entry.snap.id, t = ymd(viewDate());
     writing = writing.then(async () => {
       if (entry.info.mode === "day") {
         doneToday = Object.assign({}, doneToday, { [id]: v });
-        await db.doc("agenda_done/" + agendaDay).set({ day: agendaDay, ids: doneToday });
+        await db.doc("agenda_done/" + t).set({ day: t, ids: doneToday });
       } else {
         const key = entry.info.mode === "goal" ? "done" : entry.info.key;
         await db.doc("agenda_items/" + id).update(v ? { doneFor: key, doneOn: t } : { doneFor: null, doneOn: null });
@@ -557,9 +584,10 @@ details.tier[open] > .tier-head::after { content: "–"; }
 
   function agendaItem(entry) {
     const it = entry.snap.data();
-    const li = el("li", "item" + (entry.done ? " is-done" : ""));
+    const ahead = viewOffset > 0;
+    const li = el("li", "item" + (entry.done ? " is-done" : "") + (ahead ? " upcoming" : ""));
     const box = el("input", "check");
-    box.type = "checkbox"; box.checked = entry.done; box.id = "ag-chk-" + entry.snap.id; box.disabled = !db;
+    box.type = "checkbox"; box.checked = entry.done; box.id = "ag-chk-" + entry.snap.id; box.disabled = !db || ahead;
     box.setAttribute("aria-label", "Done: " + it.title);
     box.addEventListener("change", () => {
       li.classList.toggle("is-done", box.checked);            // answer the tap at once; the store catches up
@@ -596,7 +624,14 @@ details.tier[open] > .tier-head::after { content: "–"; }
     $("agenda-later").querySelector("summary").textContent = later.length + " more, whenever you're ready";
     $("agenda-later-list").replaceChildren(...later.map(agendaItem));
     glyphMeter($("agenda-glyphs"), all.map((e) => ({ id: e.snap.id, done: e.done })));
-    $("agenda-label").textContent = !all.length ? "All clear" : done.length === all.length ? "All " + all.length + " done. Today is written." : done.length + " of " + all.length + " done today";
+    const dayName = short(viewDate());
+    $("agenda-label").textContent = viewOffset > 0
+      ? (all.length ? all.length + (all.length === 1 ? " thing" : " things") + " on " + dayName : "Nothing planned on " + dayName)
+      : viewOffset < 0
+      ? (all.length ? done.length + " of " + all.length + " done on " + dayName : "Nothing was planned on " + dayName)
+      : !all.length ? "All clear" : done.length === all.length ? "All " + all.length + " done. Today is written." : done.length + " of " + all.length + " done today";
+    $("agenda-empty").textContent = viewOffset === 0 ? "Nothing due today. Enjoy it." : "Nothing on this day.";
+    renderDays();
     // Everything on the agenda, to pause or remove.
     const sorted = items.slice().sort((a, b) => KIND_ORDER[a.data().kind] - KIND_ORDER[b.data().kind] || (a.data().order || 0) - (b.data().order || 0));
     $("agenda-all").hidden = sorted.length === 0;
@@ -624,6 +659,44 @@ details.tier[open] > .tier-head::after { content: "–"; }
     $("asks-text").textContent = openAsks === 1 ? "Sophia has 1 thing for you." : "Sophia has " + openAsks + " things for you.";
   }
   $("asks-open").addEventListener("click", () => showTab("you"));
+
+  // ---- the day picker
+  function renderDays() {
+    const start = viewOffset < 0 ? -RANGE : 0;
+    const pills = [];
+    for (let off = start; off <= start + RANGE; off++) {
+      const d = viewDate(off), b = el("button", "pill-day" + (off === 0 ? " today" : ""));
+      b.type = "button"; b.setAttribute("aria-pressed", String(off === viewOffset));
+      b.appendChild(document.createTextNode(off === 0 ? "Today" : d.toLocaleDateString(undefined, { weekday: "short" })));
+      b.appendChild(el("b", null, String(d.getDate())));
+      const n = off === viewOffset || off <= 0 ? null : todaysAgenda(off, {}).length;   // a quiet count for days ahead
+      b.appendChild(el("small", null, n == null ? "\u00a0" : n ? n + (n === 1 ? " thing" : " things") : "free"));
+      b.setAttribute("aria-label", d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" }));
+      b.addEventListener("click", () => setView(off));
+      pills.push(b);
+    }
+    $("day-pills").replaceChildren(...pills);
+    const box = $("day-pills"), sel = box.querySelector('[aria-pressed="true"]');
+    if (sel) box.scrollLeft = sel.offsetLeft - box.offsetLeft - box.clientWidth / 2 + sel.clientWidth / 2;
+    $("day-prev").disabled = viewOffset <= -RANGE;
+    $("day-next").disabled = viewOffset >= RANGE;
+    $("day-note").hidden = viewOffset === 0;
+    $("day-note-text").textContent = viewOffset > 0 ? "Looking ahead. You can tick these on the day itself." : "Looking back. You can still tick anything you finished.";
+  }
+  function watchDone() {
+    if (!db) return;
+    if (typeof doneUnsub === "function") doneUnsub();
+    const key = ymd(viewDate());
+    doneToday = {};
+    doneUnsub = db.doc("agenda_done/" + key).onSnapshot((s) => { if (key !== ymd(viewDate())) return; doneToday = s.exists ? Object.assign({}, (s.data().ids || {})) : {}; renderAgenda(); }, () => {});
+  }
+  function setView(off) {
+    viewOffset = Math.max(-RANGE, Math.min(RANGE, off));
+    watchDone(); renderAgenda();
+  }
+  $("day-prev").addEventListener("click", () => setView(viewOffset - 1));
+  $("day-next").addEventListener("click", () => setView(viewOffset + 1));
+  $("day-back").addEventListener("click", () => setView(0));
 
   // ---- Goals (owner, 2026-10-07: "have them off of my shoulders and trust you with them")
   const TIERS = [
@@ -846,7 +919,7 @@ details.tier[open] > .tier-head::after { content: "–"; }
     db.collection("owner_tasks").onSnapshot((s) => renderOwner(s.docs), offline);
     db.collection("agenda_items").onSnapshot((s) => { items = s.docs.slice(); agendaLoaded = true; renderAgenda(); }, offline);
     db.collection("goals").onSnapshot((s) => { goalDocs = s.docs.slice(); goalsLoaded = true; renderGoals(); }, () => {});
-    db.doc("agenda_done/" + agendaDay).onSnapshot((s) => { doneToday = s.exists ? Object.assign({}, (s.data().ids || {})) : {}; renderAgenda(); }, () => {});
+    watchDone();
     db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
     db.doc("meetings/" + today).onSnapshot((s) => {
       const m = s.exists ? s.data() : {};
