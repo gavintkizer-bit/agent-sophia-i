@@ -245,3 +245,8 @@ One entry per agent run, newest at the bottom.
 - Model: claude-haiku-4-5 (thinking 2000) | Turns: 6 | Time: 52s | Cost: $0.1100
 - Tools used: Read, Write
 - Output check: passed after one retry
+
+## 2026-10-08 00:28 | Callimachus research | OK
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 19 | Time: 102s | Cost: $0.2977
+- Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: passed

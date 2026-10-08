@@ -11,3 +11,15 @@
 - 2026-10-07 12:29 mcp__archive__verify_quote: https://mybankstatementanalysis.com/blog/high-yield-savings-account-guide
 - 2026-10-07 12:29 WebFetch: https://www.openbank.us/resources/high-yield-savings/how-do-high-yield-savings-accounts-work/
 - 2026-10-07 12:29 mcp__archive__verify_quote: https://www.openbank.us/resources/high-yield-savings/how-do-high-yield-savings-accounts-work/
+- 2026-10-08 00:27 WebSearch: 1099 contractor mileage deduction tracking IRS delivery driver 2026
+- 2026-10-08 00:27 WebSearch: quarterly estimated tax payments gig work delivery 1099 how much to pay
+- 2026-10-08 00:27 WebFetch: https://www.irs.gov/pub/irs-pdf/p587.pdf
+- 2026-10-08 00:27 WebFetch: https://unclekam.com/tax-strategy-blog/2026-doordash-tax/
+- 2026-10-08 00:27 mcp__archive__verify_quote: https://unclekam.com/tax-strategy-blog/2026-doordash-tax/
+- 2026-10-08 00:27 mcp__archive__verify_quote: https://unclekam.com/tax-strategy-blog/2026-doordash-tax/
+- 2026-10-08 00:27 mcp__archive__verify_quote: https://unclekam.com/tax-strategy-blog/2026-doordash-tax/
+- 2026-10-08 00:27 WebFetch: https://shifttrackerapp.com/blog/how-much-to-set-aside-for-taxes-1099-gig-worker-2026
+- 2026-10-08 00:27 mcp__archive__verify_quote: https://shifttrackerapp.com/blog/how-much-to-set-aside-for-taxes-1099-gig-worker-2026
+- 2026-10-08 00:27 mcp__archive__verify_quote: https://shifttrackerapp.com/blog/how-much-to-set-aside-for-taxes-1099-gig-worker-2026
+- 2026-10-08 00:27 WebFetch: https://www.smacktax.com/blog/how-to-track-mileage-1099
+- 2026-10-08 00:28 mcp__archive__verify_quote: https://www.smacktax.com/blog/how-to-track-mileage-1099

@@ -14,3 +14,23 @@ step, and the source.
   accounts or move money for you).
 - **Source:** Yahoo Finance rate snapshot, 2026-10-06 (quote checked: "Earn up to 4.25% APY");
   archive/research/2026-10-07-high-yield-savings-accounts.md.
+
+## 2. Let an app count your delivery miles (2026-10-08)
+- **What:** every business mile you drive lowers your taxable income: **76 cents a mile in 2026** (IRS). Miles
+  for both DoorDash and Uber Eats count. The IRS wants a record made at the time, which is why a mileage app
+  that logs drives automatically is the low-effort way.
+- **Why it fits:** for a driver this is usually the biggest deduction, and once it's set up it runs by itself.
+- **First small step:** none to do alone. At a meeting we look at one or two free mileage apps together, and
+  you pick (or don't).
+- **Source:** irs.gov standard mileage rates (quote checked: "Self-employed and business: 76 cents/mile");
+  archive/research/2026-10-08-taxes-for-delivery-drivers-in-the-us-1099-mileage-.md.
+
+## 3. Put tax money aside from each payout (2026-10-08)
+- **What:** gig apps don't hold back taxes. The IRS expects quarterly payments from people who will owe
+  $1,000 or more, four times a year (mid-April, June, September, January).
+- **Why it fits:** a small, automatic set-aside avoids a scary bill later. It pairs with idea 1: the money
+  can wait in a savings account and earn interest until it's due.
+- **First small step:** none alone. Working out the right share is a job for a free tax helper (IRS VITA
+  sites; that's queue topic 13). I'll bring it to a meeting once that topic is researched.
+- **Source:** irs.gov estimated taxes (quote checked: "expect to owe tax of $1,000 or more").
+
