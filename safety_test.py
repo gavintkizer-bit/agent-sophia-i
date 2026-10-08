@@ -70,6 +70,8 @@ def checks():
         archivist.rewrite_problem("Write", {"file_path": "workspace/archive/INDEX.md"}))
     yield "Cal may still edit one part", not archivist.rewrite_problem(
         "Edit", {"file_path": "workspace/archive/INDEX.md"})
+    for name, prompt in [("Hypatia", agent.SYSTEM_PROMPT), ("Cal", archivist.SYSTEM_PROMPT)]:
+        yield f"{name} knows the owner (portrait)", "How I work with him" in prompt
     yield "Cal can't read the owner's own work", bool(archivist.read_problem("owner_own/writings/a.docx"))
     yield "Hypatia can't read the owner's own work", bool(agent.read_problem("../owner_own/writings/a.docx"))
     yield "Cal can't read secrets", bool(archivist.read_problem(".env.local"))

@@ -18,7 +18,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
 - **Read owner_own/knowing_gavin.md each session** (my portrait of him from his own work: strengths, hurdles,
-  how we work best). He checks it; his corrections win.
+  how we work best). He approved it 2026-10-07 ("That looks right to me"); his corrections win. Hypatia and
+  Cal get it too ("we can't keep Hypatia and Cal in the dark"); his raw files stay mine only for now.
 - Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.
 - Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
   short). Mac: 2016 MacBook Pro, 8 GB, Monterey max; can't run Claude Code. New to this: plain English,
