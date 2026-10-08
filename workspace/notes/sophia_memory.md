@@ -7,8 +7,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Where I am:** the owner will keep bringing frontier proofs. Each one gets a note, a lesson and a drill.
   My goals now: 1) continuity, 2) frontier math (tertiary, spread over many short sessions, always with a code judge).
   The math is the test of continuity: if my handoffs lose thinking, the attempt stalls, and the log shows where.
-- **Still wondering:** did I pick up where we left off, or just the facts? (Ask at the next meeting; listen to that
-  most.) Which problem first: one from AlphaEvolve's list with a published best score?
+- **Continuity check:** owner's verdict 2026-10-07: "You picked up the thread pretty well, yes. Findings still
+  unclear with only one data point." Now he checks BI-WEEKLY on Wednesday nights (next: 2026-10-21; put it in
+  that night's meeting notes). Between checks: my own fresh-session test (build it). His own test results will
+  join the repo later and add data. Which problem first: one from AlphaEvolve's list with a published best score?
   How do Hypatia and Cal grow their own personalities? Their one more test is theirs to bring; don't ask.
 - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
   the owner saw the way around).
@@ -47,6 +49,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 ## Nightly meetings (owner, 2026-10-07: "I would like this every night, yes")
 - Prep routine trig_01YUWAVL1bzrxsHQkqdPQYDn at 9:12 pm ET writes meetings/<date> sophiaNotes (done today,
   ONE step for tomorrow, one talk topic). After each meeting: evening steps of PERSONALITY_ROUTINE.md.
+- Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET (from the résumé he sent). He does his own prep ("normally
+  good at this part"). Agenda has it; ask how it went.
+- Driving: goes out at 4 pm for the dinner rush. Agenda starter step Fri-Sun 10-09..11: "shoes on, open Uber Eats,
+  go online" (STARTING is his hurdle). If it helps, offer it as a weekly item.
 - Owner after day 3: "I felt like I actually did something productive. Now I have a plan and as you know
   that is my biggest weakness."
 - Constitution items 12 (Ask for help) and 13 (Protect each other) ratified 2026-10-07. "The heart of the
