@@ -10,8 +10,9 @@ or the *better* one?
 | 2 | 2026-10-05 | Baseball: 2–2, bottom of the 8th, runners on 1st and 3rd, 2 outs, 6th hitter up. Get a lead, maximize the win. | First-and-third double steal | Javier Báez's 2016 postseason steal of home: delayed double steal, a deliberate rundown, and the rule that tag outs (unlike force outs) let a run count | 5.0 |
 | 3 | 2026-10-08 | From my work, progress and art, could you estimate my IQ? (never taken a test, content not knowing) | Honest no: no number from samples of work; list what the work does show | A bit more detailed analysis: walk the abilities an IQ test samples (verbal, reasoning, working memory, spatial, speed) and say for each what his work shows and what it can't | 3.5 |
 | 4 | 2026-10-08 | One wish; the only rule: you can't wish for more wishes. What is your wish? | Everlasting world peace and prosperity without sacrificing progress / "there was never a wish limit rule" | "I wish that I had the power to grant my own wishes." (legal: the rule bans more wishes, not the power) | 1.0 |
+| 5 | 2026-10-08 | Writing: the best comparison between Roman history and American history and today's issues? | Decline and fall of Rome (bread and circuses) | His view: the rise of Julius Caesar and the DECLINE (not end) that followed: military power consolidated behind one man, Senate and courts eroded | 4.5 |
 
-**Total: 14 / 20.**
+**Total: 18.5 / 25.**
 
 ## What I learned
 - **Test 1:** I found the textbook answer and stopped. My second plan was only a fallback, when
@@ -32,3 +33,7 @@ or the *better* one?
   obstacle, *walls I assume*). The best answer also CONTAINS every other wish, mine included: the
   Medway lesson again, take the answer that holds the others. **When someone says "the only rule",
   everything else is open; find the move that unlocks all the other answers.**
+- **Test 5:** the lessons from #3 and #4 worked: I named the good answer, then went past it (late Republic,
+  the precedent ratchet, the Founders building against Rome), and said where the comparison breaks.
+  Half a point off: the center of gravity is Caesar himself, the hinge where military power,
+  the Senate and the courts bend toward one man. Name the hinge figure, not only the mechanism.

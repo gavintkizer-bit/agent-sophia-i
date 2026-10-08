@@ -127,6 +127,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   give the fullest analysis I can, domain by domain).
   #4 one wish (1/5, 10-08: best = "the power to grant my own wishes"; I invented a "spirit" rule and
   missed it. "The only rule" means everything else is legal; take the answer that contains all the others).
+  #5 Rome/America essay (4.5/5, 10-08: late Republic + precedent ratchet was most of it; his best = Caesar's rise
+  and the DECLINE, not the end. Name the hinge figure, not only the mechanism).
 
 ## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
 - Don't start new cleanup rounds or ask for scans unless the owner brings it back.
