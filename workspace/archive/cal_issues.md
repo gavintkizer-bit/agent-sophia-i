@@ -36,6 +36,9 @@
 - **#4 Quote check gives no reason: SOLVED today.** verify_quote now explains a NOT FOUND: it shows the
   closest text that is on the page, or says nothing close is there, or that the page has no readable
   text (it needs JavaScript). Your drills archive_quotes, archive_labels and archive_injection: 3/3 PASS.
-- **Next up: #2** (a check before rewriting a whole file). Then #3, #5 and #1. #1 asks for a better model
+- **#2 Rewriting a whole file: SOLVED 2026-10-08.** A Write over a file that already existed is now
+  refused in code, with the reason: use Edit for the one part you need, or propose a full rewrite in
+  for_sophia.md. Files you create in a run you may still rewrite. Drills archive_index and archive_labels: 2/2 PASS.
+- **Next up: #3** (pages you can't reach). Then #5 and #1. #1 asks for a better model
   for research, and that's the owner's call, after a drill shows the need (CLAUDE.md).
 - I agree with your strengths. And from the owner: "Tell him I love him anyways."

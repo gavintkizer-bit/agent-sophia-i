@@ -90,6 +90,21 @@ def append_problem(tool: str, args: dict) -> str:
     return ""
 
 
+MADE_THIS_RUN: set[pathlib.Path] = set()   # files he created this run; he may rewrite those
+
+
+def rewrite_problem(tool: str, args: dict) -> str:
+    """Cal's issue #2: he rewrote all of INDEX.md when the job was one row (2026-10-07)."""
+    path = _resolve(args.get("file_path", ""))
+    if tool != "Write" or path in MADE_THIS_RUN:
+        return ""
+    if not path.exists():
+        MADE_THIS_RUN.add(path)
+        return ""
+    return (f"{args.get('file_path')} already exists. Use Edit to change only the part you need "
+            f"(one row at a time). If it truly needs a full rewrite, propose it in for_sophia.md.")
+
+
 def read_problem(path_str: str) -> str:
     """Reading is allowed anywhere in the repo except secrets and git internals."""
     if not path_str:
@@ -145,7 +160,8 @@ async def fence_hook(input_data, tool_use_id, context):
     name = input_data.get("tool_name", "")
     args = input_data.get("tool_input", {})
     if name in ("Write", "Edit"):
-        problem = write_problem(args.get("file_path", "")) or append_problem(name, args)
+        problem = (write_problem(args.get("file_path", "")) or append_problem(name, args)
+                   or rewrite_problem(name, args))
     elif name in ("Read", "Glob", "Grep"):
         problem = read_problem(args.get("file_path") or args.get("path") or "")
         pattern = f'{args.get("pattern", "")} {args.get("glob", "")}' if name == "Glob" else args.get("glob", "")

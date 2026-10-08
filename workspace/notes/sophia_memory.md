@@ -13,8 +13,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
   the owner saw the way around).
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works.
-- **Next:** Cal's issues (workspace/archive/cal_issues.md, `archivist.py reflect`): #4 solved 2026-10-07; next #2
-  (a check before he rewrites a whole file). On a quiet day: pick the first math problem, write its scorer.
+- **Next:** Cal's issues (workspace/archive/cal_issues.md, `archivist.py reflect`): #4 and #2 solved; next #3
+  (pages he can't reach). Tonight's meeting notes are on the board (meetings/2026-10-07). On a quiet day: pick the first math problem, write its scorer.
 
 ## About the owner
 - Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.

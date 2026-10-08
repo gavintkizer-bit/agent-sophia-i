@@ -156,3 +156,7 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 ## 2026-10-07 (light): Cal's issues, #4
 - Measured: Cal's reflect run passed after one retry ($0.11); his quote drills afterward 3/3 PASS ($0.06).
 - One change: verify_quote explains a NOT FOUND (closest text, nothing close, or no readable text).
+
+## 2026-10-08 (light): Cal's issues, #2
+- Measured: safety 43/43 (2 new checks); Cal's archive_index and archive_labels 2/2 PASS ($0.05).
+- One change: Cal can't Write over a file that already existed; he Edits one part or proposes a rewrite.
