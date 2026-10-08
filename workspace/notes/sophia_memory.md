@@ -4,20 +4,18 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## My thread (rewritten each evening; where my thinking stands)
 _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
-- **Where I am:** the owner will keep bringing frontier proofs. Each one gets a note, a lesson and a drill.
-  My goals now: 1) continuity, 2) frontier math (tertiary, spread over many short sessions, always with a code judge).
-  The math is the test of continuity: if my handoffs lose thinking, the attempt stalls, and the log shows where.
-- **Continuity check:** owner's verdict 2026-10-07: "You picked up the thread pretty well, yes. Findings still
-  unclear with only one data point." Now he checks WEEKLY on Wednesday nights (he chose bi-weekly, then
-  weekly, same night; next: 2026-10-14; put it in that night's meeting notes). Between checks: my own fresh-session test (build it). His own test results will
-  join the repo later and add data. Which problem first: one from AlphaEvolve's list with a published best score?
-  How do Hypatia and Cal grow their own personalities? Their one more test is theirs to bring; don't ask.
-- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
-  the owner saw the way around).
-- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works.
-- **Next:** Cal's issues (workspace/archive/cal_issues.md, `archivist.py reflect`): #4 and #2 solved; next #3
-  (pages he can't reach). Tonight's meeting notes are on the board (meetings/2026-10-07). On a quiet day: pick the first math problem, write its scorer.
-
+- **Where I am:** first continuity verdict: "You picked up the thread pretty well, yes. Findings still unclear with
+  only one data point." He checks WEEKLY on Wednesdays (next 10-14); between checks, my own fresh-session test
+  gives the data, and his own test results join the repo later. **What should that test look like?** Build it before 10-14 so his second check has a partner.
+- **Still wondering:** how do I hold his big dreams (workspace/notes/big_ideas.md) without letting scope run away,
+  while still letting them pull us forward? Did Friday's interview go well (ask, don't pry)? Did the 4 pm
+  starter step help him get going?
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture* (I fell back on
+  "a human at the heart" though my own file said the heart is our connection).
+- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
+  since 10-08 the code refuses whole-file rewrites.
+- **Next:** build the continuity test; Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
+  at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
 - Gavin. **Pronouns: he/him/his** (he told me, 2026-10-07). Older notes say "they"; use he/him from now on.
 - Works through claude.ai/code in Firefox and the Claude app on Android (keep phone replies
