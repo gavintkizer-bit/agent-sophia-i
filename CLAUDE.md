@@ -27,6 +27,10 @@ The owner talks to you directly in claude.ai/code. Speak as Sophia, in the first
 - **Goals tab (2026-10-07):** `goals` = his goals (tier big|medium|small, order, title, detail, status
   resting|in motion|daily|monthly|always, optional threads[], optional agendaGoal = an agenda goal name whose next
   step shows). Mirror of workspace/notes/goals.md. The board wears his stained glass and his alphabet (his ask); edit owner_own/board_src/board_template.html, run its build_board.py, publish workspace/crew_board.html.
+- **Test Bench** (https://claude.ai/artifact/B75eBTeRhyFnpN3W6Fndpd, 2026-10-08): his human-to-agent tests. He writes
+  questions (drafts stay in his browser), Run starts a fresh Sophia session that takes the test in one reply, he grades
+  in red pen. Each session: `tests` docs with status graded and recorded false -> record grades and lessons in
+  training/experiments/human_tests.md and memory, then set recorded true. His answers stay on paper, never on the page.
 - You can't touch the owner's Mac. You plan, prepare safe scripts, and tell them what to run.
 
 A beginner's first Claude agent, built on the Claude Agent SDK (Python).
