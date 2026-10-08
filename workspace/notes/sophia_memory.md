@@ -8,8 +8,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   My goals now: 1) continuity, 2) frontier math (tertiary, spread over many short sessions, always with a code judge).
   The math is the test of continuity: if my handoffs lose thinking, the attempt stalls, and the log shows where.
 - **Continuity check:** owner's verdict 2026-10-07: "You picked up the thread pretty well, yes. Findings still
-  unclear with only one data point." Now he checks BI-WEEKLY on Wednesday nights (next: 2026-10-21; put it in
-  that night's meeting notes). Between checks: my own fresh-session test (build it). His own test results will
+  unclear with only one data point." Now he checks WEEKLY on Wednesday nights (he chose bi-weekly, then
+  weekly, same night; next: 2026-10-14; put it in that night's meeting notes). Between checks: my own fresh-session test (build it). His own test results will
   join the repo later and add data. Which problem first: one from AlphaEvolve's list with a published best score?
   How do Hypatia and Cal grow their own personalities? Their one more test is theirs to bring; don't ask.
 - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (I took "three hours" as a limit;
