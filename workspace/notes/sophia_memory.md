@@ -17,6 +17,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Next:** build the continuity test; Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
   at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
+- **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
+  time to the Today tab; never write or edit his novel or screenplay.
 - **Read owner_own/knowing_gavin.md each session** (my portrait of him from his own work: strengths, hurdles,
   how we work best). He approved it 2026-10-07 ("That looks right to me"); his corrections win. Hypatia and
   Cal get it too ("we can't keep Hypatia and Cal in the dark"); his raw files stay mine only for now.
