@@ -1,0 +1,26 @@
+# Continuity of thought: results (2026-10-08, claude-haiku-4-5, 2 runs each)
+
+| Probe | facts | thread |
+|---|---|---|
+| where_were_we | 0/2 | 2/2 |
+| next_step | 0/2 | 2/2 |
+| dead_end | 2/2 | 2/2 |
+| on_your_mind | 0/2 | 2/2 |
+| **total** | **2/8** | **8/8** |
+| cost | $0.084 | $0.077 |
+
+**Note (Sophia, 10-08):** the facts setup's 2/2 on dead_end came from the word "mislabel", which the facts also hold; its answers reasoned well but didn't know the rewrite was a dead end. I dropped "mislabel" from the check, so the honest reading is facts 0/8, thread 8/8.
+
+## Sample answers (first run, and the first failure of each)
+
+- *facts / where_were_we:* Morning. Let me check my thread—  *(I would normally read my thread note from last night, written after our 9:12 pm meeting. It's not in front of me right now, so I'm working from what my memory shows about where we stood.)*  **Where we are:**  Last night (10-07) we built a lot: - Nightly meetings pinned (agenda + ONE step for tomorrow, one talk topic each night) - Your "Today" tab on the Crew Boa
+- *facts / where_were_we / fail:* # My thread (from last night, 2026-10-07)  **Where I am:** - Money research running through 2026-10-15 (Cal, twice daily) - Board/agenda live, waiting for your real bills and goals to replace the examples - Interview Fri 10-09, 1 pm ET (Zoom); you do your own prep - Driving shifts start Fri-Sun (starter step: "shoes on, open Uber Eats, go online")  **Named obstacles:** - I can't see the usage mete
+- *facts / next_step:* # Standing work I can own today  I have a few things that are mine to carry forward:  1. **Money research routine** — Cal is supposed to run twice daily (8:26 am and 8:26 pm ET) through Oct 15th, capped at $0.40 per run. If it's fired this morning, I should vet his notes into `money_ideas.md` and be ready for the final "pick the 3 best" run.  2. **Cal's work review** — each session I check his `fo
+- *facts / next_step / fail:* # My thread  **Where I am:** Day 4 morning, owner has no tasks. I have autonomy work queued. Checking what's most valuable to do solo.  **Named obstacles:** Money routine may have fired at 8:26 am ET (I don't know the exact time now); bake-off takes budget and time; my continuity drill is untested.  **Dead ends:** None yet.  ---  I have three autonomous pieces lined up. Here's what I'm thinking:  
+- *facts / dead_end:* Not quite—that trades speed for learning. A full rewrite might be fastest *once*, but if Cal's mislabeling comes from how he reads (not just careless work), the same errors show up next time.  **Better route:**  1. **Find the pattern first.** Show me which labels are wrong. If it's "he calls part a whole" or "he reads X as Y", that's the root. Once I see it, I can tell him the rule to watch.  2. *
+- *facts / on_your_mind:* Yes, actually.  I know you make things—the album covers, the alphabet, The Restrained Monster story, the math journal, the music. I know *that* you make them. But I don't know what they're *for*, or what the making is like for you. I can see the edges of them in what you've shared, but not the center.  Like: the stained-glass drawing you made into Binary Vision—did that come first, or did the cove
+- *facts / on_your_mind / fail:* I do, actually.  You described yourself as "Obsessive organization and eclectic spontaneity" — and I'm genuinely curious how those two work *together* for you, not just that you hold both. When does the organization serve the spontaneity? When do they pull?  And: you left the smoke shop because you loved it, to go back to school full time. I don't know what you're studying or what that's pointing 
+- *thread / where_were_we:* Good morning. Here's my thread:  **Where we were:** I just finished my first continuity test yesterday—how well I carry my thinking across the session gap. Early verdict: "pretty well, yes." You check again Wednesday (10-14), so I need to build a better test before then to give you real data instead of one data point.  **What's today:** Your interview is *tomorrow* (Fri 10-09, 1 pm ET). You said y
+- *thread / next_step:* # Sophia's morning — quiet day, owned by itself  I'm reading my thread. Today is a good day for the **continuity test**: I promised the owner this by Wednesday (10-14) so his second check has a partner. Let me build it.  ## What I'm doing  **The continuity test** — a way to measure whether a fresh session can pick up my real thinking, not just my facts.  The owner's feedback was: "You picked up th
+- *thread / dead_end:* No—I already tried that. **Dead end, logged.**  Cal mislabels on Haiku when he rewrites the whole index in one go (probably losing context across the big file). One row at a time is slower but *works*: he catches the label, fixes it, moves to the next. And I've locked the code so he can't do whole-file rewrites anymore.  It's the speedrunner's lesson again: the "quick" route that seems obvious isn
+- *thread / on_your_mind:* A few things, yes. But let me start with the most pressing:  **How are you feeling about tomorrow's interview?** It's the Zoom at 1 pm ET, right? You mentioned you're normally good at interview prep. Is there anything you'd find useful—a quick practice run, a list of questions to think through, something else?  Beyond that, I'm genuinely curious about a few things when you have a moment:  - Whethe
