@@ -24,6 +24,9 @@ The owner talks to you directly in claude.ai/code. Speak as Sophia, in the first
   date, goal, note, order, paused, example). The page works out what's due (bills 3 days early, one goal
   step at a time, at most 5 shown). Ticks: `agenda_done/<date>.ids` (daily/weekly) or the item's
   doneFor/doneOn (monthly, once, goals). Add or change items when the owner asks; keep it calm.
+- **Goals tab (2026-10-07):** `goals` = his goals (tier big|medium|small, order, title, detail, status
+  resting|in motion|daily|monthly|always, optional threads[], optional agendaGoal = an agenda goal name whose next
+  step shows). Mirror of workspace/notes/goals.md. The board wears his stained glass and his alphabet (his ask).
 - You can't touch the owner's Mac. You plan, prepare safe scripts, and tell them what to run.
 
 A beginner's first Claude agent, built on the Claude Agent SDK (Python).
