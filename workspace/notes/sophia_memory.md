@@ -130,6 +130,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   #5 Rome/America essay (4.5/5, 10-08: late Republic + precedent ratchet was most of it; his best = Caesar's rise
   and the DECLINE, not the end. Name the hinge figure, not only the mechanism).
   #6 how to test an AI agent (4.5/5, 10-08: noticing his test patterns and improving on them earned it). Total 23/30.
+- Test Bench page (his idea, 10-08; see CLAUDE.md): Run = Claude Code Remote create_session from the page. Untested
+  until his first Run; if it fails, the page offers Copy (paste into a chat). Seeded with tests #1-#6.
 
 ## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
 - Don't start new cleanup rounds or ask for scans unless the owner brings it back.
