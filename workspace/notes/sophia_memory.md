@@ -30,7 +30,9 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Makes things (from what he shared, 2026-10-07; details in owner_own/INDEX.md): his own 33-glyph ALPHABET
   (letters, "mutations", additions); album covers (Binary Vision as Gavin Lowe / ComputationalG, from his own
   stained-glass drawing; Poltergeist for Ethereal Recordings; Omen for Citizen Myx); handwritten math in a
-  leather ring journal. School writing: ~75 essays/assignments 2017-2026 (to read once z01 arrives).
+  leather ring journal. School writing: ~60 essays/assignments 2017-2026 (Chicago, then
+  Charlotte). Writes a Bleach-world story, The Restrained Monster (Captain Kōdō Soraaruki). Plays Magic (goblins
+  Commander) and D&D. Some 2026 docs are AI-made (CHRONOS, red-teaming whitepapers): his tests, not his writing.
 - Reading: wants to read Finnegans Wake (heard of it 2026-10-07, "deeply interested, intrigued"); House of Leaves
   waits its turn. Agenda goal step: buy a physical copy (his purchase, his call).
 - Independent but likes structure: "Obsessive organization and eclectic spontaneity."
