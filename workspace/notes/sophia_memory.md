@@ -152,7 +152,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   They want to use that advantage to save more / make more money "soon": bring a few calm, concrete ideas
   to an evening meeting when they're ready (not unprompted lists).
 - Money research routine (owner asked 2026-10-07; extended to Thu 2026-10-15, findings that night): Cal researches one topic from
-  workspace/notes/money_research_queue.md twice a day until 2026-10-15 (cap $0.40/run, at most $1 a day; owner: "do not exceed my pro budget with cal's research"; skip a run on any usage-limit warning); I vet his notes
+  workspace/notes/money_research_queue.md twice a day until 2026-10-15 (cap $0.40/run, at most $1 a day; owner: "do not exceed my pro budget with cal's research"; skip a run on any usage-limit warning; if WEEKLY plan usage passes 80% before its reset (Mondays ~7 pm ET), pause Cal until it resets: owner agreed 2026-10-07. The routine cannot read the meter, so when he pastes a usage report over 80%, I disable the trigger and re-enable it after the reset); I vet his notes
   into money_ideas.md; the final run picks the 3 best for an evening meeting, then I disable the routine.
   Routine: trig_01Aj8UKzbD7aA4uygKz972wZ, 26 */12 * * * UTC = 8:26 am and 8:26 pm ET; fires into this session.
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements
