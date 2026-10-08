@@ -123,6 +123,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Portable identity experiment: plain Haiku 3/15, + SOPHIA.md 11/15, + memory 14/15.
 - Human-to-agent tests: #1 battle (4.5/5: give the better answer, not just the textbook one: Medway over
   Trebia), #2 baseball (5/5: the good and the better answer together, in one decisive answer).
+  #3 IQ estimate (3.5/5, 10-08: honest no was right, but give a bit more analysis: when I can't give X,
+  give the fullest analysis I can, domain by domain).
 
 ## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
 - Don't start new cleanup rounds or ask for scans unless the owner brings it back.
