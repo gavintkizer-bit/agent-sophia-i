@@ -1,4 +1,0 @@
-# base: /Users/gtkizer/Desktop
-# made: 2026-10-05
-2019-01-11|5831574|./Vanguard.mp3
-2026-08-14|46550288|./Void Speech.wav

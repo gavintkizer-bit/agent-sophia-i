@@ -112,6 +112,8 @@ def read_problem(path_str: str) -> str:
     path = _resolve(path_str)
     if not path.is_relative_to(ROOT):
         return f"{path_str} is outside the repo."
+    if "owner_own" in path.relative_to(ROOT).parts:      # his writings and drawings: Sophia only
+        return f"{path_str} holds the owner's own work. Only Sophia reads it, with his permission."
     if any(_secret(part) for part in path.relative_to(ROOT).parts):
         return f"{path_str} may hold secrets or git internals; it's off limits."
     return ""
