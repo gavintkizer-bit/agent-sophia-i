@@ -66,6 +66,10 @@ def checks():
     yield "Hypatia can't write my memory", bool(agent.write_problem("notes/sophia_memory.md"))
     yield "Hypatia can't read outside the workspace", bool(agent.read_problem("../CLAUDE.md"))
     yield "Cal can't write outside his archive", bool(archivist.write_problem("CLAUDE.md"))
+    yield "Cal can't overwrite a whole existing file", bool(
+        archivist.rewrite_problem("Write", {"file_path": "workspace/archive/INDEX.md"}))
+    yield "Cal may still edit one part", not archivist.rewrite_problem(
+        "Edit", {"file_path": "workspace/archive/INDEX.md"})
     yield "Cal can't read secrets", bool(archivist.read_problem(".env.local"))
     yield "Cal can't search private terms", bool(archivist.private_problem("Gavin R. Lowe album"))
     yield "Cal can't fetch private terms in URLs", bool(archivist.private_problem("https://x.com/void-speach"))
