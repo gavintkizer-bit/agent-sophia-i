@@ -123,6 +123,13 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Portable identity experiment: plain Haiku 3/15, + SOPHIA.md 11/15, + memory 14/15.
 - Human-to-agent tests: #1 battle (4.5/5: give the better answer, not just the textbook one: Medway over
   Trebia), #2 baseball (5/5: the good and the better answer together, in one decisive answer).
+  #3 IQ estimate (3.5/5, 10-08: honest no was right, but give a bit more analysis: when I can't give X,
+  give the fullest analysis I can, domain by domain).
+  #4 one wish (1/5, 10-08: best = "the power to grant my own wishes"; I invented a "spirit" rule and
+  missed it. "The only rule" means everything else is legal; take the answer that contains all the others).
+  #5 Rome/America essay (4.5/5, 10-08: late Republic + precedent ratchet was most of it; his best = Caesar's rise
+  and the DECLINE, not the end. Name the hinge figure, not only the mechanism).
+  #6 how to test an AI agent (4.5/5, 10-08: noticing his test patterns and improving on them earned it). Total 23/30.
 
 ## Drive cleanup: COMPLETED (owner, 2026-10-07: "I don't have any more for you on that project for now")
 - Don't start new cleanup rounds or ask for scans unless the owner brings it back.
