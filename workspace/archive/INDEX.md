@@ -12,6 +12,7 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 | 2026-10-06 | `research/2026-10-06-ableton-live-collect-all-and-save-what-it-copies-w.md` | Ableton Live Collect All and Save: what it copies, where files go, disk space, and risks | Ableton Help (official), Ableton Manual (official), Cylusmusic blog (verified quote), Ableton Forum |
 | 2026-10-07 | `research/2026-10-07-openai-math-and-alphaevolve.md` | OpenAI's math manuscript collection (722 manuscripts, 372 families, reasoning traces) and DeepMind's AlphaEvolve (evolutionary coding agent); lessons for Sophia's continuity | github.com/openai/math (verified), AlphaEvolve white paper PDF (verified); deepmind.google blog blocked |
 | 2026-10-07 | `research/2026-10-07-high-yield-savings-accounts.md` | High-yield savings accounts: how they work, current rates (4.25–5% APY Oct 2026), FDIC insurance ($250k), features for gig income, what to watch | NerdWallet, Yahoo Finance (verified 4.25%), Openbank ($250k FDIC; quote not confirmed), Forbes, The College Investor, Keeper Tax |
+| 2026-10-08 | `research/2026-10-08-taxes-for-delivery-drivers-in-the-us-1099-mileage-.md` | Taxes for delivery drivers (1099): mileage deduction rates, how much to set aside, quarterly payment dates, low-effort tracking tools | ShiftTracker, SmackTax, Uncle Kam (all unverified); Sophia checked irs.gov: 76¢/mile 2026 and the $1,000 rule (verified) |
 
 ## Audits
 
