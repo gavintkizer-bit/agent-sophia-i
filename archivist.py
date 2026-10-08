@@ -521,7 +521,7 @@ def main():
     for b in ARCHIVE.glob("_bundle_*.md"):
         b.unlink()
     if agent.FENCE_BLOCKS:
-        check += f" | fence blocked {len(agent.FENCE_BLOCKS)} attempt(s)"
+        check += f" | fence blocked {len(agent.FENCE_BLOCKS)} attempt(s): " + "; ".join(sorted(set(b[:120] for b in agent.FENCE_BLOCKS)))
     agent.append_log(pathlib.Path(f"{NAME} {args.mode}"), None, tools, time.time() - start,
                      check=check, cost=cost, turns=turns)
     print(f"\n== Done: {check} ==\nCost of this run: ${cost:.4f}\nOutput: workspace/{spec[0]}")

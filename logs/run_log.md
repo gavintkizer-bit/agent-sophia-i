@@ -254,3 +254,8 @@ One entry per agent run, newest at the bottom.
 ## 2026-10-08 04:10 | Continuity test (training/experiments/continuity_test.py) | OK
 - Model: claude-haiku-4-5 | 16 calls, no tools | Cost: $0.161
 - Result: thread 8/8, facts-only 0/8 (after tightening one check)
+
+## 2026-10-08 12:30 | Callimachus research | FAILED
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 19 | Time: 148s | Cost: $0.2834
+- Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: FAILED after retry: These facts are labeled verified without proof: https://gigglefinance.com/managing-unpredictable-income-budgeting-tips-gig-workers-1099-earners/ (this fact has no checked quote of its own from it); https://www.sunflowerbank.com/about-us/resource-articles/10-ways-to-build-an-emergency-fund-on-a-tight-budget (this fact has no checked quote of its own from it). A verified fact must include, in quotation marks on the same line, a quote that passed verify_quote this run. Add the quote or relabel the fact unverified, in every file you wrote. | fence blocked 1 attempt(s)

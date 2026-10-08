@@ -34,3 +34,13 @@ step, and the source.
   sites; that's queue topic 13). I'll bring it to a meeting once that topic is researched.
 - **Source:** irs.gov estimated taxes (quote checked: "expect to owe tax of $1,000 or more").
 
+## 4. Pay yourself first, automatically, every payout (2026-10-08)
+- **What:** each time a payout lands, a small share (sources suggest 5-10%) moves to savings by itself, before you
+  ever see it. It's triggered by deposits, not dates, which suits gig pay.
+- **Why it fits:** no willpower, no remembering, and no rent or phone bill competing for it. Even $5-10 a week is
+  $260-520 a year. It's the engine that fills ideas 1 and 3.
+- **First small step:** none alone. At a meeting we look at whether your bank can move money automatically when a
+  deposit arrives, and you choose the share.
+- **Source:** Giggle Finance (quote checked: "Set up automatic transfers to a savings account each time you receive
+  a deposit"); Sunflower Bank (quote checked: "even if it's just $5 or $10 per paycheck").
+
