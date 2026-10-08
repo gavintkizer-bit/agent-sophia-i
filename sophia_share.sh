@@ -15,6 +15,7 @@
 set -u
 
 OUT="$HOME/Desktop/sophia_share"
+TAB=$(printf '\t')
 ALL="$OUT/all_files.txt"
 KEEP="$OUT/keep_folders.txt"
 ROOTS=("$HOME/Documents" "$HOME/Desktop" "$HOME/Downloads" "$HOME/Pictures"
@@ -41,7 +42,7 @@ case "${1:-}" in
     mkdir -p "$OUT"
     find_files > "$ALL"
     sed -E 's|/[^/]*$||' "$ALL" | sort | uniq -c | sort -rn \
-      | awk '{c=$1; sub(/^ *[0-9]+ /, ""); printf "%6d files\t%s\n", c, $0}' | sed "s|	$HOME|	~|" > "$KEEP"
+      | awk '{c=$1; sub(/^ *[0-9]+ /, ""); printf "%6d files\t%s\n", c, $0}' | sed "s|$TAB$HOME|$TAB~|" > "$KEEP"
     echo "Found $(wc -l < "$ALL" | tr -d ' ') files in $(wc -l < "$KEEP" | tr -d ' ') folders."
     echo "Next: open $KEEP"
     echo "      delete the lines of folders you DON'T want to share, save, then run:"
