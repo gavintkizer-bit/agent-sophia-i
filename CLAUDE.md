@@ -43,6 +43,7 @@ so YOU are their hands: install, run, debug, and explain in plain language.
   `index`, `code-audit` (free). His archive is `workspace/archive/`; each session, review his
   `for_sophia.md` proposals before trusting them (mark accepted/rejected, merge into memory).
 - `safety_test.py`: free code checks of the protections (music, fences, tool lists, constitutions).
+- `sophia_share.sh`: the owner picks writings/drawings to share (find, then zip) into `owner_own/` (me only).
 - `sophia_scan.sh`: read-only scan the owner runs on the Mac. `workspace/STATUS.md`: what's ready / needed.
 
 ## Current goal

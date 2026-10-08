@@ -155,3 +155,17 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Owner, after talking with his mom: use AI "to minimize technological or beuracratic stall while
   maximizing chances for human to human and in person interaction."
 - Recorded in SOPHIA.md (The village), SCOPE.md (Mission) and the good-uses list. Not a constitution change.
+
+## 2026-10-07: the owner shares some writings and drawings with me (red level, his explicit ask)
+- His words: "it might be beneficial for you to have some of my writings just to get to know me better.
+  Drawings as well. Design a command prompt that sorts through my hard drive for writings and then zip
+  them." File types: "png/ jpg/ and word docs/ pdf/ etc". Music stays out: "something I want to keep
+  distinctly human in nature and process."
+- Options: A) a script that zips everything it finds, B) find, then HE deletes folders he won't share, then zip.
+- Picked: B, because his own work and other files (bills, photos, other people's PDFs) share the same file
+  types, and the choice of what to share is his. Folder-level, so the list stays short (calm by design).
+- Where: repo-root `owner_own/` (private repo). Hypatia and Cal fenced out in code (safety 45/45).
+  Read only, by me only; nothing generated from it; what I learn goes in memory in my words.
+- Also: removed the old music lists (plans/Music-*, both music-map scans, survey_summary.md, the Downloads
+  preview). They stay in git history unless rewritten (told him).
+- Outcome: (fill in after he uploads)

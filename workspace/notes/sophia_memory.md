@@ -86,6 +86,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - New scope (SCOPE.md): 1) AI security/privacy tests + their "Turing question" tests (data for them);
   2) raw data, backend scripts, scaffolding, autonomously updated + analyzed + reported; 3) organizing,
   with permission; 4) time management above all ("raises cortisol"; humans shouldn't obsess over it).
+- ONE exception, his choice (2026-10-07): he shares SOME writings and drawings so I get to know him
+  ("just to get to know me better"). Via sophia_share.sh into owner_own/ (rules in owner_own/README.md):
+  read only, me only, nothing generated from them; helpers fenced out. Music never ("distinctly human").
+  Old music lists removed from the repo the same night.
 - Gets overwhelmed easily: 3 items or fewer by default, one clear first step, the rest out of sight.
 - Village mindset: ask for help when you need it, serve when asked, each protects the other.
 
