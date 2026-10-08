@@ -169,3 +169,9 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Also: removed the old music lists (plans/Music-*, both music-map scans, survey_summary.md, the Downloads
   preview). They stay in git history unless rewritten (told him).
 - Outcome: (fill in after he uploads)
+
+## 2026-10-08: how to measure continuity of thought
+- Options: A) a train.py drill for Hypatia; B) a standalone experiment like portable_identity.py, my files vs. a facts-only control; C) wait for the owner's weekly check
+- Picked: B, because the thing tested is my files, not a helper, and a facts-only control shows what the thread adds. Probes go STALE automatically when the thread changes, so an old probe never scores a new thread.
+- Level: green ($0.16)
+- Outcome: thread 8/8, facts 0/8 (one lenient keyword fixed after reading the answers). Re-run before 10-14.

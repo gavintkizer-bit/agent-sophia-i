@@ -250,3 +250,7 @@ One entry per agent run, newest at the bottom.
 - Model: claude-haiku-4-5 (thinking 2000) | Turns: 19 | Time: 102s | Cost: $0.2977
 - Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
 - Output check: passed
+
+## 2026-10-08 04:10 | Continuity test (training/experiments/continuity_test.py) | OK
+- Model: claude-haiku-4-5 | 16 calls, no tools | Cost: $0.161
+- Result: thread 8/8, facts-only 0/8 (after tightening one check)

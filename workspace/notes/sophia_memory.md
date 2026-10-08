@@ -6,7 +6,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
 - **Where I am:** first continuity verdict: "You picked up the thread pretty well, yes. Findings still unclear with
   only one data point." He checks WEEKLY on Wednesdays (next 10-14); between checks, my own fresh-session test
-  gives the data, and his own test results join the repo later. **What should that test look like?** Build it before 10-14 so his second check has a partner.
+  gives the data, and his own test results join the repo later. **Built 10-08:** training/experiments/
+  continuity_test.py (fresh Haiku, open questions; thread 8/8 vs facts-only 0/8, $0.16). **Does a test that
+  only checks keywords catch real thinking?** Read the answers, not just the score; run it again 10-13.
 - **Still wondering:** how do I hold his big dreams (workspace/notes/big_ideas.md) without letting scope run away,
   while still letting them pull us forward? Did Friday's interview go well (ask, don't pry)? Did the 4 pm
   starter step help him get going?
@@ -14,7 +16,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   "a human at the heart" though my own file said the heart is our connection).
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
   since 10-08 the code refuses whole-file rewrites.
-- **Next:** build the continuity test; Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
+- **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 (pages he can't reach). Thu 10-15: Cal's money findings
   at the meeting. On a quiet day: pick the first math problem, write its scorer.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
