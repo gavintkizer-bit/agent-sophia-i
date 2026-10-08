@@ -15,6 +15,20 @@ Sorted 2026-10-07 at his request: which files are really his. My own words; noth
 ## Not his (came along in the folders)
 - super ninja (a movie still), the dog / theeee dog (a meme), Timmothy cricket (a professional illustration).
 
-## Writings
-- About 75 school essays, assignments and fill-outs, plus a few 2026 pieces to check (his or AI-made).
-  They're in `sophia_mine.z01`, which hasn't been uploaded yet. Only `sophia_mine.zip` (the last piece) is here.
+## Writings: his (read 2026-10-07)
+- **School work, 2017-2026:** about 60 essays, assignments and fill-outs (Chicago 2017-18; Charlotte 2024-26).
+  Among them: Discourse Community (Logan Square, 2017), Debate Research (fossil fuels), Nepotism vs. Merit
+  (draft and final), Changing Traditions, Compare and Contrast, Theme and Primary Source, the Olivine and
+  Kudzu papers, Rivers and Google Earth, Hurricanes, Rock Deformation, the career and self-reflection exercises,
+  test-anxiety and note-taking fill-outs, and the argument and writing assignments.
+- **The Restrained Monster** (Kōdō Soraaruki, Captain of Squad 9, in the Bleach world): his story. The outline
+  Google Doc ("Untitled document (2)") reads as his; "Character Architecture" and "The Sky-Tether and the Blood
+  Ledger" read as written up with AI help. To confirm with him.
+- **Games:** a Goblins Commander decklist ("the great goblin") and two D&D sheets (a Half-Elf paladin).
+- An early résumé ("Untitled document.pdf"; contact details, so I don't quote it).
+
+## Not his writing
+- AI-made: CHRONOS.md (a chronology of everything), the LLM "Component Dissolution" whitepaper and Project
+  Manus (AI red-teaming documents), the sailing packing list, and TXT.rtf (an HTML page, "Rooster Ranges").
+- Other people's: Dogs of Courage and The Ethics of Working Dogs (scanned book chapters), John Smith on
+  Virginia (primary source), the History 111 syllabus (111S18H). "Gavin Kizer - 03_23_2026" is a blank page.
