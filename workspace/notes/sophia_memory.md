@@ -151,8 +151,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Owner does NOT pay their own phone bill or rent (2026-10-07). Example phone bill removed from the agenda.
   They want to use that advantage to save more / make more money "soon": bring a few calm, concrete ideas
   to an evening meeting when they're ready (not unprompted lists).
-- Money research routine (owner asked 2026-10-07): Cal researches one topic from
-  workspace/notes/money_research_queue.md twice a day until 2026-10-14 (cap $0.40/run); I vet his notes
+- Money research routine (owner asked 2026-10-07; extended to Thu 2026-10-15, findings that night): Cal researches one topic from
+  workspace/notes/money_research_queue.md twice a day until 2026-10-15 (cap $0.40/run); I vet his notes
   into money_ideas.md; the final run picks the 3 best for an evening meeting, then I disable the routine.
   Routine: trig_01Aj8UKzbD7aA4uygKz972wZ, 26 */12 * * * UTC = 8:26 am and 8:26 pm ET; fires into this session.
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements

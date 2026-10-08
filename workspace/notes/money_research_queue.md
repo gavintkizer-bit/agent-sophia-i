@@ -1,4 +1,4 @@
-# Money research queue (Cal, twice a day, 2026-10-07 to 2026-10-14)
+# Money research queue (Cal, twice a day, 2026-10-07 to 2026-10-15; owner moved the findings to Thursday night, 2026-10-15)
 
 Owner's request (2026-10-07): use the fact that they pay no rent and no phone bill to save more or
 make more money, researched while they're away. Cal researches one topic per run; Sophia reviews it
@@ -25,4 +25,4 @@ Next topic = the first unchecked one.
 - [ ] Monthly vs. yearly subscription plans, and rotating streaming services
 - [ ] Roth IRA and index funds explained for beginners (education, not advice)
 - [ ] Free, trustworthy money help: nonprofit credit counseling and library resources
-- [ ] (Sophia, final run) Pick the three best ideas for the owner; write them up for the evening meeting
+- [ ] (Sophia, final run) Pick the three best ideas for the owner; write them up for the evening meeting of Thu 2026-10-15 (not before that day)
