@@ -1,0 +1,826 @@
+<title>Crew Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze:wght@400;500;600&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column. A pane of Gavin's own stained-glass drawing crowns the page, his alphabet marks
+   the tabs and the goal tiers, and a frieze of his glyphs divides sections. Parchment by day (the paper of his
+   alphabet sheet), the window at night after dark. */
+:root {
+  --bg: #ece2cc;          /* parchment */
+  --surface: #f8f2e4;
+  --ink: #2a1f1a;         /* the ink of his glyphs */
+  --muted: #6d5d4b;
+  --line: #d5c4a2;
+  --glass: #1d6f8f;       /* blue pane */
+  --glass-soft: #dce9ea;
+  --amber: #a85f12;       /* amber pane */
+  --amber-soft: #f4e2c3;
+  --rose: #a3326c;        /* magenta pane */
+  --rose-soft: #f2dde5;
+  --done: #3d7650;
+  --lead: #3a2f28;        /* lead lines around the glass */
+  --font-display: "Grenze", "Iowan Old Style", Georgia, serif;
+  --font-body: "Alegreya Sans", "Gill Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1120; --surface: #141b2d; --ink: #ece5d6; --muted: #9ba3b6; --line: #273148;
+    --glass: #5cc2e6; --glass-soft: #16283d; --amber: #eea64a; --amber-soft: #2e2413;
+    --rose: #e75fa0; --rose-soft: #2d1726; --done: #6fc79c; --lead: #05070d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1120; --surface: #141b2d; --ink: #ece5d6; --muted: #9ba3b6; --line: #273148;
+  --glass: #5cc2e6; --glass-soft: #16283d; --amber: #eea64a; --amber-soft: #2e2413;
+  --rose: #e75fa0; --rose-soft: #2d1726; --done: #6fc79c; --lead: #05070d;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font: 17px/1.5 var(--font-body); }
+.wrap { max-width: 640px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 56px; display: grid; gap: 22px; }
+
+{{GLYPH_CSS}}
+/* His glyphs, drawn as masks so they take the theme's ink */
+.glyph { display: inline-block; width: var(--w, 1em); height: 1em; background: currentColor;
+  -webkit-mask: var(--g) center / contain no-repeat; mask: var(--g) center / contain no-repeat; flex: none; }
+
+/* The window */
+.window { position: relative; border-radius: 14px; overflow: hidden; border: 3px solid var(--lead);
+  aspect-ratio: 960 / 300; max-width: 100%; background: #0e1a2c; }
+.window img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 40%; display: block; }
+/* Light moving slowly through the glass, and the hour's tint */
+.light { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 236, 200, .28) 45%, rgba(255, 255, 255, .08) 52%, transparent 66%);
+  background-size: 260% 100%; animation: sweep 14s ease-in-out infinite; }
+@keyframes sweep { 0% { background-position: 120% 0; } 55%, 100% { background-position: -40% 0; } }
+.tint { position: absolute; inset: 0; pointer-events: none; }
+.tint[data-part="morning"] { background: linear-gradient(180deg, rgba(255, 186, 92, .26), transparent 70%); }
+.tint[data-part="evening"] { background: linear-gradient(180deg, rgba(231, 95, 160, .18), transparent 75%); }
+.tint[data-part="night"] { background: linear-gradient(180deg, rgba(6, 12, 40, .42), rgba(6, 12, 40, .15)); }
+.window figcaption { position: absolute; right: 8px; bottom: 6px; font: 11px var(--font-mono); color: #e9e3d6;
+  background: rgba(8, 12, 22, .55); padding: 2px 6px; border-radius: 4px; }
+
+header { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: center; }
+.emblem { font-size: 58px; --w: 1.35em; color: var(--ink); grid-row: span 3; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--amber); }
+h1 { font: 500 clamp(34px, 8vw, 44px)/1 var(--font-display); margin: 0; letter-spacing: .01em; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+.frieze { display: flex; justify-content: space-between; gap: 6px; color: var(--muted); opacity: .55; font-size: 18px;
+  border-block: 1px solid var(--line); padding-block: 8px; overflow: hidden; }
+
+.meter { display: grid; gap: 6px; }
+/* The day's progress, written in his alphabet: one glyph per item, lit when it's done */
+.gmeter { display: flex; flex-wrap: wrap; gap: 4px 8px; min-height: 34px; align-items: center; }
+.gcell { font-size: 28px; --w: 1.15em; color: var(--muted); opacity: .3; transition: opacity .5s ease, color .5s ease, filter .5s ease; }
+.gcell.lit { opacity: 1; color: var(--amber); filter: drop-shadow(0 0 5px color-mix(in srgb, var(--amber) 60%, transparent)); }
+.gcell.pop { animation: pop .7s ease; }
+@keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.3); } 100% { transform: scale(1); } }
+.meter-label { font: 13px var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.tab { display: inline-flex; align-items: center; gap: 7px; font: 700 15px var(--font-body); color: var(--muted); background: none; border: 0;
+  padding: 10px 10px; border-bottom: 3px solid transparent; margin-bottom: -1px; cursor: pointer; }
+.tab .glyph { font-size: 17px; --w: 1.1em; }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--glass); }
+.tab[aria-selected="true"] .glyph { color: var(--glass); }
+.tab:focus-visible, button:focus-visible, textarea:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--glass); outline-offset: 2px; }
+
+.list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; }
+.item.q { border-color: var(--rose); }
+.item.is-done { opacity: .62; }
+.item.is-done .title { text-decoration: line-through; text-decoration-color: var(--muted); }
+.check { width: 24px; height: 24px; margin: 1px 0 0; accent-color: var(--done); cursor: pointer; flex: none; }
+.body { min-width: 0; display: grid; gap: 6px; }
+.title { font-weight: 700; margin: 0; }
+.tag { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--amber); background: var(--amber-soft); border-radius: 4px; padding: 2px 6px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
+.tag.k-bill { color: var(--rose); background: var(--rose-soft); }
+.tag.k-care { color: var(--glass); background: var(--glass-soft); }
+.tag.k-goal { color: var(--done); background: transparent; border: 1px solid var(--done); }
+.detail { color: var(--muted); margin: 0; font-size: 16px; }
+.code { display: flex; gap: 8px; align-items: center; background: var(--glass-soft); border-radius: 6px; padding: 6px 6px 6px 10px; min-width: 0; }
+.code code { font: 13px var(--font-mono); overflow-x: auto; white-space: nowrap; flex: 1; min-width: 0; }
+.btn { font: 700 14px var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+.btn.primary { background: var(--glass); color: var(--surface); border-color: var(--glass); }
+.btn:disabled { opacity: .5; cursor: default; }
+.link { color: var(--glass); font-weight: 700; font-size: 16px; }
+textarea, input[type=text], input[type=number], input[type=date], select { width: 100%; font: 16px/1.45 var(--font-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+textarea { min-height: 64px; resize: vertical; }
+.saved { font: 12px var(--font-mono); color: var(--done); min-height: 1em; }
+.add { display: flex; gap: 8px; }
+.add input { flex: 1; min-width: 0; }
+.status { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 2px 6px; }
+.status.wait { color: var(--glass); background: var(--glass-soft); }
+.status.ok { color: var(--done); background: transparent; border: 1px solid var(--done); }
+.reply { margin: 0; font-size: 16px; border-left: 3px solid var(--glass); padding-left: 10px; }
+.reply b { font-family: var(--font-display); font-weight: 500; color: var(--glass); }
+.empty { color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 16px; margin: 0; }
+.meeting { display: grid; gap: 10px; padding-top: 4px; }
+h2 { font: 500 26px/1.15 var(--font-display); margin: 0; }
+h3 { font: 500 21px/1.2 var(--font-display); margin: 0; }
+.note { color: var(--muted); font-size: 15px; margin: 0; }
+.banner { background: var(--amber-soft); color: var(--ink); border-radius: 8px; padding: 10px 12px; margin: 0; font-size: 15px; }
+details.done-earlier summary, details.more summary { cursor: pointer; color: var(--muted); font-size: 15px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.x { margin-left: auto; }
+
+/* Today (agenda) */
+.when { font: 500 12px var(--font-mono); color: var(--amber); margin: 0; }
+.when.late { color: var(--rose); }
+.nudge { display: flex; gap: 10px; align-items: center; justify-content: space-between; background: var(--glass-soft); border-radius: 10px; padding: 10px 12px; margin: 0; font-size: 16px; }
+.fields { display: grid; gap: 10px; margin-top: 10px; }
+.fields .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 420px) { .fields .pair { grid-template-columns: 1fr; } }
+.manage { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+.manage li { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 16px; }
+.manage .what { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.manage .sched { display: block; font: 12px var(--font-mono); color: var(--muted); }
+.manage li.paused .what { color: var(--muted); }
+
+/* Goals: three panes of glass, held by lead lines */
+.goals-intro { margin: 0; color: var(--muted); }
+.tier { display: block; border: 2px solid var(--lead); border-radius: 12px; overflow: hidden; background: var(--line); }
+.tier-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; color: var(--surface); cursor: pointer; list-style: none; }
+.tier-head::-webkit-details-marker { display: none; }
+.tier-head::after { content: "+"; font: 500 18px/1 var(--font-mono); margin-left: 4px; }
+details.tier[open] > .tier-head::after { content: "–"; }
+.tier-head .glyph { font-size: 26px; --w: 1.2em; color: inherit; }
+.tier-head h3 { color: inherit; }
+.tier-head .count { margin-left: auto; font: 500 12px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.tier.big .tier-head { background: var(--glass); }
+.tier.medium .tier-head { background: var(--amber); }
+.tier.small .tier-head { background: var(--rose); }
+.goal { background: var(--surface); padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+.goal + .goal { border-top: 1px solid var(--line); }
+.goal-title { margin: 0; font-weight: 700; font-size: 17px; }
+.goal-detail { margin: 0; color: var(--muted); font-size: 15.5px; }
+.goal-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.chip { font: 500 11px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; border-radius: 99px; padding: 2px 8px; border: 1px solid var(--line); color: var(--muted); }
+.chip.motion { color: var(--done); border-color: var(--done); }
+.chip.thread { color: var(--glass); border-color: var(--glass); }
+.next { margin: 0; font-size: 15px; color: var(--ink); }
+.next b { font-family: var(--font-mono); font-weight: 500; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--done); margin-right: 4px; }
+.colophon { display: flex; gap: 10px; align-items: center; color: var(--muted); font-size: 13px; margin: 0; }
+.colophon .glyph { font-size: 22px; --w: 1.3em; }
+/* The goals window: one pane per goal */
+.rose { position: relative; margin: 0; display: grid; gap: 8px; }
+.rose-glass { position: relative; border-radius: 12px; overflow: hidden; border: 3px solid var(--lead); background: var(--lead); aspect-ratio: 16 / 7; max-width: 100%; }
+.rose canvas { width: 100%; height: 100%; display: block; cursor: pointer; }
+.goal.flash { animation: flash 1.8s ease; }
+@keyframes flash { 0%, 30% { background: var(--amber-soft); } 100% { background: var(--surface); } }
+[role="tabpanel"] { animation: fadein .25s ease; }
+@keyframes fadein { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.item { transition: opacity .3s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .light { animation: none; display: none; }
+  .gcell, .item { transition: none; }
+  .gcell.pop, .goal.flash, [role="tabpanel"] { animation: none; }
+}
+</style>
+
+<div class="wrap">
+  <figure class="window" style="margin:0">
+    <img src="{{BANNER}}" alt="Gavin's stained-glass drawing: amber, blue and magenta panes, a night city beyond the window">
+    <div class="tint" id="tint"></div><div class="light"></div>
+    <figcaption>From Gavin's drawing for Binary Vision</figcaption>
+  </figure>
+
+  <header>
+    <span class="glyph emblem g20" role="img" aria-label="Mu, letter 20 of Gavin's alphabet"></span>
+    <span class="eyebrow" id="today-label">Today</span>
+    <h1>Crew Board</h1>
+    <p class="sub"><span id="greet">Hello, Gavin.</span> Your day, kept short. Sophia, Hypatia and Cal carry the rest.</p>
+  </header>
+
+  <div class="frieze" aria-hidden="true">{{FRIEZE}}</div>
+
+  <p class="banner" id="offline" hidden>Changes can't be saved in this view. Open the board on claude.ai while signed in.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-today" aria-selected="true" aria-controls="panel-today"><span class="glyph g16"></span>Today</button>
+    <button class="tab" role="tab" id="tab-goals" aria-selected="false" aria-controls="panel-goals"><span class="glyph g15"></span>Goals</button>
+    <button class="tab" role="tab" id="tab-you" aria-selected="false" aria-controls="panel-you"><span class="glyph g11"></span>From Sophia</button>
+    <button class="tab" role="tab" id="tab-sophia" aria-selected="false" aria-controls="panel-sophia"><span class="glyph g14"></span>Sophia's list</button>
+  </div>
+
+  <section id="panel-today" role="tabpanel" aria-labelledby="tab-today" style="display:grid;gap:14px">
+    <div class="meter">
+      <div class="gmeter" id="agenda-glyphs" aria-hidden="true"></div>
+      <span class="meter-label" id="agenda-label">Loading today…</span>
+    </div>
+    <ul class="list" id="agenda-list"></ul>
+    <p class="empty" id="agenda-empty" hidden>Nothing due today. Enjoy it.</p>
+    <details class="more" id="agenda-later" hidden><summary></summary><ul class="list" id="agenda-later-list" style="margin-top:10px"></ul></details>
+    <p class="nudge" id="asks-nudge" hidden><span id="asks-text"></span><button class="btn" type="button" id="asks-open">Open</button></p>
+    <details class="more" id="agenda-add">
+      <summary>Add something to your agenda</summary>
+      <form class="fields" id="agenda-form">
+        <input type="text" id="ag-title" placeholder="What is it? (e.g. Water the plants)" aria-label="What is it?" maxlength="140" required>
+        <div class="pair">
+          <select id="ag-kind" aria-label="Kind">
+            <option value="chore">Chore</option><option value="care">Self-care</option>
+            <option value="bill">Bill</option><option value="goal">Step toward a goal</option>
+          </select>
+          <select id="ag-every" aria-label="How often">
+            <option value="daily">Every day</option><option value="weekly">Every week</option>
+            <option value="monthly">Every month</option><option value="once">Just once</option>
+          </select>
+        </div>
+        <select id="ag-weekday" aria-label="Which day of the week" hidden>
+          <option value="1">Mondays</option><option value="2">Tuesdays</option><option value="3">Wednesdays</option>
+          <option value="4">Thursdays</option><option value="5">Fridays</option><option value="6">Saturdays</option><option value="0">Sundays</option>
+        </select>
+        <input type="number" id="ag-monthday" min="1" max="31" placeholder="Day of the month (1 to 31)" aria-label="Day of the month" hidden>
+        <input type="date" id="ag-date" aria-label="Date" hidden>
+        <input type="text" id="ag-goal" list="ag-goals" placeholder="Which goal? (e.g. Sleep on a steady schedule)" aria-label="Which goal" maxlength="100" hidden>
+        <datalist id="ag-goals"></datalist>
+        <p class="note" id="ag-hint">Bills show up three days before they're due. Goal steps show one at a time.</p>
+        <div class="row"><button class="btn primary" type="submit">Add</button><span class="saved" id="ag-saved"></span></div>
+      </form>
+    </details>
+    <details class="more" id="agenda-all" hidden><summary></summary><ul class="manage" id="agenda-manage"></ul></details>
+  </section>
+
+  <section id="panel-goals" role="tabpanel" aria-labelledby="tab-goals" hidden style="display:grid;gap:16px">
+    <p class="goals-intro">Your goals, kept safe here so you don't have to carry them. Small things first; the big ones wait folded below until you want them. One step at a time reaches your Today tab.</p>
+    <figure class="rose" id="rose-fig" hidden>
+      <div class="rose-glass"><canvas id="rose" role="img" aria-label="A stained-glass window with one pane for each of your goals"></canvas><div class="light"></div></div>
+      <figcaption class="note">Each pane is one of your goals: blue for big, amber for medium, rose for small. The bright panes are the ones in motion. Tap a pane to find its goal.</figcaption>
+    </figure>
+    <div id="goals-tiers" style="display:grid;gap:16px"></div>
+    <p class="empty" id="goals-empty">Your goals appear here once the board loads.</p>
+    <p class="note">To add, change or set one aside, tell Sophia on her list or at a meeting.</p>
+  </section>
+
+  <section id="panel-you" role="tabpanel" aria-labelledby="tab-you" hidden style="display:grid;gap:14px">
+    <div class="meter">
+      <div class="gmeter" id="owner-glyphs" aria-hidden="true"></div>
+      <span class="meter-label" id="meter-label">Loading your list…</span>
+    </div>
+    <ul class="list" id="owner-list"></ul>
+    <p class="empty" id="owner-empty" hidden>Nothing for you yet. Sophia adds your list each morning.</p>
+    <details class="done-earlier" id="owner-earlier" hidden><summary></summary><ul class="list" id="owner-earlier-list" style="margin-top:10px"></ul></details>
+  </section>
+
+  <section id="panel-sophia" role="tabpanel" aria-labelledby="tab-sophia" hidden style="display:grid;gap:14px">
+    <form class="add" id="add-form">
+      <input type="text" id="add-input" placeholder="Ask Sophia to…" aria-label="Something for Sophia to do" maxlength="300">
+      <button class="btn primary" type="submit">Add</button>
+    </form>
+    <ul class="list" id="sophia-list"></ul>
+    <p class="empty" id="sophia-empty" hidden>Nothing here yet. Add anything you'd like Sophia to do; she reads this list each session.</p>
+  </section>
+
+  <div class="frieze" aria-hidden="true">{{FRIEZE2}}</div>
+
+  <section class="meeting">
+    <h2>Tonight's meeting</h2>
+    <p class="note" id="sophia-meeting" hidden></p>
+    <label for="meeting-notes" class="note">What you want to talk about tonight</label>
+    <textarea id="meeting-notes" placeholder="Plans, ideas, things to add to Sophia's constitution…"></textarea>
+    <span class="saved" id="meeting-saved"></span>
+  </section>
+
+  <p class="colophon"><span class="glyph g33"></span>The glyphs on this board are letters from Gavin's own alphabet.</p>
+</div>
+
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const pad = (n) => String(n).padStart(2, "0");
+  const now = new Date();
+  const today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+  $("today-label").textContent = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+  // The hour tints the window and sets the greeting.
+  const hr = now.getHours();
+  const part = hr < 5 ? "night" : hr < 12 ? "morning" : hr < 17 ? "afternoon" : hr < 21 ? "evening" : "night";
+  $("greet").textContent = { morning: "Good morning, Gavin.", afternoon: "Good afternoon, Gavin.", evening: "Good evening, Gavin.", night: "Late night, Gavin. Rest counts too." }[part];
+  $("tint").dataset.part = part;
+
+  // ---- tabs (remembered per viewer)
+  const TABS = ["today", "goals", "you", "sophia"];
+  function showTab(which) {
+    if (!TABS.includes(which)) which = "today";
+    TABS.forEach((t) => {
+      $("tab-" + t).setAttribute("aria-selected", String(t === which));
+      $("panel-" + t).hidden = t !== which;
+    });
+    if (which === "goals") requestAnimationFrame(() => drawRose());
+    try { localStorage.setItem("crew-tab", which); } catch (e) {}
+  }
+  TABS.forEach((t) => $("tab-" + t).addEventListener("click", () => showTab(t)));
+  // A bookmark opens on Today; the board#goals / #asks / #sophia link opens another tab.
+  const HASH_TAB = { "#today": "today", "#agenda": "today", "#goals": "goals", "#asks": "you", "#sophia": "sophia" };
+  showTab(HASH_TAB[location.hash] || "today");
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+  function copyBtn(text) {
+    const b = el("button", "btn", "Copy");
+    b.type = "button";
+    b.addEventListener("click", () => {
+      const done = () => { b.textContent = "Copied"; setTimeout(() => (b.textContent = "Copy"), 1500); };
+      try {
+        navigator.clipboard.writeText(text).then(done, () => selectCode(b));
+      } catch (e) { selectCode(b); }
+    });
+    return b;
+  }
+  function selectCode(b) {
+    const code = b.parentElement.querySelector("code");
+    const r = document.createRange(); r.selectNodeContents(code);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    b.textContent = "Selected";
+  }
+
+  let db = null;
+  const answerDrafts = {};
+
+  // ---- the glyph meter: each item gets a steady letter from his alphabet, lit when done
+  function hashId(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+  const gclass = (n) => "g" + String(n).padStart(2, "0");
+  function glyphMeter(box, entries) {
+    const used = new Set(), prev = box._lit || {};
+    const cells = entries.map((e) => {
+      let n = (hashId(e.id) % 33) + 1;
+      while (used.has(n) && used.size < 33) n = (n % 33) + 1;
+      used.add(n);
+      const s = el("span", "glyph gcell " + gclass(n) + (e.done ? " lit" : ""));
+      if (e.done && prev[e.id] === false) s.classList.add("pop");
+      return s;
+    });
+    box._lit = Object.fromEntries(entries.map((e) => [e.id, e.done]));
+    box.replaceChildren(...cells);
+  }
+
+  // ---- your list
+  function ownerItem(snap) {
+    const t = snap.data();
+    const li = el("li", "item" + (t.kind === "question" ? " q" : "") + (t.done ? " is-done" : ""));
+    const box = el("input", "check");
+    box.type = "checkbox"; box.checked = !!t.done; box.id = "chk-" + snap.id;
+    box.setAttribute("aria-label", "Done: " + t.title);
+    box.disabled = !db;
+    box.addEventListener("change", async () => {
+      box.disabled = true;
+      try { await db.doc("owner_tasks/" + snap.id).update({ done: box.checked, doneAt: box.checked ? new Date().toISOString() : null }); }
+      catch (e) { box.checked = !box.checked; }
+      box.disabled = false;
+    });
+    const body = el("div", "body");
+    const title = el("p", "title", t.title);
+    if (t.size) title.appendChild(el("span", "tag", t.size));
+    if (t.kind === "question") title.appendChild(el("span", "tag k-bill", "Question"));
+    body.appendChild(title);
+    if (t.detail) body.appendChild(el("p", "detail", t.detail));
+    if (t.code) {
+      const c = el("div", "code");
+      c.appendChild(el("code", null, t.code));
+      c.appendChild(copyBtn(t.code));
+      body.appendChild(c);
+    }
+    if (t.link && t.link.url) {
+      const a = el("a", "link", t.link.label || t.link.url);
+      a.href = t.link.url; a.target = "_blank"; a.rel = "noopener";
+      body.appendChild(a);
+    }
+    if (t.kind === "question") {
+      const ta = el("textarea");
+      ta.id = "ans-" + snap.id;
+      ta.placeholder = "Your answer";
+      ta.setAttribute("aria-label", "Answer: " + t.title);
+      ta.value = answerDrafts[snap.id] != null ? answerDrafts[snap.id] : (t.answer || "");
+      ta.disabled = !db;
+      const saved = el("span", "saved");
+      const save = debounce(async () => {
+        try {
+          await db.doc("owner_tasks/" + snap.id).update({ answer: ta.value, done: ta.value.trim() !== "" || !!t.done });
+          delete answerDrafts[snap.id];
+          saved.textContent = "Saved";
+        } catch (e) { saved.textContent = "Not saved. Try again."; }
+      }, 900);
+      ta.addEventListener("input", () => { answerDrafts[snap.id] = ta.value; saved.textContent = "Saving…"; save(); });
+      body.appendChild(ta); body.appendChild(saved);
+    }
+    li.appendChild(box); li.appendChild(body);
+    return li;
+  }
+
+  let pendingOwner = null;
+  function renderOwner(docs) {
+    // Don't rebuild the list under someone who is typing an answer; catch up when they leave the box.
+    const a = document.activeElement;
+    if (a && a.tagName === "TEXTAREA" && ($("owner-list").contains(a) || $("owner-earlier-list").contains(a))) {
+      pendingOwner = docs; return;
+    }
+    pendingOwner = null;
+    const sorted = docs.slice().sort((a, b) => ((a.data().day || "").localeCompare(b.data().day || "")) || ((a.data().order || 0) - (b.data().order || 0)));
+    const current = sorted.filter((d) => !d.data().done || d.data().day === today);
+    const earlier = sorted.filter((d) => d.data().done && d.data().day !== today);
+    const list = $("owner-list"); list.replaceChildren(...current.map(ownerItem));
+    $("owner-empty").hidden = current.length > 0;
+    const doneCount = current.filter((d) => d.data().done).length;
+    glyphMeter($("owner-glyphs"), current.map((d) => ({ id: d.id, done: !!d.data().done })));
+    $("meter-label").textContent = current.length ? doneCount + " of " + current.length + " done" : "All clear";
+    $("owner-earlier").hidden = earlier.length === 0;
+    $("owner-earlier").querySelector("summary").textContent = earlier.length + " finished on earlier days";
+    $("owner-earlier-list").replaceChildren(...earlier.map(ownerItem));
+    openAsks = docs.filter((d) => !d.data().done).length;
+    renderNudge();
+  }
+
+  $("panel-you").addEventListener("focusout", () => setTimeout(() => { if (pendingOwner) renderOwner(pendingOwner); }, 0));
+
+
+  // ---- Today: the agenda (owner, 2026-10-07: "I'm better with an agenda" than a calendar)
+  // Calm by design: at most five things show at once; the rest fold away.
+  const KINDS = { bill: "Bill", chore: "Chore", care: "Self-care", goal: "Goal step" };
+  const KIND_ORDER = { bill: 0, care: 1, chore: 2, goal: 3 };
+  const WEEKDAYS = ["Sundays", "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays"];
+  const SHOW_MAX = 5, BILL_LEAD = 3, DAY = 86400000;
+  let items = [], doneToday = {}, openAsks = 0, confirmId = null, agendaLoaded = false;
+  const agendaDay = today;
+  const ymd = (d) => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const parseDay = (s) => { const p = String(s || "").split("-").map(Number); return p[0] ? new Date(p[0], p[1] - 1, p[2]) : null; };
+  const dayStart = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
+  const monthDue = (y, m, day) => new Date(y, m, Math.min(day, new Date(y, m + 1, 0).getDate()));
+  const between = (a, b) => Math.round((b - a) / DAY);
+  const short = (d) => d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+
+  // When an item is due, as { key, label }; null when it isn't on today's agenda.
+  function dueInfo(it, t) {
+    const ev = it.every || "daily";
+    if (ev === "daily") return { mode: "day", label: "" };
+    if (ev === "weekly") return Number(it.weekday) === t.getDay() ? { mode: "day", label: "" } : null;
+    const lead = it.kind === "bill" ? BILL_LEAD : 0;
+    let due;
+    if (ev === "monthly") {
+      const md = Number(it.monthDay) || 1;
+      due = monthDue(t.getFullYear(), t.getMonth(), md);
+      const created = it.createdAt ? new Date(it.createdAt) : null;
+      const madeDay = created ? new Date(created.getFullYear(), created.getMonth(), created.getDate()) : null;
+      // Done this month, or added after this month's date had passed: the next one is next month's.
+      if (it.doneFor === ymd(due) || (madeDay && due < madeDay)) due = monthDue(t.getFullYear(), t.getMonth() + 1, md);
+      else if (between(t, due) > lead) {
+        const prev = monthDue(t.getFullYear(), t.getMonth() - 1, md);   // last month's, if it's still open
+        if (it.doneFor !== ymd(prev) && it.createdAt && new Date(it.createdAt) <= prev) due = prev;
+      }
+    } else if (ev === "once") {
+      due = parseDay(it.date);
+      if (!due || it.doneFor === ymd(due)) return null;
+    } else return null;
+    const d = between(t, due);
+    if (d > lead) return null;
+    const label = d > 1 ? "Due in " + d + " days (" + short(due) + ")" : d === 1 ? "Due tomorrow" : d === 0 ? (it.kind === "bill" ? "Due today" : "") : "Still open from " + short(due);
+    return { mode: "cycle", key: ymd(due), label, late: d < 0 };
+  }
+
+  function todaysAgenda() {
+    const t = dayStart(), tKey = ymd(t), out = [];
+    const active = items.filter((s) => !s.data().paused);
+    active.filter((s) => s.data().kind !== "goal").forEach((s) => {
+      const it = s.data();
+      const info = dueInfo(it, t);
+      if (info) out.push({ snap: s, info, done: info.mode === "day" ? !!doneToday[s.id] : false });
+      else if (it.doneOn === tKey && (it.every === "monthly" || it.every === "once")) out.push({ snap: s, info: { mode: "cycle", key: it.doneFor, label: "" }, done: true });
+    });
+    // Goals: one step at a time, the first one not done yet.
+    const goals = {};
+    active.filter((s) => s.data().kind === "goal").forEach((s) => (goals[s.data().goal || "Goal"] = goals[s.data().goal || "Goal"] || []).push(s));
+    Object.values(goals).forEach((steps) => {
+      steps.sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
+      steps.filter((s) => s.data().doneFor === "done" && s.data().doneOn === tKey).forEach((s) => out.push({ snap: s, info: { mode: "goal", label: "" }, done: true }));
+      const next = steps.find((s) => s.data().doneFor !== "done");
+      if (next) out.push({ snap: next, info: { mode: "goal", label: "" }, done: false });
+    });
+    out.sort((a, b) => Number(a.done) - Number(b.done) || (b.info.late ? 1 : 0) - (a.info.late ? 1 : 0)
+      || KIND_ORDER[a.snap.data().kind] - KIND_ORDER[b.snap.data().kind] || (a.snap.data().order || 0) - (b.snap.data().order || 0));
+    return out;
+  }
+
+  let writing = Promise.resolve();
+  function setDone(entry, v) {
+    const id = entry.snap.id, t = ymd(dayStart());
+    writing = writing.then(async () => {
+      if (entry.info.mode === "day") {
+        doneToday = Object.assign({}, doneToday, { [id]: v });
+        await db.doc("agenda_done/" + agendaDay).set({ day: agendaDay, ids: doneToday });
+      } else {
+        const key = entry.info.mode === "goal" ? "done" : entry.info.key;
+        await db.doc("agenda_items/" + id).update(v ? { doneFor: key, doneOn: t } : { doneFor: null, doneOn: null });
+      }
+    }).catch(() => {});
+    return writing;
+  }
+
+  function agendaItem(entry) {
+    const it = entry.snap.data();
+    const li = el("li", "item" + (entry.done ? " is-done" : ""));
+    const box = el("input", "check");
+    box.type = "checkbox"; box.checked = entry.done; box.id = "ag-chk-" + entry.snap.id; box.disabled = !db;
+    box.setAttribute("aria-label", "Done: " + it.title);
+    box.addEventListener("change", () => {
+      li.classList.toggle("is-done", box.checked);            // answer the tap at once; the store catches up
+      box.disabled = true; setDone(entry, box.checked).then(() => (box.disabled = false));
+    });
+    const body = el("div", "body");
+    const title = el("p", "title", it.title);
+    title.appendChild(el("span", "tag k-" + (it.kind || "chore"), KINDS[it.kind] || "Task"));
+    if (it.example) title.appendChild(el("span", "tag", "Example"));
+    body.appendChild(title);
+    if (entry.info.label) body.appendChild(el("p", "when" + (entry.info.late ? " late" : ""), entry.info.label));
+    if (it.kind === "goal" && it.goal) body.appendChild(el("p", "detail", "Toward: " + it.goal));
+    if (it.note) body.appendChild(el("p", "detail", it.note));
+    li.appendChild(box); li.appendChild(body);
+    return li;
+  }
+
+  function schedule(it) {
+    if (it.kind === "goal") return "Goal: " + (it.goal || "—");
+    if (it.every === "weekly") return "Every week, " + WEEKDAYS[Number(it.weekday) || 0];
+    if (it.every === "monthly") return "Every month on day " + (it.monthDay || 1);
+    if (it.every === "once") { const d = parseDay(it.date); return d ? "Once, " + short(d) : "Once"; }
+    return "Every day";
+  }
+
+  function renderAgenda() {
+    if (!agendaLoaded) return;
+    const all = todaysAgenda();
+    const open = all.filter((e) => !e.done), done = all.filter((e) => e.done);
+    const shown = open.slice(0, SHOW_MAX), later = open.slice(SHOW_MAX);
+    $("agenda-list").replaceChildren(...shown.map(agendaItem), ...done.map(agendaItem));
+    $("agenda-empty").hidden = all.length > 0;
+    $("agenda-later").hidden = later.length === 0;
+    $("agenda-later").querySelector("summary").textContent = later.length + " more, whenever you're ready";
+    $("agenda-later-list").replaceChildren(...later.map(agendaItem));
+    glyphMeter($("agenda-glyphs"), all.map((e) => ({ id: e.snap.id, done: e.done })));
+    $("agenda-label").textContent = !all.length ? "All clear" : done.length === all.length ? "All " + all.length + " done. Today is written." : done.length + " of " + all.length + " done today";
+    // Everything on the agenda, to pause or remove.
+    const sorted = items.slice().sort((a, b) => KIND_ORDER[a.data().kind] - KIND_ORDER[b.data().kind] || (a.data().order || 0) - (b.data().order || 0));
+    $("agenda-all").hidden = sorted.length === 0;
+    $("agenda-all").querySelector("summary").textContent = "Everything on your agenda (" + sorted.length + ")";
+    $("agenda-manage").replaceChildren(...sorted.map((s) => {
+      const it = s.data(), li = el("li", it.paused ? "paused" : "");
+      const what = el("span", "what", it.title + (it.example ? " (example)" : ""));
+      what.appendChild(el("span", "sched", (KINDS[it.kind] || "Task") + " · " + schedule(it) + (it.paused ? " · paused" : "")));
+      const pause = el("button", "btn", it.paused ? "Resume" : "Pause"); pause.type = "button"; pause.disabled = !db;
+      pause.addEventListener("click", () => db.doc("agenda_items/" + s.id).update({ paused: !it.paused }).catch(() => {}));
+      const rm = el("button", "btn", confirmId === s.id ? "Sure? Remove" : "Remove"); rm.type = "button"; rm.disabled = !db;
+      rm.addEventListener("click", () => {
+        if (confirmId !== s.id) { confirmId = s.id; renderAgenda(); return; }
+        confirmId = null; db.doc("agenda_items/" + s.id).delete().catch(() => {});
+      });
+      li.appendChild(what); li.appendChild(pause); li.appendChild(rm);
+      return li;
+    }));
+    const goals = [...new Set(items.filter((s) => s.data().kind === "goal").map((s) => s.data().goal).filter(Boolean))];
+    $("ag-goals").replaceChildren(...goals.map((g) => { const o = el("option"); o.value = g; return o; }));
+    renderGoals();
+  }
+  function renderNudge() {
+    $("asks-nudge").hidden = openAsks === 0;
+    $("asks-text").textContent = openAsks === 1 ? "Sophia has 1 thing for you." : "Sophia has " + openAsks + " things for you.";
+  }
+  $("asks-open").addEventListener("click", () => showTab("you"));
+
+  // ---- Goals (owner, 2026-10-07: "have them off of my shoulders and trust you with them")
+  const TIERS = [
+    // Small first, big last (owner, 2026-10-07: "anything to help me keep from getting overwhelmed").
+    { key: "small", label: "Small", glyph: "g26", color: "--rose", open: true, note: "Everyday care" },
+    { key: "medium", label: "Medium", glyph: "g23", color: "--amber", open: true, note: "The next few seasons" },
+    { key: "big", label: "Big", glyph: "g21", color: "--glass", open: false, note: "Kept safe for later" },
+  ];
+  let goalDocs = [], goalsLoaded = false;
+  const tierOpen = {};
+  function nextStepFor(name) {
+    if (!name) return null;
+    const steps = items.filter((s) => s.data().kind === "goal" && s.data().goal === name && !s.data().paused)
+      .sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
+    const next = steps.find((s) => s.data().doneFor !== "done");
+    return next ? next.data().title : null;
+  }
+  function goalRow(snap) {
+    const g = snap.data();
+    const li = el("li", "goal"); li.id = "goal-" + snap.id;
+    li.appendChild(el("p", "goal-title", g.title));
+    if (g.detail) li.appendChild(el("p", "goal-detail", g.detail));
+    const step = nextStepFor(g.agendaGoal);
+    if (step) { const p = el("p", "next"); p.appendChild(el("b", null, "Next step")); p.appendChild(document.createTextNode(step)); li.appendChild(p); }
+    const meta = el("div", "goal-meta");
+    const st = g.status || "resting";
+    meta.appendChild(el("span", "chip" + (st === "in motion" || st === "daily" ? " motion" : ""), st === "resting" ? "Kept safe" : st));
+    (g.threads || []).forEach((t) => meta.appendChild(el("span", "chip thread", t)));
+    li.appendChild(meta);
+    return li;
+  }
+  function renderGoals() {
+    if (!goalsLoaded) return;
+    $("goals-empty").hidden = goalDocs.length > 0;
+    $("goals-empty").textContent = "No goals here yet. Tell Sophia one and she'll keep it.";
+    $("goals-tiers").replaceChildren(...TIERS.map((t) => {
+      const mine = goalDocs.filter((s) => (s.data().tier || "big") === t.key).sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
+      if (!mine.length) return document.createTextNode("");
+      const box = el("details", "tier " + t.key);
+      box.open = t.key in tierOpen ? tierOpen[t.key] : t.open;
+      box.addEventListener("toggle", () => { tierOpen[t.key] = box.open; });
+      const head = el("summary", "tier-head");
+      const gl = el("span", "glyph " + t.glyph); gl.setAttribute("aria-hidden", "true");
+      head.appendChild(gl); head.appendChild(el("h3", null, t.label));
+      head.appendChild(el("span", "count", t.note + " · " + mine.length));
+      const ul = el("ul", "list"); ul.style.gap = "0";
+      ul.replaceChildren(...mine.map(goalRow));
+      box.appendChild(head); box.appendChild(ul);
+      return box;
+    }));
+    $("rose-fig").hidden = goalDocs.length === 0;
+    drawRose();
+  }
+
+  // ---- the goals window: a Voronoi of leaded glass, one pane per goal plus smoky filler panes
+  let roseSites = [];
+  function rgbOf(token) {
+    const v = getComputedStyle(document.documentElement).getPropertyValue(token).trim();
+    const m = v.match(/^#([0-9a-f]{6})$/i);
+    return m ? [parseInt(m[1].slice(0, 2), 16), parseInt(m[1].slice(2, 4), 16), parseInt(m[1].slice(4, 6), 16)] : [120, 120, 140];
+  }
+  function rng(seed) { let s = seed || 1; return () => ((s = Math.imul(s ^ (s >>> 15), 2246822507) ^ Math.imul(s ^ (s >>> 13), 3266489909)) >>> 0) / 4294967296; }
+  function drawRose() {
+    const cv = $("rose");
+    if (!cv || !goalsLoaded || $("panel-goals").hidden || !goalDocs.length) return;
+    const cssW = cv.clientWidth; if (!cssW) return;
+    const scale = Math.min(window.devicePixelRatio || 1, 2);
+    const W = Math.round(cssW * scale), H = Math.round(W * 7 / 16);
+    if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
+    const order = { big: 0, medium: 1, small: 2 };
+    const goals = goalDocs.slice().sort((a, b) => order[a.data().tier || "big"] - order[b.data().tier || "big"] || (a.data().order || 0) - (b.data().order || 0));
+    const fill = Math.ceil(goals.length * 0.7), n = goals.length + fill;
+    const cols = Math.ceil(Math.sqrt(n * 16 / 7)), rows = Math.ceil(n / cols);
+    // Spread panes over a jittered grid; the shuffle is seeded so the window never changes unless the goals do.
+    const r = rng(hashId(goals.map((g) => g.id).join("|")));
+    const cells = [...Array(cols * rows).keys()].sort(() => r() - .5).slice(0, n);
+    const colors = { "--glass": rgbOf("--glass"), "--amber": rgbOf("--amber"), "--rose": rgbOf("--rose") };
+    roseSites = cells.map((c, i) => {
+      const cx = ((c % cols) + .5 + (r() - .5) * .7) / cols * W, cy = ((Math.floor(c / cols)) + .5 + (r() - .5) * .7) / rows * H;
+      const g = goals[i];
+      if (!g) { const k = 34 + r() * 26; return { x: cx, y: cy, rgb: [k, k + 6, k + 22], id: null }; }
+      const d = g.data(), tier = TIERS.find((t) => t.key === (d.tier || "big"));
+      const bright = d.status && d.status !== "resting";
+      const j = .82 + r() * .3, f = bright ? 1.05 * j : .55 * j;
+      return { x: cx, y: cy, rgb: colors[tier.color].map((v) => Math.min(255, v * f)), id: g.id };
+    });
+    const ctx = cv.getContext("2d"), img = ctx.createImageData(W, H), px = img.data;
+    const lead = 2.4 * scale, bevel = 14 * scale, S = roseSites, L = S.length;
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      let d1 = 1e12, d2 = 1e12, k1 = 0;
+      for (let k = 0; k < L; k++) { const dx = x - S[k].x, dy = y - S[k].y, d = dx * dx + dy * dy; if (d < d1) { d2 = d1; d1 = d; k1 = k; } else if (d < d2) d2 = d; }
+      const edge = (Math.sqrt(d2) - Math.sqrt(d1)) / 2, o = (y * W + x) * 4;
+      if (edge < lead) { px[o] = 18; px[o + 1] = 14; px[o + 2] = 12; px[o + 3] = 255; continue; }
+      const c = S[k1].rgb, b = Math.min(1, edge / bevel);
+      const light = .72 + .28 * b + .18 * (1 - y / H) * (1 - x / W);       // light falls from the upper left
+      const grain = 1 + (((x * 73856093) ^ (y * 19349663)) % 7) / 160;      // a little texture in the glass
+      px[o] = Math.min(255, c[0] * light * grain); px[o + 1] = Math.min(255, c[1] * light * grain); px[o + 2] = Math.min(255, c[2] * light * grain); px[o + 3] = 255;
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+  $("rose").addEventListener("click", (e) => {
+    const cv = $("rose"), rect = cv.getBoundingClientRect();
+    const x = (e.clientX - rect.left) * cv.width / rect.width, y = (e.clientY - rect.top) * cv.height / rect.height;
+    let best = null, bd = 1e12;
+    roseSites.forEach((s) => { const d = (x - s.x) ** 2 + (y - s.y) ** 2; if (d < bd) { bd = d; best = s; } });
+    if (!best || !best.id) return;
+    const row = $("goal-" + best.id); if (!row) return;
+    const tier = row.closest("details"); if (tier && !tier.open) tier.open = true;
+    row.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+    row.classList.remove("flash"); void row.offsetWidth; row.classList.add("flash");
+  });
+  let roseTimer;
+  window.addEventListener("resize", () => { clearTimeout(roseTimer); roseTimer = setTimeout(drawRose, 150); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => drawRose());
+
+  // The add form shows only the fields that fit what's being added.
+  function syncForm() {
+    const kind = $("ag-kind").value, every = $("ag-every");
+    const goal = kind === "goal";
+    every.hidden = goal;
+    if (kind === "bill" && (every.value === "daily" || every.value === "weekly")) every.value = "monthly";
+    [...every.options].forEach((o) => (o.disabled = kind === "bill" && (o.value === "daily" || o.value === "weekly")));
+    $("ag-weekday").hidden = goal || every.value !== "weekly";
+    $("ag-monthday").hidden = goal || every.value !== "monthly";
+    $("ag-date").hidden = goal || every.value !== "once";
+    $("ag-goal").hidden = !goal;
+  }
+  $("ag-kind").addEventListener("change", syncForm);
+  $("ag-every").addEventListener("change", syncForm);
+  syncForm();
+  $("agenda-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!db) return;
+    const kind = $("ag-kind").value, every = kind === "goal" ? "goal" : $("ag-every").value;
+    const doc = { title: $("ag-title").value.trim(), kind, every, paused: false, createdAt: new Date().toISOString(), order: Date.now() };
+    if (!doc.title) return;
+    if (every === "weekly") doc.weekday = Number($("ag-weekday").value);
+    if (every === "monthly") { doc.monthDay = Math.min(31, Math.max(1, Number($("ag-monthday").value) || 1)); }
+    if (every === "once") { if (!$("ag-date").value) { $("ag-saved").textContent = "Pick a date first."; return; } doc.date = $("ag-date").value; }
+    if (kind === "goal") { doc.goal = $("ag-goal").value.trim(); if (!doc.goal) { $("ag-saved").textContent = "Name the goal first."; return; } }
+    try { await db.collection("agenda_items").add(doc); $("ag-title").value = ""; $("ag-saved").textContent = "Added"; }
+    catch (err) { $("ag-saved").textContent = "Not saved. Try again."; }
+  });
+  // Left open past midnight? Start the new day fresh.
+  setInterval(() => { if (ymd(dayStart()) !== agendaDay) location.reload(); }, 5 * 60 * 1000);
+
+  // ---- Sophia's list
+  function sophiaItem(snap) {
+    const t = snap.data();
+    const li = el("li", "item" + (t.done ? " is-done" : ""));
+    li.style.gridTemplateColumns = "1fr";
+    const body = el("div", "body");
+    const row = el("div", "row");
+    row.appendChild(el("span", "status " + (t.done ? "ok" : "wait"), t.done ? "Done" : "Waiting"));
+    if (!t.done && db) {
+      const x = el("button", "btn x", "Remove");
+      x.type = "button";
+      x.addEventListener("click", async () => { x.disabled = true; try { await db.doc("sophia_tasks/" + snap.id).delete(); } catch (e) { x.disabled = false; } });
+      row.appendChild(x);
+    }
+    body.appendChild(row);
+    body.appendChild(el("p", "title", t.title));
+    if (t.reply) {
+      const r = el("p", "reply");
+      r.appendChild(el("b", null, "Sophia: "));
+      r.appendChild(document.createTextNode(t.reply));
+      body.appendChild(r);
+    }
+    li.appendChild(body);
+    return li;
+  }
+  function renderSophia(docs) {
+    const sorted = docs.slice().sort((a, b) => (Number(!!a.data().done) - Number(!!b.data().done)) || (b.data().createdAt || "").localeCompare(a.data().createdAt || ""));
+    $("sophia-list").replaceChildren(...sorted.map(sophiaItem));
+    $("sophia-empty").hidden = sorted.length > 0;
+  }
+
+  $("add-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const v = $("add-input").value.trim();
+    if (!v || !db) return;
+    $("add-input").disabled = true;
+    try {
+      await db.collection("sophia_tasks").add({ title: v, done: false, reply: "", day: today, createdAt: new Date().toISOString() });
+      $("add-input").value = "";
+    } catch (err) { /* keep the text so nothing is lost */ }
+    $("add-input").disabled = false;
+    $("add-input").focus();
+  });
+
+  // ---- tonight's meeting
+  let meetingDirty = false;
+  const saveMeeting = debounce(async () => {
+    try {
+      await db.doc("meetings/" + today).set({ day: today, ownerNotes: $("meeting-notes").value, sophiaNotes: lastSophiaNotes });
+      meetingDirty = false;
+      $("meeting-saved").textContent = "Saved";
+    } catch (e) { $("meeting-saved").textContent = "Not saved. Try again."; }
+  }, 900);
+  let lastSophiaNotes = "";
+  $("meeting-notes").addEventListener("input", () => {
+    if (!db) return;
+    meetingDirty = true; $("meeting-saved").textContent = "Saving…"; saveMeeting();
+  });
+
+  // ---- connect
+  function offline() {
+    $("offline").hidden = false;
+    $("agenda-label").textContent = "Your agenda appears here once the board can load.";
+    $("agenda-empty").hidden = true;
+    $("meter-label").textContent = "Your list appears here once the board can load.";
+    $("owner-empty").hidden = false;
+    $("sophia-empty").hidden = false;
+    $("add-input").disabled = true;
+    $("meeting-notes").disabled = true;
+  }
+  (window.claude && window.claude.use ? window.claude.use("db") : Promise.resolve(null)).then((d) => {
+    db = d;
+    if (!db) return offline();
+    db.collection("owner_tasks").onSnapshot((s) => renderOwner(s.docs), offline);
+    db.collection("agenda_items").onSnapshot((s) => { items = s.docs.slice(); agendaLoaded = true; renderAgenda(); }, offline);
+    db.collection("goals").onSnapshot((s) => { goalDocs = s.docs.slice(); goalsLoaded = true; renderGoals(); }, () => {});
+    db.doc("agenda_done/" + agendaDay).onSnapshot((s) => { doneToday = s.exists ? Object.assign({}, (s.data().ids || {})) : {}; renderAgenda(); }, () => {});
+    db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
+    db.doc("meetings/" + today).onSnapshot((s) => {
+      const m = s.exists ? s.data() : {};
+      lastSophiaNotes = m.sophiaNotes || "";
+      $("sophia-meeting").hidden = !lastSophiaNotes;
+      $("sophia-meeting").textContent = lastSophiaNotes ? "Sophia: " + lastSophiaNotes : "";
+      if (!meetingDirty && document.activeElement !== $("meeting-notes")) $("meeting-notes").value = m.ownerNotes || "";
+    }, () => {});
+  }, offline);
+})();
+</script>
