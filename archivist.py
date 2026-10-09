@@ -369,7 +369,7 @@ CODE_FOCUS = ("- Bugs: logic errors, edge cases (empty input, odd filenames with
 # its $1 budget before writing a word (2026-10-06).
 REPO_PARTS = {
     "helpers": (["agent.py", "archivist.py", "train.py", ".claude/settings.json", "sophia_boot.sh"], CODE_FOCUS),
-    "mac": (["sophia.py", "make_mac_script.py", "music_plan.py", "sophia_scan.sh", "sandbox_test.sh"],
+    "mac": (["sophia.py", "make_mac_script.py", "sophia_scan.sh", "sandbox_test.sh"],
             CODE_FOCUS),
     "mind": (["CLAUDE.md", "SOPHIA.md", "AUTONOMY.md", "SCOPE.md", "IMPROVE.md", "PERSONALITY_ROUTINE.md",
               "ORGANIZE.md", "README.md", "SETUP_PLAN.md", "agents/README.md", "agents/archivist.md",

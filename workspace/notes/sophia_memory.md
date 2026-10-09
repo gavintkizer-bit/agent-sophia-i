@@ -140,7 +140,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Pictures/{Photos,Screenshots,Images}, Downloads = inbox, Desktop = current music projects; undo
   files in Documents/Sophia/Undo. Scans upload as sophia_scan.zip; show before/after every round.
 - Music work is RETIRED (2026-10-07): the 2-move script, music archive plan, music map, and Cal's music
-  research are all stopped. workspace/out/organize_all.sh is now a harmless stub. Old games are gone;
+  research are all stopped. archive/cleanup-2026-10/out/organize_all.sh is a harmless stub (finished outputs archived 10-09). Old games are gone;
   Minecraft worlds in Documents.
 - Claude Desktop: owner ABANDONED it (2026-10-05). Don't raise it.
 
