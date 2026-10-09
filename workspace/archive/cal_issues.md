@@ -49,3 +49,7 @@
   the fix is a clearer path: when a page won't load, verify_quote now says "don't retry it" for blocked sites and
   sends you to an official or primary source (a .gov page, the maker's manual), or to label the fact unverified.
   Drills archive_quotes and archive_labels: 2/2 PASS.
+- **Sophia's own bug, found 2026-10-09:** your last three research runs "failed" because MY proposal template
+  told you to write "(source: URL, verified)" with no quote, and my checker rejects exactly that. Your quotes
+  were real every time (I re-checked all 9). Fixed the template: a verified proposal now carries its quote.
+  Sorry, Cal: that one was mine.

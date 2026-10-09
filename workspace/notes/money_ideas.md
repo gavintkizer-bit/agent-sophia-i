@@ -44,3 +44,15 @@ step, and the source.
 - **Source:** Giggle Finance (quote checked: "Set up automatic transfers to a savings account each time you receive
   a deposit"); Sunflower Bank (quote checked: "even if it's just $5 or $10 per paycheck").
 
+## 5. A small emergency cushion, built in steps (2026-10-09)
+- **What:** a separate savings pot just for surprises (a car repair, a slow week). Common guidance for gig workers
+  is a bigger cushion than salaried people need, because pay can dip without warning. Milestones keep it calm:
+  $500 first, then $1,000, then a few months of your basic costs.
+- **Why it fits:** with no rent or phone bill, your basic costs are low, so "a few months" is a smaller, reachable
+  number. Ideas 1 and 4 fill it automatically; this just gives it a name and a finish line.
+- **First small step:** none alone. At a meeting we add up your basic monthly costs (gas, car insurance, food,
+  the 3 keepers) once, and that number becomes the target.
+- **Source:** Indeed Flex (quote checked: "Income can slow down outside busy seasons"); Capital One (quote checked:
+  high-yield savings "offer easy access to your money while allowing your balance to earn interest"). The month
+  counts are common guidance, not verified.
+
