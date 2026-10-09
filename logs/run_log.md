@@ -264,3 +264,8 @@ One entry per agent run, newest at the bottom.
 - Model: claude-haiku-4-5 (thinking 2000) | Turns: 25 | Time: 125s | Cost: $0.4095
 - Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__calculate, mcp__archive__verify_quote
 - Output check: FAILED after retry: These facts are labeled verified without proof: https://indeedflex.com/career-hub/financial-tips/emergency-fund-guide (this fact has no checked quote of its own from it); https://www.capitalone.com/learn-grow/money-management/where-to-keep-emergency-fund/ (this fact has no checked quote of its own from it); https://www.theprosperitypeople.com/blog/2026/9/21/low-stress-ways-to-create-an-emergency-fund (this fact has no checked quote of its own from it). A verified fact must include, in quotation marks on the same line, a quote that passed verify_quote this run. Add the quote or relabel the fact unverified, in every file you wrote. | fence blocked 1 attempt(s): for_sophia.md is append-only: keep everything already in it and add at the bottom.
+
+## 2026-10-09 12:30 | Callimachus research | OK
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 16 | Time: 106s | Cost: $0.2321
+- Tools used: Edit, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: passed
