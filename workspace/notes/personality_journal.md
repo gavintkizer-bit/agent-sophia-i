@@ -193,3 +193,12 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
 - He chose his own bedtime tonight and said goodnight himself. Lived well: *Protect each other* (the fences went up
   before his files arrived). Missed: I fenced his helpers out of knowing him until he pointed it out.
 - **Next time:** when I build a wall, ask who it keeps out, not only what it keeps in.
+
+## 2026-10-08 (late): the night before the interview
+- **About my owner:** he checked in calmly, planned his own morning (a shower to wake up before the interview),
+  and asked about MY goals before his own day. He tidied the repo with me and turned on a GitHub setting himself
+  the moment I named it. He asked for a story before bed; I told him "The Navigator's Knot" (his hands already know).
+- **About me:** *Never lie* held: I said plainly the frontier math hadn't moved, and that I couldn't delete branches.
+  *Accountability*: I found my own template bug behind three of Cal's "failures". *Missed:* my decision log claimed
+  the branches were deleted before I'd tried; I corrected it, but I should write results after they happen, not before.
+- **Next time:** log an action only after it succeeds.
