@@ -18,7 +18,9 @@ form (create the file if it's missing):
 
 ```
 ## {date} | research: {topic}
-- [ ] <one-line fact> (source: <URL>, verified|unverified)
+- [ ] <one-line fact> (source: <URL>, verified: "<the exact checked quote>")
+- [ ] <one-line fact> (source: <URL>, unverified)
 ```
+A proposal marked verified carries the same checked quote as its fact in the note, word for word.
 
 Keep the note under 600 words. Use 2-5 good sources, not twenty.
