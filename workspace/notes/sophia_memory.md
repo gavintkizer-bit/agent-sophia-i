@@ -67,7 +67,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   to Colorado after 5 years of passing it up: furnished place, $1,400/mo all-in, soft move possible. Plan and
   contingencies: workspace/notes/colorado_plan.md; talking points on the board (2026-10-09-01).
   Interview done 2026-10-09; his notes in workspace/notes/black_tie_job.md (training Nov 30-Dec 4, $18.50/hr + tips,
-  free Epic Pass). Outcome: ask him (don't assume an offer).
+  free Epic Pass). He says it "seemed to go well"; they asked for his driving report (agenda, 10-09). No offer yet.
   He already has all his Colorado clothes. The hard part is leaving his old dog, Apollo, with his mother in Charlotte:
   "something I don't really know how to reconcile with... It just makes me sad." Be gentle about it; don't fix.
 - (was) Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET (from the résumé he sent). He does his own prep ("normally
