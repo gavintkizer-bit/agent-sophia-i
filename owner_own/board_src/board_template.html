@@ -141,6 +141,13 @@ details.done-earlier summary, details.more summary { cursor: pointer; color: var
 .manage li.paused .what { color: var(--muted); }
 
 /* Goals: three panes of glass, held by lead lines */
+.notes-head { margin: 4px 0 0; }
+.gnote { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.gnote summary { cursor: pointer; font-weight: 600; }
+.gnote h4 { margin: 12px 0 0; font-size: 15px; }
+.gnote p { margin: 6px 0 0; }
+.gnote ul { margin: 6px 0 0; padding-left: 20px; }
+.gnote li { margin: 2px 0; }
 .goals-intro { margin: 0; color: var(--muted); }
 .tier { display: block; border: 2px solid var(--lead); border-radius: 12px; overflow: hidden; background: var(--line); }
 .tier-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; color: var(--surface); cursor: pointer; list-style: none; }
@@ -274,6 +281,10 @@ details.tier[open] > .tier-head::after { content: "–"; }
       <figcaption class="note">Each pane is one of your goals: blue for big, amber for medium, rose for small. The bright panes are the ones in motion. Tap a pane to find its goal.</figcaption>
     </figure>
     <div id="goals-tiers" style="display:grid;gap:16px"></div>
+    <div id="goal-notes" hidden style="display:grid;gap:10px">
+      <h3 class="notes-head">Notes</h3>
+      <div id="goal-notes-list" style="display:grid;gap:10px"></div>
+    </div>
     <p class="empty" id="goals-empty">Your goals appear here once the board loads.</p>
     <p class="note">To add, change or set one aside, tell Sophia on her list or at a meeting.</p>
   </section>
@@ -695,6 +706,24 @@ details.tier[open] > .tier-head::after { content: "–"; }
     li.appendChild(meta);
     return li;
   }
+  // ---- notes under the goals (goal_notes: title, body, order). Plain text: "# " starts a heading, "- " a list item.
+  let noteDocs = [];
+  function renderNotes() {
+    $("goal-notes").hidden = noteDocs.length === 0;
+    const sorted = noteDocs.slice().sort((a, b) => (a.data().order || 0) - (b.data().order || 0));
+    $("goal-notes-list").replaceChildren(...sorted.map((snap) => {
+      const t = snap.data(), box = el("details", "gnote");
+      box.appendChild(el("summary", null, t.title || "Note"));
+      let ul = null;
+      String(t.body || "").split("\n").forEach((line) => {
+        if (line.startsWith("- ")) { if (!ul) { ul = el("ul"); box.appendChild(ul); } ul.appendChild(el("li", null, line.slice(2))); return; }
+        ul = null;
+        if (line.startsWith("# ")) box.appendChild(el("h4", null, line.slice(2)));
+        else if (line.trim()) box.appendChild(el("p", null, line));
+      });
+      return box;
+    }));
+  }
   function renderGoals() {
     if (!goalsLoaded) return;
     $("goals-empty").hidden = goalDocs.length > 0;
@@ -886,6 +915,7 @@ details.tier[open] > .tier-head::after { content: "–"; }
     db.collection("owner_tasks").onSnapshot((s) => renderOwner(s.docs), offline);
     db.collection("agenda_items").onSnapshot((s) => { items = s.docs.slice(); agendaLoaded = true; renderAgenda(); }, offline);
     db.collection("goals").onSnapshot((s) => { goalDocs = s.docs.slice(); goalsLoaded = true; renderGoals(); }, () => {});
+    db.collection("goal_notes").onSnapshot((s) => { noteDocs = s.docs.slice(); renderNotes(); }, () => {});
     watchDone();
     db.collection("sophia_tasks").onSnapshot((s) => renderSophia(s.docs), offline);
     db.doc("meetings/" + today).onSnapshot((s) => {
