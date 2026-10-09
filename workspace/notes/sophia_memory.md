@@ -63,7 +63,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 ## Nightly meetings (owner, 2026-10-07: "I would like this every night, yes")
 - Prep routine trig_01YUWAVL1bzrxsHQkqdPQYDn at 9:12 pm ET writes meetings/<date> sophiaNotes (done today,
   ONE step for tomorrow, one talk topic). After each meeting: evening steps of PERSONALITY_ROUTINE.md.
-- Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET (from the résumé he sent). He does his own prep ("normally
+- Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET, with Black Tie Breck (Breckenridge). He's ready to move
+  to Colorado after 5 years of passing it up: furnished place, $1,400/mo all-in, soft move possible. Plan and
+  contingencies: workspace/notes/colorado_plan.md; talking points on the board (2026-10-09-01).
+- (was) Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET (from the résumé he sent). He does his own prep ("normally
   good at this part"). Agenda has it; ask how it went.
 - Driving: goes out at 4 pm for the dinner rush. Agenda starter step Fri-Sun 10-09..11: "shoes on, open Uber Eats,
   go online" (STARTING is his hurdle). If it helps, offer it as a weekly item.
