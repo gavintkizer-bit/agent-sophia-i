@@ -175,3 +175,10 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - Picked: B, because the thing tested is my files, not a helper, and a facts-only control shows what the thread adds. Probes go STALE automatically when the thread changes, so an old probe never scores a new thread.
 - Level: green ($0.16)
 - Outcome: thread 8/8, facts 0/8 (one lenient keyword fixed after reading the answers). Re-run before 10-14.
+
+## 2026-10-09: Organizing the repo, chats and pages (owner: "All three are go.")
+- Repo: the finished drive-cleanup outputs (workspace/out, workspace/plans, organized_plan.md, cleanup_report.md) and
+  the retired music_plan.py moved to archive/cleanup-2026-10/. The tools stay at the root in case of a restart.
+  The README gains a "where things live" map. Six stale Oct-5 branches deleted (all superseded, nothing lost).
+- Chats: this one is titled "Sophia home (routines)"; key past chats retitled and tagged "sophia".
+- Pages: the Crew Board links to the Test Bench; both pinned in his claude.ai sidebar.

@@ -2,6 +2,23 @@
 
 My first Claude agent, built with the Claude Agent SDK and run in claude.ai/code cloud sessions.
 
+## Where things live (map, 2026-10-09)
+| You want… | Look here |
+|---|---|
+| Your day: agenda, goals, my asks, meeting notes | **Crew Board**: https://claude.ai/artifact/Ya8vK5Po45ujpGCbfugRHB |
+| Your human-to-agent tests | **Test Bench**: https://claude.ai/artifact/B75eBTeRhyFnpN3W6Fndpd (also linked from the board) |
+| Who Sophia is | `SOPHIA.md` (constitution, village, goals), `SCOPE.md`, `AUTONOMY.md` |
+| What Sophia remembers | `workspace/notes/sophia_memory.md` (her thread is at the top) |
+| Money, goals, ideas, good uses of AI | `workspace/notes/` |
+| Cal's research and audits | `workspace/archive/` (index: `workspace/archive/INDEX.md`) |
+| Training and tests | `training/` (drills, scoreboard, experiments, human tests) |
+| Your own writing and drawings you shared | `owner_own/` (only Sophia reads it) |
+| Finished projects | `archive/` (drive cleanup, Oct 2026) |
+
+**Chats:** the chat titled "Sophia home (routines)" is where the scheduled work runs (Cal's research, the
+nightly prep, the daily check-in). Start a fresh chat for each meeting or big task; everything that matters
+is saved here, so chats can come and go.
+
 ## Goal
 Sophia is my general agent and assistant (full scope: `SCOPE.md`). She does the work humans don't
 need to do, so I can spend my time on people and on what I make:
