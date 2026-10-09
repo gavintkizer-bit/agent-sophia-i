@@ -165,3 +165,9 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 - Measured: Cal's taxes run (10-08) hit a 403 and kept retrying the blocked page; the Wayback Machine is unreachable here.
 - One change: verify_quote's fetch error now says not to retry blocked sites and to find an official source.
   Re-drilled: archive_quotes and archive_labels 2/2 PASS ($0.06).
+
+## 2026-10-09 (light, daily check-in): check my own "[To verify]" before it matters
+- Measured: the Colorado plan carried two unverified claims. codot.gov showed one was WRONG for his car: a 2WD car
+  needs chains or an approved device under the Traction Law; good tires only count on AWD/4WD (rule updated Fall 2025).
+- One change: the plan and the board note now say so, with verified quotes. The DMV deadline stays marked (site blocked).
+- Lesson: a "[To verify]" tag is a debt. Pay it before the owner acts on the plan, not after.

@@ -11,9 +11,12 @@ and check, he chooses. Ties to his goals: steady job, move to Colorado, Quandary
 - **Lean: drive, if the tires pass and the move is before mid-November.** It's about 1,650 miles (about 3 days).
   The car carries far more, and a second trip back for it costs a flight plus 3 more driving days.
 - **Must-check before driving:** tire tread (a quarter in the groove; if you can see the top of Washington's head,
-  the tread is getting low), and whether the tires say M+S. Colorado's traction law on the I-70 mountain stretch
-  needs good-tread M+S or winter tires, chains, or a textile "snow sock" when it's in effect. Snow socks are
-  cheaper than winter tires and fold into the trunk. [To verify on codot.gov before he goes.]
+  the tread is getting low), and whether the tires say M+S.
+- **Traction law (checked on codot.gov 2026-10-09, quotes verified):** when it's on, AWD/4WD cars may rely on
+  good M+S/winter tires with 3/16" tread, but every other car needs "Chains or an approved alternative traction
+  device". The Malibu is front-wheel drive, so: chains or approved snow socks (AutoSock is on CDOT's approved list)
+  in the trunk, whatever the tires. "CDOT can implement traction and chain laws on any state highway", not only
+  I-70. Alerts by text: COtrip.org.
 - **Fly first if:** they need you for training within days, the tires are worn, or a big storm is forecast.
 
 ## Soft-move pack list (furnished place, so: you, not furniture)
@@ -32,5 +35,5 @@ and check, he chooses. Ties to his goals: steady job, move to Colorado, Quandary
 3. **The season ends (spring):** Black Tie is seasonal. Decide by February: stay for summer work, or come home.
 4. **Altitude:** first days, drink lots of water, go easy, no hard hikes yet (Quandary waits until you're used to it).
 5. **Paperwork after you arrive:** tell Nationwide your new address (rates change by state), and look up when
-   Colorado wants a new license and registration. [Exact deadlines to verify on colorado.gov.]
+   Colorado wants a new license and registration. [Still to verify: dmv.colorado.gov blocks our reader (403).]
 6. **Coming home:** your Charlotte home stays an option. A soft move is a test, not a promise.
