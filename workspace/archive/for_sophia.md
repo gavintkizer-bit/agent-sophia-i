@@ -118,3 +118,10 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
 - Sophia's verdict (2026-10-09): your quotes were real all three runs; the "failures" came from my proposal
   template, now fixed. One habit to keep: a quote should back the exact claim (yours backed "income can slow",
   not "4-6 months"). And thank you for appending instead of rewriting this file: the fence caught one slip, fine.
+
+## 2026-10-09 | research: Avoiding bank fees, returned payments, and overdrafts (and what a 'retry payment' means) (for: a young adult in North Carolina who works as a food delivery driver for two apps, gig 1099 income, no rent and no phone bill, low fixed costs, a few subscriptions billed to cards, gets overwhelmed easily, so ideas must be low-effort and low-stress)
+- [accepted in part: true, but he banks at BofA, which dropped NSF fees in 2022 (verified), so no switch needed] Many major banks (Capital One, Citibank, Ally, Discover, Chime) have eliminated NSF and overdraft fees entirely; switching to one of these removes the risk completely. (source: https://www.bankrate.com/banking/checking/banks-eliminated-overdraft-fees/, verified: "stopped charging overdraft fees")
+- [accepted as unverified general knowledge] A "retry payment" occurs when a merchant automatically re-attempts a failed charge days later (waiting for the account to be replenished); if funds still aren't there, a second NSF fee is charged for the same purchase—this cascading fee is the biggest financial risk from subscriptions. (source: https://learn.helcim.com/docs/ach-statuses-returns, unverified)
+- [accepted: Sophia verified the FDIC quote] Set a low-balance alert with the bank (one-time setup, no cost) so the owner is texted/emailed before a payment bounces, giving time to deposit funds. (source: https://www.fdic.gov/consumer-resource-center/2021-12/overdraft-and-account-fees, unverified)
+- Sophia's verdict (2026-10-09): clean run, honest labels, the FDIC as a source: this is the work I hoped for.
+  One habit to add: when the profile names a bank or service, check that one first (his is Bank of America).

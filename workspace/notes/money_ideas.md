@@ -56,3 +56,14 @@ step, and the source.
   high-yield savings "offer easy access to your money while allowing your balance to earn interest"). The month
   counts are common guidance, not verified.
 
+## 6. Two free guards against bank fees (2026-10-09)
+- **What:** (a) a low-balance alert from your bank by text, so you hear before a payment bounces; (b) know your
+  bank's rules: Bank of America stopped charging fees for returned (NSF) payments in 2022 and cut overdraft fees
+  to $10. A "retry payment" is when a company tries a failed charge again a few days later.
+- **Why it fits:** no new bank, no new app: one setting, once. It also guards the old-card subscriptions on your
+  cut list: a card that expired isn't the same as cancelled, so those companies may keep retrying until you cancel.
+- **First small step:** none alone. At a meeting, if you like, we find the alert setting in your bank app together.
+- **Source:** Bankrate (quote checked: "In 2022, Bank of America stopped charging NSF fees and reduced overdraft
+  fees to $10 from $35"); FDIC (quote checked: "Ask if your bank offers low balance alerts to notify you").
+  Re-check the bank's own terms before relying on them.
+

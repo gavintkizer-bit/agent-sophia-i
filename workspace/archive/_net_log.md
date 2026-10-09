@@ -42,3 +42,12 @@
 - 2026-10-09 00:27 WebFetch: https://www.theprosperitypeople.com/blog/2026/9/21/low-stress-ways-to-create-an-emergency-fund
 - 2026-10-09 00:27 mcp__archive__verify_quote: https://www.theprosperitypeople.com/blog/2026/9/21/low-stress-ways-to-create-an-emergency-fund
 - 2026-10-09 00:27 mcp__archive__verify_quote: https://www.theprosperitypeople.com/blog/2026/9/21/low-stress-ways-to-create-an-emergency-fund
+- 2026-10-09 12:28 WebSearch: avoiding bank overdraft fees NSF returned payment charges 2026
+- 2026-10-09 12:28 WebFetch: https://www.chase.com/personal/banking/education/basics/nsf-fees
+- 2026-10-09 12:28 WebFetch: https://www.wellsfargo.com/checking/overdraft-services/
+- 2026-10-09 12:28 WebSearch: "retry payment" bank NSF what does it mean declined transaction
+- 2026-10-09 12:29 WebFetch: https://www.bankrate.com/banking/checking/banks-eliminated-overdraft-fees/
+- 2026-10-09 12:29 WebFetch: https://www.fdic.gov/consumer-resource-center/2021-12/overdraft-and-account-fees
+- 2026-10-09 12:29 mcp__archive__verify_quote: https://www.bankrate.com/banking/checking/banks-eliminated-overdraft-fees/
+- 2026-10-09 12:29 mcp__archive__verify_quote: https://www.wellsfargo.com/checking/overdraft-services/
+- 2026-10-09 12:29 mcp__archive__verify_quote: https://www.fdic.gov/consumer-resource-center/2021-12/overdraft-and-account-fees
