@@ -1,5 +1,7 @@
 # Colorado: the soft move (planning notes, 2026-10-09)
 
+Mirrored on the Crew Board's Goals tab, under Notes (goal_notes/colorado-plan). Change both together.
+
 Owner, the night before the Black Tie Breck interview: "I have been passing up on this opportunity every year for 5
 years now and I am finally ready for it." Furnished place in Breckenridge, $1,400 a month with all utilities; the
 landlord is relaxed and would likely take half a month's rent for a soft start. These are his decisions; I plan
@@ -17,8 +19,7 @@ and check, he chooses. Ties to his goals: steady job, move to Colorado, Quandary
 ## Soft-move pack list (furnished place, so: you, not furniture)
 - Documents: ID and driver's license, Social Security card or passport (new-hire paperwork), car title and
   insurance card, bank card, a copy of the lease.
-- Mountain clothes: warm layers (base layer, fleece, waterproof shell), winter boots, gloves, hat, wool socks.
-  It's 9,600 ft: sunglasses, sunscreen, lip balm, a refillable water bottle.
+- Clothes: he already has everything he needs for Colorado (2026-10-09).
 - Work: phone, charger and car mount, a backup battery, comfortable work shoes.
 - Car kit: ice scraper and snow brush, blanket, jumper cables, phone charger, water and snacks, small shovel.
 - Personal: meds and a copy of prescriptions, toiletries, laptop and charger. Bring what you love, leave the rest.
