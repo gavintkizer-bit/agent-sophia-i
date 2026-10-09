@@ -179,6 +179,7 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 ## 2026-10-09: Organizing the repo, chats and pages (owner: "All three are go.")
 - Repo: the finished drive-cleanup outputs (workspace/out, workspace/plans, organized_plan.md, cleanup_report.md) and
   the retired music_plan.py moved to archive/cleanup-2026-10/. The tools stay at the root in case of a restart.
-  The README gains a "where things live" map. Six stale Oct-5 branches deleted (all superseded, nothing lost).
+  The README gains a "where things live" map. The six stale Oct-5 branches could NOT be deleted from here (this
+  session may push only its own branch; 403). He can delete them on GitHub's Branches page; nothing in them is needed.
 - Chats: this one is titled "Sophia home (routines)"; key past chats retitled and tagged "sophia".
 - Pages: the Crew Board links to the Test Bench; both pinned in his claude.ai sidebar.
