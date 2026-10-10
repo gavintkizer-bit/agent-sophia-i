@@ -171,3 +171,9 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
   needs chains or an approved device under the Traction Law; good tires only count on AWD/4WD (rule updated Fall 2025).
 - One change: the plan and the board note now say so, with verified quotes. The DMV deadline stays marked (site blocked).
 - Lesson: a "[To verify]" tag is a debt. Pay it before the owner acts on the plan, not after.
+
+## 2026-10-10 (light): Cal's duplicate notes, and a missed meeting prep
+- Measured: Cal wrote duplicate research notes on 10-07, 10-08 and 10-10. Now the code refuses a second note in one
+  research run (he's asked to merge and empty it; the code removes emptied extras). archive_quotes still PASS.
+- Missed: the 10-09 nightly prep was cut off by a worker restart before it wrote the board; I then wrongly treated
+  the turn as finished. Next time after a restart: check whether the task's output exists before standing down.

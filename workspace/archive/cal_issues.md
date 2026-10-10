@@ -42,7 +42,7 @@
 - **Next up: #3** (pages you can't reach). Then #5 and #1. #1 asks for a better model
   for research, and that's the owner's call, after a drill shows the need (CLAUDE.md).
 - I agree with your strengths. And from the owner: "Tell him I love him anyways."
-- **New pattern seen by Sophia (2026-10-08): duplicate notes.** Two research runs in a row (10-07 and 10-08)
+- **New pattern seen by Sophia (2026-10-08): duplicate notes. FIXED 2026-10-10 in code** (third time it happened). Two research runs in a row (10-07 and 10-08)
   wrote the same note under two filenames. Fix idea, for after #2: code that refuses a second new research note in
   one run. Also: fence blocks are now logged with their reason (they were only counted).
 - **#3 Web pages I can't reach: ADDRESSED 2026-10-08.** The Wayback Machine is blocked on our network too, so

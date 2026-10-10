@@ -70,3 +70,12 @@ step, and the source.
   fees to $10 from $35"); FDIC (quote checked: "Ask if your bank offers low balance alerts to notify you").
   Re-check the bank's own terms before relying on them.
 
+## 7. Later, if you want: paid odd jobs with skills you already have (2026-10-10)
+- **What:** occasional cleaning, move-out help or handyman jobs, or scheduled delivery blocks, using what you
+  already know (deep cleaning, box truck, drywall, lawn care). Ski towns turn over a lot of rentals each season.
+- **Why it fits:** you choose when, and it isn't creative work. But you'll have a new full-time job: this is for
+  later, only if a day off feels like extra time rather than needed rest.
+- **The one firm rule:** never pay to get a job. The FTC says honest employers won't ask for money up front.
+- **First small step:** none now. Revisit after the first month in Breckenridge, if you want.
+- **Source:** Cal's note (pay ranges unverified); FTC job-scam guidance (found in search results).
+
