@@ -41,6 +41,9 @@ step, and the source.
   $260-520 a year. It's the engine that fills ideas 1 and 3.
 - **First small step:** none alone. At a meeting we look at whether your bank can move money automatically when a
   deposit arrives, and you choose the share.
+- **Optional extra (2026-10-10):** Bank of America's Keep the Change rounds each debit purchase up and saves the
+  change; one setting, then nothing to remember (Savings Project, quote checked: "99% of those who sign up stay in
+  the program"). A small helper, not the main engine: cash weeks add nothing.
 - **Source:** Giggle Finance (quote checked: "Set up automatic transfers to a savings account each time you receive
   a deposit"); Sunflower Bank (quote checked: "even if it's just $5 or $10 per paycheck").
 

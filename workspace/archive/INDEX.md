@@ -16,6 +16,7 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 | 2026-10-08 | `research/2026-10-08-pay-yourself-first-automatic-saving-on-payday-for-.md` | Pay-yourself-first: automatic saving on payday for gig income (weekly payouts), low fixed costs, low stress | Giggle Finance, Sunflower Bank (quotes re-verified by Sophia) |
 | 2026-10-09 | `research/2026-10-09-emergency-fund-basics-how-big-where-to-keep-it-how.md` | Emergency fund basics: how big, where to keep it, how to build stress-free for gig workers with 1099 income, no rent, low fixed costs | Indeed Flex (verified), Capital One (verified), The Prosperity People (verified) |
 | 2026-10-09 | `research/2026-10-09-avoiding-bank-fees-returned-payments-and-overdraft.md` | Avoiding bank fees, returned payments, and overdrafts: NSF fees, overdraft fees, retry payments, fee-free banks, low-stress strategies (alerts, linked accounts) | Bankrate (verified), Wells Fargo (verified), FDIC (verified), Chase, PayPal Money Hub |
+| 2026-10-10 | `research/2026-10-10-round-up-and-micro-saving-tools-like-bank-of-ameri.md` | Round-up and micro-saving tools (Bank of America's Keep the Change): how they work, effectiveness for gig workers, enrollment retention (99%), typical savings ($400/year), fees, and better alternatives (auto-transfer to HYSA) | Savings Project (verified), MyBankTracker (unverified), Finmasters, MoneyClashers |
 
 ## Audits
 
