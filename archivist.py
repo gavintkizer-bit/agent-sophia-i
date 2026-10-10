@@ -493,8 +493,18 @@ def main():
         return [p for p in ARCHIVE.rglob("*.md") if not p.name.startswith("_")]
     before = {p: p.read_text() for p in written()}
 
+    def duplicate_problem() -> str:
+        """One research run, one note (Cal wrote the same note twice on 10-07, 10-08 and 10-10)."""
+        if args.mode != "research":
+            return ""
+        new = [p for p in (ARCHIVE / "research").glob("*.md") if p not in before]
+        extra = [p.name for p in new if p.name != pathlib.Path(spec[0]).name and p.read_text().strip()]
+        return ("You wrote more than one research note: " + ", ".join(extra) + f". Keep only {pathlib.Path(spec[0]).name}: "
+                "merge anything useful into it, then empty the extra file(s) completely (write nothing to them).") if extra else ""
+
     def problems() -> str:
-        return agent.output_problem(task_text, start) or label_problem(written(), start, before)
+        return (agent.output_problem(task_text, start) or label_problem(written(), start, before)
+                or duplicate_problem())
 
     print(f"== {NAME}: {args.mode} with {agent.MODEL} (max {MAX_TURNS} turns, ${MAX_BUDGET:.2f}) ==\n")
     start = time.time()
@@ -523,6 +533,9 @@ def main():
         raise
     for b in ARCHIVE.glob("_bundle_*.md"):
         b.unlink()
+    for p in (ARCHIVE / "research").glob("*.md"):      # extra notes he emptied after the duplicate check
+        if p not in before and not p.read_text().strip():
+            p.unlink()
     if agent.FENCE_BLOCKS:
         check += f" | fence blocked {len(agent.FENCE_BLOCKS)} attempt(s): " + "; ".join(sorted(set(b[:120] for b in agent.FENCE_BLOCKS)))
     agent.append_log(pathlib.Path(f"{NAME} {args.mode}"), None, tools, time.time() - start,

@@ -18,7 +18,7 @@ Next topic = the first unchecked one.
 - [x] Emergency fund basics: how big, where to keep it, how to build it without stress
 - [x] Avoiding bank fees, returned payments, and overdrafts (and what a "retry payment" means)
 - [x] Round-up and micro-saving tools (like Bank of America's Keep the Change): do they actually help?
-- [ ] Low-stress, flexible side income that avoids scams, using practical skills (cooking, deep cleaning, lawn care, handyman work, box truck driving), not creative work
+- [x] Low-stress, flexible side income that avoids scams, using practical skills (cooking, deep cleaning, lawn care, handyman work, box truck driving), not creative work
 - [ ] Spotting money scams and protecting financial privacy online
 - [ ] Selling unused electronics and old games safely, and what they're usually worth
 - [ ] Cashback and rewards on recurring bills, without taking on debt
