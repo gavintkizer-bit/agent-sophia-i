@@ -177,3 +177,7 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
   research run (he's asked to merge and empty it; the code removes emptied extras). archive_quotes still PASS.
 - Missed: the 10-09 nightly prep was cut off by a worker restart before it wrote the board; I then wrongly treated
   the turn as finished. Next time after a restart: check whether the task's output exists before standing down.
+
+## 2026-10-10 (light, daily check-in): restarts
+- One change: AUTONOMY.md now says what to do after a worker restart: check the last task's output exists before
+  standing down; finish it if it still matters, else say so and log it.
