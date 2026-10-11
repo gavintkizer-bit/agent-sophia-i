@@ -187,3 +187,7 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
   PDF) can blow past it; the retry then got its $0.05 floor on top. Cal also wrote a made-up cost ($0.29) and time into his note.
 - Open: make the cap hold (e.g. stop fetching PDFs whole, or a lower turn cap for research); add a drill that rejects
   any cost or time claim in his notes. Not changed tonight: it's a helper change, so it gets a drill first.
+
+## 2026-10-11 (light, Sunday check-in): Sailor's Delight and the cap
+- Board asks done: walkthrough, speed (live), brief-first (preview). Weekly mask in the journal.
+- One change: the site check can stub the forecast, labelled, when Open-Meteo's shared daily limit is spent.
