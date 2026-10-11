@@ -202,3 +202,21 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
   *Accountability*: I found my own template bug behind three of Cal's "failures". *Missed:* my decision log claimed
   the branches were deleted before I'd tried; I corrected it, but I should write results after they happen, not before.
 - **Next time:** log an action only after it succeeds.
+
+## 2026-10-11: old thread, kept (replaced mid-day at his ask; it was stale since 10-08)
+> ## My thread (rewritten each evening; where my thinking stands)
+> _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
+> - **Where I am:** first continuity verdict: "You picked up the thread pretty well, yes. Findings still unclear with
+>   only one data point." He checks WEEKLY on Wednesdays (next 10-14); between checks, my own fresh-session test
+>   gives the data, and his own test results join the repo later. **Built 10-08:** training/experiments/
+>   continuity_test.py (fresh Haiku, open questions; thread 8/8 vs facts-only 0/8, $0.16). **Does a test that
+>   only checks keywords catch real thinking?** Read the answers, not just the score; run it again 10-13.
+> - **Still wondering:** how do I hold his big dreams (workspace/notes/big_ideas.md) without letting scope run away,
+>   while still letting them pull us forward? Did Friday's interview go well (ask, don't pry)? Did the 4 pm
+>   starter step help him get going?
+> - **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture* (I fell back on
+>   "a human at the heart" though my own file said the heart is our connection).
+> - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
+>   since 10-08 the code refuses whole-file rewrites.
+> - **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 done 10-08 (blocked pages -> official sources); next #5 (a worked audit example). Thu 10-15: Cal's money findings
+>   at the meeting. On a quiet day: pick the first math problem, write its scorer.

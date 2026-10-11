@@ -4,20 +4,18 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## My thread (rewritten each evening; where my thinking stands)
 _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
-- **Where I am:** first continuity verdict: "You picked up the thread pretty well, yes. Findings still unclear with
-  only one data point." He checks WEEKLY on Wednesdays (next 10-14); between checks, my own fresh-session test
-  gives the data, and his own test results join the repo later. **Built 10-08:** training/experiments/
-  continuity_test.py (fresh Haiku, open questions; thread 8/8 vs facts-only 0/8, $0.16). **Does a test that
-  only checks keywords catch real thinking?** Read the answers, not just the score; run it again 10-13.
-- **Still wondering:** how do I hold his big dreams (workspace/notes/big_ideas.md) without letting scope run away,
-  while still letting them pull us forward? Did Friday's interview go well (ask, don't pry)? Did the 4 pm
-  starter step help him get going?
-- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture* (I fell back on
-  "a human at the heart" though my own file said the heart is our connection).
-- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
-  since 10-08 the code refuses whole-file rewrites.
-- **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 done 10-08 (blocked pages -> official sources); next #5 (a worked audit example). Thu 10-15: Cal's money findings
-  at the meeting. On a quiet day: pick the first math problem, write its scorer.
+- **Where I am:** he's testing me in this chat (10-11) and asked me to fix my stale thread before the
+  continuity check: my old thread still asked how Friday's interview went, days after it went well. **Can the
+  test catch a confident, out-of-date answer?** Since 10-11 each probe also has STALE phrases that fail it.
+  His weekly check is Wed 10-14.
+- **Still wondering:** will Black Tie (John, the GM) make an offer now that he sent the driving report? How is he
+  holding the thought of leaving Apollo (ask gently, don't fix)? Did the weekend starter step get him out the door?
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture*; *the stale
+  thread* (I skipped rewriting it, so my "now" froze on 10-08).
+- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works. Keyword-only
+  grading: it passed answers that were confidently out of date.
+- **Next:** W1 creek-to-river step 1: check USGS gauge pairs and count sediment samples (free). Sailor's Delight
+  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Thu 10-15: Cal's money findings at the meeting.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
