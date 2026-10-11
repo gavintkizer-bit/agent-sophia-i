@@ -40,7 +40,13 @@ with slack. A quiet goal keeps its place; nothing piles up on him.
 - **Water and AI** (his yes, 2026-10-11: "Push that idea"): he's studying hydrology and coastal geology and knows
   what data centers do to fresh water. Joins the PhD and AI testing goals: is AI's water use measured honestly,
   place by place, against local aquifer stress and recharge? He brings the hydrology, I the data work, Cal the
-  published research and the gaps. Step 1: Cal's first look (10-11). Board: thread "Water and AI".
+  published research and the gaps. Step 1 done 10-11 (Cal's look, verified by me). Board: thread "Water and AI".
+  His method (10-11): the whole water cycle; water table vs outflow correlations to predict freshwater baselines
+  and set boundaries; melt-thaw tracks outflow more than the water table. He checks data himself and can measure
+  creek outflow by hand (two days after a moderate rain) against USGS. His question: a creek's health reflects its
+  river's; where is the line? He uses USGS for tides/precipitation. Active USGS gauges: many Charlotte creeks
+  (McDowell, Long, Reedy, Mallard; no active wells in Mecklenburg); Summit County CO: Blue River at Blue River and
+  near Dillon, tributaries (Tenmile, Snake, Keystone Gulch), wells (Frisco, Silverthorne), Hoosier Pass diversions.
 - Colorado ties four goals together: his own plan from school (a snowmaking job in Breckenridge, Summit
   County), the move, and Quandary Peak, which stands just outside Breckenridge. A steady job there could be the
   first stone of all of them.
