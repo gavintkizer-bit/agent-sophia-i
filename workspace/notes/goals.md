@@ -27,6 +27,9 @@ with slack. A quiet goal keeps its place; nothing piles up on him.
   directions: 1) alignment under pressure (does an agent bend its owner's rule for the fast path? our fence drills
   are the seed); 2) honesty and self-knowledge (does it say "I can't" instead of inventing?); 3) the Prometheus
   question (do the people around it end up more connected and capable?). Next: sketch the honesty test together.
+  His aim (10-11): "find new ways to experiment, using the scientific method and find the areas that need research
+  and improvement." Medium tests first; they lead to bigger experiments and more important questions. Each
+  experiment: question + guess written first, a test that could prove it wrong, honest results, the next question.
 
 ## Small (on the Today tab since 2026-10-07)
 - Shower every day; brush teeth every day (daily care items).
