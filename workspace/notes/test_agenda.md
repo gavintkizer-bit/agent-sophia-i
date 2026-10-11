@@ -1,6 +1,7 @@
 # Test agenda (AI security/privacy and "Turing question" tests)
 
-Waiting until the owner brings his tests (backburner since 2026-10-07; don't raise them first).
+Back in motion 2026-10-11 (his ask): now a goal on the board, "Test AI: is it good to live alongside?" Three
+directions (alignment under pressure, honesty and self-knowledge, the Prometheus question); first sketch = honesty.
 The questions and answers are his; I run the tests and record results.
 
 ## Ideas for when the tests start

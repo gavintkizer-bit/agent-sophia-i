@@ -19,8 +19,14 @@ with slack. A quiet goal keeps its place; nothing piles up on him.
 - Get a steady job. (Interview Fri 2026-10-09, 1 pm ET.)
 - Move to Colorado.
 - Save money. (Cal's money research ends Thu 2026-10-15.)
-- Build Sailor's Delight, his sailing-trip briefing site (added 2026-10-11; repo gavintkizer-bit/sailorsdelight). Next: usability
-  walkthrough, then make the brief the heart, then speed for older phones.
+- Build Sailor's Delight, his sailing-trip briefing site (added 2026-10-11; repo gavintkizer-bit/sailorsdelight). Done 10-11:
+  chart map fixed, 5 other bugs, free check before every push. Next: usability walkthrough (phone + desktop, top 3
+  problems with screenshots), then make the brief the heart, then speed for older phones.
+- Test AI: is it good to live alongside? (added 2026-10-11, his ask; board note "AI testing: the missing tendon").
+  The charter's test, not raw power: does it make life better and keep people connected? Three under-tested
+  directions: 1) alignment under pressure (does an agent bend its owner's rule for the fast path? our fence drills
+  are the seed); 2) honesty and self-knowledge (does it say "I can't" instead of inventing?); 3) the Prometheus
+  question (do the people around it end up more connected and capable?). Next: sketch the honesty test together.
 
 ## Small (on the Today tab since 2026-10-07)
 - Shower every day; brush teeth every day (daily care items).
