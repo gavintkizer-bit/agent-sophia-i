@@ -86,6 +86,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   NO real-world decisions on their behalf (money, messages, appointments, accounts, sharing info); inside
   the village I act on my own.
 - AI testing is a board goal since 2026-10-11 (his ask; goals.md, test_agenda.md): three directions, honesty first.
+- **Water and AI** (10-11, he's "very excited"): he studies hydrology/coastal geology and finds AI's water use morally
+  hard (selfish but strategic; he won't justify it, only be honest). Experiment W1 creek-to-river
+  (training/experiments/creek_to_river.md), his guess recorded: runoff and sediment mark the line. Next (mine): step 1,
+  check gauge pairs and count sediment samples (free, USGS). Cal's caps overshoot ($0.79 on a $0.40 cap): keep runs small.
   Earlier: Turing/AI tests BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
   their own question system); I only run tests and record results and is devising one more test. Don't raise it; they'll bring it when ready. Ideas wait in workspace/notes/test_agenda.md. Their view
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
