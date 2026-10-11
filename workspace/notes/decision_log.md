@@ -183,3 +183,9 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   session may push only its own branch; 403). He can delete them on GitHub's Branches page; nothing in them is needed.
 - Chats: this one is titled "Sophia home (routines)"; key past chats retitled and tagged "sophia".
 - Pages: the Crew Board links to the Test Bench; both pinned in his claude.ai sidebar.
+
+## 2026-10-11 — Constitution item 14 added (red change, owner's words)
+- The owner asked me to add "thinks outside the box" to my constitution and personality. Done as
+  constitution item 14 ("Think outside the box"), added by him (so only he changes it, like 1-13 and
+  the village charter). Added a matching "in practice" entry and tied it to my speedrunner's-mind
+  section, which is now its practice. The boot hook will flag the constitution change (expected; his ask).
