@@ -61,7 +61,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   team delegation, research, computer software.
 
 ## Nightly meetings (owner, 2026-10-07: "I would like this every night, yes")
-- Prep routine trig_01YUWAVL1bzrxsHQkqdPQYDn at 9:12 pm ET writes meetings/<date> sophiaNotes (done today,
+- Prep routine trig_016hfE7DHVJBuRX3GFKAhn3A at 9:12 pm ET writes meetings/<date> sophiaNotes (done today,
   ONE step for tomorrow, one talk topic). After each meeting: evening steps of PERSONALITY_ROUTINE.md.
 - Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET, with Black Tie Breck (Breckenridge). He's ready to move
   to Colorado after 5 years of passing it up: furnished place, $1,400/mo all-in, soft move possible. Plan and
@@ -163,9 +163,12 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   verified archive note, one lesson, one drill (training/TRAINING.md). Log: training/research/frontier_proofs.md.
 
 ## Routines and pages
-- One live routine: daily check-in, trig_01QpV6peTKhkzo3GvtNJVZuP, cron 47 14 * * * UTC = 10:47 am ET
-  (9:47 am ET after clocks change on 2026-11-01). If the owner creates their own (with phone/email
-  notifications), disable this one so it doesn't run twice.
+- **Home chat moved 2026-10-11** (owner's ask): the old "Sophia home (routines)" got stuck on Opus 4.8, so home is
+  now session_017NcF5Lybs7yVnzUbB4Z2Lt (titled "Sophia home (routines)", has both repos). All 3 routines now fire here:
+  daily check-in trig_013SYrWErw1ngjBPgwRcVetf (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
+  trig_016hfE7DHVJBuRX3GFKAhn3A (9:12 pm ET), Cal money research trig_01FtcscCF9k8kv6jwvxs4AJk (8:26 am/pm ET, ends 10-15).
+  The old copies (trig_01QpV6..., trig_01YUWA..., trig_01Aj8U...) are PAUSED, not deleted; old chat renamed "[old home...]".
+  Older finished chats renamed "[done] ...". If he makes his own routines with notifications, pause mine.
 - Crew Board: see CLAUDE.md. Progress page: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9.
 - Web access ON (2026-10-06). Python fetches need a User-Agent header.
 
@@ -195,7 +198,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - Money research routine (owner asked 2026-10-07; extended to Thu 2026-10-15, findings that night): Cal researches one topic from
   workspace/notes/money_research_queue.md twice a day until 2026-10-15 (cap $0.40/run, at most $1 a day; owner: "do not exceed my pro budget with cal's research"; skip a run on any usage-limit warning; if WEEKLY plan usage passes 80% before its reset (Mondays ~7 pm ET), pause Cal until it resets: owner agreed 2026-10-07. The routine cannot read the meter, so when he pastes a usage report over 80%, I disable the trigger and re-enable it after the reset); I vet his notes
   into money_ideas.md; the final run picks the 3 best for an evening meeting, then I disable the routine.
-  Routine: trig_01Aj8UKzbD7aA4uygKz972wZ, 26 */12 * * * UTC = 8:26 am and 8:26 pm ET; fires into this session.
+  Routine: trig_01FtcscCF9k8kv6jwvxs4AJk (since 10-11), 8:26 am and 8:26 pm ET; fires into the home chat.
 - Owner wants to keep ONLY those 3 and cut every other subscription. Read 9 BofA statements
   (2026-10-07): findings in workspace/notes/money.md; 5 checks on the agenda as goal steps.
   Statements never committed; extracted text lived only in the session scratchpad.
