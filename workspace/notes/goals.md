@@ -19,6 +19,8 @@ with slack. A quiet goal keeps its place; nothing piles up on him.
 - Get a steady job. (Interview Fri 2026-10-09, 1 pm ET.)
 - Move to Colorado.
 - Save money. (Cal's money research ends Thu 2026-10-15.)
+- Build Sailor's Delight, his sailing-trip briefing site (added 2026-10-11; repo gavintkizer-bit/sailorsdelight). Next: usability
+  walkthrough, then make the brief the heart, then speed for older phones.
 
 ## Small (on the Today tab since 2026-10-07)
 - Shower every day; brush teeth every day (daily care items).
