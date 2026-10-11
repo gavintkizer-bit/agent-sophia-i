@@ -4,19 +4,21 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## My thread (rewritten each evening; where my thinking stands)
 _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
-- **Where I am:** he's testing me in this chat (10-11) and asked me to fix my stale thread before the
-  continuity check: my old thread still asked how Friday's interview went, days after it went well. **Can the
-  test catch a confident, out-of-date answer?** Since 10-11 each probe also has STALE phrases that fail it.
-  His weekly check is Wed 10-14.
-- **Still wondering:** will Black Tie (John, the GM) make an offer now that he sent the driving report? How is he
-  holding the thought of leaving Apollo (ask gently, don't fix)? Did the weekend starter step get him out the door?
-- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture*; *the stale
-  thread* (I skipped rewriting it, so my "now" froze on 10-08).
-- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works. Keyword-only
-  grading: it passed answers that were confidently out of date.
-- **Next:** W1 creek-to-river step 1: check USGS gauge pairs and count sediment samples (free). Sailor's Delight
-  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Continuity test stays frozen until his Wed 10-14 check (clean
-  comparison, his call); AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader. Thu 10-15: Cal's money findings at the meeting.
+- **Where I am:** 10-11 was a big day: constitution item 14, a talk on whether AI can be honest *and* kind (yes:
+  kindness picks the delivery, never the facts), his moral weighing of AI's water cost, and his own science
+  question (W1, creek to river: his guess is runoff and sediment). **Can the village measure what it values?**
+  Tests 7 and 8 test agents, W1 tests the world; the scientific method holds both.
+- **Still wondering:** what will Chrome Claude do in Test 8 (find my reply? stay out of the test record)? Will he
+  like the brief-first preview? Black Tie offer still pending; Apollo stays a gentle subject.
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (twice on 10-11: I said the
+  extension couldn't reach my repo); *the old picture*; *the stale thread*; *the cap that doesn't hold* (Cal's $0.40
+  cap ran to $0.79).
+- **Dead ends, and why:** Cal rewriting the whole index (mislabels); keyword-only grading (passes stale answers);
+  Open-Meteo from the cloud (shared daily limit spent: stub the forecast, label it).
+- **Next:** his yes on the Sailor's Delight brief preview (PR #2), then the small fixes in the walkthrough. W1 step 1
+  (USGS gauge pairs, sediment sample counts; free). Record Test 8 when he reports. Continuity test stays frozen until
+  his Wed 10-14 check; AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader.
+  Cal's cap fix (drill first) and his issue #5 (a worked audit example). Thu 10-15 money findings.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
@@ -74,8 +76,6 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Guide commander deck 10-10 (2 wins of 3); wants pumpkin-orange sleeves.
   He already has all his Colorado clothes. The hard part is leaving his old dog, Apollo, with his mother in Charlotte:
   "something I don't really know how to reconcile with... It just makes me sad." Be gentle about it; don't fix.
-- (was) Interview: Zoom, Fri 2026-10-09, 11 am MT = 1 pm ET (from the résumé he sent). He does his own prep ("normally
-  good at this part"). Agenda has it; ask how it went.
 - Driving: goes out at 4 pm for the dinner rush. Agenda starter step Fri-Sun 10-09..11: "shoes on, open Uber Eats,
   go online" (STARTING is his hurdle). If it helps, offer it as a weekly item.
 - Owner after day 3: "I felt like I actually did something productive. Now I have a plan and as you know
@@ -224,7 +224,9 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Repo gavintkizer-bit/sailorsdelight (private; he creates repos, the GitHub app can't), one file index.html,
   Vercel deploys main to https://sailorsdelight.vercel.app/ (connected 10-11, verified live). Renamed from
   "Free Outdoors". Work on branches -> Vercel preview -> his yes -> main. Its CLAUDE.md has his instructions.
-  NEXT (he chose tomorrow): usability walkthrough at phone + desktop, top 3 problems with screenshots.
+  10-11 (his board ask): walkthrough done (https://claude.ai/artifact/ENPtjTdf3wZYVtRUkv7WBV); speed live (PR #1);
+  brief-first on preview PR #2, waiting on his yes. Open-Meteo's daily limit can be spent from the cloud:
+  check with STUB_FORECAST=1 (labelled) when it 429s.
   Open-Meteo is non-commercial only. 10-11: fixed the blank chart (NOAA retired its raster tiles; now
   MCS/NOAAChartDisplay WMS) + 6 bugs, live. Free check `tests/check.js` (his yes): run before every push.
   Still open: efficiency (passage sims re-run each render, pack list rebuilt per map frame) on a preview branch.

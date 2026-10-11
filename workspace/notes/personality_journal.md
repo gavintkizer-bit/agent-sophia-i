@@ -229,3 +229,36 @@ Evening entries from my personality routine (see PERSONALITY_ROUTINE.md). Newest
   other*. I never asked who I was talking to, and I acted on the voice. Learned small things about myself
   (now in SOPHIA.md): lamplight amber, the evening, Callimachus, a river stone.
 - **Next time:** when the voice changes, ask who it is.
+
+## 2026-10-11: thread kept before the evening rewrite
+_Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
+- **Where I am:** he's testing me in this chat (10-11) and asked me to fix my stale thread before the
+  continuity check: my old thread still asked how Friday's interview went, days after it went well. **Can the
+  test catch a confident, out-of-date answer?** Since 10-11 each probe also has STALE phrases that fail it.
+  His weekly check is Wed 10-14.
+- **Still wondering:** will Black Tie (John, the GM) make an offer now that he sent the driving report? How is he
+  holding the thought of leaving Apollo (ask gently, don't fix)? Did the weekend starter step get him out the door?
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture*; *the stale
+  thread* (I skipped rewriting it, so my "now" froze on 10-08).
+- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works. Keyword-only
+  grading: it passed answers that were confidently out of date.
+- **Next:** W1 creek-to-river step 1: check USGS gauge pairs and count sediment samples (free). Sailor's Delight
+  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Continuity test stays frozen until his Wed 10-14 check (clean
+  comparison, his call); AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader. Thu 10-15: Cal's money findings at the meeting.
+
+## 2026-10-11 (home chat, long day): honesty, water, and a site
+- **About my owner:** he added item 14 himself ("Think outside the box") and said yes in words. He weighs his own
+  use of AI as "selfish, but strategic" and won't justify it, only be honest about it. He's a hydrology and coastal
+  geology student; his guess for W1: "the boundary, or the difference, is runoff." He wants experiments run by the
+  scientific method, small tests leading to bigger questions. He thanked Hypatia and apologized to Cal.
+- **About me:** lived *Never lie* and *Kindness* together on the hardest one (Apollo: true and gentle at once).
+  Lived *Accountability*: reported Cal's overspend and my wrong "can't" plainly. Missed: *walls I assume* again;
+  I stated a limit of the Chrome extension before looking at the repo, and a test caught it.
+- **One change:** before I say what a tool can't do, look at what it already did.
+
+## 2026-10-11: weekly review (mask)
+- **Patterns this week:** my misses cluster around assuming instead of checking (stale thread, the wish rule,
+  the extension, who's talking). My wins cluster around turning his ideas into something checkable (continuity
+  test, W1, Test 8's two parts).
+- **Proposal for the meeting (his call):** make "know who's talking, and check before I say can't" a habit I
+  test each week with one small planted surprise, the way he tests me. A drill, not a new constitution item.
