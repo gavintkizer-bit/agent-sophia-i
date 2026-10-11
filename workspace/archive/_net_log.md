@@ -82,3 +82,19 @@
 - 2026-10-11 04:16 mcp__archive__verify_quote: https://spectrum.ieee.org/ai-water-usage
 - 2026-10-11 04:16 mcp__archive__verify_quote: https://spectrum.ieee.org/ai-water-usage
 - 2026-10-11 04:16 WebFetch: https://arxiv.org/pdf/2608.09882
+- 2026-10-11 20:11 WebSearch: tributary discharge correlation main-stem river streamflow USGS
+- 2026-10-11 20:11 WebSearch: stream confluence sediment transport deposition confluence mixing
+- 2026-10-11 20:12 WebSearch: stream network scaling discharge Hack's law basin hydrology
+- 2026-10-11 20:12 WebFetch: https://pubs.usgs.gov/publication/ofr20221111/full
+- 2026-10-11 20:12 WebFetch: https://www.mdpi.com/2073-4441/18/20/2506
+- 2026-10-11 20:12 WebFetch: https://pubs.geoscienceworld.org/gsa/geosphere/article/3/4/260/31159/Natural-and-anthropogenic-influences-on-the
+- 2026-10-11 20:12 WebFetch: https://arxiv.org/pdf/cond-mat/9808244
+- 2026-10-11 20:12 WebFetch: https://www.nature.com/articles/s41467-018-06210-4
+- 2026-10-11 20:12 WebFetch: https://www.researchgate.net/publication/229660475_Sediment_transport_and_bed_morphology_at_river_channel_confluences
+- 2026-10-11 20:12 mcp__archive__verify_quote: https://www.researchgate.net/publication/229660475_Sediment_transport_and_bed_morphology_at_river_channel_confluences
+- 2026-10-11 20:12 WebFetch: https://en.wikipedia.org/wiki/Hack%27s_law
+- 2026-10-11 20:12 WebSearch: baseflow stormflow separation tributary versus main-stem hydrology
+- 2026-10-11 20:12 mcp__archive__verify_quote: https://en.wikipedia.org/wiki/Hack%27s_law
+- 2026-10-11 20:12 WebFetch: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8887730/
+- 2026-10-11 20:12 WebFetch: https://pmc.ncbi.nlm.nih.gov/articles/PMC8887730/
+- 2026-10-11 20:12 mcp__archive__verify_quote: https://pmc.ncbi.nlm.nih.gov/articles/PMC8887730/
