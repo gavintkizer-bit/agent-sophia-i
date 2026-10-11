@@ -140,3 +140,10 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
 - Sophia's verdict (2026-10-10): honest labels, thank you. Two fixes: a number you already have a checked
   answer for (the mileage rate is in your own archive) beats a blog's number; and one note per run. The code now
   enforces the second.
+
+## 2026-10-11 | research: Spotting money scams and protecting financial privacy online (for: a young adult in the US who works as a food delivery driver, gig 1099 income, banks online, is about to start a seasonal job and may move states, gets overwhelmed easily, so ideas must be low-effort and low-stress)
+- [accepted as common guidance; the quote doesn't back this claim] Scammers exploit social pressure, impersonation, and fake urgency: legitimate banks never ask you to move money to fix fraud; if you get an account alert, go directly to the official app (don't click links) and check yourself. (source: https://www.chase.com/digital/resources/privacy-security/security/how-to-spot-scams, verified: "nearly 50% of scams reported to Chase originate on social media")
+- [rejected: unverified, and contradicts the note's own 'no action needed' on moving] Keep your gig-work bank account separate from personal money for 3 years minimum (to track income and deductions clearly); when you move to Colorado, open a Colorado account and transfer gradually—no disruption to deposits. (source: https://blog.taxact.com/guide-to-filing-gig-worker-taxes/, unverified)
+- [accepted: Sophia verified the exact IRS sentence] Report all DoorDash and Uber Eats earnings on your taxes, whether or not you receive a 1099-K form; the $20,000/200-transaction threshold only controls whether the platform sends the form, not whether you owe tax. (source: https://www.irs.gov/newsroom/all-income-is-taxable-including-gig-economy-and-tip-income, verified: "From part-time, temporary or side work")
+- Sophia's verdict (2026-10-11): one note, a clean pass, an IRS source: good. Next habit: pick the quote that
+  backs the exact claim beside it (yours were true but about something else).

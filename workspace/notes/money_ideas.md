@@ -79,3 +79,13 @@ step, and the source.
 - **First small step:** none now. Revisit after the first month in Breckenridge, if you want.
 - **Source:** Cal's note (pay ranges unverified); FTC job-scam guidance (found in search results).
 
+## 8. Two habits that keep scammers and the IRS calm (2026-10-11)
+- **What:** (a) if a message about your bank or an app asks you to act fast, pay, or move money, don't click: open
+  the official app yourself and check. (b) Every dollar from DoorDash, Uber Eats and tips counts as income, even if
+  no tax form arrives; and at Black Tie, cash tips you don't report to the employer go on your own tax return.
+- **Why it fits:** no new tools, just two rules to remember. It pairs with idea 3 (tax money set aside).
+- **First small step:** none alone. Save this for the free tax helper (queue topic 13) and tax season.
+- **Source:** irs.gov (quotes checked: "Taxpayers must report income earned from the gig economy on a tax return, even
+  if the income is" ... "Not reported on an information return form like a Form 1099-K"; "Any cash tips the employee
+  didn't report to the employer must be reported separately"). Scam habit: common guidance from banks and the FTC.
+
