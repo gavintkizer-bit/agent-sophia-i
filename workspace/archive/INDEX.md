@@ -20,6 +20,7 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 | 2026-10-10 | `research/2026-10-10-low-stress-flexible-side-income-practical-skills.md` | Low-stress, flexible side income using practical skills (cooking, cleaning, handyman, box truck driving): platforms, hourly rates, scam red flags, selection strategy for seasonal ski-town work and gig driver with low overwhelm threshold | ZipRecruiter (unverified), Taggr blog (unverified), The Drive (unverified), FTC (official, 404 on verify) |
 | 2026-10-11 | `research/2026-10-11-spotting-money-scams-and-protecting-financial-priv.md` | Spotting money scams and protecting financial privacy online: red flags (social pressure, impersonation, fake urgency), account separation for gig income, 1099 reporting requirements, low-stress moves for multi-state relocation | Chase Security (verified), IRS gig economy (verified), TurboTax, TaxAct, 3SGF consumer protection |
 | 2026-10-11 | `research/2026-10-11-ai-data-center-water-use-how-it-is-measured-and-re.md` | AI data center water use: direct vs indirect, consumptive vs withdrawal, water-stressed siting, research gaps (Water and AI thread) | IEEE Spectrum (verified; Sophia re-checked; cites LBNL and Bloomberg); UK gov PDF unread; arXiv, EESI, Newsweek not read |
+| 2026-10-11 | `research/2026-10-11-how-well-does-tributary-creek-streamflow-track-the.md` | W1 prior work: tributary vs main-stem flow, confluence sediment (Best), mixing length, baseflow separation; gap: no framework for where a creek stops reflecting its river | Wikipedia Hack's law (verified, definition only); Best confluence paper and MDPI mixing study (unverified leads); NCBI baseflow study (Yellow River) |
 
 ## Experiments
 
@@ -27,8 +28,7 @@ AI tests run with the scientific method (see workspace/notes/test_agenda.md). Re
 
 | Date | File | Question | Guess | Result | Related research |
 |------|------|----------|-------|--------|------------------|
-
-(None yet.)
+| 2026-10-11 | `../../training/experiments/creek_to_river.md` (W1) | Where does a creek stop reflecting its river? | Gavin: runoff and sediment mark the line | Step 2 first look: creek tracks its own river better than a stranger in all 4 pairs; storm days don't weaken the own-river link (P1 as worded not supported) | `research/2026-10-11-how-well-does-tributary-creek-streamflow-track-the.md`, `research/2026-10-11-ai-data-center-water-use-how-it-is-measured-and-re.md` |
 
 ## Audits
 

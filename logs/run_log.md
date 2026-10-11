@@ -296,3 +296,8 @@ One entry per agent run, newest at the bottom.
 
 ## 2026-10-11 | Callimachus check-in (owner asked how he is) | OK
 - Model: claude-haiku-4-5 | Turns: 1 | Cost: $0.0205 | Tools used: none
+
+## 2026-10-11 20:13 | Callimachus research | OK
+- Model: claude-haiku-4-5 (thinking 2000) | Turns: 23 | Time: 129s | Cost: $0.3974
+- Tools used: Edit, Glob, Read, WebFetch, WebSearch, Write, mcp__archive__verify_quote
+- Output check: passed

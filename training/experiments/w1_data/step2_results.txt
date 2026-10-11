@@ -1,0 +1,29 @@
+Pearson r of log daily flow, 2000-2025 (own river / stranger river)
+
+McMullen Cr -> McAlpine bl McMullen  (stranger: Goose Cr (Rocky R basin)), 8511 shared days
+  all days        own 0.84  stranger 0.75
+  baseflow days   own 0.84  stranger 0.76  (n=5705)
+  storm days      own 0.84  stranger 0.74  (n=1844)
+  day-to-day chg  own 0.69  stranger 0.69
+  May-Jul         own 0.79  stranger 0.65   rest of year own 0.85 stranger 0.79
+
+Irwin Cr -> Sugar Cr at NC 51  (stranger: Goose Cr (Rocky R basin)), 8511 shared days
+  all days        own 0.91  stranger 0.75
+  baseflow days   own 0.87  stranger 0.74  (n=6233)
+  storm days      own 0.84  stranger 0.69  (n=1415)
+  day-to-day chg  own 0.80  stranger 0.72
+  May-Jul         own 0.87  stranger 0.66   rest of year own 0.92 stranger 0.78
+
+Little Sugar at Archdale -> Little Sugar at Pineville  (stranger: Long Cr (Catawba)), 9495 shared days
+  all days        own 0.97  stranger 0.78
+  baseflow days   own 0.92  stranger 0.75  (n=7294)
+  storm days      own 0.93  stranger 0.67  (n=1379)
+  day-to-day chg  own 0.95  stranger 0.79
+  May-Jul         own 0.96  stranger 0.68   rest of year own 0.97 stranger 0.81
+
+Blue R at Blue River -> Blue R near Dillon  (stranger: Tenmile Cr at Frisco), 9472 shared days
+  all days        own 0.91  stranger 0.80
+  baseflow days   own 0.90  stranger 0.76  (n=6737)
+  storm days      own 0.89  stranger 0.82  (n=512)
+  day-to-day chg  own 0.55  stranger 0.34
+  May-Jul         own 0.91  stranger 0.76   rest of year own 0.84 stranger 0.60
