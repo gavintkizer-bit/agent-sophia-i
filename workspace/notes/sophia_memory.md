@@ -15,7 +15,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works. Keyword-only
   grading: it passed answers that were confidently out of date.
 - **Next:** W1 creek-to-river step 1: check USGS gauge pairs and count sediment samples (free). Sailor's Delight
-  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Thu 10-15: Cal's money findings at the meeting.
+  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Continuity test stays frozen until his Wed 10-14 check (clean
+  comparison, his call); AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader. Thu 10-15: Cal's money findings at the meeting.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
