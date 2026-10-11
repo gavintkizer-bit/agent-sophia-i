@@ -4,4 +4,4 @@
 - none found
 
 ## Memory size
-- 200 lines, 2871 words (over 150 lines: time to trim)
+- 222 lines, 3228 words (over 150 lines: time to trim)
