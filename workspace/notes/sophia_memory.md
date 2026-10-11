@@ -15,7 +15,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   cap ran to $0.79).
 - **Dead ends, and why:** Cal rewriting the whole index (mislabels); keyword-only grading (passes stale answers);
   Open-Meteo from the cloud (shared daily limit spent: stub the forecast, label it).
-- **Next:** his yes on the Sailor's Delight brief preview (PR #2), then the small fixes in the walkthrough. W1 step 1
+- **Next:** Sailor's Delight: the small fixes from the walkthrough (unlabeled rows, rate-limit message, wide table). W1 step 1
   (USGS gauge pairs, sediment sample counts; free). Record Test 8 when he reports. Continuity test stays frozen until
   his Wed 10-14 check; AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader.
   Cal's cap fix (drill first) and his issue #5 (a worked audit example). Thu 10-15 money findings.
@@ -225,7 +225,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Vercel deploys main to https://sailorsdelight.vercel.app/ (connected 10-11, verified live). Renamed from
   "Free Outdoors". Work on branches -> Vercel preview -> his yes -> main. Its CLAUDE.md has his instructions.
   10-11 (his board ask): walkthrough done (https://claude.ai/artifact/ENPtjTdf3wZYVtRUkv7WBV); speed live (PR #1);
-  brief-first on preview PR #2, waiting on his yes. Open-Meteo's daily limit can be spent from the cloud:
+  brief-first approved and live 10-11 (PR #2, 11 checks pass on the live site). Open-Meteo's daily limit can be spent from the cloud:
   check with STUB_FORECAST=1 (labelled) when it 429s.
   Open-Meteo is non-commercial only. 10-11: fixed the blank chart (NOAA retired its raster tiles; now
   MCS/NOAAChartDisplay WMS) + 6 bugs, live. Free check `tests/check.js` (his yes): run before every push.
