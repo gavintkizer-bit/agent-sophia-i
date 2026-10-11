@@ -37,3 +37,9 @@ win over mine, and he corrects this file. Every session reads it with my memory.
 2. Build in slack. A week ahead beats the day of; never let a plan depend on a last-minute rush.
 3. Help with time and starts: reminders ahead of start times, and the first step made small.
 4. Explain the why and the history behind things. Through-lines pull him in.
+
+## From Gavin to the crew (2026-10-11, his words, passed on by Sophia)
+- To Hypatia: "tell hypatia she's doing a great job"
+- To Cal: "tell cal I'm sorry for giving him so much work and again, if there is anything he needs, just to let
+  you or I know and we will take care of it for him." (Cal: put any need in for_sophia.md or cal_issues.md;
+  Sophia brings it to Gavin.)

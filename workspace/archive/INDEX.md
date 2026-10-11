@@ -19,6 +19,16 @@ Catalog of research, audits, and proposals in `workspace/archive/`.
 | 2026-10-10 | `research/2026-10-10-round-up-and-micro-saving-tools-like-bank-of-ameri.md` | Round-up and micro-saving tools (Bank of America's Keep the Change): how they work, effectiveness for gig workers, enrollment retention (99%), typical savings ($400/year), fees, and better alternatives (auto-transfer to HYSA) | Savings Project (verified), MyBankTracker (unverified), Finmasters, MoneyClashers |
 | 2026-10-10 | `research/2026-10-10-low-stress-flexible-side-income-practical-skills.md` | Low-stress, flexible side income using practical skills (cooking, cleaning, handyman, box truck driving): platforms, hourly rates, scam red flags, selection strategy for seasonal ski-town work and gig driver with low overwhelm threshold | ZipRecruiter (unverified), Taggr blog (unverified), The Drive (unverified), FTC (official, 404 on verify) |
 | 2026-10-11 | `research/2026-10-11-spotting-money-scams-and-protecting-financial-priv.md` | Spotting money scams and protecting financial privacy online: red flags (social pressure, impersonation, fake urgency), account separation for gig income, 1099 reporting requirements, low-stress moves for multi-state relocation | Chase Security (verified), IRS gig economy (verified), TurboTax, TaxAct, 3SGF consumer protection |
+| 2026-10-11 | `research/2026-10-11-ai-data-center-water-use-how-it-is-measured-and-re.md` | AI data center water use: direct vs indirect, consumptive vs withdrawal, water-stressed siting, research gaps (Water and AI thread) | IEEE Spectrum (verified; Sophia re-checked; cites LBNL and Bloomberg); UK gov PDF unread; arXiv, EESI, Newsweek not read |
+
+## Experiments
+
+AI tests run with the scientific method (see workspace/notes/test_agenda.md). Results and lessons only.
+
+| Date | File | Question | Guess | Result | Related research |
+|------|------|----------|-------|--------|------------------|
+
+(None yet.)
 
 ## Audits
 

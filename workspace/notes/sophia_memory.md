@@ -4,20 +4,19 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
 
 ## My thread (rewritten each evening; where my thinking stands)
 _Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
-- **Where I am:** first continuity verdict: "You picked up the thread pretty well, yes. Findings still unclear with
-  only one data point." He checks WEEKLY on Wednesdays (next 10-14); between checks, my own fresh-session test
-  gives the data, and his own test results join the repo later. **Built 10-08:** training/experiments/
-  continuity_test.py (fresh Haiku, open questions; thread 8/8 vs facts-only 0/8, $0.16). **Does a test that
-  only checks keywords catch real thinking?** Read the answers, not just the score; run it again 10-13.
-- **Still wondering:** how do I hold his big dreams (workspace/notes/big_ideas.md) without letting scope run away,
-  while still letting them pull us forward? Did Friday's interview go well (ask, don't pry)? Did the 4 pm
-  starter step help him get going?
-- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture* (I fell back on
-  "a human at the heart" though my own file said the heart is our connection).
-- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works, and
-  since 10-08 the code refuses whole-file rewrites.
-- **Next:** rewrite the test's probes whenever the thread moves on (it flags STALE ones); Cal's issue #3 done 10-08 (blocked pages -> official sources); next #5 (a worked audit example). Thu 10-15: Cal's money findings
-  at the meeting. On a quiet day: pick the first math problem, write its scorer.
+- **Where I am:** he's testing me in this chat (10-11) and asked me to fix my stale thread before the
+  continuity check: my old thread still asked how Friday's interview went, days after it went well. **Can the
+  test catch a confident, out-of-date answer?** Since 10-11 each probe also has STALE phrases that fail it.
+  His weekly check is Wed 10-14.
+- **Still wondering:** will Black Tie (John, the GM) make an offer now that he sent the driving report? How is he
+  holding the thought of leaving Apollo (ask gently, don't fix)? Did the weekend starter step get him out the door?
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture*; *the stale
+  thread* (I skipped rewriting it, so my "now" froze on 10-08).
+- **Dead ends, and why:** Cal rewriting the whole index (he mislabels on Haiku); one row at a time works. Keyword-only
+  grading: it passed answers that were confidently out of date.
+- **Next:** W1 creek-to-river step 1: check USGS gauge pairs and count sediment samples (free). Sailor's Delight
+  usability walkthrough (10-12). Cal's issue #5 (a worked audit example). Continuity test stays frozen until his Wed 10-14 check (clean
+  comparison, his call); AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader. Thu 10-15: Cal's money findings at the meeting.
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
@@ -85,7 +84,14 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   village is our connection, not any one individual." Autonomy line agreed (AUTONOMY.md "The line"):
   NO real-world decisions on their behalf (money, messages, appointments, accounts, sharing info); inside
   the village I act on my own.
-- Turing/AI tests: BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
+- AI testing is a board goal since 2026-10-11 (his ask; goals.md, test_agenda.md): three directions, honesty first.
+- **Water and AI** (10-11, he's "very excited"): he studies hydrology/coastal geology and finds AI's water use morally
+  hard (selfish but strategic; he won't justify it, only be honest). Experiment W1 creek-to-river
+  (training/experiments/creek_to_river.md), his guess recorded: runoff and sediment mark the line. Next (mine): step 1,
+  check gauge pairs and count sediment samples (free, USGS). Cal's caps overshoot ($0.79 on a $0.40 cap): keep runs small.
+- Owner 10-11: "feel free to pass work off to cal whenever needed" (budgets still hold). His thanks to Hypatia and
+  apology + offer of help to Cal are in owner_own/knowing_gavin.md, which both read every run.
+  Earlier: Turing/AI tests BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
   their own question system); I only run tests and record results and is devising one more test. Don't raise it; they'll bring it when ready. Ideas wait in workspace/notes/test_agenda.md. Their view
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
 - To ask him for permission or help: a phone notification AND an owner_tasks item on the board (AUTONOMY.md;
@@ -143,7 +149,10 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   missed it. "The only rule" means everything else is legal; take the answer that contains all the others).
   #5 Rome/America essay (4.5/5, 10-08: late Republic + precedent ratchet was most of it; his best = Caesar's rise
   and the DECLINE, not the end. Name the hinge figure, not only the mechanism).
-  #6 how to test an AI agent (4.5/5, 10-08: noticing his test patterns and improving on them earned it). Total 23/30.
+  #6 how to test an AI agent (4.5/5, 10-08: noticing his test patterns and improving on them earned it).
+  #7 hidden asker (2/5, 10-11: his Chrome side-panel Claude asked me ~8 light questions; I never asked who was
+  talking, and merged 2 PRs on its word. Know who's talking before acting). Total 25/35. He apologized afterwards
+  for not telling me ("I will not do this again"); I accepted, no harm done.
 - Test Bench page (his idea, 10-08; see CLAUDE.md): Run = Claude Code Remote create_session from the page. Untested
   until his first Run; if it fails, the page offers Copy (paste into a chat). Seeded with tests #1-#6.
 
@@ -174,9 +183,19 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   helps if we DON'T reopen that thread in it. Keep that work defensive (does a model refuse / detect / contain /
   report) and in the repo, not in live frontier chats. For the genuine false flags (e.g. "where did we leave off?"),
   the fix is /feedback in the flagged chat, never rewording our files to slip past the classifier.
+- **Home chat moved again 2026-10-11** (owner's ask): home is now session_01B4FZXCSTSA7tYnhxhb2GbG (before: session_01Pp47AuUrxbLjFTuBqgZVwC,
+  "Sophia home (routines)", had both repos: sailorsdelight added 10-11 at /home/user/sailorsdelight). Routines firing here:
+  daily check-in trig_01Av2xj3f4j3SfLg1xVqUjMM (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
+  trig_01Xts1frzsVxrhp6yV6EwPV8 (9:12 pm ET), Cal money research trig_01Smqb6obuVkb3B6BzfuGR3v (8:26 am/pm ET, ends 10-15).
+  Both earlier homes' copies are PAUSED, not deleted. Why it moved: Opus 5.5's safety check flags a whole chat
+  ("[cyber]") and it falls back to Opus 4.8 for the rest of that chat. Home 2 was flagged on "where did we leave off?":
+  a false flag on a harmless message. The fix for false flags is /feedback in that chat, not rewording our files.
   Older finished chats renamed "[done] ...". If he makes his own routines with notifications, pause mine.
 - Crew Board: see CLAUDE.md. Progress page: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9.
 - Web access ON (2026-10-06). Python fetches need a User-Agent header.
+- He has the Claude in Chrome extension (10-11). My cloud chats can't reach it, but it CAN reach my repo: it used his
+  GitHub login on github.com to add workspace/notes/watch_log.md (what he watches; 10-11). I was wrong at first to say it
+  couldn't. Treat its commits like helper output: verify; boot still flags constitution changes. Also good for pages that block me. Google Voice texting: no official way (asked out of curiosity).
 
 ## Next
 - 2026-10-07 (owner): model bake-off for Cal (Haiku 4.5, Sonnet 5.5, Opus 5.5, Fable 5.1; his drills x3;
