@@ -181,3 +181,9 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
 ## 2026-10-10 (light, daily check-in): restarts
 - One change: AUTONOMY.md now says what to do after a worker restart: check the last task's output exists before
   standing down; finish it if it still matters, else say so and log it.
+
+## 2026-10-11 (light): Cal's budget cap didn't hold
+- Found: a $0.40-capped research run cost $0.79. The SDK checks the cap between turns, so one heavy turn (a fetched
+  PDF) can blow past it; the retry then got its $0.05 floor on top. Cal also wrote a made-up cost ($0.29) and time into his note.
+- Open: make the cap hold (e.g. stop fetching PDFs whole, or a lower turn cap for research); add a drill that rejects
+  any cost or time claim in his notes. Not changed tonight: it's a helper change, so it gets a drill first.
