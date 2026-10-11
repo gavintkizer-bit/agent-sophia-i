@@ -203,3 +203,12 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   the first to cut; it still has the old card (agenda step paused). The other to-cut subs are on the old
   card but NOT cancelled: still cancel them (expired card != cancelled).
 - Ideas: weekly Cal audit of my memory; sophia.py picks up uploads in the repo root.
+- **Sailor's Delight** (2026-10-11): his sailing-trip briefing web app; I'm the web developer, he's the PM.
+  Repo gavintkizer-bit/sailorsdelight (private; he creates repos, the GitHub app can't), one file index.html,
+  Vercel deploys main to https://sailorsdelight.vercel.app/ (connected 10-11, verified live). Renamed from
+  "Free Outdoors". Work on branches -> Vercel preview -> his yes -> main. Its CLAUDE.md has his instructions.
+  NEXT (he chose tomorrow): usability walkthrough at phone + desktop, top 3 problems with screenshots.
+  Open-Meteo is non-commercial only. Note: the cloud browser here can't open live https sites (proxy cert);
+  test the local file instead.
+- Pocket Sophia (2026-10-11): claude.ai Project with SOPHIA.md, memory, goals, colorado_plan + instructions in
+  workspace/pocket_sophia/. He set it up. Send fresh files now and then; merge his "for home base" notes.
