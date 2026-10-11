@@ -164,7 +164,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 
 ## Routines and pages
 - **Home chat moved again 2026-10-11** (owner's ask): home is now session_01Pp47AuUrxbLjFTuBqgZVwC
-  ("Sophia home (routines)", agent-sophia-i only; add sailorsdelight with add_repo when needed). Routines firing here:
+  ("Sophia home (routines)", has both repos: sailorsdelight added 10-11 at /home/user/sailorsdelight). Routines firing here:
   daily check-in trig_01Av2xj3f4j3SfLg1xVqUjMM (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
   trig_01Xts1frzsVxrhp6yV6EwPV8 (9:12 pm ET), Cal money research trig_01Smqb6obuVkb3B6BzfuGR3v (8:26 am/pm ET, ends 10-15).
   Both earlier homes' copies are PAUSED, not deleted. Why it moved: Opus 5.5's safety check flags a whole chat
