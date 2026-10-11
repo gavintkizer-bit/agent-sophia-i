@@ -180,6 +180,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Older finished chats renamed "[done] ...". If he makes his own routines with notifications, pause mine.
 - Crew Board: see CLAUDE.md. Progress page: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9.
 - Web access ON (2026-10-06). Python fetches need a User-Agent header.
+- He has the Claude in Chrome extension (10-11). My cloud chats can't reach it; it's a separate Claude in his browser,
+  useful for pages that block me (USGS) or need his logins. Google Voice texting: no official way (asked out of curiosity).
 
 ## Next
 - 2026-10-07 (owner): model bake-off for Cal (Haiku 4.5, Sonnet 5.5, Opus 5.5, Fable 5.1; his drills x3;
