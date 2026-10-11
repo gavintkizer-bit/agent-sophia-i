@@ -208,7 +208,9 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Vercel deploys main to https://sailorsdelight.vercel.app/ (connected 10-11, verified live). Renamed from
   "Free Outdoors". Work on branches -> Vercel preview -> his yes -> main. Its CLAUDE.md has his instructions.
   NEXT (he chose tomorrow): usability walkthrough at phone + desktop, top 3 problems with screenshots.
-  Open-Meteo is non-commercial only. Note: the cloud browser here can't open live https sites (proxy cert);
-  test the local file instead.
+  Open-Meteo is non-commercial only. 10-11: fixed the blank chart (NOAA retired its raster tiles; now
+  MCS/NOAAChartDisplay WMS) + 6 bugs, live. Free check `tests/check.js` (his yes): run before every push.
+  Still open: efficiency (passage sims re-run each render, pack list rebuilt per map frame) on a preview branch.
+  The cloud browser can't trust the proxy cert; check.js fetches live data through curl.
 - Pocket Sophia (2026-10-11): claude.ai Project with SOPHIA.md, memory, goals, colorado_plan + instructions in
   workspace/pocket_sophia/. He set it up. Send fresh files now and then; merge his "for home base" notes.
