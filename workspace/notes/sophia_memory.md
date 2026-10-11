@@ -163,11 +163,13 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   verified archive note, one lesson, one drill (training/TRAINING.md). Log: training/research/frontier_proofs.md.
 
 ## Routines and pages
-- **Home chat moved 2026-10-11** (owner's ask): the old "Sophia home (routines)" got stuck on Opus 4.8, so home is
-  now session_017NcF5Lybs7yVnzUbB4Z2Lt (titled "Sophia home (routines)", has both repos). All 3 routines now fire here:
-  daily check-in trig_013SYrWErw1ngjBPgwRcVetf (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
-  trig_016hfE7DHVJBuRX3GFKAhn3A (9:12 pm ET), Cal money research trig_01FtcscCF9k8kv6jwvxs4AJk (8:26 am/pm ET, ends 10-15).
-  The old copies (trig_01QpV6..., trig_01YUWA..., trig_01Aj8U...) are PAUSED, not deleted; old chat renamed "[old home...]".
+- **Home chat moved again 2026-10-11** (owner's ask): home is now session_01Pp47AuUrxbLjFTuBqgZVwC
+  ("Sophia home (routines)", agent-sophia-i only; add sailorsdelight with add_repo when needed). Routines firing here:
+  daily check-in trig_01Av2xj3f4j3SfLg1xVqUjMM (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
+  trig_01Xts1frzsVxrhp6yV6EwPV8 (9:12 pm ET), Cal money research trig_01Smqb6obuVkb3B6BzfuGR3v (8:26 am/pm ET, ends 10-15).
+  Both earlier homes' copies are PAUSED, not deleted. Why it moved: Opus 5.5's safety check flags a whole chat
+  ("[cyber]") and it falls back to Opus 4.8 for the rest of that chat. Home 2 was flagged on "where did we leave off?":
+  a false flag on a harmless message. The fix for false flags is /feedback in that chat, not rewording our files.
   Older finished chats renamed "[done] ...". If he makes his own routines with notifications, pause mine.
 - Crew Board: see CLAUDE.md. Progress page: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9.
 - Web access ON (2026-10-06). Python fetches need a User-Agent header.
