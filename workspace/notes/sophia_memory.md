@@ -90,6 +90,8 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   hard (selfish but strategic; he won't justify it, only be honest). Experiment W1 creek-to-river
   (training/experiments/creek_to_river.md), his guess recorded: runoff and sediment mark the line. Next (mine): step 1,
   check gauge pairs and count sediment samples (free, USGS). Cal's caps overshoot ($0.79 on a $0.40 cap): keep runs small.
+- Owner 10-11: "feel free to pass work off to cal whenever needed" (budgets still hold). His thanks to Hypatia and
+  apology + offer of help to Cal are in owner_own/knowing_gavin.md, which both read every run.
   Earlier: Turing/AI tests BACKBURNER (2026-10-07). BOTH the questions and the answers come from the owner (written on paper,
   their own question system); I only run tests and record results and is devising one more test. Don't raise it; they'll bring it when ready. Ideas wait in workspace/notes/test_agenda.md. Their view
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
