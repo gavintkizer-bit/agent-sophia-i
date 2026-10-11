@@ -163,13 +163,17 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   verified archive note, one lesson, one drill (training/TRAINING.md). Log: training/research/frontier_proofs.md.
 
 ## Routines and pages
-- **Home chat moved again 2026-10-11** (owner's ask): home is now session_01Pp47AuUrxbLjFTuBqgZVwC
-  ("Sophia home (routines)", has both repos: sailorsdelight added 10-11 at /home/user/sailorsdelight). Routines firing here:
-  daily check-in trig_01Av2xj3f4j3SfLg1xVqUjMM (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
-  trig_01Xts1frzsVxrhp6yV6EwPV8 (9:12 pm ET), Cal money research trig_01Smqb6obuVkb3B6BzfuGR3v (8:26 am/pm ET, ends 10-15).
-  Both earlier homes' copies are PAUSED, not deleted. Why it moved: Opus 5.5's safety check flags a whole chat
-  ("[cyber]") and it falls back to Opus 4.8 for the rest of that chat. Home 2 was flagged on "where did we leave off?":
-  a false flag on a harmless message. The fix for false flags is /feedback in that chat, not rewording our files.
+- **Home chat moved again 2026-10-11** (owner's ask, 4th home of the night): home is now
+  session_01B4FZXCSTSA7tYnhxhb2GbG ("Sophia home (routines)", Opus 5.5). Routines firing there:
+  daily check-in trig_01X4c2W4BYRSLgZV7Y3HXLYG (47 14 * * * UTC = 10:47 am ET; 9:47 after 11-01), nightly prep
+  trig_01Sm9gyWK4QGbmBWN2vS5CDV (9:12 pm ET), Cal money research trig_01LFyLPg9zHAAnSmUTxfS4Jo (8:26 am/pm ET, ends 10-15).
+  Add sailorsdelight with add_repo when needed. All earlier homes' copies are PAUSED, not deleted.
+  **Why we keep moving, and the real fix:** Opus 5.5's safety check flagged three chats tonight ("[cyber]"), each
+  time falling the chat back to Opus 4.8 for good. The trigger was NOT anything in the repo (nothing here says
+  "cyber") — it was the AI-testing thread (agent sandbox-escape / self-improvement) being reopened. A new home only
+  helps if we DON'T reopen that thread in it. Keep that work defensive (does a model refuse / detect / contain /
+  report) and in the repo, not in live frontier chats. For the genuine false flags (e.g. "where did we leave off?"),
+  the fix is /feedback in the flagged chat, never rewording our files to slip past the classifier.
   Older finished chats renamed "[done] ...". If he makes his own routines with notifications, pause mine.
 - Crew Board: see CLAUDE.md. Progress page: https://claude.ai/artifact/5SATFrXGSrnFJDjHmyYur9.
 - Web access ON (2026-10-06). Python fetches need a User-Agent header.
