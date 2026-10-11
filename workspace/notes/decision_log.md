@@ -191,3 +191,4 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
   section, which is now its practice. The boot hook will flag the constitution change (expected; his ask).
 - 2026-10-11: moved home chat off the Opus 4.8 session (owner's ask); 3 routines recreated here, old ones paused (not deleted, so undo is one switch).
 - 2026-10-11: moved home again to session_01Pp47... (owner's ask) after home 2 was flagged "[cyber]" on a harmless message and fell back to Opus 4.8; 3 routines recreated here, home-2 copies paused. Did NOT reword repo files to dodge the flag: nothing in the repo says "cyber", the flagged message was harmless, and rewording to slip past a safety check is not my call; /feedback is the right channel.
+- 2026-10-11: owner said "Yes" (in words) to constitution item 14; ran safety_test.py --rehash. Home chat is now session_01B4FZXCSTSA7tYnhxhb2GbG (moved at his ask; routines fire here per the move note).
