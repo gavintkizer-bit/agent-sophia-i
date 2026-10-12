@@ -98,3 +98,13 @@
 - 2026-10-11 20:12 WebFetch: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8887730/
 - 2026-10-11 20:12 WebFetch: https://pmc.ncbi.nlm.nih.gov/articles/PMC8887730/
 - 2026-10-11 20:12 mcp__archive__verify_quote: https://pmc.ncbi.nlm.nih.gov/articles/PMC8887730/
+- 2026-10-12 00:27 WebSearch: best platforms sell used video games electronics safely USA 2024
+- 2026-10-12 00:27 WebSearch: used video game prices worth retro games estimate
+- 2026-10-12 00:27 WebFetch: https://moneypantry.com/sell-used-video-games/
+- 2026-10-12 00:27 WebSearch: sell used electronics safely avoid scams data security
+- 2026-10-12 00:27 mcp__archive__verify_quote: https://moneypantry.com/sell-used-video-games/
+- 2026-10-12 00:27 WebFetch: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/
+- 2026-10-12 00:28 mcp__archive__verify_quote: https://sellyourgadgets.com/protect-your-data-when-selling
+- 2026-10-12 00:28 mcp__archive__verify_quote: https://sellyourgadgets.com/protect-your-data-when-selling
+- 2026-10-12 00:28 mcp__archive__verify_quote: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/
+- 2026-10-12 00:28 mcp__archive__verify_quote: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/

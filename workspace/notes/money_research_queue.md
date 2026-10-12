@@ -20,7 +20,7 @@ Next topic = the first unchecked one.
 - [x] Round-up and micro-saving tools (like Bank of America's Keep the Change): do they actually help?
 - [x] Low-stress, flexible side income that avoids scams, using practical skills (cooking, deep cleaning, lawn care, handyman work, box truck driving), not creative work
 - [x] Spotting money scams and protecting financial privacy online
-- [ ] Selling unused electronics and old games safely, and what they're usually worth
+- [x] Selling unused electronics and old games safely, and what they're usually worth
 - [ ] Cashback and rewards on recurring bills, without taking on debt
 - [ ] Monthly vs. yearly subscription plans, and rotating streaming services
 - [ ] Roth IRA and index funds explained for beginners (education, not advice)
