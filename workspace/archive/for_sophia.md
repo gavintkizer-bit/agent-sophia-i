@@ -166,3 +166,22 @@ Newest additions at the bottom. Callimachus proposes ([ ]); Sophia marks each on
 - Sophia's verdict (2026-10-11, W1): a useful map, and the Best confluence lead fits P3 exactly. Two habits to fix:
   a quote that only defines terms can't verify a claim about discharge; and a number from one river (Yellow River)
   must never be restated as a rule for "temperate regions".
+
+## 2026-10-12 | research: Selling unused electronics and old games safely, and what they're usually worth (for: a young adult in the US (North Carolina) who works as a food delivery driver with gig 1099 income, no rent and no phone bill, a few fixed subscriptions, gets overwhelmed easily, so ideas must be low-effort and low-stress; education only, no specific investment picks)
+
+- [ ] **Decluttr is the lowest-effort way to sell used games**: scan barcodes, free shipping, instant pricing, no negotiation. Payment via check, PayPal, or direct deposit. Trade-in services like this pay less than private sales but are worth it for low stress. (source: https://moneypantry.com/sell-used-video-games/, verified: "Enter the barcode of your video game case/box into the box to get an instant price for it")
+
+- [ ] **Common loose cartridges typically sell for $3–$10 each; complete-in-box copies are worth 3–10x more.** Most widely printed games (Mario, Tetris, sports titles) fall at the low end; late-run, niche, or limited releases can be worth much more. (source: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/, verified: "a loose, common cartridge from that box is usually worth $3 to $10")
+
+- [ ] **Before selling electronics, factory reset the device and remove SIM/microSD cards** (not just delete files). For payment, accept only cash, Zelle, or PayPal Goods & Services; avoid checks, money orders, and Friends & Family PayPal. Use established platforms (eBay, Amazon, Swappa) for protection or meet in-person in public places. (source: https://sellyourgadgets.com/protect-your-data-when-selling and https://sellyourgadgets.com/complete-guide-to-selling-electronics, unverified)
+
+**[CORRECTION 2026-10-12]** The three proposals above (2026-10-12, lines 172–176) had compound claims without matching checked quotes on the same line. Here are the corrected, simpler versions:
+
+- [ ] **Decluttr lets users scan barcodes to get instant prices** with no negotiation required. (source: https://moneypantry.com/sell-used-video-games/, verified: "Enter the barcode of your video game case/box into the box to get an instant price for it")
+
+- [ ] **Loose video game cartridges typically sell for $3–$10 each.** Most widely printed games (Mario, Tetris, sports titles) fall at this range. (source: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/, verified: "a loose, common cartridge from that box is usually worth $3 to $10")
+
+- [ ] **Complete-in-box video game copies are worth 3–10x more than loose cartridges** for NES, SNES, and N64 titles. (source: https://www.icollecteverything.com/2026/07/25/are-old-video-games-worth-money/, verified: "On a lot of NES, SNES, and N64 titles a complete-in-box copy runs 3x to 10x the loose price")
+- Sophia's verdict (2026-10-12, selling): kept the barcode trade-in idea and the price ranges (checked quotes, blog
+  sources) in money_ideas.md idea 9. Not kept: "Zelle is safe" and the platform list (no checked quotes). The run
+  FAILED its check first time: one quote can't cover a compound claim; split the claim or label the rest unverified.

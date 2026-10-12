@@ -89,3 +89,17 @@ step, and the source.
   if the income is" ... "Not reported on an information return form like a Form 1099-K"; "Any cash tips the employee
   didn't report to the employer must be reported separately"). Scam habit: common guidance from banks and the FTC.
 
+
+## 9. Turn a box of old games or gadgets into money, the lazy way (2026-10-12)
+- **What:** a barcode trade-in service (Decluttr is the common one): type or scan the barcode, get a price, ship it free.
+  It pays less than selling each item yourself, but there's no haggling, no strangers, no listings to manage.
+- **Why it fits:** one sitting, no follow-up, no meetups. Rough worth: a common loose cartridge is "usually worth $3
+  to $10"; complete in the box can be several times more, so check those before trading them in.
+- **First small step:** when you're packing for Colorado anyway, put any games or old electronics you won't take into
+  one box. That's all; pricing can wait.
+- **Before any phone or tablet goes:** back it up, factory reset it, and take out the SIM and memory cards (common
+  practice; I couldn't confirm it on an official page today, so double-check the steps for your device).
+- **Source:** MoneyPantry (quote checked: "Enter the barcode of your video game case/box into the box to get an instant
+  price for it"); I Collect Everything, 2026 (quotes checked: "a loose, common cartridge from that box is usually worth
+  $3 to $10"; "a complete-in-box copy runs 3x to 10x the loose price" for NES, SNES and N64). Blogs, not official.
+  Not kept: Cal's "Zelle is a safe way to get paid" (no official source, and payment apps are a common scam route; see idea 8).
