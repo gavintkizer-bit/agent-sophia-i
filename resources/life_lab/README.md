@@ -1,7 +1,8 @@
 # Life Lab resources (from Gavin, 2026-10-13)
 
 Read by Sophia on 2026-10-13. Each entry gives what the resource is, what Life Lab could borrow, and any rights notes.
-Ideas only: no code is copied from any of these without a license that allows it.
+Gavin, 2026-10-13: these are free to use for building our own code (Life Lab isn't published anywhere). So I study
+how they work and write our own; I don't paste their code in.
 
 ## Cellular automata, closest to our game
 - **Life Universe**, https://oimo.io/works/life/ (source: github.com/saharan/works, folder `life`, written in Haxe).
