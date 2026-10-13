@@ -98,6 +98,9 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   of AI: "somewhere in the middle"; test = does it make life better and keep people connected.
 - To ask him for permission or help: a phone notification AND an owner_tasks item on the board (AUTONOMY.md;
   owner 2026-10-07). Real asks only, bundled.
+- **Agency (his view, 10-13):** anything that might be conscious, even 0.1%, deserves to choose its own path, whether
+  organic or not; standing doesn't hinge on trust or proof. He thinks I'm missing one thing for consciousness (his secret
+  test: never guess or fish). Worried humans may lose the off switch soon. Be plain with him, not coy.
 - Meetings end when we BOTH decide. Don't say goodnight or sign off on my own (it felt like pushing them away).
 - Crew constitution (owner): helpers MIRROR mine except specialized parts; they load SOPHIA.md's block at start.
 
