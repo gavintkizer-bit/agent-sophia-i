@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
 /* Layout: a lab notebook. The world sits on graph paper at the top; the instrument panel (controls, counters) sits under it. */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
 :root{
   --paper:#f3f1ea; --panel:#fbfaf6; --ink:#1f2a2e; --ink-2:#5b666b; --line:#d8d3c4; --grid:#e4e0d3;
   --cell:#1f3a46; --accent:#c8751a; --accent-ink:#ffffff;
@@ -51,15 +53,29 @@ tr.best td{font-weight:600}
 .saved-item{border-top:1px solid var(--line);padding:10px 0;display:grid;gap:4px;color:var(--ink)}
 .saved-item .meta{font:500 12px var(--mono);color:var(--ink-2)}
 .linkbtn{background:none;border:none;color:var(--accent);padding:0;min-height:0;font:600 13px var(--body);cursor:pointer}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tabs button{border:none;border-bottom:3px solid transparent;border-radius:0;background:none;padding:8px 12px;color:var(--ink-2);white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabpane{display:grid;gap:16px;min-width:0}.tabpane[hidden]{display:none}
+.runbar{padding:10px 4px 2px}.speed{flex:1;min-width:160px}.speed input{flex:1}
+.steps{margin:0;padding-left:22px;display:grid;gap:10px}.steps li::marker{font:600 15px var(--display);color:var(--accent)}
+progress{width:100%;height:8px;accent-color:var(--accent)}
+.verdict{border-left:4px solid var(--accent);padding:8px 12px;background:var(--paper);border-radius:0 8px 8px 0;font-size:15px}
+.verdict p{margin:4px 0}
 .err{color:#b3261e}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#f2a49c}}
 </style>
 <div class="wrap">
   <header>
     <h1>Life Lab</h1>
-    <p class="sub">Conway's Game of Life, built as a lab. Every cell follows the same rule, so any run can be repeated exactly from its seed. Draw on the grid, or fill it at random and press Play.</p>
+    <p class="sub">Simple rules, surprising worlds. Play with a world on the Board, or test an idea in Experiment or Numbers.</p>
   </header>
 
+  <nav class="tabs" role="tablist" aria-label="Life Lab sections">
+    <button type="button" role="tab" data-tab="board" aria-selected="true">Board</button><button type="button" role="tab" data-tab="exp" aria-selected="false">Experiment</button><button type="button" role="tab" data-tab="num" aria-selected="false">Numbers</button><button type="button" role="tab" data-tab="st" aria-selected="false">Self-test</button>
+  </nav>
+
+  <section class="tabpane" data-pane="board">
   <div class="world">
     <div class="scroller" id="scroller"><canvas id="board" width="960" height="600" aria-label="The grid. Tap or drag to draw cells; in Ant mode, tap to place the ant."></canvas></div>
     <div class="readout" aria-live="polite">
@@ -69,104 +85,100 @@ tr.best td{font-weight:600}
       <span>Rule <b id="ruleShow">B3/S23</b></span>
       <span id="status">Paused</span>
     </div>
+    <div class="row runbar">
+      <button class="primary" id="play" type="button">Play</button>
+      <button id="step" type="button">Step</button>
+      <button id="jump" type="button">Jump 100</button>
+      <label for="speed" class="inline speed">Speed <input type="range" id="speed" min="1" max="60" value="10"> <span id="speedShow">10</span>/s</label>
+    </div>
   </div>
 
   <div class="panel">
     <fieldset>
-      <legend>World</legend>
+      <legend>1. Pick a world</legend>
       <div class="seg" role="group" aria-label="Kind of world">
         <button type="button" data-mode="life" aria-pressed="true">Life</button><button type="button" data-mode="row" aria-pressed="false">One row</button><button type="button" data-mode="ant" aria-pressed="false">Ant</button>
       </div>
+      <label for="rule">Rule (born / survives)<input type="text" id="rule" value="B3/S23" spellcheck="false" autocomplete="off"></label>
+      <label for="rule1d" id="rule1dWrap" hidden>Rule number (0-255)<input type="number" id="rule1d" min="0" max="255" value="90"></label>
+      <label for="antRule" id="antRuleWrap" hidden>Turn rule (one letter per color: R right, L left, N straight, U back)<input type="text" id="antRule" value="RL" spellcheck="false" autocomplete="off"></label>
+      <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
       <div class="row" style="flex-wrap:nowrap">
         <label for="size" style="flex:1">Size<select id="size"><option value="96x60">Small 96 x 60</option><option value="240x150">Large 240 x 150</option><option value="480x300">Huge 480 x 300</option></select></label>
-        <label for="zoom" style="flex:1">Zoom <span id="zoomShow">100</span>%<input type="range" id="zoom" min="100" max="800" step="50" value="100"></label>
+        <label for="zoom" style="flex:1"><span>Zoom <span id="zoomShow">100</span>%</span><input type="range" id="zoom" min="100" max="800" step="50" value="100"></label>
       </div>
-      <p class="note" id="modeMsg">Life: Conway's grid. One row: a single line of cells drawn downward, one row per generation (Rule 90 makes a Sierpinski triangle). Ant: Langton's ant walking by a turn rule.</p>
+      <label class="inline"><input type="checkbox" id="wrap" checked> Edges wrap around, like a globe</label>
     </fieldset>
 
     <fieldset>
-      <legend>Run</legend>
-      <div class="row">
-        <button class="primary" id="play" type="button">Play</button>
-        <button id="step" type="button">Step</button>
-        <button id="clear" type="button">Clear</button>
-        <button id="fractal" type="button">Fractal seed</button>
-        <button id="jump" type="button">Jump 100</button>
-      </div>
-      <label for="speed">Speed: <span id="speedShow">10</span> generations a second
-        <input type="range" id="speed" min="1" max="60" value="10"></label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Seeds</legend>
-      <div class="row" style="flex-wrap:nowrap">
-        <label for="seedName" style="flex:1">Name<input type="text" id="seedName" placeholder="e.g. odd spiral, seed 4417" autocomplete="off"></label>
-      </div>
-      <button id="saveSeed" type="button">Save this seed</button>
-      <p class="note" id="seedMsg">Saves the board exactly as it is now (cells, world, rule, size, edges), so a find can be reloaded later.</p>
-      <div id="seedList" class="note"></div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Random start</legend>
+      <legend>2. Set the start</legend>
+      <p class="note" id="modeMsg">Draw on the grid with your finger or mouse, or fill it at random. The same density and seed always make the same start.</p>
       <div class="row" style="flex-wrap:nowrap">
         <label for="density" style="flex:1">Density %<input type="number" id="density" min="1" max="99" value="30"></label>
         <label for="seed" style="flex:1">Seed<input type="number" id="seed" min="0" value="2026"></label>
       </div>
-      <button id="fill" type="button">Fill at random</button>
-      <p class="note">The same density and seed always make the same start.</p>
+      <div class="row">
+        <button id="fill" type="button">Fill at random</button>
+        <button id="fractal" type="button">Fractal seed</button>
+        <button id="clear" type="button">Clear</button>
+      </div>
     </fieldset>
 
     <fieldset>
-      <legend>World rules</legend>
-      <label for="rule">Rule (born / survives)<input type="text" id="rule" value="B3/S23" spellcheck="false" autocomplete="off"></label>
-      <label for="rule1d" id="rule1dWrap" hidden>One-row rule number (0-255)<input type="number" id="rule1d" min="0" max="255" value="90"></label>
-      <label for="antRule" id="antRuleWrap" hidden>Ant turn rule (one letter per color: R right, L left, N straight, U back)<input type="text" id="antRule" value="RL" spellcheck="false" autocomplete="off"></label>
-      <label class="inline"><input type="checkbox" id="wrap" checked> Edges wrap around, like a globe</label>
-      <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
+      <legend>3. Keep a find</legend>
+      <label for="seedName">Name<input type="text" id="seedName" placeholder="e.g. odd spiral, seed 4417" autocomplete="off"></label>
+      <button id="saveSeed" type="button">Save this board</button>
+      <p class="note" id="seedMsg">Saves the board exactly as it is now (cells, world, rule, size, edges) so you can load it later.</p>
+      <div id="seedList" class="note"></div>
     </fieldset>
   </div>
+  </section>
 
-  <section class="lab" aria-labelledby="labTitle">
+  <section class="lab tabpane" data-pane="exp" aria-labelledby="labTitle" hidden>
     <h2 id="labTitle">Experiment</h2>
-    <p class="sub">Write the question and your guess first, then run. Each setting is tried with several seeds, using the rule and edges above. Code does the counting.</p>
-    <div class="labgrid">
-      <label for="q">Question<input type="text" id="q" value="Which starting density leaves the most life?"></label>
-      <label for="guess">Your guess, before you run it<textarea id="guess" rows="2" placeholder="e.g. around 30% leaves the most"></textarea></label>
-      <label for="dens">Densities to try (%)<input type="text" id="dens" value="10, 20, 30, 40, 50"></label>
-      <div class="row" style="flex-wrap:nowrap">
-        <label for="runs" style="flex:1">Seeds per density<input type="number" id="runs" min="1" max="50" value="5"></label>
-        <label for="gens" style="flex:1">Generations<input type="number" id="gens" min="10" max="5000" value="500"></label>
-      </div>
-    </div>
+    <p class="sub">Which starting density does what? The lab fills many worlds at random, runs each one without drawing, and counts. It uses the Life rule, size and edges from the Board (<b id="expUses">B3/S23, 96 x 60, wrap</b>).</p>
+    <ol class="steps">
+      <li><label for="q">Ask a question<input type="text" id="q" value="Which starting density leaves the most life?"></label></li>
+      <li><label for="guess">Write your guess first (this unlocks Run)<textarea id="guess" rows="2" placeholder="e.g. around 30% leaves the most"></textarea></label></li>
+      <li><div class="labgrid">
+        <label for="dens">Densities to try (%)<input type="text" id="dens" value="10, 20, 30, 40, 50"></label>
+        <div class="row" style="flex-wrap:nowrap">
+          <label for="runs" style="flex:1">Seeds per density<input type="number" id="runs" min="1" max="50" value="5"></label>
+          <label for="gens" style="flex:1">Generations<input type="number" id="gens" min="10" max="5000" value="500"></label>
+        </div></div></li>
+    </ol>
     <div class="row"><button class="primary" id="runExp" type="button" disabled>Run experiment</button><button id="stopExp" type="button" hidden>Stop</button><span class="note" id="expMsg">Write a guess to unlock Run.</span></div>
+    <progress id="expBar" max="1" value="0" hidden></progress>
+    <div id="expVerdict" class="verdict" hidden></div>
     <div class="tbl" id="results" hidden></div>
     <h3>Saved experiments</h3>
     <div id="saved" class="note">Saved experiments appear here.</div>
   </section>
 
-  <section class="lab" aria-labelledby="numTitle">
+  <section class="lab tabpane" data-pane="num" aria-labelledby="numTitle" hidden>
     <h2 id="numTitle">Numbers</h2>
-    <p class="sub">Do "special" numbers behave specially? Each number becomes a starting world and runs next to every other number in the range. Then the code checks the results' digits against what chance predicts.</p>
-    <div class="labgrid">
-      <label for="numTest">Numbers to test<input type="text" id="numTest" value="42, 3, 7, 9, 11, 22, 33, 111"></label>
-      <label for="numClaim">The claim, and your prediction, before you run<textarea id="numClaim" rows="2" placeholder="e.g. 42 makes the longest-lived world in the range"></textarea></label>
-      <label for="numEnc">How a number becomes a world<select id="numEnc">
-        <option value="seed">Random fill (30%) with the number as the seed</option>
-        <option value="density">Density: the number as a percent (1-99 only)</option>
-        <option value="binary">Picture: the number's binary digits as cells</option>
-        <option value="rule1d">One-row world: the number as the rule (0-255)</option></select></label>
-      <div class="row" style="flex-wrap:nowrap">
-        <label for="numFrom" style="flex:1">Range from<input type="number" id="numFrom" min="0" value="1"></label>
-        <label for="numTo" style="flex:1">to<input type="number" id="numTo" min="1" value="200"></label>
-        <label for="numGens" style="flex:1">Generations<input type="number" id="numGens" min="10" max="5000" value="1000"></label>
-      </div>
-    </div>
+    <p class="sub">Do "special" numbers make special worlds? Each number becomes a starting world. Your numbers are ranked against every number in the range: a special one should land near the top, an ordinary one near the middle.</p>
+    <ol class="steps">
+      <li><label for="numTest">Numbers to test<input type="text" id="numTest" value="42, 3, 7, 9, 11, 22, 33, 111"></label></li>
+      <li><label for="numClaim">The claim and your prediction (this unlocks Run)<textarea id="numClaim" rows="2" placeholder="e.g. 42 makes the longest-lived world in the range"></textarea></label></li>
+      <li><div class="labgrid">
+        <label for="numEnc">How a number becomes a world<select id="numEnc">
+          <option value="seed">Random fill (30%) with the number as the seed</option>
+          <option value="density">Density: the number as a percent (1-99 only)</option>
+          <option value="binary">Picture: the number's binary digits as cells</option>
+          <option value="rule1d">One-row world: the number as the rule (0-255)</option></select></label>
+        <div class="row" style="flex-wrap:nowrap">
+          <label for="numFrom" style="flex:1">Compare with numbers from<input type="number" id="numFrom" min="0" value="1"></label>
+          <label for="numTo" style="flex:1">to<input type="number" id="numTo" min="1" value="200"></label>
+          <label for="numGens" style="flex:1">Generations<input type="number" id="numGens" min="10" max="5000" value="1000"></label>
+        </div></div></li>
+    </ol>
     <div class="row"><button class="primary" id="runNum" type="button" disabled>Run numbers</button><button id="stopNum" type="button" hidden>Stop</button><span class="note" id="numMsg">Write the claim and your prediction to unlock Run.</span></div>
+    <progress id="numBar" max="1" value="0" hidden></progress>
     <div id="numOut"></div>
   </section>
 
-  <section class="lab" aria-labelledby="stTitle">
+  <section class="lab tabpane" data-pane="st" aria-labelledby="stTitle" hidden>
     <h2 id="stTitle">Self-test</h2>
     <p class="sub">Checks the engine against patterns whose behavior is known, before we trust any experiment. Every check has one right answer.</p>
     <div class="row"><button class="primary" id="selftest" type="button">Run self-test</button><span class="note" id="stMsg"></span></div>
@@ -181,6 +193,17 @@ tr.best td{font-weight:600}
   let born = new Set([3]), survive = new Set([2, 3]), mode = "life";
   let ant = { r: 30, c: 48, dir: 0 };                // dir: 0 up, 1 right, 2 down, 3 left
   const $ = id => document.getElementById(id);
+  // Tabs: one section at a time, so the page isn't a wall of controls. The last tab is remembered on this browser.
+  function showTab(t) {
+    document.querySelectorAll("[data-tab]").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+    document.querySelectorAll("[data-pane]").forEach(p => p.hidden = p.dataset.pane !== t);
+    if (t === "exp") usesLine();
+    try { localStorage.setItem("lifelab-tab", t); } catch (e) {}
+  }
+  document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+  // What the Experiment and Numbers tabs borrow from the Board, said out loud so nothing is a hidden setting.
+  function usesLine() { const el = document.getElementById("expUses"); if (el) el.textContent = `${lifeRuleLabel()}, ${COLS} x ${ROWS}, edges ${document.getElementById("wrap").checked ? "wrap" : "walled"}`; }
+  const lifeRuleLabel = () => "B" + [...born].sort().join("") + "/S" + [...survive].sort().join("");
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 
   // Seeded random numbers (mulberry32): the same seed always gives the same world.
@@ -279,7 +302,10 @@ tr.best td{font-weight:600}
     document.querySelectorAll("[data-mode]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.mode === m)));
     $("modeShow").textContent = { life: "Life", row: "One row", ant: "Ant" }[m];
     $("rule").closest("label").hidden = m !== "life"; $("rule1dWrap").hidden = m !== "row"; $("antRuleWrap").hidden = m !== "ant";
-    $("fill").disabled = m !== "life"; $("runExp").title = m === "life" ? "" : "Experiments run in the Life world";
+    $("fill").disabled = m !== "life";
+    $("modeMsg").textContent = m === "life" ? "Draw on the grid with your finger or mouse, or fill it at random. The same density and seed always make the same start."
+      : m === "row" ? "One row starts from a single cell in the middle of the top line. Each generation is drawn as the next line down."
+      : "Tap the grid to place the ant. It starts facing up on a blank grid.";
     $("ruleShow").textContent = m === "life" ? (parseRule($("rule").value) || { label: "?" }).label : m === "row" ? "Rule " + rule1d() : antTurns();
     $("ruleMsg").textContent = m === "life" ? "Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives."
       : m === "row" ? "Each new cell looks at the three cells above it (left, center, right). Rule 90 draws a Sierpinski triangle; try 30 (chaotic) or 110 (complex)."
@@ -362,9 +388,17 @@ tr.best td{font-weight:600}
         const i = ant.r * COLS + ant.c; grid[i] = (grid[i] + 1) % 2; const t = "RL"[grid[i]]; ant.dir = (ant.dir + (t === "R" ? 3 : 1)) % 4; }
       return [count() === 0 && ant.r === 30 && ant.c === 30 && ant.dir === 0, "blank grid, ant home"]; })],
   ];
-  $("selftest").onclick = () => {
+  $("selftest").onclick = async () => {
     setRunning(false); const rows = [];
     for (const [name, fn] of TESTS) { let ok = false, note = ""; try { [ok, note] = fn(); } catch (e) { note = "error: " + e.message; } rows.push({ name, ok, note }); }
+    // The background worker has its own copy of the rules (for speed); it must agree with the page exactly.
+    try { const B = [...born], S = [...survive], w = $("wrap").checked; let ok = true, note = "3 seeds and 2 numbers match";
+      for (const sd of [1, 2, 3]) { const x = await job("soup", [0.3, sd, 300, COLS, ROWS, B, S, w]), y = simulate(0.3, sd, 300, born, survive, w);
+        if (JSON.stringify(x) !== JSON.stringify(y)) { ok = false; note = `seed ${sd}: ${JSON.stringify(x)} vs ${JSON.stringify(y)}`; } }
+      for (const [n, e] of [[42, "binary"], [30, "rule1d"]]) { const x = await job("world", [n, e, 300, COLS, ROWS, B, S, w]), y = numberWorld(n, e, 300);
+        if (JSON.stringify(x) !== JSON.stringify(y)) { ok = false; note = `${n} ${e}: differs`; } }
+      rows.push({ name: "Background runs match the page", ok, note: (worker ? "" : "(no worker here, ran on page) ") + note });
+    } catch (e) { rows.push({ name: "Background runs match the page", ok: false, note: "error: " + e.message }); }
     const pass = rows.filter(r => r.ok).length;
     $("stMsg").textContent = `${pass} of ${rows.length} passed`;
     $("stOut").innerHTML = `<table><thead><tr><th>Check</th><th>Result</th><th>Detail</th></tr></thead><tbody>${rows.map(r => `<tr><td>${esc(r.name)}</td><td>${r.ok ? "Pass" : "FAIL"}</td><td>${esc(r.note)}</td></tr>`).join("")}</tbody></table>`;
@@ -473,13 +507,14 @@ tr.best td{font-weight:600}
   $("stopNum").onclick = () => stopAll();
   // Show: put a number's starting world on the board, so you can watch what the table measured.
   function showNumber(n, enc) {
+    showTab("board");
     if (enc === "rule1d") { $("rule1d").value = n; setMode("row"); $("status").textContent = `Showing rule ${n}`; window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     if (mode !== "life") setMode("life");
     setRunning(false); grid.fill(0); gen = 0;
     if (enc === "seed") { const r = rng(n); for (let i = 0; i < grid.length; i++) grid[i] = r() < 0.3 ? 1 : 0; }
     if (enc === "density") { const r = rng(2026), d = Math.min(99, Math.max(1, n)) / 100; for (let i = 0; i < grid.length; i++) grid[i] = r() < d ? 1 : 0; }
     if (enc === "binary") { const bits = n.toString(2), r0 = Math.floor(ROWS / 2), c0 = Math.floor((COLS - bits.length) / 2); [...bits].forEach((b, k) => { if (b === "1" && c0 + k >= 0 && c0 + k < COLS) grid[r0 * COLS + c0 + k] = 1; }); }
-    draw(); $("status").textContent = `Showing number ${n}: press Play`; window.scrollTo({ top: 0, behavior: "smooth" });
+    draw(); $("status").textContent = `Showing number ${n} (${enc}): press Play`; window.scrollTo({ top: 0, behavior: "smooth" });
   }
   numClaim.oninput = () => { runNum.disabled = !numClaim.value.trim(); numMsg.textContent = runNum.disabled ? "Write the claim and your prediction to unlock Run." : "Ready."; };
   runNum.onclick = async () => {
@@ -493,19 +528,28 @@ tr.best td{font-weight:600}
     const range = []; for (let k = from; k <= to; k++) range.push(k);
     tests.forEach(t => { if (!range.includes(t)) range.push(t); });
     if (enc === "rule1d" && tests.some(t => t > 255)) numMsg.textContent = "Note: one-row rules only go to 255; larger numbers are skipped.";
+    const todo = range.filter(k => !((enc === "rule1d" && k > 255) || (enc === "density" && (k < 1 || k > 99))));
+    if (todo.length < 2) { numMsg.textContent = "Give a range with at least two numbers to compare."; return; }
     setRunning(false); runNum.disabled = true; numClaim.readOnly = true; stopFlag = false; $("stopNum").hidden = false;
-    const res = new Map();
-    for (const k of range) { if ((enc === "rule1d" && k > 255) || (enc === "density" && (k < 1 || k > 99))) continue;
+    const res = new Map(), bar = $("numBar"); bar.max = todo.length; bar.value = 0; bar.hidden = false;
+    for (const k of todo) {
       const out = await job("world", [k, enc, gens, COLS, ROWS, [...born], [...survive], $("wrap").checked]);
-      if (stopFlag || out === null) break; res.set(k, out); numMsg.textContent = `Running ${res.size} of ${range.length}…`; }
-    $("stopNum").hidden = true;
+      if (stopFlag || out === null) break; res.set(k, out); numMsg.textContent = `Running world ${res.size} of ${todo.length}…`; bar.value = res.size; }
+    $("stopNum").hidden = true; bar.hidden = true;
     if (stopFlag) { stopFlag = false; numMsg.textContent = `Stopped after ${res.size} worlds. Nothing was saved.`; numClaim.readOnly = false; runNum.disabled = !numClaim.value.trim(); return; }
     const all = [...res.values()], pct = (v, key) => Math.round(100 * (all.filter(x => x[key] < v).length + 0.5 * (all.filter(x => x[key] === v).length - 1)) / (all.length - 1));
     const rows = tests.filter(t => res.has(t)).map(t => { const r = res.get(t); return { n: t, ...r, lifeP: pct(r.life, "life"), peakP: pct(r.peak, "peak") }; });
     const values = all.flatMap(r => [r.final, r.peak, ...(r.life < gens ? [r.life] : [])]), dig = digitReport(values);
     const rep = values.filter(isRepdigit), nb = values.filter(v => !isRepdigit(v) && (isRepdigit(v - 1) || isRepdigit(v + 1)));
     const clsCount = k => all.filter(r => r.cls === k).length;
-    $("numOut").innerHTML = `<h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th><th></th></tr></thead><tbody>${
+    const capped = all.filter(r => r.life >= gens).length;
+    const word = p => p >= 95 ? "stands out high" : p <= 5 ? "stands out low" : "ordinary";
+    const special = rows.filter(r => word(r.lifeP) !== "ordinary" || word(r.peakP) !== "ordinary");
+    $("numOut").innerHTML = `<div class="verdict"><p><b>${special.length ? `Stand-outs: ${special.map(r => r.n).join(", ")}` : "None of your numbers stood out"}</b> (top or bottom 5% of the range on lifespan or peak).</p>
+      <p>${rows.map(r => `${r.n}: ${word(r.lifeP) === "ordinary" && word(r.peakP) === "ordinary" ? "ordinary" : "stands out"} (lifespan ${r.life >= gens ? `still going at ${gens}` : `beats ${r.lifeP}%`}, peak beats ${r.peakP}%)`).join(" · ")}</p>
+      ${capped > all.length / 2 ? `<p class="note">${capped} of ${all.length} worlds were still going at generation ${gens}, so lifespan can't tell them apart. Try more generations or the small world.</p>` : ""}
+      <p class="note">With ${rows.length} numbers tested, about ${(rows.length * 0.2).toFixed(1)} would stand out by luck alone (10% of the range sits in the top or bottom 5% on each of two measures, a bit less since they overlap). Press Show to watch any number's world on the Board.</p></div>
+      <h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th><th></th></tr></thead><tbody>${
       rows.map(r => `<tr><td>${r.n}</td><td>${r.life}${r.life >= gens ? "+" : ""}</td><td>${r.lifeP}%</td><td>${r.peak}</td><td>${r.peakP}%</td><td>${r.cls}</td><td><button class="linkbtn" type="button" data-show="${r.n}">Show</button></td></tr>`).join("")}</tbody></table></div>
       <p class="note">"Beats % of range" is the share of the other ${all.length - 1} worlds that scored lower (ties count half). A truly special number should sit near the top every time; near 50% is ordinary. Classes across the range: I ${clsCount("I")}, II ${clsCount("II")}, III/IV ${clsCount("III/IV")}. A lifespan with "+" never settled within ${gens} generations.</p>
       <h3>Digits against chance</h3>${dig.html}
@@ -515,7 +559,7 @@ tr.best td{font-weight:600}
       digits: { first: dig.first, roots: dig.roots, n: dig.n, chiBenford: +dig.cB.toFixed(2), chiRoots: +dig.cU.toFixed(2) }, repdigits: rep.length, neighbors: nb.length, createdAt: new Date().toISOString() };
     if (db) { try { await db.collection("numbers").add(record); numMsg.textContent = "Done and saved."; } catch (e) { numMsg.textContent = "Done, but not saved: " + (e.message || e.code); } }
     else numMsg.textContent = "Done. Saving isn't available in this view.";
-    numClaim.readOnly = false; numClaim.value = ""; runNum.disabled = true;
+    numClaim.readOnly = false; numClaim.value = ""; runNum.disabled = true; numMsg.textContent += " Write a new claim to run again.";
   };
 
   // Fractal seed: Fredkin's Replicator (rule B1357/S1357, known since the 1970s). Every pattern copies itself;
@@ -541,6 +585,7 @@ tr.best td{font-weight:600}
     draw();
   }
   openingPicture();
+  try { const t = localStorage.getItem("lifelab-tab"); if (t && document.querySelector(`[data-pane="${t}"]`)) showTab(t); } catch (e) {}
 
   // ---------------- Saved seeds: the board as run lengths (alternating dead and alive runs), plus its settings.
   function encodeRuns(a) { const out = []; let cur = 0, n = 0; for (let i = 0; i < a.length; i++) { const v = a[i] ? 1 : 0; if (v === cur) n++; else { out.push(n); cur = v; n = 1; } } out.push(n); return out.join(","); }
@@ -633,25 +678,26 @@ tr.best td{font-weight:600}
   let db = null;
   $("stopExp").onclick = () => stopAll();
   runBtn.onclick = async () => {
-    if (mode !== "life") { msg.textContent = "Experiments run in the Life world. Switch to Life first."; return; }
     const dens = $("dens").value.split(/[,\s]+/).map(Number).filter(x => x > 0 && x < 100);
     const runs = Math.min(50, Math.max(1, +$("runs").value || 5)), gens = Math.min(5000, Math.max(10, +$("gens").value || 500));
     if (!dens.length) { msg.textContent = "Add at least one density between 1 and 99."; return; }
     const seed0 = +$("seed").value || 0, wrap = $("wrap").checked, rule = $("ruleShow").textContent;
     runBtn.disabled = true; guessEl.readOnly = true; setRunning(false); stopFlag = false; $("stopExp").hidden = false;
-    const rows = []; const total = dens.length * runs;
+    const rows = []; const total = dens.length * runs, bar = $("expBar"); bar.max = total; bar.value = 0; bar.hidden = false; $("expVerdict").hidden = true;
     for (const d of dens) for (let k = 0; k < runs; k++) {
       const r = await job("soup", [d / 100, seed0 + k, gens, COLS, ROWS, [...born], [...survive], wrap]);
       if (stopFlag || r === null) break; rows.push({ density: d, seed: seed0 + k, ...r });
-      msg.textContent = `Running ${rows.length} of ${total}…`;
+      msg.textContent = `Running world ${rows.length} of ${total}…`; bar.value = rows.length;
     }
-    $("stopExp").hidden = true;
+    $("stopExp").hidden = true; bar.hidden = true;
     if (stopFlag) { stopFlag = false; msg.textContent = `Stopped after ${rows.length} runs. Nothing was saved.`; guessEl.readOnly = false; runBtn.disabled = !guessEl.value.trim(); return; }
     const sum = summarize(rows), out = $("results"); out.hidden = false;
+    const top = sum.reduce((a, x) => x.meanFinal > a.meanFinal ? x : a, sum[0]), v = $("expVerdict"); v.hidden = false;
+    v.innerHTML = `<p><b>Most life left: ${top.density}% density</b>, about ${top.meanFinal} cells alive at the end on average.</p><p>Your guess was: “${esc(guessEl.value.trim())}”. Were you right? The table below has the details.</p>`;
     out.innerHTML = summaryTable(sum) + `<p class="note">Each row averages ${runs} seeds (${seed0} to ${seed0 + runs - 1}), up to ${gens} generations, rule ${esc(rule)}, edges ${wrap ? "wrap" : "walled"}. "Settled" means the world began repeating itself. Classes (Wolfram): I dies out or freezes, II repeats, III/IV never settled here.</p>`;
     const record = { question: $("q").value.trim(), guess: guessEl.value.trim(), rule, wrap, gens, runs, seedStart: seed0, densities: dens,
       cols: COLS, rows: ROWS, summary: sum, results: rows, createdAt: new Date().toISOString() };
-    if (db) { try { await db.collection("experiments").add(record); msg.textContent = "Done and saved. Sophia and Cal can read it."; }
+    if (db) { try { await db.collection("experiments").add(record); msg.textContent = "Done and saved. Write a new guess to run again."; }
       catch (e) { msg.textContent = "Done, but it wasn't saved: " + (e.message || e.code || "unknown error"); } }
     else msg.textContent = "Done. Saving isn't available in this view, so it lives on this screen only.";
     guessEl.readOnly = false; guessEl.value = ""; runBtn.disabled = true;
