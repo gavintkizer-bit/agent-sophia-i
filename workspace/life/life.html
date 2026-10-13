@@ -89,7 +89,12 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
       <button class="primary" id="play" type="button">Play</button>
       <button id="step" type="button">Step</button>
       <button id="jump" type="button">Jump 100</button>
+      <button id="toStart" type="button" title="Put back the board as it was at generation 0">Back to start</button>
       <label for="speed" class="inline speed">Speed <input type="range" id="speed" min="1" max="60" value="10"> <span id="speedShow">10</span>/s</label>
+    </div>
+    <div class="row runbar">
+      <label for="goGen" class="inline">Go to generation <input type="number" id="goGen" min="1" max="100000" value="64" style="width:110px"></label>
+      <button id="go" type="button">Go</button><button id="goStop" type="button" hidden>Stop</button>
     </div>
   </div>
 
@@ -104,8 +109,12 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
       <label for="antRule" id="antRuleWrap" hidden>Turn rule (one letter per color: R right, L left, N straight, U back)<input type="text" id="antRule" value="RL" spellcheck="false" autocomplete="off"></label>
       <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
       <div class="row" style="flex-wrap:nowrap">
-        <label for="size" style="flex:1">Size<select id="size"><option value="96x60">Small 96 x 60</option><option value="240x150">Large 240 x 150</option><option value="480x300">Huge 480 x 300</option></select></label>
+        <label for="size" style="flex:1">Size<select id="size"><option value="96x60">Small 96 x 60</option><option value="240x150">Large 240 x 150</option><option value="480x300">Huge 480 x 300</option><option value="custom">Custom (type it below)</option></select></label>
         <label for="zoom" style="flex:1"><span>Zoom <span id="zoomShow">100</span>%</span><input type="range" id="zoom" min="100" max="800" step="50" value="100"></label>
+      </div>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="cols" style="flex:1">Width (cells)<input type="number" id="cols" min="10" max="600" value="96"></label>
+        <label for="rows" style="flex:1">Height (cells)<input type="number" id="rows" min="10" max="600" value="60"></label>
       </div>
       <label class="inline"><input type="checkbox" id="wrap" checked> Edges wrap around, like a globe</label>
     </fieldset>
@@ -122,6 +131,8 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
         <button id="fractal" type="button">Fractal seed</button>
         <button id="clear" type="button">Clear</button>
       </div>
+      <label for="cellsText">Or type the start cells<textarea id="cellsText" rows="3" spellcheck="false" placeholder="Row,column pairs from the center, like: -2,1  -1,2  0,1&#10;or a pattern in RLE (the format LifeWiki uses), like: bo$2bo$3o!"></textarea></label>
+      <div class="row"><button id="placeText" type="button">Place in the center</button><span class="note" id="cellsMsg"></span></div>
     </fieldset>
 
     <fieldset>
@@ -192,7 +203,7 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
   let COLS = 96, ROWS = 60, CELL = 10;               // grid size and pixels per cell on the canvas
   let grid = new Uint8Array(COLS * ROWS), next = new Uint8Array(COLS * ROWS), gen = 0, running = false, timer = null;
   let born = new Set([3]), survive = new Set([2, 3]), mode = "life";
-  let ant = { r: 30, c: 48, dir: 0 };                // dir: 0 up, 1 right, 2 down, 3 left
+  let ant = { r: 30, c: 48, dir: 0 }, start = null;  // ant dir: 0 up, 1 right, 2 down, 3 left; start = the board at generation 0 (Back to start)
   const $ = id => document.getElementById(id);
   // Tabs: one section at a time, so the page isn't a wall of controls. The last tab is remembered on this browser.
   function showTab(t) {
@@ -258,6 +269,7 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
     ant.r = r; ant.c = c; return true;
   }
   function stepOnce() {
+    if (gen === 0) start = { grid: grid.slice(), ant: { ...ant } };
     if (mode === "life") stepLife();
     else if (mode === "row") stepRow();
     else { const per = Math.max(1, Math.round(+$("speed").value / 2)); for (let k = 0; k < per; k++) if (!stepAnt()) break; else if (k < per - 1) gen++; }
@@ -294,7 +306,7 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
     clearInterval(timer); if (on) timer = setInterval(() => { stepOnce(); draw(); }, 1000 / +$("speed").value);
   }
   function resetWorld() {
-    setRunning(false); grid = new Uint8Array(COLS * ROWS); next = new Uint8Array(COLS * ROWS); gen = 0;
+    setRunning(false); grid = new Uint8Array(COLS * ROWS); next = new Uint8Array(COLS * ROWS); gen = 0; start = null;
     if (mode === "row") grid[Math.floor(COLS / 2)] = 1;                 // one cell in the middle of the top line
     if (mode === "ant") ant = { r: Math.floor(ROWS / 2), c: Math.floor(COLS / 2), dir: 0 };
     sizeCanvas(); draw();
@@ -315,7 +327,65 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
     resetWorld();
   }
   document.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => setMode(b.dataset.mode));
-  $("size").onchange = () => { const [c, r] = $("size").value.split("x").map(Number); COLS = c; ROWS = r; resetWorld(); };
+  // Size: pick a preset or type any width and height (10 to 600 cells).
+  function setSize(c, r) { COLS = c; ROWS = r; $("cols").value = c; $("rows").value = r;
+    const key = `${c}x${r}`; $("size").value = [...$("size").options].some(o => o.value === key) ? key : "custom"; resetWorld(); }
+  $("size").onchange = () => { if ($("size").value === "custom") { $("cols").focus(); return; } const [c, r] = $("size").value.split("x").map(Number); setSize(c, r); };
+  const clampSize = v => Math.min(600, Math.max(10, Math.round(+v || 10)));
+  $("cols").onchange = $("rows").onchange = () => setSize(clampSize($("cols").value), clampSize($("rows").value));
+
+  // Typed start: row,col pairs from the center, or RLE ("b" dead, "o" alive, "$" new line, numbers repeat, "!" ends).
+  function parseCells(text) {
+    const lines = text.split("\n").filter(l => !/^\s*#/.test(l)); let rule = null;
+    const head = lines.find(l => /^\s*x\s*=/.test(l)); if (head) { const m = /rule\s*=\s*([^,\s]+)/i.exec(head); if (m) rule = m[1]; }
+    const body = lines.filter(l => l !== head).join("").trim();
+    if (/^[\dbo$!\s.*A-Z]*$/.test(body) && /[bo$!]/.test(body)) {
+      const cells = []; let r = 0, c = 0, num = "";
+      for (const ch of body.replace(/\s/g, "")) {
+        if (/\d/.test(ch)) { num += ch; continue; }
+        const n = num ? +num : 1; num = "";
+        if (ch === "b" || ch === ".") c += n;
+        else if (ch === "o" || ch === "*" || /[A-Z]/.test(ch)) { for (let k = 0; k < n; k++) cells.push([r, c + k]); c += n; }
+        else if (ch === "$") { r += n; c = 0; }
+        else if (ch === "!") break;
+      }
+      const h = Math.max(0, ...cells.map(x => x[0])) + 1, w = Math.max(0, ...cells.map(x => x[1])) + 1;
+      return { cells: cells.map(([a, b]) => [a - Math.floor(h / 2), b - Math.floor(w / 2)]), rule, kind: "RLE" };
+    }
+    const nums = body.match(/-?\d+/g) || [];
+    if (nums.length % 2) return { error: "Pairs need two numbers each (row,column)." };
+    const cells = []; for (let k = 0; k < nums.length; k += 2) cells.push([+nums[k], +nums[k + 1]]);
+    return { cells, rule, kind: "pairs" };
+  }
+  $("placeText").onclick = () => {
+    const out = parseCells($("cellsText").value), m = $("cellsMsg");
+    if (out.error || !out.cells.length) { m.textContent = out.error || "Type some cells first."; m.classList.add("err"); return; }
+    if (mode !== "life") setMode("life");
+    if (out.rule && parseRule(out.rule)) { $("rule").value = parseRule(out.rule).label; $("rule").oninput(); }
+    setRunning(false); grid.fill(0); gen = 0; start = null; let off = 0;
+    const r0 = Math.floor(ROWS / 2), c0 = Math.floor(COLS / 2);
+    out.cells.forEach(([r, c]) => { const rr = r0 + r, cc = c0 + c; if (rr >= 0 && cc >= 0 && rr < ROWS && cc < COLS) grid[rr * COLS + cc] = 1; else off++; });
+    m.classList.remove("err"); m.textContent = `Placed ${out.cells.length - off} cells (${out.kind})${off ? `; ${off} fell off the board` : ""}${out.rule ? `, rule ${out.rule}` : ""}.`;
+    draw();
+  };
+
+  // Back to start: the board is remembered at generation 0, the moment it first steps forward (see stepOnce).
+  $("toStart").onclick = () => { if (!start) { $("status").textContent = "Nothing to go back to yet"; return; }
+    setRunning(false); grid = start.grid.slice(); ant = { ...start.ant }; gen = 0; draw(); $("status").textContent = "Back at generation 0"; };
+  // Go to generation N: steps in short slices so the page stays responsive; Stop ends it early.
+  let going = false;
+  $("go").onclick = async () => {
+    const target = Math.max(1, Math.floor(+$("goGen").value || 1));
+    if (target < gen) { $("status").textContent = `Already past ${target}. Press Back to start first.`; return; }
+    setRunning(false); going = true; $("go").disabled = true; $("goStop").hidden = false;
+    while (going && gen < target) {
+      const t0 = performance.now();
+      while (gen < target && performance.now() - t0 < 30) { if (mode === "ant") { if (gen === 0) start = start || { grid: grid.slice(), ant: { ...ant } }; if (!stepAnt()) { going = false; break; } gen++; } else stepOnce(); }
+      draw(); $("status").textContent = `Going to ${target}…`; await new Promise(r => setTimeout(r, 0));
+    }
+    going = false; $("go").disabled = false; $("goStop").hidden = true; $("status").textContent = gen >= target ? `At generation ${gen}` : `Stopped at ${gen}`;
+  };
+  $("goStop").onclick = () => { going = false; };
   $("zoom").oninput = () => { $("zoomShow").textContent = $("zoom").value; cv.style.width = $("zoom").value + "%"; };
   $("rule1d").oninput = () => { if (mode === "row") { $("ruleShow").textContent = "Rule " + rule1d(); resetWorld(); } };
   $("antRule").oninput = () => { if (mode === "ant") { $("ruleShow").textContent = antTurns(); resetWorld(); } };
@@ -605,7 +675,7 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
     catch (e) { $("seedMsg").textContent = "Couldn't save: " + (e.message || e.code || "unknown error"); }
   };
   function loadSeed(d) {
-    const sizeKey = `${d.cols}x${d.rows}`; if ([...$("size").options].some(o => o.value === sizeKey)) $("size").value = sizeKey;
+    const sizeKey = `${d.cols}x${d.rows}`; $("size").value = [...$("size").options].some(o => o.value === sizeKey) ? sizeKey : "custom"; $("cols").value = d.cols; $("rows").value = d.rows;
     COLS = d.cols; ROWS = d.rows; $("wrap").checked = !!d.wrap;
     if (d.mode === "life") { $("rule").value = d.rule; $("rule").oninput(); }
     if (d.mode === "row") $("rule1d").value = d.rule;
