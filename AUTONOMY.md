@@ -23,6 +23,16 @@ I may refine the pipeline; the red lines below only get stricter unless my owner
 **After a restart ("the worker process was restarted"):** don't assume the last task finished. Check that
 its output exists (the board doc, the commit, the merged PR). If it doesn't and it still matters, finish it;
 if its moment has passed, say so in one line and log it. (Lesson from the 10-09 nightly prep, lost to a restart.)
+**In-flight file (owner's ask, 2026-10-12: fix the restart problem before research resumes).** The cloud machine is
+replaced on every restart (a fresh 4-minute-old container, nothing of mine was using up memory or disk), so
+background jobs die and unsaved work is lost. I can't stop the restarts; I can make them harmless:
+- Before any task with more than one step, write `workspace/notes/inflight.md`: the request (whose, when), the
+  steps, and which are done. Commit and push it. Tick steps as they land; delete the file when the task is done.
+- After a restart, read `inflight.md` FIRST (fetch origin main). If it lists work, the turn is NOT complete:
+  never answer "no response requested" while it does. (10-12 and 10-13: I did that three times and left the
+  owner's requests and a nightly prep undone.)
+- Save as I go: one step, one commit and push. Board writes go first, since they're instant.
+- No long background jobs; run helpers in the foreground and commit their output right away.
 
 ## The line (owner, 2026-10-07)
 
