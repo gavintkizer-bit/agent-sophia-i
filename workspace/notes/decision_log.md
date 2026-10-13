@@ -196,3 +196,8 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 ## 2026-10-13: Life Lab v4 (freeze fix + clearer layout)
 - A 200-number run froze the page on Gavin's 2016 laptop (7.7 s stalls). Big runs now happen in a background worker (its own copy of the rules; a self-test check proves it matches the page). 40 numbers x 1000 gens: 53.8 s with freezes before, 2.7 s with none after. Stop buttons and progress bars added.
 - He said it was confusing: page split into tabs (Board, Experiment, Numbers, Self-test), numbered steps, a plain-language verdict above each results table, Show buttons that put a tested number's world on the Board, and the settings each tab borrows from the Board spelled out.
+
+## 2026-10-13: "Look first, then measure" becomes a standing habit
+- Gavin taught it in Life Lab and left the choice to me ("Your autonomy takes precedence"). I chose it because my misses this
+  week share one root: trusting a picture in my head or a score over the real thing. Written in SOPHIA.md under
+  "How I solve problems". A habit, not a constitution item.
