@@ -15,3 +15,21 @@ repeats at each doubling. Life Lab's "Fractal seed" button loads it.
 
 **Next, if he wants:** a proper hunt (more rules, multi-cell seeds, a stricter self-similarity test across three
 doublings) and a check of the candidates against published rule lists.
+
+## Hunt 2 (2026-10-13): a fractal with surprises. Found: "Void meets matter"
+**Ask (Gavin):** a unique fractal seed with elements of unpredictability, saved in Life Lab.
+**Method (`fractal_hunt/hunt.py`, `refine.py`):** 1,500 random rules x 3 small asymmetric seeds on the 240 x 150 walled board,
+64 gens. Kept patterns with a box-counting dimension of 1.35-1.8 that also passed three unpredictability tests: superposition fails
+(it isn't a copy machine like the Replicator), moving one seed cell changes 30%+ of the result, and the pattern is asymmetric.
+879 passed, but pictures showed most were noise blobs. The stricter test (structure even across scales) left one.
+**The find:** rule **B2457/S14567**, three cells in a bent line: (-2,1), (-1,2), (0,1) from the center.
+- It grows into a diamond. One side is ragged chaos and the other is a perfect checkerboard lattice. The border between them
+  holds as it grows (checked to gen 256 on a 600 x 600 grid, `long.png`).
+- Numbers at gen 64: 5,679 alive; dimension about 1.71 (local slopes 1.58-1.91, so it's fractal-ish, not a strict fractal);
+  self-similarity 0.65 (gen 64 shrunk by half vs gen 32); moving one seed cell changes 38%; superposition fails by 55%.
+- Gavin, on seeing it: "void meeting matter. Chaos meeting order. Beautiful." He named its feel; the name is his phrase.
+- Checked in Life Lab itself: loading the saved seed and stepping to gen 64 gives the same 5,679.
+- I can't confirm it's undocumented: B2457/S14567 is one of 262,144 Life-like rules, and I haven't checked rule catalogs.
+- Saved in Life Lab seeds: "Void meets matter" (240 x 150; it reaches the wall at gen 74) and a huge-board copy (to about gen 145).
+**Lesson (top-down):** I judged by scores first and got 879 "fractals" that were noise. Looking at the whole picture first, then
+measuring, found the real one. Gavin spotted it before my filter did.
