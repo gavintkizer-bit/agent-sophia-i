@@ -144,6 +144,27 @@ tr.best td{font-weight:600}
     <div id="saved" class="note">Saved experiments appear here.</div>
   </section>
 
+  <section class="lab" aria-labelledby="numTitle">
+    <h2 id="numTitle">Numbers</h2>
+    <p class="sub">Do "special" numbers behave specially? Each number becomes a starting world and runs next to every other number in the range. Then the code checks the results' digits against what chance predicts.</p>
+    <div class="labgrid">
+      <label for="numTest">Numbers to test<input type="text" id="numTest" value="42, 3, 7, 9, 11, 22, 33, 111"></label>
+      <label for="numClaim">The claim, and your prediction, before you run<textarea id="numClaim" rows="2" placeholder="e.g. 42 makes the longest-lived world in the range"></textarea></label>
+      <label for="numEnc">How a number becomes a world<select id="numEnc">
+        <option value="seed">Random fill (30%) with the number as the seed</option>
+        <option value="density">Density: the number as a percent (1-99 only)</option>
+        <option value="binary">Picture: the number's binary digits as cells</option>
+        <option value="rule1d">One-row world: the number as the rule (0-255)</option></select></label>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="numFrom" style="flex:1">Range from<input type="number" id="numFrom" min="0" value="1"></label>
+        <label for="numTo" style="flex:1">to<input type="number" id="numTo" min="1" value="200"></label>
+        <label for="numGens" style="flex:1">Generations<input type="number" id="numGens" min="10" max="5000" value="1000"></label>
+      </div>
+    </div>
+    <div class="row"><button class="primary" id="runNum" type="button" disabled>Run numbers</button><span class="note" id="numMsg">Write the claim and your prediction to unlock Run.</span></div>
+    <div id="numOut"></div>
+  </section>
+
   <section class="lab" aria-labelledby="stTitle">
     <h2 id="stTitle">Self-test</h2>
     <p class="sub">Checks the engine against patterns whose behavior is known, before we trust any experiment. Every check has one right answer.</p>
@@ -349,6 +370,76 @@ tr.best td{font-weight:600}
     draw();
   };
 
+  // ---------------- Numbers: each number becomes a world; test numbers are ranked against the whole range.
+  function numberWorld(n, enc, gens) {
+    // Returns lifespan (generation it settled, or gens if it never did), peak, final, class.
+    if (enc === "rule1d") {
+      const W = 101; let row = new Uint8Array(W); row[50] = 1; const seen = new Map(); let peak = 1, pop = 1, settled = null, per = null;
+      for (let t = 0; t <= gens; t++) {
+        pop = row.reduce((a, b) => a + b, 0); if (pop > peak) peak = pop; const key = row.join("");
+        if (seen.has(key)) { settled = seen.get(key); per = t - settled; break; } seen.set(key, t); if (t === gens) break;
+        const nx = new Uint8Array(W); for (let c = 0; c < W; c++) { const L = row[(c + W - 1) % W], C = row[c], R = row[(c + 1) % W]; nx[c] = (n >> (L * 4 + C * 2 + R)) & 1; } row = nx;
+      }
+      return { life: settled ?? gens, peak, final: pop, cls: settled == null ? "III/IV" : (pop === 0 || per === 1) ? "I" : "II" };
+    }
+    // Life worlds: build the start, then reuse the lab's simulate() through a custom start.
+    let start = new Uint8Array(COLS * ROWS);
+    if (enc === "seed") { const r = rng(n); for (let i = 0; i < start.length; i++) start[i] = r() < 0.3 ? 1 : 0; }
+    if (enc === "density") { const r = rng(2026); const d = Math.min(99, Math.max(1, n)) / 100; for (let i = 0; i < start.length; i++) start[i] = r() < d ? 1 : 0; }
+    if (enc === "binary") { const bits = n.toString(2), r0 = Math.floor(ROWS / 2), c0 = Math.floor((COLS - bits.length) / 2); [...bits].forEach((b, k) => { if (b === "1" && c0 + k >= 0 && c0 + k < COLS) start[r0 * COLS + c0 + k] = 1; }); }
+    const res = simulateFrom(start, gens, born, survive, $("wrap").checked);
+    return { life: res.settledAt ?? gens, peak: res.peak, final: res.final, cls: res.cls };
+  }
+  const digitRoot = v => v > 0 ? 1 + ((v - 1) % 9) : null;
+  const isRepdigit = v => v >= 11 && /^(\d)\1+$/.test(String(v));
+  const CHI8 = 15.507;   // chi-square cutoff, 8 degrees of freedom, 5% level
+  function chiSquare(obs, exp) { return obs.reduce((s, o, i) => s + (exp[i] ? (o - exp[i]) ** 2 / exp[i] : 0), 0); }
+  function digitReport(values) {
+    const v = values.filter(x => x > 0), n = v.length;
+    const first = Array(9).fill(0), roots = Array(9).fill(0);
+    v.forEach(x => { first[+String(x)[0] - 1]++; roots[digitRoot(x) - 1]++; });
+    const benf = [...Array(9)].map((_, d) => n * Math.log10(1 + 1 / (d + 1))), unif = Array(9).fill(n / 9);
+    const cB = chiSquare(first, benf), cU = chiSquare(roots, unif), cFU = chiSquare(first, unif);
+    const row = (lab, arr, exp) => `<tr><td>${lab}</td>${arr.map((o, i) => `<td>${o}<span class="note"> / ${exp[i].toFixed(0)}</span></td>`).join("")}</tr>`;
+    return { first, roots, n, cB, cU, cFU, html:
+      `<div class="tbl"><table><thead><tr><th>Digit</th>${[1,2,3,4,5,6,7,8,9].map(d => `<th>${d}</th>`).join("")}</tr></thead><tbody>
+      ${row("First digit (seen / Benford)", first, benf)}${row("Digital root (seen / chance)", roots, unif)}</tbody></table></div>
+      <p class="note">${n} values (final counts, peaks and lifespans above 0). First digits vs Benford's law: chi-square ${cB.toFixed(1)}, ${cB < CHI8 ? "consistent with Benford" : "NOT Benford"}; vs flat chance: ${cFU.toFixed(1)}, ${cFU < CHI8 ? "looks flat" : "not flat"}. Digital roots vs chance: ${cU.toFixed(1)}, ${cU < CHI8 ? "no root stands out beyond chance" : "some roots stand out beyond chance"} (the cutoff at the 5% level is ${CHI8}).</p>` };
+  }
+  const numClaim = $("numClaim"), runNum = $("runNum"), numMsg = $("numMsg");
+  numClaim.oninput = () => { runNum.disabled = !numClaim.value.trim(); numMsg.textContent = runNum.disabled ? "Write the claim and your prediction to unlock Run." : "Ready."; };
+  runNum.onclick = async () => {
+    if (mode !== "life" && $("numEnc").value !== "rule1d") { setMode("life"); }
+    const enc = $("numEnc").value, gens = Math.min(5000, Math.max(10, +$("numGens").value || 1000));
+    let from = Math.max(0, Math.floor(+$("numFrom").value || 0)), to = Math.max(from, Math.floor(+$("numTo").value || 200));
+    if (enc === "rule1d") { from = Math.max(0, from); to = Math.min(255, to); }
+    if (enc === "density") { from = Math.max(1, from); to = Math.min(99, to); }
+    if (to - from > 999) { numMsg.textContent = "Keep the range to 1,000 numbers or fewer."; return; }
+    const tests = [...new Set($("numTest").value.split(/[,\s]+/).map(Number).filter(x => Number.isInteger(x) && x >= 0))];
+    const range = []; for (let k = from; k <= to; k++) range.push(k);
+    tests.forEach(t => { if (!range.includes(t)) range.push(t); });
+    if (enc === "rule1d" && tests.some(t => t > 255)) numMsg.textContent = "Note: one-row rules only go to 255; larger numbers are skipped.";
+    setRunning(false); runNum.disabled = true; numClaim.readOnly = true;
+    const res = new Map();
+    for (const k of range) { if ((enc === "rule1d" && k > 255) || (enc === "density" && (k < 1 || k > 99))) continue;
+      res.set(k, numberWorld(k, enc, gens)); if (res.size % 5 === 0) { numMsg.textContent = `Running ${res.size} of ${range.length}…`; await new Promise(r => setTimeout(r, 0)); } }
+    const all = [...res.values()], pct = (v, key) => Math.round(100 * all.filter(x => x[key] < v).length / all.length);
+    const rows = tests.filter(t => res.has(t)).map(t => { const r = res.get(t); return { n: t, ...r, lifeP: pct(r.life, "life"), peakP: pct(r.peak, "peak") }; });
+    const values = all.flatMap(r => [r.final, r.peak, r.life]), dig = digitReport(values);
+    const rep = values.filter(isRepdigit), nb = values.filter(v => !isRepdigit(v) && (isRepdigit(v - 1) || isRepdigit(v + 1)));
+    const clsCount = k => all.filter(r => r.cls === k).length;
+    $("numOut").innerHTML = `<h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th></tr></thead><tbody>${
+      rows.map(r => `<tr><td>${r.n}</td><td>${r.life}${r.life >= gens ? "+" : ""}</td><td>${r.lifeP}%</td><td>${r.peak}</td><td>${r.peakP}%</td><td>${r.cls}</td></tr>`).join("")}</tbody></table></div>
+      <p class="note">"Beats % of range" is how many of the ${all.length} worlds scored lower. A truly special number should sit near the top every time; near 50% is ordinary. Classes across the range: I ${clsCount("I")}, II ${clsCount("II")}, III/IV ${clsCount("III/IV")}. A lifespan with "+" never settled within ${gens} generations.</p>
+      <h3>Digits against chance</h3>${dig.html}
+      <p class="note">Repeating-digit numbers (11, 22, 111…) among the results: ${rep.length}; their next-door neighbors (10, 12, 110…): ${nb.length}. If repdigits were special, the first count would clearly beat the second.</p>`;
+    const record = { claim: numClaim.value.trim(), enc, from, to, gens, rule: $("ruleShow").textContent, wrap: $("wrap").checked, tests: rows,
+      digits: { first: dig.first, roots: dig.roots, n: dig.n, chiBenford: +dig.cB.toFixed(2), chiRoots: +dig.cU.toFixed(2) }, repdigits: rep.length, neighbors: nb.length, createdAt: new Date().toISOString() };
+    if (db) { try { await db.collection("numbers").add(record); numMsg.textContent = "Done and saved."; } catch (e) { numMsg.textContent = "Done, but not saved: " + (e.message || e.code); } }
+    else numMsg.textContent = "Done. Saving isn't available in this view.";
+    numClaim.readOnly = false; numClaim.value = ""; runNum.disabled = true;
+  };
+
   // Fractal seed: Fredkin's Replicator (rule B1357/S1357, known since the 1970s). Every pattern copies itself;
   // from one cell the copies nest into a fractal carpet. Sophia searched 2,500 rules for a new one on 2026-10-13
   // and found none she could honestly call self-similar, so this is the known one.
@@ -415,8 +506,12 @@ tr.best td{font-weight:600}
   // ---------------- The lab: run settings x seeds without drawing, measure, save.
   // One run: returns final alive count, the peak, and when (and with what period) the world settled into a repeat.
   function simulate(density, seed, gens, b, s, wrap) {
-    let g = new Uint8Array(COLS * ROWS), n2 = new Uint8Array(COLS * ROWS); const rand = rng(seed);
-    for (let i = 0; i < g.length; i++) g[i] = rand() < density ? 1 : 0;
+    const g0 = new Uint8Array(COLS * ROWS), rand = rng(seed);
+    for (let i = 0; i < g0.length; i++) g0[i] = rand() < density ? 1 : 0;
+    return simulateFrom(g0, gens, b, s, wrap);
+  }
+  function simulateFrom(g0, gens, b, s, wrap) {
+    let g = g0.slice(), n2 = new Uint8Array(COLS * ROWS);
     const seen = new Map(); let peak = 0, pop = 0, settledAt = null, period = null;
     for (let t = 0; t <= gens; t++) {
       let h = 2166136261; pop = 0;
