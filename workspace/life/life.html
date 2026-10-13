@@ -351,7 +351,17 @@ tr.best td{font-weight:600}
     draw();
   };
 
-  $("fill").onclick(); draw();
+  // Opening picture (cosmetic, his ask 2026-10-13): the Replicator's carpet at generation 31, grown on a scratch
+  // grid and laid onto the board. The world's rule stays Conway's B3/S23; press Play to watch Life take it apart.
+  function openingPicture() {
+    const carpet = scratch(81, 81, false, "B1357/S1357", "life", () => { grid[40 * 81 + 40] = 1; steps(31); return grid.slice(); });
+    grid.fill(0); gen = 0;
+    const r0 = Math.floor(ROWS / 2) - 40, c0 = Math.floor(COLS / 2) - 40;
+    for (let r = 0; r < 81; r++) for (let c = 0; c < 81; c++) { const rr = r + r0, cc = c + c0;
+      if (carpet[r * 81 + c] && rr >= 0 && cc >= 0 && rr < ROWS && cc < COLS) grid[rr * COLS + cc] = 1; }
+    draw();
+  }
+  openingPicture();
 
   // ---------------- The lab: run settings x seeds without drawing, measure, save.
   // One run: returns final alive count, the peak, and when (and with what period) the world settled into a repeat.
