@@ -49,3 +49,23 @@ a cell counts as ordered when it matches the cells two steps away. Kept patterns
 - Limit: on a square grid the rings are squares, not circles. Every rule here spreads through the 8 neighbors.
 - Checked in Life Lab: typed in by hand, it gives 19,470 cells at gen 100, the same as the search code.
 - Saved in Life Lab seeds as "Black hole" (300 x 300, walls). I haven't checked rule catalogs, so I can't say it's new.
+
+## Hunt 4 (2026-10-13): Black hole II, a contained core
+**Ask (Gavin):** Black hole is "a flash of explosion"; he wants the chaotic core contained and stable, with ordered edges.
+**Step 1, grown from a seed (`stable1.py`, `stable2.py`):** 4,000 rules x 10 seeds; 921 had a chaotic core inside an ordered rim.
+In every one, the chaos front kept moving at about 0.7-0.75 of top speed (`c1.png`, 400 gens). Nothing grown from a small
+seed held still. A front between two phases moves at a steady speed unless something pins it.
+**Step 2, a round wall in empty space (`contain.py`):** 4,000 rules x 4 wall types: 0 worked. A wall needs survival rules
+generous enough to also freeze the chaos, and its outer face leaks into the empty space.
+**Step 3, top-down: ordered space everywhere, chaos disc inside (`space.py`, `space2.py`, `space3.py`):** 6,000 rules x 5
+kinds of space. My first pass had a bug: a space that flips each step made every cell count as "ordered". After the fix,
+68 rules hold the chaos in place for 1,200 gens, and none of the 16 checked repeated within 1,000 gens.
+- Robust (9 starts each: 3 random fills x radius 30/45 x fill 20/40/50%, 5,000 gens): the chaos radius stays within 1 cell of
+  where it started for all three finalists.
+  - **B2/S045678** in solid space: the roundest. Activity cools slowly (40% of core cells change every 2 steps, falling to ~22% by gen 5,000).
+  - **B37/S0125678** in solid space: an octagon, steady at 40-42% the whole time.
+  - B0367/S03456 in checkerboard space: a diamond.
+- Why it works: there's no wall with an outside to leak from. All of space is the order, and its survival rules pin the edge.
+- Limits: it's held, not born; you place a chaotic disc in ordered space and it stays. The order is plain solid, not rings.
+- Saved in Life Lab: "Black hole II, round" and "Black hole II, steady" (150 x 150, wrap on, disc radius 30, 40% fill).
+  The page matches the search: 20,543 and 20,565 cells at gen 500.
