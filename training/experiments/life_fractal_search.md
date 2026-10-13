@@ -69,3 +69,19 @@ kinds of space. My first pass had a bug: a space that flips each step made every
 - Limits: it's held, not born; you place a chaotic disc in ordered space and it stays. The order is plain solid, not rings.
 - Saved in Life Lab: "Black hole II, round" and "Black hole II, steady" (150 x 150, wrap on, disc radius 30, 40% fill).
   The page matches the search: 20,543 and 20,565 cells at gen 500.
+
+### Gavin's observation (2026-10-13): the round one orders itself over time
+He ran "Black hole II, round" for 10,000 gens: "Very chaotic in the beginning, but seems to order itself over time." Measured
+(`cool.py`, `cool_B2_S045678.png`), as the share of cells changing per generation (centre r<10 / middle 10-20 / edge 20-30):
+| gens | centre | middle | edge |
+|---|---|---|---|
+| 10-100 | 0.39 | 0.40 | 0.36 |
+| 1,000-2,500 | 0.34 | 0.37 | 0.29 |
+| 5,000-10,000 | 0.09 | 0.11 | 0.07 |
+| 20,000-40,000 | 0.013 | 0.036 | 0.048 |
+- He's right: activity falls about 30x and a diagonal lattice (a crystal) grows through the core. The core also fills in
+  (817 to 1,715 live cells).
+- Twist: late on, the **centre** is calmest and the **edge** stays busiest. It's the reverse of his original wish (chaos in the
+  middle, order outward): here it is order in the middle, with the boundary still stirring.
+- It hasn't frozen: no exact repeat in the last 3,000 of 40,000 gens.
+- The steady version (B37/S0125678) doesn't do this: about 0.33 at every ring, all the way to 20,000 gens.
