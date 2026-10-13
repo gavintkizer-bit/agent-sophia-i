@@ -137,6 +137,7 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
   <section class="lab tabpane" data-pane="exp" aria-labelledby="labTitle" hidden>
     <h2 id="labTitle">Experiment</h2>
     <p class="sub">Which starting density does what? The lab fills many worlds at random, runs each one without drawing, and counts. It uses the Life rule, size and edges from the Board (<b id="expUses">B3/S23, 96 x 60, wrap</b>).</p>
+    <div class="verdict" id="ruleWarn" hidden><p><b>Heads up: this isn't Conway's Life.</b> The Board's rule is <b id="ruleWarnRule"></b> (the Fractal seed button sets it). Experiments will use that rule.</p><button type="button" id="toConway">Switch back to Conway (B3/S23)</button></div>
     <ol class="steps">
       <li><label for="q">Ask a question<input type="text" id="q" value="Which starting density leaves the most life?"></label></li>
       <li><label for="guess">Write your guess first (this unlocks Run)<textarea id="guess" rows="2" placeholder="e.g. around 30% leaves the most"></textarea></label></li>
@@ -202,7 +203,8 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
   }
   document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => showTab(b.dataset.tab));
   // What the Experiment and Numbers tabs borrow from the Board, said out loud so nothing is a hidden setting.
-  function usesLine() { const el = document.getElementById("expUses"); if (el) el.textContent = `${lifeRuleLabel()}, ${COLS} x ${ROWS}, edges ${document.getElementById("wrap").checked ? "wrap" : "walled"}`; }
+  function usesLine() { const el = document.getElementById("expUses"); if (el) el.textContent = `${lifeRuleLabel()}, ${COLS} x ${ROWS}, edges ${document.getElementById("wrap").checked ? "wrap" : "walled"}`;
+    const w = document.getElementById("ruleWarn"); if (w) { w.hidden = lifeRuleLabel() === "B3/S23"; document.getElementById("ruleWarnRule").textContent = lifeRuleLabel(); } }
   const lifeRuleLabel = () => "B" + [...born].sort().join("") + "/S" + [...survive].sort().join("");
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 
@@ -677,8 +679,9 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
   guessEl.oninput = () => { runBtn.disabled = !guessEl.value.trim(); msg.textContent = runBtn.disabled ? "Write a guess to unlock Run." : "Ready."; };
   let db = null;
   $("stopExp").onclick = () => stopAll();
+  $("toConway").onclick = () => { $("rule").value = "B3/S23"; $("rule").oninput(); $("wrap").checked = true; usesLine(); };
   runBtn.onclick = async () => {
-    const dens = $("dens").value.split(/[,\s]+/).map(Number).filter(x => x > 0 && x < 100);
+    const dens = [...new Set($("dens").value.split(/[,\s]+/).map(Number).filter(x => x > 0 && x < 100))];   // a repeat would rerun the same seeds
     const runs = Math.min(50, Math.max(1, +$("runs").value || 5)), gens = Math.min(5000, Math.max(10, +$("gens").value || 500));
     if (!dens.length) { msg.textContent = "Add at least one density between 1 and 99."; return; }
     const seed0 = +$("seed").value || 0, wrap = $("wrap").checked, rule = $("ruleShow").textContent;

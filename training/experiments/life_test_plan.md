@@ -26,3 +26,10 @@ Each has exact settings, a place to write your guess, and what counts as yes or 
 1. Baselines B2-B4 (ant highway, Rule 90 dimension, ash census) as the tools for them get built.
 2. Numerology N1-N3 at full size (ranges of 500-1,000 numbers).
 3. Your own conjectures, the real point. Every saved seed and experiment is a place to start.
+
+## Gavin's first runs (2026-10-13, 5 saved experiments)
+- All five ran under **B1357/S1357** (the Replicator), not Conway: the Fractal seed button had switched the rule. Walls, 96 x 60, 5000 gens.
+- His finding: at 99% density, 5, 10 and 50 seeds per density give the same average (2869, 2856, 2870 alive). Correct: more seeds don't move the result; they only steady the average. Good control.
+- Also seen: in the Replicator every start ends near half the board alive (2800-2960 of 5760) and nothing ever settles. Known math: the rule is parity (XOR), so it scrambles any start toward 50/50. Density only changed the peak (3015 at 1% up to 5699 at 99%).
+- Fixes (v4.1): Experiment tab warns when the rule isn't Conway's, with a switch-back button; repeated densities are run once (repeats reran the same seeds).
+- Next: rerun "which density leaves the most life?" under Conway B3/S23 with wrap.
