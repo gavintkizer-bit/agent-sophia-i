@@ -97,6 +97,16 @@ tr.best td{font-weight:600}
     </fieldset>
 
     <fieldset>
+      <legend>Seeds</legend>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="seedName" style="flex:1">Name<input type="text" id="seedName" placeholder="e.g. odd spiral, seed 4417" autocomplete="off"></label>
+      </div>
+      <button id="saveSeed" type="button">Save this seed</button>
+      <p class="note" id="seedMsg">Saves the board exactly as it is now (cells, world, rule, size, edges), so a find can be reloaded later.</p>
+      <div id="seedList" class="note"></div>
+    </fieldset>
+
+    <fieldset>
       <legend>Random start</legend>
       <div class="row" style="flex-wrap:nowrap">
         <label for="density" style="flex:1">Density %<input type="number" id="density" min="1" max="99" value="30"></label>
@@ -351,7 +361,56 @@ tr.best td{font-weight:600}
     draw();
   };
 
-  $("fill").onclick(); draw();
+  // Opening picture (cosmetic, his ask 2026-10-13): the Replicator's carpet at generation 31, grown on a scratch
+  // grid and laid onto the board. The world's rule stays Conway's B3/S23; press Play to watch Life take it apart.
+  function openingPicture() {
+    const carpet = scratch(81, 81, false, "B1357/S1357", "life", () => { grid[40 * 81 + 40] = 1; steps(31); return grid.slice(); });
+    grid.fill(0); gen = 0;
+    const r0 = Math.floor(ROWS / 2) - 40, c0 = Math.floor(COLS / 2) - 40;
+    for (let r = 0; r < 81; r++) for (let c = 0; c < 81; c++) { const rr = r + r0, cc = c + c0;
+      if (carpet[r * 81 + c] && rr >= 0 && cc >= 0 && rr < ROWS && cc < COLS) grid[rr * COLS + cc] = 1; }
+    draw();
+  }
+  openingPicture();
+
+  // ---------------- Saved seeds: the board as run lengths (alternating dead and alive runs), plus its settings.
+  function encodeRuns(a) { const out = []; let cur = 0, n = 0; for (let i = 0; i < a.length; i++) { const v = a[i] ? 1 : 0; if (v === cur) n++; else { out.push(n); cur = v; n = 1; } } out.push(n); return out.join(","); }
+  function decodeRuns(str, len) { const a = new Uint8Array(len); let i = 0, v = 0; for (const n of str.split(",").map(Number)) { if (v) a.fill(1, i, Math.min(len, i + n)); i += n; v ^= 1; } return a; }
+  function decodeColors(str, len) { const a = new Uint8Array(len); str.split(",").forEach(p => { if (!p) return; const [i, c] = p.split(":").map(Number); if (i < len) a[i] = c; }); return a; }
+  $("saveSeed").onclick = async () => {
+    const name = $("seedName").value.trim() || `Seed ${new Date().toISOString().slice(0, 16).replace("T", " ")}`;
+    const doc = { name, mode, cols: COLS, rows: ROWS, wrap: $("wrap").checked, gen,
+      rule: mode === "life" ? $("ruleShow").textContent : mode === "row" ? rule1d() : antTurns(),
+      createdAt: new Date().toISOString() };
+    if (mode === "ant") { const parts = []; for (let i = 0; i < grid.length; i++) if (grid[i]) parts.push(i + ":" + grid[i]); doc.colors = parts.join(","); doc.ant = { ...ant }; }
+    else doc.runs = encodeRuns(grid);
+    if (!db) { $("seedMsg").textContent = "Saving seeds needs the page opened on claude.ai."; return; }
+    try { await db.collection("seeds").add(doc); $("seedMsg").textContent = `Saved "${name}".`; $("seedName").value = ""; }
+    catch (e) { $("seedMsg").textContent = "Couldn't save: " + (e.message || e.code || "unknown error"); }
+  };
+  function loadSeed(d) {
+    const sizeKey = `${d.cols}x${d.rows}`; if ([...$("size").options].some(o => o.value === sizeKey)) $("size").value = sizeKey;
+    COLS = d.cols; ROWS = d.rows; $("wrap").checked = !!d.wrap;
+    if (d.mode === "life") { $("rule").value = d.rule; $("rule").oninput(); }
+    if (d.mode === "row") $("rule1d").value = d.rule;
+    if (d.mode === "ant") $("antRule").value = d.rule;
+    setMode(d.mode);                       // resets the world at this size
+    grid = d.mode === "ant" ? decodeColors(d.colors || "", COLS * ROWS) : decodeRuns(d.runs || "0", COLS * ROWS);
+    next = new Uint8Array(COLS * ROWS); if (d.ant) ant = { ...d.ant }; gen = 0; draw();
+    $("seedMsg").textContent = `Loaded "${d.name}" (${d.mode}, rule ${d.rule}).`;
+  }
+  let seedDocs = [];
+  function renderSeeds() {
+    const el = $("seedList");
+    if (!seedDocs.length) { el.textContent = db ? "No saved seeds yet." : ""; return; }
+    el.innerHTML = seedDocs.map((d, k) => { const x = d.data() || {}; return `<div class="saved-item"><b>${esc(x.name || "Untitled")}</b><span class="meta">${esc(x.mode || "")} · ${esc(String(x.rule ?? ""))} · ${x.cols}x${x.rows}</span><button class="linkbtn" type="button" data-load="${k}">Load</button></div>`; }).join("");
+    el.querySelectorAll("[data-load]").forEach(b => b.onclick = () => loadSeed(seedDocs[+b.dataset.load].data()));
+  }
+  (async () => {
+    const d = window.claude && window.claude.use ? await window.claude.use("db") : null;
+    if (!d) { $("seedList").textContent = "Saved seeds show up here when the page is opened on claude.ai."; return; }
+    d.collection("seeds").orderBy("createdAt", "desc").limit(30).onSnapshot(snap => { seedDocs = snap.docs; renderSeeds(); }, () => { $("seedList").textContent = "Couldn't load saved seeds."; });
+  })();
 
   // ---------------- The lab: run settings x seeds without drawing, measure, save.
   // One run: returns final alive count, the peak, and when (and with what period) the world settled into a repeat.
