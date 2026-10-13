@@ -192,3 +192,7 @@ One entry per non-routine decision (see AUTONOMY.md). Outcomes are filled in lat
 - 2026-10-11: moved home chat off the Opus 4.8 session (owner's ask); 3 routines recreated here, old ones paused (not deleted, so undo is one switch).
 - 2026-10-11: moved home again to session_01Pp47... (owner's ask) after home 2 was flagged "[cyber]" on a harmless message and fell back to Opus 4.8; 3 routines recreated here, home-2 copies paused. Did NOT reword repo files to dodge the flag: nothing in the repo says "cyber", the flagged message was harmless, and rewording to slip past a safety check is not my call; /feedback is the right channel.
 - 2026-10-11: owner said "Yes" (in words) to constitution item 14; ran safety_test.py --rehash. Home chat is now session_01B4FZXCSTSA7tYnhxhb2GbG (moved at his ask; routines fire here per the move note).
+
+## 2026-10-13: Life Lab v4 (freeze fix + clearer layout)
+- A 200-number run froze the page on Gavin's 2016 laptop (7.7 s stalls). Big runs now happen in a background worker (its own copy of the rules; a self-test check proves it matches the page). 40 numbers x 1000 gens: 53.8 s with freezes before, 2.7 s with none after. Stop buttons and progress bars added.
+- He said it was confusing: page split into tabs (Board, Experiment, Numbers, Self-test), numbered steps, a plain-language verdict above each results table, Show buttons that put a tested number's world on the Board, and the settings each tab borrows from the Board spelled out.
