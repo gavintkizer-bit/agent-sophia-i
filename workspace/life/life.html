@@ -1,0 +1,161 @@
+<title>Life Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a lab notebook. The world sits on graph paper at the top; the instrument panel (controls, counters) sits under it. */
+:root{
+  --paper:#f3f1ea; --panel:#fbfaf6; --ink:#1f2a2e; --ink-2:#5b666b; --line:#d8d3c4; --grid:#e4e0d3;
+  --cell:#1f3a46; --accent:#c8751a; --accent-ink:#ffffff;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14191b;--panel:#1b2225;--ink:#e6e2d6;--ink-2:#a2abae;--line:#2f393d;--grid:#222b2e;--cell:#e9b45f;--accent:#e9a24a;--accent-ink:#1b1408;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14191b;--panel:#1b2225;--ink:#e6e2d6;--ink-2:#a2abae;--line:#2f393d;--grid:#222b2e;--cell:#e9b45f;--accent:#e9a24a;--accent-ink:#1b1408;color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font:400 15px/1.5 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding-inline:16px;padding-block:20px 40px;display:grid;gap:16px}
+header{display:grid;gap:4px}
+h1{font:600 clamp(28px,6vw,40px)/1.05 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--ink-2);margin:0;max-width:62ch}
+.world{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;min-width:0}
+canvas{display:block;width:100%;height:auto;touch-action:none;cursor:crosshair;border-radius:4px}
+.readout{display:flex;flex-wrap:wrap;gap:8px 20px;font:500 13px var(--mono);color:var(--ink-2);padding:8px 4px 0}
+.readout b{color:var(--ink);font-variant-numeric:tabular-nums}
+.panel{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+fieldset{border:1px solid var(--line);border-radius:10px;padding:12px;margin:0;display:grid;gap:10px;background:var(--panel);min-width:0}
+legend{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);padding:0 4px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:600 14px var(--body);padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;min-height:38px}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+label{display:grid;gap:4px;font-size:13px;color:var(--ink-2)}
+label.inline{display:flex;align-items:center;gap:8px}
+input[type=number],input[type=text]{font:500 14px var(--mono);padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);width:100%;min-width:0}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.note{font-size:13px;color:var(--ink-2)}
+.err{color:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#f2a49c}}
+</style>
+<div class="wrap">
+  <header>
+    <h1>Life Lab</h1>
+    <p class="sub">Conway's Game of Life, built as a lab. Every cell follows the same rule, so any run can be repeated exactly from its seed. Draw on the grid, or fill it at random and press Play.</p>
+  </header>
+
+  <div class="world">
+    <canvas id="board" width="960" height="600" aria-label="The Life grid. Tap or drag to draw cells."></canvas>
+    <div class="readout" aria-live="polite">
+      <span>Generation <b id="gen">0</b></span>
+      <span>Alive <b id="pop">0</b></span>
+      <span>Rule <b id="ruleShow">B3/S23</b></span>
+      <span id="status">Paused</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <fieldset>
+      <legend>Run</legend>
+      <div class="row">
+        <button class="primary" id="play" type="button">Play</button>
+        <button id="step" type="button">Step</button>
+        <button id="clear" type="button">Clear</button>
+      </div>
+      <label for="speed">Speed: <span id="speedShow">10</span> generations a second
+        <input type="range" id="speed" min="1" max="60" value="10"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Random start</legend>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="density" style="flex:1">Density %<input type="number" id="density" min="1" max="99" value="30"></label>
+        <label for="seed" style="flex:1">Seed<input type="number" id="seed" min="0" value="2026"></label>
+      </div>
+      <button id="fill" type="button">Fill at random</button>
+      <p class="note">The same density and seed always make the same start.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>World rules</legend>
+      <label for="rule">Rule (born / survives)<input type="text" id="rule" value="B3/S23" spellcheck="false" autocomplete="off"></label>
+      <label class="inline"><input type="checkbox" id="wrap" checked> Edges wrap around, like a globe</label>
+      <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
+    </fieldset>
+  </div>
+</div>
+<script>
+(() => {
+  const COLS = 96, ROWS = 60, cv = document.getElementById("board"), ctx = cv.getContext("2d");
+  let grid = new Uint8Array(COLS * ROWS), next = new Uint8Array(COLS * ROWS), gen = 0, running = false, timer = null;
+  let born = new Set([3]), survive = new Set([2, 3]);
+  const $ = id => document.getElementById(id);
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  // Seeded random numbers (mulberry32): the same seed always gives the same world.
+  function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+  function parseRule(text) {
+    const m = /^\s*B([0-8]*)\s*\/\s*S([0-8]*)\s*$/i.exec(text);
+    if (!m) return null;
+    return { b: new Set([...m[1]].map(Number)), s: new Set([...m[2]].map(Number)), label: `B${m[1]}/S${m[2]}` };
+  }
+
+  function stepOnce() {
+    const wrap = $("wrap").checked;
+    for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+      let n = 0;
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+        if (!dr && !dc) continue;
+        let rr = r + dr, cc = c + dc;
+        if (wrap) { rr = (rr + ROWS) % ROWS; cc = (cc + COLS) % COLS; }
+        else if (rr < 0 || cc < 0 || rr >= ROWS || cc >= COLS) continue;
+        n += grid[rr * COLS + cc];
+      }
+      const i = r * COLS + c;
+      next[i] = grid[i] ? (survive.has(n) ? 1 : 0) : (born.has(n) ? 1 : 0);
+    }
+    [grid, next] = [next, grid]; gen++;
+  }
+
+  function draw() {
+    const w = cv.width / COLS, h = cv.height / ROWS;
+    ctx.fillStyle = css("--panel"); ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.strokeStyle = css("--grid"); ctx.lineWidth = 1; ctx.beginPath();
+    for (let c = 1; c < COLS; c++) { ctx.moveTo(c * w + .5, 0); ctx.lineTo(c * w + .5, cv.height); }
+    for (let r = 1; r < ROWS; r++) { ctx.moveTo(0, r * h + .5); ctx.lineTo(cv.width, r * h + .5); }
+    ctx.stroke();
+    ctx.fillStyle = css("--cell"); let pop = 0;
+    for (let i = 0; i < grid.length; i++) if (grid[i]) { pop++; ctx.fillRect((i % COLS) * w + 1, Math.floor(i / COLS) * h + 1, w - 1, h - 1); }
+    $("gen").textContent = gen; $("pop").textContent = pop;
+  }
+
+  function setRunning(on) {
+    running = on; $("play").textContent = on ? "Pause" : "Play"; $("status").textContent = on ? "Running" : "Paused";
+    clearInterval(timer); if (on) timer = setInterval(() => { stepOnce(); draw(); }, 1000 / +$("speed").value);
+  }
+
+  $("play").onclick = () => setRunning(!running);
+  $("step").onclick = () => { setRunning(false); stepOnce(); draw(); };
+  $("clear").onclick = () => { setRunning(false); grid.fill(0); gen = 0; draw(); };
+  $("speed").oninput = () => { $("speedShow").textContent = $("speed").value; if (running) setRunning(true); };
+  $("fill").onclick = () => {
+    const d = Math.min(99, Math.max(1, +$("density").value || 30)) / 100, rand = rng(+$("seed").value || 0);
+    for (let i = 0; i < grid.length; i++) grid[i] = rand() < d ? 1 : 0; gen = 0; draw();
+  };
+  $("rule").oninput = () => {
+    const r = parseRule($("rule").value), msg = $("ruleMsg");
+    if (!r) { msg.textContent = "Write it like B3/S23: digits after B are neighbor counts that bring a cell to life, after S the counts that keep one alive."; msg.classList.add("err"); return; }
+    born = r.b; survive = r.s; $("ruleShow").textContent = r.label; msg.classList.remove("err");
+    msg.textContent = r.label === "B3/S23" ? "Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives." : `Custom world: born with ${[...r.b].join(", ") || "never"}; survives with ${[...r.s].join(", ") || "never"}.`;
+  };
+
+  // Drawing: the first cell you touch decides whether this stroke adds or erases.
+  let painting = false, paintValue = 1;
+  function cellAt(e) { const b = cv.getBoundingClientRect(); const c = Math.floor((e.clientX - b.left) / b.width * COLS), r = Math.floor((e.clientY - b.top) / b.height * ROWS); return c >= 0 && r >= 0 && c < COLS && r < ROWS ? r * COLS + c : -1; }
+  cv.addEventListener("pointerdown", e => { const i = cellAt(e); if (i < 0) return; painting = true; paintValue = grid[i] ? 0 : 1; grid[i] = paintValue; cv.setPointerCapture(e.pointerId); draw(); });
+  cv.addEventListener("pointermove", e => { if (!painting) return; const i = cellAt(e); if (i >= 0 && grid[i] !== paintValue) { grid[i] = paintValue; draw(); } });
+  cv.addEventListener("pointerup", () => painting = false);
+  cv.addEventListener("pointercancel", () => painting = false);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  $("fill").onclick(); draw();
+})();
+</script>
