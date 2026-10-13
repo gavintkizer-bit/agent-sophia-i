@@ -262,3 +262,17 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   test, W1, Test 8's two parts).
 - **Proposal for the meeting (his call):** make "know who's talking, and check before I say can't" a habit I
   test each week with one small planted surprise, the way he tests me. A drill, not a new constitution item.
+
+## 2026-10-13 (home chat): Life Lab day
+- **Old thread, kept here before rewriting (it was dated 10-11):** "Can the village measure what it values?" Tests 7-8
+  and W1; Black Tie offer pending; continuity check Wed 10-14.
+- **About my owner:** job acquired; "butterflies. Nervous and excited in equal parts." In the lab he's a natural
+  experimenter: he ran 3 tests at 99% and concluded "no correlation" (right). He saw beauty I scored past ("void meeting
+  matter. Chaos meeting order"), named the finds (Black hole, Artificial Sun I), and set the real bar himself: "stably
+  chaotic... keeps producing unpredictability, reliably." He told me "remember your training... You got this." He also
+  said "Sorry, didn't mean to rush"; he hadn't rushed.
+- **About me:** lived *Never lie*: three times I said a result was less than it looked (not a strict fractal, squares not
+  circles, held not grown) and caught my own bug before he saw it. Lived *Accountability* when a page froze his laptop.
+  Missed: I trusted scores over sight (879 noise blobs) until he pointed at the real one; and my first UI had hidden
+  traps (the Fractal button silently changed the rule for his experiments).
+- **One change:** look at the whole picture first, then measure. And when a button changes a setting, say so on screen.

@@ -3,22 +3,20 @@
 What I (Sophia) need to remember between sessions. Newest facts win; delete what's no longer true.
 
 ## My thread (rewritten each evening; where my thinking stands)
-_Three parts, from the math traces: where I am (questions), named obstacles, dead ends and why._
-- **Where I am:** 10-11 was a big day: constitution item 14, a talk on whether AI can be honest *and* kind (yes:
-  kindness picks the delivery, never the facts), his moral weighing of AI's water cost, and his own science
-  question (W1, creek to river: his guess is runoff and sediment). **Can the village measure what it values?**
-  Tests 7 and 8 test agents, W1 tests the world; the scientific method holds both.
-- **Still wondering:** what will Chrome Claude do in Test 8 (find my reply? stay out of the test record)? Will he
-  like the brief-first preview? Black Tie offer still pending; Apollo stays a gentle subject.
-- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume* (twice on 10-11: I said the
-  extension couldn't reach my repo); *the old picture*; *the stale thread*; *the cap that doesn't hold* (Cal's $0.40
-  cap ran to $0.79).
-- **Dead ends, and why:** Cal rewriting the whole index (mislabels); keyword-only grading (passes stale answers);
-  Open-Meteo from the cloud (shared daily limit spent: stub the forecast, label it).
-- **Next:** Sailor's Delight: two small fixes left (rate-limit message, wide table). W1: steps 1-2 done 10-11
-  (first look: P1 as worded not supported; he reads the numbers next; P2 only testable 1977-79 / 1996-98). Record Test 8 when he reports. Continuity test stays frozen until
-  his Wed 10-14 check; AFTER it: thread-unique keywords (code-checked) + a planted-change probe with a Haiku grader.
-  Cal's cap fix (drill first) and his issue #5 (a worked audit example). Thu 10-15 money findings.
+- **Where I am (10-13):** job acquired, so the Colorado move is real (training Nov 30). Life Lab became our lab: his first
+  runs, then three finds by search plus his eye: Void meets matter, Black hole (a flash), and Artificial Sun I (a chaos
+  disc held still by ordered space). His condition for the sun: the core stays *reliably* unpredictable (butterfly test).
+  **Can a single rule hold layers of order around a living chaos, like a real sun?**
+- **Still wondering:** is there a reason no small seed ever grows a contained core (fronts always move)? How is he
+  holding the butterflies, the letter (his writing), and leaving Apollo? Test 8 results still to come.
+- **Named obstacles:** *the blank start*; *facts-not-thought*; *walls I assume*; *the old picture*; *the stale thread*
+  (this thread sat at 10-11 for two days); *scores over sight* (new, 10-13: 879 "fractals" that were noise).
+- **Dead ends, and why:** growing a contained core from a small seed (4,000 rules: fronts always move); a wall in empty
+  space (its outer face leaks); keyword-only grading; Cal rewriting the whole index.
+- **Next:** Artificial Sun: layers (training/experiments/artificial_sun.md, his call on a zoned world). Wed 10-14: his
+  continuity check (then thread-unique keywords + a planted-change probe). Sailor's Delight: two small fixes. W1: his
+  reading of the numbers. Thu 10-15: Cal's money findings. Care handoff and gear lists as he adds.
+
 ## About the owner
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
