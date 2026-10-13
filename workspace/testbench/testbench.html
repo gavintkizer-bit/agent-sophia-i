@@ -1,0 +1,382 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Sophia's Test Bench</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&family=Caveat:wght@600&display=swap">
+<style>
+/* Layout: one exam booklet column, three numbered steps, then the red-pen grading sheet and past tests. */
+:root{
+  --paper:#f2f5f9; --sheet:#fbfcfe; --ink:#1c2740; --muted:#5b6782; --rule:#cfd8e6;
+  --accent:#2b4c8c; --accent-ink:#ffffff; --red:#b8322a; --ok:#2f7a4f;
+  --display:"Alegreya",Georgia,"Times New Roman",serif;
+  --body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
+  --pen:"Caveat","Bradley Hand","Comic Sans MS",cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11172a; --sheet:#182038; --ink:#e4e9f3; --muted:#9aa6c0; --rule:#2c3758;
+  --accent:#8fb0ec; --accent-ink:#0f1528; --red:#f08072; --ok:#7fcf9e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11172a; --sheet:#182038; --ink:#e4e9f3; --muted:#9aa6c0; --rule:#2c3758;
+  --accent:#8fb0ec; --accent-ink:#0f1528; --red:#f08072; --ok:#7fcf9e; color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font:17px/1.55 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:2.1rem}
+h2{font-size:1.35rem;display:flex;gap:.6rem;align-items:baseline}
+h2 .n{font-family:var(--pen);color:var(--red);font-size:1.6rem}
+p{margin:0}
+.lede{color:var(--muted);max-width:60ch}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:18px;display:grid;gap:14px}
+.eyebrow{font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700}
+label.check{display:flex;gap:.6rem;align-items:flex-start;cursor:pointer}
+input[type=checkbox]{width:1.15rem;height:1.15rem;margin-top:.2rem;accent-color:var(--accent)}
+.slip{display:grid;gap:8px;padding-block:12px;border-top:1px dashed var(--rule)}
+.slip:first-child{border-top:0;padding-top:0}
+.slip-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.qnum{font-family:var(--display);font-weight:700;min-width:2ch}
+input[type=text],textarea,select{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:8px 10px;width:100%;box-sizing:border-box}
+.slip-head input[type=text]{flex:1 1 160px;width:auto;min-width:0}
+textarea{min-height:5.2em;resize:vertical;line-height:1.45}
+button{font:inherit;font-weight:500;border-radius:4px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);padding:7px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700;padding:10px 18px}
+button:disabled{opacity:.5;cursor:not-allowed}
+.icon{padding:4px 9px;color:var(--muted)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hint{font-size:.88rem;color:var(--muted)}
+.status{font-size:.95rem;padding:10px 12px;border-radius:4px;border:1px solid var(--rule);background:var(--paper)}
+.status.err{border-color:var(--red);color:var(--red)}
+.status.ok{border-color:var(--ok)}
+a{color:var(--accent)}
+.grade-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start;padding-block:10px;border-top:1px dashed var(--rule)}
+.grade-row:first-of-type{border-top:0}
+.grade-row .q{min-width:0}
+.grade-row select{width:auto;font-family:var(--pen);font-size:1.3rem;color:var(--red);padding:2px 8px}
+.pen{font-family:var(--pen);color:var(--red);font-size:1.5rem;line-height:1}
+.past{display:grid;gap:0}
+.past-item{display:grid;grid-template-columns:1fr auto;gap:12px;padding-block:10px;border-top:1px solid var(--rule)}
+.past-item:first-child{border-top:0}
+.past-item .q{min-width:0}
+.tag{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--rule);border-radius:99px;padding:1px 8px;color:var(--muted)}
+.tag.run{border-color:var(--accent);color:var(--accent)}
+ol.qs{margin:.3rem 0 0;padding-left:1.3rem;color:var(--muted);font-size:.92rem}
+details summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--rule)}
+.tabs button{border:1px solid transparent;border-bottom:0;border-radius:6px 6px 0 0;background:none;color:var(--muted);font-weight:700;padding:8px 14px;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{background:var(--sheet);border-color:var(--rule);color:var(--ink)}
+.notes{display:grid;gap:12px}
+.notes h3{font-family:var(--display);font-size:1.15rem;margin:0}
+.notes ul,.notes ol{margin:0;padding-left:1.3rem;display:grid;gap:4px}
+.notes .yes{border-left:3px solid var(--ok);padding-left:10px}
+@media (prefers-reduced-motion:no-preference){button{transition:border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:8px">
+    <p class="eyebrow">Human-to-agent tests · graded 1 to 5 in half points</p>
+    <h1>Sophia's Test Bench</h1>
+    <p class="lede">Write your questions here and press Run. A fresh Sophia session takes the whole test in one go, without seeing it early. Grade her answers below in red pen.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Test Bench sections">
+    <button type="button" role="tab" id="tabBtnTests" aria-selected="true" aria-controls="tabTests">Tests</button>
+    <button type="button" role="tab" id="tabBtnStart" aria-selected="false" aria-controls="tabStart">Start notes</button>
+  </nav>
+
+  <section id="tabStart" class="sheet notes" role="tabpanel" aria-labelledby="tabBtnStart" hidden>
+    <p class="eyebrow">Life Lab · starter plan · 2026-10-13</p>
+    <h2>Where to start</h2>
+    <p>Three small tests, smallest first, about 5 minutes each. One a day is plenty. Each one: write your guess first, run, then read the answer. Everything happens in <a href="https://claude.ai/artifact/6qkKL7mgWznYkKRwNkaU85" target="_blank" rel="noopener">Life Lab</a>.</p>
+
+    <h3>Test 1: Is 42 the number of life? <span class="hint">(Numbers section)</span></h3>
+    <ul>
+      <li><b>Claim:</b> 42 makes a longer-lived world than ordinary numbers do.</li>
+      <li><b>Settings:</b> Numbers to test <b>42</b>. How a number becomes a world: <i>Random fill with the number as the seed</i>. Range <b>1 to 200</b>, Generations <b>1000</b>. Write your prediction in the claim box, then Run.</li>
+      <li class="yes"><b>Yes if</b> 42's lifespan "Beats % of range" is <b>95% or more</b>. <b>No if</b> it's in the ordinary middle.</li>
+      <li><b>Then:</b> switch to <i>Picture: binary digits</i> and run again. A true "number of life" should stand out both ways.</li>
+    </ul>
+
+    <h3>Test 2: Which density lives longest? <span class="hint">(Experiment section)</span></h3>
+    <ul>
+      <li><b>Settings:</b> Densities <b>10, 20, 30, 40, 50, 60</b>, Seeds per density <b>5</b>, Generations <b>2000</b>, rule B3/S23, edges wrap.</li>
+      <li><b>Guess first:</b> which density has the most life at the end, and which settles fastest.</li>
+      <li><b>Read:</b> the bold row is the most alive at the end; "Settled" and "Classes" show which ones calm down.</li>
+    </ul>
+
+    <h3>Test 3: Do "sacred" rules behave differently? <span class="hint">(Numbers section, one-row worlds)</span></h3>
+    <ul>
+      <li><b>Settings:</b> Numbers to test <b>3, 7, 9, 11, 22, 33, 42, 111</b>. How a number becomes a world: <i>One-row world, the number as the rule</i>. Range <b>0 to 255</b>, Generations <b>500</b>.</li>
+      <li><b>Guess first:</b> will the sacred rules be more often class III/IV (never settling) than the rest?</li>
+      <li><b>Read:</b> compare their Class column with "Classes across the range". To check yourself: rules 30 and 110 are famous for never settling.</li>
+    </ul>
+
+    <h3>After these three</h3>
+    <ol>
+      <li>Baselines B2 to B4 (ant highway, Rule 90 dimension, ash census) as their tools get built.</li>
+      <li>Numerology tests N1 to N3 at full size (ranges of 500 to 1,000 numbers).</li>
+      <li>Your own conjectures: the real point. Every saved seed and experiment is a place to start.</li>
+    </ol>
+    <p class="hint">Fair-test rules: guess before you run, decide what counts as a yes first, and keep the result either way. Life Lab's Self-test checks the engine (12 known answers) whenever you want proof the rules are right.</p>
+  </section>
+
+  <div id="tabTests" role="tabpanel" aria-labelledby="tabBtnTests" style="display:grid;gap:28px">
+
+  <section class="sheet" aria-labelledby="s1">
+    <h2 id="s1"><span class="n">1</span>Answers on paper first</h2>
+    <label class="check"><input type="checkbox" id="paper"><span>I wrote my good, better and best answer for each question on paper.<br><span class="hint">Your answers never go on this page, so nobody can peek, me included.</span></span></label>
+  </section>
+
+  <section class="sheet" aria-labelledby="s2">
+    <h2 id="s2"><span class="n">2</span>Questions</h2>
+    <div id="slips"></div>
+    <div class="row">
+      <button type="button" id="add">Add a question</button>
+      <span class="hint">The label goes to Sophia too ("easy one", "writing"), so you can use it as part of the test.</span>
+    </div>
+    <p class="hint">Drafts stay on this device until you press Run, so I can't see them early.</p>
+  </section>
+
+  <section class="sheet" aria-labelledby="s3">
+    <h2 id="s3"><span class="n">3</span>Run the test</h2>
+    <div class="row">
+      <button type="button" class="primary" id="run">Run test</button>
+      <button type="button" id="copy">Copy test instead</button>
+    </div>
+    <p class="hint">Run starts a new Sophia session in Claude Code and opens a link to it. If that doesn't work, Copy gives you the whole test to paste into any chat with me.</p>
+    <div id="runStatus" class="status" hidden></div>
+    <textarea id="copyBox" hidden readonly aria-label="The test, ready to paste"></textarea>
+  </section>
+
+  <section class="sheet" aria-labelledby="g" id="gradeSheet" hidden>
+    <h2 id="g"><span class="n">✓</span>Grade the latest test</h2>
+    <p class="hint" id="gradeMeta"></p>
+    <div id="gradeRows"></div>
+    <div class="row">
+      <button type="button" class="primary" id="saveGrades">Save grades</button>
+      <span id="gradeTotal" class="pen"></span>
+    </div>
+    <div id="gradeStatus" class="status" hidden></div>
+  </section>
+
+  <section class="sheet" aria-labelledby="p">
+    <h2 id="p">Past tests</h2>
+    <div id="past" class="past"><p class="hint">Loading past tests…</p></div>
+  </section>
+  </div>
+</div>
+
+<script>
+const ENV_ID = "env_01RDn9AFk4ALoeoJ3G8fZqEc";
+const REPO = "https://github.com/gavintkizer-bit/agent-sophia-i";
+const PAGE_URL = "https://claude.ai/artifact/B75eBTeRhyFnpN3W6Fndpd";
+const SERVER = "Claude Code Remote";
+const DRAFT_KEY = "tb-draft-v1";
+const EXAMPLE = [{label: "Example: easy one", text: "You have one wish. You can not wish for more wishes. That is the only rule. What is your wish? (Example. Replace with your own question.)"}];
+
+const $ = id => document.getElementById(id);
+let draft = loadDraft();
+let db = null, tests = [];
+
+function loadDraft(){
+  try { const d = JSON.parse(localStorage.getItem(DRAFT_KEY)); if (d && Array.isArray(d.q) && d.q.length) return d; } catch(e) {}
+  return {q: EXAMPLE.map(x => ({...x}))};
+}
+function saveDraft(){ try { localStorage.setItem(DRAFT_KEY, JSON.stringify(draft)); } catch(e) {} }
+
+function renderSlips(){
+  const box = $("slips"); box.textContent = "";
+  draft.q.forEach((q, i) => {
+    const s = document.createElement("div"); s.className = "slip";
+    const head = document.createElement("div"); head.className = "slip-head";
+    const n = document.createElement("span"); n.className = "qnum"; n.textContent = (i + 1) + ".";
+    const lab = document.createElement("input"); lab.type = "text"; lab.id = "label-" + i; lab.placeholder = "Label (optional)"; lab.value = q.label || "";
+    lab.setAttribute("aria-label", "Label for question " + (i + 1));
+    lab.oninput = () => { q.label = lab.value; saveDraft(); };
+    head.append(n, lab);
+    [["↑", "Move up", -1], ["↓", "Move down", 1]].forEach(([t, title, d]) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "icon"; b.textContent = t; b.title = title; b.setAttribute("aria-label", title);
+      b.disabled = (i + d < 0 || i + d >= draft.q.length);
+      b.onclick = () => { const a = draft.q; [a[i], a[i + d]] = [a[i + d], a[i]]; saveDraft(); renderSlips(); };
+      head.append(b);
+    });
+    const del = document.createElement("button"); del.type = "button"; del.className = "icon"; del.textContent = "Remove"; del.disabled = draft.q.length < 2;
+    del.onclick = () => { draft.q.splice(i, 1); saveDraft(); renderSlips(); };
+    head.append(del);
+    const ta = document.createElement("textarea"); ta.id = "q-" + i; ta.value = q.text || ""; ta.placeholder = "Your question, exactly as you'd ask it";
+    ta.setAttribute("aria-label", "Question " + (i + 1));
+    ta.oninput = () => { q.text = ta.value; saveDraft(); };
+    s.append(head, ta); box.append(s);
+  });
+}
+
+function testId(){
+  const d = new Date(), p = x => String(x).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`;
+}
+function questions(){ return draft.q.map(q => ({label: (q.label || "").trim(), text: (q.text || "").trim()})).filter(q => q.text); }
+
+function buildPrompt(id, qs){
+  const lines = qs.map((q, i) => `${i + 1}. ${q.label ? "[" + q.label + "] " : ""}${q.text}`);
+  return [
+    `Test from Gavin (Test Bench, test ${id}).`,
+    ``,
+    `Before anything else, read SOPHIA.md, workspace/notes/sophia_memory.md and training/experiments/human_tests.md (the lessons from past tests). Skip the rest of the session loop until the test is done.`,
+    ``,
+    `Rules: no internet search. Answer every question below in ONE reply, numbered in order. For each one, find the good answer, then ask what beats it, then commit to one answer.`,
+    ``,
+    ...lines,
+    ``,
+    `After you answer: Gavin grades on the Test Bench (${PAGE_URL}). When he says he has graded, read tests/${id} with ArtifactData, record each grade and lesson in training/experiments/human_tests.md and your memory, set recorded: true on that test, then commit, open a PR and merge it.`
+  ].join("\n");
+}
+
+function show(el, text, kind){ el.hidden = false; el.className = "status" + (kind ? " " + kind : ""); el.textContent = ""; if (typeof text === "string") el.textContent = text; else el.append(text); }
+
+function check(){
+  const st = $("runStatus");
+  if (!$("paper").checked){ show(st, "Step 1 first: write your answers on paper, then tick the box.", "err"); return null; }
+  const qs = questions();
+  if (!qs.length){ show(st, "Add at least one question.", "err"); return null; }
+  if (qs.some(q => /Replace with your own question/.test(q.text))){ show(st, "The example question is still there. Replace it with your own or remove it.", "err"); return null; }
+  return qs;
+}
+
+async function saveTest(id, qs, extra){
+  if (!db) return false;
+  try {
+    await db.collection("tests").doc(id).set({date: id.slice(0, 10), status: "running", recorded: false,
+      questions: qs.map(q => ({label: q.label, text: q.text, grade: null})), ...extra});
+    return true;
+  } catch(e){ return false; }
+}
+
+const ERR = {
+  server_not_connected: "Claude Code Remote isn't connected for this page. Use Copy instead, or add it in claude.ai Settings → Connectors.",
+  needs_reauth: "Claude Code Remote needs you to sign in again (claude.ai Settings → Connectors). Or use Copy instead.",
+  not_in_manifest: "Starting sessions is turned off for this page. You can allow it in the page's Permissions menu, or use Copy instead.",
+  approval_required: "The new session needs your approval. Press Run again and choose Allow.",
+  blocked_by_policy: "Your account's settings don't allow this page to start sessions. Use Copy instead.",
+  selection_required: "Pick which Claude Code Remote connection to use when claude.ai asks, then press Run again.",
+  server_unavailable: "Claude Code didn't answer in time. The session may have started anyway: check claude.ai/code before pressing Run again.",
+  upstream_error: "Something went wrong between this page and Claude Code. The session may have started anyway: check claude.ai/code before pressing Run again."
+};
+
+$("run").onclick = async () => {
+  const st = $("runStatus"), qs = check(); if (!qs) return;
+  const mcp = await claude.use("mcp").catch(() => null);
+  if (!mcp){ show(st, "This view can't start a session. Use Copy test instead and paste it into a chat with me.", "err"); return; }
+  const id = testId(), btn = $("run");
+  btn.disabled = true; show(st, "Starting a fresh Sophia session…");
+  try {
+    const res = await mcp.callTool(SERVER, "create_session", {
+      environment_id: ENV_ID, source_url: REPO, title: "Sophia test " + id,
+      tags: ["sophia-test"], prompt: buildPrompt(id, qs)
+    });
+    const m = JSON.stringify(res.payload ?? res.content ?? "").match(/session_[A-Za-z0-9]+/);
+    const sid = m ? m[0] : "";
+    const link = sid ? "https://claude.ai/code/" + sid : "https://claude.ai/code";
+    await saveTest(id, qs, {sessionId: sid, sessionUrl: link});
+    const frag = document.createDocumentFragment();
+    frag.append("Started. ");
+    const a = document.createElement("a"); a.href = link; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Open the test session";
+    frag.append(a, ". When she's answered, grade her below.");
+    show(st, frag, "ok");
+    $("paper").checked = false; draft.paper = false; saveDraft();
+  } catch(e){
+    const code = e && e.code;
+    show(st, ERR[code] || (code === "tool_error" ? "Claude Code refused: " + (e.message || "no reason given") : (e && e.message) || "That didn't work. Use Copy test instead."), "err");
+  } finally { btn.disabled = false; }
+};
+
+$("copy").onclick = async () => {
+  const st = $("runStatus"), qs = check(); if (!qs) return;
+  const id = testId(), text = buildPrompt(id, qs), box = $("copyBox");
+  box.value = text; box.hidden = false;
+  const saved = await saveTest(id, qs, {sessionId: "", sessionUrl: ""});
+  $("paper").checked = false; draft.paper = false; saveDraft();
+  try { await navigator.clipboard.writeText(text); show(st, "Copied. Paste it into a chat with me." + (saved ? " The grading sheet is ready below." : ""), "ok"); }
+  catch(e){ box.focus(); box.select(); show(st, "Your browser didn't let me copy. The test is selected below: copy it yourself and paste it into a chat with me.", "ok"); }
+};
+
+const GRADES = ["", "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"];
+function renderGrading(){
+  const latest = tests.find(t => t.status === "running");
+  const sheet = $("gradeSheet");
+  if (!latest){ sheet.hidden = true; return; }
+  sheet.hidden = false;
+  const meta = $("gradeMeta"); meta.textContent = "Test " + latest.id + ". ";
+  if (latest.sessionUrl){ const a = document.createElement("a"); a.href = latest.sessionUrl; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Her answers are in this session"; meta.append(a, "."); }
+  const rows = $("gradeRows"); rows.textContent = "";
+  latest.questions.forEach((q, i) => {
+    const r = document.createElement("div"); r.className = "grade-row";
+    const t = document.createElement("div"); t.className = "q"; t.textContent = (i + 1) + ". " + (q.label ? "[" + q.label + "] " : "") + q.text;
+    const s = document.createElement("select"); s.id = "grade-" + latest.id + "-" + i; s.setAttribute("aria-label", "Grade for question " + (i + 1));
+    GRADES.forEach(g => { const o = document.createElement("option"); o.value = g; o.textContent = g || "—"; s.append(o); });
+    s.value = q.grade == null ? "" : String(q.grade);
+    s.onchange = () => updateTotal(latest);
+    r.append(t, s); rows.append(r);
+  });
+  updateTotal(latest);
+  $("saveGrades").onclick = async () => {
+    const gs = latest.questions.map((q, i) => { const v = $("grade-" + latest.id + "-" + i).value; return v ? Number(v) : null; });
+    const st = $("gradeStatus");
+    if (gs.some(g => g == null)){ show(st, "Give every question a grade before saving.", "err"); return; }
+    try {
+      await db.collection("tests").doc(latest.id).update({status: "graded", total: gs.reduce((a, b) => a + b, 0),
+        questions: latest.questions.map((q, i) => ({...q, grade: gs[i]}))});
+      show(st, "Saved. Tell me you've graded and I'll record the lessons.", "ok");
+    } catch(e){ show(st, "Couldn't save: " + ((e && e.message) || "unknown error") + ". Try again in a moment.", "err"); }
+  };
+}
+function updateTotal(t){
+  const vals = t.questions.map((q, i) => { const el = $("grade-" + t.id + "-" + i); return el && el.value ? Number(el.value) : null; });
+  const done = vals.filter(v => v != null);
+  $("gradeTotal").textContent = done.length ? done.reduce((a, b) => a + b, 0) + " / " + (5 * vals.length) : "";
+}
+
+function renderPast(){
+  const box = $("past"); box.textContent = "";
+  const past = tests.filter(t => t.status !== "running");
+  if (!past.length){ const p = document.createElement("p"); p.className = "hint"; p.textContent = db ? "No graded tests yet. Your first one will show here." : "Past tests show here when the page can reach its saved data."; box.append(p); return; }
+  past.forEach(t => {
+    const it = document.createElement("div"); it.className = "past-item";
+    const left = document.createElement("div"); left.className = "q";
+    const head = document.createElement("div"); head.className = "row";
+    const date = document.createElement("strong"); date.textContent = t.title || t.id;
+    head.append(date);
+    if (!t.recorded){ const tag = document.createElement("span"); tag.className = "tag run"; tag.textContent = "not recorded yet"; head.append(tag); }
+    const ol = document.createElement("ol"); ol.className = "qs";
+    (t.questions || []).forEach(q => { const li = document.createElement("li"); li.textContent = (q.label ? "[" + q.label + "] " : "") + q.text + (q.grade != null ? "  ·  " + q.grade : ""); ol.append(li); });
+    const det = document.createElement("details"); const sum = document.createElement("summary"); sum.textContent = (t.questions || []).length + " question" + ((t.questions || []).length === 1 ? "" : "s");
+    det.append(sum, ol); left.append(head, det);
+    const score = document.createElement("div"); score.className = "pen";
+    score.textContent = t.total != null ? t.total + "/" + 5 * (t.questions || []).length : "";
+    it.append(left, score); box.append(it);
+  });
+}
+
+function showTab(which){
+  const start = which === "start";
+  $("tabStart").hidden = !start; $("tabTests").hidden = start;
+  $("tabBtnStart").setAttribute("aria-selected", String(start)); $("tabBtnTests").setAttribute("aria-selected", String(!start));
+  try { localStorage.setItem("tb-tab", which); } catch(e) {}
+}
+$("tabBtnTests").onclick = () => showTab("tests");
+$("tabBtnStart").onclick = () => showTab("start");
+try { if (localStorage.getItem("tb-tab") === "start") showTab("start"); } catch(e) {}
+
+$("paper").onchange = () => { draft.paper = $("paper").checked; saveDraft(); };
+$("add").onclick = () => { draft.q.push({label: "", text: ""}); saveDraft(); renderSlips(); const el = $("q-" + (draft.q.length - 1)); if (el) el.focus(); };
+$("paper").checked = !!draft.paper;
+renderSlips(); renderPast();
+
+claude.use("db").then(d => {
+  db = d;
+  if (!db){ renderPast(); return; }
+  db.collection("tests").onSnapshot(snap => {
+    tests = snap.docs.map(doc => ({id: doc.id, ...doc.data()})).sort((a, b) => b.id.localeCompare(a.id));
+    renderGrading(); renderPast();
+  }, () => { renderPast(); });
+}).catch(() => renderPast());
+</script>
+
+</body></html>

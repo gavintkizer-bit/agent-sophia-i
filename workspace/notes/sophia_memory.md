@@ -237,6 +237,9 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   The cloud browser can't trust the proxy cert; check.js fetches live data through curl.
 - **Life Lab** (his ask 10-12, own page): https://claude.ai/artifact/6qkKL7mgWznYkKRwNkaU85, source workspace/life/life.html;
   plan training/experiments/life_plan.md (v1 world done 10-13; next v2 lab panel, v3 AI test bench).
+- **Life Lab is our main testing ground (his call 10-13):** phase 0 done (self-test 12/12, rules spec); Numbers tool for
+  numerology claims; starter plan in training/experiments/life_test_plan.md and on the Test Bench's "Start notes" tab
+  (Test Bench source now kept in workspace/testbench/testbench.html; publish to its URL).
 - **Cal's money routine PAUSED 10-13** (his order) until he agrees the restart problem is fixed (AUTONOMY.md in-flight rule).
 - Pocket Sophia (2026-10-11): claude.ai Project with SOPHIA.md, memory, goals, colorado_plan + instructions in
   workspace/pocket_sophia/. He set it up. Send fresh files now and then; merge his "for home base" notes.
