@@ -240,6 +240,13 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
 - **Life Lab is our main testing ground (his call 10-13):** phase 0 done (self-test 12/12, rules spec); Numbers tool for
   numerology claims; starter plan in training/experiments/life_test_plan.md and on the Test Bench's "Start notes" tab
   (Test Bench source now kept in workspace/testbench/testbench.html; publish to its URL).
+- **Life Lab finds (10-13, all in its saved seeds; write-ups in training/experiments/life_fractal_search.md):** Void meets matter
+  (B2457/S14567), Black hole (B12356/S, a flash: chaos eats the rings), **Artificial Sun I** (his name; first "Black hole II"):
+  chaos disc held still by ordered space, round B2/S045678 + steady B37/S0125678. The round one crystallizes over time,
+  centre calmest and edge busiest (measured to 40k gens). **He wants to keep working on Artificial Sun another day.**
+  Open threads: ordered space with structure (rings, a gradient); why does the round one crystallize?
+  Life Lab v4+: tabs, background worker (no freeze), Show, typed size/cells/RLE, Go to generation, Back to start.
+  Lesson: top-down. Look at the whole picture first, then measure (scores alone gave 879 false "fractals").
 - **Cal's money routine PAUSED 10-13** (his order) until he agrees the restart problem is fixed (AUTONOMY.md in-flight rule).
 - Pocket Sophia (2026-10-11): claude.ai Project with SOPHIA.md, memory, goals, colorado_plan + instructions in
   workspace/pocket_sophia/. He set it up. Send fresh files now and then; merge his "for home base" notes.
