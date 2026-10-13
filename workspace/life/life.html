@@ -37,6 +37,7 @@ input[type=number],input[type=text]{font:500 14px var(--mono);padding:7px 9px;bo
 input[type=range]{width:100%;accent-color:var(--accent)}
 .note{font-size:13px;color:var(--ink-2)}
 .lab{display:grid;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.lab>*{min-width:0}
 .lab h2{font:600 26px/1.1 var(--display);margin:0}
 .lab h3{font:600 18px/1.2 var(--display);margin:8px 0 0}
 .labgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -395,7 +396,10 @@ tr.best td{font-weight:600}
   const CHI8 = 15.507;   // chi-square cutoff, 8 degrees of freedom, 5% level
   function chiSquare(obs, exp) { return obs.reduce((s, o, i) => s + (exp[i] ? (o - exp[i]) ** 2 / exp[i] : 0), 0); }
   function digitReport(values) {
-    const v = values.filter(x => x > 0), n = v.length;
+    const v = values.filter(x => x >= 10), n = v.length;
+    const spread = n ? Math.log10(Math.max(...v) / Math.min(...v)) : 0;
+    if (n < 50 || spread < 2) return { first: [], roots: [], n, cB: NaN, cU: NaN, html:
+      `<p class="note">Not a fair digit test this time: ${n} values of 10 or more, spanning ${spread.toFixed(1)} orders of magnitude. Benford's law and even digital roots are only expected when values are many (50+) and spread over at least two orders of magnitude (e.g. 10 to 1,000). Widen the range or use a bigger world, then run again.</p>` };
     const first = Array(9).fill(0), roots = Array(9).fill(0);
     v.forEach(x => { first[+String(x)[0] - 1]++; roots[digitRoot(x) - 1]++; });
     const benf = [...Array(9)].map((_, d) => n * Math.log10(1 + 1 / (d + 1))), unif = Array(9).fill(n / 9);
@@ -404,7 +408,7 @@ tr.best td{font-weight:600}
     return { first, roots, n, cB, cU, cFU, html:
       `<div class="tbl"><table><thead><tr><th>Digit</th>${[1,2,3,4,5,6,7,8,9].map(d => `<th>${d}</th>`).join("")}</tr></thead><tbody>
       ${row("First digit (seen / Benford)", first, benf)}${row("Digital root (seen / chance)", roots, unif)}</tbody></table></div>
-      <p class="note">${n} values (final counts, peaks and lifespans above 0). First digits vs Benford's law: chi-square ${cB.toFixed(1)}, ${cB < CHI8 ? "consistent with Benford" : "NOT Benford"}; vs flat chance: ${cFU.toFixed(1)}, ${cFU < CHI8 ? "looks flat" : "not flat"}. Digital roots vs chance: ${cU.toFixed(1)}, ${cU < CHI8 ? "no root stands out beyond chance" : "some roots stand out beyond chance"} (the cutoff at the 5% level is ${CHI8}).</p>` };
+      <p class="note">${n} values of 10 or more (final counts, peaks, and lifespans that settled; capped ones left out), spanning ${spread.toFixed(1)} orders of magnitude. First digits vs Benford's law: chi-square ${cB.toFixed(1)}, ${cB < CHI8 ? "consistent with Benford" : "NOT Benford"}; vs flat chance: ${cFU.toFixed(1)}, ${cFU < CHI8 ? "looks flat" : "not flat"}. Digital roots vs chance: ${cU.toFixed(1)}, ${cU < CHI8 ? "no root stands out beyond chance" : "some roots stand out beyond chance"} (the cutoff at the 5% level is ${CHI8}).</p>` };
   }
   const numClaim = $("numClaim"), runNum = $("runNum"), numMsg = $("numMsg");
   numClaim.oninput = () => { runNum.disabled = !numClaim.value.trim(); numMsg.textContent = runNum.disabled ? "Write the claim and your prediction to unlock Run." : "Ready."; };
@@ -423,14 +427,14 @@ tr.best td{font-weight:600}
     const res = new Map();
     for (const k of range) { if ((enc === "rule1d" && k > 255) || (enc === "density" && (k < 1 || k > 99))) continue;
       res.set(k, numberWorld(k, enc, gens)); if (res.size % 5 === 0) { numMsg.textContent = `Running ${res.size} of ${range.length}…`; await new Promise(r => setTimeout(r, 0)); } }
-    const all = [...res.values()], pct = (v, key) => Math.round(100 * all.filter(x => x[key] < v).length / all.length);
+    const all = [...res.values()], pct = (v, key) => Math.round(100 * (all.filter(x => x[key] < v).length + 0.5 * (all.filter(x => x[key] === v).length - 1)) / (all.length - 1));
     const rows = tests.filter(t => res.has(t)).map(t => { const r = res.get(t); return { n: t, ...r, lifeP: pct(r.life, "life"), peakP: pct(r.peak, "peak") }; });
-    const values = all.flatMap(r => [r.final, r.peak, r.life]), dig = digitReport(values);
+    const values = all.flatMap(r => [r.final, r.peak, ...(r.life < gens ? [r.life] : [])]), dig = digitReport(values);
     const rep = values.filter(isRepdigit), nb = values.filter(v => !isRepdigit(v) && (isRepdigit(v - 1) || isRepdigit(v + 1)));
     const clsCount = k => all.filter(r => r.cls === k).length;
     $("numOut").innerHTML = `<h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th></tr></thead><tbody>${
       rows.map(r => `<tr><td>${r.n}</td><td>${r.life}${r.life >= gens ? "+" : ""}</td><td>${r.lifeP}%</td><td>${r.peak}</td><td>${r.peakP}%</td><td>${r.cls}</td></tr>`).join("")}</tbody></table></div>
-      <p class="note">"Beats % of range" is how many of the ${all.length} worlds scored lower. A truly special number should sit near the top every time; near 50% is ordinary. Classes across the range: I ${clsCount("I")}, II ${clsCount("II")}, III/IV ${clsCount("III/IV")}. A lifespan with "+" never settled within ${gens} generations.</p>
+      <p class="note">"Beats % of range" is the share of the other ${all.length - 1} worlds that scored lower (ties count half). A truly special number should sit near the top every time; near 50% is ordinary. Classes across the range: I ${clsCount("I")}, II ${clsCount("II")}, III/IV ${clsCount("III/IV")}. A lifespan with "+" never settled within ${gens} generations.</p>
       <h3>Digits against chance</h3>${dig.html}
       <p class="note">Repeating-digit numbers (11, 22, 111…) among the results: ${rep.length}; their next-door neighbors (10, 12, 110…): ${nb.length}. If repdigits were special, the first count would clearly beat the second.</p>`;
     const record = { claim: numClaim.value.trim(), enc, from, to, gens, rule: $("ruleShow").textContent, wrap: $("wrap").checked, tests: rows,
