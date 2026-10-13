@@ -21,7 +21,7 @@ Next topic = the first unchecked one.
 - [x] Low-stress, flexible side income that avoids scams, using practical skills (cooking, deep cleaning, lawn care, handyman work, box truck driving), not creative work
 - [x] Spotting money scams and protecting financial privacy online
 - [x] Selling unused electronics and old games safely, and what they're usually worth
-- [ ] Cashback and rewards on recurring bills, without taking on debt
+- [x] Cashback and rewards on recurring bills, without taking on debt
 - [ ] Monthly vs. yearly subscription plans, and rotating streaming services
 - [ ] Roth IRA and index funds explained for beginners (education, not advice)
 - [ ] Free, trustworthy money help: nonprofit credit counseling and library resources
