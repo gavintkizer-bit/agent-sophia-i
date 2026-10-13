@@ -103,3 +103,15 @@ step, and the source.
   price for it"); I Collect Everything, 2026 (quotes checked: "a loose, common cartridge from that box is usually worth
   $3 to $10"; "a complete-in-box copy runs 3x to 10x the loose price" for NES, SNES and N64). Blogs, not official.
   Not kept: Cal's "Zelle is a safe way to get paid" (no official source, and payment apps are a common scam route; see idea 8).
+
+## 10. Cashback on bills you already pay (2026-10-12; education, your call)
+- **What:** a no-annual-fee, flat-rate cashback card (about 2% back on everything), used only for the bills you already
+  pay, set to autopay in full from checking every month. No categories to pick, nothing to activate.
+- **Why it fits (and why it's small):** your three kept bills (YouTube Family, AMC+, Nationwide) come to about $143 a
+  month, so 2% is about **$34 a year**. Cal said $61-73; that math was wrong. Real money, but small, and only if the
+  card is paid in full every month: one month of interest costs more than a year of cashback.
+- **First small step:** none now. Opening a card is an account decision and it's yours; the move to Colorado comes
+  first. If you ever want it, a calm moment after the move is the time.
+- **Source:** Cal's sources were card-comparison blogs (CreditCards.com, Wallet Grower); card names and rates change
+  and weren't checked against the issuers. The math above is mine. Not kept: business cards (more paperwork), and
+  stacking cashback apps (a second step, and I couldn't confirm the one he named still runs).
