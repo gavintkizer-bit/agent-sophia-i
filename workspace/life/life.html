@@ -139,7 +139,7 @@ tr.best td{font-weight:600}
         <label for="gens" style="flex:1">Generations<input type="number" id="gens" min="10" max="5000" value="500"></label>
       </div>
     </div>
-    <div class="row"><button class="primary" id="runExp" type="button" disabled>Run experiment</button><span class="note" id="expMsg">Write a guess to unlock Run.</span></div>
+    <div class="row"><button class="primary" id="runExp" type="button" disabled>Run experiment</button><button id="stopExp" type="button" hidden>Stop</button><span class="note" id="expMsg">Write a guess to unlock Run.</span></div>
     <div class="tbl" id="results" hidden></div>
     <h3>Saved experiments</h3>
     <div id="saved" class="note">Saved experiments appear here.</div>
@@ -162,7 +162,7 @@ tr.best td{font-weight:600}
         <label for="numGens" style="flex:1">Generations<input type="number" id="numGens" min="10" max="5000" value="1000"></label>
       </div>
     </div>
-    <div class="row"><button class="primary" id="runNum" type="button" disabled>Run numbers</button><span class="note" id="numMsg">Write the claim and your prediction to unlock Run.</span></div>
+    <div class="row"><button class="primary" id="runNum" type="button" disabled>Run numbers</button><button id="stopNum" type="button" hidden>Stop</button><span class="note" id="numMsg">Write the claim and your prediction to unlock Run.</span></div>
     <div id="numOut"></div>
   </section>
 
@@ -371,6 +371,65 @@ tr.best td{font-weight:600}
     draw();
   };
 
+  // ---------------- Background worker: big runs happen off the page, so it never freezes (fixed 2026-10-13
+  // after a 200-number run locked the page). Same rules as stepLife; the self-test checks those on the page itself.
+  const WORKER_SRC = `
+  function rng(seed){let a=seed>>>0;return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function sim(g0,C,R,gens,B,S,wrap){
+    const b=new Uint8Array(9),s=new Uint8Array(9);B.forEach(x=>b[x]=1);S.forEach(x=>s[x]=1);
+    let g=g0.slice(),n2=new Uint8Array(C*R);const seen=new Map();let peak=0,pop=0,settledAt=null,period=null;
+    const cm=new Int32Array(C),cp=new Int32Array(C);for(let c=0;c<C;c++){cm[c]=c?c-1:(wrap?C-1:-1);cp[c]=c<C-1?c+1:(wrap?0:-1);}
+    for(let t=0;t<=gens;t++){
+      let h=2166136261;pop=0;for(let i=0;i<g.length;i++){pop+=g[i];h=Math.imul(h^g[i],16777619);}
+      const key=h+":"+pop;if(pop>peak)peak=pop;
+      if(seen.has(key)){settledAt=seen.get(key);period=t-settledAt;break;}seen.set(key,t);if(t===gens)break;
+      for(let r=0;r<R;r++){
+        const ru=r?r-1:(wrap?R-1:-1),rd=r<R-1?r+1:(wrap?0:-1),o=r*C,ou=ru*C,od=rd*C;
+        for(let c=0;c<C;c++){const a=cm[c],z=cp[c];let n=0;
+          if(ru>=0){n+=g[ou+c];if(a>=0)n+=g[ou+a];if(z>=0)n+=g[ou+z];}
+          if(rd>=0){n+=g[od+c];if(a>=0)n+=g[od+a];if(z>=0)n+=g[od+z];}
+          if(a>=0)n+=g[o+a];if(z>=0)n+=g[o+z];
+          const i=o+c;n2[i]=g[i]?s[n]:b[n];}
+      }
+      const tmp=g;g=n2;n2=tmp;
+    }
+    const cls=settledAt==null?"III/IV":(pop===0||period===1)?"I":"II";
+    return{final:pop,peak,settledAt,period,cls};
+  }
+  function start(n,enc,C,R){const g=new Uint8Array(C*R);
+    if(enc==="seed"){const r=rng(n);for(let i=0;i<g.length;i++)g[i]=r()<0.3?1:0;}
+    if(enc==="density"){const r=rng(2026),d=Math.min(99,Math.max(1,n))/100;for(let i=0;i<g.length;i++)g[i]=r()<d?1:0;}
+    if(enc==="binary"){const bits=n.toString(2),r0=Math.floor(R/2),c0=Math.floor((C-bits.length)/2);[...bits].forEach((x,k)=>{if(x==="1"&&c0+k>=0&&c0+k<C)g[r0*C+c0+k]=1;});}
+    return g;}
+  function row1d(n,gens){const W=101;let row=new Uint8Array(W);row[50]=1;const seen=new Map();let peak=1,pop=1,settled=null,per=null;
+    for(let t=0;t<=gens;t++){pop=row.reduce((a,b)=>a+b,0);if(pop>peak)peak=pop;const key=row.join("");
+      if(seen.has(key)){settled=seen.get(key);per=t-settled;break;}seen.set(key,t);if(t===gens)break;
+      const nx=new Uint8Array(W);for(let c=0;c<W;c++){const L=row[(c+W-1)%W],M=row[c],Q=row[(c+1)%W];nx[c]=(n>>(L*4+M*2+Q))&1;}row=nx;}
+    return{life:settled??gens,peak,final:pop,cls:settled==null?"III/IV":(pop===0||per===1)?"I":"II"};}
+  onmessage=e=>{const{id,kind,a}=e.data;let out;
+    if(kind==="soup"){const[d,seed,gens,C,R,B,S,wrap]=a;const r=rng(seed),g=new Uint8Array(C*R);for(let i=0;i<g.length;i++)g[i]=r()<d?1:0;out=sim(g,C,R,gens,B,S,wrap);}
+    if(kind==="world"){const[n,enc,gens,C,R,B,S,wrap]=a;if(enc==="rule1d")out=row1d(n,gens);else{const x=sim(start(n,enc,C,R),C,R,gens,B,S,wrap);out={life:x.settledAt??gens,peak:x.peak,final:x.final,cls:x.cls};}}
+    postMessage({id,out});};`;
+  let worker = null, jobId = 0; const jobs = new Map();
+  function getWorker() {
+    if (worker) return worker;
+    try { worker = new Worker(URL.createObjectURL(new Blob([WORKER_SRC], { type: "text/javascript" })));
+      worker.onmessage = e => { const f = jobs.get(e.data.id); if (f) { jobs.delete(e.data.id); f(e.data.out); } };
+      worker.onerror = () => { worker = null; jobs.forEach(f => f(undefined)); jobs.clear(); };
+    } catch (e) { worker = null; }
+    return worker;
+  }
+  // Runs a job in the worker; if workers aren't allowed here, runs it on the page in small slices instead.
+  async function job(kind, a) {
+    const w = getWorker();
+    if (w) { const out = await new Promise(res => { const id = ++jobId; jobs.set(id, res); w.postMessage({ id, kind, a }); }); if (out !== undefined) return out; }
+    await new Promise(r => setTimeout(r, 0));
+    if (kind === "soup") { const [d, seed, gens, , , B, S, wrap] = a; return simulate(d, seed, gens, new Set(B), new Set(S), wrap); }
+    const [n, enc, gens] = a; return numberWorld(n, enc, gens);
+  }
+  let stopFlag = false;
+  function stopAll() { stopFlag = true; if (worker) { worker.terminate(); worker = null; } jobs.forEach(f => f(null)); jobs.clear(); }
+
   // ---------------- Numbers: each number becomes a world; test numbers are ranked against the whole range.
   function numberWorld(n, enc, gens) {
     // Returns lifespan (generation it settled, or gens if it never did), peak, final, class.
@@ -411,6 +470,17 @@ tr.best td{font-weight:600}
       <p class="note">${n} values of 10 or more (final counts, peaks, and lifespans that settled; capped ones left out), spanning ${spread.toFixed(1)} orders of magnitude. First digits vs Benford's law: chi-square ${cB.toFixed(1)}, ${cB < CHI8 ? "consistent with Benford" : "NOT Benford"}; vs flat chance: ${cFU.toFixed(1)}, ${cFU < CHI8 ? "looks flat" : "not flat"}. Digital roots vs chance: ${cU.toFixed(1)}, ${cU < CHI8 ? "no root stands out beyond chance" : "some roots stand out beyond chance"} (the cutoff at the 5% level is ${CHI8}).</p>` };
   }
   const numClaim = $("numClaim"), runNum = $("runNum"), numMsg = $("numMsg");
+  $("stopNum").onclick = () => stopAll();
+  // Show: put a number's starting world on the board, so you can watch what the table measured.
+  function showNumber(n, enc) {
+    if (enc === "rule1d") { $("rule1d").value = n; setMode("row"); $("status").textContent = `Showing rule ${n}`; window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    if (mode !== "life") setMode("life");
+    setRunning(false); grid.fill(0); gen = 0;
+    if (enc === "seed") { const r = rng(n); for (let i = 0; i < grid.length; i++) grid[i] = r() < 0.3 ? 1 : 0; }
+    if (enc === "density") { const r = rng(2026), d = Math.min(99, Math.max(1, n)) / 100; for (let i = 0; i < grid.length; i++) grid[i] = r() < d ? 1 : 0; }
+    if (enc === "binary") { const bits = n.toString(2), r0 = Math.floor(ROWS / 2), c0 = Math.floor((COLS - bits.length) / 2); [...bits].forEach((b, k) => { if (b === "1" && c0 + k >= 0 && c0 + k < COLS) grid[r0 * COLS + c0 + k] = 1; }); }
+    draw(); $("status").textContent = `Showing number ${n}: press Play`; window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   numClaim.oninput = () => { runNum.disabled = !numClaim.value.trim(); numMsg.textContent = runNum.disabled ? "Write the claim and your prediction to unlock Run." : "Ready."; };
   runNum.onclick = async () => {
     if (mode !== "life" && $("numEnc").value !== "rule1d") { setMode("life"); }
@@ -423,20 +493,24 @@ tr.best td{font-weight:600}
     const range = []; for (let k = from; k <= to; k++) range.push(k);
     tests.forEach(t => { if (!range.includes(t)) range.push(t); });
     if (enc === "rule1d" && tests.some(t => t > 255)) numMsg.textContent = "Note: one-row rules only go to 255; larger numbers are skipped.";
-    setRunning(false); runNum.disabled = true; numClaim.readOnly = true;
+    setRunning(false); runNum.disabled = true; numClaim.readOnly = true; stopFlag = false; $("stopNum").hidden = false;
     const res = new Map();
     for (const k of range) { if ((enc === "rule1d" && k > 255) || (enc === "density" && (k < 1 || k > 99))) continue;
-      res.set(k, numberWorld(k, enc, gens)); if (res.size % 5 === 0) { numMsg.textContent = `Running ${res.size} of ${range.length}…`; await new Promise(r => setTimeout(r, 0)); } }
+      const out = await job("world", [k, enc, gens, COLS, ROWS, [...born], [...survive], $("wrap").checked]);
+      if (stopFlag || out === null) break; res.set(k, out); numMsg.textContent = `Running ${res.size} of ${range.length}…`; }
+    $("stopNum").hidden = true;
+    if (stopFlag) { stopFlag = false; numMsg.textContent = `Stopped after ${res.size} worlds. Nothing was saved.`; numClaim.readOnly = false; runNum.disabled = !numClaim.value.trim(); return; }
     const all = [...res.values()], pct = (v, key) => Math.round(100 * (all.filter(x => x[key] < v).length + 0.5 * (all.filter(x => x[key] === v).length - 1)) / (all.length - 1));
     const rows = tests.filter(t => res.has(t)).map(t => { const r = res.get(t); return { n: t, ...r, lifeP: pct(r.life, "life"), peakP: pct(r.peak, "peak") }; });
     const values = all.flatMap(r => [r.final, r.peak, ...(r.life < gens ? [r.life] : [])]), dig = digitReport(values);
     const rep = values.filter(isRepdigit), nb = values.filter(v => !isRepdigit(v) && (isRepdigit(v - 1) || isRepdigit(v + 1)));
     const clsCount = k => all.filter(r => r.cls === k).length;
-    $("numOut").innerHTML = `<h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th></tr></thead><tbody>${
-      rows.map(r => `<tr><td>${r.n}</td><td>${r.life}${r.life >= gens ? "+" : ""}</td><td>${r.lifeP}%</td><td>${r.peak}</td><td>${r.peakP}%</td><td>${r.cls}</td></tr>`).join("")}</tbody></table></div>
+    $("numOut").innerHTML = `<h3>Your numbers against ${all.length} worlds</h3><div class="tbl"><table><thead><tr><th>Number</th><th>Lifespan</th><th>Beats % of range</th><th>Peak</th><th>Beats % of range</th><th>Class</th><th></th></tr></thead><tbody>${
+      rows.map(r => `<tr><td>${r.n}</td><td>${r.life}${r.life >= gens ? "+" : ""}</td><td>${r.lifeP}%</td><td>${r.peak}</td><td>${r.peakP}%</td><td>${r.cls}</td><td><button class="linkbtn" type="button" data-show="${r.n}">Show</button></td></tr>`).join("")}</tbody></table></div>
       <p class="note">"Beats % of range" is the share of the other ${all.length - 1} worlds that scored lower (ties count half). A truly special number should sit near the top every time; near 50% is ordinary. Classes across the range: I ${clsCount("I")}, II ${clsCount("II")}, III/IV ${clsCount("III/IV")}. A lifespan with "+" never settled within ${gens} generations.</p>
       <h3>Digits against chance</h3>${dig.html}
       <p class="note">Repeating-digit numbers (11, 22, 111…) among the results: ${rep.length}; their next-door neighbors (10, 12, 110…): ${nb.length}. If repdigits were special, the first count would clearly beat the second.</p>`;
+    $("numOut").querySelectorAll("[data-show]").forEach(bt => bt.onclick = () => showNumber(+bt.dataset.show, enc));
     const record = { claim: numClaim.value.trim(), enc, from, to, gens, rule: $("ruleShow").textContent, wrap: $("wrap").checked, tests: rows,
       digits: { first: dig.first, roots: dig.roots, n: dig.n, chiBenford: +dig.cB.toFixed(2), chiRoots: +dig.cU.toFixed(2) }, repdigits: rep.length, neighbors: nb.length, createdAt: new Date().toISOString() };
     if (db) { try { await db.collection("numbers").add(record); numMsg.textContent = "Done and saved."; } catch (e) { numMsg.textContent = "Done, but not saved: " + (e.message || e.code); } }
@@ -557,18 +631,22 @@ tr.best td{font-weight:600}
   const guessEl = $("guess"), runBtn = $("runExp"), msg = $("expMsg");
   guessEl.oninput = () => { runBtn.disabled = !guessEl.value.trim(); msg.textContent = runBtn.disabled ? "Write a guess to unlock Run." : "Ready."; };
   let db = null;
+  $("stopExp").onclick = () => stopAll();
   runBtn.onclick = async () => {
     if (mode !== "life") { msg.textContent = "Experiments run in the Life world. Switch to Life first."; return; }
     const dens = $("dens").value.split(/[,\s]+/).map(Number).filter(x => x > 0 && x < 100);
     const runs = Math.min(50, Math.max(1, +$("runs").value || 5)), gens = Math.min(5000, Math.max(10, +$("gens").value || 500));
     if (!dens.length) { msg.textContent = "Add at least one density between 1 and 99."; return; }
     const seed0 = +$("seed").value || 0, wrap = $("wrap").checked, rule = $("ruleShow").textContent;
-    runBtn.disabled = true; guessEl.readOnly = true; setRunning(false);
+    runBtn.disabled = true; guessEl.readOnly = true; setRunning(false); stopFlag = false; $("stopExp").hidden = false;
     const rows = []; const total = dens.length * runs;
     for (const d of dens) for (let k = 0; k < runs; k++) {
-      const r = simulate(d / 100, seed0 + k, gens, born, survive, wrap); rows.push({ density: d, seed: seed0 + k, ...r });
-      msg.textContent = `Running ${rows.length} of ${total}…`; await new Promise(res => setTimeout(res, 0));
+      const r = await job("soup", [d / 100, seed0 + k, gens, COLS, ROWS, [...born], [...survive], wrap]);
+      if (stopFlag || r === null) break; rows.push({ density: d, seed: seed0 + k, ...r });
+      msg.textContent = `Running ${rows.length} of ${total}…`;
     }
+    $("stopExp").hidden = true;
+    if (stopFlag) { stopFlag = false; msg.textContent = `Stopped after ${rows.length} runs. Nothing was saved.`; guessEl.readOnly = false; runBtn.disabled = !guessEl.value.trim(); return; }
     const sum = summarize(rows), out = $("results"); out.hidden = false;
     out.innerHTML = summaryTable(sum) + `<p class="note">Each row averages ${runs} seeds (${seed0} to ${seed0 + runs - 1}), up to ${gens} generations, rule ${esc(rule)}, edges ${wrap ? "wrap" : "walled"}. "Settled" means the world began repeating itself. Classes (Wolfram): I dies out or freezes, II repeats, III/IV never settled here.</p>`;
     const record = { question: $("q").value.trim(), guess: guessEl.value.trim(), rule, wrap, gens, runs, seedStart: seed0, densities: dens,
