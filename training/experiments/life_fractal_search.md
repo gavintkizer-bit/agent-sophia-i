@@ -33,3 +33,19 @@ doublings) and a check of the candidates against published rule lists.
 - Saved in Life Lab seeds: "Void meets matter" (240 x 150; it reaches the wall at gen 74) and a huge-board copy (to about gen 145).
 **Lesson (top-down):** I judged by scores first and got 879 "fractals" that were noise. Looking at the whole picture first, then
 measuring, found the real one. Gavin spotted it before my filter did.
+
+## Hunt 3 (2026-10-13): "Black hole", chaos in the middle and order toward the edge
+**Ask (Gavin):** "a pattern or fractal that coalesces in the middle in chaos and orders itself the farther it gets from the center,
+circularly." Name it Black hole.
+**Method (`fractal_hunt/hunt3.py`):** 1,200 rules x 8 small seeds, 96 gens on a 301 x 301 grid. Order was measured ring by ring:
+a cell counts as ordered when it matches the cells two steps away. Kept patterns with a disordered core (under 0.6), an ordered rim
+(over 0.85) and order rising outward: 68 passed. I looked at the 12 best pictures first (`bh12.png`), then checked the numbers.
+**The find:** rule **B12356/S** (nothing survives; a cell is born with 1, 2, 3, 5 or 6 neighbors), started from **two diagonal cells**
+(0,0) and (1,1).
+- A chaotic star with jets along one diagonal, inside perfect concentric square rings (`bh_time.png`, gens 40-160).
+- Order by ring at gen 96, core to rim: 0.27, 0.46, 0.77, 0.91, 0.91.
+- The rings grow at one cell per generation and the chaos follows more slowly, so the ordered band holds while it grows. By gen 160
+  the chaos fills most of it. The best view is around gen 80-120.
+- Limit: on a square grid the rings are squares, not circles. Every rule here spreads through the 8 neighbors.
+- Checked in Life Lab: typed in by hand, it gives 19,470 cells at gen 100, the same as the search code.
+- Saved in Life Lab seeds as "Black hole" (300 x 300, walls). I haven't checked rule catalogs, so I can't say it's new.
