@@ -133,6 +133,13 @@ tr.best td{font-weight:600}
     <h3>Saved experiments</h3>
     <div id="saved" class="note">Saved experiments appear here.</div>
   </section>
+
+  <section class="lab" aria-labelledby="stTitle">
+    <h2 id="stTitle">Self-test</h2>
+    <p class="sub">Checks the engine against patterns whose behavior is known, before we trust any experiment. Every check has one right answer.</p>
+    <div class="row"><button class="primary" id="selftest" type="button">Run self-test</button><span class="note" id="stMsg"></span></div>
+    <div class="tbl" id="stOut"></div>
+  </section>
 </div>
 <script>
 (() => {
@@ -281,6 +288,56 @@ tr.best td{font-weight:600}
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   sizeCanvas();
+
+  // ---------------- Self-test: known patterns, known answers. Runs on scratch worlds and restores yours after.
+  const PAT = {
+    block: [[0,0],[0,1],[1,0],[1,1]], blinker: [[1,0],[1,1],[1,2]], glider: [[0,1],[1,2],[2,0],[2,1],[2,2]],
+    diehard: [[0,6],[1,0],[1,1],[2,1],[2,5],[2,6],[2,7]],
+    pulsar: (() => { const q = []; const L = [2,3,4,8,9,10]; for (const a of L) for (const b of [0,5,7,12]) { q.push([b, a]); q.push([a, b]); } return q; })(),
+    gun: [[5,1],[5,2],[6,1],[6,2],[5,11],[6,11],[7,11],[4,12],[8,12],[3,13],[9,13],[3,14],[9,14],[6,15],[4,16],[8,16],[5,17],[6,17],[7,17],[6,18],
+          [3,21],[4,21],[5,21],[3,22],[4,22],[5,22],[2,23],[6,23],[1,25],[2,25],[6,25],[7,25],[3,35],[4,35],[3,36],[4,36]]
+  };
+  function scratch(cols, rows, wrap, rule, m, fn) {
+    const saved = { COLS, ROWS, grid, next, gen, born, survive, mode, ant: { ...ant }, wrap: $("wrap").checked, r1: $("rule1d").value, ar: $("antRule").value };
+    try {
+      COLS = cols; ROWS = rows; grid = new Uint8Array(cols * rows); next = new Uint8Array(cols * rows); gen = 0; mode = m; $("wrap").checked = wrap;
+      if (m === "life") { const r = parseRule(rule); born = r.b; survive = r.s; }
+      if (m === "row") $("rule1d").value = rule;
+      if (m === "ant") { $("antRule").value = rule; ant = { r: Math.floor(rows / 2), c: Math.floor(cols / 2), dir: 0 }; }
+      return fn();
+    } finally {
+      ({ COLS, ROWS, grid, next, gen, born, survive, mode } = saved); ant = saved.ant; $("wrap").checked = saved.wrap; $("rule1d").value = saved.r1; $("antRule").value = saved.ar;
+    }
+  }
+  const put = (cells, r0, c0) => cells.forEach(([r, c]) => grid[(r + r0) * COLS + c + c0] = 1);
+  const live = () => { const a = []; for (let i = 0; i < grid.length; i++) if (grid[i]) a.push(i); return a.join(","); };
+  const count = () => grid.reduce((x, y) => x + (y ? 1 : 0), 0);
+  const steps = n => { for (let k = 0; k < n; k++) stepLife(); };
+  const TESTS = [
+    ["Block stays still (B3/S23)", () => scratch(20, 20, false, "B3/S23", "life", () => { put(PAT.block, 9, 9); const a = live(); steps(1); return [live() === a, "unchanged after 1 step"]; })],
+    ["Blinker repeats every 2", () => scratch(20, 20, false, "B3/S23", "life", () => { put(PAT.blinker, 9, 8); const a = live(); steps(1); const b = live(); steps(1); return [b !== a && live() === a, "different at 1, same at 2"]; })],
+    ["Glider moves 1 cell diagonally every 4", () => scratch(30, 30, false, "B3/S23", "life", () => { put(PAT.glider, 5, 5); steps(4); const a = live(); grid.fill(0); put(PAT.glider, 6, 6); return [live() === a, "shifted down-right by one"]; })],
+    ["Pulsar repeats every 3 with 48 cells", () => scratch(30, 30, false, "B3/S23", "life", () => { put(PAT.pulsar, 8, 8); const a = live(), n0 = count(); steps(1); const b = live(); steps(2); return [n0 === 48 && b !== a && live() === a, `${n0} cells; back at generation 3`]; })],
+    ["Diehard vanishes at generation 130", () => scratch(80, 80, false, "B3/S23", "life", () => { put(PAT.diehard, 38, 36); steps(129); const at129 = count(); steps(1); return [at129 > 0 && count() === 0, `${at129} cells at 129, ${count()} at 130`]; })],
+    ["Gosper gun adds one glider (5 cells) every 30", () => scratch(160, 100, false, "B3/S23", "life", () => { put(PAT.gun, 10, 10); const n0 = count(); steps(90); const a = count(); steps(30); const b = count(); return [n0 === 36 && b - a === 5, `${n0} cells at start; ${a} at 90, ${b} at 120`]; })],
+    ["Glider wraps around a 20 x 20 globe in 80", () => scratch(20, 20, true, "B3/S23", "life", () => { put(PAT.glider, 5, 5); const a = live(); steps(80); return [live() === a, "back where it started"]; })],
+    ["Same seed, same world", () => scratch(96, 60, true, "B3/S23", "life", () => { const f = s => { const r = rng(s); for (let i = 0; i < grid.length; i++) grid[i] = r() < 0.3 ? 1 : 0; steps(50); return live(); }; const a = f(7), b = f(7), c = f(8); return [a === b && a !== c, "seed 7 twice matches; seed 8 differs"]; })],
+    ["Replicator: one cell becomes 8 copies at 16 and 32", () => scratch(81, 81, false, "B1357/S1357", "life", () => { grid[40 * 81 + 40] = 1; steps(16); const a = count(); steps(16); return [a === 8 && count() === 8, `${a} at 16, ${count()} at 32`]; })],
+    ["Rule 90 row counts follow 2^(ones in t)", () => scratch(101, 40, false, 90, "row", () => { grid[50] = 1; let ok = true, first = ""; for (let t = 1; t < 32; t++) { gen = t - 1; stepRow(); let n = 0; for (let c = 0; c < 101; c++) n += grid[Math.min(t, 39) * 101 + c]; const want = 2 ** t.toString(2).split("1").length - 2 + 1; const w = 2 ** (t.toString(2).replace(/0/g, "").length); if (n !== w) { ok = false; first = first || `t=${t}: ${n} vs ${w}`; } } return [ok, ok ? "31 rows match" : first]; })],
+    ["Ant (RL) draws a 2 x 2 square and comes home in 4", () => scratch(20, 20, false, "RL", "ant", () => { const r0 = ant.r, c0 = ant.c; for (let k = 0; k < 4; k++) stepAnt(); return [count() === 4 && ant.r === r0 && ant.c === c0 && ant.dir === 0, `${count()} cells colored; ant at start facing up`]; })],
+    ["Ant is reversible: 1,000 steps back undo 1,000 forward", () => scratch(60, 60, true, "RL", "ant", () => { for (let k = 0; k < 1000; k++) stepAnt();
+      for (let k = 0; k < 1000; k++) { ant.dir = (ant.dir + 2) % 4; ant.r = (ant.r + [-1,0,1,0][ant.dir] + ROWS) % ROWS; ant.c = (ant.c + [0,1,0,-1][ant.dir] + COLS) % COLS; ant.dir = (ant.dir + 2) % 4;
+        const i = ant.r * COLS + ant.c; grid[i] = (grid[i] + 1) % 2; const t = "RL"[grid[i]]; ant.dir = (ant.dir + (t === "R" ? 3 : 1)) % 4; }
+      return [count() === 0 && ant.r === 30 && ant.c === 30 && ant.dir === 0, "blank grid, ant home"]; })],
+  ];
+  $("selftest").onclick = () => {
+    setRunning(false); const rows = [];
+    for (const [name, fn] of TESTS) { let ok = false, note = ""; try { [ok, note] = fn(); } catch (e) { note = "error: " + e.message; } rows.push({ name, ok, note }); }
+    const pass = rows.filter(r => r.ok).length;
+    $("stMsg").textContent = `${pass} of ${rows.length} passed`;
+    $("stOut").innerHTML = `<table><thead><tr><th>Check</th><th>Result</th><th>Detail</th></tr></thead><tbody>${rows.map(r => `<tr><td>${esc(r.name)}</td><td>${r.ok ? "Pass" : "FAIL"}</td><td>${esc(r.note)}</td></tr>`).join("")}</tbody></table>`;
+    draw();
+  };
 
   // Fractal seed: Fredkin's Replicator (rule B1357/S1357, known since the 1970s). Every pattern copies itself;
   // from one cell the copies nest into a fractal carpet. Sophia searched 2,500 rules for a new one on 2026-10-13
