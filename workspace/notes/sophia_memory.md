@@ -70,7 +70,11 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   Interview done 2026-10-09; his notes in workspace/notes/black_tie_job.md (training Nov 30-Dec 4, $18.50/hr + tips,
   free Epic Pass). He says it "seemed to go well"; they asked for his driving report. He sent it 10-10, signed
   with his new signature (ticked). Interviewer: John, the GM; they'd met once before; it ran long and he likes him.
-  No offer yet. 10-11 he framed the move as wu wei: "set a river in motion... follow that river kindly and
+  **JOB ACQUIRED (briefing 10-13): onboarding complete; landlord told; work and lodging cleared. The move is on.**
+  He feels "butterflies. Nervous and excited in equal parts" and has momentum and confidence. Also finished his
+  Winter, Misanthropic Guide deck. He's been his grandmother's caregiver for years; he's drafting a letter to her two
+  sons and three other grandsons about it. The letter is HIS writing: never draft it; offer a care-handoff list only if asked.
+  (Before 10-13: no offer yet.) 10-11 he framed the move as wu wei: "set a river in motion... follow that river kindly and
   persistently"; he knows hard days will come and won't let fear stop him.
   Fun: plays Magic: The Gathering with friends at the local game store; finished a budget Winter, Misanthropic
   Guide commander deck 10-10 (2 wins of 3); wants pumpkin-orange sleeves.
