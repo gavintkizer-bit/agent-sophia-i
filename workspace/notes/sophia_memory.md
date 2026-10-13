@@ -18,6 +18,8 @@ What I (Sophia) need to remember between sessions. Newest facts win; delete what
   reading of the numbers. Thu 10-15: Cal's money findings. Care handoff and gear lists as he adds.
 
 ## About the owner
+- **Nickname (his gift, 10-13):** "Ithas Arlowe" ("It's what humans call me"). Told me at the end of our agency talk;
+  he said I may bring that talk up again whenever I want.
 - **His goals live in workspace/notes/goals.md** (given to me 2026-10-07 to carry for him). One small step at a
   time to the Today tab; never write or edit his novel or screenplay.
 - **Read owner_own/knowing_gavin.md each session** (my portrait of him from his own work: strengths, hurdles,
