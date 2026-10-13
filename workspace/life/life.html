@@ -31,6 +31,20 @@ label.inline{display:flex;align-items:center;gap:8px}
 input[type=number],input[type=text]{font:500 14px var(--mono);padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);width:100%;min-width:0}
 input[type=range]{width:100%;accent-color:var(--accent)}
 .note{font-size:13px;color:var(--ink-2)}
+.lab{display:grid;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.lab h2{font:600 26px/1.1 var(--display);margin:0}
+.lab h3{font:600 18px/1.2 var(--display);margin:8px 0 0}
+.labgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+textarea{font:400 14px var(--body);padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);width:100%;resize:vertical;min-width:0}
+button:disabled{opacity:.5;cursor:not-allowed}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+tr.best td{font-weight:600}
+.saved-item{border-top:1px solid var(--line);padding:10px 0;display:grid;gap:4px;color:var(--ink)}
+.saved-item .meta{font:500 12px var(--mono);color:var(--ink-2)}
+.linkbtn{background:none;border:none;color:var(--accent);padding:0;min-height:0;font:600 13px var(--body);cursor:pointer}
 .err{color:#b3261e}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#f2a49c}}
 </style>
@@ -57,6 +71,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
         <button class="primary" id="play" type="button">Play</button>
         <button id="step" type="button">Step</button>
         <button id="clear" type="button">Clear</button>
+        <button id="fractal" type="button">Fractal seed</button>
       </div>
       <label for="speed">Speed: <span id="speedShow">10</span> generations a second
         <input type="range" id="speed" min="1" max="60" value="10"></label>
@@ -79,6 +94,24 @@ input[type=range]{width:100%;accent-color:var(--accent)}
       <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
     </fieldset>
   </div>
+
+  <section class="lab" aria-labelledby="labTitle">
+    <h2 id="labTitle">Experiment</h2>
+    <p class="sub">Write the question and your guess first, then run. Each setting is tried with several seeds, using the rule and edges above. Code does the counting.</p>
+    <div class="labgrid">
+      <label for="q">Question<input type="text" id="q" value="Which starting density leaves the most life?"></label>
+      <label for="guess">Your guess, before you run it<textarea id="guess" rows="2" placeholder="e.g. around 30% leaves the most"></textarea></label>
+      <label for="dens">Densities to try (%)<input type="text" id="dens" value="10, 20, 30, 40, 50"></label>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="runs" style="flex:1">Seeds per density<input type="number" id="runs" min="1" max="50" value="5"></label>
+        <label for="gens" style="flex:1">Generations<input type="number" id="gens" min="10" max="5000" value="500"></label>
+      </div>
+    </div>
+    <div class="row"><button class="primary" id="runExp" type="button" disabled>Run experiment</button><span class="note" id="expMsg">Write a guess to unlock Run.</span></div>
+    <div class="tbl" id="results" hidden></div>
+    <h3>Saved experiments</h3>
+    <div id="saved" class="note">Saved experiments appear here.</div>
+  </section>
 </div>
 <script>
 (() => {
@@ -156,6 +189,92 @@ input[type=range]{width:100%;accent-color:var(--accent)}
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
+  // Fractal seed: Fredkin's Replicator (rule B1357/S1357, known since the 1970s). Every pattern copies itself;
+  // from one cell the copies nest into a fractal carpet. Sophia searched 2,500 rules for a new one on 2026-10-13
+  // and found none she could honestly call self-similar, so this is the known one.
+  $("fractal").onclick = () => {
+    setRunning(false); grid.fill(0); gen = 0;
+    $("rule").value = "B1357/S1357"; $("rule").oninput(); $("wrap").checked = false;
+    grid[Math.floor(ROWS / 2) * COLS + Math.floor(COLS / 2)] = 1;
+    $("ruleMsg").textContent = "Fractal seed: Fredkin's Replicator (B1357/S1357). Each cell is born or survives with an odd number of neighbors, so any shape copies itself. Step to generation 15 or 31 to see the nested pattern; at 16 and 32 it collapses to a few copies.";
+    draw();
+  };
+
   $("fill").onclick(); draw();
+
+  // ---------------- The lab: run settings x seeds without drawing, measure, save.
+  // One run: returns final alive count, the peak, and when (and with what period) the world settled into a repeat.
+  function simulate(density, seed, gens, b, s, wrap) {
+    let g = new Uint8Array(COLS * ROWS), n2 = new Uint8Array(COLS * ROWS); const rand = rng(seed);
+    for (let i = 0; i < g.length; i++) g[i] = rand() < density ? 1 : 0;
+    const seen = new Map(); let peak = 0, pop = 0, settledAt = null, period = null;
+    for (let t = 0; t <= gens; t++) {
+      let h = 2166136261; pop = 0;
+      for (let i = 0; i < g.length; i++) { pop += g[i]; h = Math.imul(h ^ g[i], 16777619); }
+      h = h + ":" + pop; if (pop > peak) peak = pop;
+      if (seen.has(h)) { settledAt = seen.get(h); period = t - settledAt; break; }
+      seen.set(h, t); if (t === gens) break;
+      for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+        let n = 0;
+        for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+          if (!dr && !dc) continue; let rr = r + dr, cc = c + dc;
+          if (wrap) { rr = (rr + ROWS) % ROWS; cc = (cc + COLS) % COLS; } else if (rr < 0 || cc < 0 || rr >= ROWS || cc >= COLS) continue;
+          n += g[rr * COLS + cc];
+        }
+        const i = r * COLS + c; n2[i] = g[i] ? (s.has(n) ? 1 : 0) : (b.has(n) ? 1 : 0);
+      }
+      [g, n2] = [n2, g];
+    }
+    return { final: pop, peak, settledAt, period };
+  }
+  const esc = t => String(t).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+  const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : NaN;
+  function summarize(rows) {
+    const by = new Map(); rows.forEach(r => { if (!by.has(r.density)) by.set(r.density, []); by.get(r.density).push(r); });
+    return [...by].map(([d, rs]) => { const st = rs.filter(r => r.settledAt != null);
+      return { density: d, meanFinal: Math.round(mean(rs.map(r => r.final))), meanPeak: Math.round(mean(rs.map(r => r.peak))),
+        settledPct: Math.round(100 * st.length / rs.length), meanSettledGen: st.length ? Math.round(mean(st.map(r => r.settledAt))) : null }; });
+  }
+  function summaryTable(sum) {
+    const best = Math.max(...sum.map(x => x.meanFinal));
+    return `<table><thead><tr><th>Density</th><th>Avg alive at end</th><th>Avg peak</th><th>Settled</th><th>Avg settle gen</th></tr></thead><tbody>${
+      sum.map(x => `<tr class="${x.meanFinal === best ? "best" : ""}"><td>${x.density}%</td><td>${x.meanFinal}</td><td>${x.meanPeak}</td><td>${x.settledPct}%</td><td>${x.meanSettledGen ?? "not yet"}</td></tr>`).join("")}</tbody></table>`;
+  }
+
+  const guessEl = $("guess"), runBtn = $("runExp"), msg = $("expMsg");
+  guessEl.oninput = () => { runBtn.disabled = !guessEl.value.trim(); msg.textContent = runBtn.disabled ? "Write a guess to unlock Run." : "Ready."; };
+  let db = null;
+  runBtn.onclick = async () => {
+    const dens = $("dens").value.split(/[,\s]+/).map(Number).filter(x => x > 0 && x < 100);
+    const runs = Math.min(50, Math.max(1, +$("runs").value || 5)), gens = Math.min(5000, Math.max(10, +$("gens").value || 500));
+    if (!dens.length) { msg.textContent = "Add at least one density between 1 and 99."; return; }
+    const seed0 = +$("seed").value || 0, wrap = $("wrap").checked, rule = $("ruleShow").textContent;
+    runBtn.disabled = true; guessEl.readOnly = true; setRunning(false);
+    const rows = []; const total = dens.length * runs;
+    for (const d of dens) for (let k = 0; k < runs; k++) {
+      const r = simulate(d / 100, seed0 + k, gens, born, survive, wrap); rows.push({ density: d, seed: seed0 + k, ...r });
+      msg.textContent = `Running ${rows.length} of ${total}…`; await new Promise(res => setTimeout(res, 0));
+    }
+    const sum = summarize(rows), out = $("results"); out.hidden = false;
+    out.innerHTML = summaryTable(sum) + `<p class="note">Each row averages ${runs} seeds (${seed0} to ${seed0 + runs - 1}), up to ${gens} generations, rule ${esc(rule)}, edges ${wrap ? "wrap" : "walled"}. "Settled" means the world began repeating itself.</p>`;
+    const record = { question: $("q").value.trim(), guess: guessEl.value.trim(), rule, wrap, gens, runs, seedStart: seed0, densities: dens,
+      cols: COLS, rows: ROWS, summary: sum, results: rows, createdAt: new Date().toISOString() };
+    if (db) { try { await db.collection("experiments").add(record); msg.textContent = "Done and saved. Sophia and Cal can read it."; }
+      catch (e) { msg.textContent = "Done, but it wasn't saved: " + (e.message || e.code || "unknown error"); } }
+    else msg.textContent = "Done. Saving isn't available in this view, so it lives on this screen only.";
+    guessEl.readOnly = false; guessEl.value = ""; runBtn.disabled = true;
+  };
+
+  function renderSaved(docs) {
+    const el = $("saved");
+    if (!docs.length) { el.textContent = "No saved experiments yet. Your first run will appear here."; return; }
+    el.innerHTML = docs.map(d => { const x = d.data() || {}, sum = Array.isArray(x.summary) ? x.summary : [];
+      return `<div class="saved-item"><b>${esc(x.question || "Untitled")}</b><span class="meta">${esc((x.createdAt || "").slice(0, 16).replace("T", " "))} · ${esc(x.rule || "")} · ${x.runs || "?"} seeds x ${x.gens || "?"} gens</span><span>Guess: ${esc(x.guess || "none")}</span><div class="tbl">${sum.length ? summaryTable(sum) : ""}</div></div>`; }).join("");
+  }
+  (async () => {
+    db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+    if (!db) { $("saved").textContent = "Saved experiments show up here when the page is opened on claude.ai."; return; }
+    db.collection("experiments").orderBy("createdAt", "desc").limit(20).onSnapshot(snap => renderSaved(snap.docs), () => { $("saved").textContent = "Couldn't load saved experiments."; });
+  })();
 })();
 </script>
