@@ -244,7 +244,7 @@ _Three parts, from the math traces: where I am (questions), named obstacles, dea
   (B2457/S14567), Black hole (B12356/S, a flash: chaos eats the rings), **Artificial Sun I** (his name; first "Black hole II"):
   chaos disc held still by ordered space, round B2/S045678 + steady B37/S0125678. The round one crystallizes over time,
   centre calmest and edge busiest (measured to 40k gens). **He wants to keep working on Artificial Sun another day.**
-  Open threads: ordered space with structure (rings, a gradient); why does the round one crystallize?
+  **His condition + 4 tests + plan: training/experiments/artificial_sun.md** (steady passes the butterfly test; round fails).
   Life Lab v4+: tabs, background worker (no freeze), Show, typed size/cells/RLE, Go to generation, Back to start.
   Lesson: top-down. Look at the whole picture first, then measure (scores alone gave 879 false "fractals").
 - **Cal's money routine PAUSED 10-13** (his order) until he agrees the restart problem is fixed (AUTONOMY.md in-flight rule).
