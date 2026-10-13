@@ -15,6 +15,11 @@ body{background:var(--paper);color:var(--ink);font:400 15px/1.5 var(--body)}
 header{display:grid;gap:4px}
 h1{font:600 clamp(28px,6vw,40px)/1.05 var(--display);margin:0;text-wrap:balance}
 .sub{color:var(--ink-2);margin:0;max-width:62ch}
+.scroller{overflow:auto;max-height:70vh;border-radius:4px}
+.seg{display:flex;flex-wrap:wrap;gap:0}
+.seg button{border-radius:0;margin-left:-1px}.seg button:first-child{border-radius:8px 0 0 8px;margin-left:0}.seg button:last-child{border-radius:0 8px 8px 0}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+select{font:500 14px var(--body);padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);width:100%;min-width:0}
 .world{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;min-width:0}
 canvas{display:block;width:100%;height:auto;touch-action:none;cursor:crosshair;border-radius:4px}
 .readout{display:flex;flex-wrap:wrap;gap:8px 20px;font:500 13px var(--mono);color:var(--ink-2);padding:8px 4px 0}
@@ -55,10 +60,11 @@ tr.best td{font-weight:600}
   </header>
 
   <div class="world">
-    <canvas id="board" width="960" height="600" aria-label="The Life grid. Tap or drag to draw cells."></canvas>
+    <div class="scroller" id="scroller"><canvas id="board" width="960" height="600" aria-label="The grid. Tap or drag to draw cells; in Ant mode, tap to place the ant."></canvas></div>
     <div class="readout" aria-live="polite">
       <span>Generation <b id="gen">0</b></span>
       <span>Alive <b id="pop">0</b></span>
+      <span>World <b id="modeShow">Life</b></span>
       <span>Rule <b id="ruleShow">B3/S23</b></span>
       <span id="status">Paused</span>
     </div>
@@ -66,12 +72,25 @@ tr.best td{font-weight:600}
 
   <div class="panel">
     <fieldset>
+      <legend>World</legend>
+      <div class="seg" role="group" aria-label="Kind of world">
+        <button type="button" data-mode="life" aria-pressed="true">Life</button><button type="button" data-mode="row" aria-pressed="false">One row</button><button type="button" data-mode="ant" aria-pressed="false">Ant</button>
+      </div>
+      <div class="row" style="flex-wrap:nowrap">
+        <label for="size" style="flex:1">Size<select id="size"><option value="96x60">Small 96 x 60</option><option value="240x150">Large 240 x 150</option><option value="480x300">Huge 480 x 300</option></select></label>
+        <label for="zoom" style="flex:1">Zoom <span id="zoomShow">100</span>%<input type="range" id="zoom" min="100" max="800" step="50" value="100"></label>
+      </div>
+      <p class="note" id="modeMsg">Life: Conway's grid. One row: a single line of cells drawn downward, one row per generation (Rule 90 makes a Sierpinski triangle). Ant: Langton's ant walking by a turn rule.</p>
+    </fieldset>
+
+    <fieldset>
       <legend>Run</legend>
       <div class="row">
         <button class="primary" id="play" type="button">Play</button>
         <button id="step" type="button">Step</button>
         <button id="clear" type="button">Clear</button>
         <button id="fractal" type="button">Fractal seed</button>
+        <button id="jump" type="button">Jump 100</button>
       </div>
       <label for="speed">Speed: <span id="speedShow">10</span> generations a second
         <input type="range" id="speed" min="1" max="60" value="10"></label>
@@ -90,6 +109,8 @@ tr.best td{font-weight:600}
     <fieldset>
       <legend>World rules</legend>
       <label for="rule">Rule (born / survives)<input type="text" id="rule" value="B3/S23" spellcheck="false" autocomplete="off"></label>
+      <label for="rule1d" id="rule1dWrap" hidden>One-row rule number (0-255)<input type="number" id="rule1d" min="0" max="255" value="90"></label>
+      <label for="antRule" id="antRuleWrap" hidden>Ant turn rule (one letter per color: R right, L left, N straight, U back)<input type="text" id="antRule" value="RL" spellcheck="false" autocomplete="off"></label>
       <label class="inline"><input type="checkbox" id="wrap" checked> Edges wrap around, like a globe</label>
       <p class="note" id="ruleMsg">Conway's rule: a dead cell with 3 neighbors is born; a live cell with 2 or 3 survives.</p>
     </fieldset>
