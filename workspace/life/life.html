@@ -71,6 +71,7 @@ tr.best td{font-weight:600}
         <button class="primary" id="play" type="button">Play</button>
         <button id="step" type="button">Step</button>
         <button id="clear" type="button">Clear</button>
+        <button id="fractal" type="button">Fractal seed</button>
       </div>
       <label for="speed">Speed: <span id="speedShow">10</span> generations a second
         <input type="range" id="speed" min="1" max="60" value="10"></label>
@@ -187,6 +188,17 @@ tr.best td{font-weight:600}
   cv.addEventListener("pointercancel", () => painting = false);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  // Fractal seed: Fredkin's Replicator (rule B1357/S1357, known since the 1970s). Every pattern copies itself;
+  // from one cell the copies nest into a fractal carpet. Sophia searched 2,500 rules for a new one on 2026-10-13
+  // and found none she could honestly call self-similar, so this is the known one.
+  $("fractal").onclick = () => {
+    setRunning(false); grid.fill(0); gen = 0;
+    $("rule").value = "B1357/S1357"; $("rule").oninput(); $("wrap").checked = false;
+    grid[Math.floor(ROWS / 2) * COLS + Math.floor(COLS / 2)] = 1;
+    $("ruleMsg").textContent = "Fractal seed: Fredkin's Replicator (B1357/S1357). Each cell is born or survives with an odd number of neighbors, so any shape copies itself. Step to generation 15 or 31 to see the nested pattern; at 16 and 32 it collapses to a few copies.";
+    draw();
+  };
 
   $("fill").onclick(); draw();
 
