@@ -197,3 +197,7 @@ Cleanup: legacy one-folder tools removed, old scans pruned to the newest two, me
   self-test row (worker matches page), a rule trap fixed (warning plus switch-back), and a new habit, "look first, then measure".
 - Open (small, not urgent): Show for a rule1d number draws on the board's width, while the test ran 101 cells wide;
   the picture can differ slightly from what was scored. Fix when Life Lab next changes.
+
+## 2026-10-14 (light, daily check-in): quiet; one small fix
+- No uploads, no waiting requests, no new ticks. Fixed yesterday's open item: Show for a one-row rule now uses the same
+  101-cell wrapping row the test scored (live as Life Lab v12; self-test 13/13, no sideways scroll at 390 px).
