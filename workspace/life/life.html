@@ -580,7 +580,8 @@ progress{width:100%;height:8px;accent-color:var(--accent)}
   // Show: put a number's starting world on the board, so you can watch what the table measured.
   function showNumber(n, enc) {
     showTab("board");
-    if (enc === "rule1d") { $("rule1d").value = n; setMode("row"); $("status").textContent = `Showing rule ${n}`; window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    // The test ran each rule on a 101-cell ring, so Show uses the same width and wrapping edges.
+    if (enc === "rule1d") { $("rule1d").value = n; $("wrap").checked = true; setSize(101, ROWS); setMode("row"); $("status").textContent = `Showing rule ${n} (101 wide, as tested)`; window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     if (mode !== "life") setMode("life");
     setRunning(false); grid.fill(0); gen = 0;
     if (enc === "seed") { const r = rng(n); for (let i = 0; i < grid.length; i++) grid[i] = r() < 0.3 ? 1 : 0; }
