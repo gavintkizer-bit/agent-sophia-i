@@ -1,4 +1,4 @@
-# my-first-agent
+# the-first
 
 My first Claude agent, built with the Claude Agent SDK and run in claude.ai/code cloud sessions.
 
